@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>gene-intro.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* CSS stylesheet is based on Kevin Burke's Markdown.css project (http://kevinburke.bitbucket.org/markdowncss) */
+</style>
+</head>
+<body>
+<h1>It's Alive! It's Alive!</h1>
+
+<h2>Thought It's Not Frankenstein's Monster</h2>
+
+<p>Ludwig von Bertalanffy[1] first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another. When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. </p>
+
+<p>However, if you think about it, maybe there is some truth to it after all. What follows is the introduction to a live Systems Thinking book presented from a cross discipline models perspective. Live in the sense that the models are presented in a form that allows you to actually interact with them. </p>
+
+<p>von Bertalanffy wrote “Allegemein Systemlehre” which was translated into English as “General Systems Theory”[2] and I expect we’ve still not recovered from the translation error. What he intended was a “General Theory of Systems” or “General Systems Teaching,” a way to support learning about the structures which operated across all disciplines. Today there are a set of structures referred to as Systems Archetypes which I believe are just what Bertalanffy had in mind.</p>
+
+<p>In the words of von Bertalanffy, "The student in 'system science' receives a technical training which makes systems theory -- originally intended to overcome current overspecialization -- into another of the hundreds of academic specialties"[1]</p>
+
+<p>Systems Thinking is not a method though more of a way of looking at the world around us and understanding based not from understanding things though more from understanding relations and interactions between things. And while there are many who believe that Systems Thinking or a Systems Perspective provides the best foundation for creating effective approaches of dealing with challenges and shaping a better tomorrow. Yet even with that view, over the past 75 years it has not become widely adopted, even though during that period dozens of approaches have been developed with claim to embrace the Systems Thinking world view. I believe Pogo had it right when he said, “We have met the enemy and he is us.” I have repeatedly commented to people that the greatest impediment to the adoption of Systems Thinking is Systems Thinkers.</p>
+
+<p>This should provide you with a sense of why this book has to be different. Now let me offer you a view of how it will be different.</p>
+
+<p>It is our intent to provide a basis for recovering from this overspecialization by offering an extensive series of models from everyday life that will show the value of looking at things though a different lense. We will then build on this to develop an understanding without all the terminology and complexity that typically drives people away from Systems Thinking. </p>
+
+<p><strong>Models and Patterns</strong></p>
+
+<p>Models are the way we look at the world around us. All we have are our models. They are the way we understand everything. This is so because we build our understanding based on what we already understand. The world around us simply has too much detail for us to pay attention to all of it. As such we filter much of the detail and choose what to pay attention to. In the midst of what we choose to pay attention to there are patterns. And it is these patterns that we attempt to make sense of. And we understand these patterns by linking them to extend patterns we already understand.</p>
+
+<p><strong>Consider the following</strong></p>
+
+<ul>
+<li>I have a box that’s about 3’ wide, 3’ deep and 6’ high</li>
+<li>It’s a rather heavy box</li>
+<li>The has a couple of doors on it</li>
+<li>When you open the doors it’s cooler inside the box than outside</li>
+<li>One compartment is much cooler than the other</li>
+<li>When you open the door a light comes on</li>
+<li>There’s food inside the box</li>
+<li>The box is in a kitchen</li>
+<li>There are sticky notes all over the front of the box</li>
+<li>There’s a collection of papers and stuff on top of the box</li>
+<li>If you move the box you’ll probably find a lot of dust under it</li>
+<li>The box is plugged into an electrical outlet</li>
+<li>From time to time you can hear the box running</li>
+</ul>
+
+<p>At some point in this sequence you became convinced that what was being described was a refrigerator. Now stop for a moment and ponder just how it is that you realized what was being described was a refrigerator? As long as you knew beforehand what a refrigerator was the statements could have been given to you in any order and still at some point you would have finally realized what was being described. If you had never seen, nor heard about a refrigerator you would still be wondering what was being described and what to call it.</p>
+
+<p>You have also most likely come to understand that all refrigerators are not identical. Some have one door with a separate compartment inside. Some have two doors and a drawer. Some are much smaller than others. Some can fit under a counter and some even fit on top of a counter. Some can be so large you can walk into them. Though if you see any of these you generally readily ascertain that it is a refrigerator. How does that happen? Gregory Bateson, one of the giants of Systems Thinking, said, “It’s the pattern that connects.” If you reflect on this statement you should come to realize there are actually different ways to interpret what it means. In this particular case the pattern connects you to the following purpose</p>
+
+<ul>
+<li>The box keeps food from readily spoiling by keeping it cool</li>
+<li>Part of the box is a freezer which keeps food from spoiling for even longer</li>
+</ul>
+
+<p>and you understand it to be a refrigerator. </p>
+
+<p><strong>The Basis for Flawed Learning</strong></p>
+
+<p>As I have indicated since Bertalanffy’s initial work in the 30’s numerous models and methods have been developed with claim to embrace the Systems Thinking worldview, that it is the relations between a number of elements which is far more responsible for the nature of a thing than simply the nature of the parts of which it is made. As such we will begin with models that everyone should be familiar with and demonstrate the nature of those models and how they actually occur across numerous disciplines. And in the process we will demystify the myriad of model and methods that embrace Systems Thinking, distilling and demonstrating that the essence of Systems Thinking is essential contains in a single word, “AND”.</p>
+
+<p>Really this is an outgrowth of an old Sufi saying.</p>
+
+<p><strong><em>Because you think you understand one, you think you understand two, because one and one equals two. But first you must understand AND.</em></strong></p>
+
+<p>Because we live in the moment, even though we may think about the past, or the future, we tend to relate to things in the moment. It is this living in the moment that is most responsible for us tending to think in terms of cause and effect, i.e., A caused B. Even when we consider things that have evolved over time we tend to ignore the passage of time, and more often than not simplify situations to one dimensional cause and effect, e.g., Wall Street is responsible for the Financial Crisis; Corporations aren’t hiring more people because their taxes are too high; Obama is spending the US into ruin; etc. And as you might have gathered from these examples the simplification often produces beliefs that may not even be true. It’s our enduring need to make sense of things, along with our lack of a better way to consider things, that drives us to fabricate meaning, even if it is at times invalid.</p>
+
+<p><strong>A More Meaningful Perspective</strong></p>
+
+<p>Consider the items in Fig. 1 and ask your self what they have in common?</p>
+
+<p><IFRAME SRC="http://InsightMaker.com/insight/4548/embed?topBar=0&amp;sideBar=0&amp;zoom=1" TITLE="Embedded Insight" width=600 height=420></IFRAME>
+Fig. 1 - What do these have in common?</p>
+
+<p>What they have in common is that they all present a character of growth. Growth in population or growth in size. There is one underlying structure responsible for their nature as depicted in Fig. 2.</p>
+
+<p><IFRAME SRC="http://InsightMaker.com/insight/4530/embed?topBar=0&amp;sideBar=0&amp;zoom=0" TITLE="Embedded Insight" width=600 height=420></IFRAME>
+Fig. 2 - Simple Reinforcing Growth Model <a href="http://www.youtube.com/watch?v=MUaBFzCfwVk" target="_blank">(Video)</a></p>
+
+<p>If you conder sider each item in figure one to be an amount of something that something increases over time. And the amount that it increses depends on how much of that something there is already and a factor.</p>
+
+<p><img src="./im-4530a.png" alt="" />
+Fig. 3 - Growth with Initial Value = 1 and Growth Factor = .1</p>
+
+<p>With a small initial value and small growth factor the amount doesn't grow very much over a 20 year period.</p>
+
+<p><img src="./im-4530b.png" alt="" />
+Fig. 4 - Amount Growing with Initial Value = 10 and Growth Factor = .25</p>
+
+<p>With a somewhat larger initial value and growth factor notice the marked different in the resulting value between fig. 4 and fig. 3.</p>
+
+<p>The question I hope you might now be asking is, "If the growth depends on the initial value, amount, and growth factor, why doesn't everything just keep on growing?" We know that nothing ever grows forever and that is the case because everything that grows consumes something. Notice that one end of the flow in Fig. 2 isn't attached to anything. For the amount to grow it something has to flow in from somewhere. There are times when the stuff comes from doesn't matter and there are times when it does. We'll get to this in a more advanced version of the growth model.</p>
+
+<p><strong>References</strong></p>
+
+<ul>
+<li>[1] Davidson, Mark. 1983. Uncommon Sense: The Life and Thought of Ludwig von Bertalanffy http://www.amazon.com/Uncommon-Sense-Thought-Bertalanffy-1901-1972/dp/087477165X/</li>
+<li>[2] Hofkirchner, Wolfgang. 2013. Ludwig von Bertalanffy: Forerunner of Evolutionary Systems Theory http://www.bertalanffy.org/2011/wp-content/uploads/2011/09/pdf41.pdf</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

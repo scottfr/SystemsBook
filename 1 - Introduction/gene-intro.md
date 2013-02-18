@@ -1,6 +1,5 @@
-It's Alive! It's Alive!
-Thought It's Not Frankenstein's Monster
-
+# It's Alive! It's Alive! #
+## Thought It's Not Frankenstein's Monster ##
 Ludwig von Bertalanffy[1] first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another. When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. 
 
 However, if you think about it, maybe there is some truth to it after all. What follows is the introduction to a live Systems Thinking book presented from a cross discipline models perspective. Live in the sense that the models are presented in a form that allows you to actually interact with them. 
@@ -56,11 +55,29 @@ Because we live in the moment, even though we may think about the past, or the f
 
 **A More Meaningful Perspective**
 
-I have to write this
+Consider the items in Fig. 1 and ask your self what they have in common?
 
-**Architecture of theBook**
+<IFRAME SRC="http://InsightMaker.com/insight/4548/embed?topBar=0&sideBar=0&zoom=1" TITLE="Embedded Insight" width=600 height=420></IFRAME>
+Fig. 1 - What do these have in common?
 
- "theBook" will exist in electronic form with the Insight Maker engine embedded. The functionality of the copy of "theBook" one has will depend on the manner in which they access it. HTML will be the most functional and hard copy the least. The functionality experienced between will depend on the capabilities of the eReader being used.
+What they have in common is that they all present a character of growth. Growth in population or growth in size. There is one underlying structure responsible for their nature as depicted in Fig. 2.
+
+<IFRAME SRC="http://InsightMaker.com/insight/4530/embed?topBar=0&sideBar=0&zoom=0" TITLE="Embedded Insight" width=600 height=420></IFRAME>
+Fig. 2 - Simple Reinforcing Growth Model <a href="http://www.youtube.com/watch?v=MUaBFzCfwVk" target="_blank">(Video)</a>
+
+If you conder sider each item in figure one to be an amount of something that something increases over time. And the amount that it increses depends on how much of that something there is already and a factor.
+
+![](./im-4530a.png)
+Fig. 3 - Growth with Initial Value = 1 and Growth Factor = .1
+
+With a small initial value and small growth factor the amount doesn't grow very much over a 20 year period.
+
+![](./im-4530b.png)
+Fig. 4 - Amount Growing with Initial Value = 10 and Growth Factor = .25
+
+With a somewhat larger initial value and growth factor notice the marked different in the resulting value between fig. 4 and fig. 3.
+
+The question I hope you might now be asking is, "If the growth depends on the initial value, amount, and growth factor, why doesn't everything just keep on growing?" We know that nothing ever grows forever and that is the case because everything that grows consumes something. Notice that one end of the flow in Fig. 2 isn't attached to anything. For the amount to grow it something has to flow in from somewhere. There are times when the stuff comes from doesn't matter and there are times when it does. We'll get to this in a more advanced version of the growth model.
 
 **References**
 
