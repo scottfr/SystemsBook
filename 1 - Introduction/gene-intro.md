@@ -1,5 +1,6 @@
-# It's Alive! It's Alive! #
-## Thought It's Not Frankenstein's Monster ##
+# Beyond Connecting the Dots #
+## A live book for mastering the hidden connections<br> in everything that matters ##
+
 Ludwig von Bertalanffy[1] first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another. When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. 
 
 However, if you think about it, maybe there is some truth to it after all. What follows is the introduction to a live Systems Thinking book presented from a cross discipline models perspective. Live in the sense that the models are presented in a form that allows you to actually interact with them. 
@@ -63,7 +64,7 @@ Fig. 1 - What do these have in common?
 What they have in common is that they all present a character of growth. Growth in population or growth in size. There is one underlying structure responsible for their nature as depicted in Fig. 2.
 
 <IFRAME SRC="http://InsightMaker.com/insight/4530/embed?topBar=0&sideBar=0&zoom=0" TITLE="Embedded Insight" width=600 height=420></IFRAME>
-Fig. 2 - Simple Reinforcing Growth Model <a href="http://www.youtube.com/watch?v=MUaBFzCfwVk" target="_blank">(Video)</a>
+Fig. 2 - Simple Reinforcing Growth Model <a href="http://www.youtube.com/watch?v=7LOseo3GiwA" target="_blank">(Video)</a>
 
 If you conder sider each item in figure one to be an amount of something that something increases over time. And the amount that it increses depends on how much of that something there is already and a factor.
 
