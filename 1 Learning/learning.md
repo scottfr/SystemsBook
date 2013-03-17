@@ -75,6 +75,23 @@ As such many of the models we develop to make sense of thing are actually flawed
 
 **A Better Way**
 
+Based on the understanding I hope you've developed to this point it should be obvious that we need a better way to develop models that are more likely to be correct as well as surface flaws in many of our current mental models.
+
+Ludwig von Bertalanffy(1) first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another. When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. However, if you think about it, maybe there is some truth to it after all.
+
+I'm not asking you to believe the previous statement just because it was provided here. Though if you give me a few minutes the experience that follows may allow you to arrive at a sensibility of the statement from your own perspective.
+
+Consider the images in the following figure and ask yourself what it is that all these different items actually have in common.
+
+![](http://i.imgur.com/S6O3xsc.png)
+
+Fig. 5 - What doe these items have in common?
+
+They all represent collections of stuff. Admittedly each image represents different stuff though stuff just the same. Because this stuff collected over time it's really more appropriate to refer to the the collections as accumulations.  
+
+
+
+
 
 **References**
 
@@ -90,3 +107,6 @@ As such many of the models we develop to make sense of thing are actually flawed
 2. http://www.applianceexpert24-7.com/refrigerators.html
 3. http://www.systemswiki.org/images/7/7c/Tkco2.gif
 4. http://blog.pegasuscom.com/Leverage-Points-Blog/?Tag=ladder%20of%20inference
+5. [http://insightmaker.com/insight/4957](http://insightmaker.com/insight/4957)
+5. [http://insightmaker.com/insight/4548](http://insightmaker.com/insight/4548)
+6. [http://insightmaker.com/insight/4530](http://insightmaker.com/insight/4530)
