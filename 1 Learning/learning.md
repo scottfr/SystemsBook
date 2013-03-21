@@ -1,5 +1,11 @@
 # Chapter 1 - It's The Pattern That Connects #
 
+----------
+
+*Develop an awareness that the diverse world around us has a commonality that can be meaningfully represented by just a few elements with rather simply attributes. The basic operation and interaction with embedded models must also experienced and then explained.*
+
+----------
+
 What you learn and your capacity to learn serves as the basis for everything that you do in your life. Yet, have you ever thought about how you really learn about the world around you? Yes, there are some things you memorize early in life like the times tables, and you learn to remember these, though is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that that learning happened? 
 
 **Consider the following**
@@ -51,7 +57,7 @@ When we experience something that experience falls somewhere between complete no
 
 ![Figure 3. Experience between novelty and confirmation as a basis for learning](./nov-conf.png)
 
-[** Figure 3. Experience between novelty and confirmation as a basis for learnin](ttp://www.systemswiki.org/images/7/7c/Tkco2.gif)
+[** Figure 3. Experience between novelty and confirmation as a basis for learnin](http://www.systemswiki.org/images/7/7c/Tkco2.gif)
 
 Consider running into a refrigerator that looks like no refrigerator you've never seen before. From an initial view you are likely not to perceive it as a refrigerator. As you inspect it to find it serves the purpose you've come to understand for refrigerators or if someone tells you it's a refrigerator you then expand your awareness of the range of patterns that constitute a refrigerator.
 
@@ -116,11 +122,11 @@ At this point you may be wondering why so much time was spent making you walk th
 
 All the accumulations depicted in Figure 5 can be represented in a general form by the model in Figure 6. Remember we defined a model as a simplified version of some aspect of the world around us to help us understand something. It doesn't get much simpler than this does it?
 
-Some amount of stuff flowing in causes stuff to increase over time and stuff flowing out causes stuff to decrease over time. With both of these happening at the same time stuff increases if stuff in is larger than stuff out. And if stuff out is greater than stuff in then the accumulation of stuff gets smaller. The most critical aspect of this to remember is that it it takes time for stuff to increase or decrease. How fast the change happens depends on the amount of stuff in the flows.
+Some amount of stuff flowing in causes stuff to increase over time and stuff flowing out causes stuff to decrease over time. With both of these happening at the same time stuff increases if stuff in is larger than stuff out. And if stuff out is greater than stuff in then the accumulation of stuff gets smaller. The most critical aspect of this to remember is that it takes time for stuff to increase or decrease. How fast the change happens depends on the amount of stuff in the flows.
 
-![**Embed** http://insightmaker.com/insight/4990 Figure 7. Swimming Pool](./im-4990a.png)
+<IFRAME SRC="http://InsightMaker.com/insight/4990/embed?topBar=0&sideBar=0&zoom=0" TITLE="Embedded Insight" width=680 height=400></IFRAME>
 
-[** Figure 7. Swimming Po](http://insightmaker.com/insight/4990)
+[** Figure 7. Swimming Pool](http://insightmaker.com/insight/4990)
 
 Lets take a specific instance. Figure 7 represents Figure 6 in Insight Maker. We'll talk about how this was done shortly. Now suppose we have a swimming pool and we start filling it with a hose that fills at 50 gallons an hour. If we let it run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model to show changes over time.
 
@@ -134,9 +140,49 @@ This graph indicates that the after 24 hours the swimming pool with have 1,200 g
 
 ----------
 
-**Insight Maker**: As various models are developed and used I'll present aspects of Insight Maker that you'll need to do the exercises. I won't spend a lot of time on pieces you're not going to user immediately. I think it's far easier to remember things when you actually do or use them. 
+**Insight Maker**: As various models are developed and used I'll present aspects of Insight Maker that you'll need to do the exercises. I won't spend a lot of time on pieces you're not going to use immediately so please don't let any of the displays overwhelm you. I think it's far easier to remember things when you actually use them. 
 
-**Canvas**. 
+**Canvas**. The center area of Insight Maker is the work area where you create models. This area may be scrolled if necessary.
+
+**Toolbar**. Notice in the upper right corner there is a small down arrow. If you click on this arrow it will open the toolbar displayed in Figure 9 which contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, which a few pop up windows of course.
+
+![Figure 9. Insight Maker Toolbar](./im-4990c.png)
+
+[** Figure 9. Insight Maker Toolbar](http://insightmaker.com/insight/4990)
+
+**Parameter Tab**. Just below the arrow you clicked to open the top toolbar is a left pointing double caret. If you click this the parameter tab will open and the left pointing double caret will now point right and can be used to close the parameter tab. This tab serves two different purposes.
+
+If there are no elements of the model on the canvas selected the parameter tab will be similar to Figure 10 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.
+
+![Figure 10. Insight Maker Parameter Bar](./im-4990d.png)
+
+[** Figure 10. Insight Maker Parameter Bar](http://insightmaker.com/insight/4990)
+
+If there is a single element selected on the canvas then the parameter tab will present the list of parameters that can be set for that element. Figure 10 shows the parameters for the stuff element of the model. This is where I set the stuff in to 50 before running the model. Please don't be overwhelmed by this long list of parameters. We'll cover them one at a time as they are actually used in a model.
+
+![Figure 11. Insight Maker Parameter Bar](./im-4990e.png)
+
+[** Figure 11. Insight Maker Parameter Bar](http://insightmaker.com/insight/4990)
+
+You should note in Figure 11 under the User Interface section it indicates that there should be a slider for stuff and it can be set for values from 0 to 100. Each element has some of the same parameters and some unique to it. Click one of the flows and see what the parameters are.
+
+Just a couple more pieces and you can go interact with the model some more and get away from this boring description.
+
+**Time Settings**. In Figure 8 I talked about the swimming pool filling for 24 hours. It's the Time Settings tool that allows you to define this for the model. Figure 12 shows the elements you can set before running a model.
+
+![Figure 12. Insight Maker Time Settings](./im-4990f.png)
+
+[** Figure 12. Insight Maker Time Settings](http://insightmaker.com/insight/4990)
+
+This is where I told the model to start at Time = 0 and runs for 24 time units. It steps one unit at a time and the unit is in Hours. Don't worry about Time Step for now. We'll get into that later.
+
+**Simulation Results**. When you click the Run button Insight Maker steps the model through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as in Figure 13.
+
+![Figure 13. Insight Maker Simulation Results](./im-4990g.png)
+
+[** Figure 13. Insight Maker Simulation Results](http://insightmaker.com/insight/4990)
+
+
 
 ----------
 
