@@ -21,6 +21,7 @@
 <ul>
 <li><a href="#preface">Preface</a></li>
 <li><a href="#chapter-1---its-the-pattern-that-connects">Chapter 1 - It’s The Pattern That Connects</a></li>
+<li><a href="#models-and-truth">Models and Truth</a></li>
 </ul>
 </div>
 <h1 id="preface"><a href="#preface">Preface</a></h1>
@@ -80,6 +81,9 @@
 <li>[2] Hofkirchner, Wolfgang. 2013. Ludwig von Bertalanffy: Forerunner of Evolutionary Systems Theory http://www.bertalanffy.org/2011/wp-content/uploads/2011/09/pdf41.pdf</li>
 </ul>
 <h1 id="chapter-1---its-the-pattern-that-connects"><a href="#chapter-1---its-the-pattern-that-connects">Chapter 1 - It’s The Pattern That Connects</a></h1>
+<hr />
+<p><em>Develop an awareness that the diverse world around us has a commonality that can be meaningfully represented by just a few elements with rather simply attributes. The basic operation and interaction with embedded models must also experienced and then explained.</em></p>
+<hr />
 <p>What you learn and your capacity to learn serves as the basis for everything that you do in your life. Yet, have you ever thought about how you really learn about the world around you? Yes, there are some things you memorize early in life like the times tables, and you learn to remember these, though is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that that learning happened?</p>
 <p><strong>Consider the following</strong></p>
 <ul>
@@ -160,10 +164,10 @@
 <img src="./im-4990.png" alt="Figure 6. The Accumulation of Stuff" /><p class="caption">Figure 6. The Accumulation of Stuff</p>
 </div>
 <p>All the accumulations depicted in Figure 5 can be represented in a general form by the model in Figure 6. Remember we defined a model as a simplified version of some aspect of the world around us to help us understand something. It doesn’t get much simpler than this does it?</p>
-<p>Some amount of stuff flowing in causes stuff to increase over time and stuff flowing out causes stuff to decrease over time. With both of these happening at the same time stuff increases if stuff in is larger than stuff out. And if stuff out is greater than stuff in then the accumulation of stuff gets smaller. The most critical aspect of this to remember is that it it takes time for stuff to increase or decrease. How fast the change happens depends on the amount of stuff in the flows.</p>
-<div class="figure">
-<img src="./im-4990a.png" alt="Embed http://insightmaker.com/insight/4990 Figure 7. Swimming Pool" /><p class="caption"><strong>Embed</strong> http://insightmaker.com/insight/4990 Figure 7. Swimming Pool</p>
-</div>
+<p>Some amount of stuff flowing in causes stuff to increase over time and stuff flowing out causes stuff to decrease over time. With both of these happening at the same time stuff increases if stuff in is larger than stuff out. And if stuff out is greater than stuff in then the accumulation of stuff gets smaller. The most critical aspect of this to remember is that it takes time for stuff to increase or decrease. How fast the change happens depends on the amount of stuff in the flows.</p>
+<IFRAME SRC="http://InsightMaker.com/insight/4990/embed?topBar=0&sideBar=0&zoom=0" TITLE="Embedded Insight" width=680 height=400></IFRAME>
+
+
 <p>Lets take a specific instance. Figure 7 represents Figure 6 in Insight Maker. We’ll talk about how this was done shortly. Now suppose we have a swimming pool and we start filling it with a hose that fills at 50 gallons an hour. If we let it run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model to show changes over time.</p>
 <p>If I set up the model in Figure 7 with stuff = 0, stuff in = 50 and stuff out = 0, set the Time Settings for 24 hours, and then click the Run button the model produces the graph in Figure 8.</p>
 <div class="figure">
@@ -171,9 +175,34 @@
 </div>
 <p>This graph indicates that the after 24 hours the swimming pool with have 1,200 gallons of water in it. I know, it’s about as interesting as watching paint dry. Actually, as you will come to find out, that’s a good thing because this is really easy. A more interesting question might be, if the swimming pool holds 20,000 gallons of water how long with it take to fill with water at 50 gallons per hour? We’ll get to this shortly.</p>
 <hr />
-<p><strong>Insight Maker</strong>: As various models are developed and used I’ll present aspects of Insight Maker that you’ll need to do the exercises. I won’t spend a lot of time on pieces you’re not going to user immediately. I think it’s far easier to remember things when you actually do or use them.</p>
-<p><strong>Canvas</strong>.</p>
+<p><strong>Insight Maker</strong>: As various models are developed and used I’ll present aspects of Insight Maker that you’ll need to do the exercises. I won’t spend a lot of time on pieces you’re not going to use immediately so please don’t let any of the displays overwhelm you. I think it’s far easier to remember things when you actually use them.</p>
+<p><strong>Canvas</strong>. The center area of Insight Maker is the work area where you create models. This area may be scrolled if necessary.</p>
+<p><strong>Toolbar</strong>. Notice in the upper right corner there is a small down arrow. If you click on this arrow it will open the toolbar displayed in Figure 9 which contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, which a few pop up windows of course.</p>
+<div class="figure">
+<img src="./im-4990c.png" alt="Figure 9. Insight Maker Toolbar" /><p class="caption">Figure 9. Insight Maker Toolbar</p>
+</div>
+<p><strong>Parameter Tab</strong>. Just below the arrow you clicked to open the top toolbar is a left pointing double caret. If you click this the parameter tab will open and the left pointing double caret will now point right and can be used to close the parameter tab. This tab serves two different purposes.</p>
+<p>If there are no elements of the model on the canvas selected the parameter tab will be similar to Figure 10 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.</p>
+<div class="figure">
+<img src="./im-4990d.png" alt="Figure 10. Insight Maker Parameter Bar" /><p class="caption">Figure 10. Insight Maker Parameter Bar</p>
+</div>
+<p>If there is a single element selected on the canvas then the parameter tab will present the list of parameters that can be set for that element. Figure 10 shows the parameters for the stuff element of the model. This is where I set the stuff in to 50 before running the model. Please don’t be overwhelmed by this long list of parameters. We’ll cover them one at a time as they are actually used in a model.</p>
+<div class="figure">
+<img src="./im-4990e.png" alt="Figure 11. Insight Maker Parameter Bar" /><p class="caption">Figure 11. Insight Maker Parameter Bar</p>
+</div>
+<p>You should note in Figure 11 under the User Interface section it indicates that there should be a slider for stuff and it can be set for values from 0 to 100. Each element has some of the same parameters and some unique to it. Click one of the flows and see what the parameters are.</p>
+<p>Just a couple more pieces and you can go interact with the model some more and get away from this boring description.</p>
+<p><strong>Time Settings</strong>. In Figure 8 I talked about the swimming pool filling for 24 hours. It’s the Time Settings tool that allows you to define this for the model. Figure 12 shows the elements you can set before running a model.</p>
+<div class="figure">
+<img src="./im-4990f.png" alt="Figure 12. Insight Maker Time Settings" /><p class="caption">Figure 12. Insight Maker Time Settings</p>
+</div>
+<p>This is where I told the model to start at Time = 0 and runs for 24 time units. It steps one unit at a time and the unit is in Hours. Don’t worry about Time Step for now. We’ll get into that later.</p>
+<p><strong>Simulation Results</strong>. When you click the Run button Insight Maker steps the model through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as in Figure 13.</p>
+<div class="figure">
+<img src="./im-4990g.png" alt="Figure 13. Insight Maker Simulation Results" /><p class="caption">Figure 13. Insight Maker Simulation Results</p>
+</div>
 <hr />
 <p>more stuff here</p>
+<h1 id="models-and-truth"><a href="#models-and-truth">Models and Truth</a></h1>
 </body>
 </html>
