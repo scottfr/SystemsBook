@@ -2,7 +2,7 @@
 
 ----------
 
-*Develop an awareness that the diverse world around us has a commonality that can be meaningfully represented by just a few elements with rather simply attributes. The basic operation and interaction with embedded models must also experienced and then explained.*
+*Develop an awareness that the diverse world around us has a commonality that can be meaningfully represented by just a few elements with rather simple attributes. The basic operation and interaction with embedded models must also experienced and then the supporting aspects of Insight Maker explained.*
 
 ----------
 
@@ -110,7 +110,7 @@ For each of the accumulations in Figure 5 how they change is a bit different and
 
 ----------
 
-**Exercise**: Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that accumulate over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc.. What are the flows that increase and decrease them and what are the time frames over which you think about the accumulation of that stock?
+**Exercise**. Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that accumulate over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc.. What are the flows that increase and decrease them and what are the time frames over which you think about the accumulation of that stock?
 
 ----------
 
@@ -124,7 +124,7 @@ All the accumulations depicted in Figure 5 can be represented in a general form 
 
 Some amount of stuff flowing in causes stuff to increase over time and stuff flowing out causes stuff to decrease over time. With both of these happening at the same time stuff increases if stuff in is larger than stuff out. And if stuff out is greater than stuff in then the accumulation of stuff gets smaller. The most critical aspect of this to remember is that it takes time for stuff to increase or decrease. How fast the change happens depends on the amount of stuff in the flows.
 
-<IFRAME SRC="http://InsightMaker.com/insight/4990/embed?topBar=0&sideBar=0&zoom=0" TITLE="Embedded Insight" width=680 height=400></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/4990/embed?topBar=0&sideBar=1&zoom=1" TITLE="Figure 7. Swimming Pool" width=680 height=400></IFRAME>
 
 [** Figure 7. Swimming Pool](http://insightmaker.com/insight/4990)
 
@@ -140,29 +140,35 @@ This graph indicates that the after 24 hours the swimming pool with have 1,200 g
 
 ----------
 
-**Insight Maker**: As various models are developed and used I'll present aspects of Insight Maker that you'll need to do the exercises. I won't spend a lot of time on pieces you're not going to use immediately so please don't let any of the displays overwhelm you. I think it's far easier to remember things when you actually use them. 
+**Modeling Notes**
 
-**Canvas**. The center area of Insight Maker is the work area where you create models. This area may be scrolled if necessary.
+As various models are developed and used I'll present aspects of the modeling environment that you'll need to do the exercises. I won't spend a lot of time on pieces you're not going to use immediately so please don't let any of the displays overwhelm you. I think it's far easier to remember things when you actually use them. 
+
+**Canvas**. The center area of Insight Maker is the work area where you create models. This area may be scrolled if necessary. I'll talk about how to actually create models a bit later.
+
+**Stock**. A rectangle that indicates a quantity of something that accumulates and accumulation takes time. Stocks don't change in the blink of an eye.
+
+**Flow**. A directed arrow representing the flow of something into or out of a stock. Remember that a stock can only be changed by a flow. Hand waving and magic don't work. The flow has to be explicit to change a stock, and it takes time.
 
 **Toolbar**. Notice in the upper right corner there is a small down arrow. If you click on this arrow it will open the toolbar displayed in Figure 9 which contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, which a few pop up windows of course.
 
-![Figure 9. Insight Maker Toolbar](./im-4990c.png)
+![Figure 9. Toolbar](./im-4990c.png)
 
-[** Figure 9. Insight Maker Toolbar](http://insightmaker.com/insight/4990)
+[** Figure 9. Toolbar](http://insightmaker.com/insight/4990)
 
 **Parameter Tab**. Just below the arrow you clicked to open the top toolbar is a left pointing double caret. If you click this the parameter tab will open and the left pointing double caret will now point right and can be used to close the parameter tab. This tab serves two different purposes.
 
 If there are no elements of the model on the canvas selected the parameter tab will be similar to Figure 10 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.
 
-![Figure 10. Insight Maker Parameter Bar](./im-4990d.png)
+![Figure 10. Configuration Panel](./im-4990d.png)
 
-[** Figure 10. Insight Maker Parameter Bar](http://insightmaker.com/insight/4990)
+[** Figure 10. Configuration Panel](http://insightmaker.com/insight/4990)
 
 If there is a single element selected on the canvas then the parameter tab will present the list of parameters that can be set for that element. Figure 10 shows the parameters for the stuff element of the model. This is where I set the stuff in to 50 before running the model. Please don't be overwhelmed by this long list of parameters. We'll cover them one at a time as they are actually used in a model.
 
-![Figure 11. Insight Maker Parameter Bar](./im-4990e.png)
+![Figure 11. Element Parameters](./im-4990e.png)
 
-[** Figure 11. Insight Maker Parameter Bar](http://insightmaker.com/insight/4990)
+[** Figure 11. Element Parameters](http://insightmaker.com/insight/4990)
 
 You should note in Figure 11 under the User Interface section it indicates that there should be a slider for stuff and it can be set for values from 0 to 100. Each element has some of the same parameters and some unique to it. Click one of the flows and see what the parameters are.
 
@@ -170,20 +176,203 @@ Just a couple more pieces and you can go interact with the model some more and g
 
 **Time Settings**. In Figure 8 I talked about the swimming pool filling for 24 hours. It's the Time Settings tool that allows you to define this for the model. Figure 12 shows the elements you can set before running a model.
 
-![Figure 12. Insight Maker Time Settings](./im-4990f.png)
+![Figure 12. Time Settings](./im-4990f.png)
 
-[** Figure 12. Insight Maker Time Settings](http://insightmaker.com/insight/4990)
+[** Figure 12. Time Settings](http://insightmaker.com/insight/4990)
 
 This is where I told the model to start at Time = 0 and runs for 24 time units. It steps one unit at a time and the unit is in Hours. Don't worry about Time Step for now. We'll get into that later.
 
 **Simulation Results**. When you click the Run button Insight Maker steps the model through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as in Figure 13.
 
-![Figure 13. Insight Maker Simulation Results](./im-4990g.png)
+![Figure 13. Simulation Results](./im-4990g.png)
 
-[** Figure 13. Insight Maker Simulation Results](http://insightmaker.com/insight/4990)
+[** Figure 13. Simulation Results](http://insightmaker.com/insight/4990)
 
+**Configure Simulation Results**. A default configuration is put together when the model is build on the canvas. If you click the Configure button in the upper right corner of the Simulation Results window the Chart/Table Configuration window will open. It is in this window you tell Insight Maker what type of display you want, which items of the mode are to be displayed. The only part you need be concerned about at the moment is the Y-Axis Label filed. That's where I told Insight Maker that the items displayed were in Gallons. You will need to change this shortly in the next exercise.
 
+Note that if you change items in the configuration they will be immediately reflected in the Simulation Results window when you click Apply. You don't need to run the model over again to see a different configuration of the data. This makes it very convenient when when you decide you need another display for one or two of the items.
+
+![Figure 13. Chart/Table Configuration](./im-4990h.png)
+
+[** Figure 13. Chart/Table Configuration](http://insightmaker.com/insight/4990)
+
+I hope you haven't found this short introduction to Insight Maker too overwhelming. As I said I will try to introduce elements of Insight Maker just as you need them to interact with models as they are presented. 
 
 ----------
 
-more stuff here
+Too much explaining and not enough hands on interaction gets to be real boring in a hurry. I encourage you to actually do the exercises presented. By interacting with the various aspects of Insight Maker you will develop a level of comfort and expertise which will serve you well throughout the rest of the book.
+
+----------
+
+**Exercise**. Go back and consider the various pictures in Figure 5. Pick a couple of them to model. The only parts you need to set up are the Time Settings, how long will it run and the Time Units. You can also set the values for stuff, stuff in and stuff out on the Configuration Panel. After you run the model open the Chart/Table configuration window and set the Y-Axis Label appropriate for what you're modeling. I encourage you to be adventurous. Make new Displays, Table Displays, etc. You can't brake anything, it's just an opportunity to become comfortable with the environment and learn.
+
+----------
+
+Now that you've become intimately familiar with almost the simplest model possible lets go back and look at a couple of the pictures in Figure 5 and think about how the accumulations change in a bit more detail.
+
+**Rabbit Population Growth**
+
+If you modeled the accumulation of rabbits you may have already realized that the model of Figure 7 is missing something. Yes, if you add rabbits to rabbits you get even more rabbits. Though if you have more rabbits don't they create even more rabbits? Figure 14 is a model that reflects the the notion that rabbits create more rabbits.
+
+<IFRAME SRC="http://InsightMaker.com/insight/5123/embed?topBar=0&sideBar=1&zoom=1" TITLE="Figure 14. Rabbit Population Growth" width=680 height=440></IFRAME>
+
+[** Figure 14. Rabbit Population Growth](http://insightmaker.com/insight/5123)
+
+----------
+
+**Modeling Notes**
+
+I've stuck a couple new pieces in here and it's probably a good idea if I explain the pieces before talking about how it works. The previous model had a stock, something that accumulates, and flows, the movement of stuff into or out of a stock. And the real important thing to remember was that accumulations take time to change. Stocks only change in the blink of an eye if you blink for a very long time.
+
+**Variable**. A constant or equation used to influence some part of the model. Remember that a variable and a stock are different. A stock is an accumulation that changes over time in a model as a result of one or more flows. While a variable may change it doesn't represent an accumulation. Rabbit Birth Rate is a variable, and in this model a constant value.
+
+**Link**. A link is used to communicate a value of one element to another. The link doesn't actually represent something moving like a flow does.
+
+**= & i**. If you mouse over the elements of the mode you'll notice an **=** and an **i** appear. The **i** indicates there is additional info available so if you click it a note window will open with a description of the element. This is because the info was entered when the model was created. The **=** indicates there is a value or equation associated with the element. If you click on the **=** it will open the \u{Equation Editor} window. We'll talk more about this when you start building a model.
+
+----------
+
+Based on the previous modeling notes the model depicted in Figure 14 indicates that if you start with some population of Rabbits and each time period the current number of Rabbits times the Rabbit Birth Rate will result in a number of Births. This number of Births will then be added to the accumulation of Rabbis and figure into the calculation for the next period. If you mouse over the elements of the model and click on the **=** sign you can look at the definitions for the elements.
+
+The Time Settings for the model were set up to run from 0 to 12 months. If you click the Run button you you might be surprised when the model produces the graph in image in Figure 15.
+
+![Figure 14. Rabbit Population Growth with No Rabbits](./im-5123.png)
+
+[** Figure 14. Rabbit Population Growth with No Rabbits](http://insightmaker.com/insight/5123)
+
+Figure 14 really shouldn't be a surprise. If you look at the Configuration Panel you'll see that it indicates 0 Rabbits and 0 Rabbit Birth Rate. If there are no Rabbits how could anything happen? And if we had some Rabbits though the Rabbit Birth Rate was 0 what would you expect the result to be? Why don't you just plug it into the model, run it, and find out?
+
+Suppose we start with 10 Rabbits, half of which are male and half of which are female. My research indicates that a female rabbit can give birth to between 18 and 26 Rabbits a year. I'll average this out (18 + 24) / 2 = 22 and then I'll round this up to 24 just because it will make the math easier. Thus if a female Rabbit can produce 24 Rabbits in a year, that's 2 per months, though it actually takes two Rabbits. With all these assumptions we get about 1 new Rabbit per month for each Rabbit. If you plug Rabbits = 10 and Rabbit Birth Rate = 1 into the model and run it you should get Figure 15.
+
+![Figure 15. Rabbit Population Growth with 10 Rabbits](./im-5123a.png)
+
+[** Figure 15. Rabbit Population Growth with 10 Rabbits](http://insightmaker.com/insight/5123)
+
+Forty thousand Rabbits in a year? That seems a bit bizarre doesn't it? This result actually points out the real value of modeling, which is learning. You build a model based on what you think you understand. You then populate it with assumptions about the values and you run it. The result then either seems to make sense or seems really bizarre. In that case what the model is telling you is that either the structure is wrong, the assumptions are wrong, or both, because the world can't possibly be this bizarre. As a result you investigate the model and your assumptions and as you understand better the model gets better and at some point the model finally serves its purpose, to be a simplification of some aspect of the world which leads to a better understanding. I hope you come to find as I have that going round and round with a model can be a delightful learning process.
+
+After that sidetrack lets get back to our 40,000 Rabbits that can't possibly exist after a year. I'm pretty sure I can be certain how many Rabbits I started with at the beginning. And when I check my formula for Births = Rabbits * Rabbit Birth Rate it seems to be in order. This sort of means my assumption for Rabbit Birth Rate must be too big. And if you think about what the model is doing it's probably not too difficult to figure out that the model assumes that a Rabbit can be born this month and then give birth to another Rabbit next month. If a Rabbit has to mature for six months before it gives birth to Rabbits then the Rabbit Birth Rate might be something more like 20%. Using this estimate for Rabbit Birth Rate the model produces Figure 16.
+
+![Figure 16. Rabbit Population Growth with 10 Rabbits and 20% Birth Rate](./im-5123b.png)
+
+[** Figure 16. Rabbit Population Growth with 10 Rabbits and 20% Birth Rate](http://insightmaker.com/insight/5123)
+
+Is this right? A good thing to remember at this point is that's actually the wrong question. A better question might be, "What have I learned, and is there more I can learn?" The graph in Figure 16 sure seems more reasonable than what the model presented in Figure 15 though I don't think we have a high degree of confidence in the current Rabbit Birth Rate. And there are a number of other questions we could ask about our Rabbits. What is the Rabbit Death Rate? Do they have enough food to eat? Are they living out in the open where Coyotes and Foxes can get at them? Does their owner have a passion for Rabbit Stew? These might each be a basis for building a better model, though at this point we're going to leave the Rabbits alone and move on to something else.
+
+The most important learning I hope you take away from this model is that when what flows into the accumulation increases as the accumulation increases the accumulation can get real big in a hurry. This is actually called exponential grown and we'll talk in more detail about this in due quite soon.
+
+**Filling A Swimming Pool**
+
+Long long ago, meaning back in Figure 7 and Figure 8 I was talking about filling a swimming pool with a hose and how much water was in the pool after a period of time. A more useful question might be, If the pool holds 20,000 gallons of water and the hose fills the pool at 50 gallons per hour, how long will it take to fill the pool. I know, you can do the math faster than it will take to build the model. Please bear with me a bit as there's another aspect of models right around the corner you will find very useful on an ongoing basis.
+
+<IFRAME SRC="http://InsightMaker.com/insight/5128/embed?topBar=0&sideBar=1&zoom=0" TITLE="Figure 17. Filling a Swimming Pool v1.0" width=680 height=400></IFRAME>
+
+[** Figure 17. Filling a Swimming Pool v1.0](http://insightmaker.com/insight/5128)
+
+I begin with a Swimming Pool that needs to be filled with a hose. I know how many gallows of water it takes to fill the pool and I don't want to put too much water in the pool. I create a model where I compare the amount of the water in the Swimming Pool with the the Full Level and use that to decide whether water is flowing in the hose or not. If you mouse over Hose and click the **=** sign you'll see the following equation.
+
+    IfThenElse([Swimmng Pool] < [Full Level], [Full Level]-[Swimmng Pool]), 0)
+
+This says that if the Swimming Pool isn't full then I  need to add enough water to fill the pool. And if the Swimming Pool is full then I add 0.
+
+----------
+
+**Modeling Note**
+
+
+Isn't it curious that the structure of this model looks just like the one for the Rabbit Population growth in Figure 14. I'll talk about this after we figure out how long it's going to take to fill the Swimming Pool.
+
+----------
+
+With the Time Settings set for the model to run for 24 hours. Set the Swimming Pool to 0, meaning empty, and the Full Level to 20,000, on the Configuration go ahead and click the Run button. You should end up with the graph as shown in Figure 18.
+
+![Figure 18. How long to fill the pool](./im-5128.png)
+
+[** Figure 18. How long to fill the pool](http://www.insightmaker.com/insight/5128)
+
+This is really great. I can fill the Swimming Pool in just 1 day, or can I? Either it's a really really big hose or I've done something wrong because I don't think I can really fill the Swimming Pool with a Hose in one day if it takes 20,000 gallons.
+
+----------
+
+**Modeling Note**
+
+I sincerely hope you come to understand that when your models don't do what you expect them to do it's not a problem -- it's opportunity for learning. This is the real reason why we do modeling. Just think of it as, the more things don't go the way you expect them too, the more opportunities you have to learn.
+
+----------
+
+As I look back at the formula I put in for the Hose I notice I didn't take into account the my initial statement that the Hose could only delivery 50 gallons per hour. And, might it be useful if I could see what happened with different Hose capacities?
+
+Figure 19 is a revised version of the model with Hose Capacity as a variable so you can set the capacity of the hose before you run the model.
+
+<IFRAME SRC="http://InsightMaker.com/insight/5130/embed?topBar=0&sideBar=1&zoom=0" TITLE="Figure 19. Filling a Swimming Pool v2.0" width=680 height=400></IFRAME>
+
+[** Figure 19. Filling a Swimming Pool v2.0](http://insightmaker.com/insight/5130)
+
+The new formula for Hose takes into account both the current amount of water in the Swimming Pool, Full Level and Hose Capacity
+
+	IfThenElse([Swimmng Pool] < [Full Level], min([Full Level]-[Swimmng Pool],[Hose Capacity]), 0)
+
+With Hose Capacity = 50 if you run the model it should produce Figure 20.
+
+![Figure 20. How long to fill the pool at 50 gallons per hour](./im-5130.png)
+
+[** Figure 20. How long to fill the pool at 50 gallons per hour](http://www.insightmaker.com/insight/5128)
+
+Was this what you expected? Probably not. Over a period of 24 hours we've not even come close to filling the Swimming Pool.
+
+Open the Time Settings and set the Simulation Length to 600 hours and Run the model again. Your run should produce the an equivalent of Figure 19.
+
+![Figure 21. Filling the pool takes how long?](./im-5130a.png)
+
+[** Figure 21. Filling the pool takes how long?](http://www.insightmaker.com/insight/5128)
+
+Figure 19 indicates we need to wait 400 hours to fill the pool. That's a little over 16.5 days. I think we need a bigger hose.
+
+While there are a number of things we could do to improve the model at this point I think we've gone far enough with this one.
+
+----------
+
+**Exercise**. Do a number of runs for the model in Figure 19 with different values for Full Level and Hose Capacity.
+
+----------
+
+**Similar Structures / Different Behavior**
+
+If you compare Figure 14 and Figure 19 you should find the two of them to be quite similar. And yet the behavior of the two modes were distinctly different.
+
+<IFRAME SRC="http://InsightMaker.com/insight/5138/embed?topBar=0&sideBar=0&zoom=0" TITLE="Figure 22. Similar Structures/Different Behaviors" width=680 height=400></IFRAME>
+
+[** Figure 22. Similar Structures/Different Behaviors](http://insightmaker.com/insight/5138)
+
+In Figure 22 I've redrawn the Rabbits model so it's easier to see how similar they are. The Swimming Pool and Rabbits both represent accumulations. Hose and Births both represent flows into the stock. Hose Capacity and Rabbit Birth Rate are both factors which govern he rate of flow. Full Level is a target value which the Rabbits model doesn't have. The difference that makes a difference is what happens in the connection between the accumulation, or stock, and the flow.
+
+The link between the stock and the flow provides information from one point to the other and is generally referred to as feedback, mostly probably because the information travels in the opposite direction as the flow.
+
+**Balancing**. In the Swimming Pool model the Hose flow depends on the difference between the value of Swimming Pool and Full Level. This difference influences the Hose flow to increase the Swimming Pool until it reached Full Level. The structure tries to bring about a balance between Swimming Pool and Full Level so the difference is zero, and then there's no more Hose flow.
+
+**Reinforcing**. In the Rabbits model Births depends on the value of Rabbits. The number of Rabbits influences Births to increase the number of Rabbits which increases the Births. One might consider a Reinforcing structure to be a Balancing structure that's out of control.
+
+Would you believe that no matter how complicated a model may look it's really only some number of these two structures connected together? In the next chapter you will begin actually building some models and investigating the implications of the Balancing and Reinforcing structures.
+
+----------
+
+**Exercise**. I put some values in the Figure 22 model elements so when you run the model it will produce the graph in Figure 23. Can you figure out why the values assigned care are responsible for the curves that are produced?
+
+----------
+
+![Figure 23. Balancing and Reinforcing Results](./im-5138.png)
+
+[** Figure 22. Balancing and Reinforcing Results](http://www.insightmaker.com/insight/5128)
+
+----------
+
+**Summary**
+
+- Models are simplified versions of the world around us.
+- We build models to help us understand. We learn with them.
+- We build simple models and add to them as we understand more.
+- Reinforcing and Balancing structures are the basic building blocks for all models.
+
+----------
+
+
+
