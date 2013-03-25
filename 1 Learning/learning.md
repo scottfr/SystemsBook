@@ -378,6 +378,3 @@ Would you believe that no matter how complicated a model may look it's really on
 - These building blocks can aid understanding aspects of our interactions with the world around us.
 
 ----------
-
-
-
