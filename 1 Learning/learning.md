@@ -2,13 +2,39 @@
 
 ----------
 
-*Develop an awareness that the diverse world around us has a commonality that can be meaningfully represented by just a few elements with rather simple attributes. The basic operation and interaction with embedded models must also experienced and then the supporting aspects of Insight Maker explained.*
+### Notes to Reviewers ###
+
+#### Chapter Intent ####
+
+Develop an awareness that the diverse world around us has a commonality that can be meaningfully represented by just a few interacting elements with rather simple attributes. The basic operation and interaction with embedded models must also be experienced and supporting aspects of Insight Maker explained.
+
+#### Figure Captions ####
+
+Each figure is followed by a sequenced figure caption line that starts with ** and these lines are also an internet link. These lines are inserted so I can easily get back to wherever that graphic originated should I need to create a revised version of it. These statements will be deleted by the post processor and replaced with figure captions which are embedded in the Markdown formatting.
+
+#### Insight Maker References ####
+
+I'm doing the best I can representing the version of Insight Maker I won't be able to see for a couple of months. The interactive Insight Maker models are embedded from Insight Maker and the model is owned my me. This means that when one looks at it in this chapter it doesn't look like it will look in the final book. Scott is creating a version of Insight Maker that will operate in a touch tablet environment. That version of Insight Maker will be embedded in the book and each book owner will own the models in the book. That means they will look different. As such I have to code something so I'll know what to include later and reviewers can look at and connect with the written words associated with it. Getting through this seems to be a tall order.
+
+#### Macros ####
+
+There are certain aspects of the text formatting we don't have figured out and have resigned ourselves to the fact that we won't have this figured out for some time. As such macros are being coded to be replaced in the content post processing phase. I sorry that it's likely to make the text a bit more difficult to read.
+
+- \a{model attribute}
+- \c{citation}
+- \e{equation}
+- \p{model primitive}
+- \u{ui reference}
+
+#### Relation to Table of Contents ####
+
+What follows was presented in the Table of Contents as three separate chapters though the writing seemed to get away from me. The may be split into several chapters or the table of contents may be corrected. Presently it's a bit difficult to tell.
 
 ----------
 
 What you learn, and your capacity to learn, serves as the basis for everything you do in your life. Yet, have you ever thought about how you really learn about the world around you? Yes, there are some things you memorize early in life, like the times tables, and you learn to remember these, though is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that that learning happened? 
 
-**Consider the following**
+### Consider the following ###
 
 - I have a box that’s about 3’ wide, 3’ deep and 6’ high
 - It’s a rather heavy box
@@ -45,17 +71,19 @@ If you see any of these you quickly decide it's a refrigerator. How does that ha
 
 and you understand it to be a refrigerator. Though now that we've arrived at this point we still haven't addressed the question of how you know. You probably were not actually taught that it's the above purpose that defines the essence of a refrigerator. Most people were not, though they have essentially learned it over time.
 
-**Models**
+## Models ##
 
 Models are the way we look at, and understand the world around us. All we have are our models. They are the way we understand everything. This is so because we build our understanding based on what we already understand. The world around us simply has too much detail for us to pay attention to everything. A refrigerator has many pieces though how many do you really pay attention to? Probably not many unless you build or repair refrigerators. We filter out much of the detail around us so we don't become overloaded and we choose what to pay attention to. Sometimes we do this consciously and sometimes subconsciously. In the midst of what we choose to pay attention to there are patterns. Whether we realize it or not it is these patterns that we pay attention to and attempt to make sense of. We understand these patterns by linking them to extend patterns we already understand. And much of the world around us we simply ignore for if we didn't we would just become overwhelmed.
 
 ----------
 
-**Remember**: A model is a simplified version of some aspect of the world around us to help us understand something.
+#### Remember ####
+
+A model is a simplified version of some aspect of the world around us to help us understand something.
 
 ----------
 
-**Learning**
+## Learning ##
 
 When we experience something that experience falls somewhere between complete novelty, meaning that we can't connect it with anything in our past experience, and complete confirmation, meaning that it represents something we perceive as already completely understood. The things we experience which lie somewhere between complete novelty and complete confirmation provide a basis for learning. They represent a basis for connecting to understood patterns, extending our understanding, and what results is learning. {Cite: Jantach, Eric. 1980. The Self-Organizing Universe: Scientific and Human Implications. Pergamon Press. http://www.amazon.com/The-Self-Organizing-Universe-Implications-Innovations/dp/0080243118/}
 
@@ -65,13 +93,13 @@ When we experience something that experience falls somewhere between complete no
 
 Consider running into a refrigerator that looks like no refrigerator you've never seen before. From an initial view you are likely not to perceive it as a refrigerator. As you inspect it to find it serves the purpose you've come to understand for refrigerators or if someone tells you it's a refrigerator you then expand or extend your awareness of the range of patterns that constitute a refrigerator.
 
-**A Basis for Flawed Learning**
+## A Basis for Flawed Learning ##
 
 While reading the previous paragraphs did it dawn on you that much of this pattern recognition/connection/extension learning doesn't happen consciously? We connect with patterns and extend our knowledge at times without even being consciously aware that it is happening. And when it happens in an subconscious manner there isn't really any critical validation that happens along with the learning. Because this ongoing learning happens without critical validation there are things we learn and come to believe which are actually incorrect. We have perceived patterns and extended our learning in a flawed manner. The really annoying thing is that we then act on these beliefs, and when we produce results that don't go the way we planned we wonder why. Or even worse, we don't actually learn from the results and correct our flawed models.
 
 When we act on flawed beliefs when attempting to solve problems we typically create more problems than we fix. It has been said repeatedly that the majority of today's problems are the direct result of yesterday's solutions. Wouldn't this provide a sense that we might really benefit from a better way to think about the world around us, develop better understanding, and develop solutions that don't come back to haunt us in the future?
 
-**Ladder of Inference**
+## Ladder of Inference ##
 
 The best explanation of how we build our beliefs was developed by Chris Argyris {Argyris, Chris. 2013. Chris Argyris. Wikipedia.http://en.wikipedia.org/wiki/Chris_Argyris} and is referred to as the Ladder of Inference. When we consciously traverse this ladder we're in good shape. Though when we traverse this ladder subconsciously we often create learning that is not accurate. We then act on this inaccurate learning and produce inappropriate or undesirable results. {Bellinger, Gene. 2013. Ladder of Inference: Short Circuiting Reality. SystemsWiki. http://www.systemswiki.org/index.php?title=Ladder_of_Inference:_Short_Circuiting_Reality}
 
@@ -83,7 +111,7 @@ Because we live in the moment, even though we may think about the past, or the f
 
 As such, many of the models we develop to make sense of thing are actually flawed. And as previously stated, when we act based on models that simply aren't correct, flawed in some way, the results of our actions are generally simply not what we intended or expected.
 
-**A Better Way**
+## A Better Way ##
 
 Based on the understanding I hope you've developed to this point it should be obvious that we could benefit from a better way to develop models that are more likely to be correct as well as surface flaws in many of our current mental models.
 
@@ -103,18 +131,43 @@ The shorter term often used to refer to an accumulation is "stock." Just where t
 
 For each of the accumulations in Figure 5, how they change is a bit different, as are the time frames concerned. Time frame being the time it takes for some real noticeable change in the accumulation. Let me describe each in some detail.
 
-- **Coffee Cup**. You usually fill a coffee cup from a coffee pot and it takes a few seconds. Then you take a few minutes to drink the coffee as it's usually too hot to drink when you initially get it.
-- **Dump**. Generally a dump accumulates by the truckload after the garbage is picked up at houses or businesses in your community. If the dump were just getting started you'd probably notice it grow with each additional truck load. As it gets bigger and bigger it's gets more difficult to notice that it's growing, even though it is. While the dump is likely to grow almost every day we are probably more likely to think about the growth of the dump in months and years. And does it ever really go away? Usually when it gets to be too much a new dump is started somewhere else and the current dump is buried. Though when it's buried it doesn't really go away. It's still there and we'll probably talk more about dumps later on.
-- **Glacier**. A glacier is a long term accumulation of snow which packs down and turns to ice. Glaciers get bigger in the winter when snow falls and they get smaller in summer when some portion of the glacier melts. The time frame one usually uses to think about glaciers is years or even decades.
-- **Lake**. Lakes are bigger than a pond and smaller than an ocean and usually filled with fresh water, not salty that is. The lake is filled by rivers and streams that flow into it as well as rain water. One might think of this in terms of gallons per hour or gallons per minute in the case of a large inflow such as at Niagara Falls where the water flows into Lake Ontario in the USA. Water leaves the lake through rivers and streams as well as evaporation into the air. For a lake one might think about the water flowing into our out of the lake in hours though when considering the level of the lake itself the change might be considered over days or weeks. It sort of depends on what you're interested in.
-- **Pile of Sand**. The pile of sand probably showed up in a truck that dumped it right where it is. While it may have taken the truck a while to drive from the wherever it started it probably only took a couple of minutes to dump the truck once it arrived. And the sand is probably referred to in cubic yards, which is how much sand it takes to fill a box that's 1 yard wide, 1 yard deep, and 1 yard high. How long it takes for the sand to go away depends on how it's taken away. If you use a wheel barrow then you have to shovel the sand into the wheel barrow and take it to wherever you're going to use it. At this rate it may take days to move it. If you move it with a small piece of machinery, a Bobcat or a Backhoe, then will will probably only take a few minutes to an hour to get it moved.
-- **Rabbits**. A population of rabbits gets larger with new rabbit births and gets smaller with rabbit deaths. Have you ever heard the phrase "multiply like rabbits?" What it means is that it doesn't take very long for a few rabbits to become many rabbits, as long as there is a good food supply and not to many predators like wolves and coyotes. The time frame for considering a rabbit population is probably months to years.
-- **Savings Account**. A savings account is a bank account where if you put money and if you keep it there the bank will periodically give you money just for keeping it there. They won't give you very much, though some. If you keep putting money in your savings account every so often and never take it out one day you'll be rich. Yet, for some reason that doesn't happen to too many people. We'll have to talk about that sometime later in the book. One generally thinks about the money associated with a savings account in dollars, the interest rate as a percentage, and the time frame in months and years.
-- **Swimming Pool**. Swimming pools usually hold thousands of gallons of water and you usually have a couple of options to fill one. You might use a garden hose, which will take days, or a hose from a fire hydrant, which will take a few hours, or from a tanker truck, which probably takes a few loads. In each case the water filling the pool is probably measured in gallons per hour. Once you fill the pool you loose a little water when people get in and out of the pool, thought not too much. Most of the water loss from a pool is though evaporation due to the sun and when you backwash the filter used to keep the pool clean. The change in amount of water is usually measured in gallons per hour.
+#### Coffee Cup ####
+
+You usually fill a coffee cup from a coffee pot and it takes a few seconds. Then you take a few minutes to drink the coffee as it's usually too hot to drink when you initially get it.
+
+#### Dump ####
+
+Generally a dump accumulates by the truckload after the garbage is picked up at houses or businesses in your community. If the dump were just getting started you'd probably notice it grow with each additional truck load. As it gets bigger and bigger it's gets more difficult to notice that it's growing, even though it is. While the dump is likely to grow almost every day we are probably more likely to think about the growth of the dump in months and years. And does it ever really go away? Usually when it gets to be too much a new dump is started somewhere else and the current dump is buried. Though when it's buried it doesn't really go away. It's still there and we'll probably talk more about dumps later on.
+
+#### Glacier ####
+
+A glacier is a long term accumulation of snow which packs down and turns to ice. Glaciers get bigger in the winter when snow falls and they get smaller in summer when some portion of the glacier melts. The time frame one usually uses to think about glaciers is years or even decades.
+
+#### Lake ####
+
+Lakes are bigger than a pond and smaller than an ocean and usually filled with fresh water, not salty that is. The lake is filled by rivers and streams that flow into it as well as rain water. One might think of this in terms of gallons per hour or gallons per minute in the case of a large inflow such as at Niagara Falls where the water flows into Lake Ontario in the USA. Water leaves the lake through rivers and streams as well as evaporation into the air. For a lake one might think about the water flowing into our out of the lake in hours though when considering the level of the lake itself the change might be considered over days or weeks. It sort of depends on what you're interested in.
+
+#### Pile of Sand ####
+
+The pile of sand probably showed up in a truck that dumped it right where it is. While it may have taken the truck a while to drive from the wherever it started it probably only took a couple of minutes to dump the truck once it arrived. And the sand is probably referred to in cubic yards, which is how much sand it takes to fill a box that's 1 yard wide, 1 yard deep, and 1 yard high. How long it takes for the sand to go away depends on how it's taken away. If you use a wheel barrow then you have to shovel the sand into the wheel barrow and take it to wherever you're going to use it. At this rate it may take days to move it. If you move it with a small piece of machinery, a Bobcat or a Backhoe, then will will probably only take a few minutes to an hour to get it moved.
+
+#### Rabbits ####
+
+A population of rabbits gets larger with new rabbit births and gets smaller with rabbit deaths. Have you ever heard the phrase "multiply like rabbits?" What it means is that it doesn't take very long for a few rabbits to become many rabbits, as long as there is a good food supply and not to many predators like wolves and coyotes. The time frame for considering a rabbit population is probably months to years.
+
+#### Savings Account ####
+
+A savings account is a bank account where if you put money and if you keep it there the bank will periodically give you money just for keeping it there. They won't give you very much, though some. If you keep putting money in your savings account every so often and never take it out one day you'll be rich. Yet, for some reason that doesn't happen to too many people. We'll have to talk about that sometime later in the book. One generally thinks about the money associated with a savings account in dollars, the interest rate as a percentage, and the time frame in months and years.
+
+#### Swimming Pool ####
+
+Swimming pools usually hold thousands of gallons of water and you usually have a couple of options to fill one. You might use a garden hose, which will take days, or a hose from a fire hydrant, which will take a few hours, or from a tanker truck, which probably takes a few loads. In each case the water filling the pool is probably measured in gallons per hour. Once you fill the pool you loose a little water when people get in and out of the pool, thought not too much. Most of the water loss from a pool is though evaporation due to the sun and when you backwash the filter used to keep the pool clean. The change in amount of water is usually measured in gallons per hour.
 
 ----------
 
-**Exercise**. Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that accumulate over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc.. What are the flows that increase and decrease them and what are the time frames over which you think about the accumulation of that stock?
+#### Exercise ####
+
+Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that accumulate over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc.. What are the flows that increase and decrease them and what are the time frames over which you think about the accumulation of that stock?
 
 ----------
 
@@ -144,23 +197,33 @@ This graph indicates that the after 24 hours the swimming pool with have 1,200 g
 
 ----------
 
-**Modeling Notes**
+#### Modeling Notes ####
 
 As various models are developed and used I'll present aspects of the modeling environment that you'll need to do the exercises. I won't spend a lot of time on pieces you're not going to use immediately so please don't let any of the displays overwhelm you. I think it's far easier to remember things when you actually use them. 
 
-**Canvas**. The center area is the work area where you create models. This area may be scrolled if necessary. I'll talk about how to actually create models in the next chapter.
+#### Canvas ####
 
-**Stock**. A rectangle indicates a quantity of something that accumulates, and accumulation takes time. Stocks don't change in the blink of an eye, well unless you blink for a long time.
+The center area is the work area where you create models. This area may be scrolled if necessary. I'll talk about how to actually create models in the next chapter.
 
-**Flow**. A directed arrow representing the flow of something into or out of a stock. Remember that a stock can only be changed by a flow. Hand waving and magic don't work. The flow has to be explicit to cause a stock to change, and it takes time.
+#### Stock ####
 
-**Toolbar**. Notice in the upper right corner there is a small down arrow. If you click on this arrow it will open the toolbar displayed in Figure 9. The toolbar contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, with a few pop up windows of course.
+A rectangle indicates a quantity of something that accumulates, and accumulation takes time. Stocks don't change in the blink of an eye, well unless you blink for a long time.
+
+#### Flow ####
+
+A directed arrow representing the flow of something into or out of a stock. Remember that a stock can only be changed by a flow. Hand waving and magic don't work. The flow has to be explicit to cause a stock to change, and it takes time.
+
+#### Toolbar ####
+
+Notice in the upper right corner there is a small down arrow. If you click on this arrow it will open the toolbar displayed in Figure 9. The toolbar contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, with a few pop up windows of course.
 
 ![Figure 9. Toolbar](./im-4990c.png)
 
 [** Figure 9. Toolbar](http://insightmaker.com/insight/4990)
 
-**Parameter Tab**. Just below the arrow you clicked to open the top toolbar is a right pointing double caret. If you click this the parameter tab will close and the right pointing double caret will now point left and can be used to open the parameter tab. This tab serves two different purposes.
+#### Parameter Tab ####
+
+Just below the arrow you clicked to open the top toolbar is a right pointing double caret. If you click this the parameter tab will close and the right pointing double caret will now point left and can be used to open the parameter tab. This tab serves two different purposes.
 
 If there are no elements of the model selected on the canvas the parameter tab will be similar to Figure 10 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.
 
@@ -178,7 +241,9 @@ You should note in Figure 11 under the User Interface section it indicates that 
 
 Just a couple more pieces and you can go interact with the model some more and get away from this boring description.
 
-**Time Settings**. In Figure 8 I talked about the swimming pool filling for 24 hours. It's the Time Settings tool that allows you to define this for the model. Figure 12 shows the elements you can set before running a model.
+#### Time Settings ####
+
+In Figure 8 I talked about the swimming pool filling for 24 hours. It's the Time Settings tool that allows you to define this for the model. Figure 12 shows the elements you can set before running a model.
 
 ![Figure 12. Time Settings](./im-4990f.png)
 
@@ -186,13 +251,17 @@ Just a couple more pieces and you can go interact with the model some more and g
 
 This is where I told the model to start at Time = 0 and runs for 24 time units. It steps one unit at a time and the unit is in Hours. Don't worry about Time Step for now. We'll get into that later.
 
-**Simulation Results**. When you click the Run button the model is stepped through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as in Figure 13.
+#### Simulation Results ####
+
+When you click the Run button the model is stepped through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as in Figure 13.
 
 ![Figure 13. Simulation Results](./im-4990g.png)
 
 [** Figure 13. Simulation Results](http://insightmaker.com/insight/4990)
 
-**Configure Simulation Results**. A default configuration is put together when the model is constructed on the canvas. If you click the Configure button in the upper right corner of the Simulation Results window the Chart/Table Configuration window will open. It is in this window you indicate what type of display you want and which items of the model are to be displayed. The only part you need to be concerned about at the moment is the Y-Axis Label field. That's where I indicated that the items displayed were in Gallons. You will need to change this shortly in the next exercise.
+#### Configure Simulation Results ####
+
+A default configuration is put together when the model is constructed on the canvas. If you click the Configure button in the upper right corner of the Simulation Results window the Chart/Table Configuration window will open. It is in this window you indicate what type of display you want and which items of the model are to be displayed. The only part you need to be concerned about at the moment is the Y-Axis Label field. That's where I indicated that the items displayed were in Gallons. You will need to change this shortly in the next exercise.
 
 Note that if you change items in the configuration they will be immediately reflected in the Simulation Results window when you click Apply. You don't need to run the model over again to see a different configuration of the data. This makes it very convenient when when you decide you need another display for one or two of the items.
 
@@ -208,13 +277,15 @@ Too much explaining and not enough hands on interaction gets to be real boring i
 
 ----------
 
-**Exercise**. Go back and consider the various pictures in Figure 5. Pick a couple of them to model. The only parts you need to set up are the Time Settings, how long will it run and the Time Units. You can also set the values for stuff, stuff in and stuff out on the Configuration Panel. After you run the model open the Chart/Table configuration window and set the Y-Axis Label appropriate for what you're modeling. I encourage you to be adventurous. Make new Displays, Table Displays, etc. You can't brake anything, it's just an opportunity to become comfortable with the environment and learn.
+#### Exercise ####
+
+Go back and consider the various pictures in Figure 5. Pick a couple of them to model. The only parts you need to set up are the Time Settings, how long will it run and the Time Units. You can also set the values for stuff, stuff in and stuff out on the Configuration Panel. After you run the model open the Chart/Table configuration window and set the Y-Axis Label appropriate for what you're modeling. I encourage you to be adventurous. Make new Displays, Table Displays, etc. You can't brake anything, it's just an opportunity to become comfortable with the environment and learn.
 
 ----------
 
 Now that you've become intimately familiar with almost the simplest model possible lets go back and look at a couple of the pictures in Figure 5 and think about how the accumulations change in a bit more detail.
 
-**Rabbit Population Growth**
+## Rabbit Population Growth ##
 
 If you modeled the accumulation of rabbits you may have already realized that the model of Figure 7 is missing something. Yes, if you add rabbits to rabbits you get even more rabbits. Though if you have more rabbits don't they create even more rabbits? Figure 14 is a model that reflects the the notion that rabbits create more rabbits.
 
@@ -224,19 +295,25 @@ If you modeled the accumulation of rabbits you may have already realized that th
 
 ----------
 
-**Modeling Notes**
+#### Modeling Notes ####
 
 I've stuck a couple new pieces in here and it's probably a good idea if I explain the pieces before talking about how it works. The previous model had a stock, something that accumulates, and flows, the movement of stuff into or out of a stock. And the real important thing to remember is that accumulations take time to change. Stocks only change in the blink of an eye if you blink for a very long time.
 
-**Variable**. A constant or equation used to influence some part of the model. Remember that a variable and a stock are different. A stock is an accumulation that changes over time as a result of one or more flows. A variable may change though it doesn't represent an accumulation. Rabbit Birth Rate is a variable, and in this model a constant value.
+#### Variable ####
 
-**Link**. A link is used to communicate a value of one element to another. The link doesn't actually represent something moving like a flow does.
+A constant or equation used to influence some part of the model. Remember that a variable and a stock are different. A stock is an accumulation that changes over time as a result of one or more flows. A variable may change though it doesn't represent an accumulation. Rabbit Birth Rate is a variable, and in this model a constant value.
 
-**= & i**. If you mouse over the elements of the model you'll notice an **=** and an **i** appear. The **i** indicates there is additional info available so if you click it a note window will open with a description of the element. This is because the info was entered when the model was created. The **=** indicates there is a value or equation associated with the element. If you click on the **=** it will open the \u{Equation Editor} window. We'll talk more about this when you start building a model.
+#### Link ####
+
+A link is used to communicate a value of one element to another. The link doesn't actually represent something moving like a flow does.
+
+#### = & i ####
+
+If you mouse over the elements of the model you'll notice an = and an i appear. The i indicates there is additional info available so if you click it a note window will open with a description of the element. This is because the info was entered when the model was created. The = indicates there is a value or equation associated with the element. If you click on the = it will open the \u{Equation Editor} window. We'll talk more about this when you start building a model.
 
 ----------
 
-Based on the previous modeling notes the model depicted in Figure 14 indicates that if you start with some population of Rabbits and each time period the current number of Rabbits times the Rabbit Birth Rate will result in a number of Births. This number of Births will then be added to the accumulation of Rabbis and figure into the calculation for the next period. If you mouse over the elements of the model and click on the **=** sign you can look at the definitions for the elements.
+Based on the previous modeling notes the model depicted in Figure 14 indicates that if you start with some population of Rabbits and each time period the current number of Rabbits times the Rabbit Birth Rate will result in a number of Births. This number of Births will then be added to the accumulation of Rabbis and figure into the calculation for the next period. If you mouse over the elements of the model and click on the = sign you can look at the definitions for the elements.
 
 The Time Settings for the model were set up to run from 0 to 12 months. If you click the Run button you you might be surprised when the model produces the graph in image in Figure 15.
 
@@ -264,7 +341,7 @@ Is this right? A good thing to remember at this point is that's actually the wro
 
 The most important learning I hope you take away from this model is that when what flows into the accumulation increases as the accumulation increases the accumulation can get real big in a hurry. This is actually called exponential grown and we'll talk in more detail about this in due quite soon.
 
-**Filling A Swimming Pool**
+## Filling A Swimming Pool ##
 
 Long long ago, meaning back in Figure 7 and Figure 8 I was talking about filling a swimming pool with a hose and how much water was in the pool after a period of time. A more useful question might be, If the pool holds 20,000 gallons of water and the hose fills the pool at 50 gallons per hour, how long will it take to fill the pool. I know, you can do the math faster than it will take to build the model. Please bear with me a bit as there's another aspect of models right around the corner you will find very useful on an ongoing basis.
 
@@ -272,7 +349,7 @@ Long long ago, meaning back in Figure 7 and Figure 8 I was talking about filling
 
 [** Figure 18. Filling a Swimming Pool v1.0](http://insightmaker.com/insight/5128)
 
-I begin with a Swimming Pool that needs to be filled with a hose. I know how many gallows of water it takes to fill the pool and I don't want to put too much water in the pool. I create a model where I compare the amount of the water in the Swimming Pool with the the Full Level and use that to decide whether water is flowing in the hose or not. If you mouse over Hose and click the **=** sign you'll see the following equation.
+I begin with a Swimming Pool that needs to be filled with a hose. I know how many gallows of water it takes to fill the pool and I don't want to put too much water in the pool. I create a model where I compare the amount of the water in the Swimming Pool with the the Full Level and use that to decide whether water is flowing in the hose or not. If you mouse over Hose and click the = sign you'll see the following equation.
 
     IfThenElse([Swimmng Pool] < [Full Level], [Full Level]-[Swimmng Pool]), 0)
 
@@ -280,7 +357,7 @@ This says that if the Swimming Pool isn't full then I need to add enough water t
 
 ----------
 
-**Modeling Note**
+#### Modeling Note ####
 
 
 Isn't it curious that the structure of this model looks just like the one for the Rabbit Population growth in Figure 14. I'll talk about this after we figure out how long it's going to take to fill the Swimming Pool.
@@ -297,7 +374,7 @@ This is really great. I can fill the Swimming Pool in just 1 day, or can I? Eith
 
 ----------
 
-**Modeling Note**
+#### Modeling Note ####
 
 I sincerely hope you come to understand that when your models don't do what you expect them to do it's not a problem -- it's opportunity for learning. This is the real reason why we do modeling. Just think of it as, the more things don't go the way you expect them too, the more opportunities you have to learn.
 
@@ -335,11 +412,13 @@ While there are a number of things we could do to improve the model at this poin
 
 ----------
 
-**Exercise**. Do a number of runs for the model in Figure 20 with different values for Full Level and Hose Capacity.
+#### Exercise ####
+
+Do a number of runs for the model in Figure 20 with different values for Full Level and Hose Capacity.
 
 ----------
 
-**Similar Structures / Different Behavior**
+## Similar Structures / Different Behavior ##
 
 If you compare Figure 14 and Figure 20 you should find the two of them to be quite similar. And yet the behavior of the two models are distinctly different.
 
@@ -351,15 +430,21 @@ In Figure 23 I've redrawn the Rabbits model so it's easier to see how similar th
 
 The link between the stock and the flow provides information from one point to the other and is generally referred to as feedback, mostly probably because the information travels in the opposite direction as the flow.
 
-**Balancing**. In the Swimming Pool model the Hose flow depends on the difference between the value of Swimming Pool and Full Level. This difference influences the Hose flow to increase the Swimming Pool until it reached Full Level. The structure tries to bring about a balance between Swimming Pool and Full Level so the difference is zero, and then there's no more Hose flow.
+#### Balancing ####
 
-**Reinforcing**. In the Rabbits model Births depends on the value of Rabbits. The number of Rabbits influences Births to increase the number of Rabbits which increases the Births. One might consider a Reinforcing structure to be a Balancing structure that's out of control.
+In the Swimming Pool model the Hose flow depends on the difference between the value of Swimming Pool and Full Level. This difference influences the Hose flow to increase the Swimming Pool until it reached Full Level. The structure tries to bring about a balance between Swimming Pool and Full Level so the difference is zero, and then there's no more Hose flow.
+
+#### Reinforcing ####
+
+In the Rabbits model Births depends on the value of Rabbits. The number of Rabbits influences Births to increase the number of Rabbits which increases the Births. One might consider a Reinforcing structure to be a Balancing structure that's out of control.
 
 Would you believe that no matter how complicated a model may look it's really only some number of these two structures connected together? In the next chapter you will begin actually building some models and investigating the implications of the Balancing and Reinforcing structures.
 
 ----------
 
-**Exercise**. I put some values in the Figure 23 model elements so when you run the model it will produce the graph in Figure 24. Can you figure out why the values assigned are responsible for the curves produced?
+#### Exercise ####
+
+I put some values in the Figure 23 model elements so when you run the model it will produce the graph in Figure 24. Can you figure out why the values assigned are responsible for the curves produced?
 
 ----------
 
@@ -369,7 +454,7 @@ Would you believe that no matter how complicated a model may look it's really on
 
 ----------
 
-**Summary**
+#### Summary ####
 
 - Models are simplified versions of the world around us.
 - We build models to help us understand.
