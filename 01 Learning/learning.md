@@ -52,7 +52,7 @@ What you learn, and your capacity to learn, serves as the basis for everything y
 
 At some point in this sequence you probably became convinced that what was being described was a refrigerator. Now stop for a moment and ask yourself just how was it that you realized what was being described was a refrigerator? Yes it would have been easier if I had just shown you a picture of a refrigerator, though that would have spoiled it, wouldn't it.
 
-![Figure 1. From the description you knew it was a refrigerator - but how?](./frig.png)
+![Figure 1. From the description you knew it was a refrigerator - but how?](./00-frig.png)
 
 [** Figure 1. From the description you knew it was a refrigerator - but how?](http://coastappliancerepair.com/los-angeles-blog/appliance-repair/ge-refrigerator-repair-los-angeles/)
 
@@ -60,7 +60,7 @@ As long as you knew beforehand what a refrigerator was, the statements could hav
 
 You have also most likely come to understand that all refrigerators are not identical. Some have one door with a separate compartment inside. Some have two doors and a drawer. Some are much smaller than others. Some can fit under a counter and some even fit on top of a counter. Some can be so large you can walk into them.
 
-![Figure 2. Many kinds of refrigerators, or freezers - But how do you know?](./frigs.png)
+![Figure 2. Many kinds of refrigerators, or freezers - But how do you know?](./00-frigs.png)
 
 [** Figure 2. Many kinds of refrigerators, or freezers - But how do you know?](http://www.applianceexpert24-7.com/refrigerators.html)
 
@@ -87,7 +87,7 @@ A model is a simplified version of some aspect of the world around us to help us
 
 When we experience something that experience falls somewhere between complete novelty, meaning that we can't connect it with anything in our past experience, and complete confirmation, meaning that it represents something we perceive as already completely understood. The things we experience which lie somewhere between complete novelty and complete confirmation provide a basis for learning. They represent a basis for connecting to understood patterns, extending our understanding, and what results is learning. {Cite: Jantach, Eric. 1980. The Self-Organizing Universe: Scientific and Human Implications. Pergamon Press. http://www.amazon.com/The-Self-Organizing-Universe-Implications-Innovations/dp/0080243118/}
 
-![Figure 3. Experience between novelty and confirmation as a basis for learning](./nov-conf.png)
+![Figure 3. Experience between novelty and confirmation as a basis for learning](./00-nov-conf.png)
 
 [** Figure 3. Experience between novelty and confirmation as a basis for learnin](http://www.systemswiki.org/images/7/7c/Tkco2.gif)
 
@@ -103,7 +103,7 @@ When we act on flawed beliefs when attempting to solve problems we typically cre
 
 The best explanation of how we build our beliefs was developed by Chris Argyris {Argyris, Chris. 2013. Chris Argyris. Wikipedia.http://en.wikipedia.org/wiki/Chris_Argyris} and is referred to as the Ladder of Inference. When we consciously traverse this ladder we're in good shape. Though when we traverse this ladder subconsciously we often create learning that is not accurate. We then act on this inaccurate learning and produce inappropriate or undesirable results. {Bellinger, Gene. 2013. Ladder of Inference: Short Circuiting Reality. SystemsWiki. http://www.systemswiki.org/index.php?title=Ladder_of_Inference:_Short_Circuiting_Reality}
 
-![Figure 4. How we form beliefs and influence our actions](./ladder.png)
+![Figure 4. How we form beliefs and influence our actions](./00-ladder.png)
 
 [** Figure 4. How we form beliefs and influence our action](http://blog.pegasuscom.com/Leverage-Points-Blog/?Tag=ladder%20of%20inference)
 
@@ -121,7 +121,7 @@ I'm not asking you to believe the previous statement just because it was provide
 
 Consider the images in Figure 5 and ask yourself what it is that all these different items actually have in common.
 
-![Figure 5. What do these items have in common?](./im-4957.png)
+![Figure 5. What do these items have in common?](./00-im-4957.png)
 
 [** Figure 5. What do these items have in common?](http://insightmaker.com/insight/4957)
 
@@ -173,7 +173,7 @@ Take a few minutes and identify half a dozen situations you're familiar with whe
 
 At this point you may be wondering why so much time was spent making you walk though all these examples for the accumulation of stuff. Since we said this was an interactive book you're probably wondering where the interaction is.
 
-![Figure 6. The Accumulation of Stuff](./im-4990.png)
+![Figure 6. The Accumulation of Stuff](./00-im-4990.png)
 
 [** Figure 6. The Accumulation of Stuff](http://insightmaker.com/insight/4990)
 
@@ -189,7 +189,7 @@ Lets take a specific instance. Figure 7 represents Figure 6 in Insight Maker, an
 
 If I set up the model in Figure 7 with stuff = 0, stuff in = 50 and stuff out = 0, set the Time Settings for 24 hours, and then click the Run button, the model produces the graph in Figure 8.
 
-![Figure 8. Adding water to the swimming pool](./im-4990b.png)
+![Figure 8. Adding water to the swimming pool](./00-im-4990b.png)
 
 [** Figure 8. Adding water to the swimming pool](http://insightmaker.com/insight/4990)
 
@@ -217,7 +217,7 @@ A directed arrow representing the flow of something into or out of a stock. Reme
 
 Notice in the upper right corner there is a small down arrow. If you click on this arrow it will open the toolbar displayed in Figure 9. The toolbar contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, with a few pop up windows of course.
 
-![Figure 9. Toolbar](./im-4990c.png)
+![Figure 9. Toolbar](./00-im-4990c.png)
 
 [** Figure 9. Toolbar](http://insightmaker.com/insight/4990)
 
@@ -227,13 +227,13 @@ Just below the arrow you clicked to open the top toolbar is a right pointing dou
 
 If there are no elements of the model selected on the canvas the parameter tab will be similar to Figure 10 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.
 
-![Figure 10. Configuration Panel](./im-4990d.png)
+![Figure 10. Configuration Panel](./00-im-4990d.png)
 
 [** Figure 10. Configuration Panel](http://insightmaker.com/insight/4990)
 
 If there is a single element selected on the canvas then the parameter tab will present the list of parameters that can be set for that element. Figure 11 shows the parameters for the stuff element of the model. This is where I set the stuff in to 50 before running the model. Please don't be overwhelmed by this long list of parameters. We'll cover them one at a time as they are actually used in a model.
 
-![Figure 11. Element Parameters](./im-4990e.png)
+![Figure 11. Element Parameters](./00-im-4990e.png)
 
 [** Figure 11. Element Parameters](http://insightmaker.com/insight/4990)
 
@@ -245,7 +245,7 @@ Just a couple more pieces and you can go interact with the model some more and g
 
 In Figure 8 I talked about the swimming pool filling for 24 hours. It's the Time Settings tool that allows you to define this for the model. Figure 12 shows the elements you can set before running a model.
 
-![Figure 12. Time Settings](./im-4990f.png)
+![Figure 12. Time Settings](./00-im-4990f.png)
 
 [** Figure 12. Time Settings](http://insightmaker.com/insight/4990)
 
@@ -255,7 +255,7 @@ This is where I told the model to start at Time = 0 and runs for 24 time units. 
 
 When you click the Run button the model is stepped through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as in Figure 13.
 
-![Figure 13. Simulation Results](./im-4990g.png)
+![Figure 13. Simulation Results](./00-im-4990g.png)
 
 [** Figure 13. Simulation Results](http://insightmaker.com/insight/4990)
 
@@ -265,7 +265,7 @@ A default configuration is put together when the model is constructed on the can
 
 Note that if you change items in the configuration they will be immediately reflected in the Simulation Results window when you click Apply. You don't need to run the model over again to see a different configuration of the data. This makes it very convenient when when you decide you need another display for one or two of the items.
 
-![Figure 13. Chart/Table Configuration](./im-4990h.png)
+![Figure 13. Chart/Table Configuration](./00-im-4990h.png)
 
 [** Figure 13. Chart/Table Configuration](http://insightmaker.com/insight/4990)
 
@@ -317,7 +317,7 @@ Based on the previous modeling notes the model depicted in Figure 14 indicates t
 
 The Time Settings for the model were set up to run from 0 to 12 months. If you click the Run button you you might be surprised when the model produces the graph in image in Figure 15.
 
-![Figure 15. Rabbit Population Growth with No Rabbits](./im-5123.png)
+![Figure 15. Rabbit Population Growth with No Rabbits](./00-im-5123.png)
 
 [** Figure 15. Rabbit Population Growth with No Rabbits](http://insightmaker.com/insight/5123)
 
@@ -325,7 +325,7 @@ Figure 15 really shouldn't be a surprise. If you look at the Configuration Panel
 
 Suppose we start with 10 Rabbits, half of which are male and half of which are female. My research indicates that a female rabbit can give birth to between 18 and 26 Rabbits a year. I'll average this out (18 + 24) / 2 = 22 and then I'll round this up to 24 just because it will make the math easier. If a female Rabbit can produce 24 Rabbits in a year, that's 2 per months, though it actually takes two Rabbits. With all these assumptions we get about 1 new Rabbit per month for each Rabbit. If you plug Rabbits = 10 and Rabbit Birth Rate = 1 into the model and run it you should get Figure 16.
 
-![Figure 16. Rabbit Population Growth with 10 Rabbits](./im-5123a.png)
+![Figure 16. Rabbit Population Growth with 10 Rabbits](./00-im-5123a.png)
 
 [** Figure 16. Rabbit Population Growth with 10 Rabbits](http://insightmaker.com/insight/5123)
 
@@ -333,7 +333,7 @@ Forty thousand Rabbits in a year? That seems a bit bizarre doesn't it? This resu
 
 After that sidetrack lets get back to our 40,000 Rabbits that can't possibly exist after a year. I'm pretty sure I can be certain how many Rabbits I started with at the beginning. And when I check my formula for Births = Rabbits * Rabbit Birth Rate it seems to be in order. This sort of means my assumption for Rabbit Birth Rate must be too big. And if you think about what the model is doing it's probably not too difficult to figure out that the model assumes that a Rabbit can be born this month and then give birth to another Rabbit next month. If a Rabbit has to mature for six months before it gives birth to Rabbits then the Rabbit Birth Rate might be something more like 20%. Using this estimate for Rabbit Birth Rate the model produces Figure 17.
 
-![Figure 17. Rabbit Population Growth with 10 Rabbits and 20% Birth Rate](./im-5123b.png)
+![Figure 17. Rabbit Population Growth with 10 Rabbits and 20% Birth Rate](./00-im-5123b.png)
 
 [** Figure 17. Rabbit Population Growth with 10 Rabbits and 20% Birth Rate](http://insightmaker.com/insight/5123)
 
@@ -366,7 +366,7 @@ Isn't it curious that the structure of this model looks just like the one for th
 
 With the Time Settings set for the model to run for 24 hours. Set the Swimming Pool to 0, meaning empty, and the Full Level to 20,000, on the Configuration go ahead and click the Run button. You should end up with the graph as shown in Figure 18.
 
-![Figure 19. How long to fill the pool](./im-5128.png)
+![Figure 19. How long to fill the pool](./00-im-5128.png)
 
 [** Figure 19. How long to fill the pool](http://www.insightmaker.com/insight/5128)
 
@@ -394,7 +394,7 @@ The new formula for Hose takes into account both the current amount of water in 
 
 With Hose Capacity = 50 if you run the model it should produce Figure 21.
 
-![Figure 21. How long to fill the pool at 50 gallons per hour](./im-5130.png)
+![Figure 21. How long to fill the pool at 50 gallons per hour](./00-im-5130.png)
 
 [** Figure 21. How long to fill the pool at 50 gallons per hour](http://www.insightmaker.com/insight/5128)
 
@@ -402,7 +402,7 @@ Was this what you expected? Probably not. Over a period of 24 hours we've not ev
 
 Open the Time Settings and set the Simulation Length to 600 hours and Run the model again. Your run should produce the an equivalent of Figure 22.
 
-![Figure 22. Filling the pool takes how long?](./im-5130a.png)
+![Figure 22. Filling the pool takes how long?](./00-im-5130a.png)
 
 [** Figure 22. Filling the pool takes how long?](http://www.insightmaker.com/insight/5128)
 
@@ -448,7 +448,7 @@ I put some values in the Figure 23 model elements so when you run the model it w
 
 ----------
 
-![Figure 24. Balancing and Reinforcing Results](./im-5138.png)
+![Figure 24. Balancing and Reinforcing Results](./00-im-5138.png)
 
 [** Figure 24. Balancing and Reinforcing Results](http://www.insightmaker.com/insight/5128)
 
