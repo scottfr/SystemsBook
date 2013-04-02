@@ -6,7 +6,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Gene Bellinger" />
   <meta name="author" content="Scott Fortmann-Roe" />
-  <meta name="date" content="2013-03-31" />
+  <meta name="date" content="2013-04-02" />
   <title>[DRAFT] Beyond Connecting the Dots: Mastering the Hidden Connections in Everything that Matters</title>
   <style type="text/css">code{white-space: pre;}</style>
 </head>
@@ -15,7 +15,7 @@
 <h1 class="title">[DRAFT] Beyond Connecting the Dots: Mastering the Hidden Connections in Everything that Matters</h1>
 <h2 class="author">Gene Bellinger</h2>
 <h2 class="author">Scott Fortmann-Roe</h2>
-<h3 class="date">2013-03-31</h3>
+<h3 class="date">2013-04-02</h3>
 </div>
 <div id="TOC">
 <ul>
@@ -31,9 +31,11 @@
 <li><a href="#similar-structures-different-behavior">Similar Structures / Different Behavior</a></li>
 </ul></li>
 <li><a href="#models-and-truth">Models and Truth</a><ul>
-<li><a href="#a-functional-classification-of-models">A Functional Classification of Models</a></li>
-<li><a href="#references">References</a></li>
+<li><a href="#prediction-inference-and-narrative">Prediction, Inference and Narrative</a></li>
+<li><a href="#the-strange-case-of-inference">The Strange Case of Inference</a></li>
+<li><a href="#predictive-versus-narrative-modeling">Predictive versus Narrative Modeling</a></li>
 </ul></li>
+<li><a href="#references">References</a></li>
 </ul>
 </div>
 <h1 id="preface"><a href="#preface">Preface</a></h1>
@@ -350,7 +352,7 @@
 <li>At the extreme disaggregated level, we might even want to model individual people: all 7 billion of them.</li>
 </ul>
 <p>Clearly, there is no simple answer to this question and the best choice is highly context sensitive and depends on the needs of the specific model and application.</p>
-<h2 id="a-functional-classification-of-models"><a href="#a-functional-classification-of-models">A Functional Classification of Models</a></h2>
+<h2 id="prediction-inference-and-narrative"><a href="#prediction-inference-and-narrative">Prediction, Inference and Narrative</a></h2>
 <p>The three scales presented above can be used to classify models. We can even use them to classify the models we have discussed in this book. Most of these models would be classified as deterministic (random chance is generally not explicit incorporated in the models), mechanistic (we generally assume mechanisms rather than estimating relationships from data), and aggregated (the agent based models are an exception to this).</p>
 <p>Outside of modelers, however, these choices scales are of little importance. Let’s take off our modeler hats for a moment, and instead look at modeling as a client. In this case, we would hire a modeler to build a model to fulfill some specific purpose. The choices the modeler make (aggregated versus disaggregated, stochastic versus deterministic, what software they use, etc.) are all really secondary to them fulfilling that purpose. Let’s look back at Box’s quote at the beginning of this chapter. We know all models are wrong, what we should really care about is their functionality: how useful they are.</p>
 <p>So instead of using a scale based method to classify models, we can use a functional one based on the purpose or desired usage of a model. There are three main purposes for models: prediction, inference and narrative.</p>
@@ -364,6 +366,7 @@
 <img src="Stimulus.png" alt="Figure 2. Obama’s Team’s Predictions for the Effects of the Stimulus" /><p class="caption">Figure 2. Obama’s Team’s Predictions for the Effects of the Stimulus</p>
 </div>
 <p>All models can be classified in terms of these three primary usages and it can be useful to discuss modeling projects in terms of them. There is an even simpler classification system we can use, however, that once we complete it will really clarify the core dichotomy that is at the heart of modeling.</p>
+<h2 id="the-strange-case-of-inference"><a href="#the-strange-case-of-inference">The Strange Case of Inference</a></h2>
 <p>To get at this reduced classification scheme, let’s talk for a moment about the process of inference. Take our example of finding whether wealth results in increased tests scores in high-school. We phrased this hypothesis in a specific way: that increased wealth will always increase test scores. This was an illustrative statement, however, that actually differs from what is often done in practice. In general, academic research simply asks the question “Does <em>X</em> affect <em>Y</em>?” Using this terminology, we would ask the question “Does wealth affect tests scores?”</p>
 <p>The gold-standard to answering questions like this is the controlled experiment. For our wealth case, we could take a sample of a thousand families from a school district. When the families’ children enter high-school we randomly select have to be in a “poor” category and the other half to be in a “rich” category. Families in the rich category are given grants of $500,000 a year to spend how they wish while the parents in the poor category are fired from their jobs and their savings are frozen for the duration of the experiment. Once the students have graduated from high-school, we simply compare the average scores for the students in the poor and rich categories.</p>
 <p>This is the ideal approach to answering inferential questions like these. For many types of questions controlled experiments can be done (for instance does treatment with a novel drug help control a disease), but in general complex social questions are simply impossible to answer with them. We can construct the procedure like we have just done as a thought experiment, but it would be impossible (and deeply unethical) to implement in society.</p>
@@ -387,13 +390,47 @@
 <p>What are we really doing when we assume regression forms like this? Now it might not be immediately obvious, but what we really doing is telling a story. Using our first equation, we are telling the story that as wealth increases, test scores will always increase. Bill Gate’s children will preform amazingly well! Using the second equation we are telling a different story: that as wealth increases test scores initially do as well but after a certain point increased wealth will hurt test scores. The picture isn’t so rosy for Bill Gates’s family this time around!</p>
 <p>And so we arrive at a very interesting conclusion. By telling these stories, our inferences are in fact based on narrative modeling approaches. Yes, these inferences are based on numerous calculations and very advanced theoretical underpinnings. But ultimately what governs our conclusions and inferences are the stories or narratives we tell about them. These are choices that we as the story teller make, not any objective truth or reality.</p>
 <p>Is there an alternative approach to inference? Can we accomplish it without using narrative techniques? The answer is yes. An alternative prediction based approach to inference is available. In which rather than calculating statistical significances as a function of an assumed model, we calculate them as a function of the simple question: “Does knowing <em>X</em> help us to predict <em>Y</em>?” If the answer to this question is true, then we can say that there is a relationship between <em>X</em> and <em>Y</em>.</p>
-<p>The techniques to accomplish prediction-based inference are much newer as they rely upon ample computing power to work. One of them is the A3 method (XXX Citation) which uses resampling based techniques to obtain estimates of predictive accuracy and statistical significance.</p>
+<p>The techniques to accomplish prediction-based inference are much newer as they rely upon ample computing power to work. One of them is the A3 method (XXX Citation) which uses resampling based techniques to obtain estimates of predictive accuracy and statistical significance. What they do however is remove model form question from us and instead focus purely on predictive accuracy to determine whether a variable is significant.</p>
 <p>Thus we can see that inferential techniques can be split into two categories: narrative modeling methods and predictive modeling methods. So from our original three categories of model purposes – prediction, inference, and narrative – we are left with just two fundamental types of modeling: predictive modeling and narrative modeling.</p>
-<p>Narrative versus Predictive</p>
-<p>Measuring model error</p>
+<h2 id="predictive-versus-narrative-modeling"><a href="#predictive-versus-narrative-modeling">Predictive versus Narrative Modeling</a></h2>
+<h3 id="predictive-models"><a href="#predictive-models">Predictive Models</a></h3>
+<p>How do we define a predictive model? The obvious answer is that predictive model is one that make predictions. If a model makes generates predictions for the future or a given scenario, than it must be a predictive model. By this definition, a weather forecast is a predictive model as were Obama’s unemployment predictions we saw earlier.</p>
+<p>Unfortunately, this straightforward definition is useless. Worse than being useless, it is actually quite dangerous.</p>
+<hr />
+<p>Let us propose a model for next year’s unemployment figures in the United States:</p>
+<blockquote>
+<p>Generate a random number from 0 to 1. If the number is less than 0.1, unemployment will be 20%. If the number is greater than or equal to 0.1, unemployment will be 0%.</p>
+</blockquote>
+<p>There, we have just constructed a model of unemployment. Furthermore, our model creates predictions. With just a minute of work we can forecast unemployment for the coming year. Isn’t that convenient?</p>
+<p>Of course this model is a joke. It is clearly a horrible tool to use to predict unemployment. However, using the naive definition of what it means to a predictive model, it could be classified as one. What makes this simple model, such a poor model for prediction purposes?</p>
+<p>There are several answers to this. We might start by saying it is too <em>simple</em>. Clearly if we are trying to predict unemployment we should include the current economic state and trends into our model. If the economy is improving, unemployment will probably drop and vice versa. That is probably true, this model could be probably be improved by including data about the economy and future trends. Let’s propose a different model:</p>
+<blockquote>
+<p>Generate a random number from 0 to 1. If the number is less than the percentage change in GDP over the past year, unemployment will be 20% plus the current unemployment rate. If the number is greater than or equal to 0.1, unemployment will be the net change in the consumer price index over the past 8 years.</p>
+</blockquote>
+<p>Is this a better model? Clearly, it is more complex and now it is incorporating some relevant economic data and indicators. However, equally as clear it is also a joke no one should treat this as a real predictive model.</p>
+<p>So what defines a predictive model? Well the answer is straightforward if a bit more complex than our first proposal. A predictive model is one that:</p>
+<ol style="list-style-type: decimal">
+<li>creates predictions,</li>
+<li>has an accurate estimate of prediction error,</li>
+<li>and has the lowest prediction error of a reasonable set of other models.</li>
+</ol>
+<p>If these three criteria are true, than you have a predictive model. Our two proposed models to estimate unemployment are clearly not predictive as we do not have any estimate of predictive error. We can also apply this definition to Obama’s employment predictions we saw earlier. At the point, we called it a narrative model which was probably a tad confusing as the model did generate predictions. However, using these three criteria we can see also that it is not a predictive model. The model contains no estimate of prediction error (and one is not available in the original report containing it) so it simply cannot be consider to be predictive.</p>
+<p>If accurate estimate of prediction error are available, you can proceed to criteria 3 and directly compare the prediction errors between different models to find the one with the lowest error. For instance, we could estimate prediction errors for the two simple models proposed here along with Obama’s model to find the one with the lowest error. We would hope that the one Obama presented to congress would be the most accurate, however, unless this is explicitly done no statements about predictive accuracy can be made.</p>
+<p>Why do we so rarely here about the predictive accuracy of models. There are a number of reasons but they all boil down to three basic issues:</p>
+<ol style="list-style-type: decimal">
+<li>Assessing prediction error accurately is quite difficult.</li>
+<li>Sharing prediction error will likely decrease subjective belief in a model.</li>
+<li>Most models people use for prediction are actually narrative models and discussing their predictive error is futile.</li>
+</ol>
+<p>Let’s look at each of these points in detail. First the issue of the difficulty of assessing prediction error. In general, obtaining an accurate assessment of prediction error is much more difficult that developing the predictions themselves. Most commonly used approaches (for instance the standard <span class="math"><em>R</em><sup>2</sup></span> from linear regression) have significant flaws. There are both theoretical and numerical methods that can be used to more accurate prediction errors in many cases (will discuss this further in the section the Cost of Complexity). When dealing with time series models, however, like most of those explored in this book, it is almost impossible to truly manage to accurate assess model prediction error. In the past ten years, theoretical technique to approach these issues have just begun to be developed (e.g. <span class="citation">He, Ionides, and King (2009)</span> or <span class="citation">A. A. King et al. (2008)</span>) but they are still impractical to apply in most cases.</p>
+<p>If the challenge of measuring prediction error is overcome, there is an even more insidious barrier to its being made available. There is a perverse phenomena, that the act of reporting prediction error will often <em>decrease</em> the credence an audience gives a model. (XXX model)</p>
+<p>Finally, probably the most likely reason supposedly predictive models do not include prediction error is that they simply aren’t predictive. Generally models developed for a purportedly predictive purpose are actually narrative models in disguise. This often happens as the modelers tasked with building the model do not understand predictive techniques or the client demands features and capabilities in the model that are incompatible with predictive accuracy. There is nothing inherently wrong with the models and they can be very useful, but it is important to recognize them for what they are: narrative storytelling.</p>
+<h3 id="narrative-models"><a href="#narrative-models">Narrative Models</a></h3>
 <p>In practice many modeling projects will try to fulfill multiple usages. For instance, it is common to for clients of modelers to want to build a model for prediction</p>
-<h2 id="references"><a href="#references">References</a></h2>
+<h1 id="references"><a href="#references">References</a></h1>
 <p>Haller, H., and S. Krauss. 2002. “Misinterpretations of Significance: A Problem Students Share with Their Teachers.” <em>Methods of Psychological Research Online</em> 7 (1): 1–20.</p>
+<p>He, D., E. L. Ionides, and A. A. King. 2009. “Plug-and-play inference for disease dynamics: measles in large and small populations as a case study.” <em>Journal of The Royal Society Interface</em> 7 (43) (dec): 271–283.</p>
+<p>King, Aaron A., Edward L. Ionides, Mercedes Pascual, and Menno J. Bouma. 2008. “Inapparent infections and cholera dynamics.” <em>Nature</em> 454 (7206) (aug): 877–880.</p>
 <div class="footnotes">
 <hr />
 <ol>

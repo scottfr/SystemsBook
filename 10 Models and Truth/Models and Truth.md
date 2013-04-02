@@ -34,7 +34,7 @@ When building a model, the question of scale becomes very important. Imagine we 
 
 Clearly, there is no simple answer to this question and the best choice is highly context sensitive and depends on the needs of the specific model and application.
 
-## A Functional Classification of Models
+## Prediction, Inference and Narrative
 
 The three scales presented above can be used to classify models. We can even use them to classify the models we have discussed in this book. Most of these models would be classified as deterministic (random chance is generally not explicit incorporated in the models), mechanistic (we generally assume mechanisms rather than estimating relationships from data), and aggregated (the agent based models are an exception to this).
 
@@ -56,6 +56,8 @@ Narrative
 ![Figure 2. Obama's Team's Predictions for the Effects of the Stimulus](Stimulus.png)
 
 All models can be classified in terms of these three primary usages and it can be useful to discuss modeling projects in terms of them. There is an even simpler classification system we can use, however, that once we complete it will really clarify the core dichotomy that is at the heart of modeling.
+
+## The Strange Case of Inference
 
 To get at this reduced classification scheme, let's talk for a moment about the process of inference. Take our example of finding whether wealth results in increased tests scores in high-school. We phrased this hypothesis in a specific way: that increased wealth will always increase test scores. This was an illustrative statement, however, that actually differs from what is often done in practice. In general, academic research simply asks the question "Does *X* affect *Y*?" Using this terminology, we would ask the question "Does wealth affect tests scores?"
 
@@ -100,10 +102,60 @@ The techniques to accomplish prediction-based inference are much newer as they r
 
 Thus we can see that inferential techniques can be split into two categories: narrative modeling methods and predictive modeling methods. So from our original three categories of model purposes -- prediction, inference, and narrative -- we are left with just two fundamental types of modeling: predictive modeling and narrative modeling.
 
-Narrative versus Predictive
+## Predictive versus Narrative Modeling
 
-Measuring model error
+### Predictive Models
 
-In practice many modeling projects will try to fulfill multiple usages. For instance, it is common to for clients of modelers to want to build a model for prediction 
+How do we define a predictive model? The obvious answer is that predictive model is one that make predictions. If a model makes generates predictions for the future or a given scenario, than it must be a predictive model. By this definition, a weather forecast is a predictive model as were Obama's unemployment predictions we saw earlier.
 
-## References
+Unfortunately, this straightforward definition is useless. Worse than being useless, it is actually quite dangerous.
+
+***
+
+Let us propose a model for next year's unemployment figures in the United States:
+
+> Generate a random number from 0 to 1. If the number is less than 0.1, unemployment will be  20%. If the number is greater than or equal to 0.1, unemployment will be 0%.
+
+There, we have just constructed a model of unemployment. Furthermore, our model creates predictions. With just a minute of work we can forecast unemployment for the coming year. Isn't that convenient?
+
+Of course this model is a joke. It is clearly a horrible tool to use to predict unemployment. However, using the naive definition of what it means to a predictive model, it could be classified as one. What makes this simple model, such a poor model for prediction purposes?
+
+There are several answers to this. We might start by saying it is too *simple*. Clearly if we are trying to predict unemployment we should include the current economic state and trends into our model. If the economy is improving, unemployment will probably drop and vice versa. That is probably true, this model could be probably be improved by including data about the economy and future trends. Let's propose a different model:
+
+> Generate a random number from 0 to 1. If the number is less than the percentage change in GDP over the past year, unemployment will be  20% plus the current unemployment rate. If the number is greater than or equal to 0.1, unemployment will be the net change in the consumer price index over the past 8 years.
+
+Is this a better model? Clearly, it is more complex and now it is incorporating some relevant economic data and indicators. However, equally as clear it is also a joke no one should treat this as a real predictive model.
+
+So what defines a predictive model? Well the answer is straightforward if a bit more complex than our first proposal. A predictive model is one that:
+
+1. creates predictions,
+2. has an accurate estimate of prediction error,
+3. and has the lowest prediction error of a reasonable set of other models.
+
+If these three criteria are true, than you have a predictive model. Our two proposed models to estimate unemployment are clearly not predictive as we do not have any estimate of predictive error. We can also apply this definition to Obama's employment predictions we saw earlier. At the point, we called it a narrative model which was probably a tad confusing as the model did generate predictions. However, using these three criteria we can see also that it is not a predictive model. The model contains no estimate of prediction error (and one is not available in the original report containing it) so it simply cannot be consider to be predictive.
+
+If accurate estimate of prediction error are available, you can proceed to criteria 3 and directly compare the prediction errors between different models to find the one with the lowest error. For instance, we could estimate prediction errors for the two simple models proposed here along with Obama's model to find the one with the lowest error. We would hope that the one Obama presented to congress would be the most accurate, however, unless this is explicitly done no statements about predictive accuracy can be made.
+
+Why do we so rarely here about the predictive accuracy of models. There are a number of reasons but they all boil down to three basic issues:
+
+1. Assessing prediction error accurately is quite difficult.
+2. Sharing prediction error will likely decrease subjective belief in a model.
+3. Most models people use for prediction are actually narrative models and discussing their predictive error is futile.
+
+Let's look at each of these points in detail. First the issue of the difficulty of assessing prediction error. In general, obtaining an accurate assessment of prediction error is much more difficult that developing the predictions themselves. Most commonly used approaches (for instance the standard $R^2$ from linear regression) have significant flaws. There are both theoretical and numerical methods that can be used to more accurate prediction errors in many cases (will discuss this further in the section the Cost of Complexity). When dealing with time series models, however, like most of those explored in this book, it is almost impossible to truly manage to accurate assess model prediction error. In the past ten years, theoretical technique to approach these issues have just begun to be developed (e.g. @He:2009jp or @King:2008jq) but they are still impractical to apply in most cases.
+
+If the challenge of measuring prediction error is overcome, there is an even more insidious barrier to its being made available. There is a perverse phenomena that the act of reporting prediction error will often *decrease* the credence an audience gives a model. (XXX model)
+
+Finally, probably the most likely reason supposedly predictive models do not include prediction error is that they simply aren't predictive. Generally models developed for a purportedly predictive purpose are actually narrative models in disguise. Why is this? Well lets look at the reason for most modeling project. It is very rare that models are being funded solely for the purpose of generating a prediction. More often, they are part of some political process within an organization or between organizations. Ultimately, the people funding the model expect it to prove a point to their benefit. In environments like these, it is to be expected that even the most purportedly predictive modeling efforts will become side tracked by political concerns and make significant compromises to placate these concerns. 
+
+### Narrative Models
+
+A narrative model is one built to tell a story. When most people first here the "narrative" terminology, they have an instinctive negative reaction. We find this strange as narratives are the fundamental human form of communication. We tell narratives to our friends and relatives. Politicians communicate their policies to us using narratives. Of course the vast majority of our entertainment is focused on narratives[^ Even sports, a form of entertainment that innately contains no narrative, becomes wrapped in narrative the announcers and commentators attempt to create for it to engage us.]. Business leaders and managers attempt to describe their strategy's to us using narratives. And business books are in generally dominated by narrative anecdotes.
+
+
+name isn't negative
+
+many stats models are simply narrative
+
+best to be open and clear, this is what SD is
+
