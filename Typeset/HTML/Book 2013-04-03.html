@@ -6,7 +6,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Gene Bellinger" />
   <meta name="author" content="Scott Fortmann-Roe" />
-  <meta name="date" content="2013-04-02" />
+  <meta name="date" content="2013-04-03" />
   <title>[DRAFT] Beyond Connecting the Dots: Mastering the Hidden Connections in Everything that Matters</title>
   <style type="text/css">code{white-space: pre;}</style>
 </head>
@@ -15,7 +15,7 @@
 <h1 class="title">[DRAFT] Beyond Connecting the Dots: Mastering the Hidden Connections in Everything that Matters</h1>
 <h2 class="author">Gene Bellinger</h2>
 <h2 class="author">Scott Fortmann-Roe</h2>
-<h3 class="date">2013-04-02</h3>
+<h3 class="date">2013-04-03</h3>
 </div>
 <div id="TOC">
 <ul>
@@ -30,10 +30,14 @@
 <li><a href="#filling-a-swimming-pool">Filling A Swimming Pool</a></li>
 <li><a href="#similar-structures-different-behavior">Similar Structures / Different Behavior</a></li>
 </ul></li>
+<li><a href="#chapter-2---dynamic-lego-blocks">Chapter 2 - Dynamic Lego Blocks</a><ul>
+<li><a href="#the-blank-canvas">The Blank Canvas</a></li>
+</ul></li>
 <li><a href="#models-and-truth">Models and Truth</a><ul>
 <li><a href="#prediction-inference-and-narrative">Prediction, Inference and Narrative</a></li>
 <li><a href="#the-strange-case-of-inference">The Strange Case of Inference</a></li>
 <li><a href="#predictive-versus-narrative-modeling">Predictive versus Narrative Modeling</a></li>
+<li><a href="#confidence-building-steps">Confidence Building Steps</a></li>
 </ul></li>
 <li><a href="#references">References</a></li>
 </ul>
@@ -326,6 +330,27 @@
 <li>These building blocks can aid understanding aspects of our interactions with the world around us.</li>
 </ul>
 <hr />
+<h1 id="chapter-2---dynamic-lego-blocks"><a href="#chapter-2---dynamic-lego-blocks">Chapter 2 - Dynamic Lego Blocks</a></h1>
+<hr />
+<h3 id="notes-to-reviewers-1"><a href="#notes-to-reviewers-1">Notes to Reviewers</a></h3>
+<p>This chapter is intended to provide the reader with enough experience with the basic elements of the modeling environment such that they can construct simple balancing and reinforcing loops. Supporting aspects of the environment necessary to run these models will also be described. This will build on the elements presented in the previous chapters and is intended to be an introduction, not an exhaustive dissertation on modeling and simulation theory. The intent is to encourage the reader to develop and play with models, not chase them from the room screaming in fear never to return again.</p>
+<hr />
+<h2 id="the-blank-canvas"><a href="#the-blank-canvas">The Blank Canvas</a></h2>
+<p>Some might look on the blank canvas and hesitate not knowing where to start. You will be far better off if you look on the blank canvas as a gift of freedom which allows you to start anywhere. You will come to understand that if you approach modeling appropriately it won’t matter where you start, you’ll still end up with a meaningful model.</p>
+<p>In the next few segments you will learn how to create on this canvas the two basic structures from which all models are constructed.</p>
+<p>Notice in Figure 1 that similar tools are grouped on the  in Figure 1. Also only a portion of the  is displayed though it’s enough for what will be covered in this section.</p>
+<div class="figure">
+<img src="./02-im-5291.png" alt="Figure 1. Blank Canvas" /><p class="caption">Figure 1. Blank Canvas</p>
+</div>
+<p>To use a tool you click on it on the  to select it, then you click on the canvas where you want it located, or used. For each tool there are a set of allowed uses. Once you place the item on the canvas it is named for what it is with that name selected so you can type in the name you want. Labels can be anything except braces “{}”, brackets “[]”, parentheses (), and quotes ’. If the label is no selected you can double-click on it to select the label and then enter a new one, or you can enter the label in the  though we’ll address that in a bit more detail later.</p>
+<hr />
+<p>Exercise 2-1.</p>
+<p>Practice placing <span class='primitive'>Stock</span> and <span class='primitive'>Variable</span> <span class='primitive'>Primitives</span> on the canvas and naming them. You can remove a <span class='primitive'>Primitive</span> by selecting it and pressing the  key or clicking the  button in the  section of the .</p>
+<hr />
+<p><span class='primitive'>Stocks</span> and <span class='primitive'>Variables</span> are connected using <span class='primitive'>Flows</span> and <span class='primitive'>Links</span> and there are some very explicit rules associated with these connections. The allowed connections are depicted in Figure 2.</p>
+<IFRAME SRC="http://InsightMaker.com/insight/5275/embed?topBar=0&sideBar=0&zoom=0" TITLE="Figure 2. Valid Primitive Connections" width=680 height=400></IFRAME>
+
+
 <h1 id="models-and-truth"><a href="#models-and-truth">Models and Truth</a></h1>
 <blockquote>
 <p>All models are wrong, but some are useful – George E.P. Box</p>
@@ -361,7 +386,7 @@
 </div>
 <p>Prediction : Models used for inference are the most straightforward. They attempt to forecast some outcome given information about variables related in some way to that outcome. A weather forecast is an example of a model being used prediction. When you apply for a credit card at a bank, they run a predictive model to determine your risk of default. When you apply for life-insurance, similarly, the company has an actuarial model to predict how much they should charge you for a given payout.</p>
 <p>Inference : Models used for inference are the most common in academic research. Often, academic research question boil down to the simple template: “Does <em>X</em> affect <em>Y</em>?” These are inferential type questions. So an academic may make a hypothesis, for instance; “The wealthier a high-school student’s family is, the higher the student’s test scores will be.” They may then build a model to support or refute this hypothesis and their response will generally be phrased in terms of a <em>p</em>-value indicating the significance of the evidence in support or against the hypothesis.</p>
-<p>Narrative : Models are often used to tell a story. When the Obama administration wanted to persuade law makers and the public to support there proposed stimulus, they famously published the graph shown in Figure 2. A lot of complex modeling and mathematics went into constructing this figure, however its sole purpose is to tell a story: things were bad, but the stimulus would make them less bad. We will return to this figure later on.</p>
+<p>Narrative : Models are often used to tell a story. When the Obama administration wanted to persuade law makers and the public to support there proposed stimulus, they famously published the graph shown in Figure 2 <span class="citation">(Romer and Bernstein 2009)</span>. A lot of complex modeling and mathematics went into constructing this figure, however its sole purpose is to tell a story: things were bad, but the stimulus would make them less bad. We will return to this figure later on.</p>
 <div class="figure">
 <img src="Stimulus.png" alt="Figure 2. Obama’s Team’s Predictions for the Effects of the Stimulus" /><p class="caption">Figure 2. Obama’s Team’s Predictions for the Effects of the Stimulus</p>
 </div>
@@ -423,19 +448,46 @@
 <li>Most models people use for prediction are actually narrative models and discussing their predictive error is futile.</li>
 </ol>
 <p>Let’s look at each of these points in detail. First the issue of the difficulty of assessing prediction error. In general, obtaining an accurate assessment of prediction error is much more difficult that developing the predictions themselves. Most commonly used approaches (for instance the standard <span class="math"><em>R</em><sup>2</sup></span> from linear regression) have significant flaws. There are both theoretical and numerical methods that can be used to more accurate prediction errors in many cases (will discuss this further in the section the Cost of Complexity). When dealing with time series models, however, like most of those explored in this book, it is almost impossible to truly manage to accurate assess model prediction error. In the past ten years, theoretical technique to approach these issues have just begun to be developed (e.g. <span class="citation">He, Ionides, and King (2009)</span> or <span class="citation">A. A. King et al. (2008)</span>) but they are still impractical to apply in most cases.</p>
-<p>If the challenge of measuring prediction error is overcome, there is an even more insidious barrier to its being made available. There is a perverse phenomena, that the act of reporting prediction error will often <em>decrease</em> the credence an audience gives a model. (XXX model)</p>
-<p>Finally, probably the most likely reason supposedly predictive models do not include prediction error is that they simply aren’t predictive. Generally models developed for a purportedly predictive purpose are actually narrative models in disguise. This often happens as the modelers tasked with building the model do not understand predictive techniques or the client demands features and capabilities in the model that are incompatible with predictive accuracy. There is nothing inherently wrong with the models and they can be very useful, but it is important to recognize them for what they are: narrative storytelling.</p>
+<p>If the challenge of measuring prediction error is overcome, there is an even more insidious barrier to its being made available. There is a perverse phenomena that the act of reporting prediction error will often <em>decrease</em> the credence an audience gives a model. An anecdote was relayed to us by a member of a team working on a model of disease spread. His team was sharing the predictions from the model with a group of policy makers. Everything was going well until the audience saw the error bars of the predictions. Where his audience had been content with the raw predictions, they were suddenly not unhappy with the predictions given the accurately estimated uncertainty. Why was this? Was the team’s model particularly bad and these policy makers had a more predictive model at their disposal? Unfortunately, not. In a world where policy makers and clients are constantly shown models (like Obama’s unemployment figures) with no measure of uncertainty (or even worse, poorly calculated, artificially low uncertainty), they come to have unrealistic expectations that makes them turn away good science in favor of magical guesstimates.</p>
+<p>Finally, probably the most likely reason supposedly predictive models do not include prediction error is that they simply aren’t predictive. Generally models developed for a purportedly predictive purpose are actually narrative models in disguise. Why is this? Well lets look at the reason for most modeling project. It is very rare that models are being funded solely for the purpose of generating a prediction. More often, they are part of some political process within an organization or between organizations. Ultimately, the people funding the model expect it to prove a point to their benefit. In environments like these, it is to be expected that even the most purportedly predictive modeling efforts will become side tracked by political concerns and make significant compromises to placate these concerns.</p>
+<p>We can see the results of such influences in the predictions generated for unemployment presented earlier. Figure 3 shows the projections for the unemployment rates with and without the stimulus plan just as in Figure 2. Overlaid on this, however, are the true values of unemployment <span class="citation">(The Heritage Foundation 2013)</span>. As is readily evident, the original modeling and predictions were way off the mark. Not only are they worse than the projections assuming the stimulus was enacted (which occurred) they are much worse than the projections for the economy assuming the stimulus had never been enacted! This is just a small example – one that is sadly replicated over and over again in business and policy making – of mistakenly treating a narrative model as a predictive one.</p>
+<div class="figure">
+<img src="Stimulus%20and%20Reality.png" alt="Figure 3. Unemployment projections versus reality." /><p class="caption">Figure 3. Unemployment projections versus reality.</p>
+</div>
 <h3 id="narrative-models"><a href="#narrative-models">Narrative Models</a></h3>
-<p>In practice many modeling projects will try to fulfill multiple usages. For instance, it is common to for clients of modelers to want to build a model for prediction</p>
+<p>A narrative model is one built to tell a story. When most people first here the “narrative” terminology, they have an instinctive negative reaction. We find this strange as narratives are the fundamental human form of communication. We tell narratives to our friends and relatives. Politicians communicate their policies to us using narratives. Of course the vast majority of our entertainment is focused on narratives[^ Even sports, a form of entertainment that innately contains no narrative, becomes wrapped in narrative the announcers and commentators attempt to create for it to engage us.]. Business leaders and managers attempt to describe their strategies to us using narratives. And business books are in generally dominated by narrative anecdotes.</p>
+<p>We do not view the world as a collection of numbers and probabilities, instead we see reason and meaning. In short, narratives are how we see the world.</p>
+<p>One critique of the term narrative is that it implies a lack of numbers or mathematics. This could not be further off the mark. There are many ways to construct narratives. Words are one, pictures are another, music is a third. Numbers and mathematics are just another way of constructing a story.</p>
+<p>In fact, most statistical and mathematical models are in fact narrative models. We looked earlier at the case of linear regression as a tool to predict test scores given wealth. Again the mathematical equation for this is:</p>
+<p><br /><span class="math"><em>S</em><em>c</em><em>o</em><em>r</em><em>e</em> = <em>β</em><sub>0</sub> + <em>β</em><sub>1</sub> × <em>W</em><em>e</em><em>a</em><em>l</em><em>t</em><em>h</em></span><br /></p>
+<p>This equation defines a narrative. Translating this narrative into words, we would say:</p>
+<blockquote>
+<p>Test scores are only determined by a student’s families wealth. A child’s whose family is broke, will have a test score of, on average, of <span class="math"><em>β</em><sub>0</sub></span>. For every dollar of wealth, a child’s family accumulates, the child will score, on average, better on tests by <span class="math"><em>β</em><sub>1</sub></span>.</p>
+</blockquote>
+<p>You might or might not agree with this narrative (in our view it is a nonsensical and reductionist view of child achievement) but it shows the strict equivalence between this mathematical narrative and narrative prose. The same process can be applied all mathematical models. The mathematical definition of the model can be converted directly, with more or less lucidity, into a story describing how the system operates. The same can also be done in the reverse: we can take a descriptive narrative of a system and convert it into a mathematical description. As we have seen (will see? XXX) this is what tools like reference modes and pattern matching are all about: eliciting a narrative from a subject in a way which can be formulated quantitatively.</p>
+<p>With predictive models, we can competing models based primarily on prediction accuracy<sup><a href="#fn3" class="footnoteRef" id="fnref3">3</a></sup>. But how do we evaluate and compare the quality of narrative models?</p>
+<p>The basic criteria for a narrative model is that it should be <em>persuasive</em>. Although persuasion is not a purely objective measure like prediction accuracy, there are two key goals of a persuasive model. A persuasive model is one that is both highly believable and one which effectively communicates its results.</p>
+<p>When building a narrative it is very important to use tools which are well suited to these tasks. Again, as with most modeling work, statistical models like the wealth example are the most commonly used tools for the construction narrative models. Unfortunately, they are quite poorly suited to them many ways. Most statistical models depend on numerous unrealistic and highly technical assumptions about the data. If these assumptions are enumerated in plain english, they will often conflict with people’s understanding of a system discrediting the model. The alternative is to leave these assumptions hidden rendering a black box model, and narrative models should never be given any credence if the model operations is not transparent. There is a reason for the saying, “there are lies, damned lies, and statistics.”</p>
+<p>The modeling techniques presented in this book, on the other hand, are well suited for narrative modeling. The techniques we present are based on “clear box” modeling where the workings of the model are transparently evident and clear. Furthermore, the modeling techniques make it straightforward to generate animated illustrations and displays to communicate model results make them a powerful persuasive tool.</p>
+<h2 id="confidence-building-steps"><a href="#confidence-building-steps">Confidence Building Steps</a></h2>
+<p>…</p>
+<p><span class="citation">Forrester and Senge (1978)</span></p>
+<h3 id="sensitivity-testing"><a href="#sensitivity-testing">Sensitivity Testing</a></h3>
+<h3 id="extreme-value-tests"><a href="#extreme-value-tests">Extreme Value Tests</a></h3>
+<h3 id="forecasting"><a href="#forecasting">Forecasting</a></h3>
 <h1 id="references"><a href="#references">References</a></h1>
+<p>Forrester, Jay Wright, and Peter M. Senge. 1978. “Tests for building confidence in system dynamics models.”</p>
 <p>Haller, H., and S. Krauss. 2002. “Misinterpretations of Significance: A Problem Students Share with Their Teachers.” <em>Methods of Psychological Research Online</em> 7 (1): 1–20.</p>
 <p>He, D., E. L. Ionides, and A. A. King. 2009. “Plug-and-play inference for disease dynamics: measles in large and small populations as a case study.” <em>Journal of The Royal Society Interface</em> 7 (43) (dec): 271–283.</p>
 <p>King, Aaron A., Edward L. Ionides, Mercedes Pascual, and Menno J. Bouma. 2008. “Inapparent infections and cholera dynamics.” <em>Nature</em> 454 (7206) (aug): 877–880.</p>
+<p>Romer, Christina, and Jared Bernstein. 2009. “The job impact of the American recovery and reinvestment plan.”</p>
+<p>The Heritage Foundation. 2013. “Unemployment Rate January 2013” (feb). <a href="http://www.heritage.org/multimedia/infographic/2013/02/unemployment-rate-january-2013" title="http://www.heritage.org/multimedia/infographic/2013/02/unemployment-rate-january-2013">http://www.heritage.org/multimedia/infographic/2013/02/unemployment-rate-january-2013</a>.</p>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>Briefly, this debate refers to two divides within the statistical community that hinge on how probability is interpreted. A Frequentist claims that probability is dependent on the long term sequence of outcomes. Bayesian’s take probability as a subjective degree of belief. Frequentist statistics are what are generally taught in introductory statistic courses and receive the most use.<a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p>These misunderstandings are not only made by on-the-ground practitioners and analysts, they are frequently shared, and propagated, by university-level statistics instructors; see, for instance, <span class="citation">Haller and Krauss (2002)</span>.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Other criteria include ease of use, cost of fulfilling data requirements, and computation requirements. But all those are secondary to prediction accuracy.<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
 </body>

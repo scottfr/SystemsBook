@@ -51,7 +51,7 @@ Inference
 : Models used for inference are the most common in academic research. Often, academic research question boil down to the simple template: "Does *X* affect *Y*?" These are inferential type questions. So an academic may make a hypothesis, for instance; "The wealthier a high-school student's family is, the higher the student's test scores will be." They may then build a model to support or refute this hypothesis and their response will generally be phrased in terms of a *p*-value indicating the significance of the evidence in support or against the hypothesis.
 
 Narrative
-: Models are often used to tell a story. When the Obama administration wanted to persuade law makers and the public to support there proposed stimulus, they famously published the graph shown in Figure 2. A lot of complex modeling and mathematics went into constructing this figure, however its sole purpose is to tell a story: things were bad, but the stimulus would make them less bad. We will return to this figure later on.
+: Models are often used to tell a story. When the Obama administration wanted to persuade law makers and the public to support there proposed stimulus, they famously published the graph shown in Figure 2 [@Romer:2009tx]. A lot of complex modeling and mathematics went into constructing this figure, however its sole purpose is to tell a story: things were bad, but the stimulus would make them less bad. We will return to this figure later on.
 
 ![Figure 2. Obama's Team's Predictions for the Effects of the Stimulus](Stimulus.png)
 
@@ -144,18 +144,49 @@ Why do we so rarely here about the predictive accuracy of models. There are a nu
 
 Let's look at each of these points in detail. First the issue of the difficulty of assessing prediction error. In general, obtaining an accurate assessment of prediction error is much more difficult that developing the predictions themselves. Most commonly used approaches (for instance the standard $R^2$ from linear regression) have significant flaws. There are both theoretical and numerical methods that can be used to more accurate prediction errors in many cases (will discuss this further in the section the Cost of Complexity). When dealing with time series models, however, like most of those explored in this book, it is almost impossible to truly manage to accurate assess model prediction error. In the past ten years, theoretical technique to approach these issues have just begun to be developed (e.g. @He:2009jp or @King:2008jq) but they are still impractical to apply in most cases.
 
-If the challenge of measuring prediction error is overcome, there is an even more insidious barrier to its being made available. There is a perverse phenomena that the act of reporting prediction error will often *decrease* the credence an audience gives a model. (XXX model)
+If the challenge of measuring prediction error is overcome, there is an even more insidious barrier to its being made available. There is a perverse phenomena that the act of reporting prediction error will often *decrease* the credence an audience gives a model. An anecdote was relayed to us by a member of a team working on a model of disease spread. His team was sharing the predictions from the model with a group of policy makers. Everything was going well until the audience saw the error bars of the predictions. Where his audience had been content with the raw predictions, they were suddenly not unhappy with the predictions given the accurately estimated uncertainty. Why was this? Was the team's model particularly bad and these policy makers had a more predictive model at their disposal? Unfortunately, not. In a world where policy makers and clients are constantly shown models (like Obama's unemployment figures) with no measure of uncertainty (or even worse, poorly calculated, artificially low uncertainty), they come to have unrealistic expectations that makes them turn away good science in favor of magical guesstimates.
 
-Finally, probably the most likely reason supposedly predictive models do not include prediction error is that they simply aren't predictive. Generally models developed for a purportedly predictive purpose are actually narrative models in disguise. Why is this? Well lets look at the reason for most modeling project. It is very rare that models are being funded solely for the purpose of generating a prediction. More often, they are part of some political process within an organization or between organizations. Ultimately, the people funding the model expect it to prove a point to their benefit. In environments like these, it is to be expected that even the most purportedly predictive modeling efforts will become side tracked by political concerns and make significant compromises to placate these concerns. 
+Finally, probably the most likely reason supposedly predictive models do not include prediction error is that they simply aren't predictive. Generally models developed for a purportedly predictive purpose are actually narrative models in disguise. Why is this? Well lets look at the reason for most modeling project. It is very rare that models are being funded solely for the purpose of generating a prediction. More often, they are part of some political process within an organization or between organizations. Ultimately, the people funding the model expect it to prove a point to their benefit. In environments like these, it is to be expected that even the most purportedly predictive modeling efforts will become side tracked by political concerns and make significant compromises to placate these concerns.
+
+We can see the results of such influences in the predictions generated for unemployment presented earlier. Figure 3 shows the projections for the unemployment rates with and without the stimulus plan just as in Figure 2. Overlaid on this, however, are the true values of unemployment [@TheHeritageFoundation:2013vu]. As is readily evident, the original modeling and predictions were way off the mark. Not only are they worse than the projections assuming the stimulus was enacted (which occurred) they are much worse than the projections for the economy assuming the stimulus had never been enacted! This is just a small example -- one that is sadly replicated over and over again in business and policy making -- of mistakenly treating a narrative model as a predictive one.
+
+![Figure 3. Unemployment projections versus reality.](Stimulus and Reality.png)
 
 ### Narrative Models
 
-A narrative model is one built to tell a story. When most people first here the "narrative" terminology, they have an instinctive negative reaction. We find this strange as narratives are the fundamental human form of communication. We tell narratives to our friends and relatives. Politicians communicate their policies to us using narratives. Of course the vast majority of our entertainment is focused on narratives[^ Even sports, a form of entertainment that innately contains no narrative, becomes wrapped in narrative the announcers and commentators attempt to create for it to engage us.]. Business leaders and managers attempt to describe their strategy's to us using narratives. And business books are in generally dominated by narrative anecdotes.
+A narrative model is one built to tell a story. When most people first here the "narrative" terminology, they have an instinctive negative reaction. We find this strange as narratives are the fundamental human form of communication. We tell narratives to our friends and relatives. Politicians communicate their policies to us using narratives. Of course the vast majority of our entertainment is focused on narratives[^ Even sports, a form of entertainment that innately contains no narrative, becomes wrapped in narrative the announcers and commentators attempt to create for it to engage us.]. Business leaders and managers attempt to describe their strategies to us using narratives. And business books are in generally dominated by narrative anecdotes.
+
+We do not view the world as a collection of numbers and probabilities, instead we see reason and meaning. In short, narratives are how we see the world.
+
+One critique of the term narrative is that it implies a lack of numbers or mathematics. This could not be further off the mark. There are many ways to construct narratives. Words are one, pictures are another, music is a third. Numbers and mathematics are just another way of constructing a story.
+
+In fact, most statistical and mathematical models are in fact narrative models. We looked earlier at the case of linear regression as a tool to predict test scores given wealth. Again the mathematical equation for this is:
+
+$$ Score = \beta_0 + \beta_1 \times Wealth $$
+
+This equation defines a narrative. Translating this narrative into words, we would say:
+
+>  Test scores are only determined by a student's families wealth. A child's whose family is broke, will have a test score of, on average, of $\beta_0$. For every dollar of wealth, a child's family accumulates, the child will score, on average, better on tests by $\beta_1$.
+
+You might or might not agree with this narrative (in our view it is a nonsensical and reductionist view of child achievement) but it shows the strict equivalence between this mathematical narrative and narrative prose. The same process can be applied all mathematical models. The mathematical definition of the model can be converted directly, with more or less lucidity, into a story describing how the system operates. The same can also be done in the reverse: we can take a descriptive narrative of a system and convert it into a mathematical description. As we have seen (will see? XXX) this is what tools like reference modes and pattern matching are all about: eliciting a narrative from a subject in a way which can be formulated quantitatively.
+
+With predictive models, we can competing models based primarily on prediction accuracy^[Other criteria include ease of use, cost of fulfilling data requirements, and computation requirements. But all those are secondary to prediction accuracy.]. But how do we evaluate and compare the quality of narrative models?
+
+The basic criteria for a narrative model is that it should be *persuasive*. Although persuasion is not a purely objective measure like prediction accuracy, there are two key goals of a persuasive model. A persuasive model is one that is both highly believable and one which effectively communicates its results.
+
+When building a narrative it is very important to use tools which are well suited to these tasks. Again, as with most modeling work, statistical models like the wealth example are the most commonly used tools for the construction narrative models. Unfortunately, they are quite poorly suited to them many ways. Most statistical models depend on numerous unrealistic and highly technical assumptions about the data. If these assumptions are enumerated in plain english, they will often conflict with people's understanding of a system discrediting the model. The alternative is to leave these assumptions hidden rendering a black box model, and narrative models should never be given any credence if the model operations is not transparent. There is a reason for the saying, "there are lies, damned lies, and statistics."
+
+The modeling techniques presented in this book, on the other hand, are well suited for narrative modeling. The techniques we present are based on "clear box" modeling where the workings of the model are transparently evident and clear. Furthermore, the modeling techniques make it straightforward to generate animated illustrations and displays to communicate model results make them a powerful persuasive tool.
 
 
-name isn't negative
+## Confidence Building Steps
 
-many stats models are simply narrative
+...
 
-best to be open and clear, this is what SD is
+@Forrester:1978vy
 
+### Sensitivity Testing
+
+### Extreme Value Tests
+
+### Forecasting
