@@ -8,6 +8,10 @@ Subscribing to the [Project Notes from Gene & Scott](http://linkd.in/16kqXAy) th
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br>Beyond Connecting the Dots by <a href="http://creativecommons.org/ns#">Gene Bellinger & Scott Fortmann-Roe</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
 
+- As per [Copyright in General](http://www.copyright.gov/help/faq/faq-general.html) this work is under copyright protection the moment it is created. 
+- We would also appreciate you respecting an embargo on this work for three months after publication so it is not shared with others who have not sponsored this program and essentially paid to get a window where they are the only ones with access.
+- For those who contribute content to the book that content is under copyright of the book.
+
 ----------
 
 ## Table of Contents ##
