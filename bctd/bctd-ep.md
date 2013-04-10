@@ -19,7 +19,10 @@ This page is intended to be a single source for surfacing links of content for r
 
 # Chapter 1 - It's The Pattern That Connects #
 
+Note that it make take a several seconds for the page to load because of the embedded Insight Maker models.
+
 - [v1 13.03.31](./learning-v1/learning.html) Put comments in [v1 Comment Thread](http://linkd.in/YXlWJ1)
+- [v2 13.04.08](./learning-v2/learning.html) Put comments in [v2 Comment Thread](http://linkd.in/10MF5xE)
 
 
 

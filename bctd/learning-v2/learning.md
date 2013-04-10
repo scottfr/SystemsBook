@@ -107,7 +107,7 @@ When we act on flawed beliefs when attempting to solve problems we typically cre
 
 ## A Better Way ##
 
-Based on the understanding I hope you've developed to this point it should be obvious that we could benefit from a better way to develop models of what we believe that are more likely to be correct as well as surface flaws in many of our current beliefs.
+Based on the understanding I hope you've developed to this point it should be obvious that we could benefit from a better way to develop models that are more likely to be correct as well as surface flaws in many of our current mental models.
 
 Ludwig von Bertalanffy first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another.{Davidson, Mark. 1983. Uncommon Sense: The Life and Thought of Ludwig von Bertalanffy. J.P. Tarcher, Inc. http://www.amazon.com/Uncommon-Sense-Thought-Bertalanffy-1901-1972/dp/087477165X/} When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. However, if you think about it, maybe there is some truth to it after all.
 

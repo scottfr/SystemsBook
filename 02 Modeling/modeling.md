@@ -8,43 +8,49 @@ This chapter is intended to provide the reader with enough experience with the b
 
 ----------
 
+Figure 1 is the last model from the previous chapter. The intent in this chapter is to acquaint you with enough of the modeling environment such that you can recreate these structures. In the process it is hoped that you will come to understand how it is that these three structures are essentially the building blocks for all the models you will ever build. Or at least almost.
+
+<IFRAME SRC="http://InsightMaker.com/insight/5138?embed=0&editor=1&topBar=0&sideBar=1&zoom=0" TITLE="Figure 1. Similar Structures/Different Behaviors" width=950 height=650></IFRAME>
+
+[** Figure 1. Similar Structures/Different Behaviors](http://insightmaker.com/insight/5138)
+
 ## The Blank Canvas ##
 
 Some might look on the blank canvas and hesitate not knowing where to start. You will be far better off if you look on the blank canvas as a gift of freedom which allows you to start anywhere. You will come to understand that if you approach modeling appropriately it won't matter where you start, you'll still end up with a meaningful model.
 
 In the next few segments you will learn how to create on this canvas the two basic structures from which all models are constructed.
 
-Notice in Figure 1 that similar tools are grouped on the \u{Toolbar} in Figure 1. Also only a portion of the \u{Toolbar} is displayed though it's enough for what will be covered in this section.
+Notice in Figure 2 that similar tools are grouped on the \u{Toolbar}. Only a portion of the \u{Toolbar} is displayed though it's enough for what will be covered in this section.
 
-<IFRAME SRC="http://InsightMaker.com/insight/5291?embed=0&editor=1&topBar=1&sideBar=0&zoom=0" TITLE="Figure 1. Blank Canvas" width=700 height=400></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/5291?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 2. Blank Canvas" width=950 height=400></IFRAME>
 
-[** Figure 1. Blank Canvas](http://insightmaker.com/insight/5291)
+[** Figure 2. Blank Canvas](http://insightmaker.com/insight/5291)
 
-To use a tool you click on it on the \u{Toolbar} to select it, then you click on the canvas where you want it located, or used. For each tool there are a set of allowed uses. Once you place the item on the canvas it is named for what it is with that name selected so you can type in the name you want. Labels can be anything except braces "{}", brackets "\[\]", parentheses \(\), and quotes '. If the label is no selected you can double-click on it to select the label and then enter a new one, or you can enter the label in the \u{Configuration Panel} though we'll address that in a bit more detail later.
+To use any of the \u{Primitives} or \u{Connections} you click on the icon on the \u{Toolbar} to select it, then you click on the canvas where you want it located, or used. For each tool there are a set of allowed uses. Once you place the item on the canvas it is named for what it is, with that name selected so you can type in the name you want. Names can contain any characters except braces "{}", brackets "\[\]", parentheses \(\), and quotes '. If the label is not selected you can double-click on it to select the label and then enter a new one, or you can enter the label in the \u{Configuration Panel} though we'll address that in a bit more detail later.
 
 ----------
 
 ### Exercise 2-1 ###
 
-Practice placing \p{Stock} and \p{Variable} \p{Primitives} on the blank canvas in Figure 1 and naming them. You can remove a \p{Primitive} by selecting it and pressing the \u{Delete} key or clicking the \u{Delete} button in the \u{Actions} section of the \u{Toolbar}. Note that the \u{Save} option is disabled so you won't be able to save what you create. Note: This is only for the review copy. In the final copy you will be able to save what you create.
+Practice placing \p{Stock} and \p{Variable} \p{Primitives} on the blank canvas in Figure 2 and naming them. You can remove a \p{Primitive} by clicking on it to select it and then pressing the \u{Delete} key or clicking the \u{Delete} button in the \u{Actions} section of the \u{Toolbar}. Note that the \u{Save} option is disabled so you won't be able to save what you create. Note: This is only for the review copy. In the final copy you will be able to save what you create.
 
 ----------
 
 ## Stocks, Flows, Variables and Links ##
 
-\p{Stocks} and \p{Variables} are connected using \p{Flows} and \p{Links} and there are very explicit rules associated with these connections. The allowed connections are depicted in Figure 2.
+\p{Stocks} and \p{Variables} are connected using \p{Flows} and \p{Links} and there are very explicit rules associated with these connections. The allowed connections are depicted in Figure 3.
 
-<IFRAME SRC="http://InsightMaker.com/insight/5275?embed=0&editor=0&topBar=0&sideBar=0&zoom=0" TITLE="Figure 2. Valid Primitive Connections" width=680 height=400></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/5275?embed=0&editor=0&topBar=0&sideBar=0&zoom=0" TITLE="Figure 3. Valid Primitive Connections" width=950 height=600></IFRAME>
 
-[** Figure 2. Valid Primitive Connections](http://insightmaker.com/insight/5275)
+[** Figure 3. Valid Primitive Connections](http://insightmaker.com/insight/5275)
 
-If \p{Use Links} or \p{Use Flows} is selected in the \u{Connections} segment of the \u{Toolbar} then when you mouse over an element of a model a little right pointing arrow shows up at the center of the element. You always draw a \p{Link} or a \p{flow} from one element to another and the arrow on the element points in the direction you draw the connection. If neither \p{Use Links} or \p{Use Flows} is selected then thee will be no right pointing arrow when you mouse over the element.
+If \p{Use Links} or \p{Use Flows} is selected in the \u{Connections} segment of the \u{Toolbar} then when you mouse over an element of a model a little right pointing arrow shows up at the center of the element. You always draw a \p{Link} or a \p{flow} from one element to another and the arrow on the element points in the direction you draw the connection. If neither \p{Use Links} or \p{Use Flows} is selected then there will be no right pointing arrow when you mouse over the element.
 
 ----------
 
 ### Exercise 2-2 ###
 
-Click on the Set Up button on Figure 2, answer OK to both questions, and then repeatedly click Display to walk though a description of the valid connections between Stocks and Variables.
+Click on the Set Up button on Figure 3, answer OK to both questions, and then repeatedly click Display to walk though a description of the valid connections between Stocks and Variables.
 
 ----------
 
@@ -52,7 +58,7 @@ Hopefully the rules associated with the connections were easy to understand. Jus
 
 ## Valid Primitive Connections ##
 
-The valid primitive connections of Figure 2 are described as follows.
+The valid primitive connections of Figure 3 are described as follows.
 
 ### Flow ###
 
@@ -61,7 +67,7 @@ A Flow adds stuff to a Stock, subtracts stuff from a Stock, or moves stuff from 
 - A flow out of a stock decreases it. If where the flow goes isn't relevant to the model then it just flows from the stock to the canvas. Select Flow from the toolbar and then click on the arrow that appears on the stock when you mouse over it and drag onto the canvas and release. 
 - A flow into a stock will increase it. If you don't care where the Flow is coming from then you first have to draw the Flow from the Stock to the canvas and click the Reverse button in the Connections section to get the Flow to come into the Stock from nowhere. It's just a quirk of the web implementation.
 - A flow from one stock to another decreases the source and increases the destination. The get a flow between two Stocks draw the Stocks first and then draw the Flow from one Stock to the other.
-- Flows can be bidirectional.
+- Flows can be bidirectional and we'll talk more about that the first time it's used in a model.
 
 ### Link ###
 
@@ -86,36 +92,36 @@ When you draw a link from one element to another it is created as a straight lin
 
 ### Exercise 2-3 ###
 
-Go back to Figure 1 and recreate Figure 2 for yourself. Actually making the connections helps develop a level of familiarity which will serve you well in the long run.
+Go back to Figure 2 and recreate Figure 3 for yourself. Actually making the connections helps develop a level of familiarity which will serve you well in the long run.
 
 ----------
 
-To this point you've learned how to develop a static picture of a model. It actually is a model and provides a sense of the relationships between the various elements of the model. What it doesn't give you a sense of is the dynamic nature of these interactions over time. What are the implications of the relationships? In the next few sections you'll learn how to bring your model to life.
+To this point you've learned how to develop a static picture of a model. It actually is a model and provides a sense of the relationships between the various elements of the model. What it doesn't give you a sense of the dynamic nature of these interactions over time. What are the implications of the relationships? In the next few sections you'll learn how to bring your model to life.
 
 ## Common Property # 1 ##
 
-Look at the pictures in Figure 3 and ask yourself what it is that these pictures have in common. The pictures all represent very different kinds of things, some living, some not, though there is a characteristics they all have in common. Have you figured it out?
+Look at the pictures in Figure 4 and ask yourself what it is that these pictures have in common. The pictures all represent very different kinds of things, some living, some not, though there is a characteristics they all have in common. Have you figured it out?
 
-![Figure 3. Common Property # 1](./02-im-4548.png)
+![Figure 4. Common Property # 1](02-im-4548.png)
 
-[** Figure 3. Common Property # 1](http://www.insightmaker.com/insight/4548)
+[** Figure 4. Common Property # 1](http://www.insightmaker.com/insight/4548)
 
 Maybe you notice the rabbits from the previous chapter? The things depicted in the various images all grow in one way or another, and some faster than others.
 
 ## Constructing a Growth Structure ##
 
-Lets use Figure 4 to construct a basic growth structure and in the process you'll learn about several of the parameters associated with the different elements of a model.
+Lets use Figure 5 to construct a basic growth structure and in the process you'll learn about several of the parameters associated with the different elements of a model.
 
-<IFRAME SRC="http://InsightMaker.com/insight/5351?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 4. Growth Structure" width=700 height=500></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/5351?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 5. Growth Structure" width=950 height=600></IFRAME>
 
-[** Figure 4. Growth Structure](http://insightmaker.com/insight/5351)
+[** Figure 5. Growth Structure](http://insightmaker.com/insight/5351)
 
 - Place a Stock on the canvas and label it Stuff.
 - Now make sure the Stock is selected and take a look at the Configuration Panel on the right.
 - For each Primitive and Connection there are a set of parameters you can assign.
 - There are some in common across all elements of a model and there are some unique to various elements as they server different purposes.
 - If you scroll down you'll notice there is a description of the element along with examples at the bottom of the panel.
-- For this exercise you don't actually have to set any of the parameters though you could take a min to read thogh them. We'll discuss each parameter the first time it's used in a model.
+- For this exercise you don't actually have to set any of the parameters though you could take a min to read through them. We'll discuss each parameter the first time it's used in a model.
 - Click on Use Flows to select that element.
 - Mouse over the stock and click when the arrow appears at the center and drag onto the canvas somewhere outside the stock. Which direction doesn't make a difference though make sure you're a couple inches outside the stock before you release the mouse button.
 - While the flow is still selected click on Reverse so you have a flow into the stock.
@@ -123,9 +129,32 @@ Lets use Figure 4 to construct a basic growth structure and in the process you'l
 - Click in the field to the right of Flow Rate = and change the zero to a 1.
 - Click the Run Simulation button and you've successfully created and run your first model. Admittedly it may not be very exciting though it is the first one, and one of many.
 
-![Figure 5. Your First Model Output](./02-im-5351.png)
+![Figure 6. Your First Model Output](02-im-5351.png)
 
-[** Figure 5. Your First Model Output](http://www.insightmaker.com/insight/5351)
+[** Figure 6. Your First Model Output](http://www.insightmaker.com/insight/5351)
 
 Notice that the model ran for 20 years. That's because we used the default Time Settings.
 
+----------
+
+### Exercise 2-4 ###
+
+Open the Time Settings dialogue depicted in Figure 6 and setup and run the model for different valued of Simulation Length and Time Units.
+
+----------
+
+![Figure 7. Simulation Time Settings](02-im-5351a.png)
+
+[** Figure 7. Simulation Time Settings](http://www.insightmaker.com/insight/5351)
+
+Notice that in each case what you get is a rising slope for different time periods and at different angles. What you perceive in the graph is referred to a linear growth though this growth doesn't actually represent the growth associated with the images depicted in Figure 3. In those situations growth is actually dependent on the size of the accumulation or stock to begin with.
+
+If we evolve the Figure 4 model into Figure 7 so the flow is dependent on the amount of stuff we find the growth to be very different.
+
+<IFRAME SRC="http://InsightMaker.com/insight/5497?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 7. Feedback Dependent Growth" width=800 height=600></IFRAME>
+
+[** Figure 7. Feedback Dependent Growth](http://insightmaker.com/insight/5497)
+
+<IFRAME SRC="http://InsightMaker.com/insight/5524?embed=0&editor=1&topBar=0&sideBar=0&zoom=1" TITLE="Figure ?. Feedback Dependent Growth" width=900 height=600></IFRAME>
+
+[** Figure 7. Feedback Dependent Growth](http://insightmaker.com/insight/5524)

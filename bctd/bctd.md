@@ -21,7 +21,9 @@ Subscribing to the [Project Notes from Gene & Scott](http://linkd.in/16kqXAy) th
 
 # Chapter 1 - It's The Pattern That Connects #
 
-- tbd
+Note that it make take a several seconds for the page to load because of the embedded Insight Maker models.
+
+- [v2 13.04.08](./learning-v2/learning.html) Put comments in -> [v2 Comments Thread](http://linkd.in/10MEuMm)
 
 
 
