@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    203448,       3703]
-NotebookOptionsPosition[    202916,       3680]
-NotebookOutlinePosition[    203271,       3696]
-CellTagsIndexPosition[    203228,       3693]
+NotebookDataLength[    203514,       3704]
+NotebookOptionsPosition[    202982,       3681]
+NotebookOutlinePosition[    203337,       3697]
+CellTagsIndexPosition[    203294,       3694]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3670,8 +3670,9 @@ Cell[BoxData["\<\"Distributions.png\"\>"], "Output",
 Cell[BoxData[
  RowBox[{"SystemOpen", "[", 
   RowBox[{"DirectoryName", "[", 
-   RowBox[{"AbsoluteFileName", "[", "\"\<distributions.png\>\"", "]"}], "]"}],
+   RowBox[{"AbsoluteFileName", "[", "\"\<Distributions.png\>\"", "]"}], "]"}],
    "]"}]], "Input",
+ CellChangeTimes->{{3.574862773532055*^9, 3.574862774034193*^9}},
  NumberMarks->False],
 
 Cell[BoxData[""], "Input",
@@ -3697,14 +3698,14 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[579, 22, 9054, 219, 590, "Input"],
-Cell[9636, 243, 192431, 3408, 569, "Output"]
+Cell[9636, 243, 192431, 3408, 511, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[202104, 3656, 335, 6, 28, "Input"],
 Cell[202442, 3664, 144, 2, 28, "Output"]
 }, Open  ]],
-Cell[202601, 3669, 195, 5, 28, "Input"],
-Cell[202799, 3676, 113, 2, 28, "Input"]
+Cell[202601, 3669, 261, 6, 28, "Input"],
+Cell[202865, 3677, 113, 2, 28, "Input"]
 }
 ]
 *)
