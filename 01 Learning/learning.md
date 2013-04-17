@@ -2,6 +2,14 @@
 
 ----------
 
+### Notes to Self! ###
+
+> remove it and it's and I
+
+> If you give people the answers there is no need for them to practice insight and the purpose of BCTD is to encourage the practice of gaining insight into why systems behave the why they do.
+
+----------
+
 ### Notes to Reviewers ###
 
 #### v2 Modifications ####
@@ -209,6 +217,8 @@ A directed arrow representing the flow of something into or out of a stock. Reme
 
 #### Toolbar ####
 
+> include another graphic to make the upper right arrow clear
+
 Notice in the upper right corner there is a small down arrow. If you click on this arrow it will open the toolbar displayed in Figure 9. The toolbar contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, with a few pop up windows of course.
 
 ![Figure 9. Toolbar](00-im-4990c.png)
@@ -273,7 +283,7 @@ Too much explaining and not enough hands on interaction gets to be real boring i
 
 #### Exercise ####
 
-Go back and consider the various pictures in Figure 5. Pick a couple of them to model. The only parts you need to set up are the Time Settings, how long will it run and the Time Units. You can also set the values for stuff, stuff in and stuff out on the Configuration Panel. After you run the model open the Chart/Table configuration window and set the Y-Axis Label appropriate for what you're modeling. I encourage you to be adventurous. Make new Displays, Table Displays, etc. You can't brake anything, it's just an opportunity to become comfortable with the environment and learn.
+Go back and consider the various pictures in Figure 5. Pick a couple of them to model. The only parts you need to set up are the Time Settings, how long will it run and the Time Units. You can also set the values for stuff, stuff in and stuff out on the Configuration Panel. After you run the model open the Chart/Table configuration window and set the Y-Axis Label appropriate for what you're modeling. I encourage you to be adventurous. Make new Displays, Table Displays, etc. You can't break anything, it's just an opportunity to become comfortable with the environment and learn.
 
 ----------
 
@@ -301,7 +311,7 @@ A constant or equation used to influence some part of the model. Remember that a
 
 A link is used to communicate a value of one element to another. The link doesn't actually represent something moving like a flow does.
 
-#### = & i ####
+#### \u{=} & \u{i} ####
 
 If you mouse over the elements of the model you'll notice an = and an i appear. The i indicates there is additional info available. If you click the i a note window will open with a description of the element. This info was entered when the model was created. The = indicates there is a value or equation associated with the element. If you click the = it will open the \u{Equation Editor} window. We'll talk more about this when you start building a model.
 
@@ -310,6 +320,8 @@ If you mouse over the elements of the model you'll notice an = and an i appear. 
 Based on the previous modeling notes the model depicted in Figure 14 indicates that if you start with some population of Rabbits and each time period the current number of Rabbits times the Rabbit Birth Rate will result in a number of Births. This number of Births will then be added to the accumulation of Rabbis and figure into the calculation for the next period. If you mouse over the elements of the model and click on the = sign you can look at the definitions for the elements.
 
 The Time Settings for the model were set up to run from 0 to 12 months. If you click the Run button you you might be surprised when the model produces the graph in image in Figure 15.
+
+> The values in figure 14 are supposed to be 0 unless someone changed them.
 
 ![Figure 15. Rabbit Population Growth with No Rabbits](00-im-5123.png)
 
@@ -324,6 +336,8 @@ Suppose we start with 10 Rabbits, half of which are male and half of which are f
 [** Figure 16. Rabbit Population Growth with 10 Rabbits](http://insightmaker.com/insight/5123)
 
 Forty thousand Rabbits in a year? That seems a bit bizarre doesn't it? This result actually points out the real value of modeling, which is learning. You build a model based on what you think you understand. You then populate it with assumptions about the values and you run it. The result then either seems to make sense or seems really bizarre. In that case what the model is telling you is that either the structure is wrong, the assumptions are wrong, or both, because the world can't possibly be this bizarre. As a result you investigate the model and your assumptions and as you understand better the model gets better. At some point the model finally serves its purpose, to be a simplification of some aspect of the world which leads to a better understanding. I hope you come to find, as I have, that going round and round with a model can be a delightful learning process.
+
+> note the choppy nature of the graph. talk about why this is the result of the step size and we'll address this in chapter 2
 
 After that sidetrack lets get back to our 40,000 Rabbits that can't possibly exist after a year. I'm pretty sure I can be certain how many Rabbits I started with at the beginning. And when I check my formula for Births = Rabbits * Rabbit Birth Rate it seems to be in order. This sort of means my assumption for Rabbit Birth Rate must be too big. And if you think about what the model is doing it's probably not too difficult to figure out that the model assumes that a Rabbit can be born this month and then give birth to another Rabbit next month. If a Rabbit has to mature for six months before it gives birth to Rabbits then the Rabbit Birth Rate might be something more like 20%. Using this estimate for Rabbit Birth Rate the model produces Figure 17.
 
@@ -359,6 +373,8 @@ Isn't it curious that the structure of this model looks just like the one for th
 ----------
 
 With the Time Settings set for the model to run for 24 hours. Set the Swimming Pool to 0, meaning empty, and the Full Level to 20,000, on the Configuration go ahead and click the Run button. You should end up with the graph as shown in Figure 19.
+
+> note the choppy nature of the graph. talk about why this is the result of the step size and we'll address this in chapter 2
 
 ![Figure 19. How long to fill the pool](00-im-5128.png)
 

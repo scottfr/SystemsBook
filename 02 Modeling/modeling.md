@@ -139,7 +139,7 @@ Notice that the model ran for 20 years. That's because we used the default Time 
 
 ### Exercise 2-4 ###
 
-Open the Time Settings dialogue depicted in Figure 6 and setup and run the model for different valued of Simulation Length and Time Units.
+Open the Time Settings dialogue associated with Figure 5 and setup and run the model for different values of Simulation Length and Time Units.
 
 ----------
 
@@ -149,12 +149,89 @@ Open the Time Settings dialogue depicted in Figure 6 and setup and run the model
 
 Notice that in each case what you get is a rising slope for different time periods and at different angles. What you perceive in the graph is referred to a linear growth though this growth doesn't actually represent the growth associated with the images depicted in Figure 3. In those situations growth is actually dependent on the size of the accumulation or stock to begin with.
 
-If we evolve the Figure 4 model into Figure 7 so the flow is dependent on the amount of stuff we find the growth to be very different.
+If we evolve the Figure 5 model into Figure 8 so the flow is dependent on the amount of stuff we find the growth to be very different.
 
-<IFRAME SRC="http://InsightMaker.com/insight/5497?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 7. Feedback Dependent Growth" width=800 height=600></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/5497?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 8. Feedback Dependent Growth" width=950 height=600></IFRAME>
 
-[** Figure 7. Feedback Dependent Growth](http://insightmaker.com/insight/5497)
+[** Figure 8. Feedback Dependent Growth](http://insightmaker.com/insight/5497)
 
-<IFRAME SRC="http://InsightMaker.com/insight/5524?embed=0&editor=1&topBar=0&sideBar=0&zoom=1" TITLE="Figure ?. Feedback Dependent Growth" width=900 height=600></IFRAME>
+Figure 8 represents only a couple of changes from Figure 5 as follows.
 
-[** Figure 7. Feedback Dependent Growth](http://insightmaker.com/insight/5524)
+- Connect a link from stuff to Flow with a couple of handles so it can be reshaped to improve visibility.
+- Mouse over the Flow and click on the \u{=} sign to open the \u{Equations Editor} and set the Flow to \u{\[stuff\]} as in Figure 9.
+- Open \u{Time Settings} and set the \a{Simulation Length} to 10.
+- Now Run the model. Note that because of the width of the embedded model you can't see the whole \u{Toolbar}. Clicking the \u{>>} just to the right of the \u{Tools} section of the \u{Toolbar} the rest of the options will drop down and you can select the \u{Run} option. You should now see the diagram in Figure 10.
+
+![Figure 9. Equations Editor:Flow](02-im-5497.png)
+
+[** Figure 9. Equations Editor:Flow](http://www.insightmaker.com/insight/5497)
+
+The result of the run from the model in Figure 8 is depicted in Figure 9. The value after 10 Years is 1,024 which you should realize is just 2^10 as expected because we started with a value of 1 and doubled it every year. This curve is referred to as an exponential growth curve.
+
+![Figure 10. Growth of Stuff](02-im-5497a.png)
+
+[** Figure 10. Growth of Stuff](http://www.insightmaker.com/insight/5497)
+
+----------
+
+### Exercise 2-5 ###
+
+Notice that the curve in Figure 10 is a bit choppy where it turns up. Run the model in Figure 8 with a Time Step of .5, .25, .125, .0625 and compare the results. What questions are raised by the the results?
+
+----------
+
+### Time Units and Time Step Selection ###
+
+The \u{Time Units} and \u{Time Step} selected for a model should be consistent with the time frame and level of detail of the model. You probably wouldn't develop a model about filling a bathtub with water and use \u{Time Units} of months. Minutes are probably more appropriate for this model. The \u{Time Step} is then selected to ensure none of the relevant transitions associated with the dynamic nature of the model are missed. A \u{Time Step} of .25, meaning 15 seconds, is probably sufficiently small to ensure there are no transitions missed.
+
+Trial is actually the most appropriate approach to determine if you have an appropriate \u{Time Step} size. If you think .5 is appropriate then run the model with 1, .5, and .25 and if the results for 1 and .25 don't differ from .5 then you're probably OK. If .25 produced a different result then compare the .25 result with the .125 result. Once you get two runs where the values don't change then use the larger one.
+
+Given this guidance how would you interpret the results you experienced in Exercise 2-5?
+
+----------
+
+### Exercise 2-6 ###
+
+Consider the images in Figure 4 and consider what \u{Time Units} and \u{Time Step} you would use in a model representing the growth in each of these areas.
+
+----------
+
+The model in Figure 8 is for a Savings Account that is defined as compounding annually. This means that the most appropriate \{Time Units} is years with a \u{Time Step} of 1. There are no other transitions in this model that need to be accommodated and running this model with any \u{Time Step} other than 1 will result in a less accurate result.
+
+----------
+
+### Exercise 2-7 ###
+
+Change the labels, values and simulation time settings for the model in Figure 8 for several of the contexts presented in Figure 4 and then run the models. What becomes apparent from this exercise?
+
+----------
+
+One aspect of trying to model the contexts of Figure 4 that should have become apparent is that there is a piece of the model that's missing. 
+
+<IFRAME SRC="http://InsightMaker.com/insight/5887?embed=0&editor=1&topBar=0&sideBar=0&zoom=1" TITLE="Figure 11. Feedback Dependent Growth" width=950 height=600></IFRAME>
+
+[** Figure 11. Feedback Dependent Growth](http://insightmaker.com/insight/5887)
+
+The model in Figure 11 adds a factor, which is allowed to vary between 0 and 1, which is simply used to govern the flow. Mouse over the Flow and click the equal (=) sign to view the formula governing the flow.
+
+----------
+
+### Exercise 2-8 ###
+
+Use the model in Figure 11 to implement the models in Exercise 2-7. Does this structure allow you to construct more realistic representations of the contexts presented in Figure 4?
+
+----------
+
+The model of Figure 11 is standard reinforcing growth model depicted in Figure 1 at the beginning of this chapter. In the process of arriving this model the linear growth model of Figure 1 was also developed. Hopefully through the exercises to this point you have gained a deeper understanding of how this structure works and the breadth of its applicability.
+
+----------
+
+## Common Property # 2 ##
+
+
+
+End of Chapter
+
+<IFRAME SRC="http://InsightMaker.com/insight/5524?embed=0&editor=1&topBar=0&sideBar=0&zoom=1" TITLE="Figure ?. Feedback Dependent Growth" width=950 height=600></IFRAME>
+
+[** Figure ?. Feedback Dependent Growth](http://insightmaker.com/insight/5524)

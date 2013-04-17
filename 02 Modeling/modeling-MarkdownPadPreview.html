@@ -279,32 +279,140 @@ table tr:nth-child(2n) {
 <h3>Notes to Reviewers</h3>
 <p>This chapter is intended to provide the reader with enough experience with the basic elements of the modeling environment such that they can construct simple balancing and reinforcing loops. Supporting aspects of the environment necessary to run these models will also be described. This will build on the elements presented in the previous chapters and is intended to be an introduction, not an exhaustive dissertation on modeling and simulation theory. The intent is to encourage the reader to develop and play with models, not chase them from the room screaming in fear never to return again.</p>
 <hr />
+<p>Figure 1 is the last model from the previous chapter. The intent in this chapter is to acquaint you with enough of the modeling environment such that you can recreate these structures. In the process it is hoped that you will come to understand how it is that these three structures are essentially the building blocks for all the models you will ever build. Or at least almost.</p>
+<IFRAME SRC="http://InsightMaker.com/insight/5138?embed=0&editor=1&topBar=0&sideBar=1&zoom=0" TITLE="Figure 1. Similar Structures/Different Behaviors" width=950 height=650></IFRAME>
+<p><a href="http://insightmaker.com/insight/5138">** Figure 1. Similar Structures/Different Behaviors</a></p>
 <h2>The Blank Canvas</h2>
 <p>Some might look on the blank canvas and hesitate not knowing where to start. You will be far better off if you look on the blank canvas as a gift of freedom which allows you to start anywhere. You will come to understand that if you approach modeling appropriately it won't matter where you start, you'll still end up with a meaningful model.</p>
 <p>In the next few segments you will learn how to create on this canvas the two basic structures from which all models are constructed.</p>
-<p>Notice in Figure 1 that similar tools are grouped on the \u{Toolbar} in Figure 1. Also only a portion of the \u{Toolbar} is displayed though it's enough for what will be covered in this section.</p>
-<p><img src="./02-im-5291.png" alt="Figure 1. Blank Canvas" /></p>
-<p><a href="http://insightmaker.com/insight/5291">** Figure 1. Blank Canvas</a></p>
-<p>To use a tool you click on it on the \u{Toolbar} to select it, then you click on the canvas where you want it located, or used. For each tool there are a set of allowed uses. Once you place the item on the canvas it is named for what it is with that name selected so you can type in the name you want. Labels can be anything except braces &quot;{}&quot;, brackets &quot;[]&quot;, parentheses (), and quotes '. If the label is no selected you can double-click on it to select the label and then enter a new one, or you can enter the label in the \u{Configuration Panel} though we'll address that in a bit more detail later.</p>
+<p>Notice in Figure 2 that similar tools are grouped on the \u{Toolbar}. Only a portion of the \u{Toolbar} is displayed though it's enough for what will be covered in this section.</p>
+<IFRAME SRC="http://InsightMaker.com/insight/5291?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 2. Blank Canvas" width=950 height=400></IFRAME>
+<p><a href="http://insightmaker.com/insight/5291">** Figure 2. Blank Canvas</a></p>
+<p>To use any of the \u{Primitives} or \u{Connections} you click on the icon on the \u{Toolbar} to select it, then you click on the canvas where you want it located, or used. For each tool there are a set of allowed uses. Once you place the item on the canvas it is named for what it is, with that name selected so you can type in the name you want. Names can contain any characters except braces &quot;{}&quot;, brackets &quot;[]&quot;, parentheses (), and quotes '. If the label is not selected you can double-click on it to select the label and then enter a new one, or you can enter the label in the \u{Configuration Panel} though we'll address that in a bit more detail later.</p>
 <hr />
 <h3>Exercise 2-1</h3>
-<p>Practice placing \p{Stock} and \p{Variable} \p{Primitives} on the blank canvas in Figure 1 and naming them. You can remove a \p{Primitive} by selecting it and pressing the \u{Delete} key or clicking the \u{Delete} button in the \u{Actions} section of the \u{Toolbar}. Note that the \u{Save} option is disabled so you won't be able to save what you create. Note: This is only for the review copy. In the final copy you will be able to save what you create.</p>
+<p>Practice placing \p{Stock} and \p{Variable} \p{Primitives} on the blank canvas in Figure 2 and naming them. You can remove a \p{Primitive} by clicking on it to select it and then pressing the \u{Delete} key or clicking the \u{Delete} button in the \u{Actions} section of the \u{Toolbar}. Note that the \u{Save} option is disabled so you won't be able to save what you create. Note: This is only for the review copy. In the final copy you will be able to save what you create.</p>
 <hr />
-<p>\p{Stocks} and \p{Variables} are connected using \p{Flows} and \p{Links} and there are very explicit rules associated with these connections. The allowed connections are depicted in Figure 2.</p>
-<IFRAME SRC="http://InsightMaker.com/insight/5275?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 2. Valid Primitive Connections" width=680 height=400></IFRAME>
-<p><a href="http://insightmaker.com/insight/5275">** Figure 2. Valid Primitive Connections</a></p>
-<p>If \p{Use Links} or \p{Use Flows} is selected in the \u{Connections} segment of the \u{Toolbar} then when you mouse over an element of a model a little right pointing arrow shows up at the center of the element. You always draw a \p{Link} or a \p{flow} from one element to another and the arrow on the element points in the direction you draw the connection. If neither \p{Use Links} or \p{Use Flows} is selected then thee will be no right pointing arrow when you mouse over the element.</p>
+<h2>Stocks, Flows, Variables and Links</h2>
+<p>\p{Stocks} and \p{Variables} are connected using \p{Flows} and \p{Links} and there are very explicit rules associated with these connections. The allowed connections are depicted in Figure 3.</p>
+<IFRAME SRC="http://InsightMaker.com/insight/5275?embed=0&editor=0&topBar=0&sideBar=0&zoom=0" TITLE="Figure 3. Valid Primitive Connections" width=950 height=600></IFRAME>
+<p><a href="http://insightmaker.com/insight/5275">** Figure 3. Valid Primitive Connections</a></p>
+<p>If \p{Use Links} or \p{Use Flows} is selected in the \u{Connections} segment of the \u{Toolbar} then when you mouse over an element of a model a little right pointing arrow shows up at the center of the element. You always draw a \p{Link} or a \p{flow} from one element to another and the arrow on the element points in the direction you draw the connection. If neither \p{Use Links} or \p{Use Flows} is selected then there will be no right pointing arrow when you mouse over the element.</p>
 <hr />
 <h3>Exercise 2-2</h3>
-<p>Click on the Set Up button on Figure 2, answer OK to both questions, and then repeatedly click Display to walk though a description of the valid connections between Stocks and Variables.</p>
+<p>Click on the Set Up button on Figure 3, answer OK to both questions, and then repeatedly click Display to walk though a description of the valid connections between Stocks and Variables.</p>
 <hr />
 <p>Hopefully the rules associated with the connections were easy to understand. Just remember that Flows represent the movement of stuff while Links only communicate the value of something from one location to another.</p>
+<h2>Valid Primitive Connections</h2>
+<p>The valid primitive connections of Figure 3 are described as follows.</p>
+<h3>Flow</h3>
+<p>A Flow adds stuff to a Stock, subtracts stuff from a Stock, or moves stuff from one Stock to another. The only way to change the quantity of stuff in a Stock is with a Flow.</p>
+<ul>
+<li>A flow out of a stock decreases it. If where the flow goes isn't relevant to the model then it just flows from the stock to the canvas. Select Flow from the toolbar and then click on the arrow that appears on the stock when you mouse over it and drag onto the canvas and release. </li>
+<li>A flow into a stock will increase it. If you don't care where the Flow is coming from then you first have to draw the Flow from the Stock to the canvas and click the Reverse button in the Connections section to get the Flow to come into the Stock from nowhere. It's just a quirk of the web implementation.</li>
+<li>A flow from one stock to another decreases the source and increases the destination. The get a flow between two Stocks draw the Stocks first and then draw the Flow from one Stock to the other.</li>
+<li>Flows can be bidirectional and we'll talk more about that the first time it's used in a model.</li>
+</ul>
+<h3>Link</h3>
+<p>A Link is used to communicate a value from one element to another. There is no flow of stuff through the link itself. The communication is considered to be instantaneous.</p>
+<ul>
+<li>You can use a Link from a Stock to a Variable to communicate the value of the Stock to be used in an equation. This does not change the Stock.</li>
+<li>You can use a Link to communicate the value of a Stock to a Flow to be used in the equation determining the value of the Flow in the next iteration. The Link does not change the value of the Stock.</li>
+<li>You can use a Link to communicate the value of a Flow to a Variable to be used in an equation. This does not change the value of the flow.</li>
+<li>You can use a Link to communicate the value of a Variable to a Flow to be used in the equation that defines the flow. This does not change the value of the Variable.</li>
+<li>You can use a Link to communicate the value of a Variable to another Variable so that value can be used in an equation in the destination variable. The link does not change the value of the source Variable.</li>
+<li>You can use a Link to communicate the value of a Variable to a Stock to be used as it's Initial Value when the simulation begins. The value of the Variable is computed and assigned to the Stock as the simulation begins and it has no influence on the Stock during the simulation.</li>
+</ul>
+<p>When you draw a link from one element to another it is created as a straight line. There are times when you would prefer that the connection be other than a straight line to make the diagram easier to understand. You can turn a straight line into a multiple segment line as follows.</p>
+<ul>
+<li>Click on the line to select it.</li>
+<li>Hold down the shift key and click somewhere in the middle of the line then release. This puts a little node on the line.</li>
+<li>Click on the node and move it as you wish to create a two segment line.</li>
+<li>You can create as many segments as you need, simply repeat the second step above.</li>
+<li>If you wish to remove the segments select the head of the link, move it off the element it's connected to and then reconnected it. It will now be a straight line.</li>
+</ul>
 <hr />
 <h3>Exercise 2-3</h3>
-<p>Go back to Figure 1 and recreate Figure 2 for yourself. Actually making the connections helps develop a level of familiarity which will server you well in the long run.</p>
+<p>Go back to Figure 2 and recreate Figure 3 for yourself. Actually making the connections helps develop a level of familiarity which will serve you well in the long run.</p>
 <hr />
-<p>Figure 2 connection notes.</p>
-<p>All the notes in the model have to go here for the printed version - Argh!!!</p>
+<p>To this point you've learned how to develop a static picture of a model. It actually is a model and provides a sense of the relationships between the various elements of the model. What it doesn't give you a sense of the dynamic nature of these interactions over time. What are the implications of the relationships? In the next few sections you'll learn how to bring your model to life.</p>
+<h2>Common Property # 1</h2>
+<p>Look at the pictures in Figure 4 and ask yourself what it is that these pictures have in common. The pictures all represent very different kinds of things, some living, some not, though there is a characteristics they all have in common. Have you figured it out?</p>
+<p><img src="02-im-4548.png" alt="Figure 4. Common Property # 1" /></p>
+<p><a href="http://www.insightmaker.com/insight/4548">** Figure 4. Common Property # 1</a></p>
+<p>Maybe you notice the rabbits from the previous chapter? The things depicted in the various images all grow in one way or another, and some faster than others.</p>
+<h2>Constructing a Growth Structure</h2>
+<p>Lets use Figure 5 to construct a basic growth structure and in the process you'll learn about several of the parameters associated with the different elements of a model.</p>
+<IFRAME SRC="http://InsightMaker.com/insight/5351?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 5. Growth Structure" width=950 height=600></IFRAME>
+<p><a href="http://insightmaker.com/insight/5351">** Figure 5. Growth Structure</a></p>
+<ul>
+<li>Place a Stock on the canvas and label it Stuff.</li>
+<li>Now make sure the Stock is selected and take a look at the Configuration Panel on the right.</li>
+<li>For each Primitive and Connection there are a set of parameters you can assign.</li>
+<li>There are some in common across all elements of a model and there are some unique to various elements as they server different purposes.</li>
+<li>If you scroll down you'll notice there is a description of the element along with examples at the bottom of the panel.</li>
+<li>For this exercise you don't actually have to set any of the parameters though you could take a min to read through them. We'll discuss each parameter the first time it's used in a model.</li>
+<li>Click on Use Flows to select that element.</li>
+<li>Mouse over the stock and click when the arrow appears at the center and drag onto the canvas somewhere outside the stock. Which direction doesn't make a difference though make sure you're a couple inches outside the stock before you release the mouse button.</li>
+<li>While the flow is still selected click on Reverse so you have a flow into the stock.</li>
+<li>Notice that the parameters in the Configuration Panel are different from those for the Stock.</li>
+<li>Click in the field to the right of Flow Rate = and change the zero to a 1.</li>
+<li>Click the Run Simulation button and you've successfully created and run your first model. Admittedly it may not be very exciting though it is the first one, and one of many.</li>
+</ul>
+<p><img src="02-im-5351.png" alt="Figure 6. Your First Model Output" /></p>
+<p><a href="http://www.insightmaker.com/insight/5351">** Figure 6. Your First Model Output</a></p>
+<p>Notice that the model ran for 20 years. That's because we used the default Time Settings.</p>
+<hr />
+<h3>Exercise 2-4</h3>
+<p>Open the Time Settings dialogue associated with Figure 5 and setup and run the model for different values of Simulation Length and Time Units.</p>
+<hr />
+<p><img src="02-im-5351a.png" alt="Figure 7. Simulation Time Settings" /></p>
+<p><a href="http://www.insightmaker.com/insight/5351">** Figure 7. Simulation Time Settings</a></p>
+<p>Notice that in each case what you get is a rising slope for different time periods and at different angles. What you perceive in the graph is referred to a linear growth though this growth doesn't actually represent the growth associated with the images depicted in Figure 3. In those situations growth is actually dependent on the size of the accumulation or stock to begin with.</p>
+<p>If we evolve the Figure 5 model into Figure 8 so the flow is dependent on the amount of stuff we find the growth to be very different.</p>
+<IFRAME SRC="http://InsightMaker.com/insight/5497?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 8. Feedback Dependent Growth" width=950 height=600></IFRAME>
+<p><a href="http://insightmaker.com/insight/5497">** Figure 8. Feedback Dependent Growth</a></p>
+<p>Figure 8 represents only a couple of changes from Figure 5 as follows.</p>
+<ul>
+<li>Connect a link from stuff to Flow with a couple of handles so it can be reshaped to improve visibility.</li>
+<li>Mouse over the Flow and click on the \u{=} sign to open the \u{Equations Editor} and set the Flow to \u{[stuff]} as in Figure 9.</li>
+<li>Open \u{Time Settings} and set the \a{Simulation Length} to 10.</li>
+<li>Now Run the model. Note that because of the width of the embedded model you can't see the whole \u{Toolbar}. Clicking the \u{&gt;&gt;} just to the right of the \u{Tools} section of the \u{Toolbar} the rest of the options will drop down and you can select the \u{Run} option. You should now see the diagram in Figure 10.</li>
+</ul>
+<p><img src="02-im-5497.png" alt="Figure 9. Equations Editor:Flow" /></p>
+<p><a href="http://www.insightmaker.com/insight/5497">** Figure 9. Equations Editor:Flow</a></p>
+<p>The result of the run from the model in Figure 8 is depicted in Figure 9. The value after 10 Years is 1,024 which you should realize is just 2^10 as expected because we started with a value of 1 and doubled it every year. This curve is referred to as an exponential growth curve.</p>
+<p><img src="02-im-5497a.png" alt="Figure 10. Growth of Stuff" /></p>
+<p><a href="http://www.insightmaker.com/insight/5497">** Figure 10. Growth of Stuff</a></p>
+<hr />
+<h3>Exercise 2-5</h3>
+<p>Notice that the curve in Figure 10 is a bit choppy where it turns up. Run the model in Figure 8 with a Time Step of .5, .25, .125, .0625 and compare the results. What questions are raised by the the results?</p>
+<hr />
+<h3>Time Units and Time Step Selection</h3>
+<p>The \u{Time Units} and \u{Time Step} selected for a model should be consistent with the time frame and level of detail of the model. You probably wouldn't develop a model about filling a bathtub with water and use \u{Time Units} of months. Minutes are probably more appropriate for this model. The \u{Time Step} is then selected to ensure none of the relevant transitions associated with the dynamic nature of the model are missed. A \u{Time Step} of .25, meaning 15 seconds, is probably sufficiently small to ensure there are no transitions missed.</p>
+<p>Trial is actually the most appropriate approach to determine if you have an appropriate \u{Time Step} size. If you think .5 is appropriate then run the model with 1, .5, and .25 and if the results for 1 and .25 don't differ from .5 then you're probably OK. If .25 produced a different result then compare the .25 result with the .125 result. Once you get two runs where the values don't change then use the larger one.</p>
+<p>Given this guidance how would you interpret the results you experienced in Exercise 2-5?</p>
+<hr />
+<h3>Exercise 2-6</h3>
+<p>Consider the images in Figure 4 and consider what \u{Time Units} and \u{Time Step} you would use in a model representing the growth in each of these areas.</p>
+<hr />
+<p>The model in Figure 8 is for a Savings Account that is defined as compounding annually. This means that the most appropriate {Time Units} is years with a \u{Time Step} of 1. There are no other transitions in this model that need to be accommodated and running this model with any \u{Time Step} other than 1 will result in a less accurate result.</p>
+<hr />
+<h3>Exercise 2-7</h3>
+<p>Change the labels, values and simulation time settings for the model in Figure 8 for several of the contexts presented in Figure 4 and then run the models. What becomes apparent from this exercise?</p>
+<hr />
+<p>One aspect of trying to model the contexts of Figure 4 that should have become apparent is that there is a piece of the model that's missing. </p>
+<IFRAME SRC="http://InsightMaker.com/insight/5887?embed=0&editor=1&topBar=0&sideBar=0&zoom=1" TITLE="Figure 11. Feedback Dependent Growth" width=950 height=600></IFRAME>
+<p><a href="http://insightmaker.com/insight/5887">** Figure 11. Feedback Dependent Growth</a></p>
+<p>The model in Figure 11 adds a factor, which is allowed to vary between 0 and 1, which is simply used to govern the flow. Mouse over the Flow and click the equal (=) sign to view the formula governing the flow.</p>
+<hr />
+<h3>Exercise 2-8</h3>
+<p>Use the model in Figure 11 to implement the models in Exercise 2-7. Does this structure allow you to construct more realistic representations of the contexts presented in Figure 4?</p>
+<hr />
+<hr />
+<p>End of Chapter</p>
+<IFRAME SRC="http://InsightMaker.com/insight/5524?embed=0&editor=1&topBar=0&sideBar=0&zoom=1" TITLE="Figure ?. Feedback Dependent Growth" width=950 height=600></IFRAME>
+<p><a href="http://insightmaker.com/insight/5524">** Figure ?. Feedback Dependent Growth</a></p>
 
 </body>
 </html>
