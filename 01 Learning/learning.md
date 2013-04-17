@@ -4,7 +4,7 @@
 
 ### Notes to Self! ###
 
-> remove it and it's and I
+> remove it and it's and I most everywhere.
 
 > If you give people the answers there is no need for them to practice insight and the purpose of BCTD is to encourage the practice of gaining insight into why systems behave the why they do.
 
