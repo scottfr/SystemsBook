@@ -21,7 +21,7 @@ In calculus this value is used to calculate an exact answer by taking the limit 
 2. Observe the shape of the graph and record the exact value of the last value calculated for the Y-axis and X-axis (time).
 3. Pick a new value for "Time Step" that is half of the previous value.
 4. Observe the shape of the graph and compare the exact value of the last calculated value to those in step 2 above.
-5. If there is no change then you are done. If there is a change in the shape of the graph or if the values are different then repeat step 3 until there is no change.
+5. If there is no change then you are done. If there is a change in the shape of the graph or if the values are different then repeat step 3 until there is no change out to the appropriate number of significant digits for your values.
 
 The second item of concern is the "Analysis Algorithm". Again, when computers were slow and had less memory, the integration method was important. The choice of using "Fast (Euler)" is not necessary in the 21st Century. You should always use "Accurate (RK4)".
 
