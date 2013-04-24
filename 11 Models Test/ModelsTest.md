@@ -6,6 +6,30 @@ fjdshkfjds
 
 fdshfjsd
 
+What is "Time Step"?
+---------
+
+You do not have to know calculus to use Insight Maker. You just need to know some algebra. There are two details about calculus that Insight Maker asks for your help in selecting the best option. These are in the "Time Settings" dialog box where you configure the time settings.
+
+The goal is to have the incremental step change as small as possible without using too much computer memory and processing time. When computers were first used for calculus they did not have sufficient memory and processing speed to use extremely small incremental step change values.
+
+Open the "Time Settings" diaglog box. The simulation start and length are for you to decide how long to run your simulation. Then there is the "Simulation Time Step". First, the units for this are NOT time. Using the word "time" here is a misnomer. "Time Step" means the change in value of the horizontal axis (or x-axis) as the value of the vertical axis changes.
+
+In calculus this value is used to calculate an exact answer by taking the limit as the change in the horizontal axis value approaches zero. OK, that was complex, here is what you need to know:
+
+1. Pick a value for "Time Step" that is 0.125 or less for your first run.
+2. Observe the shape of the graph and record the exact value of the last value calculated for the Y-axis and X-axis (time).
+3. Pick a new value for "Time Step" that is half of the previous value.
+4. Observe the shape of the graph and compare the exact value of the last calculated value to those in step 2 above.
+5. If there is no change then you are done. If there is a change in the shape of the graph or if the values are different then repeat step 3 until there is no change.
+
+The second item of concern is the "Analysis Algorithm". Again, when computers were slow and had less memory, the integration method was important. The choice of using "Fast (Euler)" is not necessary in the 21st Century. You should always use "Accurate (RK4)".
+
+RK4 means Runge-Kutta, fourth-order method, an accurate method for finding approximation solutions to ordinary differential equations.
+
+
+
+
  Model: Test Model
 
 {"create": "Stock, "geometry":{"x":400,"y":140,"width":100,"height":40}, "name": "Healthy"}
