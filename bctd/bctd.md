@@ -5,6 +5,7 @@ This page is intended to surface content for **Sponsor** review along with the l
 
 Subscribing to the [Project Notes from Gene & Scott](http://linkd.in/16kqXAy) thread in the [Sponsors Subgroup](http://www.linkedin.com/groups?gid=4894041) is strongly encouraged as this will be the best place to get updates as to changes and updates.
 
+## Copyright ##
 <!--
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br>Beyond Connecting the Dots by <a href="http://creativecommons.org/ns#">Gene Bellinger & Scott Fortmann-Roe</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
 
@@ -13,9 +14,13 @@ Subscribing to the [Project Notes from Gene & Scott](http://linkd.in/16kqXAy) th
 - For those who contribute content to the book that content is under copyright of the book.
 -->
 
-----------
+All contents copyright Gene Bellinger and Scott Fortmann-Roe. All rights reserved.
 
-## Table of Contents ##
+Three months after the book is published, we will release the contents under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-Non Commercial-Share Alike 3.0 Unported License</a>.
+
+Publisher retain ownership of their models with attribution to them as the source and they have to give us the copyright for the book.
+
+# Table of Contents #
 
 - [v1 13.03.10](./contents-v1.html) Put comments in -> [v1 Comment Thread](http://linkd.in/16ksdUy)
 - [v2 13.03.25](./contents-v2.html) Put comments in -> [v2 Comment Thread](http://linkd.in/16ksmHv)
@@ -26,5 +31,7 @@ Note that it make take a several seconds for the page to load because of the emb
 
 - [v2 13.04.08](./learning-v2/learning.html) Put comments in -> [v2 Comments Thread](http://linkd.in/10MEuMm)
 
+# Chapter 2 - Dynamic Lego Blocks #
 
+- [v1 13.04.24](./modeling-v1/modeling.html) Put comments in [Chapter 2 - Dynamic Lego Blocks](http://linkd.in/14QjOLs)
 

@@ -472,7 +472,7 @@ The values in the Figure 23 model elements were contrived so when you run the mo
 
 ----------
 
-#### Summary ####
+## Summary ##
 
 - Models are simplified versions of the world around us.
 - We build models to help us understand and learn.
