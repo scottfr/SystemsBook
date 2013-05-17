@@ -33,5 +33,14 @@ Note that it make take a several seconds for the page to load because of the emb
 
 # Chapter 2 - Dynamic Lego Blocks #
 
-- [v1 13.04.24](./modeling-v1/modeling.html) Put comments in [Chapter 2 - Dynamic Lego Blocks](http://linkd.in/14QjOLs)
+- [v1 13.04.24](./modeling-v1/modeling.html) Put comments in -> [Chapter 2 - Dynamic Lego Blocks](http://linkd.in/14QjOLs)
 
+# Chapter 3 - Building Models #
+
+- Soon
+
+# Chapter 4 - Models and Truth #
+
+Don't be overly concerned that this is Chapter 4. It's just sequenced that way because it's the 4th folder with content. It will resequence as additional chapters are added.
+
+- [v1 13.05.14](./ModelsAndTruth-v1.pdf) Put comments in -> [Models and Truth](http://linkd.in/129rKBB)

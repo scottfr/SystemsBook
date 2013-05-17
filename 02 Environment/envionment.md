@@ -1,4 +1,4 @@
-# Chapter 2 - Dynamic Lego Blocks v1 13.04.24 #
+# Chapter 2 - Dynamic Lego Blocks v2 13.05.xx #
 
 ----------
 
@@ -9,6 +9,11 @@ This chapter has three objectives:
 - **Modeling Environment**. Provide the reader with enough experience with the basic elements of the modeling environment so they can construct simple balancing and reinforcing loops. Supporting aspects of the environment necessary to run these models will also be described. This will build on the elements presented in the previous chapter. This is intended to be an introduction, not an exhaustive dissertation on modeling and simulation theory. The intent is to encourage the reader to develop and play with models, not chase them from the room screaming in fear never to return again.
 - **Valid Structures**. Provide an understanding of which model element connections are valid and the reason for the allowed connections.
 - **Basic Structures**. Develop further understanding of the Linear, Balancing and Reinforcing structures initially presented in Chapter 1.
+
+- Constructing a diagram [the drag and drop stuff] 
+- Bringing the model to life [altering parameters to see what happens] 
+- Digging deeper [using formulas to determine parameters] 
+- The basic models [Reinforcing and Balancing Loops] 
 
 #### Macros ####
 
@@ -22,15 +27,21 @@ There are certain aspects of the text formatting we don't have figured out and h
 
 ----------
 
-Figure 1 is the last model from the previous chapter. The intent of this chapter is for you be become comfortable creating these structures. In the process it is hoped that you will come to understand how it is that these three structures are essentially the building blocks for all the models you will ever build. Or at least almost.
+### Notes from Reviewers ###
+
+- **Blank Canvas**. The comment was I was being distracting talking about my blank canvas fears. I took it out though I still think it's a problem.
+- **Concepts/Tools Switch**. This is said to be confusing and I should break this into 2 chapters. My concern is that I think talking about the tools without an explicit model would make absorbing the tool functions more difficult.
+- **Time Step**. Some consider it confusing and some consider it simply wrong.
+
+----------
+
+Figure 1 is the last model from the previous chapter. The intent of this chapter is for you be become comfortable creating these structures. We hope you come to understand how it is that these three structures are essentially the building blocks for all the models you will ever build. Or at least almost.
 
 <IFRAME SRC="http://InsightMaker.com/insight/5138?embed=0&editor=1&topBar=0&sideBar=1&zoom=0" TITLE="Figure 1. Similar Structures/Different Behaviors" width=950 height=650></IFRAME>
 
 [** Figure 1. Similar Structures/Different Behaviors](http://insightmaker.com/insight/5138)
 
 ## The Blank Canvas ##
-
-Some might look on the blank canvas and hesitate not sure where to start. You will be far better off if you look on the blank canvas as a gift of freedom which allows you to start anywhere. You will come to understand that if you approach modeling appropriately it won't matter where you start, you'll still end up with a meaningful model.
 
 In the next few segments you will learn how to create on this canvas the three basic structures from which all models are constructed.
 
@@ -52,13 +63,13 @@ Practice placing \p{Stock} and \p{Variable} \p{Primitives} on the blank canvas i
 
 ## Stocks, Flows, Variables and Links ##
 
-\p{Stocks} and \p{Variables} are connected using \p{Flows} and \p{Links} and there are very explicit rules associated with these connections. The allowed connections are depicted in Figure 3.
+\p{Stocks} and \p{Variables} are connected to other \p{Stocks} and \p{Variables} using \p{Use Links} and \p{Use Flows}. The rules for connections are very explicit. The allowed connections are depicted in Figure 3.
 
 <IFRAME SRC="http://InsightMaker.com/insight/5275?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 3. Valid Primitive Connections" width=950 height=600></IFRAME>
 
 [** Figure 3. Valid Primitive Connections](http://insightmaker.com/insight/5275)
 
-If \p{Use Links} or \p{Use Flows} is selected in the \u{Connections} segment of the \u{Toolbar} then when you mouse over an element of a model a little right pointing arrow shows up at the center of the element. You always draw a \p{Link} or a \p{flow} from one element to another and the arrow on the element points in the direction you draw the connection. If neither \p{Use Links} or \p{Use Flows} is selected then there will be no right pointing arrow when you mouse over the element.
+Select \p{Use Links} or \p{Use Flows} from the \u{Connections} segment, then hover over a model \p{Primitives) object on the canvas. A small arrow pointing to the right shows at the center of the \p{Primitives) object. Center the \w{cursor crossing double arrows} over the right arrow, which should change the cursor to a \w{cursor hand}. Drag the mouse over to a second model element and the arrow tags along while the \u{Connections} is drawn.. If neither \p{Use Links} or \p{Use Flows} is selected then there will be no right pointing arrow when you mouse over the element.
 
 ----------
 
@@ -223,6 +234,14 @@ Trial is actually the most appropriate approach to determine if you have an appr
 
 Given this guidance how would you interpret the results you experienced in Exercise 2-5?
 
+
+----------
+
+### References ###
+
+- [How does DT work?](http://www.iseesystems.com/Helpv9/Content/DT/How_does_DT_work_.htm)
+- [DT Situations Requiring Special Care](http://www.iseesystems.com/Helpv9/Content/DT/DT_Special_Care.htm)
+
 ----------
 
 ### Exercise 2-6 ###
@@ -319,9 +338,9 @@ You might have also realized by this point that it would be quite difficult if w
 
 Figure 15 presents a modification to the model of Figure 13 where the factor has been replaced by a constraint. It looks like there have been lots of changes though they all cosmetic except the way Workers influence work on a daily basis.
 
-<IFRAME SRC="http://InsightMaker.com/insight/6171?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 13. Goal Seeking with Constraint" width=950 height=600></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/6171?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 15. Goal Seeking with Constraint" width=950 height=600></IFRAME>
 
-[** Figure 13. Goal Seeking with Constraint](http://insightmaker.com/insight/6171)
+[** Figure 15. Goal Seeking with Constraint](http://insightmaker.com/insight/6171)
 
 If you run the model with Project Days Work = 60, Workers = 0 and Days Work Completed set at the default of zero and Time Step = 1 you should see the graph in Figure 16.
 

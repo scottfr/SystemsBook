@@ -1,5 +1,7 @@
 # Beyond Connecting the Dots - Content Thoughts v2 - 13.03.25 #
 
+> where does model calibration go?
+
 An interactive book intended to enable one to develop a useful understanding of the world around them and their interaction with it. The vehicle for developing that understanding is modeling and simulation, hence the "Mastering the hidden connections in everything that matters." The following represents the current set of thoughts on the structure and content of the book.
 
 ## Cover ##
