@@ -35,9 +35,9 @@ Note that it make take a several seconds for the page to load because of the emb
 
 - [v1 13.04.24](./modeling-v1/modeling.html) Put comments in -> [Chapter 2 - Dynamic Lego Blocks](http://linkd.in/14QjOLs)
 
-# Chapter 3 - Building Models #
+# Chapter 3 - Building a Model #
 
-- Soon
+- [v1 13.05.18](./building-v1/building.html) Put comments in -> [Chapter 3 - Building a Model](http://linkd.in/14CL1Ny) 
 
 # Chapter 4 - Models and Truth #
 

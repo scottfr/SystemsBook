@@ -1,4 +1,4 @@
-# Chapter 3 Modeling v1 13.05.xx #
+# Chapter 3 Building a Model v1 13.05.18 #
 
 ----------
 
@@ -268,36 +268,108 @@ That said it's best if we don't lose sight of the initial question, that being w
 
 Figure 19 expands on where the money comes from for the monthly deposits.
 
-<IFRAME SRC="http://InsightMaker.com/insight/6794?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 16. Why Aren't We All Rich v3" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/6794?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 18. Why Aren't We All Rich v3" width=950 height=650></IFRAME>
 
-[** Figure 16. Why Aren't We All Rich v3](http://insightmaker.com/insight/6794)
+[** Figure 18. Why Aren't We All Rich v3](http://insightmaker.com/insight/6794)
 
-And based on this model if one wants to increase the monthly deposits then it is necessary to increase the Income or decrease Expenses as the Monthly Deposits are what's left over. Part of the difficulty is that when one has money the tendency seems for most to spend it rather than save it. And there are a couple of other aspects that one might consider.
+Based on this model if one wants to increase the monthly deposits then it is necessary to increase Income or decrease Expenses as the Monthly Deposits are what's left over. Part of the difficulty is that when one has money the tendency seems for most to spend it rather than save it.
 
+There are a couple additional aspects related to deposits that should be mentioned though won't actually be added to the model. Many companies allow employees to have payroll deductions directly deposited into a retirement account. This helps take care of the problem of having the money and spending it rather than depositing it in the investment account. Also, at least in the US their are tax laws that allow for the investment of some amount of pretax fund, money that you don't have to pay taxes on, to be placed in an investment account. The idea being that you would withdraw the money sometime in the future when you're in a lower tax bracket. Some companies will even match a portion of your investment account deposits up to a certain amount each year. These options, which you could add to the model, would increase the resultant funds available at the end of the simulation.
 
+The question we started with was that is this approach can be used to amass a sizable amount of money then why aren't more people using it to become well off. Part of the answer had to do with the idea that with money in their pocket people are more likely to spend it than save it even though there are incentives to save it.
 
+Figure 19 provides an enhancement to the model adding Withdrawal and Penalty flows with some associated variables which are described below.
 
+<IFRAME SRC="http://InsightMaker.com/insight/6827?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 19. Why Aren't We All Rich v4" width=950 height=650></IFRAME>
 
+[** Figure 19. Why Aren't We All Rich v4](http://insightmaker.com/insight/6827)
 
+**Penalty** is levied by the Government if the funds are withdrawn before you reach 59 1/2 and is meant to be an encouragement to save. The % Penalty is a variable with a slider defined to you can test the value during runs. The Units for Penalty are Dollars/Month.
 
+**Withdrawal** represents money taken out of the account to purchase things with. As the amount of money in the Investment Account grows it becomes more and more attractive for use to purchase other things and there develops a tug of war between the Attractiveness of the money in the Investment Account and one's Determination to Save. Attractiveness and Determination to Save both represented by percentages between 0 and 100%. Attractiveness is represented with a Converter, a modeling element not previously described.
 
+----------
 
+### Modeling Tip ###
 
+It is often the case that a variable to be used in a model can not be represented as a constant or some well defined formula. The variable is actually a function of Time or some other variable. In the case of the model in Figure 19 Attractiveness is a function of Investment Account and is defined as a set of data points.
 
+Figure 20 shows the Configuration Panel for Attractiveness Principle. Note that many of the configuration options are the same as other modeling elements. The ones that are different are in Configuration and Input/Output Table.
 
+![Figure 20. Attractiveness Configuration Panel](03-im-6827.png)
 
+[** Figure 20. Attractiveness Configuration Panel](http://www.insightmaker.com/insight/6827)
 
+Because the variable is defines as a set of XY coordinates the Data has to be defined point by point as depicted in Figure 21, or the table may be imported.
 
+![Figure 21. Attractiveness Data Specification](03-im-6827a.png)
 
+[** Figure 21. Attractiveness Data Specification](http://www.insightmaker.com/insight/6827)
 
+Also notice on the Converter Configuration Panel there is an option for Interpolation. This option defines how Insight Maker figures out the Y values in between the defined X points. The graph displayed in Figure 21 depicts the Linear Interpolation meaning that Insight Maker treats the line between two points as a straight line and if computes the Y value from the XY values at the two points on either side of the X value.
 
+Figure 22 shows the curve for the Interpolation option of None meaning that it treats all the Y values between point X1Y1 and X2Y2 as Y1.
 
+![Figure 22. Attractiveness Data Specification with Interpolation = None](03-im-6827b.png)
 
+[** Figure 22. Attractiveness Data Specification with Interpolation = None](http://www.insightmaker.com/insight/6827)
+
+----------
+
+Figure 23, 24, 25 show the various display tabs for a run of this model with a Determination to save of 50%.
+
+![Figure 23. Investment Account Limited by Attractiveness](03-im-6827c.png)
+
+[** Figure 23. Investment Account Limited by Attractiveness](http://www.insightmaker.com/insight/6827)
+
+When the Investment Account reaches $87,000 dollars after 255 months it is sufficiently attractive to overcome the Determination to Save so money is withdrawn from the account every month and the account no longer grows. Is this a bad thing? That depends on the intent.
+
+![Figure 24. Investment Account Attractiveness and Determination](03-im-6827d.png)
+
+[** Figure 24. Investment Account Attractiveness and Determination](http://www.insightmaker.com/insight/6827)
+
+Figure 24 just shows that the Attractiveness has reached the Determination to Save level so withdrawals begin happening every month.
+
+![Figure 25. Investment Account Withdrawal and Penalty](03-im-6827e.png)
+
+[** Figure 25. Investment Account Withdrawal and Penalty](http://www.insightmaker.com/insight/6827)
+
+Figure 25 shows that there is almost $800 dollars a month being withdrawn from the account monthly and the account doesn't decrease. Maybe it's accomplishing what it needs to if $800 a month is sufficient to augment other income.
+
+Note the large overshoot on the Withdrawal curve and a small one on the Penalty curve. This is most likely because the Time Step is too large. Figure 26 is the same display tab for the model run with a Time Step of 0.5. Notice how the curve cleans up.
+
+![Figure 25. Investment Account Withdrawal and Penalty with Time Step = 0.5](03-im-6827f.png)
+
+[** Figure 25. Investment Account Withdrawal and Penalty with Time Step = 0.5](http://www.insightmaker.com/insight/6827)
+
+----------
+
+### Exercise 3-4 ###
+
+There is a logic flaw in this model which you might try to repair. The Penalty is not actually taken from the Investment Account but from the Withdrawal itself so it reduces the amount you actually get from the Withdrawal. Be warned that is might be a tricky fix.
+
+----------
+
+We now have a model which provides some incentives to start and continue to deposit in an Investment Account, and some disincentives toward the withdrawal of funds, though have we really addressed the initial situation posed? Not really. As far as starting the Investment Account and regularly depositing money, there are incentives, and for many these incentives were enough to get them to invest. For many the incentive, for one reason or another, has not been sufficient. And, any more strict incentives would likely be looked on unfavorably. People do not like to be manipulated, even when it is for their own benefit. The penalty for withdrawal is a deterrent in some respects though as the Investment Account continues to grow its attractiveness in terms of what it can purchase continues to entice. The best answer for this situation is to legally tie up the withdrawal process so it's only an option in the case of dire emergencies. Though as much as people find being manipulated by others distasteful, being controlled by themselves is just as distasteful.
+
+Is the model done? As usual, the answer is; "It Depends!" If it has provided sufficient understanding to address the situation posed then it is sufficient. If not then it should be taken further, though once it is sufficient you should STOP!
+
+## Building a Model Summary ##
+
+- **Intent**. Be sure you have a good idea of what you want the model to help you understand. This may evolve as you develop the model.
+- **Time Frame**. Ensure you have a sense of the time frame over which you intend to simulation the model. As you build the mode you may find you need to adjust your initial thought on this.
+- **Stocks & Flows**. Identify the Stocks & Flows first as they are key elements of the model.
+- **Use Units**. Units help to ensure your model is sound and Insight Maker will test for consistency of units. If the units are consistent it doesn't guarantee the model is sound though it does add a level of confidence.
+- **Variables & Links**. Add Variables & Links to influence the flows.
+- **Test Often**. Each time you make a logical addition to the model think about how you expect the model to behave then run the model and see if there is agreement with your expectation. If it isn't then it's an opportunity to learn and improve the model. And if it does agree you should still consider the output. It may be that your expectation and the model are both wrong.
+- **Time Step**. Test the Time Step to ensure it's small enough to capture all relevant transitions in the model.
+- **Stop at the End**. When the model serves the purpose for which you are developing it, STOP! There is always more you can add to a model. You should only include what is relevant to satisfy the initial intent.
 
 ## References ##
 
 - Catalina Foothills School District. 2003. Tips for Using System Dynamics Tools. http://www.clexchange.org/ftp/documents/Implementation/IM2003-12TipsUsingSDTools.pdf
 - Keeting, Elizabeth K. Internet 2013. Everything You Ever Wanted to Know about How to Develop A System Dynamics Model, But Were Afraid to Ask. http://www.systemdynamics.org/conferences/1998/PROCEED/00024.PDF
-- Richardson, George P. Internet 2013. Model Validation as an Integrated Social Process. http://www.albany.edu/~gpr/Validation.ppt
+- Newell, Barry & Proust, Katrina. 2012. Introduction to
+Collaborative Conceptual Modelling. https://digitalcollections.anu.edu.au/bitstream/1885/9386/3/Newell_IntroductionCollaborative_2012.pdf
 - Whiftield, Caraig. 2012. What Returns Should We Expect from the Stock Market. http://www.whitfieldco.com/blog/?p=39
 
