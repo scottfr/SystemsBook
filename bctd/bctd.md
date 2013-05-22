@@ -31,7 +31,7 @@ Note that it make take a several seconds for the page to load because of the emb
 
 - [v2 13.04.08](./learning-v2/learning.html) Put comments in -> [v2 Comments Thread](http://linkd.in/10MEuMm)
 
-# Chapter 2 - Dynamic Lego Blocks #
+# Chapter 2 - Dynamic Building Blocks #
 
 - [v1 13.04.24](./modeling-v1/modeling.html) Put comments in -> [Chapter 2 - Dynamic Lego Blocks](http://linkd.in/14QjOLs)
 

@@ -1,4 +1,4 @@
-# Beyond Connecting the Dots - Content Thoughts v2 - 13.03.25 #
+# Beyond Connecting the Dots - Content Thoughts v3 - 13.05.22 #
 
 > where does model calibration go?
 
@@ -6,7 +6,7 @@ An interactive book intended to enable one to develop a useful understanding of 
 
 ## Cover ##
 
-Simple and direct though it needs to depict connections or relationships. Some sort of network representation. I like the current cover though Scott said we probably can't get rights to use the image.
+Simple and direct though it needs to depict connections or relationships. Some sort of network representation. I like the current cover though Scott said we probably can't get rights to use the image. James Cameron is working on this.
 
 ## Preface ##
 
@@ -26,39 +26,59 @@ At this point I would ask that you not get too hung up on the titles of the vari
 
 # Act I - Learning About Learning #
 
-## It's the pattern that connects ##
+## Chapter 1 - It's the pattern that connects ##
 
 How we learn about ourselves and the world around us by building models. And we build lots of different kinds of models to help us understand. Provide examples of the models we build. Include thoughts on the way we reinforce our models, protect and evolve them. Explain the limitations of our models and how they are often flawed and the implications of operating with flawed models.
 
-The chapter has to include lots of models to develop this understanding though at this point I expect the models are mostly picture images of various situations.
+- Patterns
+- Models
+- Learning
+- A Basis for Flawed Learning
+- A Better Way
+- Rabbit Population Growth
+- Filling a Swimming Pool
+- Similar Structure Different Behavior
+- Summary
 
-The Bertalanffy idea that the same structures operate across all disciplines is surfaced in here somewhere.
+## Chapter 2 - Dynamic Building Blocks ##
 
-## Building Better Thought ##
+Part of the perceived difficulty associated with writing this book is that I have to assume no understanding of modeling and no understanding of Insight Maker. As such an awareness of each must be developed in an as needed to deal with the content approach. This chapter is mostly about developing a familiarity with the Insight Maker environment.
 
-The world around us is dynamic and we function in that world dynamically though most of the models we build are static. The models are just snapshots in time of the real dynamics of the world. We try to infer the implications of things in the future from snapshots of the past and present. And for reasons that will become evident this is a very inadequate basis for interacting in a meaningful way in the world.
+- The Blank Canvas
+- Stocks, Flows, Variables and Links
+- Valid Primitive Connections
+- Configuration Panel
+- Common Property # 1
+- Constructing a Growth Structure
+- Common Property  # 2
+- Constructing a Goal Seeking Structure
+- Summary
 
-From the examples previously presented, and probably a few more here, distill out an awareness of the concepts associated with a accumulator, flow, variable and connector. And use these elements to construct models of some of the example situations presented.
+## Chapter 3 - Building a Model ##
 
-Then revisit the inadequate nature of the elements being used to build static pictures to understand a dynamic world.
+Now that the most relevant aspects of Insight Maker have been introduced it is appropriate to provide the reader with a meaningful process to use when they set out to build a model.
 
-Construct some simple dynamic models with no feedback just to begin to get a sense of the nature of doing a simulation.
+- Can Red Trip to Grandma's?
+- Why Aren't We All Rich?
+- Where Have All The Trees Gone? (to be added)
+- Summary
 
-## So Different and So Similar ##
- 
-Using examples from multiple disciplines to synthesize the accumulator-flow structure. From the simple accumulator-flow structure evolve the growth loop and goal seeking loop. Use examples with the broadest possible connection.
+## Chapter 4 - A Model Is A Model Is A Model
 
-## Dynamic Lego Blocks ##
+This is a new addition where we think it's appropriate to develop an awareness that there are lots of different kings of models and which one uses depends on what they're trying to understand and the nature of the questions they ask.
 
-Part of the perceived difficulty associated with writing this book is that I have to assume no understanding of modeling and no understanding of Insight Maker. As such an awareness of each much be developed in an as needed to deal with the content approach.
+- Causal Loop Diagrams
+- Connection Circles
+- Systemic Grams
+- Rich Pictures
+- Systemigrams
+- Summary
 
-After the two basic structures are developed talk about the valid ways the building blocks can be connected. What represents valid structure, what doesn't and why.
-
-Present the basics features of the modeling environment sufficient to allow the reader to build the models they have interacted with to this point. The difficulty associated with doing this at this stage is that all I have to work with is the current Insight Maker interface. And this interface is being redesigned to be touch friendly for the touch pad environment. This probably means that the first pass at this chapter will provide the capabilities that have to be presented and then the detail will have to be revised once the interface is finished.
+This chapter will provide a link to Scott Page's "Model Thinking" course.
 
 # Act II - The Growth of Structure #
 
-## Implications of Reality ##
+## Chapter 5 - Implications of Reality ##
 
 The following chapters actually represent the most common systems archetypes though we're not going to surface that fact until later. And we're definitely not going to use the term Systems Archetypes. The intent is to simply, via examples, extend the two basic structures and produce models for each of these extension.
 
@@ -97,11 +117,11 @@ The chapter should explicitly depict the relationships between the structures pr
 
 # Act III - Applying the Learning #
 
-## Applied Understanding ##
+## Chapter 6 - Applied Understanding ##
 
 Now that we've worked though a large number of cross discipline models providing examples of how to ferret out understanding though the development of models lets talk about applying this approach to some real life situations.
 
-I expect this section will actually be several chapters, each one dedicated to elaborating a different model provided by the publisher sponsors of this effort. I'm pretty sure this will ensure the models will be from very different disciplines.
+I expect this section will actually be a single chapter with multiple sections, each one dedicated to elaborating a different model provided by the publisher sponsors of this effort. I'm pretty sure this will ensure the models will be from very different disciplines. (Or should this be one chapter per Sponsor model, which would mean there are 16 chapters here).
 
 The idea is to share the thought processes associated with developing an understanding for a new situation from scratch.
 
@@ -111,7 +131,7 @@ How many chapters will this be? That sort of depends on how long it takes the gr
 
 # Act IV - Supporting Principles #
 
-## The Mathematics of Modeling ##
+## Chapter 7 - The Mathematics of Modeling ##
 
 * How a simulation programs works
 ** Differential equation solving (Euler methods, Runge Kutte algorithms)
@@ -122,7 +142,7 @@ How many chapters will this be? That sort of depends on how long it takes the gr
 ** Eigenvector stability analyses
 ** Simple illustrative examples
 
-## Models and Truth ##
+## Chapter 8 - Models and Truth ##
 
 * The limits of modeling and causality
 * Compare different modeling paradigms (SD, ABM, other mechanistic, statistical)
@@ -130,7 +150,7 @@ How many chapters will this be? That sort of depends on how long it takes the gr
 * How to critique models (both yours and others)
 * Model validation and verification (and the limits of these techniques)
 
-## The Process of Modeling ##
+## Chapter 9 - The Process of Modeling ##
 
 * Reference Modes/Pattern Matching
 * "Big Batch"/"Small Batch" Approaches to Modeling
