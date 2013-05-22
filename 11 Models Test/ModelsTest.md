@@ -1,4 +1,4 @@
-# Model Testing
+# Model Tests
 
 This is some **Markdown**.
 
@@ -13,7 +13,7 @@ You do not have to know calculus to use Insight Maker. You just need to know som
 
 The goal is to have the incremental step change as small as possible without using too much computer memory and processing time. When computers were first used for calculus they did not have sufficient memory and processing speed to use extremely small incremental step change values.
 
-Open the "Time Settings" diaglog box. The simulation start and length are for you to decide how long to run your simulation. Then there is the "Simulation Time Step". First, the units for this are NOT time. Using the word "time" here is a misnomer. "Time Step" means the change in value of the horizontal axis (or x-axis) as the value of the vertical axis changes.
+Open the "Time Settings" dialog box. The simulation start and length are for you to decide how long to run your simulation. Then there is the "Simulation Time Step". First, the units for this are NOT time. Using the word "time" here is a misnomer. "Time Step" means the change in value of the horizontal axis (or x-axis) as the value of the vertical axis changes.
 
 In calculus this value is used to calculate an exact answer by taking the limit as the change in the horizontal axis value approaches zero. OK, that was complex, here is what you need to know:
 
@@ -30,93 +30,50 @@ RK4 means Runge-Kutta, fourth-order method, an accurate method for finding appro
 
 
 
-# Model: Test Model
+# Model
 
-{"create": "Stock, "geometry":{"x":400,"y":140,"width":100,"height":40}, "name": "Healthy"}
+{"create": "Stock", "geometry":{"x":400,"y":140,"width":100,"height":40}, "name": "Healthy"}
 
-{"create": "Stock, "geometry":{"x":400,"y":280,"width":100,"height":40}, "name": "Infected"}
+{"create": "Stock", "geometry":{"x":400,"y":280,"width":100,"height":40}, "name": "Infected"}
 
-{"target": "Infected, "geometry":{"x":400,"y":280,"width":100,"height":40}}
+{"target": "Infected", "geometry":{"x":400,"y":280,"width":100,"height":40}}
 
 DIAGRAM
 
-{"create": "Flow, "geometry":{"x":0,"y":0,"width":100,"height":100}, "alpha": "Healthy, "omega": "Infected, "name": "Infection"}
+{"create": "Flow", "geometry":{"x":0,"y":0,"width":100,"height":100}, "alpha": "Healthy", "omega": "Infected", "name": "Infection"}
 
 DIAGRAM
 
 The basic model structure has been laid-out, we can start to define parameter values and equations. We'll start with a very simple model containing a population of 100 people and where 2 people becoming sick each year.
 
-{"attribute": "InitialValue, "target": "Healthy, "value": "100"}
+{"attribute": "InitialValue", "target": "Healthy", "value": "100"}
 
-{"attribute": "FlowRate, "target": "Infection, "value": "2"}
+{"attribute": "FlowRate", "target": "Infection", "value": "2"}
 
 RESULTS
 
 The results are as we would expect. However this is not a model of an infectious disease as the infection rate does not depend on the presence of infected individuals. Let's change the infection rate so it depends on the contact rates between sick and healthy people.
 
-{"attribute": "FlowRate, "target": "Infection, "value": "0.006*[Healthy]*[Infected]"}
+{"attribute": "FlowRate", "target": "Infection", "value": "0.006*[Healthy]*[Infected]"}
 
 RESULTS
 
 That's strange. No one ever gets sick. Why is that? It turns out it is because we start the simulation with no infected people in the model. Since we're modeling an infectious disease, this means there is no one to start the epidemic! Let's change that we'll add a single infected person to get the epidemic started.
 
-{"attribute": "InitialValue, "target": "Infected, "value": "1"}
+{"attribute": "InitialValue", "target": "Infected", "value": "1"}
 
 RESULTS
 
 That looks about right. Before moving on, let's spend a moment to improve our model structure. Right now if we wanted to edit the infection rate, we would have to dig down in the equations to find the right number. Let's make our model more modular, without changing any results, by separating the infection rate into its own variable.
 
-{"create": "Variable, "geometry":{"x":230,"y":145,"width":120,"height":50}, "name": "Infection Rate"}
-
-{"create": "Link, "geometry":{"x":0,"y":0,"width":100,"height":100}, "alpha": "Infection Rate, "omega": "Infection"}
-
-DIAGRAM
-
-{"attribute": "Equation, "target": "Infection Rate, "value": "0.006"}
-
-{"attribute": "FlowRate, "target": "Infection, "value": "[Infection Rate]*[Healthy]*[Infected]"}
-
-RESULTS
-
-We can hide the display of the infection rate by configuring the display.
-
-{"attribute": "Primitives, "target": "DISPLAY, "value":["Healthy", "Infected"]}
-
-RESULTS
-
-Now that we have our basic model working, let's extend it by adding the phenomena of people recovering from the disease. We'll model something like the Chicken Pox where people become immune to the disease after they recover.
-
-{"create": "Stock, "geometry":{"x":400,"y":400,"width":100,"height":40}, "name": "Immune"}
-
-{"target": "Immune, "geometry":{"x":400,"y":400,"width":100,"height":40}}
-
-{"create": "Flow, "geometry":{"x":0,"y":0,"width":100,"height":100}, "alpha": "Infected, "omega": "Immune, "name": "Recovery"}
-
-{"create": "Variable, "geometry":{"x":610,"y":290,"width":120,"height":50}, "name": "Recovery Rate"}
-
-{"create": "Link, "geometry":{"x":0,"y":0,"width":100,"height":100}, "alpha": "Recovery Rate, "omega": "Recovery"}
-
-DIAGRAM
-
-{"attribute": "Equation, "target": "Recovery Rate, "value": "0.1"}
-
-{"attribute": "FlowRate, "target": "Recovery, "value": "[Recovery Rate]*[Infected]"}
-
-{"attribute": "Equation, "target": "Infection Rate, "value": "0.008"}
-
-{"attribute": "Primitives, "target": "DISPLAY, "value":["Healthy", "Infected", "Immune"]}
-
-RESULTS
-
-Fantastic! Now we have a working disease simulation. You can experiment with different population sizes, infection rates and recovery rates to see how they change the results.
-
 This is what is known as the *SIR Model* (Susceptible-Infected-Recovered) in the modeling community.
 
 # End Model
 
+
 Some more text...
 
-# Model: Another Model #
+# Model #
 
 testing...
 

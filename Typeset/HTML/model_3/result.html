@@ -1,0 +1,27 @@
+<ol class='tutorial-list'>
+
+<li> Create a new <span class='attribute'>Stock</span> named <span class='primitive'>Healthy</span>.</li>
+<li> Create a new <span class='attribute'>Stock</span> named <span class='primitive'>Infected</span>.</li>
+<li> The model diagram should now look something like this: <div class='tutorial-image'><div class='tutorial-image-inner'><img src='model_3/diagram_4.png' /></div>
+</div></li>
+<li> Create a new <span class='attribute'>Flow</span> going from the primitive <span class='primitive'>Healthy</span> to the primitive <span class='primitive'>Infected</span>. Name that flow <span class='primitive'>Infection</span>.</li>
+<li> The model diagram should now look something like this: <div class='tutorial-image'><div class='tutorial-image-inner'><img src='model_3/diagram_6.png' /></div>
+</div></li>
+<li> <div class='tutorial-text'>The basic model structure has been laid-out, we can start to define parameter values and equations. We'll start with a very simple model containing a population of 100 people and where 2 people becoming sick each year.</div></li>
+<li>  Change the <span class='attribute'>Initial Value</span> property of the primitive <span class='primitive'>Healthy</span> to <span class='value'>100</span></li>
+<li>  Change the <span class='attribute'>Flow Rate</span> property of the primitive <span class='primitive'>Infection</span> to <span class='value'>2</span></li>
+<li> Run the model. Here are sample results:<div class='tutorial-image'><div class='tutorial-image-inner'><img src='model_3/result_10.png' /></div>
+</div></li>
+<li> <div class='tutorial-text'>The results are as we would expect. However this is not a model of an infectious disease as the infection rate does not depend on the presence of infected individuals. Let's change the infection rate so it depends on the contact rates between sick and healthy people.</div></li>
+<li>  Change the <span class='attribute'>Flow Rate</span> property of the primitive <span class='primitive'>Infection</span> to <span class='value'>0.006*[Healthy]*[Infected]</span></li>
+<li> Run the model. Here are sample results:<div class='tutorial-image'><div class='tutorial-image-inner'><img src='model_3/result_13.png' /></div>
+</div></li>
+<li> <div class='tutorial-text'>That's strange. No one ever gets sick. Why is that? It turns out it is because we start the simulation with no infected people in the model. Since we're modeling an infectious disease, this means there is no one to start the epidemic! Let's change that we'll add a single infected person to get the epidemic started.</div></li>
+<li>  Change the <span class='attribute'>Initial Value</span> property of the primitive <span class='primitive'>Infected</span> to <span class='value'>1</span></li>
+<li> Run the model. Here are sample results:<div class='tutorial-image'><div class='tutorial-image-inner'><img src='model_3/result_16.png' /></div>
+</div></li>
+<li> <div class='tutorial-text'>That looks about right. Before moving on, let's spend a moment to improve our model structure. Right now if we wanted to edit the infection rate, we would have to dig down in the equations to find the right number. Let's make our model more modular, without changing any results, by separating the infection rate into its own variable.</div></li>
+<li> <div class='tutorial-text'>This is what is known as the <b>SIR Model</b> (Susceptible-Infected-Recovered) in the modeling community.</div></li>
+
+
+</ol>
