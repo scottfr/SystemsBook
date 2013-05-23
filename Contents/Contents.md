@@ -1,17 +1,38 @@
-# Beyond Connecting the Dots - Content Thoughts v3 - 13.05.22 #
-
-> where does model calibration go?
+# Beyond Connecting the Dots: Mastering the hidden connections in everything that matters - Table of Contents v3 - 13.05.23 #
 
 An interactive book intended to enable one to develop a useful understanding of the world around them and their interaction with it. The vehicle for developing that understanding is modeling and simulation, hence the "Mastering the hidden connections in everything that matters." The following represents the current set of thoughts on the structure and content of the book.
 
+This page now serves as the working Table of Contents and is used to surface content for **Sponsor** review along with the links to the various discussions where comments are to be shared. I finally realized that maintaining two files made little or no sense. Bookmarking this URL might be a good idea.
+
+Subscribing to the [Project Notes from Gene & Scott](http://linkd.in/16kqXAy) thread in the [Sponsors Subgroup](http://www.linkedin.com/groups?gid=4894041) is strongly encouraged as this will be the best place to get updates as to changes and updates.
+
+Content that you access for review with many instances of Insight Maker models is likely to take a while to load. Please be patient.
+
+During the 13.05.22 Editor/Publisher meeting we concluded that we should be about an equivalent to 10 printed pages. And I think we meant book pates rather than 8.5 x 11 printed pages. As such some of the existing content will have to be segmented.
+
+## Copyright ##
+<!--
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br>Beyond Connecting the Dots by <a href="http://creativecommons.org/ns#">Gene Bellinger & Scott Fortmann-Roe</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+
+- As per [Copyright in General](http://www.copyright.gov/help/faq/faq-general.html) this work is under copyright protection the moment it is created. 
+- We would also appreciate you respecting an embargo on this work for three months after publication so it is not shared with others who have not sponsored this program and essentially paid to get a window where they are the only ones with access.
+- For those who contribute content to the book that content is under copyright of the book.
+-->
+
+All contents copyright Gene Bellinger and Scott Fortmann-Roe. All rights reserved.
+
+Three months after the book is published, we will release the contents under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-Non Commercial-Share Alike 3.0 Unported License</a>.
+
+Publishers retain ownership of their models with attribution to them as the source and they have to give us the copyright for the book.
+
 ## Cover ##
 
-Simple and direct though it needs to depict connections or relationships. Some sort of network representation. I like the current cover though Scott said we probably can't get rights to use the image. James Cameron is working on this.
+Simple and direct though it needs to depict connections or relationships. Some sort of network representation. I like the cover we used on Kickstarter though Scott said we probably can't get rights to use the image. James Cameron is working on an similar alternative that won't infringe on copyrights.
 
 ## Preface ##
 
 * Why write this book. People need a more effective approach to learning and understanding the world around them.
-* Who is the target audience. Everyone, though intended to be readable, at least the first parts, by a 7th grade student. By the middle of the book it will be informative for someone that has been involved in systems disciplines for years. The fourth section will be quite technical, as will the appendices.
+* Who is the target audience. Everyone, though the intent is for the first few chapters to be understandable and usable by a 7th grade student. By the middle of the book it will be informative for someone that has been involved in systems disciplines for years. The fourth section will be quite technical, as will the appendices.
 * How is it arranged. We will continually present examples from everyday life and then distill an understanding of those examples by building models. And through this activity the reader will develop an awareness of the utility and value of learning trough modeling. Specifically a solid introduction to an approach for improved understanding and decision making. This way we will repeatedly demonstrate how to improve our thinking to create understanding as a basis for better decision making.
 * A collection of relevant context examples will be employed from as broad a base as possible. This is expected to include models from, but not limited to, Biology, Business, Economics, Ecology, Environment, Governance, Health, Information Science, Math, Operations Management, Physics, Politics, Public Policy, Security, Sociology, Strategy, Zoology.
 
@@ -24,6 +45,12 @@ Simple and direct though it needs to depict connections or relationships. Some s
 
 At this point I would ask that you not get too hung up on the titles of the various sections and chapters. As the meaningfulness of the content develops I expect that the titles to be associated with the chapters should be relatively evident.
 
+This file is Table of Contents v3.
+
+- v3 13.05.23 Put comments in -> [Table of Contents](http://linkd.in/16ksmHv)
+
+I've realized that I messed up creating a new discussion thread for each version of the section. It seems it will be far easier for someone following the existing thread to know about a new version if the note and link gets posted to the existing thread. We'll see how this works.
+
 # Act I - Learning About Learning #
 
 ## Chapter 1 - It's the pattern that connects ##
@@ -33,35 +60,49 @@ How we learn about ourselves and the world around us by building models. And we 
 - Patterns
 - Models
 - Learning
-- A Basis for Flawed Learning
+- Flawed Learning
 - A Better Way
+- Pictures of Models
+- Dynamic Models
+- I may do he Rabbit & Swimming pool as demonstrations though not nearly as detailed as it currently is in the first chapter.
 - Rabbit Population Growth
 - Filling a Swimming Pool
 - Similar Structure Different Behavior
 - Summary
 
+Note that it make take a several seconds for the page to load because of the embedded Insight Maker models.
+
+- [Chapter 1v2 13.04.08](./learning-v2/learning.html) Put comments in -> [Chapter 1 The Pattern that Connects](http://linkd.in/10MEuMm)
+
 ## Chapter 2 - Dynamic Building Blocks ##
 
-Part of the perceived difficulty associated with writing this book is that I have to assume no understanding of modeling and no understanding of Insight Maker. As such an awareness of each must be developed in an as needed to deal with the content approach. This chapter is mostly about developing a familiarity with the Insight Maker environment.
+Part of the perceived difficulty associated with writing this book is that I have to assume no understanding of modeling and no understanding of Insight Maker. As such an awareness of each must be developed in an as needed to deal with the content approach. This chapter is mostly about developing a familiarity with the Insight Maker environment though it also covers the basis for the construction of Qualitative Models and Quantitative Models.
 
 - The Blank Canvas
 - Stocks, Flows, Variables and Links
-- Valid Primitive Connections
+- Qualitative Models
+- Valid Primitive Connections for Quantitative Models
 - Configuration Panel
 - Common Property # 1
-- Constructing a Growth Structure
+- Constructing a Growth Structure (this will now be done as a CLD & SFD)
 - Common Property  # 2
-- Constructing a Goal Seeking Structure
+- Constructing a Goal Seeking Structure (this will now be done as a CLD & SFD)
 - Summary
+
+- [v1 13.04.24](./modeling-v1/modeling.html) Put comments in -> [Chapter 2 - Dynamic Lego Blocks](http://linkd.in/14QjOLs)
 
 ## Chapter 3 - Building a Model ##
 
 Now that the most relevant aspects of Insight Maker have been introduced it is appropriate to provide the reader with a meaningful process to use when they set out to build a model.
 
-- Can Red Trip to Grandma's?
+Three models here will be done first as qualitative models and quantitative models.
+
+- Can Red Get to Grandma's?
 - Why Aren't We All Rich?
 - Where Have All The Trees Gone? (to be added)
 - Summary
+
+- [v1 13.05.18](./building-v1/building.html) Put comments in -> [Chapter 3 - Building a Model](http://linkd.in/14CL1Ny) 
 
 ## Chapter 4 - A Model Is A Model Is A Model
 
@@ -74,46 +115,13 @@ This is a new addition where we think it's appropriate to develop an awareness t
 - Systemigrams
 - Summary
 
-This chapter will provide a link to Scott Page's "Model Thinking" course.
+This chapter will provide a link to Scott Page's [Model Thinking Course](http://bit.ly/13LoU5d).
 
-# Act II - The Growth of Structure #
+# Act II - The Evolution of Structure #
 
 ## Chapter 5 - Implications of Reality ##
 
-The following chapters actually represent the most common systems archetypes though we're not going to surface that fact until later. And we're definitely not going to use the term Systems Archetypes. The intent is to simply, via examples, extend the two basic structures and produce models for each of these extension.
-
-What we expect will happen is that the reader will develop an understanding of the value of critically thinking about the possible implications of the current structure and the various ways in which it may evolve into more complex structures.
-
-For each chapter there are real world examples which are then developed into structure. The reader is asked to interact with the models provided and then asked to identify similar structures from their experience, clone the existing structure and update the model to reflect their example. And once the model is created it should be simulated.
-
-I expect we will identify additional structures that should be included as chapters of this section.
-
-The segments below Implications of Goal Seeking and Implications of Growth should be labeled as appropriately as possible so people connect with the nature of the interactions. As I've said previously, don't get hung up on the labels at this point. Once the content is elaborated I expect that the chapter titles will be self-evident. While all of the alternatives below are relevant I'm not sure if we can fit them all in.
-
-## Implications of Goal Seeking ##
-
-- Linear progress slows over time
-- The fix overshoots the goal
-- Things seem to oscillate endlessly
-- The fix creates problems elsewhere
-- In time the problem returns
-- Underlying causes not being addressed
-- Dependence on the fix develops
-- Over time there is a tendency to settle for less
-- Tendency to let the standard slip
-
-## Implications of Growth ##
-
-- Growth slows over time
-- Growth leads to decline elsewhere
-- Partners for growth become adversaries
-- Limited resources are shared by others
-- More than one limit to be addressed
-- The limit is insufficient capacity
-
-## Everything is Connected ##
-
-The chapter should explicitly depict the relationships between the structures presented in the previous sections and explain the natural evolution paths for the structures.
+What I want to provide here is a sense of the natural tendency for the simple balancing and reinforcing structures to evolve thus demonstrating the way the [Systems Archetypes](http://bit.ly/13Lgo6i) are related. What I'm struggling with is that I think it would take the equivalent of 60 pages for me to include all the archetypes. As such I figure I have to start with the initial two structures and so a couple evolutionary steps and then provide a link to the [Systems Archetypes](http://bit.ly/15ZvkUh) learning thread.
 
 # Act III - Applying the Learning #
 
@@ -121,13 +129,27 @@ The chapter should explicitly depict the relationships between the structures pr
 
 Now that we've worked though a large number of cross discipline models providing examples of how to ferret out understanding though the development of models lets talk about applying this approach to some real life situations.
 
-I expect this section will actually be a single chapter with multiple sections, each one dedicated to elaborating a different model provided by the publisher sponsors of this effort. I'm pretty sure this will ensure the models will be from very different disciplines. (Or should this be one chapter per Sponsor model, which would mean there are 16 chapters here).
+I expect this section will actually be a single chapter with multiple sections, each one dedicated to elaborating a different model provided by the publisher sponsors of this effort. I'm pretty sure this will ensure the models will be from very different disciplines. 
 
 The idea is to share the thought processes associated with developing an understanding for a new situation from scratch.
 
-This will probably be in some evolved form of the **Enabling a Better Tomorrow** or **Systemic Perspective** learning threads at [SystemsWiki.org](http://www.systemswiki.org/). There are YouTube play lists for [Network Magic](http://www.youtube.com/playlist?feature=edit_ok&list=PL6_vtryFPrNUS_gy59LhIncDYbBXmkdS9) and [AR Period Reduction](http://www.youtube.com/playlist?list=PL6_vtryFPrNViDGlFlMlV5rMC390icYvB), two examples developed based on the learning threads.
+The following are provided as potential models for entries in segments of this chapter.
 
-How many chapters will this be? That sort of depends on how long it takes the group to identify them and develop a new meaningful surfacing approach.
+**Dynamic Models**
+
+- [The Models of Chapter 3](http://www.systemswiki.org/bctd/bctd.html)
+- [Action Oriented Problem Solving](http://people.brandeis.edu/~bmorriso/documents/DxProblemSolving2009.pdf) and [Insight Maker Model](http://insightmaker.com/insight/2439)
+- [Nobody Ever Gets Credit for Problems That Never Happened](http://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf) with [Insight Maker Model](http://insightmaker.com/insight/1899) and [Video](http://www.systemswiki.org/index.php?title=Credit_that_Never_Happened)
+- [How Small Dynamic Models Can Help Policy Makers](http://www.systemdynamics.org/conferences/2009/proceed/papers/P1388.pdf) with [Insight Maker Model](http://insightmaker.com/insight/1769) and [Video](http://www.systemswiki.org/index.php?title=Swamping_Insights)
+
+**Qualitative Models**
+
+- [Enabling a Better Tomorrow](http://stwj.systemswiki.org/?p=1247)
+- [Victims of the System or Systems of the Victim](http://www.systemswiki.org/index.php?title=Victims_of_the_System_or_Systems_of_the_Victim)
+- [Melting the Tip of the Iceberg](http://www.systemswiki.org/index.php?title=Melting_the_Tip_of_the_Iceberg)
+- [Managing Time in Time Management:Failure by Belief](http://www.systemswiki.org/index.php?title=Managing_Time_in_Time_Management:_Failure_by_Belief)
+- [Project Systems:Distinguishing Fact from Fantasy](http://www.systemswiki.org/index.php?title=Project_Systems:_Distinguishing_Fact_from_Fantasy)
+- Also the last two articles under Dynamic Models develop qualitative models in the paper.
 
 # Act IV - Supporting Principles #
 
@@ -150,7 +172,11 @@ How many chapters will this be? That sort of depends on how long it takes the gr
 * How to critique models (both yours and others)
 * Model validation and verification (and the limits of these techniques)
 
+- [v1 13.05.14](./ModelsAndTruth-v1.pdf) Put comments in -> [Models and Truth](http://linkd.in/129rKBB)
+
 ## Chapter 9 - The Process of Modeling ##
+
+> where does model calibration go?
 
 * Reference Modes/Pattern Matching
 * "Big Batch"/"Small Batch" Approaches to Modeling
