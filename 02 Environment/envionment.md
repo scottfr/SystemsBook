@@ -250,7 +250,7 @@ Consider the images in Figure 4 and consider what \u{Time Units} and \u{Time Ste
 
 ----------
 
-The model in Figure 8 is for a Savings Account that is defined as compounding annually, i.e. calculating and adding interest once a year. This means that the most appropriate \{Time Units} is years with a \u{Time Step} of 1. There are no other transitions in this model that need to be accommodated and running this model with any \u{Time Step} other than 1 will result in a less accurate result.
+The model in Figure 8 is for a Savings Account that is defined as compounding annually, i.e. calculating and adding interest once a year. This means that the most appropriate \u{Time Units} is years with a \u{Time Step} of 1. There are no other transitions in this model that need to be accommodated and running this model with any \u{Time Step} other than 1 will result in a less accurate result.
 
 ----------
 
