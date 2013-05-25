@@ -69,7 +69,7 @@ Practice placing \p{Stock} and \p{Variable} \p{Primitives} on the blank canvas i
 
 [** Figure 3. Valid Primitive Connections](http://insightmaker.com/insight/5275)
 
-Select \p{Use Links} or \p{Use Flows} from the \u{Connections} segment, then hover over a model \p{Primitives) object on the canvas. A small arrow pointing to the right shows at the center of the \p{Primitives) object. Center the \w{cursor crossing double arrows} over the right arrow, which should change the cursor to a \w{cursor hand}. Drag the mouse over to a second model element and the arrow tags along while the \u{Connections} is drawn.. If neither \p{Use Links} or \p{Use Flows} is selected then there will be no right pointing arrow when you mouse over the element.
+Select \p{Use Links} or \p{Use Flows} from the \u{Connections} segment, then hover over a model \p{Primitives) object on the canvas. A small arrow pointing to the right shows at the center of the \p{Primitives) object. Center the \u{cursor crossing double arrows} over the right arrow, which should change the cursor to a \u{cursor hand}. Drag the mouse over to a second model element and the arrow tags along while the \u{Connections} is drawn.. If neither \p{Use Links} or \p{Use Flows} is selected then there will be no right pointing arrow when you mouse over the element.
 
 ----------
 
