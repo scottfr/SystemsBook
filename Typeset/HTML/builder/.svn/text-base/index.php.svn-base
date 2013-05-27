@@ -1,0 +1,76 @@
+<?php
+require("SharedHeader.php")
+?>
+
+	<div id="header"><div style="float:right;margin:5px;" class="x-small-editor"></div></div>
+
+	
+	<script type="text/javascript">
+	var scriptBase = builder_path;
+	var mxBasePath = builder_path;
+	var mxLoadResources = false;
+	var mxLoadStylesheets = false;
+	</script>
+	
+	
+       <script type="text/javascript" src="/builder/out.js"></script>
+	   
+
+	<script type="text/javascript" src="/builder/resources/framewarp/framewarp.js"></script>
+	
+	<?php if($nid==-1){ ?>
+		
+		<!-- Google Code for New Model Conversion Page -->
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 1022635102;
+		var google_conversion_language = "en";
+		var google_conversion_format = "3";
+		var google_conversion_color = "ffffff";
+		var google_conversion_label = "jLRkCPLTzwIQ3tjQ5wM";
+		var google_conversion_value = 0;
+		/* ]]> */
+		</script>
+		<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+		</script>
+		<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1022635102/?label=jLRkCPLTzwIQ3tjQ5wM&amp;guid=ON&amp;script=0"/>
+		</div>
+		</noscript>
+	<?php }else{ ?>
+		<!-- Google Code for View Model Conversion Page -->
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 1022635102;
+		var google_conversion_language = "en";
+		var google_conversion_format = "3";
+		var google_conversion_color = "ffffff";
+		var google_conversion_label = "UMxMCOrUzwIQ3tjQ5wM";
+		var google_conversion_value = 0;
+		/* ]]> */
+		</script>
+		<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+		</script>
+		<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1022635102/?label=UMxMCOrUzwIQ3tjQ5wM&amp;guid=ON&amp;script=0"/>
+		</div>
+		</noscript>
+	<?php }?>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-27704535-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+

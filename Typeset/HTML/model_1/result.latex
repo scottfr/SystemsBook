@@ -1,0 +1,66 @@
+\begin{oframed}\textbf{Interactive Sensitivity Testing} 
+
+ \begin{enumerate}
+\item 
+
+Let's illustrate the usage of sensitivity testing using our rabbit example. First we will construct a simple exponential growth model.
+
+
+\item Create a new \a{Stock} named \p{Rabbits}.
+\item  Change the \a{Initial Value} property of the primitive \p{Rabbits} to \e{12}
+\item Create a new \a{Flow} going from empty space to the primitive \p{Rabbits}. Name that flow \p{Births}.
+\item Create a new \a{Variable} named \p{Birth Rate}.
+\item  Change the \a{Equation} property of the primitive \p{Birth Rate} to \e{0.05}
+\item Create a new \a{Link} going from the primitive \p{Birth Rate} to the primitive \p{Births}.
+\item  Change the \a{Flow Rate} property of the primitive \p{Births} to \e{[Birth Rate]*[Rabbits]}
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_1/diagram_10.png}
+\end{minipage}
+\item 
+
+This is the basic outline for the model. We assume a fixed value of 12 rabbits and a fixed birth rate of 0.05.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_1/result_12.png}
+\end{minipage}
+\item 
+
+When we simulate we obtain the same results each time.
+
+
+\item  Change the \a{Initial Value} property of the primitive \p{Rabbits} to \e{RandTriangular(6, 18, 12)}
+\item 
+
+Now, let's try to incorporate uncertainty. Given that we know that there can be between 6 and 18 rabbits initially with an expected value of 12, we can use the \textbf{RandTriangular()} function to model this.
+
+
+\item  Change the \a{value} property of the primitive \p{Birth Rate} to \e{RandLogNormal(0.05, 0.03)}
+\item 
+
+We also do not know the birth rate with certainty. We know, however, that the rate must be greater than 0, and lets say we can assume the expected value is 0.05. We can use the \textbf{RandLogNormal()} function to model this type of uncertainty.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_1/result_18.png}
+\end{minipage}
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_1/result_19.png}
+\end{minipage}
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_1/result_20.png}
+\end{minipage}
+\item 
+
+Now, we can simulate this mode a few times and see that each time we run the simulation we get a different result.
+
+
+\item 
+
+We can now use sensitivity testing to see the range of results given this specified uncertainty. We'll do 100 runs of the model and aggregate the results to see the expected distribution
+
+
+\item \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_1/data_24.png}
+\end{minipage}
+\item 
+
+We can readily see the range of results allowing us to make decisions incorporating our known uncertainty about parameter values. 
+
+
+
+\end{enumerate} \end{oframed}
