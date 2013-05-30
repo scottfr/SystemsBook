@@ -8,7 +8,7 @@ Subscribing to the [Project Notes from Gene & Scott](http://linkd.in/16kqXAy) th
 
 Content that you access for review with many instances of Insight Maker models is likely to take a while to load. Please be patient.
 
-During the 13.05.22 Editor/Publisher meeting we concluded that we should be about an equivalent to 10 printed pages. And I think we meant book pates rather than 8.5 x 11 printed pages. As such some of the existing content will have to be segmented.
+During the 13.05.22 Editor/Publisher meeting we concluded that each chapter we should be about the equivalent of 10 printed pages. I think we meant book pages rather than 8.5 x 11 printed pages. As such some of the existing content will have to be segmented.
 
 ## Copyright ##
 <!--
@@ -43,13 +43,35 @@ Simple and direct though it needs to depict connections or relationships. Some s
 
 ## Table of Contents ##
 
-At this point I would ask that you not get too hung up on the titles of the various sections and chapters. As the meaningfulness of the content develops I expect that the titles to be associated with the chapters should be relatively evident.
+At this point I would ask that you not get too hung up on the titles of the various sections and chapters. As the meaningfulness of the content develops I expect that more appropriate titles for the chapters are likely to become evident.
 
-This file is Table of Contents v3.
+This file is Table of Contents v3 13.05.23 Put comments in -> [Table of Contents](http://linkd.in/16ksmHv)
 
-- v3 13.05.23 Put comments in -> [Table of Contents](http://linkd.in/16ksmHv)
+I've realized that I messed up creating a new discussion thread for each version of the chapters. It seems it would be far easier for someone following an existing thread to know about a new version of a chapter if the note and link gets posted to the thread they're currently following. We'll see how this works.
 
-I've realized that I messed up creating a new discussion thread for each version of the section. It seems it will be far easier for someone following the existing thread to know about a new version if the note and link gets posted to the existing thread. We'll see how this works.
+----------
+
+### Notes to Reviewers for Chapter 1 - 4 ###
+
+#### Figure Captions ####
+
+Each figure is followed by a sequenced figure caption line that starts with **. These captions are also an internet links. These links are inserted so I can easily get back to wherever the figure originated should I need to create a revised version of it. These captions will be deleted by the post processor and replaced with figure captions which are embedded in the final format.
+
+#### Insight Maker References ####
+
+I'm doing the best I can representing the version of Insight Maker I won't be able to see for a couple of months. The interactive Insight Maker models are embedded from Insight Maker and the model is owned my me. This means that when one looks at it in this chapter it doesn't look like it will look in the final book. Scott is creating a version of Insight Maker that will operate in a touch tablet environment. That version of Insight Maker will be embedded in the book and each book owner will own the models in the book. That means they will look somewhat different. I have to code something so I'll know what to include later and so that reviewers can look the models and connect with the written words associated with it. Getting through this seems to be a tall order.
+
+#### Macros ####
+
+There are certain aspects of the text formatting we don't quite have figured out yet. We have resigned ourselves to the fact that we won't have this figured out for some time. As such macros are being coded to be replaced in the content post processing phase. I sorry that it's likely to make the text a bit more difficult to read.
+
+- \a{model attribute}
+- \c{citation}
+- \e{equation}
+- \p{model primitive}
+- \u{ui reference}
+
+----------
 
 # Act I - Learning About Learning #
 
@@ -64,14 +86,14 @@ How we learn about ourselves and the world around us by building models. And we 
 - A Better Way
 - Pictures of Models
 - Dynamic Models
-- I may do he Rabbit & Swimming pool as demonstrations though not nearly as detailed as it currently is in the first chapter.
 - Rabbit Population Growth
 - Filling a Swimming Pool
 - Similar Structure Different Behavior
 - Summary
 
-Note that it make take a several seconds for the page to load because of the embedded Insight Maker models.
+Note that it make take some time for the page to load because of the embedded Insight Maker models.
 
+- [Chapter 1v3 13.05.30](./learning-v3/learning.html) Put comments in -> [Chapter 1 The Pattern that Connects](http://linkd.in/10MEuMm)
 - [Chapter 1v2 13.04.08](./learning-v2/learning.html) Put comments in -> [Chapter 1 The Pattern that Connects](http://linkd.in/10MEuMm)
 
 ## Chapter 2 - Dynamic Building Blocks ##
