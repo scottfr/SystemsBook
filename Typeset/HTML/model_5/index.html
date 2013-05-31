@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	
+    <title>Insight Maker</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=IE8">
+
+ 	<link rel="stylesheet" type="text/css" href="../builder/resources/ext/resources/css/ext-all-gray.css" />
+ 	
+	<link rel="shortcut icon" href="../builder/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" type="text/css" href="../builder/css/BoxSelect.css" />
+	<link rel="stylesheet" type="text/css" href="../builder/css/insighteditor.css" />
+
+</head>
+<body>
+	
+
+<div id="loading-mask"></div>
+<div id="loading">
+  <div class="loading-indicator">
+
+	        Loading Insight Maker...
+  	<br/><p>
+  	<img src="../builder/images/loading.gif" width=54 height=55/></p><br/>
+  	(This may take a few moments)
+	
+  </div>
+</div>
+<div id="toplinks-holder" name="toplinks-holder"></div>
+
+<script type="text/javascript" src="../builder/resources/ext/ext-all.js"></script>
+
+<script type="text/javascript">
+var base_path = "http:\/\/insightmaker.com";
+var builder_path = "http:\/\/insightmaker.com\/builder";
+var logged_in = true;
+var drupal_node_ID = 1;
+var graph_title = "";
+var graph_description = "";
+var graph_tags = "";
+var graph_author_name = '';
+var graph_author_id = -1;
+var saved_enabled = true;
+var is_editor = true;
+var is_embed = false;
+var is_topBar = false;
+var is_sideBar = false;
+var is_zoom = true;
+
+var graph_source_data = "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><Setting unfolding=\"{&quot;children&quot;:[{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\n\nvar newPrimitive = createPrimitive('Population', 'Stock', [390, 330], [100, 40]);\n\nfindName('Population').setAttribute('InitialValue', '100');\n\nvar cell =createConnector('Net Growth', 'Flow', null, findName('Population'));\nvar geo = new mxGeometry(0, 0, 100, 100);\ngeo.setTerminalPoint(new mxPoint(440, 110), true);\ngeo.setTerminalPoint(new mxPoint(0, 100), false);\ngraph.model.execute(new mxGeometryChange(graph.model, cell, geo));\n\nvar newPrimitive = createPrimitive('Growth Rate', 'Variable', [590, 120], [120, 50]);\n\nfindName('Growth Rate').setAttribute('Equation', '0.1');\n\nvar cell =createConnector('Link', 'Link', findName('Growth Rate'), findName('Net Growth'));\nvar geo = new mxGeometry(0, 0, 100, 100);\ngraph.model.execute(new mxGeometryChange(graph.model, cell, geo));\n\nfindName('Net Growth').setAttribute('FlowRate', '[Growth Rate]*[Population]');\n\nvar newPrimitive = createPrimitive('True Population', 'Variable', [590, 320], [120, 50]);\n\nvar cell =createConnector('Link', 'Link', findName('Growth Rate'), findName('True Population'));\nvar geo = new mxGeometry(0, 0, 100, 100);\ngraph.model.execute(new mxGeometryChange(graph.model, cell, geo));\n\nfindName('True Population').setAttribute('Equation', '100*Exp([Growth Rate]*Years)');\n\ngetSetting().setAttribute('TimeLength', '10');&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;Let's implement the simple exponential growth model we have discussed in this chapter. We have a population that starts with 100 people which increases at a rate of 10% per year. In addition to creating the stock and flow model, we have also created a variable, &lt;span class='primitive'&gt;True Population&lt;/span&gt;, that contains the analytical solution to the model.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;First, we'll use Euler's method with a step size of 2 years and simulate the model.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\n\ngetSetting().setAttribute('TimeStep', '2');\n\nrunModel();&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;As we can see these results aren't very accurate. The value of the numerical estimated &lt;span class='primitive'&gt;Population&lt;/span&gt; is quite different from the analytically determined value in &lt;span class='primitive'&gt;True Population&lt;/span&gt;. Let's reduce the step size to 1 year and try again.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\n\ngetSetting().setAttribute('TimeStep', '1');\n\nrunModel();&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;This is better, but we're still off by a fair amount. We could experiment with continuing to reduce the step size, but let's instead switch to the more accurate Runge-Kutta method. Will simulate the model again with a step size of 1 using the 4th-Order Runge-Kutta solution algorithm.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\n\ngetSetting().setAttribute('SolutionAlgorithm', 'RK4');\n\nrunModel();&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;That's a lot better! It's almost perfect. Let's see how quickly the results degrade when we increase the step size. Let's set the step size to 2.5 and simulate the model again.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\n\ngetSetting().setAttribute('TimeStep', '2.5');\n\nrunModel();&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;That's still very good and much better the Euler's Method with a step size of 1. Why don't you go ahead now and experiment with different step sizes and the two solution methods to get a feel for their accuracies.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;}],&quot;text&quot;:&quot;Root Node&quot;}\" unfoldingStatus=\"on\" unfoldingAuto=\"always\" Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"><mxCell parent=\"1\" vertex=\"1\" visible=\"0\"><mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"/></mxCell></Setting><Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"><mxCell style=\"roundImage;image=/builder/images/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"/></mxCell></Display></root></mxGraphModel>";
+</script>
+
+<div id="header"><div style="float:right;margin:5px;" class="x-small-editor"></div></div>
+
+
+<script type="text/javascript">
+var scriptBase = builder_path;
+var mxBasePath = builder_path;
+var mxLoadResources = false;
+var mxLoadStylesheets = false;
+</script>
+
+<script type="text/javascript" src="../builder/out.js"></script>
+  
+</body>
+</html>
+
