@@ -1,9 +1,0 @@
-K 10
-svn:ignore
-V 30
-bin
-tmp
-hubnexus
-compiler.jar
-
-END
