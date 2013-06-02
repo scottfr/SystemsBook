@@ -1,14 +1,4 @@
-# Chapter 3 Building a Model v1 13.05.18 #
-
-----------
-
-Notes to Reviewers
-
-This chapter is intended to present guidelines for creating a model to promote an understanding of an area of interest. An aspect of this essential for the development of sound models is the topic of units. While units don't ensure a model is sound, if the units don't match up one can be certain the model is not sound.
-
-----------
-
-## Begin at the Beginning ##
+# Chapter 4 Building a Model v2 13.06.02 #
 
     “Would you tell me, please, which way I ought to go from here?”
     “That depends a good deal on where you want to get to,” said the Cat.
@@ -18,7 +8,11 @@ This chapter is intended to present guidelines for creating a model to promote a
     “Oh, you’re sure to do that,” said the Cat, “if you only walk long enough.”
     
     Lewis Carroll - Alice in Wonderland
-    
+
+Now that the most relevant aspects of Insight Maker have been introduced it is appropriate to provide you with a meaningful process and guidelines to use when they set out to build a model to promote an understanding of an area of interest. An aspect of this essential for the development of sound models is the topic of units. While units don't ensure a model is sound, if the units don't match up one can be certain the model is not sound.
+
+## Begin at the Beginning ##
+
 There are a number of guidelines or rules of thumb that you will find helpful when developing a model. The idea is to ensure that the model serves the purpose you started building it for.
 
 We develop models to help us understand the implications of interactions, and sometimes guidance. As such, as with Alice above, it is essential that before you begin to build a model you know what it is that you want to understand otherwise how will you know if the model does what you needs to do.

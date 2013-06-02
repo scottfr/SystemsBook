@@ -1,10 +1,8 @@
-# Beyond Connecting the Dots: Mastering the hidden connections in everything that matters - Table of Contents v3 - 13.05.23 #
+# Beyond Connecting the Dots: Mastering the hidden connections in everything that matters - Table of Contents v4 - 13.05.30 #
 
 An interactive book intended to enable one to develop a useful understanding of the world around them and their interaction with it. The vehicle for developing that understanding is modeling and simulation, hence the "Mastering the hidden connections in everything that matters." The following represents the current set of thoughts on the structure and content of the book.
 
 This page now serves as the working Table of Contents and is used to surface content for **Sponsor** review along with the links to the various discussions where comments are to be shared. I finally realized that maintaining two files made little or no sense. Bookmarking this URL might be a good idea.
-
-Subscribing to the [Project Notes from Gene & Scott](http://linkd.in/16kqXAy) thread in the [Sponsors Subgroup](http://www.linkedin.com/groups?gid=4894041) is strongly encouraged as this will be the best place to get updates as to changes and updates.
 
 Content that you access for review with many instances of Insight Maker models is likely to take a while to load. Please be patient.
 
@@ -31,6 +29,8 @@ Simple and direct though it needs to depict connections or relationships. Some s
 
 ## Preface ##
 
+> Fabian says to add a What for before Why...
+
 * Why write this book. People need a more effective approach to learning and understanding the world around them.
 * Who is the target audience. Everyone, though the intent is for the first few chapters to be understandable and usable by a 7th grade student. By the middle of the book it will be informative for someone that has been involved in systems disciplines for years. The fourth section will be quite technical, as will the appendices.
 * How is it arranged. We will continually present examples from everyday life and then distill an understanding of those examples by building models. And through this activity the reader will develop an awareness of the utility and value of learning trough modeling. Specifically a solid introduction to an approach for improved understanding and decision making. This way we will repeatedly demonstrate how to improve our thinking to create understanding as a basis for better decision making.
@@ -45,7 +45,7 @@ Simple and direct though it needs to depict connections or relationships. Some s
 
 At this point I would ask that you not get too hung up on the titles of the various sections and chapters. As the meaningfulness of the content develops I expect that more appropriate titles for the chapters are likely to become evident.
 
-This file is Table of Contents v3 13.05.23 Put comments in -> [Table of Contents](http://linkd.in/16ksmHv)
+This file is Table of Contents v4 13.05.30 Put comments in -> [Table of Contents](http://linkd.in/11BVevI)
 
 I've realized that I messed up creating a new discussion thread for each version of the chapters. It seems it would be far easier for someone following an existing thread to know about a new version of a chapter if the note and link gets posted to the thread they're currently following. We'll see how this works.
 
@@ -75,7 +75,7 @@ There are certain aspects of the text formatting we don't quite have figured out
 
 # Act I - Learning About Learning #
 
-## Chapter 1 - It's the pattern that connects ##
+## Chapter 1 - It's The Pattern That Connects ##
 
 How we learn about ourselves and the world around us by building models. And we build lots of different kinds of models to help us understand. Provide examples of the models we build. Include thoughts on the way we reinforce our models, protect and evolve them. Explain the limitations of our models and how they are often flawed and the implications of operating with flawed models.
 
@@ -93,27 +93,46 @@ How we learn about ourselves and the world around us by building models. And we 
 
 Note that it make take some time for the page to load because of the embedded Insight Maker models.
 
-- [Chapter 1v3 13.05.30](./learning-v3/learning.html) Put comments in -> [Chapter 1 The Pattern that Connects](http://linkd.in/10MEuMm)
-- [Chapter 1v2 13.04.08](./learning-v2/learning.html) Put comments in -> [Chapter 1 The Pattern that Connects](http://linkd.in/10MEuMm)
+v3 is considered to be a solid edit in response to the comments on v1 & v2 of the chapter. There are no significant changes from v2.
+
+- [Chapter 1v3 13.05.30](./learning-v3/learning.html) Put comments in -> [Chapter 1 Comments](http://linkd.in/11BWJd4)
 
 ## Chapter 2 - Dynamic Building Blocks ##
 
-Part of the perceived difficulty associated with writing this book is that I have to assume no understanding of modeling and no understanding of Insight Maker. As such an awareness of each must be developed in an as needed to deal with the content approach. This chapter is mostly about developing a familiarity with the Insight Maker environment though it also covers the basis for the construction of Qualitative Models and Quantitative Models.
+Part of the perceived difficulty associated with writing this book is that I have to assume no understanding of modeling and no understanding of Insight Maker. As such an awareness of each must be developed in an as needed to deal with the content approach. This chapter is mostly about developing a familiarity with the Insight Maker environment though it also covers the basis for the construction of Stock & Flow Models.
 
 - The Blank Canvas
 - Stocks, Flows, Variables and Links
-- Qualitative Models
-- Valid Primitive Connections for Quantitative Models
+- Valid Primitive Connections
 - Configuration Panel
 - Common Property # 1
-- Constructing a Growth Structure (this will now be done as a CLD & SFD)
+- Constructing a Reinforcing/Growth Structure
 - Common Property  # 2
-- Constructing a Goal Seeking Structure (this will now be done as a CLD & SFD)
+- Constructing a Balancing/Goal Seeking Structure
 - Summary
 
-- [v1 13.04.24](./modeling-v1/modeling.html) Put comments in -> [Chapter 2 - Dynamic Lego Blocks](http://linkd.in/14QjOLs)
+Note that it make take some time for the page to load because of the embedded Insight Maker models.
 
-## Chapter 3 - Building a Model ##
+v2 actually represents a name change as the content is actually more about the modeling and simulation environment than model building, which will be covered in Chapter 4. Also note that the link for Chapter 2v2 comments is the same thread that was used for v1.
+
+- [v2 13.05.31](./environment-v2/environment.html) Put comments in -> [Chapter 2 Comments](http://linkd.in/14QjOLs)
+- [v1 13.04.24](./modeling-v1/modeling.html) Put comments in -> [Chapter 2 Comments](http://linkd.in/14QjOLs)
+
+## Chapter 3 - A Model Is A Model Is A Model
+
+This is a new addition as we think it's appropriate to develop an awareness that there are other types of models as well as an awareness that the model one uses depends on what they're trying to understand and the nature of the questions they ask.
+
+- Rich Pictures
+- Causal Loop Diagrams
+- Unfolding a Model
+- Summary
+- References
+
+Is this really v1? The chapter that was Chapter 3 is now Chapter 4 so this is the first version of this incarnation of this content for Chapter 3. As such I decided to call if v1.
+
+- [v1 13.06.02](./models-v1/models.html) Put comments in -> [Chapter 3 Comments](http://linkd.in/11jWl1g)
+
+## Chapter 4 - Building a Model ##
 
 Now that the most relevant aspects of Insight Maker have been introduced it is appropriate to provide the reader with a meaningful process to use when they set out to build a model.
 
@@ -124,20 +143,9 @@ Three models here will be done first as qualitative models and quantitative mode
 - Where Have All The Trees Gone? (to be added)
 - Summary
 
-- [v1 13.05.18](./building-v1/building.html) Put comments in -> [Chapter 3 - Building a Model](http://linkd.in/14CL1Ny) 
+v2 will be consistent with above description of Chapter 4.
 
-## Chapter 4 - A Model Is A Model Is A Model
-
-This is a new addition where we think it's appropriate to develop an awareness that there are lots of different kings of models and which one uses depends on what they're trying to understand and the nature of the questions they ask.
-
-- Causal Loop Diagrams
-- Connection Circles
-- Systemic Grams
-- Rich Pictures
-- Systemigrams
-- Summary
-
-This chapter will provide a link to Scott Page's [Model Thinking Course](http://bit.ly/13LoU5d).
+- [v1 13.05.18](./building-v1/building.html) Put comments in -> [Chapter 4 Comments](http://linkd.in/14CL1Ny) 
 
 # Act II - The Evolution of Structure #
 
@@ -163,6 +171,7 @@ The following are provided as potential models for entries in segments of this c
 - [Action Oriented Problem Solving](http://people.brandeis.edu/~bmorriso/documents/DxProblemSolving2009.pdf) and [Insight Maker Model](http://insightmaker.com/insight/2439)
 - [Nobody Ever Gets Credit for Problems That Never Happened](http://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf) with [Insight Maker Model](http://insightmaker.com/insight/1899) and [Video](http://www.systemswiki.org/index.php?title=Credit_that_Never_Happened)
 - [How Small Dynamic Models Can Help Policy Makers](http://www.systemdynamics.org/conferences/2009/proceed/papers/P1388.pdf) with [Insight Maker Model](http://insightmaker.com/insight/1769) and [Video](http://www.systemswiki.org/index.php?title=Swamping_Insights)
+- [Dynastic cycle: A generic structure describing resource allocation in political economies, markets and firms](http://www.wpi.edu/Images/CMS/SSPS/34.pdf) with [Insight Maker Model](http://insightmaker.com/insight/7034)
 
 **Qualitative Models**
 
@@ -175,18 +184,7 @@ The following are provided as potential models for entries in segments of this c
 
 # Act IV - Supporting Principles #
 
-## Chapter 7 - The Mathematics of Modeling ##
-
-* How a simulation programs works
-** Differential equation solving (Euler methods, Runge Kutte algorithms)
-** And how this affects model choices
-* Relate to differential equation modeling
-** Discuss standard "mathematical" approach to dynamical systems
-** Equilibrium Analysis
-** Eigenvector stability analyses
-** Simple illustrative examples
-
-## Chapter 8 - Models and Truth ##
+## Chapter 7 - Models and Truth ##
 
 * The limits of modeling and causality
 * Compare different modeling paradigms (SD, ABM, other mechanistic, statistical)
@@ -196,9 +194,12 @@ The following are provided as potential models for entries in segments of this c
 
 - [v1 13.05.14](./ModelsAndTruth-v1.pdf) Put comments in -> [Models and Truth](http://linkd.in/129rKBB)
 
+## Chapter 8 - Building Confidence in Models
+
 ## Chapter 9 - The Process of Modeling ##
 
 > where does model calibration go?
+> Fabian says to add a Group Model Building in here...
 
 * Reference Modes/Pattern Matching
 * "Big Batch"/"Small Batch" Approaches to Modeling
@@ -207,6 +208,17 @@ The following are provided as potential models for entries in segments of this c
 * Soliciting information
 * Dealing with Data (and a lack there of)
 * Analyzing and assessing model results
+
+## Chapter 10 - The Mathematics of Modeling ##
+
+* How a simulation programs works
+* Differential equation solving (Euler methods, Runge Kutte algorithms)
+* And how this affects model choices
+* Relate to differential equation modeling
+* Discuss standard "mathematical" approach to dynamical systems
+* Equilibrium Analysis
+* Eigenvector stability analyses
+* Simple illustrative examples
 
 # Appendices #
 
