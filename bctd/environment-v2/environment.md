@@ -154,7 +154,7 @@ Lets use Figure 5 to construct a basic growth structure and in the process you'l
 
 [** Figure 5. Growth Structure](http://insightmaker.com/insight/5351)
 
-- Click \u{Make New Insight} on the \{Toolbar} and then click the \{Clear Sample Model} button.
+- Click \u{Make New Insight} on the \u{Toolbar} and then click the \u{Clear Sample Model} button.
 - Place a Stock on the canvas and label it Stuff.
 - Now make sure the Stock is selected and take a look at the Configuration Panel on the right.
 - Click on Flows to select that element.
@@ -197,7 +197,7 @@ Figure 8 represents only a couple of changes from Figure 5 as follows.
 
 - Extend the model you created based on Figure 5 as follows.
 - Connect a link from stuff to Flow and reshape it with a couple of handles to improve visibility.
-- Mouse over the Flow and click on the \u{=} sign to open the \u{Equations Editor} and set the Flow to \u{\[stuff\]} as in Figure 9. You can do this just by clicking on \u{stuff} in the \{References} list.
+- Mouse over the Flow and click on the \u{=} sign to open the \u{Equations Editor} and set the Flow to \u{\[stuff\]} as in Figure 9. You can do this just by clicking on \u{stuff} in the \u{References} list.
 - Open \u{Time Settings} and set the \a{Simulation Length} to 10.
 - Now Run the model. Note that because of the width of the embedded model you can't see the whole \u{Toolbar}. Clicking the \u{>>} just to the right of the \u{Tools} section of the \u{Toolbar} the rest of the options will drop down and you can select the \u{Run} option. You should now see the diagram in Figure 10.
 

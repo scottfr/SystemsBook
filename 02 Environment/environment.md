@@ -28,7 +28,7 @@ Practice placing \p{Stock} and \p{Variable} \p{Primitives} on the blank canvas i
 
 ## Stocks, Flows, Variables and Links ##
 
-\p{Stocks} and \p{Variables} are connected to other \p{Stocks} and \p{Variables} using \{Link} and \{Flow} \p{Connections}. The rules for connections are very explicit because Insight Maker has to figure out how to simulate the model. The allowed connections are depicted in Figure 3. The next chapter will present several types of models where the rules for connections aren't nearly as rigid.
+\p{Stocks} and \p{Variables} are connected to other \p{Stocks} and \p{Variables} using \p{Link} and \p{Flow} \p{Connections}. The rules for connections are very explicit because Insight Maker has to figure out how to simulate the model. The allowed connections are depicted in Figure 3. The next chapter will present several types of models where the rules for connections aren't nearly as rigid.
 
 <IFRAME SRC="http://InsightMaker.com/insight/5275?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 3. Valid Primitive Connections" width=950 height=600></IFRAME>
 
@@ -154,7 +154,7 @@ Lets use Figure 5 to construct a basic growth structure and in the process you'l
 
 [** Figure 5. Growth Structure](http://insightmaker.com/insight/5351)
 
-- Click \u{Make New Insight} on the \{Toolbar} and then click the \{Clear Sample Model} button.
+- Click \u{Make New Insight} on the \u{Toolbar} and then click the \u{Clear Sample Model} button.
 - Place a Stock on the canvas and label it Stuff.
 - Now make sure the Stock is selected and take a look at the Configuration Panel on the right.
 - Click on Flows to select that element.
@@ -197,7 +197,7 @@ Figure 8 represents only a couple of changes from Figure 5 as follows.
 
 - Extend the model you created based on Figure 5 as follows.
 - Connect a link from stuff to Flow and reshape it with a couple of handles to improve visibility.
-- Mouse over the Flow and click on the \u{=} sign to open the \u{Equations Editor} and set the Flow to \u{\[stuff\]} as in Figure 9. You can do this just by clicking on \u{stuff} in the \{References} list.
+- Mouse over the Flow and click on the \u{=} sign to open the \u{Equations Editor} and set the Flow to \u{\[stuff\]} as in Figure 9. You can do this just by clicking on \u{stuff} in the \u{References} list.
 - Open \u{Time Settings} and set the \a{Simulation Length} to 10.
 - Now Run the model. Note that because of the width of the embedded model you can't see the whole \u{Toolbar}. Clicking the \u{>>} just to the right of the \u{Tools} section of the \u{Toolbar} the rest of the options will drop down and you can select the \u{Run} option. You should now see the diagram in Figure 10.
 

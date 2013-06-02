@@ -1,350 +1,204 @@
-# Chapter 3 Building a Model v1 13.05.18 #
+# Chapter 3 - A Model Is A Model Is A Model v1 13.06.02 #
+
+In the previous chapters you worked with what is referred to a Stock & Flow Simulation Models. These are referred to as quantitative models because of the numerical values associated with them. While there are other types of quantitative models we won't get into them here. There is also another class of models referred to as qualitative models because they have no numeric values associated with them. There is a level of understanding well served by the use of qualitative models and as such this chapter will serve to acquaint you with several qualitative models that you can create with Insight Maker and find use for in your study of systems.
+
+Models are simplifications of some aspect of the world around us intended to help us understand something. The Stock & Flow Simulation Models are very explicit as they the relations are represented by numerical formulas and the model may be iterated over time. The models presented in the sections of this chapter will present models which may also assist in understanding situations though only from a relationship perspective as there are generally no numerical values associated with the model and they are not iterated over time.
+
+## Rich Pictures ##
+
+A Rich Pictures is a pictorial representation of a set of relationships intended to convey an level of understanding about those relationships and the implication of those relationships. The strength of Rich Pictures is that there are no rules associated with creating a Rich Picture which means you create the picture that helps you understand the relationships.
+
+Figure 1 is a Rich Picture intended to represent the relationships for a Savings Account. It is created using the Picture Primitive connected together with Links.
+
+<IFRAME SRC="http://InsightMaker.com/insight/7085?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 1. Rich Pictures/Part 1" width=950 height=650></IFRAME>
+
+
+Picture Primitives are added to the canvas like any of the other Primitives. Just click on the Primitive to select it the click on the canvas where you want the Picture Primitive to be. You don't have to be too specific about the placement as items are very easy to move around on the canvas.
+
+Once the Picture Primitive is placed on the canvas there are several options in the Configuration Panel depicted in Figure 2.
+
+![Figure 2. Picture Configuration Panel](03-im-7085.png)
+
+
+The General section of the Picture Primitive is just like the Primitives you've used to this point with a **(name)** and **Note** parameters. The Image option in the User Interface section is new. Here you may select one of the built in pictures from the drop down menu, no picture, the first option on the menu, or paste a URL into the field which points to some graphic on the Internet. Note that the Internet option only works if you're connected to the Internet.
+
+Once you've created the Pictures simply use the Link element to connect them together as you did in the Stock & Flow models. After you select the Link tool when you mouse over a Picture Primitive the small right arrow will appear in the center as the connection point. Simply click on the selection point and drag to the element you want to connect to. You can't use Flows to connect Picture Primitives.
+
+Note that you can use Stocks, Variables, Text and Buttons in Rich Pictures if you wish and you can add images to them also. Even though this is the case most of the time using Picture Primitives will serve just fine and we'll talk about Buttons somewhere further along the way.
 
 ----------
 
-Notes to Reviewers
+### Exercise 3-1 ###
 
-This chapter is intended to present guidelines for creating a model to promote an understanding of an area of interest. An aspect of this essential for the development of sound models is the topic of units. While units don't ensure a model is sound, if the units don't match up one can be certain the model is not sound.
-
-----------
-
-## Begin at the Beginning ##
-
-    “Would you tell me, please, which way I ought to go from here?”
-    “That depends a good deal on where you want to get to,” said the Cat.
-    “I don’t much care where–” said Alice.
-    “Then it doesn’t matter which way you go,” said the Cat.
-    “–so long as I get SOMEWHERE,” Alice added as an explanation.
-    “Oh, you’re sure to do that,” said the Cat, “if you only walk long enough.”
-    
-    Lewis Carroll - Alice in Wonderland
-    
-There are a number of guidelines or rules of thumb that you will find helpful when developing a model. The idea is to ensure that the model serves the purpose you started building it for.
-
-We develop models to help us understand the implications of interactions, and sometimes guidance. As such, as with Alice above, it is essential that before you begin to build a model you know what it is that you want to understand otherwise how will you know if the model does what you needs to do.
-
-Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?
-
-Little Red Riding Hood want's to know how long it will take her to get to Grandma's house if she walks at 2 miles per hour and Grandma's house is 4.5 miles away thought the woods.
-
-In this statement what is to be figured out is very easy to identify. Sometimes it's not so easy and you have to dig a little.
+Use the Picture Primitive to add additional elements to the model in Figure 1 and then connect them together using the Link tool. Note that in the Configuration segment of the Configuration Panel for the Link there is an option to indicate whether a Link is bi-directional. Use some of these in your exercise.
 
 ----------
 
-### Modeling Tips ###
+### Modeling Note ###
 
-- **Stocks**. Identify which items are the the stocks, or accumulations, in the model that will change over time. Stocks are often easy to identify if you think about stopping time. When time stops a stock still has a quantity. In this case it's the distance from Grandma's house as Red walks toward it.
-- **Flows**. Identify the flows which are responsible for changing the stocks over time. If time stops a flow has no value. In this case it's walking.
-- **Time Units**. Will the interactions in this model be depicted over Years, Months, Days, etc. In this case the initial thought is that it will be hours. And you should realize that you initial thought may have to be revised once you begin developing the model.
-- **Simulation Length**. How long might the interactions have to be modeled for. Here again the answer may be obvious, or you may have to start with an estimate and revise it after working with the model. Here we'll estimate 4 hrs.
-- **Time Step**. Here again you have to estimate a value based on the smallest time of transition you expect in the interactions and then test it to see if you you're close enough. In this case we'll start with 0.5
+The Text primitive is just similar to any other primitive in that you select it then click on the canvas where you want the Text to appear. Once you create the text item you can edit the text, assign notes to it, connect to or from it with links, and style it with commands form the Style segment of the Toolbar. 
 
 ----------
 
-Figure 1 represents a simple model of Little Red Riding Hood walking to Grandma's house.
+In Figure 3 a folder and a Link label have been added to the Rich Picture of Figure 1.
 
-<IFRAME SRC="http://InsightMaker.com/insight/6767?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 1. Walking to Grandma's House" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/7094?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 3. Rich Pictures/Part 2" width=950 height=650></IFRAME>
 
 
-While this may look like a rather trivial model there are several aspects of this model that warrant a few notes, and some of them we've not considered before.
+If you select the Link that has the **adds to** label on it you'll notice that the (name) field contains the displayed the **adds to*** label and there's text in the **Note** field. These two attributes are like other Primitives. If the **(name)** field is blank for names **Link** it won't display. Any other text in the field will display on the Link, or near it if the link is segmented and curved. If you segment the Link the program doesn't really know where you want the label to be. As such if you select the link you'll see a small yellow node on the text. You can click on this node and move the label to wherever you would like it to be. Be warned that at times the position is a bit artful though you'll get the knack of it.
 
-----------
+Folders are provided so you can enclose a number of items you want to explicitly draw attention to as a concept and have the ability to hide the detail if you  choose. To hide the detail click on the little minus (-) sign in the upper left corner of the folder. when you do this the folder closes, displays it's name and the minus (-) sign changes to a plus (+) sign. And you probably also surmised when you closed the folder that you can select an image for a folder or provide an image URL.
 
-### Modeling Tips ###
+Remember the intent of a model is to be some simplification of the world around you to help you understand. There are really no rules for creating a Rich Picture though if you want others to understand it you might want to ensure it is readily understandable rather than confusing. How is the best way to ensure this? Present it to others and have them let you know where they thing it is clear and where they think it is confusing. Then go work on it some more.
 
-- **Labels**. A stock represents a quantity and should be labeled with a directionless noun our noun phrase, you know, a person, place or thing. Avoid directional modifiers such as increasing, decreasing, growing, slowing, etc. as they tend to make a model very difficult to understand. A flow represents something moving over time so it's label should be something one would easily think of as moving over time as walk, speed, flow, etc.
-- **Comments**. As you build your model add comments to the elements so you can refer back to them later to get a sense of what you were thinking when you created them. Yes, you tell yourself you know what you're doing at the moment, though you'll be surprised at what you won't remember a week, a month or even a year from now. Comments also make it much easier for others to understand what you intended when you created elements.
+In the next section you will be introduced to the Unfolding feature of Insight Maker which you can use to build a script so the model will explain itself to someone else when you're not there.
 
-----------
+Figures 4 through 6 provide examples of Rich Pictures for your review. Reviewers please note that these will be replaced with Rich Pictures more appropriate for the target audience.
 
-If you click on the stock and look at the configuration panel you'll notice that the last item in the list, Units, is set to miles. Units were not addressed in the first two chapters as they are so important we wanted to ensure we could focus on them in this chapter. You use units to help ensure that your models are sound. Not that units will not guarantee that your model is sound though it the units don't work out right you can be sure it's not, and Insight Maker checks them for you. Figure 2 shows the Configuration Panel for the stock.
+<IFRAME SRC="http://InsightMaker.com/insight/666?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 4. Patient Flows ED and Beyond" width=950 height=650></IFRAME>
 
-![Figure 2. Units for Distance to Grandma's House is in miles](03-im-6767.png)
 
+<IFRAME SRC="http://InsightMaker.com/insight/1557?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 5. Biology Levels and Genetics" width=950 height=650></IFRAME>
 
-If you click on the flow and look at the configuration panel you'll notice that the units for walk is miles/hour as depicted in Figure 3.
 
-![Figure 3. Units for Walk is in miles/hour](03-im-6767a.png)
+<IFRAME SRC="http://InsightMaker.com/insight/1460?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 6. SOA Reference Architecture" width=950 height=650></IFRAME>
 
 
-The flow has a units of hours as that's what was set up in Time Settings as the Time Units for the model. All the time settings are showing in Figure 4.
+## Causal Loop Diagrams ##
 
-![Figure 4. Time Settings for the Walk to Grandma's House](03-im-6767b.png)
+A Causal Loop Diagram is more structured than a Rich Picture and less structured than a Stock & Flow Diagram. The Causal Loop Diagram was initially invented as a way to express the findings of a Stock & Flow simulation model without having to show the entire Stock & Flow model as it was expected it might overwhelm the audience.
 
+While a Causal Loop Diagram is a qualitative model there is still much one can come to understand from one because of the information presented about the relations as depicted in Figure 7.
 
-You might now be asking, how the Walk in miles/hour gets turned in to Distance to Grandma's in miles? Because we've selected a Time Step of 0.5 each simulation step multiplies 0.5 hours x 2 miles/hour to get 1 mile traveled each time step. And the units are consistent. Later you can try changing the Time Units and running the model to see how that affects the answers. It's not actually this simple though with a constant flow rate this description is close enough.
+<IFRAME SRC="http://InsightMaker.com/insight/7100?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 7. Causal Loop Diagram/Part 1" width=950 height=650></IFRAME>
 
-----------
 
-### Modeling Tip ###
+The good news is there are no new aspects of Insight Maker you need to learn to create a Causal Loop Diagram. The diagram is created with a Variables, Pictures and Links with Text used to indicate the relationship between the influencing variable and the influenced variable. After you create the variables, which you may represent with the Variable, Picture or Text Primitives you use Links to connect them and identify the relationship represented by the Link.
 
-There are a large number of units predefined in Insight Maker. If you click in the Units field and then click on the drop down on the right the Units Selection window will open as depicted in Figure 5. Here you can select from predefined units, though it's usually easier to just enter the appropriate units into the Units field. There is  also a way to define Custom Units thought we'll cover this option in a later chapter.
+There are two widely used notations associated with Causal Loop Diagrams, both of which are presented below.
 
-![Figure 5. Units Selection Window](03-im-6767e.png)
+The first notation popularized by Senge in The Fifth Discipline uses an **S** and an **O** notation as depicted in Figure 7.
 
+- **S** implies that the influenced variable changes in the same direction as the influencing variable. If the influencing variable increases the influenced variable increases. If the influencing variable decreases the influenced variable decreases.
+- **O** implies that the influenced variable changes in the opposite direction as the influencing variable. If the influencing variable increases then the influenced variable decreases. If the influencing variable decreases then the influenced variable increases.
 
-----------
+The influence indicators are created as Text elements and positioned as you deem appropriate to represent the influence representative of the Link.
 
-Now click the Run Button to simulate the model. The Run Button was added as a convenience because the Run button on the menu bar is off the right side at the top. The Run Button in the model will probably go away in the final version of this writing.
+The **+** and **-** notation is an older notation and the each has two possible meanings which are deduced from the context of the diagram.
 
-From the graphic results in Figure 6 and the tabular results in Figure 7 is should be evident that there are some enhancements that need to be made to our Walk to Grandma's House model.
+- **+** implies that the influenced variable changes in the same direction as the influencing variable or the influencing variable adds to the influenced variable.
+- **-** implies that the influenced variable changes in the opposite direction as the influencing variable or the influencing variable subtracts from the influenced variable.
 
-![Figure 6. Walk to Grandma's/Graphic Results](03-im-6767c.png)
+The **+** and **-** notation are considered less likely to generate inconsistencies in a model when there are elements such as production and inventory depicted in Figure 7. In this relationship the **+** interpreted as **adds to** for production adds to inventory. The situation is such that as production increases inventory increases and as production decreases inventory still increases, just not as rapidly. This should allow you to easily see that the **S** notation might result in a misinterpretation of the diagram as production decreases inventory decreases. To aid in avoiding the confusion some people use Stocks in their Causal Loop Diagrams to indicate those elements which are actually accumulations.
 
+Because creating the Link indicators can get tedious in a hurry after you create the first one it's much easier to hold down the Control Key then click on the indicator and drag to a new location. This quickly creates you a copy of the indicator. You can actually use this sequence to duplicate any element of a model.
 
-![Figure 7. Walk to Grandma's/Tabular Results](03-im-6767d.png)
+As this section is about Causal Loop Diagrams there probably should be some loops defined here somewhere shouldn't there? Figure 8 is a Causal Loop representation of the Balancing and Reinforcing loops presented in Chapter 1 and Chapter 2.
 
+<IFRAME SRC="http://InsightMaker.com/insight/7101?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 7. Causal Loop Diagram/Part 1" width=950 height=650></IFRAME>
 
-In both the graphic display and tabular display it's evident that Red didn't stop when she got to Grandma's house, and one might wonder where she ended up after 5 hours of walking. And from the tabular display at 2 hours Red was 0.5 miles from Grandma's House and at 2.5 hours she was 0.5 miles past Grandma's House.That there is no time with the Distance to Grandma's House equal to zero indicates that the time step is to large. This simply tells us that our Time Step is too large for the relationships in the model. 
 
-----------
+The Balancing and Reinforcing models in Figure 7 vary slightly from typical causal loop diagrams in the following ways.
 
-### Exercise 3 - 1 ###
+- **Variables**. Variables in a Causal Loop Diagram are typically just Text though here we've used Stocks for those variable which represent accumulations and Pictures, with no images, to represent the variables. The advantage in using Picture elements for variables is that there are no restrictions on labels because Picture elements are never used in equations.
+- **Link Colors**. Because the Link identifiers have to be created separately and are not attached to the Link it's much easier to make **+** indicators Blue and **-** indicators Red. This seems to be and evolving convention and then you could just leave the Link indicators out altogether.
 
-Run this model of Figure 1 with a Time Step of 0.25 and 0.125 and from the Tabular Display which Time Step do you think is most appropriate and why?
+While models are a simplification of the world around you intended to promote understanding they also represent an unfolding story. It is appropriate to sequence and label the loops. This gives others an guide to what order to read the story and the intent of the loop itself. The images are created with Picture elements and the images for reinforcing **+** and balancing **-** loops, both clockwise and counterclockwise are defined images available from the pull images pull down on the Configuration Panel.
 
-----------
+The easiest way to identify whether a loop is a reinforcing or balancing loop is to count the number of minus (-) influences around the loop. If the number is zero or even then the loop is a reinforcing loop. If the number is odd then it's a balancing loop.
 
-Figure 8 represents a modification of the Little Red Riding Hood walking to Grandma's house which was presented in Figure 1.
+Figure 8 presents the two basic structures as Causal Loop/Rich Picture hybrid models.
 
-<IFRAME SRC="http://InsightMaker.com/insight/6778?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 8. Stopping at Grandma's House" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/7102?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 8. Causal Loop/Rich Picture Hybrids" width=950 height=650></IFRAME>
 
 
-Hopefully you found in Exercise 3-1 that both 0.25 and 0.125 produced a step with a distance to Grandma's House of 0 at 2.25 hours. In finding no difference between the results for 0.25 and 0.125 you should have concluded that 0.25 was a small enough for this model.
+If the images make it easier for the model to develop and convey understanding then it helps them achieve their purpose. Figure 9 presents a Causal Loop Diagram for The Boy Who Cried Wolf Aesop's Fable.
 
-The time step in Figure 8 has been set to 0.25 and the Stop at Grandmas variable has been added to tell the simulation to stop when Red has reached Grandma's House. If you run the model you'll see that it does just what we want it to do though if you look at the formula in Stop at Grandmas some explanation is probably in order.
+<IFRAME SRC="http://InsightMaker.com/insight/7103?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 9. The Boy Who Cried Wolf" width=950 height=650></IFRAME>
 
-    IfThenElse([Distance to Grandmas House] < {0 miles}, STOP, 0)
 
-If you look at the Configuration Panel for Stop at Grandmas you'll notice that the Units are Unitless. The variable itself doesn't need a definition of units because it's not participating in any calculations. It's just a test.
+If you mouse over the various elements of this model you'll note there are notes on each one to help others to understand the model. Yet even with all these aids to understanding it's difficult for others to see it as a story as they're looking at the whole model at once. The Unfolding function in the next section will show you how to overcome this and actually tell a story with the model.
 
-As for the formula what you should remember is that when you start using units in a model, which you should do, all formulas have to be consistent from a units perspective otherwise Insight Maker will raise an error message. Just as a test change {0 miles} to 0 and run the model. Because [Distance to Grandmas House] has units what it is compared to has to have units.
+## Unfolding a Model ##
 
-----------
+Even though you may conscientiously develop your model and add comments often it turns out that people initially look at the whole model and they're overwhelmed. It might be somewhat like to digest an Elephant in a single bite. Unfolding a model as a story provides a way to overcome this difficulty.
 
-### Exercise 3-2 ###
+Figure 10 presents a Stock & Flow simulation model intended to be unfolded as a story. Click on the green plus sign in the lower left corner next to Unfold Model, read the text, and then click the Step Forward arrow on the right repeatedly to have the model presented as a story.
 
-In the [Stop at Grandmas] variable change {0 miles} to {0 kilometers}. Does the model still work? Why?
+<IFRAME SRC="http://InsightMaker.com/insight/7104?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 10. Unfolding/Storytelling" width=950 height=650></IFRAME>
 
-----------
 
-The simulation engine in Insight Maker is smart enough to convert between the myriad of similar dimensions, e.g., miles, kilometers, feet, etc. Though it's recommended that you make conversions explicit otherwise models become very difficult to understand.
+This sequencing you just experienced was all done with the **Unfolding** function on the right side of the Tools section of the Toolbar. If you click **Unfolding** in Figure 10 you should see the display in Figure 11.
 
-----------
+![Figure 11. Model Unfolding Designer](03-im-7104.png)
 
-### Exercise 3-3 ###
 
-Seldom is there ever just one right way to build a model. You build the model to help you understand something and you might do that in different ways. Even for a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 2.5 and reducing it by walking. Try to build one or two alternatives to this model.
+The main elements of this window are...
 
-----------
+- **Enable Checkbox**. This allows you to actually enable Unfolding. If this box is checked the green plus sign and the Unfold Model will show up in the lower left corner of the window.
+- **Automatically Unfold**. There are four options on this drop down allowing you to indicate the conditions under which Unfold Model should execute automatically when the model is opened. The options are Never, For Editors, For Non-Editors, Always.
+- **Unfolding Steps**. Lists the steps that you have defined as part of the unfolding. You may reorder steps by clicking and dragging them to the new location. If you click on one of the steps it's definition will be displayed on the right side of the Model Unfolding Designer window. Currently the definition of the first Visibility Change is displayed.
+- **- Remove**. To remove an Unfolding Step first click on it to select it then click the **- Remove** button.
+- **+ Add Step**. A drop down which allows you to select which type of step you want to add. New steps are added to the bottom of the list and you can then select and drag it to the location in the sequence where you want it. The various steps will be described shortly.
+- **Cancel**. Allows you to exit the Model Unfolding Designer and not save any changes.
+- **Apply**. Applies all the changes you have made in the Model Unfolding Designer and exits.
 
-Hopefully the Going to Grandma's model has given you a sense of an approach for developing models along with some useful tips and an introduction to using units and why they can be so useful to you. Oh, and not forget about putting notes in the model. Wiring diagrams without knowing what the pieces mean are generally not very useful.
+The steps you can include in the unfolding are depicted in Figure 12.
 
-## Why Aren't We All Rich ##
+![Figure 12. Steps of an Unfolding](03-im-7104a.png)
 
-The following is intended to be another example of he development of a model, though somewhat more involved than the previous one. Here's the initial question describing what I'd like to understand.
 
-> If one can put money in an investment account and it grows over time, and it grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years though for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs?
+As indicated above you can select any one of these steps which will be added to the bottom of the list, then you can move it to the location where you want it. As the following step types are described you might want open the Model Unfolding Designer and click on different Unfolding Steps to visualize how they're defined.
 
-<IFRAME SRC="http://InsightMaker.com/insight/6780?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 9. Why Aren't We All Rich v0" width=950 height=650></IFRAME>
+- **Change Visibility**. Allows you to specify the Opacity, with the slider, for one or more elements of the model when that step is executed. The steps may be selected from the drop down or you may select one or more items from the model and then click the **Select from Diagram** button to put those items in the list. Note that clicking the **Select from Diagram** button will replace the already selected ones with whatever you've selected in the model. If you want to add or remove one more more Primitives it's probably better to use the drop down to add or click the existing item to remove it.
+- **Show Message**. Allows you to enter a text message you want to be displayed. There are some formatting options available in the Message edit window.
+- **Toggle Folders**. Use this option to Expand or Collapse one or more folders. This is really useful if you want to expand a folder, walk through the items in the folder and then close the folder.
+- **Run Action**. Provides you with a window in which you can enter Javascript commands to control various aspects of the model. And there are a large number of functions in the [Insight Maker API](http://insightmaker.com/sites/default/files/API/files/API-js.html) that you can employ in this step.
+- **Group Steps**. This step creates a folder in the sequence in which you can place multiple steps. This allows you to indicate there are several steps you want to execute with a single Next Step click. You can see how this was used in the Figure 11 definition of the unfolding for the model in Figure 10. You can open and close a New Group folder by toggling the little triangle to the left of it. Also if you click on a folder you can rename it in the **Name** field on the right.
 
+All new steps are added to the bottom of the list of steps. If you're creating a long series of steps and then you need to add one near the top this may be difficult. In an attempt to provide a work around the Model Unfolding Designer window is resizable.
 
-Figure 9 presents the initial set up for this model.
+Figure 13 is the model from Figure 9 above placed here so you can unfold this model and then take a look at the Model Unfolding Designer to see how it was setup. Just click the Unfold
 
-- **Investment Account**. represents the amount of money, in Dollars, in the account. If you look at the Configuration Panel you'll notice that Units are set to Dollars.
-- **Initial Deposit**. is a variable used to specify the amount of money that is initially put into the [Investment Account] when it is opened. Remember we said only a flow can increase or decrease a stock, though you can use a external variable to set the initial value for a stock. This is done done to make the [Initial Deposit] explicit with a slider for testing. The Units for [Initial Deposit] is also set to Dollars.
-- **Time Setting**. We've assumed that this is an investment account that will compute and add interest on a monthly basis so the time settings are set up to run for 36 months with an initial Time Step = 1 knowing that we will have to test this later on.
+<IFRAME SRC="http://InsightMaker.com/insight/7103?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 13. The Boy Who Cried Wolf" width=950 height=650></IFRAME>
 
-If you run the model you'll find out it's about as interesting as watching pain dry, thought it does run.
 
-----------
+By creating an unfolding story with your model you significantly increase the likelihood that others will understand the insights your model is endeavoring to surface. You might even find that in the process of creating the story you uncover ways to improve or clarify the model for yourself.
 
-### Modeling Tips ###
+Figure 14 is another unfolding that you can walk through and study as to how it was put together. This story attempts to explain why applying pesticides can increase the requirement for spraying more pesticides. It also attempt to distill the concept of Systems Thinking to a single word... And?
 
-Before you run a model you should develop a sense of the result you expect from the model at this point of its development. Then once you run the model you should be certain that is it performing as expected. When the result is not what you expect then either the structure is wrong, your assumptions are wrong, or you simply have an opportunity to develop your understanding.
+<IFRAME SRC="http://InsightMaker.com/insight/3365?embed=0&editor=1&topBar=0&sideBar=0&zoom=0" TITLE="Figure 14. Systems Thinking: The Essence of And?" width=950 height=650></IFRAME>
 
-You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict though after you add several elements to a model and it doesn't work and you spend hours trying to figure out why you may have a better appreciation for this statement.
 
-----------
+## Summary ##
 
-Since this is an investment account that is supposed to grow based on monthly interest Figure 10 provides a few additions.
+Always remember that a model is a simplification of the world around you intended to help you understand something. You should use a modeling form that adequately sever your quest for understanding. Stock & Flow, Rich Picture, and Causal Loop models are only three of a very large array of possible modeling forms that exist. Use them to the extent that they serve you and when they don't find a form that does. the Modeling and Simulation reference below will provide access to several additional types of diagrams that have been created with Insight Maker, though there are probably more that haven't yet been identified. The Model Thinking Course by Scott E. Page presents a very extensive exposure to many types of models useful for understanding different aspects of the world around us.
 
-<IFRAME SRC="http://InsightMaker.com/insight/6783?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 10. Why Aren't We All Rich v1" width=950 height=650></IFRAME>
+### Rich Pictures ###
 
+- Often easier for others to relate to and understand because of the images in the model.
+- No rules for creating them though remember that you need to tell a story.
+- Because you need to tell a story make the model as understandable as possible.
 
-**Annual Interest Rate**, as depicted in Figure 11, is the rate that will be used to compute the interest on the account on a yearly basis. Not the a slider has been included with a .01 step size to make it easy to test different values. Units is 1/year as this is the per year interest rate.
+### Causal Loop Diagrams ###
 
-![Figure 11. Annual Interest Rate Configuration Panel](03-im-6783.png)
+- Specific Guidelines for how to depict the relationships between the elements.
+- Two conventions for expressing relations.
+- S and O notation can produce misinterpretations when it comes to stocks.
+- The older + and - notation is considered more appropriate.
+- Color coding relations is an alternative to both notations, though be consistent.
+- Employing explicit stock representations often reduces misinterpretations.
+- Hybrid Rich Pictures/Causal Loop Diagrams are often the very meaningful.
 
+### Unfolding/Storytelling
 
-**Months Per Year**, as depicted in Figure 12, is just the number of months per year, a fixed constant of 12, to be used to convert the Annual Interest Rate to a monthly interest rate. The Units for this variable are Months/Year.
-
-![Figure 12. Months per Year Configuration Panel](03-im-6783a.png)
-
-
-----------
-
-### Modeling Tips ###
-
-Making all the elements of a model visible makes it much easier for others to understand it. This is why Months per Year and Initial Deposit were created as explicit variables rather than embedding the valued inside other elements.
-
-And what's definitely worth repeating is that providing comments for all the elements of a model will also make it much easier for others to understand. All one need do is mouse over an element and click on the "i" that appears to read the comment.
-
-----------
-
-**Interest**, ad depicted in Figure 13, contains the calculation for the Interest at each step of the simulation. The Units for interest are Dollars/Month which is derived from the formula.
-
-> [Investment Account] * ([Annual Interest Rate]/[Months per Year])
-
-> In Units: Dollars * (1/Year) / (Months/Year) = Dollars/Month
-
-And as the simulation sums Dollars/Month over months the result added to the Investment Account is in Dollars which is consistent with the units specified for the Investment Account stock.
-
-![Figure 13. Interest Configuration Panel](03-im-6783b.png)
-
-
-----------
-
-### Modeling Tip ###
-
-**R1** makes use of the Picture primitive used to indicate that the relationship between Investment Account and Interest created a Reinforcing structure, with the 1 simply meaning it's the first one in the model.
-
-![Figure 14. Picture Configuration Panel](03-im-6783c.png)
-
-
-You have the option of adding notes to the Picture element and there are a number of predefined images  that you can select from the pull down that can be assigned to the element. There are images for balancing and reinforcing loops, both clockwise and counter clockwise. These pictures can be assigned to Variables and Stocks also.
-
-The other option is that you can put a URL in this field for an image somewhere on the web and that image will be displayed and may be resized.
-
-----------
-
-Figure 15 depicts a run of this model over the three years with a 2% annual interest rate.
-
-![Figure 15. Why Aren't We All Rich v1](03-im-6783d.png)
-
-
-Admittedly $6 dollars in interest wouldn't seem like much of an incentive to invest in a investment account for three years. Though there are several aspects of the Investment Account that we might take into consideration.
-
-Figure 16 depicts a couple several update to the model which are described below.
-
-<IFRAME SRC="http://InsightMaker.com/insight/6788?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 16. Why Aren't We All Rich v2" width=950 height=650></IFRAME>
-
-
-**Time Settings** have been changed so the model runs for 30 years, or 360 months.
-
-**Monthly Deposits** have been added as a flow allowing one to indicate that there are additional monthly deposits into the investment account. A slider has been included to allow for testing this model with different monthly deposits. The Units for this flow are Dollars/Month, the same as for Interest.
-
-**Annual Interest Rate** has been changed to 10% because one is likely to find an investment account that will average 10% over a period of 30 years, or so it would seem based on Whitfield & Co[1].
-
-Figure 17 shows the new result from the model with these parameters. Though is this enough to retire on? Not likely.
-
-![Figure 17. Why Aren't We All Rich v2 for 30 years, 10% interest, $70/month deposits](03-im-6783e.png)
-
-
-Figure 18 is the same model with the years changed to 40 years and with $100 Dollars/Month recurring deposits. And there's a significant difference between $160 thousand dollars and $640 thousand dollars. The difference being what you are willing to invest and for how long.
-
-![Figure 18. Why Aren't We All Rich v2 for 40 years, 10% interest, $100/month deposits](03-im-6783f.png)
-
-
-That said it's best if we don't lose sight of the initial question, that being why more people employ this model and become rich. Part of the difference between Figure 17 and Figure 18 is the extra $30 dollars/month in periodic deposits. One of the difficulties is finding the money to deposit on a monthly basis.
-
-Figure 19 expands on where the money comes from for the monthly deposits.
-
-<IFRAME SRC="http://InsightMaker.com/insight/6794?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 18. Why Aren't We All Rich v3" width=950 height=650></IFRAME>
-
-
-Based on this model if one wants to increase the monthly deposits then it is necessary to increase Income or decrease Expenses as the Monthly Deposits are what's left over. Part of the difficulty is that when one has money the tendency seems for most to spend it rather than save it.
-
-There are a couple additional aspects related to deposits that should be mentioned though won't actually be added to the model. Many companies allow employees to have payroll deductions directly deposited into a retirement account. This helps take care of the problem of having the money and spending it rather than depositing it in the investment account. Also, at least in the US their are tax laws that allow for the investment of some amount of pretax fund, money that you don't have to pay taxes on, to be placed in an investment account. The idea being that you would withdraw the money sometime in the future when you're in a lower tax bracket. Some companies will even match a portion of your investment account deposits up to a certain amount each year. These options, which you could add to the model, would increase the resultant funds available at the end of the simulation.
-
-The question we started with was that is this approach can be used to amass a sizable amount of money then why aren't more people using it to become well off. Part of the answer had to do with the idea that with money in their pocket people are more likely to spend it than save it even though there are incentives to save it.
-
-Figure 19 provides an enhancement to the model adding Withdrawal and Penalty flows with some associated variables which are described below.
-
-<IFRAME SRC="http://InsightMaker.com/insight/6827?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 19. Why Aren't We All Rich v4" width=950 height=650></IFRAME>
-
-
-**Penalty** is levied by the Government if the funds are withdrawn before you reach 59 1/2 and is meant to be an encouragement to save. The % Penalty is a variable with a slider defined to you can test the value during runs. The Units for Penalty are Dollars/Month.
-
-**Withdrawal** represents money taken out of the account to purchase things with. As the amount of money in the Investment Account grows it becomes more and more attractive for use to purchase other things and there develops a tug of war between the Attractiveness of the money in the Investment Account and one's Determination to Save. Attractiveness and Determination to Save both represented by percentages between 0 and 100%. Attractiveness is represented with a Converter, a modeling element not previously described.
-
-----------
-
-### Modeling Tip ###
-
-It is often the case that a variable to be used in a model can not be represented as a constant or some well defined formula. The variable is actually a function of Time or some other variable. In the case of the model in Figure 19 Attractiveness is a function of Investment Account and is defined as a set of data points.
-
-Figure 20 shows the Configuration Panel for Attractiveness Principle. Note that many of the configuration options are the same as other modeling elements. The ones that are different are in Configuration and Input/Output Table.
-
-![Figure 20. Attractiveness Configuration Panel](03-im-6827.png)
-
-
-Because the variable is defines as a set of XY coordinates the Data has to be defined point by point as depicted in Figure 21, or the table may be imported.
-
-![Figure 21. Attractiveness Data Specification](03-im-6827a.png)
-
-
-Also notice on the Converter Configuration Panel there is an option for Interpolation. This option defines how Insight Maker figures out the Y values in between the defined X points. The graph displayed in Figure 21 depicts the Linear Interpolation meaning that Insight Maker treats the line between two points as a straight line and if computes the Y value from the XY values at the two points on either side of the X value.
-
-Figure 22 shows the curve for the Interpolation option of None meaning that it treats all the Y values between point X1Y1 and X2Y2 as Y1.
-
-![Figure 22. Attractiveness Data Specification with Interpolation = None](03-im-6827b.png)
-
-
-----------
-
-Figure 23, 24, 25 show the various display tabs for a run of this model with a Determination to save of 50%.
-
-![Figure 23. Investment Account Limited by Attractiveness](03-im-6827c.png)
-
-
-When the Investment Account reaches $87,000 dollars after 255 months it is sufficiently attractive to overcome the Determination to Save so money is withdrawn from the account every month and the account no longer grows. Is this a bad thing? That depends on the intent.
-
-![Figure 24. Investment Account Attractiveness and Determination](03-im-6827d.png)
-
-
-Figure 24 just shows that the Attractiveness has reached the Determination to Save level so withdrawals begin happening every month.
-
-![Figure 25. Investment Account Withdrawal and Penalty](03-im-6827e.png)
-
-
-Figure 25 shows that there is almost $800 dollars a month being withdrawn from the account monthly and the account doesn't decrease. Maybe it's accomplishing what it needs to if $800 a month is sufficient to augment other income.
-
-Note the large overshoot on the Withdrawal curve and a small one on the Penalty curve. This is most likely because the Time Step is too large. Figure 26 is the same display tab for the model run with a Time Step of 0.5. Notice how the curve cleans up.
-
-![Figure 25. Investment Account Withdrawal and Penalty with Time Step = 0.5](03-im-6827f.png)
-
-
-----------
-
-### Exercise 3-4 ###
-
-There is a logic flaw in this model which you might try to repair. The Penalty is not actually taken from the Investment Account but from the Withdrawal itself so it reduces the amount you actually get from the Withdrawal. Be warned that is might be a tricky fix.
-
-----------
-
-We now have a model which provides some incentives to start and continue to deposit in an Investment Account, and some disincentives toward the withdrawal of funds, though have we really addressed the initial situation posed? Not really. As far as starting the Investment Account and regularly depositing money, there are incentives, and for many these incentives were enough to get them to invest. For many the incentive, for one reason or another, has not been sufficient. And, any more strict incentives would likely be looked on unfavorably. People do not like to be manipulated, even when it is for their own benefit. The penalty for withdrawal is a deterrent in some respects though as the Investment Account continues to grow its attractiveness in terms of what it can purchase continues to entice. The best answer for this situation is to legally tie up the withdrawal process so it's only an option in the case of dire emergencies. Though as much as people find being manipulated by others distasteful, being controlled by themselves is just as distasteful.
-
-Is the model done? As usual, the answer is; "It Depends!" If it has provided sufficient understanding to address the situation posed then it is sufficient. If not then it should be taken further, though once it is sufficient you should STOP!
-
-## Building a Model Summary ##
-
-- **Intent**. Be sure you have a good idea of what you want the model to help you understand. This may evolve as you develop the model.
-- **Time Frame**. Ensure you have a sense of the time frame over which you intend to simulation the model. As you build the mode you may find you need to adjust your initial thought on this.
-- **Stocks & Flows**. Identify the Stocks & Flows first as they are key elements of the model.
-- **Use Units**. Units help to ensure your model is sound and Insight Maker will test for consistency of units. If the units are consistent it doesn't guarantee the model is sound though it does add a level of confidence.
-- **Variables & Links**. Add Variables & Links to influence the flows.
-- **Test Often**. Each time you make a logical addition to the model think about how you expect the model to behave then run the model and see if there is agreement with your expectation. If it isn't then it's an opportunity to learn and improve the model. And if it does agree you should still consider the output. It may be that your expectation and the model are both wrong.
-- **Time Step**. Test the Time Step to ensure it's small enough to capture all relevant transitions in the model.
-- **Stop at the End**. When the model serves the purpose for which you are developing it, STOP! There is always more you can add to a model. You should only include what is relevant to satisfy the initial intent.
+- Makes it far easier for others to understand your insights your model is trying to surface.
 
 ## References ##
 
-- Catalina Foothills School District. 2003. Tips for Using System Dynamics Tools. http://www.clexchange.org/ftp/documents/Implementation/IM2003-12TipsUsingSDTools.pdf
-- Keeting, Elizabeth K. Internet 2013. Everything You Ever Wanted to Know about How to Develop A System Dynamics Model, But Were Afraid to Ask. http://www.systemdynamics.org/conferences/1998/PROCEED/00024.PDF
-- Newell, Barry & Proust, Katrina. 2012. Introduction to
-Collaborative Conceptual Modelling. https://digitalcollections.anu.edu.au/bitstream/1885/9386/3/Newell_IntroductionCollaborative_2012.pdf
-- Whiftield, Caraig. 2012. What Returns Should We Expect from the Stock Market. http://www.whitfieldco.com/blog/?p=39
-
+- [Senge, P. 1990. The Fifth Discipline: The Art & Practice of the Learning Organization](http://www.amazon.com/Fifth-Discipline-Practice-Organization-ebook/dp/B000SEIFKK/)
+- [Modeling & Simulation with Insight Maker](http://www.systemswiki.org/index.php?title=Modeling_%26_Simulation_with_Insight_Maker)
+- [Model Thinking Course](https://www.coursera.org/course/modelthinking) by Scott E. Page, University of Michigan
+- [Rich Pictures](http://systems.open.ac.uk/materials/T552/pages/rich/richAppendix.html) from Open University Course T552
 
 
