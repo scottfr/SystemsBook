@@ -11,29 +11,79 @@
 
 Now that the most relevant aspects of Insight Maker have been introduced it is appropriate to provide you with a meaningful process and guidelines to use when they set out to build a model to promote an understanding of an area of interest. An aspect of this essential for the development of sound models is the topic of units. While units don't ensure a model is sound, if the units don't match up one can be certain the model is not sound.
 
-## Begin at the Beginning ##
-
-There are a number of guidelines or rules of thumb that you will find helpful when developing a model. The idea is to ensure that the model serves the purpose you started building it for.
+## Model Construction Process ##
 
 We develop models to help us understand the implications of interactions, and sometimes guidance. As such, as with Alice above, it is essential that before you begin to build a model you know what it is that you want to understand otherwise how will you know if the model does what you needs to do.
+
+There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These will be presented as Modeling Tips throughout this chapter. The idea is to ensure that the model serves the purpose you started building it for.
+
+Figure 0 presents a generalize concept for of model development.
+
+![Figure 0. Model Construction Process](03-im-184.png)
+
+[** Figure 0. Model Construction Process](http://www.insightmaker.com/insight/184)
+
+The difference between Real Events and Conclusions and Behaviors result in the creation of an Abstract Version of Real Events. The abstraction is then used to develop a Model which promotes a revision to Conclusions and Behaviors. This cycle continues until the Model produces a set of Conclusions and Behaviors which are congruent with Real Events. At this point there's no longer a need to create an Abstract Version of Real Events, meaning you have achieved the understanding you were seeking.
+
+The construction process of Figure 0 is very conceptual and as you continue to develop models you will arrive at a sequence that you are comfortable with an enables you to achieve the understanding your seeking. Figure 0a and 0b present the two model formulation processes presented by Andrew Ford in Modeling the Environment.
+
+![Figure 0a. Emphasis on Model Formulation](03-im-220.png)
+
+[** Figure 0a. Emphasis on Model Formulation](http://www.insightmaker.com/insight/220)
+
+In this approach one focuses on the understanding the qualitative dynamics, i.e., problem familiarization, problem definition and model formulation. Not until such time as there is a level of comfort in the understanding of these dimensions, which may employ Rich Pictures or Causal Loop Diagrams, does one progress to the quantitative aspect of model building, i.e., estimating parameters, simulating to explain the problem and sensitivity and policy analysis, which is where the Stock & Flow simulation model is employed. The quantitative dynamics may produce sufficient understanding or the process may continue back into the qualitative dynamics area. Model development is an iterative process.
+
+Figure 0b, which may look like complete chaos, emphasizes simulation to provide feedback to provide a better understanding of all other aspects of the modeling process.
+
+![Figure 0b. Emphasis on Simulate Early & Simulate Often](03-im-219.png)
+
+[** Figure 0b. Emphasis on Simulate Early & Simulate Often](http://www.insightmaker.com/insight/219)
+
+Here the believe is that actually simulating all stages of the model are the best way to ground one's understanding of all other aspects of the model development process.
+
+As you develop models you will develop an approach which is probably somewhere between Figure 0a and 0b that you are comfortable with. That is probably the most critical aspect, i.e., that you be comfortable with your process and it make sense to you.
+
+## Modeling Guidelines ##
+
+Figure 0c presents a number of guidelines or rules of thumb it would be good for you to keep in mind as you develop your models. Some of the following are only relevant to Stock & Flow simulations, and which they are should be quite obvious.
+
+![Figure 0c. Modeling Guidelines](03-im-1784.png)
+
+[** Figure 0c. Modeling Guidelines](http://www.insightmaker.com/insight/1784)
+
+Remember that model development and the understanding that comes with it is an iterative process. It's almost impossible to create all the pieces as they should be the first time around. Look at it as do a little, learning a little and repeat.
+
+- **Purpose**. Have a sense of what you want the model to accomplish and expect the thought to evolve as you devleop the model.
+- **Boundary**. A boundary allows you to explicitly define what's part of the model and what's not part of the model. If you're unclear on the purpose of the model and unable to establish a boundary how will you ever know when to stop adding things to the model?
+- **Time Units**. Will the interactions in this model be depicted over Years, Months, Days, etc. In this case the initial thought is that it will be hours. And you should realize that you initial thought may have to be revised once you begin developing the model.
+- **Simulation Length**. How long might the interactions have to be modeled for. Here again the answer may be obvious, or you may have to start with an estimate and revise it after working with the model. Here we'll estimate 4 hrs.
+- **Time Step**. Here again you have to estimate a value based on the smallest time of transition you expect in the interactions and then test it to see if you you're close enough. In this case we'll start with 0.5
+- **Notes Notes Notes**. As you build your model add notes to the elements so you can refer back to them later to get a sense of what you were thinking when you created them. Yes, you tell yourself you know what you're doing at the moment, though you'll be surprised at what you won't remember a week, a month or even a year from now. Notes also make it much easier for others to understand what you intended when you created elements.
+- **Variable Names**. A stock represents a quantity and should be labeled with a directionless noun our noun phrase, you know, a person, place or thing. Avoid directional modifiers such as increasing, decreasing, growing, slowing, etc. as they tend to make a model very difficult to understand. A flow represents something moving over time so it's label should be something one would easily think of as moving over time as walk, speed, flow, etc.
+- **Loop Labels**. If you're developing a Causal Loop Diagram or Stock & Flow Diagram be sure to label and sequence your loops so others have a sense in what order to read your story.
+- **Goals**. Balancing loops always have goals. Make sure they're explicitly identified.
+- **Influences**. Make sure you include all relevant influences and only the relevant influences. Sometimes you include items because you can't figure out if they're relevant or not. That's OK as long as you remember to later take out the ones that aren't relevant. If you leave influenced which aren't relevant they are likely to result in confusion later.
+
+The following items are most likely relevant only for Stock & Flow simulations.
+
+- **Stocks**. Identify which items are the the stocks, or accumulations, in the model that will change over time. Stocks are often easy to identify if you think about stopping time. When time stops a stock still has a quantity. In this case it's the distance from Grandma's house as Red walks toward it.
+- **Flows**. Identify the flows which are responsible for changing the stocks over time. If time stops a flow has no value. In this case it's walking.
+- **Delay**. Delays can have very unexpected impacts on the behavior of a model. Where there are delays make sure they're explicitly identified.
+- **Units**. Units can be very instrumental in assuring model validity. While consistency of units doesn't guarantee model validity if the units are inconsistent you can be sure the model is not valid.
+- **Limits**. If there are limits on Stocks, Variables or Flows be sure they are explicitly stated so Insight Maker can inform you if the model generates out of limit value. This will signal you that there is a problem with assumptions or initial values.
+- **Reality Check**. Ensure the model is producing results which are consistent with reality. If it is not then it's an opportunity for learning.
+
+The guidelines are far too much to memorize though if you refer to them as a check list over time they will actually become second nature and you'll find yourself checking them as you're adding elements to a model.
+
+----------
+
+## Can Red Get to Grandma's House ##
 
 Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?
 
 Little Red Riding Hood want's to know how long it will take her to get to Grandma's house if she walks at 2 miles per hour and Grandma's house is 4.5 miles away thought the woods.
 
 In this statement what is to be figured out is very easy to identify. Sometimes it's not so easy and you have to dig a little.
-
-----------
-
-### Modeling Tips ###
-
-- **Stocks**. Identify which items are the the stocks, or accumulations, in the model that will change over time. Stocks are often easy to identify if you think about stopping time. When time stops a stock still has a quantity. In this case it's the distance from Grandma's house as Red walks toward it.
-- **Flows**. Identify the flows which are responsible for changing the stocks over time. If time stops a flow has no value. In this case it's walking.
-- **Time Units**. Will the interactions in this model be depicted over Years, Months, Days, etc. In this case the initial thought is that it will be hours. And you should realize that you initial thought may have to be revised once you begin developing the model.
-- **Simulation Length**. How long might the interactions have to be modeled for. Here again the answer may be obvious, or you may have to start with an estimate and revise it after working with the model. Here we'll estimate 4 hrs.
-- **Time Step**. Here again you have to estimate a value based on the smallest time of transition you expect in the interactions and then test it to see if you you're close enough. In this case we'll start with 0.5
-
-----------
 
 Figure 1 represents a simple model of Little Red Riding Hood walking to Grandma's house.
 
@@ -47,8 +97,6 @@ While this may look like a rather trivial model there are several aspects of thi
 
 ### Modeling Tips ###
 
-- **Labels**. A stock represents a quantity and should be labeled with a directionless noun our noun phrase, you know, a person, place or thing. Avoid directional modifiers such as increasing, decreasing, growing, slowing, etc. as they tend to make a model very difficult to understand. A flow represents something moving over time so it's label should be something one would easily think of as moving over time as walk, speed, flow, etc.
-- **Comments**. As you build your model add comments to the elements so you can refer back to them later to get a sense of what you were thinking when you created them. Yes, you tell yourself you know what you're doing at the moment, though you'll be surprised at what you won't remember a week, a month or even a year from now. Comments also make it much easier for others to understand what you intended when you created elements.
 
 ----------
 
@@ -362,6 +410,7 @@ Is the model done? As usual, the answer is; "It Depends!" If it has provided suf
 ## References ##
 
 - Catalina Foothills School District. 2003. Tips for Using System Dynamics Tools. http://www.clexchange.org/ftp/documents/Implementation/IM2003-12TipsUsingSDTools.pdf
+- Ford, Andrew. 2009. Modeling the Environment. http://www.amazon.com/Modeling-Environment-Second-Andrew-Ford/dp/1597264733/
 - Keeting, Elizabeth K. Internet 2013. Everything You Ever Wanted to Know about How to Develop A System Dynamics Model, But Were Afraid to Ask. http://www.systemdynamics.org/conferences/1998/PROCEED/00024.PDF
 - Newell, Barry & Proust, Katrina. 2012. Introduction to
 Collaborative Conceptual Modelling. https://digitalcollections.anu.edu.au/bitstream/1885/9386/3/Newell_IntroductionCollaborative_2012.pdf

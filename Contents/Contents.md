@@ -1,5 +1,15 @@
 # Beyond Connecting the Dots: Mastering the hidden connections in everything that matters - Table of Contents v4 - 13.05.30 #
 
+## New Content Posted ##
+
+Scroll down to the appropriate chapter to find the links.
+
+- 13.06.02 Chapter 4v2
+- 13.06.02 Chapter 10v1
+- 13.06.02 Chapter 3v1
+- 13.06.01 Chapter 2v2
+- 13.05.30 Chapter 1v3
+
 An interactive book intended to enable one to develop a useful understanding of the world around them and their interaction with it. The vehicle for developing that understanding is modeling and simulation, hence the "Mastering the hidden connections in everything that matters." The following represents the current set of thoughts on the structure and content of the book.
 
 This page now serves as the working Table of Contents and is used to surface content for **Sponsor** review along with the links to the various discussions where comments are to be shared. I finally realized that maintaining two files made little or no sense. Bookmarking this URL might be a good idea.
@@ -138,14 +148,17 @@ Now that the most relevant aspects of Insight Maker have been introduced it is a
 
 Three models here will be done first as qualitative models and quantitative models.
 
+- Model Construction Process
+- Modeling Guidelines
 - Can Red Get to Grandma's?
 - Why Aren't We All Rich?
-- Where Have All The Trees Gone? (to be added)
+- Where Have All The Trees Gone? (to be added maybe)
 - Summary
 
-v2 will be consistent with above description of Chapter 4.
+Chapter 4 was chapter 3 until the new Chapter 3 was written. As such Chapter 4v1 will still internally indicate that it's Chapter 3v1. Don't worry, it confuses me also. Also I wanted to add another model to this chapter thought it's already way too long. Not sure how this will resolve.
 
-- [v1 13.05.18](./building-v1/building.html) Put comments in -> [Chapter 4 Comments](http://linkd.in/14CL1Ny) 
+- [v2 13.06.02](./building-v2/building.html) Put comments in -> [Chatper 4 Comments](http://linkd.in/11fR6wu)
+- [v1 13.05.18](./building-v1/building.html) Put comments in -> [Chapter 4 Comments](http://linkd.in/11fR6wu) 
 
 # Act II - The Evolution of Structure #
 
@@ -219,6 +232,10 @@ The following are provided as potential models for entries in segments of this c
 * Equilibrium Analysis
 * Eigenvector stability analyses
 * Simple illustrative examples
+
+Note that this is a 6mb .pdf file so on a slow connection download may take a while.
+
+- [v1 13.06.02](./mathematics-v1.pdf) Put comments in -> [Chapter 10 Comments](http://linkd.in/10JAvo8)
 
 # Appendices #
 
