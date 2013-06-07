@@ -1,0 +1,62 @@
+\begin{oframed}\textbf{Numerical Solution Algorithms} 
+
+ This model explores the selection of the simulation step size and differential equation solution algorithm.
+
+\begin{enumerate}
+\item Create a new \a{Stock} named \p{Population}.
+\item  Change the \a{Initial Value} property of the primitive \p{Population} to \e{100}.
+\item Create a new \a{Flow} going from empty space to the primitive \p{Population}. Name that flow \p{Net Growth}.
+\item Create a new \a{Variable} named \p{Growth Rate}.
+\item  Change the \a{Equation} property of the primitive \p{Growth Rate} to \e{0.1}.
+\item Create a new \a{Link} going from the primitive \p{Growth Rate} to the primitive \p{Net Growth}.
+\item  Change the \a{Flow Rate} property of the primitive \p{Net Growth} to \e{[Growth Rate]*[Population]}.
+\item Create a new \a{Variable} named \p{True Population}.
+\item Create a new \a{Link} going from the primitive \p{Growth Rate} to the primitive \p{True Population}.
+\item  Change the \a{Equation} property of the primitive \p{True Population} to \e{100*Exp([Growth Rate]*Years)}.
+\item  Change the \a{Simulation Length} property of the Time Settings to \e{10}.
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_2/diagram_13.png}
+\end{minipage}
+\item 
+
+Let's now implement the simple exponential growth model we have discussed in this chapter. We have a population that starts with 100 people and increases at a rate of 10% per year. In addition to creating the stock and flow model, we have also created a variable, \p{True Population}, that contains the analytical solution to the model.
+
+
+\item 
+
+First, we'll use Euler's method with a step size of 2 years and simulate the model.
+
+
+\item  Change the \a{Simulation Time Step} property of the Time Settings to \e{2}.
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_2/result_17.png}
+\end{minipage}
+\item 
+
+As we can see these results aren't very accurate. The value of the numerical estimated \p{Population} is quite different from the analytically determined value in \p{True Population}. Let's reduce the step size to 1 year and try again.
+
+
+\item  Change the \a{Simulation Time Step} property of the Time Settings to \e{1}.
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_2/result_20.png}
+\end{minipage}
+\item 
+
+This is better, but we're still off by a fair amount. We could experiment with continuing to reduce the step size, but let's instead switch now to the more accurate Runge-Kutta method. Will simulate the model again with a step size of 1 using the 4th-Order Runge-Kutta solution algorithm.
+
+
+\item  Change the \a{Analysis Algorithm} property of the Time Settings to \e{RK4}.
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_2/result_23.png}
+\end{minipage}
+\item 
+
+That's a lot better! It's so close to being perfect that we can’t even see the difference between the two lines in the figure. Just to be clear, let's see how quickly the results degrade when we increase the step size. Let's set the step size to 10 and simulate the model again.
+
+
+\item  Change the \a{Simulation Time Step} property of the Time Settings to \e{10}.
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_2/result_26.png}
+\end{minipage}
+\item 
+
+That's still very good and much better than Euler's Method with a step size of 1. Why don't you go ahead now and experiment with different step sizes and the two solution methods to get a feel for their accuracies.
+
+
+
+\end{enumerate} \end{oframed}
