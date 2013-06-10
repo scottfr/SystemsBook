@@ -49,7 +49,9 @@
 <li><a href="#references-1">References</a></li>
 </ul></li>
 <li><a href="#chapter-4-building-a-model-v2-13.06.02">Chapter 4 Building a Model v2 13.06.02</a><ul>
-<li><a href="#begin-at-the-beginning">Begin at the Beginning</a></li>
+<li><a href="#model-construction-process">Model Construction Process</a></li>
+<li><a href="#modeling-guidelines">Modeling Guidelines</a></li>
+<li><a href="#can-red-get-to-grandmas-house">Can Red Get to Grandma’s House</a></li>
 <li><a href="#why-arent-we-all-rich">Why Aren’t We All Rich</a></li>
 <li><a href="#building-a-model-summary">Building a Model Summary</a></li>
 <li><a href="#references-2">References</a></li>
@@ -76,7 +78,10 @@
 <li><a href="#model-implementation">Model Implementation</a></li>
 <li><a href="#model-results">Model Results</a></li>
 </ul></li>
-<li><a href="#the-process-of-modeling">The Process of Modeling</a></li>
+<li><a href="#the-process-of-modeling">The Process of Modeling</a><ul>
+<li><a href="#pattern-oriented-event-oriented">Pattern Oriented / Event Oriented</a></li>
+<li><a href="#from-models-to-insights">From models to insights</a></li>
+</ul></li>
 <li><a href="#the-mathematics-of-modeling">The Mathematics of Modeling</a><ul>
 <li><a href="#differential-equations-and-system-dynamics">Differential Equations and System Dynamics</a></li>
 <li><a href="#solving-differential-equations">Solving Differential Equations</a></li>
@@ -817,33 +822,65 @@
 
 Lewis Carroll - Alice in Wonderland</code></pre>
 <p>Now that the most relevant aspects of Insight Maker have been introduced it is appropriate to provide you with a meaningful process and guidelines to use when they set out to build a model to promote an understanding of an area of interest. An aspect of this essential for the development of sound models is the topic of units. While units don’t ensure a model is sound, if the units don’t match up one can be certain the model is not sound.</p>
-<h2 id="begin-at-the-beginning"><a href="#begin-at-the-beginning">Begin at the Beginning</a></h2>
-<p>There are a number of guidelines or rules of thumb that you will find helpful when developing a model. The idea is to ensure that the model serves the purpose you started building it for.</p>
+<h2 id="model-construction-process"><a href="#model-construction-process">Model Construction Process</a></h2>
 <p>We develop models to help us understand the implications of interactions, and sometimes guidance. As such, as with Alice above, it is essential that before you begin to build a model you know what it is that you want to understand otherwise how will you know if the model does what you needs to do.</p>
-<p>Here’s a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?</p>
-<p>Little Red Riding Hood want’s to know how long it will take her to get to Grandma’s house if she walks at 2 miles per hour and Grandma’s house is 4.5 miles away thought the woods.</p>
-<p>In this statement what is to be figured out is very easy to identify. Sometimes it’s not so easy and you have to dig a little.</p>
-<hr />
-<h3 id="modeling-tips"><a href="#modeling-tips">Modeling Tips</a></h3>
+<p>There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These will be presented as Modeling Tips throughout this chapter. The idea is to ensure that the model serves the purpose you started building it for.</p>
+<p>Figure 0 presents a generalize concept for of model development.</p>
+<div class="figure">
+<img src="03-im-184.png" alt="Figure 0. Model Construction Process" /><p class="caption">Figure 0. Model Construction Process</p>
+</div>
+<p>The difference between Real Events and Conclusions and Behaviors result in the creation of an Abstract Version of Real Events. The abstraction is then used to develop a Model which promotes a revision to Conclusions and Behaviors. This cycle continues until the Model produces a set of Conclusions and Behaviors which are congruent with Real Events. At this point there’s no longer a need to create an Abstract Version of Real Events, meaning you have achieved the understanding you were seeking.</p>
+<p>The construction process of Figure 0 is very conceptual and as you continue to develop models you will arrive at a sequence that you are comfortable with an enables you to achieve the understanding your seeking. Figure 0a and 0b present the two model formulation processes presented by Andrew Ford in Modeling the Environment.</p>
+<div class="figure">
+<img src="03-im-220.png" alt="Figure 0a. Emphasis on Model Formulation" /><p class="caption">Figure 0a. Emphasis on Model Formulation</p>
+</div>
+<p>In this approach one focuses on the understanding the qualitative dynamics, i.e., problem familiarization, problem definition and model formulation. Not until such time as there is a level of comfort in the understanding of these dimensions, which may employ Rich Pictures or Causal Loop Diagrams, does one progress to the quantitative aspect of model building, i.e., estimating parameters, simulating to explain the problem and sensitivity and policy analysis, which is where the Stock &amp; Flow simulation model is employed. The quantitative dynamics may produce sufficient understanding or the process may continue back into the qualitative dynamics area. Model development is an iterative process.</p>
+<p>Figure 0b, which may look like complete chaos, emphasizes simulation to provide feedback to provide a better understanding of all other aspects of the modeling process.</p>
+<div class="figure">
+<img src="03-im-219.png" alt="Figure 0b. Emphasis on Simulate Early &amp; Simulate Often" /><p class="caption">Figure 0b. Emphasis on Simulate Early &amp; Simulate Often</p>
+</div>
+<p>Here the believe is that actually simulating all stages of the model are the best way to ground one’s understanding of all other aspects of the model development process.</p>
+<p>As you develop models you will develop an approach which is probably somewhere between Figure 0a and 0b that you are comfortable with. That is probably the most critical aspect, i.e., that you be comfortable with your process and it make sense to you.</p>
+<h2 id="modeling-guidelines"><a href="#modeling-guidelines">Modeling Guidelines</a></h2>
+<p>Figure 0c presents a number of guidelines or rules of thumb it would be good for you to keep in mind as you develop your models. Some of the following are only relevant to Stock &amp; Flow simulations, and which they are should be quite obvious.</p>
+<div class="figure">
+<img src="03-im-1784.png" alt="Figure 0c. Modeling Guidelines" /><p class="caption">Figure 0c. Modeling Guidelines</p>
+</div>
+<p>Remember that model development and the understanding that comes with it is an iterative process. It’s almost impossible to create all the pieces as they should be the first time around. Look at it as do a little, learning a little and repeat.</p>
 <ul>
-<li><strong>Stocks</strong>. Identify which items are the the stocks, or accumulations, in the model that will change over time. Stocks are often easy to identify if you think about stopping time. When time stops a stock still has a quantity. In this case it’s the distance from Grandma’s house as Red walks toward it.</li>
-<li><strong>Flows</strong>. Identify the flows which are responsible for changing the stocks over time. If time stops a flow has no value. In this case it’s walking.</li>
+<li><strong>Purpose</strong>. Have a sense of what you want the model to accomplish and expect the thought to evolve as you devleop the model.</li>
+<li><strong>Boundary</strong>. A boundary allows you to explicitly define what’s part of the model and what’s not part of the model. If you’re unclear on the purpose of the model and unable to establish a boundary how will you ever know when to stop adding things to the model?</li>
 <li><strong>Time Units</strong>. Will the interactions in this model be depicted over Years, Months, Days, etc. In this case the initial thought is that it will be hours. And you should realize that you initial thought may have to be revised once you begin developing the model.</li>
 <li><strong>Simulation Length</strong>. How long might the interactions have to be modeled for. Here again the answer may be obvious, or you may have to start with an estimate and revise it after working with the model. Here we’ll estimate 4 hrs.</li>
 <li><strong>Time Step</strong>. Here again you have to estimate a value based on the smallest time of transition you expect in the interactions and then test it to see if you you’re close enough. In this case we’ll start with 0.5</li>
+<li><strong>Notes Notes Notes</strong>. As you build your model add notes to the elements so you can refer back to them later to get a sense of what you were thinking when you created them. Yes, you tell yourself you know what you’re doing at the moment, though you’ll be surprised at what you won’t remember a week, a month or even a year from now. Notes also make it much easier for others to understand what you intended when you created elements.</li>
+<li><strong>Variable Names</strong>. A stock represents a quantity and should be labeled with a directionless noun our noun phrase, you know, a person, place or thing. Avoid directional modifiers such as increasing, decreasing, growing, slowing, etc. as they tend to make a model very difficult to understand. A flow represents something moving over time so it’s label should be something one would easily think of as moving over time as walk, speed, flow, etc.</li>
+<li><strong>Loop Labels</strong>. If you’re developing a Causal Loop Diagram or Stock &amp; Flow Diagram be sure to label and sequence your loops so others have a sense in what order to read your story.</li>
+<li><strong>Goals</strong>. Balancing loops always have goals. Make sure they’re explicitly identified.</li>
+<li><strong>Influences</strong>. Make sure you include all relevant influences and only the relevant influences. Sometimes you include items because you can’t figure out if they’re relevant or not. That’s OK as long as you remember to later take out the ones that aren’t relevant. If you leave influenced which aren’t relevant they are likely to result in confusion later.</li>
 </ul>
+<p>The following items are most likely relevant only for Stock &amp; Flow simulations.</p>
+<ul>
+<li><strong>Stocks</strong>. Identify which items are the the stocks, or accumulations, in the model that will change over time. Stocks are often easy to identify if you think about stopping time. When time stops a stock still has a quantity. In this case it’s the distance from Grandma’s house as Red walks toward it.</li>
+<li><strong>Flows</strong>. Identify the flows which are responsible for changing the stocks over time. If time stops a flow has no value. In this case it’s walking.</li>
+<li><strong>Delay</strong>. Delays can have very unexpected impacts on the behavior of a model. Where there are delays make sure they’re explicitly identified.</li>
+<li><strong>Units</strong>. Units can be very instrumental in assuring model validity. While consistency of units doesn’t guarantee model validity if the units are inconsistent you can be sure the model is not valid.</li>
+<li><strong>Limits</strong>. If there are limits on Stocks, Variables or Flows be sure they are explicitly stated so Insight Maker can inform you if the model generates out of limit value. This will signal you that there is a problem with assumptions or initial values.</li>
+<li><strong>Reality Check</strong>. Ensure the model is producing results which are consistent with reality. If it is not then it’s an opportunity for learning.</li>
+</ul>
+<p>The guidelines are far too much to memorize though if you refer to them as a check list over time they will actually become second nature and you’ll find yourself checking them as you’re adding elements to a model.</p>
 <hr />
+<h2 id="can-red-get-to-grandmas-house"><a href="#can-red-get-to-grandmas-house">Can Red Get to Grandma’s House</a></h2>
+<p>Here’s a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?</p>
+<p>Little Red Riding Hood want’s to know how long it will take her to get to Grandma’s house if she walks at 2 miles per hour and Grandma’s house is 4.5 miles away thought the woods.</p>
+<p>In this statement what is to be figured out is very easy to identify. Sometimes it’s not so easy and you have to dig a little.</p>
 <p>Figure 1 represents a simple model of Little Red Riding Hood walking to Grandma’s house.</p>
 <IFRAME SRC="http://InsightMaker.com/insight/6767?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 1. Walking to Grandma's House" width=950 height=650></IFRAME>
 
 
 <p>While this may look like a rather trivial model there are several aspects of this model that warrant a few notes, and some of them we’ve not considered before.</p>
 <hr />
-<h3 id="modeling-tips-1"><a href="#modeling-tips-1">Modeling Tips</a></h3>
-<ul>
-<li><strong>Labels</strong>. A stock represents a quantity and should be labeled with a directionless noun our noun phrase, you know, a person, place or thing. Avoid directional modifiers such as increasing, decreasing, growing, slowing, etc. as they tend to make a model very difficult to understand. A flow represents something moving over time so it’s label should be something one would easily think of as moving over time as walk, speed, flow, etc.</li>
-<li><strong>Comments</strong>. As you build your model add comments to the elements so you can refer back to them later to get a sense of what you were thinking when you created them. Yes, you tell yourself you know what you’re doing at the moment, though you’ll be surprised at what you won’t remember a week, a month or even a year from now. Comments also make it much easier for others to understand what you intended when you created elements.</li>
-</ul>
+<h3 id="modeling-tips"><a href="#modeling-tips">Modeling Tips</a></h3>
 <hr />
 <p>If you click on the stock and look at the configuration panel you’ll notice that the last item in the list, Units, is set to miles. Units were not addressed in the first two chapters as they are so important we wanted to ensure we could focus on them in this chapter. You use units to help ensure that your models are sound. Not that units will not guarantee that your model is sound though it the units don’t work out right you can be sure it’s not, and Insight Maker checks them for you. Figure 2 shows the Configuration Panel for the stock.</p>
 <div class="figure">
@@ -913,7 +950,7 @@ Lewis Carroll - Alice in Wonderland</code></pre>
 </ul>
 <p>If you run the model you’ll find out it’s about as interesting as watching pain dry, thought it does run.</p>
 <hr />
-<h3 id="modeling-tips-2"><a href="#modeling-tips-2">Modeling Tips</a></h3>
+<h3 id="modeling-tips-1"><a href="#modeling-tips-1">Modeling Tips</a></h3>
 <p>Before you run a model you should develop a sense of the result you expect from the model at this point of its development. Then once you run the model you should be certain that is it performing as expected. When the result is not what you expect then either the structure is wrong, your assumptions are wrong, or you simply have an opportunity to develop your understanding.</p>
 <p>You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict though after you add several elements to a model and it doesn’t work and you spend hours trying to figure out why you may have a better appreciation for this statement.</p>
 <hr />
@@ -930,7 +967,7 @@ Lewis Carroll - Alice in Wonderland</code></pre>
 <img src="03-im-6783a.png" alt="Figure 12. Months per Year Configuration Panel" /><p class="caption">Figure 12. Months per Year Configuration Panel</p>
 </div>
 <hr />
-<h3 id="modeling-tips-3"><a href="#modeling-tips-3">Modeling Tips</a></h3>
+<h3 id="modeling-tips-2"><a href="#modeling-tips-2">Modeling Tips</a></h3>
 <p>Making all the elements of a model visible makes it much easier for others to understand it. This is why Months per Year and Initial Deposit were created as explicit variables rather than embedding the valued inside other elements.</p>
 <p>And what’s definitely worth repeating is that providing comments for all the elements of a model will also make it much easier for others to understand. All one need do is mouse over an element and click on the “i” that appears to read the comment.</p>
 <hr />
@@ -1042,6 +1079,7 @@ Lewis Carroll - Alice in Wonderland</code></pre>
 <h2 id="references-2"><a href="#references-2">References</a></h2>
 <ul>
 <li>Catalina Foothills School District. 2003. Tips for Using System Dynamics Tools. http://www.clexchange.org/ftp/documents/Implementation/IM2003-12TipsUsingSDTools.pdf</li>
+<li>Ford, Andrew. 2009. Modeling the Environment. http://www.amazon.com/Modeling-Environment-Second-Andrew-Ford/dp/1597264733/</li>
 <li>Keeting, Elizabeth K. Internet 2013. Everything You Ever Wanted to Know about How to Develop A System Dynamics Model, But Were Afraid to Ask. http://www.systemdynamics.org/conferences/1998/PROCEED/00024.PDF</li>
 <li>Newell, Barry &amp; Proust, Katrina. 2012. Introduction to Collaborative Conceptual Modelling. https://digitalcollections.anu.edu.au/bitstream/1885/9386/3/Newell_IntroductionCollaborative_2012.pdf</li>
 <li>Whiftield, Caraig. 2012. What Returns Should We Expect from the Stock Market. http://www.whitfieldco.com/blog/?p=39</li>
@@ -1106,7 +1144,9 @@ Lewis Carroll - Alice in Wonderland</code></pre>
 <blockquote>
 <p>All models are wrong, but some are useful – George E.P. Box</p>
 </blockquote>
-<p>When considering the relationship between models and truth, it is useful to take a step back and first discuss different kinds of models. Modeling is a wide-ranging field with many distinctions made by modelers and mathematicians. Such distinctions are generally of little interest to us, as we believe focusing on them can often encourage a focus on jargon and formalism rather than the quality of a model. Furthermore, we will present our own classification that clarifies the core dichotomy at the heart of modeling. It helps, however, to briefly discuss the distinctions that are commonly made in order to obtain a deeper understanding of the choices underlying the development of a model.</p>
+<p>A model is a tool designed to reflect reality. A model is never a perfect mirror of reality, but often models can still be useful even given their imperfections. In this chapter, we will take a journey exploring different types of models and distinctions that are commonly used to classify and understand them. We will consider several approaches to modeling that are quite different from the ones we have introduced throughout this book. These will help to understand the richer ecosystem of modeling tools and techniques that exist and how the ones we have learned fit within this ecosystem.</p>
+<p>The ultimate destination of this exploration will be a clear understanding of the fundamental principles and approaches used to construct models. There will be many detours that we must make to arrive at this destination, but in the end we will be able to divide models into two overarching categories based on their purposes and the techniques used to construct them. By mastery this divide, and how the work we and others do fits into it, we will obtain a rich perspective and understanding of the relationship between models and truth. We will also have a renewed appreciation for the strength and power of the techniques introduced in this book for tackling a wide swath of modeling problems.</p>
+<p>Before we get there, however, let’s introduce some of the terminology that is commonly used to describe models. It is useful to take a step back and first discuss different kinds of models. Modeling is a wide-ranging field with many distinctions made by modelers and mathematicians. Three of these distinctions are presented below:</p>
 <h3 id="deterministic-versus-stochastic-models"><a href="#deterministic-versus-stochastic-models">Deterministic versus Stochastic Models</a></h3>
 <p>There are two polar opposite views of the world. One view says the fate of the universe is governed by strictly predictable laws of physics. In this view, the universe acts as if it were a giant machine, where if its current state is known (down to each individual atomic particle), its future states through the rest of time are predetermined. The opposite view is that the universe is ruled by chance and randomness. Random quantum mechanical fluctuations merge and amplify leading to an infinite range of diverging possibilities.</p>
 <p>Which of these two views holds more of the truth? We certainly do not know and it is possible that this will be a question that physicists will never cease exploring. Albert Einstein had a viewpoint of special interest, however. He was a strong partisan of the more deterministic view, famously remarking, “God does not play dice with the world.”</p>
@@ -1209,7 +1249,7 @@ Lewis Carroll - Alice in Wonderland</code></pre>
 <img src="StimulusAndReality.png" alt="Figure 3. Unemployment predictions versus reality [@TheHeritageFoundation:2013vu]" /><p class="caption">Figure 3. Unemployment predictions versus reality [@TheHeritageFoundation:2013vu]</p>
 </div>
 <h3 id="narrative-models"><a href="#narrative-models">Narrative Models</a></h3>
-<p>In contrast to predictive models, a narrative model is one built to persuade by telling a story. When many people first hear the “narrative” terminology, they respond negatively. “It’s just a story.” We find this strange, as narratives are the fundamental human form of communication. We tell narratives to our friends and relatives. Politicians communicate their policies to us using narratives. Of course the vast majority of our entertainment is focused on narratives<sup><a href="#fn4" class="footnoteRef" id="fnref4">4</a></sup>. Business leaders and managers attempt to describe their strategies to us using storylines; and business books are in general dominated by anecdotes plotted along the way to making their points.</p>
+<p>In contrast to predictive models, a narrative model is one built to persuade by telling a story. When many people first hear the “narrative” terminology, they respond negatively. “It’s just a story.” We find this strange, as narratives are the fundamental human form of communication. We tell narratives to our friends and relatives. Politicians communicate their policies to us using narratives. Of course the vast majority of our entertainment is focused on narratives<sup><a href="#fn4" class="footnoteRef" id="fnref4">4</a></sup>. Business leaders and managers attempt to describe their strategies to us using story lines; and business books are in general dominated by anecdotes plotted along the way to making their points.</p>
 <p>We as a species do not view the world as a collection of numbers and probabilities; instead we see consequence and meaning. In short, narratives are how we see the world.</p>
 <p>One critique of the term narrative is that it lacks numbers, quantified data, or mathematics. This could not be further off the mark. There are many ways to construct narratives. Words are one, pictures are another, and music is a third. Numbers and mathematics are just another way of telling a story.</p>
 <p>In fact, most statistical and mathematical models are infused with narrative models. We looked earlier at the case of linear regression as a tool to predict test scores as a function of wealth. Again the mathematical equation for this simple model was:</p>
@@ -1238,7 +1278,8 @@ Lewis Carroll - Alice in Wonderland</code></pre>
 <h2 id="model-design"><a href="#model-design">Model Design</a></h2>
 <p>Fundamentally the design of a narrative model is of utmost importance and needs to be justified to an audience<sup><a href="#fn7" class="footnoteRef" id="fnref7">7</a></sup>. There are two primary aspects to a model’s design design: the structure of the model and the data used to parameterize the model.</p>
 <h3 id="structure"><a href="#structure">Structure</a></h3>
-<p>The structure of the model should mirror the structure of the system being simulated. Depending on the system complexity, the model structure may need to carry out more or less aggregation and simplification of this reality. Nevertheless, all the primitives in the model should map on to reality in a way that is understandable and relatable to the audience. Furthermore, the model structure should include components that an audience thinks are important drivers of the system. Missing a factor that the audience considers to be a key driver can fatally discredit a model in an audience’s mind irrespective of the performance or other qualities of a the model. This is true even if the factor has in fact a negligible effect. Generally speaking, it is much easier to include a factor an audience views as important than it is to convince the audience that the factor does not in actuality matter later on.</p>
+<p>The structure of the model should mirror the structure of the system being simulated. Depending on the system complexity, the model structure may need to carry out more or less aggregation and simplification of this reality. Nevertheless, all the primitives in the model should map on to reality in a way that is understandable and relatable to the audience. Thus if there is some object in the real system that behaves as a stock, a stock should exist in the model mirroring the object’s position within the system. The same should hold true with the other primitives in the model. Each primitive would ideally be directly mappable onto a counterpart in the real system and any key component in the real system should be mappable onto primitives in the model. Furthermore, feedback loops that exist in the system should exist within the model. These feedback loops should be explicitly identifiable in the model and would ideally be called out or marked in a way that highlighted their presence to an audience.</p>
+<p>Furthermore, the model structure should include components that an audience thinks are important drivers of the system. Missing a factor that the audience considers to be a key driver can fatally discredit a model in an audience’s mind irrespective of the performance or other qualities of a the model. This is true even if the factor has in fact a negligible effect. Generally speaking, it is much easier to include a factor an audience views as important than it is to later on convince the audience that the factor does not in actuality matter.</p>
 <h3 id="data"><a href="#data">Data</a></h3>
 <p>The more a model uses real-world data, the more confidence an audience will have in the model. Ideally, you have empirical data to justify the value of every primitive in your model. In practice, such a goal may be a pipe dream. Indeed, for a complex model, obtaining data to parameterize every aspect of it is usually impossible<sup><a href="#fn8" class="footnoteRef" id="fnref8">8</a></sup>. When faced with model primitives that do not have empirical data to parameterize them, an approach must be taken to ensure that it does not appear that their values were chosen without justification or to arrive at a predetermined modeling conclusion. Sensitivity testing, as discussed later on, is one way to achieve this. Another is to carry out a survey of experts in the field in order to solicit a set of recommended parameter values that can then be aggregated or used to justify the ultimate parameterization.</p>
 <h3 id="peer-review"><a href="#peer-review">Peer-Review</a></h3>
@@ -1301,6 +1342,8 @@ Sensitivity Testing
 <p>However, in most applied cases you will not be able to apply this normality assumption. Generally you will not have a nice random sample, or you might have no data at all and instead have some abstract variable you need to specify a value for. In these cases, it is up to you to make a judgment call on the uncertainty. Choose one of the four distributions detailed above and use whatever expert knowledge available to you to place an estimate on the parameterization of uncertainty. One rule of thumb, however, is that it is better to overestimate uncertainty than underestimate it. It is better to err on the side of overestimating your lack of knowledge than it is to obtain undue confidence in model results due to an underestimation of uncertainty.</p>
 <h1 id="the-process-of-modeling"><a href="#the-process-of-modeling">The Process of Modeling</a></h1>
 <p>Chapter to go here…</p>
+<h2 id="pattern-oriented-event-oriented"><a href="#pattern-oriented-event-oriented">Pattern Oriented / Event Oriented</a></h2>
+<h2 id="from-models-to-insights"><a href="#from-models-to-insights">From models to insights</a></h2>
 <h1 id="the-mathematics-of-modeling"><a href="#the-mathematics-of-modeling">The Mathematics of Modeling</a></h1>
 <p>This chapter takes the modeling techniques introduced earlier in this book and places them within a firm mathematical framework. The contents of this chapter are quite technical in parts and to fully understand them requires knowledge of basic calculus and linear algebra. We present the material because it is important for both readers who want a deep understanding how their models operate and also those who wish to understand how System Dynamics fits within the larger field of mathematical modeling. For users who approach systems thinking and modeling from a more qualitative angle, this material may be browsed or safely skipped.</p>
 <h2 id="differential-equations-and-system-dynamics"><a href="#differential-equations-and-system-dynamics">Differential Equations and System Dynamics</a></h2>
@@ -1665,7 +1708,7 @@ $</span><br /></p>
 <p><br /><span class="math">$\begin{bmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{bmatrix} \times \mathbf{V} = \lambda \times \mathbf{V}$</span><br /></p>
 <p>What eigenvector and eigenvalue combinations satisfy this equation? It turns out there are two key ones:</p>
 <p><br /><span class="math">$\begin{bmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{bmatrix} \times \begin{bmatrix} 2 \\ 1 \end{bmatrix}= 2 \times \begin{bmatrix} 2 \\ 1 \end{bmatrix}$</span><br /></p>
-<p><br /><span class="math">$\begin{bmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{bmatrix} \times \begin{bmatrix} -1 \\ 1 \end{bmatrix} = 1 \times \begin{bmatrix} -1 \\ 1 \end{bmatrix}$</span><br /></p>
+<p><br /><span class="math">$\begin{bmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{bmatrix} \times \begin{bmatrix} -1 \\ 1 \end{bmatrix} = -1 \times \begin{bmatrix} -1 \\ 1 \end{bmatrix}$</span><br /></p>
 <p>Naturally, any multiple of an eigenvector will also be an eigenvector. For instance, in the case above, <span class="math">[1, 0. 5]</span> and <span class="math">[ − 2, 2]</span> are also eigenvectors of the matrix.</p>
 <p>We can interpret eigenvectors geometrically. Looking at the <span class="math">2 × 2</span> matrix case, we can think of a vector as representing a coordinate in a two-dimensional plane: <span class="math">[<em>x</em>, <em>y</em>]</span>. When we multiply our <span class="math">2 × 2</span> matrix by the point, we transform the point into another point also in the two-dimensional plane. Due to the properties of eigenvectors, we know that when we transform an eigenvector, the transformed point will just be a multiple of the original point. Thus when a point that is on a matrix’s eigenvector is transformed by that matrix, it will move inwards or outwards from the origin along the line defined by the matrix’s eigenvector.</p>
 <p>We can now relate the concept of eigenvalues and eigenvectors to our differential equation models. Take a look back at the phase planes for the exponential model example. For each of the phase planes, there are at least two straight lines of trajectories. In these cases the <em>x</em>- axis and the <em>y</em>-axis are the locations of these trajectories. If you have a system on the <em>x</em>- or <em>y</em>-axis in this example it will remain on that axis as it changes. This indicates that for this model, the eigenvectors are the two axises as a system on either of them does not change direction as it develops. That’s the definition of of an eigenvector.</p>

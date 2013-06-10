@@ -1,0 +1,25 @@
+  * How long have you been in this position, what was your previous position. Given your background I want to focus on how you've looked at systems thinking theoretically and real applicaitons.
+  
+  * What is the most difficult system problem you have ever worked on or encountered? How did/would you tackle it?
+  
+  (In light of that, would you please describe a successful project)
+
+  * What, in your experience, are the top three difficulties for getting people to adopt systems thinking or modeling in practice?
+
+  * What are the top three tools or techniques you use to understand or manage systems?
+
+  * What is something you wish more people would understand about systems thinking and modeling?
+
+	  * Survey Question: "Scientific models have many uses including forecasting and estimation. In general, how much do you trust scientific models?" (1 "Not at All" - 5 "I trust them completely")
+
+	  * Survey Question: "Which of the following must be true for you to trust a model? Models are tools used to understand things like the weather or the economy." (list of items)
+  
+		  - Model predicts events accur­ately
+		  - Model developed and validated by experts
+		  - Model is widely used
+		  - Model assum­ptions are under­standable
+		  - Model design mirrors reality
+  
+		  - None of the above
+		  
+  * If I had been smarter, what question would I have asked?
