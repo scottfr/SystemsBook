@@ -1,0 +1,214 @@
+\documentclass[]{memoir}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{framed}
+
+\usepackage[labelformat=empty]{caption}
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+\author{}
+\date{}
+
+
+\newcommand{\p}[1]{\emph{#1}}
+\newcommand{\e}[1]{\emph{#1}}
+\renewcommand{\u}[1]{\emph{#1}}
+\renewcommand{\a}[1]{\emph{#1}}
+
+\begin{document}
+
+{
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{}
+\tableofcontents
+}
+<h1 id="going-global"><a href="#going-global">Going Global</a></h1>
+<p>Engaging more people…</p>
+<h2 id="the-web-in-a-nutshell"><a href="#the-web-in-a-nutshell">The Web in a Nutshell</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Technology</th>
+<th align="left">Acronym</th>
+<th align="left">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Hypertext Markup Language</td>
+<td align="left">HTML</td>
+<td align="left">Page Structure</td>
+</tr>
+<tr class="even">
+<td align="left">Cascading Style Sheets</td>
+<td align="left">CSS</td>
+<td align="left">Page Style</td>
+</tr>
+<tr class="odd">
+<td align="left">JavaScript</td>
+<td align="left">JS</td>
+<td align="left">Page Interactivity</td>
+</tr>
+</tbody>
+</table>
+<h3 id="html-basics"><a href="#html-basics">HTML Basics</a></h3>
+HTML defines the structure of a web page or document. An HTML document is made up out of a set of <em>tags</em>. Each tag is enclosed in triangular brackets. For instance, there is a tag called &quot;
+<hr>
+<p>&quot; that will create a horizontal division line in your document (“HR”: “horizontal rule”).</p>
+<p>Many types of document structure will consist of an opening and closing tag paired together. An opening tag is written the same as a closing tag except the is a backslash immediately after the opening bracket. For instance, you could use the “<b>” tag to make a range of text bold:</p>
+<pre class="sourceCode html"><code class="sourceCode html">This is some text. <span class="kw">&lt;b&gt;</span>This text is bold.<span class="kw">&lt;/b&gt;</span> This text is not bold.</code></pre>
+<p>Some tags may also have attributes. Attributes are included within the opening brackets of the tag after the tag name. For instance, the “<a>” tag is used to make links. The “<a>” tag has an attribute “href”<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup> which is the url the link should connect to. The following HTML creates a link to Google.</p>
+<pre class="sourceCode html"><code class="sourceCode html">If you ever need to search something, just go to <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;http://Google.com&quot;</span><span class="kw">&gt;</span>Google.<span class="kw">&lt;/a&gt;</span>.</code></pre>
+<p>Every HTML page contains some general boilerplate that structures the document. This boilerplate contains several unique tags which splits the document into two sections: a “head” section to store the page title or page keywords for search engines, and a “body” section which is what is actually shown to the user. You will spend most of your time editing the body section. The standard template for a web page is as follows:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>A Sample Web Page<span class="kw">&lt;/title&gt;</span>
+<span class="kw">&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+    Document contents goes here...
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>There are dozens of different tags you can use in your document to structure it. We can’t comprehensively cover them here but the following table summarizes a few of the most useful ones:</p>
+Tag | Usage | Example –|–|– a|Creates a link|Search at <a href="http://google.com">Google</b>. b|Makes text bold|This text is <b>bold</b>. i|Makes text italic|This text is <b>italic</b>. u|Makes text underlined|This text is <b>underlined</b>. p|Creates a paragraph of text|
+<p>
+This is a paragraph.
+</p>
+hr|Creates a dividing line|
+<p>
+A paragraph
+</p> <hr> <p>
+An unrelated paragraph
+</p>
+h1|Creates a heading (also, h2 … h5 for smaller headings)|
+<h1>
+This is a Title
+</h1>
+<p>img|Embeds an image|<img src="http://example.com/MyImage.png"></p>
+<p>We can combine these tags together to form more complex documents. The following is an example of a full-featured webpage. Why don’t open whatever word processor you use on your machine and save this to <em>MyPage.html</em> as a plain text file<sup><a href="#fn2" class="footnoteRef" id="fnref2">2</a></sup>. You can then open it in your web browser (Internet Explore, Firefox, Chrome, Safari, etc…) and you will have a fully functional webpage.</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+<span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>A Sample Web Page<span class="kw">&lt;/title&gt;</span>
+<span class="kw">&lt;/head&gt;</span>
+<span class="kw">&lt;body&gt;</span>
+    <span class="kw">&lt;h1&gt;</span>Introduction<span class="kw">&lt;/h1&gt;</span>
+        <span class="kw">&lt;p&gt;</span>Here a describe information about my page.<span class="kw">&lt;/p&gt;</span>
+    <span class="kw">&lt;h1&gt;</span>The Content<span class="kw">&lt;/h1&gt;</span>
+        <span class="kw">&lt;p&gt;</span>Here we have the meet of the page.<span class="kw">&lt;/p&gt;</span>
+    <span class="kw">&lt;hr&gt;</span>
+    <span class="kw">&lt;h2&gt;</span>For Further Information<span class="kw">&lt;/h2&gt;</span>
+        <span class="kw">&lt;p&gt;</span>Here we have links to other sites about this content:<span class="kw">&lt;p&gt;</span>
+        <span class="kw">&lt;p&gt;</span>We could check out <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;http://BeyondConnectingTheDots.com&quot;</span><span class="kw">&gt;</span>this book&#39;s site<span class="kw">&lt;/a&gt;</span> for instance.<span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
+<p>For more information and tutorials on HTML, we recommend the Mozilla Developer’s Network (https://developer.mozilla.org/en-US/docs/Web/HTML).</p>
+<h3 id="css-basics"><a href="#css-basics">CSS Basics</a></h3>
+<p>Where HTML is used to define the structure of a document, CSS is responsible for styling this structure. A CSS document is a list of rules each rule consists of two parts: a selector which tells the browser what elements of the page the rule applies to, and a set of styles which tells browser how to style those elements. For example, take the following CSS code.</p>
+<pre class="sourceCode css"><code class="sourceCode css">p <span class="kw">{</span>
+    <span class="kw">margin:</span> <span class="dt">20px</span><span class="kw">;</span>
+<span class="kw">}</span>
+
+h1 h2 <span class="kw">{</span>
+    <span class="kw">font-size:</span> <span class="dt">x-large</span><span class="kw">;</span>
+    <span class="kw">font-color:</span> <span class="dt">red</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>This code has two rules. In the first rule the selector is “p” meaning the rule will apply to all “p” tags in the document. The styling for this rule says to apply a 20 pixel margin around each of these paragraph tags. The second rule has the selector “h1 h2”. This means apply the rule to both “h1” and “h2” tags (but not “h3”, “h4”, or “h5” tags) and to set the contents of those tags to have an extra large font and to be colored red.</p>
+<p>There are numerous different aspects of an elements style you can set with CSS. It is impossible to go into them here, but for a full and detailed reference we recommend the Mozilla Developer’s Network coverage of CSS (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).</p>
+<p>CSS for a webpage can be placed in a standalone file which is referenced by the webpage or it can be included directly within the web page. Both these can be accomplished by placing a CSS rules within a special tag in the head of the document for example, taking the head section from our earlier document we could either embed the CSS directly:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>A Sample Web Page<span class="kw">&lt;/title&gt;</span>
+    <span class="kw">&lt;style&gt;</span>
+        p <span class="kw">{</span>
+            <span class="kw">margin:</span> <span class="dt">20px</span><span class="kw">;</span>
+        <span class="kw">}</span>
+
+        h1 h2 <span class="kw">{</span>
+            <span class="kw">font-size:</span> <span class="dt">x-large</span><span class="kw">;</span>
+            <span class="kw">font-color:</span> <span class="dt">red</span><span class="kw">;</span>
+        <span class="kw">}</span>
+    <span class="kw">&lt;/style&gt;</span>
+<span class="kw">&lt;/head&gt;</span></code></pre>
+<p>Or we could save the CSS to an external text file (<em>MyStyles.css</em>) and link to it:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>A Sample Web Page<span class="kw">&lt;/title&gt;</span>
+    <span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="ot"> href=</span><span class="st">&quot;MyStyles.css&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;/head&gt;</span></code></pre>
+<h3 id="javascript-basics"><a href="#javascript-basics">JavaScript Basics</a></h3>
+<p>JavaScript<sup><a href="#fn3" class="footnoteRef" id="fnref3">3</a></sup> provides interactivity for web pages. JavaScript is a powerful programming language that you can use to respond to user actions, run calculations, or modify the web page. An example of javascript code to calculate a Fibonacci number<sup><a href="#fn4" class="footnoteRef" id="fnref4">4</a></sup> is below:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">function</span> <span class="fu">fib</span>(n){
+    <span class="kw">if</span>(n==<span class="dv">1</span> || n==<span class="dv">0</span>){
+        <span class="kw">return</span> <span class="dv">1</span>;
+    }
+    <span class="kw">return</span> <span class="fu">fib</span>(n<span class="dv">-1</span>) + <span class="fu">fib</span>(n<span class="dv">-2</span>);
+}
+
+<span class="fu">alert</span>(<span class="st">&quot;The tenth Fibonacci number is: &quot;</span>+<span class="fu">fib</span>(<span class="dv">10</span>));</code></pre>
+<p>Like CSS, there are two ways to embed JavaScript into an HTML document. The first is to include the JavaScript directly in the document like we did for the CSS:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>A Sample Web Page<span class="kw">&lt;/title&gt;</span>
+    <span class="kw">&lt;script&gt;</span>
+<span class="er">        function fib(n){</span>
+            <span class="kw">if</span>(n==<span class="dv">1</span> || n==<span class="dv">0</span>){
+                <span class="kw">return</span> <span class="dv">1</span>;
+            }
+<span class="er">            return fib(n-1) + fib(n-2);</span>
+        }
+
+<span class="er">        alert(&quot;The tenth Fibonacci number is: &quot;+fib(10));</span>
+    <span class="kw">&lt;/script&gt;</span>
+<span class="kw">&lt;/head&gt;</span></code></pre>
+<p>The second way to include the code is save the JavaScript into a text file (<em>MyScript.js</em>) and link to it into the document:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;title&gt;</span>A Sample Web Page<span class="kw">&lt;/title&gt;</span>
+    <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;MyScript.css&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+<span class="kw">&lt;/head&gt;</span></code></pre>
+<p>JavaScript is a very powerful tool but also a very complex one. This chapter will illustrate usages of JavaScript but we cannot hope to teach you how to write new JavaScript yourself in this single chapter. Again, we refer you to the Mozilla Developer Network to learn more about JavaScript (https://developer.mozilla.org/en-US/docs/Web/JavaScript).</p>
+<h2 id="an-embedded-insight"><a href="#an-embedded-insight">An Embedded Insight</a></h2>
+<h2 id="a-custom-interface"><a href="#a-custom-interface">A Custom Interface</a></h2>
+<h2 id="hosting"><a href="#hosting">Hosting</a></h2>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The tag name “a” comes from “anchor” and “href” is an abbreviation of hyperlink reference.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Web pages are always stored as plain text. This differs from, for instance a Microsoft Word document (.doc or .docx) or a Rich Text Format document (.rtf). You need to ensure you save your document as a plain text document with the extension “.html” or “.htm”. You can use any text editor you want, but if you get an editor designed for writing web pages it will have helpful features such as coloring your tags different from the standard text. We recommend Sublime Text (http://www.sublimetext.com/) as a high quality editor for serious work .<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Officially known as ECMAScript. Due to trademark issues Microsoft refers to is as JScript if you are using Internet Explorer. It is important to note that <em>JavaScript</em> and <em>Java</em> are completely different technologies. They share part of a name due to historic branding purposes but they are completely different languages.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Where the first two Fibonacci numbers are 1 and the numbers thereafter are the sum of the two preceding numbers. The Fibonacci sequence starts: 1, 1, 2, 3, 5, 8, 13, 21, 44…<a href="#fnref4">↩</a></p></li>
+</ol>
+</div>
+
+\end{document}
