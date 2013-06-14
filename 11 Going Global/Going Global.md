@@ -96,7 +96,7 @@ For more information and tutorials on HTML, we recommend the Mozilla Developer N
 
 ### CSS Basics
 
-Where HTML is used to define the structure of a document, CSS is responsible for styling this structure. This styling includes things like font and color choices in addition to general layout. A CSS document is a list of rules where each rule has two parts: a selector that tells the browser what elements of the page the rule applies to, and a set of styles that tells browser how to style those elements. For example, take the following CSS code.
+Where HTML is used to define the structure of a document, CSS is responsible for styling this structure. This styling includes aspects like font and color choices in addition to the general layout. A CSS document is a list of rules where each rule has two parts: a selector that tells the browser what elements of the page the rule applies to, and a set of styles that tells browser how to style those elements. For example, take the following CSS code.
 
 ````css
 p {
