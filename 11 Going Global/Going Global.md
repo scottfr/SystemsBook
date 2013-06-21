@@ -2,11 +2,11 @@
 
 Engaging people to cause positive action and change is one of the key goals of systems thinking and modeling. The growth of the Internet has created amazing opportunities to reach out and connect with people in ways that have never before been possible.
 
-The Internet makes it amazingly easy for us to share our models with other people. Not only can you email a specific person the tables and graphs of a model's results, but you can also build webpages publishing these results to share with the world. What is more, these results do not have to be limited to static data. Using Insight Maker, you include an interactive version of your model allowing others to experiment with it directly on your webpage. This can be done on any page you have rights to edit including your personal website, a blog, and a company's information page.
+The Internet makes it easy to share models with other people. Not only can you email a specific person the tables and graphs of a model's results, but you can also build webpages publishing these results to share with the world. What is more, these results do not have to be limited to static data. Using Insight Maker, you can include an interactive version of your model allowing others to experiment with it directly on your webpage. This can be done on any page you have rights to edit including your personal website, a blog, and a company's information page.
 
-Furthermore, the information flow doesn't have to only be one-way from you to others. In a webpage you can include a feedback or comment form that allows anyone to comment and share his or her thoughts on the model right next to the model itself. These comments can be saved directly on the page allowing other people to read them and enabling a discussion to form around the model. This creates many avenues for collaboration and learning that would simply be impossible without the Internet.
+Furthermore, the information flow doesn't have to be one-way from you to others. In a webpage you can include a feedback or comment form that allows anyone to comment and share his or her thoughts on the model right next to the model itself. These comments can be saved directly on the page allowing other people to read them and enabling a discussion to form around the model. This creates many avenues for collaboration and learning that would simply be impossible without the Internet.
 
-In this chapter, we will show you how to develop webpages to showcase your insights and models to the world. We'll also show how to include tools to engage viewers and start a dialogue about your models. Before jumping into the models themselves, we are going to need to lay the groundwork for them by introducing the basic principles of web development. Once we have introduced these key principles, we'll walk through two examples of developing interactive models.
+In this chapter, we will show you how to develop webpages to showcase your insights and models to the world. We'll also show how to include tools to engage viewers and start a dialogue about your models. Before jumping into the models themselves, we will lay the groundwork by introducing the basic principles of web development. Once we have introduced these key principles, we'll walk through two examples of developing interactive models.
 
 ## The Web in a Nutshell
 
@@ -18,11 +18,11 @@ Hypertext Markup Language | HTML | Webpage Structure
 Cascading Style Sheets | CSS | Webpage Style
 ECMAScript | JavaScript | Webpage Interactivity
 
-The web is interesting in that each of these technologies is based on old-fashioned, simple text files. You write HTML text files, you write CSS files, and you write JavaScript files^[Please note that when you write CSS and JavaScript, your text is case-sensitive. This means that “ABC”, “abc”, and “Abc” will all be understood differently. HTML, on the other hand, is case-insensitive. In HTML, “ABC”, “abc”, and “Abc” will all be understood to mean the same thing.]. You do not need any fancy tools to create these files and any simple text editor will do. A web browser takes the simple instructions and code in these files and converts them to the rich interactive webpages you see when you browse the Internet.
+The web is interesting in that each of these technologies is based on old-fashioned, simple text files. You write HTML text files, you write CSS files, and you write JavaScript files^[Please note that when you write CSS and JavaScript, your text is case-sensitive. This means that “ABC”, “abc”, and “Abc” will all be understood differently. HTML, on the other hand, is case-insensitive. In HTML, “ABC”, “abc”, and “Abc” will all be understood to mean the same thing.]. You do not need any fancy tools to create these files. Any simple text editor will do. A web browser takes the simple instructions and code in these files and converts them to the rich interactive webpages you see when you browse the Internet.
 
 When teaching web development many books and sources will recommend that you use some kind of interactive web site builder (like Adobe Dreamweaver < http://www.adobe.com/products/dreamweaver.html>). That is certainly a great way to get up and running, but ultimately you will find the approach very limiting. To truly harness the different tools offered to you by the Internet, you will need to have some understanding of the underlying technologies and be able to work with them directly. So, rather than using a website builder as a crutch, we recommend jumping right into learning HTML, CSS and JavaScript.
 
-In the following sections we'll give you a brief introductions to each of these fundamental web technologies. This introduction will be rapid so please do not worry if you do not fully understand everything, but the please do your best to engage with this material as it will provide you with everything you need to know in order to be able to get the maximum out of our later examples of interactive modeling webpages.
+In the following sections we'll give you a brief introductions to each of these fundamental web technologies. This introduction will be rapid so please do not worry if you do not fully understand everything. But the please do your best to engage with this material as it will provide you with everything you need to know in order to be able to get the maximum out of our later examples of interactive modeling webpages.
 
 ### HTML Basics
 
@@ -34,7 +34,7 @@ Many types of tags will consist of an opening and closing tag paired together. A
 This is some text. <b>This text is bold.</b> This text is not bold.
 ````
 
-Some tags may also have "attributes". Attributes are included within the opening brackets of the tag after the tag name. For instance, the "<a>" tag is used to make links between webpages. The "<a>" tag has an attribute "href"^[The tag name "a" comes from "anchor" and "href" is an abbreviation of "hyperlink reference". Many of the conventions with web development may seem strange and so you should understand the long history of these technologies and the resulting historical baggage that comes with them.] which is the URL the link should connect to. The following HTML creates a link to Google:
+Some tags may also have "attributes" which modify the behavior of the tag. Attributes are included within the opening brackets of the tag after the tag name. For instance, the "<a>" tag is used to make links between webpages. The "<a>" tag has an attribute "href"^[The tag name "a" comes from "anchor" and "href" is an abbreviation of "hyperlink reference". Many of the conventions with web development may seem strange and so you should understand the long history of these technologies and the resulting historical baggage that comes with them.] which is the URL the link should connect to. The following HTML creates a link to Google:
 
 ````html
 If you ever need to search something, just go
@@ -54,7 +54,7 @@ Every HTML page contains some general boilerplate that structures the document. 
 </html>
 ````
 
-There are dozens of different tags you can use in your document to structure it. We can't comprehensively cover them all here, but the following table summarizes a few of the most useful ones:
+There are dozens of different tags you can use in your document to structure it. We can't cover them all here, but the following table summarizes a few of the most useful ones:
 
 Tag | Usage | Example
 --|--|--
@@ -80,7 +80,7 @@ We can combine these tags together to form more complex documents. The following
 	<h1>Introduction</h1>
 		<p>Here is some information about my page.</p>
 	<h1>The Content</h1>
-		<p>Here we have the meet of the page.</p>
+		<p>Here we have the meat of the page.</p>
 	<hr>
 	<h2>For Further Information</h2>
 		<p>Here we have links to other sites about this content:<p>
@@ -90,7 +90,7 @@ We can combine these tags together to form more complex documents. The following
 </html>
 ````
 
-Open whatever word processor you use on your computer and save this to *MyPage.html* as a plain text file^[Webpages are always stored as plain text. This differs from, for instance a Microsoft Word document (.doc or .docx extension) or a Rich Text Format document (.rtf extension). You need to ensure you save your document as a plain text document with the extension ".html" or ".htm". You can use any text editor you want, but if you get an editor designed for writing webpages it will have helpful features such as coloring your tags differently from the standard text as you edit the webpage. We recommend Sublime Text (<http://www.sublimetext.com/>) as a high quality editor for serious work.]. You can then open this file in your web browser (Internet Explore, Firefox, Chrome, Safari, etc...). Experiment by adding some more paragraphs and formatting to see how the document changes.
+Open whatever word processor you use on your computer and save this to *MyPage.html* as a plain text file^[Webpages are always stored as plain text. This differs from, for instance a Microsoft Word document (.doc or .docx extension) or a Rich Text Format document (.rtf extension). You need to ensure you save your document as a plain text document with the extension ".html" or ".htm". You can use any text editor you want, but if you get an editor designed for writing webpages it will have helpful features such as coloring your tags differently from the standard text as you edit the webpage. We recommend Sublime Text (<http://www.sublimetext.com/>) as a high quality editor for serious work.]. You can then open this file in your web browser (Internet Explore, Firefox, Chrome, Safari, etc.). Experiment by adding some more paragraphs and formatting to see how the document changes.
 
 For more information and tutorials on HTML, we recommend the Mozilla Developer Network’s guides (<https://developer.mozilla.org/en-US/docs/Web/HTML>).
 
@@ -111,7 +111,7 @@ h1, h2 {
 
 This code has two rules. In the first rule the selector is "p" meaning the rule will apply to all "<p>" tags in the document. The styling for this rule says to apply a 20-pixel margin around each of these paragraph tags. The second rule has the selector "h1, h2". This means apply the rule to both "<h1>" and "<h2>" tags and to set the contents of those tags to have an extra large font and to be colored red.
 
-There are numerous different aspects of an element's style you can set with CSS. It is impossible to go into them all here, but for a full and detailed reference we recommend the Mozilla Developer Network's coverage of CSS (<https://developer.mozilla.org/en-US/docs/Web/CSS/Reference>).
+There are numerous different aspects of an element's style you can set with CSS. For a full and detailed reference we recommend the Mozilla Developer Network's coverage of CSS (<https://developer.mozilla.org/en-US/docs/Web/CSS/Reference>).
 
 CSS for a webpage can be placed in a standalone file which is referenced by the webpage or it can be included directly within the webpage. Both these can be accomplished by placing a CSS rules within a special tag in the *head* section of the document. For example, taking the *head* section from our earlier document, we could either embed the CSS directly:
 
@@ -122,10 +122,10 @@ CSS for a webpage can be placed in a standalone file which is referenced by the 
 		p {
 			margin: 20px;
 		}
-h1, h2 {
-	font-size: 72px;
-	color: red;
-}
+		h1, h2 {
+			font-size: 72px;
+			color: red;
+		}
 	</style>
 </head>
 ````
@@ -177,7 +177,7 @@ The second method to include the code is to save the JavaScript into a text file
 ````html
 <head>
 	<title>A Sample webpage</title>
-	<script src="MyScript.css"></script>
+	<script src="MyScript.js"></script>
 </head>
 ````
 
@@ -189,7 +189,7 @@ Now that we have made it through some of the technical details, let's jump into 
 
 1. A description of the challenge we are tackling, why we built the model, and what the model contains.
 2. An interactive version of the model that the user can explore and run simulations with.
-3. A discussion forum about the model that users can post comments to and see what others have posted.
+3. A discussion forum about the model where users can post comments and see what others have posted.
 
 This might seem ambitious, and it is! But using freely available technologies and services we will be able to put this webpage together very quickly. Let us split the process of developing the webpage into three steps: first we'll create the general page framework, then we will add the interactive model, and lastly we will add the discussion forum.
 
@@ -257,7 +257,7 @@ You will need to sign up for a Disqus account to be able to embed their discussi
 </script>   
 ````
 
-First edit this code as instructed (e.g. replace any usernames or ids with the ones you have been provided by Disqus) and then replace the [Discussion forum goes here] placeholder in your page with this code. Load the page and test if it is working. One issue with Disqus is it might not work if the webpage is being opened from a file on your computer. You may need to upload it to the domain name you entered when you signed up for Disqus to ensure it works correctly.
+First edit this code as instructed (e.g. replace any usernames or ids with the ones you have been provided by Disqus) and then replace the [Discussion forum goes here] placeholder in your page with this code. Load the page and test to see if it is working. One issue with Disqus is it might not work if the webpage is being opened from a file on your computer. You may need to upload it to the domain name you entered when you signed up for Disqus to ensure it works correctly.
 
 ### Completed Page
 
@@ -293,13 +293,13 @@ We have just put together a powerful site very quickly. Our site lets us share a
 </html>
 ````
 
-There is a lot more we could do with the site. Spend some time now experimenting with it. Add some more descriptive text, maybe add some images, and try to use CSS to adjust the styling.
+A working version of this site may be viewed at <http://BeyondConnectingTheDots.com/book/embedded-model/>. There is a lot more we could do with the site. Spend some time now experimenting with it. Add some more descriptive text, maybe add some images, and try to use CSS to adjust the styling.
 
 ## Flight Simulators and Serious Games
 
-In the preceding section we described how to rapidly develop a website that contains an interactive model and provides users the ability to comment and discuss the model directly on the page. By leveraging Insight Maker, we were able to get an interactive version of our model embedded in our webpage by only copying a few lines of code. By leveraging Disqus, we were able to include a discussion forum with a similar amount of effort.
+In the preceding section we described how to rapidly develop a website that contains an interactive model and provides users the ability to comment and discuss the model directly on the page. By leveraging Insight Maker, we were able to get an interactive version of our model embedded in our webpage just by copying a few lines of code. By leveraging Disqus, we were able to include a discussion forum with a similar amount of effort.
 
-In many cases, what we created may be exactly what you are looking for. However, in other cases it is possible that you will wish to provide your users with a unique experience tailored to understanding a specific problem. For instance maybe you would like to develop what is known as a "flight simulator", a simulation tool that puts the user in the position of trying to manage a problem or achieve an outcome. For example, if you had a model of a business going through a disruptive change, you could place the user in the position of the company's leader and ask them to adjust parameters in the model in order to safely shepherd the company through this challenge.
+In many cases, what we created may be exactly what you are looking for. However, in other cases it is possible that you will wish to provide your users with a unique experience tailored to understanding a specific problem. For instance maybe you would like to develop what is known as a "flight simulator", a simulation tool that puts the user in the position of trying to manage a problem or achieve an outcome. For example, if you had a model of a business going through a disruptive change, you could place the user in the position of the company's leader and with instructions to adjust parameters in the model in order to safely shepherd the company through this challenge.
 
 Similarly, "serious games" are tools designed to both engage and educate about a system. You can create a simulation model at the heart of a serious game or a flight simulator. You may give users direct access to this simulation model's interface, but generally you will want to build a custom interface on top of the model that hides the stock and flow diagram and instead displays a control panel type interface to the user.
 
@@ -340,7 +340,7 @@ This rule turns off the display of all <iframe> tags in the page. They are still
 
 HTML has a tag called "<input>" that lets you create form elements for users to input data. The <input> tag has an attribute called "type" that determines what the type of the input element will be. There are a wide number of types including "number", "text", "color", "textarea", "date", and "button". For our control panel, we'll design it to modify two parameters of the model and to have a button users can press to run the simulation. In addition to specifying the type of the inputs, we should also specify their initial values in the control panel. We can do that using the "value" attribute of the <input> tag.
 
-Lastly, we will need some method to reference the inputs and to load their values later on. Each tag in an HTML document has an optional "id" attribute. This attribute can be used to obtain a reference to that element from JavaScript. We'll set the id attribute for our two input fields so we can obtain their values when we are ready to run the simulation.
+Finally, we will need some method to reference the inputs and to load their values later on. Each tag in an HTML document has an optional "id" attribute. This attribute can be used to obtain a reference to that element from JavaScript. We'll set the id attribute for our two input fields so we can obtain their values when we are ready to run the simulation.
 
 The resulting control panel will look something like the following code. As you can see we have presented the user with a simple task, to find a combination of settings that results in over 5 billion people in the year 2100 (which is in fact a significant decrease from the current population size so it should not be too hard). You should place this code after the <iframe> tag in your document.
 
@@ -395,7 +395,7 @@ var year = document.getElementById("year").value;
 
 #### Inject the Parameter Values into the Model
 
-Insight Maker has an extensive JavaScript API that can be used to modify and script models. This is the same API that may be used with Button primitives. Refer to the API reference at <http://insightmaker.com/sites/default/files/API/files/API-js.html> for full details about the API.
+Insight Maker has an extensive JavaScript API^[An API, or Application Programming Interface, is a set of commands and functions that can be used to interface programmatically with an application.] that can be used to modify and script models. This is the same API that may be used with Button primitives. Refer to the API reference at <http://insightmaker.com/sites/default/files/API/files/API-js.html> for full details about the API.
 
 The API instructions provide examples about how to integrate and modify an embedded model. We will adapt those instructions to our own case. First, as the instructions indicate we need to update our <iframe> tag to add an "id" attribute. We adjust our <iframe> tag like so:
 
@@ -423,7 +423,7 @@ To run the model, we use the *runModel* Insight Maker API command. We indicate t
 model.postMessage("runModel({silent: true}).lastValue(findName('Population'))", "*");
 ````
 
-So far we have just demonstrated one-way communication between the control panel and the embedded model. This is the first point in time where we need to be able to communicate the other way: to receive data back from the embedded model.
+So far we have just demonstrated one-way communication between the control panel and the embedded model. This is the first point in time when we need to be able to communicate the other way: to receive data back from the embedded model.
 
 Unfortunately, due to the security constraints imposed by your browser, this is slightly complex. In order to receive a message back from the embedded model, we need to register an event handler with your main browser window. Don't worry if you don't fully understand this, just copy the code below into the script tag of your window. 
 
@@ -448,7 +448,7 @@ window.addEventListener("message", scenarioComplete, false);
 
 ![Figure 2. Completed control panel.](control_panel.png)
 
-The resulting completed webpage is as follows:
+The code for the completed webpage is provided below and a working version of the page may viewed at <http://BeyondConnectingTheDots.com/book/control-panel/>.
 
 ````html
 <html>
@@ -489,7 +489,7 @@ The resulting completed webpage is as follows:
 	</script>
 </head>
 <body>
-	<IFRAME id="model" SRC="http://InsightMaker.dev/insight/1954?embed=1&topBar=1&sideBar=1&zoom=1"
+	<IFRAME id="model" SRC="http://InsightMaker.com/insight/1954?embed=1&topBar=1&sideBar=1&zoom=1"
 	TITLE="Embedded Insight" width=600 height=420></IFRAME>	 
 	
 	<center>
@@ -505,7 +505,7 @@ The resulting completed webpage is as follows:
 </html>
 ````
 
-The key goal of this chapter is not that you completely understand this, but rather that you be able to adapt it to your own needs. There are a lot of additional changes that could be made to this demonstration. You could clean up the control panel and make it look more attractive by adding some CSS rules, you could add additional inputs to control other parts of the model, you could show the user the trajectory of the population instead of just the final value. Go ahead and experiment with this example to see what you can make it do.
+The key goal of this chapter is not that you completely understand this, but rather that you will be able to adapt it to your own needs. There are a lot of additional changes that could be made to this demonstration. You could clean up the control panel and make it look more attractive by adding some CSS rules. You could add additional inputs to control other parts of the model. You could show the user the trajectory of the population instead of just the final value. Go ahead and experiment with this example to see what you can make it do.
 
 ## Additional Tips
 
@@ -513,7 +513,7 @@ Web development is a very complex topic with a lot of nuances. The preceding sec
 
 ### Frameworks and Toolkits
 
-Making an attractive web application is hard. The control panel application we developed admittedly does not look very good. We could spend some time improving its appearance by adding additional CSS rules but since we are not professional designers it is quite possible that the results of our efforts would only look amateurish and unattractive. Additionally, writing JavaScript to interact with webpages is also hard. These web technologies were developed over decades and many of the functions and techniques that need to be used are slightly archaic and are difficult to learn.
+Making an attractive web application is hard. Admittedly, the control panel application we developed does not look very good. We could spend some time improving its appearance by adding additional CSS rules but since we are not professional designers it is quite possible that the results of our efforts would only look amateurish and unattractive. Additionally, writing JavaScript to interact with webpages is also hard. These web technologies were developed over decades and many of the functions and techniques that need to be used are slightly archaic and are difficult to learn.
 
 Fortunately, a number of toolkits and frameworks have been developed that make it easier to develop powerful and attractive web pages and control panels. Below we highlight some important toolkits that you might want to explore and considering adopting for your own usage. These toolkits can be embedded within your webpage extending its functionality. They will help you make more attractive and powerful applications quicker. The ones listed are all also available under open source licenses allowing you to use them for free.
 
@@ -527,11 +527,11 @@ JQuery UI (<http://jqueryui.com/>)
 : A spin-off from the JQuery project, this toolkit provides control panel elements that are themable and more extensive than the built-in <input> tags. Grids, sliders, and more are all available from this project.
 
 ExtJS (<http://www.sencha.com/products/extjs>)
-: ExtJS is a comprehensive library for developing rich applications. It has extensive tools to develop interface and control panels. It is also what is used to develop Insight Maker's interface.
+: ExtJS is a comprehensive library for developing powerful applications. It has extensive tools to develop interface and control panels. It is also what is used to develop Insight Maker's interface.
 
 ### Debugging Webpages
 
-As you develop your webpage it is almost certain that you will make many mistakes and typos as you go along. If you make a mistake within the HTML or CSS of the page you will have an immediate visual indication that something is wrong and you can experiment with your code until it is fixed.
+As you develop your webpage, it is almost certain that you will make many mistakes and typos as you go along. If you make a mistake within the HTML or CSS of the page you will have an immediate visual indication that something is wrong and you can experiment with your code until it is fixed.
 
 JavaScript errors, on the other hand, generally won't provide any visual feedback that an error has occurred. The most likely indication that a JavaScript error has occurred is that nothing happens when you click a button or expect an action to occur. Debugging issues like this can be quite difficult. Fortunately, with just a little bit of additional work you can get access to very rich and informative JavaScript error messages letting you know exactly what went wrong and when.
 
@@ -551,7 +551,7 @@ One particular tool is very useful when developing webpages: the JavaScript cons
 
 ![Figure 3. Google Chrome's JavaScript console.](console.png)
 
-One approach to debugging code is to put *alert* functions into the code updating you on the progression of the code or displaying values of the JavaScript variables. This works, but can be very clumsy and disruptive. When you have the console open a better approach is available to you. You can send messages directly to the console providing information on the status of the program. For example:
+One approach to debugging code is to put *alert* functions into the code updating you on the progression of the code or displaying values of the JavaScript variables. This works, but can be very clumsy and disruptive. When you have the console open, a better approach is available to you. You can send messages directly to the console providing information on the status of the program. For example:
 
 ````javascript
 console.log("The value of the variable is: " + myVariable);
@@ -560,7 +560,7 @@ console.error("An error has occurred!");
 
 ### Sending Complex Data Back and Forth
 
-The *postMessage* communication technique to send data back and forth to the embedded can only be relied upon to send strings and objects that can easily be converted to strings (like numbers)^[The specification for this feature provides that any type of JavaScript object should be supported, however a number of recent browsers only support strings.]. Oftentimes you will want to pass more complex data from the simulation to the containing window. For instance you might want to pass the whole time series of values one or more primitives took on over the course of the simulation.
+The *postMessage* communication technique to send data back and forth to the embedded model can only be relied upon to send strings and objects that can easily be converted to strings (like numbers)^[The specification for this feature provides that any type of JavaScript object should be supported, however a number of recent browsers only support strings.]. Oftentimes you will want to pass more complex data from the simulation to the containing window. For instance you might want to pass the whole time series of values one or more primitives took on over the course of the simulation.
 
 To handle these more complex objects you must convert them to strings. JavaScript provides a number of techniques to do so. For instance, if you have an array, you can convert it back and forth from a string using the *join* and *split* functions:
 
@@ -584,7 +584,7 @@ JSON.parse(str); // {title: "I'm a complex object", data: [1, 4, 9]};
 
 In this chapter, we saved the webpages we have created to our personal computers' hard drives and opened them in a browser from there. This works great for development, but it does not allow us to share our creations with others.
 
-Once you are ready to publish your webpages, you are going to have to move the HTML, CSS and JavaScript files off your computer and onto a web-server or web-host so that others can access them over the Internet. There are a number of different options for web-hosting that range from the simple to the complex and from the free to the expensive.
+Once you are ready to publish your webpages, you must move the HTML, CSS and JavaScript files off your computer and onto a web-server or web-host so that others can access them over the Internet. There are a number of options for web-hosting that range from the simple to the complex and from the free to the expensive.
 
 On the simple and free end of the spectrum there are free blogging sites like Blogger (<http://www.blogger.com>) or WordPress (<http://wordpress.com/>). These sites allow you to create free blogs but they also allow you to do much more than that. These types of sites will generally let you edit the source HTML of your pages allowing you to implement the demos in this chapter directly within a blog post.
 
@@ -593,3 +593,4 @@ A step up from simple sites like these blogging platforms are shared hosting pro
 At the high end of the spectrum of complexity, cost and power are dedicated servers. In this case you purchase or rent a machine dedicated solely to the hosting your projects. This gives you complete control of your hosting situation but is expensive and may take a lot of effort to set up and maintain.
 
 In general, we recommend starting small. Sign up for a Blogger account and experiment with these techniques there. If you keep at it and your site grows, at some point you will outgrow this simple solution and at that time you can upgrade to a more advanced hosting solution.
+
