@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	
+    <title>Insight Maker</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=IE8">
+
+ 	<link rel="stylesheet" type="text/css" href="../builder/resources/ext/resources/css/ext-all-gray.css" />
+ 	
+	<link rel="shortcut icon" href="../builder/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" type="text/css" href="../builder/css/BoxSelect.css" />
+	<link rel="stylesheet" type="text/css" href="../builder/css/insighteditor.css" />
+
+</head>
+<body>
+	
+
+<div id="loading-mask"></div>
+<div id="loading">
+  <div class="loading-indicator">
+
+	        Loading Insight Maker...
+  	<br/><p>
+  	<img src="../builder/images/loading.gif" width=54 height=55/></p><br/>
+  	(This may take a few moments)
+	
+  </div>
+</div>
+<div id="toplinks-holder" name="toplinks-holder"></div>
+
+<script type="text/javascript" src="../builder/resources/ext/ext-all.js"></script>
+
+<script type="text/javascript">
+var base_path = "http:\/\/insightmaker.com";
+var builder_path = "http:\/\/insightmaker.com\/builder";
+var logged_in = true;
+var drupal_node_ID = 1;
+var graph_title = "";
+var graph_description = "";
+var graph_tags = "";
+var graph_author_name = '';
+var graph_author_id = -1;
+var saved_enabled = true;
+var is_editor = true;
+var is_embed = false;
+var is_topBar = false;
+var is_sideBar = false;
+var is_zoom = true;
+
+var graph_source_data = "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><Setting unfolding=\"{&quot;children&quot;:[{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nvar newPrimitive = createPrimitive(\'Healthy\', \'State\', [470, 120], [100, 40]);\\n\\nvar newPrimitive = createPrimitive(\'Infected\', \'State\', [470, 240], [100, 40]);\\n\\nvar newPrimitive = createPrimitive(\'Recovered\', \'State\', [470, 360], [100, 40]);&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;States represent the condition someone is in. So in our model a person can either be healthy, infected, or recovered from the infection. Now, lets add transitions that move a person from state to state.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nvar cell =createConnector(\'Infection\', \'Transition\', findName(\'Healthy\'), findName(\'Infected\'));\\nvar geo = new mxGeometry(0, 0, 100, 100);\\ngraph.model.execute(new mxGeometryChange(graph.model, cell, geo));\\n\\nvar cell =createConnector(\'Recovery\', \'Transition\', findName(\'Infected\'), findName(\'Recovered\'));\\nvar geo = new mxGeometry(0, 0, 100, 100);\\ngraph.model.execute(new mxGeometryChange(graph.model, cell, geo));&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;Please note that in this model someone who is recovered cannot become sick again. They have gained immunity to the disease. &quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;Now that the model structure has been designed, let\'s add equations and configure the primitives.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nfindName(\'Healthy\').setAttribute(\'Active\', \'True\');&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;When a state is active, it means a person is in that state. By setting &lt;span class=\'primitive\'&gt;Healthy&lt;/span&gt; to start &lt;b&gt;true&lt;/b&gt;, we have the person start in the healthy state.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nfindName(\'Infection\').setAttribute(\'Trigger\', \'Probability\');\\n\\nfindName(\'Infection\').setAttribute(\'Value\', \'0.3\');\\n\\nfindName(\'Recovery\').setAttribute(\'Trigger\', \'Probability\');\\n\\nfindName(\'Recovery\').setAttribute(\'Value\', \'0.2\');&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;Using the Probability type for the transition trigger means that the person has a fixed probability of transitioning from one state to the next each year. Will give a 30% probability of the person becoming sick each year, and once sick a 20% chance of recovering.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;Let\'s run the model now.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nrunModel();&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;We can run it again and we will see we get different results each time. This is because the model is stochastic and the transition triggers are random.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nrunModel();&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;}],&quot;text&quot;:&quot;Root Node&quot;}\" unfoldingStatus=\"on\" unfoldingAuto=\"always\" Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"><mxCell parent=\"1\" vertex=\"1\" visible=\"0\"><mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"/></mxCell></Setting><Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"><mxCell style=\"roundImage;image=/builder/images/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"/></mxCell></Display></root></mxGraphModel>";
+</script>
+
+<div id="header"><div style="float:right;margin:5px;" class="x-small-editor"></div></div>
+
+
+<script type="text/javascript">
+var scriptBase = builder_path;
+var mxBasePath = builder_path;
+var mxLoadResources = false;
+var mxLoadStylesheets = false;
+</script>
+
+<script type="text/javascript" src="../builder/out.js"></script>
+  
+</body>
+</html>
+

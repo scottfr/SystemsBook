@@ -1,0 +1,57 @@
+\begin{oframed}\textbf{An Agent Based Model of Disease} 
+
+ Here we convert a state transition diagram into a model containing multiple agents.
+
+\begin{enumerate}
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_5/diagram_3.png}
+\end{minipage}
+\item 
+
+We start with our state transition diagram from our previous example.
+
+
+\item Create a new \a{Folder} named \p{Person}. The folder should surround the primitives \p{Healthy}, \p{Infected}, \p{Recovered}, \p{Infection} and \p{Recovery}.
+\item  Change the \a{Type} property of the primitive \p{Person} to \e{Agent}.
+\item 
+
+First we create an agent folder to encapsulate our state transition diagram. 
+
+
+\item Create a new \a{Agent Population} named \p{Population}.
+\item  Change the \a{Agent Base} property of the primitive \p{Population} to \e{Person}.
+\item 
+
+Next we create an agent population \p{Population} and set it to contain instances of our \textbf{Person} agent.
+
+
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_5/diagram_11.png}
+\end{minipage}
+\item 
+
+We can now run the model to see how the disease affects the 100 people in our population.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_5/result_13.png}
+\end{minipage}
+\item 
+
+Each time we run the model we will get different results due to the stochasticity in the model.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_5/result_15.png}
+\end{minipage}
+\item  Change the \a{Size} property of the primitive \p{Population} to \e{50}.
+\item 
+
+We can easily change the number of people in the population. Let's set it to 50 then run the model again.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_5/result_18.png}
+\end{minipage}
+\item 
+
+When we have a smaller number of people, the population trends are more variable. As we add more and more people, the trends become smoother and approach the average results we would see if we had a System Dynamics model.
+
+
+
+\end{enumerate} \end{oframed}

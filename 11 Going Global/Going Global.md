@@ -20,21 +20,21 @@ ECMAScript | JavaScript | Webpage Interactivity
 
 The web is interesting in that each of these technologies is based on old-fashioned, simple text files. You write HTML text files, you write CSS files, and you write JavaScript files^[Please note that when you write CSS and JavaScript, your text is case-sensitive. This means that “ABC”, “abc”, and “Abc” will all be understood differently. HTML, on the other hand, is case-insensitive. In HTML, “ABC”, “abc”, and “Abc” will all be understood to mean the same thing.]. You do not need any fancy tools to create these files. Any simple text editor will do. A web browser takes the simple instructions and code in these files and converts them to the rich interactive webpages you see when you browse the Internet.
 
-When teaching web development many books and sources will recommend that you use some kind of interactive web site builder (like Adobe Dreamweaver < http://www.adobe.com/products/dreamweaver.html>). That is certainly a great way to get up and running, but ultimately you will find the approach very limiting. To truly harness the different tools offered to you by the Internet, you will need to have some understanding of the underlying technologies and be able to work with them directly. So, rather than using a website builder as a crutch, we recommend jumping right into learning HTML, CSS and JavaScript.
+When teaching web development many books and sources will recommend that you use some kind of interactive web site builder (like Adobe Dreamweaver <http://www.adobe.com/products/dreamweaver.html>). That is certainly a great way to get up and running, but ultimately you will find the approach very limiting. To truly harness the different tools offered to you by the Internet, you will need to have some understanding of the underlying technologies and be able to work with them directly. So, rather than using a website builder as a crutch, we recommend jumping right into learning HTML, CSS and JavaScript.
 
 In the following sections we'll give you a brief introductions to each of these fundamental web technologies. This introduction will be rapid so please do not worry if you do not fully understand everything. But the please do your best to engage with this material as it will provide you with everything you need to know in order to be able to get the maximum out of our later examples of interactive modeling webpages.
 
 ### HTML Basics
 
-HTML defines the structure of a webpage or document. An HTML document is made up out of a set of *tags*. Each tag is enclosed in triangular brackets. For instance, there is a tag called "<hr>" that will create a horizontal division line in your document ("hr" is an abbreviation of "horizontal rule").
+HTML defines the structure of a webpage or document. An HTML document is made up out of a set of *tags*. Each tag is enclosed in triangular brackets. For instance, there is a tag called "\<hr>" that will create a horizontal division line in your document ("hr" is an abbreviation of "horizontal rule").
 
-Many types of tags will consist of an opening and closing tag paired together. A closing tag is written the same as an opening tag except there is a also backslash immediately after the first triangular bracket. For instance, you could use a pair of "<b>...</b>" tags to make some text bold:
+Many types of tags will consist of an opening and closing tag paired together. A closing tag is written the same as an opening tag except there is a also backslash immediately after the first triangular bracket. For instance, you could use a pair of "\<b>...\</b>" tags to make some text bold:
  
 ````html
 This is some text. <b>This text is bold.</b> This text is not bold.
 ````
 
-Some tags may also have "attributes" which modify the behavior of the tag. Attributes are included within the opening brackets of the tag after the tag name. For instance, the "<a>" tag is used to make links between webpages. The "<a>" tag has an attribute "href"^[The tag name "a" comes from "anchor" and "href" is an abbreviation of "hyperlink reference". Many of the conventions with web development may seem strange and so you should understand the long history of these technologies and the resulting historical baggage that comes with them.] which is the URL the link should connect to. The following HTML creates a link to Google:
+Some tags may also have "attributes" which modify the behavior of the tag. Attributes are included within the opening brackets of the tag after the tag name. For instance, the "\<a>" tag is used to make links between webpages. The "<a>" tag has an attribute "href"^[The tag name "a" comes from "anchor" and "href" is an abbreviation of "hyperlink reference". Many of the conventions with web development may seem strange and so you should understand the long history of these technologies and the resulting historical baggage that comes with them.] which is the URL the link should connect to. The following HTML creates a link to Google:
 
 ````html
 If you ever need to search something, just go
@@ -58,15 +58,15 @@ There are dozens of different tags you can use in your document to structure it.
 
 Tag | Usage | Example
 --|--|--
-a|Creates a link|<a href="http://google.com">Google</a>.
-b|Makes text bold|This text is <b>bold</b>.
-i|Makes text italic|This text is <i>italic</i>.
-u|Makes text underlined|This text is <u>underlined</u>.
-center|Centers a paragraph|<center>In the middle.</center>
-p|Creates a paragraph of text|<p>This is a paragraph.</p>
-hr|Creates a dividing line|Something <hr> Something Else
-h1|Creates a heading|<h1>This is a Heading</h1>
-img|Embeds an image|<img src="http://example.com/image.png">
+a|Creates a link|\<a href="http://google.com">Google\</a>.
+b|Makes text bold|This text is \<b>bold\</b>.
+i|Makes text italic|This text is \<i>italic\</i>.
+u|Makes text underlined|This text is \<u>underlined\</u>.
+center|Centers a paragraph|\<center>In the middle.\</center>
+p|Creates a paragraph of text|\<p>This is a paragraph.\</p>
+hr|Creates a dividing line|Something \<hr> Something Else
+h1|Creates a heading|\<h1>This is a Heading\</h1>
+img|Embeds an image|\<img src="http://example.com/image.png">
 
 We can combine these tags together to form more complex documents. The following is an example of a full-featured webpage. 
 
@@ -90,7 +90,7 @@ We can combine these tags together to form more complex documents. The following
 </html>
 ````
 
-Open whatever word processor you use on your computer and save this to *MyPage.html* as a plain text file^[Webpages are always stored as plain text. This differs from, for instance a Microsoft Word document (.doc or .docx extension) or a Rich Text Format document (.rtf extension). You need to ensure you save your document as a plain text document with the extension ".html" or ".htm". You can use any text editor you want, but if you get an editor designed for writing webpages it will have helpful features such as coloring your tags differently from the standard text as you edit the webpage. We recommend Sublime Text (<http://www.sublimetext.com/>) as a high quality editor for serious work.]. You can then open this file in your web browser (Internet Explore, Firefox, Chrome, Safari, etc.). Experiment by adding some more paragraphs and formatting to see how the document changes.
+Open whatever word processor you use on your computer and save this to *MyPage.html* as a plain text file^[Webpages are always stored as plain text. This differs from, for instance a Microsoft Word document (".doc" or ".docx" extension) or a Rich Text Format document (.rtf extension). You need to ensure you save your document as a plain text document with the extension ".html" or ".htm". You can use any text editor you want, but if you get an editor designed for writing webpages it will have helpful features such as coloring your tags differently from the standard text as you edit the webpage. We recommend Sublime Text (<http://www.sublimetext.com/>) as a high quality editor for serious work.]. You can then open this file in your web browser (Internet Explore, Firefox, Chrome, Safari, etc.). Experiment by adding some more paragraphs and formatting to see how the document changes.
 
 For more information and tutorials on HTML, we recommend the Mozilla Developer Network’s guides (<https://developer.mozilla.org/en-US/docs/Web/HTML>).
 
@@ -109,7 +109,7 @@ h1, h2 {
 }
 ````
 
-This code has two rules. In the first rule the selector is "p" meaning the rule will apply to all "<p>" tags in the document. The styling for this rule says to apply a 20-pixel margin around each of these paragraph tags. The second rule has the selector "h1, h2". This means apply the rule to both "<h1>" and "<h2>" tags and to set the contents of those tags to have an extra large font and to be colored red.
+This code has two rules. In the first rule the selector is "p" meaning the rule will apply to all "\<p>" tags in the document. The styling for this rule says to apply a 20-pixel margin around each of these paragraph tags. The second rule has the selector "h1, h2". This means apply the rule to both "\<h1>" and "\<h2>" tags and to set the contents of those tags to have an extra large font and to be colored red.
 
 There are numerous different aspects of an element's style you can set with CSS. For a full and detailed reference we recommend the Mozilla Developer Network's coverage of CSS (<https://developer.mozilla.org/en-US/docs/Web/CSS/Reference>).
 
@@ -235,7 +235,7 @@ TITLE="Embedded Insight" width=600 height=420></IFRAME>
 
 Take this code and use it to replace the [Model goes here] placeholder in your webpage. Save the webpage and open it in a browser and you will now have a rich interactive version of your model embedded directly in your webpage!
 
-There are several features of the embedding that you can control by editing the "<IFRAME>" tag. For instance the "width" and "height" attributes control the size of the embedded model. They are specified in pixels and you may change them to make the embedded model smaller or larger. The "topBar" and "sideBar" parts of the URL control whether the toolbar and the sidebar will be shown in the embedded model's interface. By default, they are set to 1 indicating these elements will be shown. Set them to 0 to hide the bars when the model is displayed. The "zoom" part determines whether the model diagram is shown at its full size or if it is zoomed to fit the window (the default). Set this to 0 to prevent the model diagram from automatically being resized to fit the window.
+There are several features of the embedding that you can control by editing the "\<IFRAME>" tag. For instance the "width" and "height" attributes control the size of the embedded model. They are specified in pixels and you may change them to make the embedded model smaller or larger. The "topBar" and "sideBar" parts of the URL control whether the toolbar and the sidebar will be shown in the embedded model's interface. By default, they are set to 1 indicating these elements will be shown. Set them to 0 to hide the bars when the model is displayed. The "zoom" part determines whether the model diagram is shown at its full size or if it is zoomed to fit the window (the default). Set this to 0 to prevent the model diagram from automatically being resized to fit the window.
 	
 ### Adding a Discussion Section
 
@@ -309,7 +309,7 @@ Fortunately, web technologies provide a rich environment for developing these fl
 
 We'll start by stripping down our page from the previous example. Let's remove the commenting system and the introduction so the page just contains the model (you can add these other items back later on your own as an exercise). After we do this, we will be left with a page just containing the embedded world simulation model.
 
-In this case, however, we do not want the user to actually interact with or even see the embedded model. We will be adding our own custom interface and just using the embedded model to run simulation in the background. To hide the embedded model we can add a CSS rule that makes the <iframe> tag invisible:
+In this case, however, we do not want the user to actually interact with or even see the embedded model. We will be adding our own custom interface and just using the embedded model to run simulation in the background. To hide the embedded model we can add a CSS rule that makes the \<iframe> tag invisible:
 
 ````css
 iframe {
@@ -317,7 +317,7 @@ iframe {
 }
 ````
 
-This rule turns off the display of all <iframe> tags in the page. They are still there and in the page, but they are not shown to the user. The resulting completed template for our page is printed below. When you open this in your browser you should see a completely blank webpage.
+This rule turns off the display of all \<iframe> tags in the page. They are still there and in the page, but they are not shown to the user. The resulting completed template for our page is printed below. When you open this in your browser you should see a completely blank webpage.
 
 ````html
 <html>
@@ -338,11 +338,11 @@ This rule turns off the display of all <iframe> tags in the page. They are still
 
 ### Creating the Control Panel
 
-HTML has a tag called "<input>" that lets you create form elements for users to input data. The <input> tag has an attribute called "type" that determines what the type of the input element will be. There are a wide number of types including "number", "text", "color", "textarea", "date", and "button". For our control panel, we'll design it to modify two parameters of the model and to have a button users can press to run the simulation. In addition to specifying the type of the inputs, we should also specify their initial values in the control panel. We can do that using the "value" attribute of the <input> tag.
+HTML has a tag called "<input>" that lets you create form elements for users to input data. The \<input> tag has an attribute called "type" that determines what the type of the input element will be. There are a wide number of types including "number", "text", "color", "textarea", "date", and "button". For our control panel, we'll design it to modify two parameters of the model and to have a button users can press to run the simulation. In addition to specifying the type of the inputs, we should also specify their initial values in the control panel. We can do that using the "value" attribute of the \<input> tag.
 
 Finally, we will need some method to reference the inputs and to load their values later on. Each tag in an HTML document has an optional "id" attribute. This attribute can be used to obtain a reference to that element from JavaScript. We'll set the id attribute for our two input fields so we can obtain their values when we are ready to run the simulation.
 
-The resulting control panel will look something like the following code. As you can see we have presented the user with a simple task, to find a combination of settings that results in over 5 billion people in the year 2100 (which is in fact a significant decrease from the current population size so it should not be too hard). You should place this code after the <iframe> tag in your document.
+The resulting control panel will look something like the following code. As you can see we have presented the user with a simple task, to find a combination of settings that results in over 5 billion people in the year 2100 (which is in fact a significant decrease from the current population size so it should not be too hard). You should place this code after the \<iframe> tag in your document.
 
 ````html
 <center>
@@ -397,7 +397,7 @@ var year = document.getElementById("year").value;
 
 Insight Maker has an extensive JavaScript API^[An API, or Application Programming Interface, is a set of commands and functions that can be used to interface programmatically with an application.] that can be used to modify and script models. This is the same API that may be used with Button primitives. Refer to the API reference at <http://insightmaker.com/sites/default/files/API/files/API-js.html> for full details about the API.
 
-The API instructions provide examples about how to integrate and modify an embedded model. We will adapt those instructions to our own case. First, as the instructions indicate we need to update our <iframe> tag to add an "id" attribute. We adjust our <iframe> tag like so:
+The API instructions provide examples about how to integrate and modify an embedded model. We will adapt those instructions to our own case. First, as the instructions indicate we need to update our \<iframe> tag to add an "id" attribute. We adjust our \<iframe> tag like so:
 
 ````html
 <IFRAME id="model" SRC="http://InsightMaker.com/insight/1954/embed?topBar=1&sideBar=1&zoom=1"
@@ -524,7 +524,7 @@ JQuery (<http://jquery.com/>)
 : JQuery is a library designed to improve the JavaScript functions needed to interact with a webpage. It generally greatly simplifies and reduces the number of keystrokes you need to carry out some task. For instance "document.getElementById('item')" becomes in jQuery simply "$('#item')".
 
 JQuery UI (<http://jqueryui.com/>)
-: A spin-off from the JQuery project, this toolkit provides control panel elements that are themable and more extensive than the built-in <input> tags. Grids, sliders, and more are all available from this project.
+: A spin-off from the JQuery project, this toolkit provides control panel elements that are themable and more extensive than the built-in \<input> tags. Grids, sliders, and more are all available from this project.
 
 ExtJS (<http://www.sencha.com/products/extjs>)
 : ExtJS is a comprehensive library for developing powerful applications. It has extensive tools to develop interface and control panels. It is also what is used to develop Insight Maker's interface.
@@ -535,7 +535,7 @@ As you develop your webpage, it is almost certain that you will make many mistak
 
 JavaScript errors, on the other hand, generally won't provide any visual feedback that an error has occurred. The most likely indication that a JavaScript error has occurred is that nothing happens when you click a button or expect an action to occur. Debugging issues like this can be quite difficult. Fortunately, with just a little bit of additional work you can get access to very rich and informative JavaScript error messages letting you know exactly what went wrong and when.
 
-There are two approaches to obtain access to the JavaScript error messages. The first is to actually edit your webpage and add code to show an error message when an error occurs. Adding the following to a <script> tag in the head section of your document will do that:
+There are two approaches to obtain access to the JavaScript error messages. The first is to actually edit your webpage and add code to show an error message when an error occurs. Adding the following to a \<script> tag in the head section of your document will do that:
 
 ````javascript
 window.onerror = function(message, url, line) {

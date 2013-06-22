@@ -1,0 +1,64 @@
+\begin{oframed}\textbf{Agents Interacting} 
+
+ This example shows how agents can interact with each other.
+
+\begin{enumerate}
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_6/diagram_3.png}
+\end{minipage}
+\item 
+
+We're going to start with the agent based disease model from our earlier example. We are going to add a variable \p{Fraction Infected} that calculates what fraction of the population is currently infected. We will then use this variable to determine the infection rate.
+
+
+\item Create a new \a{Variable} named \p{Fraction Infected}.
+\item Create a new \a{Link} going from the primitive \p{Population} to the primitive \p{Fraction Infected}.
+\item Create a new \a{Link} going from the primitive \p{Fraction Infected} to the primitive \p{Infection}.
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_6/diagram_8.png}
+\end{minipage}
+\item 
+
+Now let's configure the value of Percent Infected and change the Infection transition to use it.
+
+
+\item  Change the \a{Equation} property of the primitive \p{Fraction Infected} to \e{Count(FindState([Population], [Infected]))/PopulationSize([Population])}.
+\item 
+
+This equation uses the FindState function to select all the people in the Population primitive who are in the Infected state. It then divides the count of those people by the total size of the population.
+
+
+\item  Change the \a{Value/Equation} property of the primitive \p{Infection} to \e{[Fraction Infected]}.
+\item 
+
+We are now ready to run the model.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_6/result_15.png}
+\end{minipage}
+\item 
+
+That was a bit of disappointment wasn't it? Nothing happened. Why is this?
+
+
+\item 
+
+Well since our infection rate now depends on the number of people we have to have at least one person infected to get the epidemic going. Let's change the \p{Healthy} and \p{Infected} states so one person starts in the infected state at the beginning of the simulation.
+
+
+\item  Change the \a{Start Active} property of the primitive \p{Healthy} to \e{Index([Self]) <> 1}.
+\item  Change the \a{Start Active} property of the primitive \p{Infected} to \e{Index([Self]) == 1}.
+\item 
+
+Each agent has an index, we have set it so the first agent will start the simulation in the infected state. Let's run the model to see this working.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_6/result_21.png}
+\end{minipage}
+\item 
+
+Each time we run it we will get a different set of results. Sometimes the infection will die off with just the first infected person.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_6/result_23.png}
+\end{minipage}
+
+\end{enumerate} \end{oframed}

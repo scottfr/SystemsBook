@@ -1,14 +1,14 @@
 # Modeling with Agents
 
-The techniques we have taught up until this point have focus on gaining insights about highly aggregated systems. This means that when we looked at models of population growth, we did not explore individual people and instead focused on the population as a whole. This high-level aggregate approach to modeling is often very effective and helps us cut through unnecessary details to understand the core dynamics of a system.
+The modeling techniques we have taught up until this point have focused on gaining insights using highly aggregate models of a system. This means that when we looked at models of population growth, we did not explore individual people and instead focused on the population as a whole. This high-level aggregate approach to modeling helps us cut through unnecessary details to understand the core dynamics of a system and it is often quite effective.
 
-For certain models, however this high-level view may hamstring our abilities to explore certain questions. For instance in a disease model we may care about the physical relationship between people in the model. Are they near each other? How often do they come into contact? Can we change how they move about and relate each other in order to control a disease? These are all questions that are very hard to answer with a standard system dynamics model.
+For certain models however, this high-level view may hamstring our abilities to explore important questions. For instance in a disease model we may care about the physical relationship between people in the model. Are they near each other? How often do they come into contact? Can we attempt to control the disease by manipulating how they move about and relate each other? These are all questions that are very hard to answer with a standard System Dynamics model.
 
-Heterogeneity, differences between people, is very hard to represent using system dynamics models. One approach that is used is simply to duplicate the model structure for each different class of person or entity in the model. We recall seeing one model that explored education in the United States. The authors wanted to explore the differences between male and female students. To do so, they simply copy and pasted the entire model structure (consisting of dozens of stocks and flow) and configured one copy for male students and the other copy for female students.
+Heterogeneity, differences between individuals, is difficult to represent using System Dynamics models. One approach that is used is simply to duplicate the model structure for each different class of person or entity in the model. We recall seeing one model that explored education in the United States. The authors wanted to explore the differences between male and female students. To do so, they simply copy and pasted the entire model structure (consisting of dozens of stocks and flows) and configured one of these copies for male students and the other copy for female students.
 
-Now this can work, but it requires a lot of work to set up and configure even in the simple two gender case. When you have more than two cases it can quickly become completely unmanageable. Furthermore, duplicating parts of your model is recipe to create unmaintainable models full of bugs. The reason for this is once you make changes to your model you are going to need to ensure the changes are made to each of the separate model copies. This is very easy to mess up and is an easy route for bugs to get introduced into the model.
+Granted, this approach can be made work, but it requires a lot of effort to set up and configure even in the simple two gender case. When you have more than two cases it can quickly become completely unmanageable. Furthermore, duplicating parts of your model is a recipe for creating unmaintainable models afflicted by bugs. The reason for this is that when you later make changes to your model, you are going to need to ensure the changes are made correctly to everyone of the separate model copies. Although simple in principle, in practice this is very easy to mess up and is an direct route for bugs to be introduced into the model.
 
-Fortunately, another modeling paradigm exists that is excellent for dealing with individuals. It's called agent based modeling and is focus and simulation individual agents and the interactions between these agents^[System Dynamics also has a another standard tool for dealing with heterogeneity. It's called arrays or indexing and allows you to transparently create multiple copies of your model during simulation to match classes. Arrays are not as flexible as fully agent based models. If you consider a continuum of fully aggregate system dynamics models to fully individualized agent based models, you can think of arrays as existing part way along that continuum.]. In this chapter will introduce Agent Based Modeling and show how you can use it to explore questions that cannot be answered with pure system dynamics.
+Fortunately, alternative modeling paradigm to System Dynamics exists that is excellent for modeling discrete individuals. It is called Agent Based Modeling and is focused on simulating individual agents and the interactions between these agents^[System Dynamics also has a another standard tool for dealing with heterogeneity. This tool called "arrays" or "indexing" and allows you to transparently create multiple copies of your model during simulation to match different classes. Arrays are not as flexible as fully agent based models though. If you consider the continuum of fully aggregate System Dynamics models on one end to fully individualized Agent Based Models on the other, you can think of arrays as existing part way along this continuum.]. In this chapter will introduce Agent Based Modeling and show how you can use it to explore questions that cannot be answered with pure system dynamics.
 
 ## The State Transition Diagram
 
@@ -37,7 +37,53 @@ Condition
 
 
 
-* Demo
+# Model
+
+{"title": "A State Transition Diagram for Disease", "description": "This model illustrates the use of state transition diagrams to model a simple disease. This is a disease such as the flu where immunity is obtained once the individual recovers."}
+
+{"geometry":{"x":470,"y":120,"width":100,"height":40},"name":"Healthy","create":"State"}
+
+{"geometry":{"x":470,"y":240,"width":100,"height":40},"name":"Infected","create":"State"}
+
+{"geometry":{"x":470,"y":360,"width":100,"height":40},"name":"Recovered","create":"State"}
+
+DIAGRAM
+
+States represent the condition someone is in. So in our model a person can either be healthy, infected, or recovered from the infection. Now, lets add transitions that move a person from state to state.
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Healthy","omega":"Infected","name":"Infection","create":"Transition"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Infected","omega":"Recovered","name":"Recovery","create":"Transition"}
+
+Please note that in this model someone who is recovered cannot become sick again. They have gained immunity to the disease. 
+
+Now that the model structure has been designed, let's add equations and configure the primitives.
+
+{"attribute":"Active","target":"Healthy","value":"True"}
+
+DIAGRAM
+
+When a state is active, it means a person is in that state. By setting [Healthy] to start *true*, we have the person start in the healthy state.
+
+{"attribute":"Trigger","target":"Infection","value":"Probability"}
+
+{"attribute":"Value","target":"Infection","value":"0.3"}
+
+{"attribute":"Trigger","target":"Recovery","value":"Probability"}
+
+{"attribute":"Value","target":"Recovery","value":"0.2"}
+
+Using the Probability type for the transition trigger means that the person has a fixed probability of transitioning from one state to the next each year. Will give a 30% probability of the person becoming sick each year, and once sick a 20% chance of recovering.
+
+Let's run the model now.
+
+RESULTS
+
+We can run it again and we will see we get different results each time. This is because the model is stochastic and the transition triggers are random.
+
+RESULTS
+
+# End Model
 
 
 ## Creating Agents
@@ -70,7 +116,47 @@ After specifying what type of agent is in the population, you need to specify ho
 Many of the standard Insight Maker display types can be used to show the results of an agent based simulation. If you add an agent population to a time series or tabular display, the results for the number of agents in each state will automatically be shown. You can also use the map display type to illustrate agents.
 
 
-* Demo
+# Model
+
+{"title": "An Agent Based Model of Disease", "description": "Here we convert a state transition diagram into a model containing multiple agents."}
+
+{"load": "<mxGraphModel>  <root>    <mxCell id=\"0\"\/>    <mxCell id=\"1\" parent=\"0\"\/>    <Setting Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\">      <mxCell parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/Setting>    <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"23,24,25\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\">      <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/>      <\/mxCell>    <\/Display>    <State name=\"Healthy\" Note=\"\" Active=\"True\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"23\">      <mxCell style=\"state\" vertex=\"1\" parent=\"1\">        <mxGeometry x=\"470\" y=\"120\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Infected\" Note=\"\" Active=\"false\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"24\">      <mxCell style=\"state\" vertex=\"1\" parent=\"1\">        <mxGeometry x=\"470\" y=\"240\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Recovered\" Note=\"\" Active=\"false\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"25\">      <mxCell style=\"state\" vertex=\"1\" parent=\"1\">        <mxGeometry x=\"470\" y=\"360\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <Transition name=\"Infection\" Note=\"\" Trigger=\"Probability\" Value=\"0.3\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"26\">      <mxCell style=\"transition\" edge=\"1\" parent=\"1\" source=\"23\" target=\"24\">        <mxGeometry width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint y=\"100\" as=\"sourcePoint\"\/>          <mxPoint x=\"100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Transition name=\"Recovery\" Note=\"\" Trigger=\"Probability\" Value=\"0.2\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"27\">      <mxCell style=\"transition\" edge=\"1\" parent=\"1\" source=\"24\" target=\"25\">        <mxGeometry width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint y=\"100\" as=\"sourcePoint\"\/>          <mxPoint x=\"100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>  <\/root><\/mxGraphModel>"}
+	
+DIAGRAM
+	
+We start with our state transition diagram from our previous example.
+
+{"geometry":{"x":450,"y":100,"width":140,"height":320},"items":["Healthy","Infected","Recovered","Infection","Recovery"],"create":"Folder", "name": "Person"}
+
+{"attribute":"Type","target":"Person","value":"Agent"}
+
+First we create an agent folder to encapsulate our state transition diagram. 
+
+{"geometry":{"x":220,"y":180,"width":170,"height":80},"name":"Population","create":"Agents"}
+
+{"attribute":"Agent","target":"Population","value":"Person"}
+
+Next we create an agent population [Population] and set it to contain instances of our *Person* agent.
+
+DIAGRAM
+
+We can now run the model to see how the disease affects the 100 people in our population.
+
+RESULTS
+
+Each time we run the model we will get different results due to the stochasticity in the model.
+
+RESULTS
+
+{"attribute":"Size","target":"Population","value":"50"}
+
+We can easily change the number of people in the population. Let's set it to 50 then run the model again.
+
+RESULTS
+
+When we have a smaller number of people, the population trends are more variable. As we add more and more people, the trends become smoother and approach the average results we would see if we had a System Dynamics model.
+
+# End Model
 
 ## Working with Agents
 
@@ -169,8 +255,55 @@ In addition to determining the value of of a primitive in an agent, you can also
 
 \e{SetValue(FindState([Population]), [Age], 25)}
 
-* Demo
+# Model
 
+{"title": "Agents Interacting", "description": "This example shows how agents can interact with each other."}
+
+{"load": "<mxGraphModel>  <root>    <mxCell id=\"0\"\/>    <mxCell id=\"1\" parent=\"0\"\/>    <Folder name=\"Person\" Note=\"\" Type=\"Agent\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"28\">      <mxCell style=\"folder\" vertex=\"1\" parent=\"1\">        <mxGeometry x=\"450\" y=\"100\" width=\"140\" height=\"320\" as=\"geometry\"\/>      <\/mxCell>    <\/Folder>    <State name=\"Healthy\" Note=\"\" Active=\"True\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"23\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"20\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Infected\" Note=\"\" Active=\"false\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"24\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"140\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Recovered\" Note=\"\" Active=\"false\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"25\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"260\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <Transition name=\"Infection\" Note=\"\" Trigger=\"Probability\" Value=\"0.3\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"26\">      <mxCell style=\"transition\" parent=\"28\" source=\"23\" target=\"24\" edge=\"1\">        <mxGeometry x=\"-450\" y=\"-100\" width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint x=\"-450\" as=\"sourcePoint\"\/>          <mxPoint x=\"-350\" y=\"-100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Transition name=\"Recovery\" Note=\"\" Trigger=\"Probability\" Value=\"0.2\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"27\">      <mxCell style=\"transition\" parent=\"28\" source=\"24\" target=\"25\" edge=\"1\">        <mxGeometry x=\"-450\" y=\"-100\" width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint x=\"-450\" as=\"sourcePoint\"\/>          <mxPoint x=\"-350\" y=\"-100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Setting Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\">      <mxCell parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/Setting>    <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"23,24,25,29\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\">      <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/>      <\/mxCell>    <\/Display>    <Agents name=\"Population\" Note=\"\" Size=\"50\" GeoWrap=\"false\" GeoDimUnits=\"Unitless\" GeoWidth=\"200\" GeoHeight=\"100\" Placement=\"Random\" PlacementFunction=\"&lt;&lt;rand*width([Self]), rand*height([Self])&gt;&gt;\" Network=\"None\" NetworkFunction=\"randBoolean(0.02)\" Agent=\"28\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"29\">      <mxCell style=\"agents\" vertex=\"1\" parent=\"1\">        <mxGeometry x=\"220\" y=\"180\" width=\"170\" height=\"80\" as=\"geometry\"\/>      <\/mxCell>    <\/Agents>  <\/root><\/mxGraphModel>"}
+	
+DIAGRAM
+
+We're going to start with the agent based disease model from our earlier example. We are going to add a variable [Fraction Infected] that calculates what fraction of the population is currently infected. We will then use this variable to determine the infection rate.
+	
+{"geometry":{"x":280,"y":90,"width":130,"height":50},"name":"Fraction Infected","create":"Variable"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Population","omega":"Fraction Infected","create":"Link"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Fraction Infected","omega":"Infection","create":"Link"}
+
+DIAGRAM
+
+Now let's configure the value of Percent Infected and change the Infection transition to use it.
+
+{"attribute":"Equation","target":"Fraction Infected","value":"Count(FindState([Population], [Infected]))/PopulationSize([Population])", "editor": true}
+
+This equation uses the FindState function to select all the people in the Population primitive who are in the Infected state. It then divides the count of those people by the total size of the population.
+
+{"attribute":"Value","target":"Infection","value":"[Fraction Infected]"}
+
+{"attribute":"Primitives","target":"DISPLAY","value":["Population"]}
+
+We are now ready to run the model.
+
+RESULTS
+
+That was a bit of disappointment wasn't it? Nothing happened. Why is this?
+
+Well since our infection rate now depends on the number of people we have to have at least one person infected to get the epidemic going. Let's change the [Healthy] and [Infected] states so one person starts in the infected state at the beginning of the simulation.
+
+{"attribute":"Active","target":"Healthy","value":"Index([Self]) <> 1"}
+
+{"attribute":"Active","target":"Infected","value":"Index([Self]) == 1", "editor": true}
+
+Each agent has an index, we have set it so the first agent will start the simulation in the infected state. Let's run the model to see this working.
+
+RESULTS
+
+Each time we run it we will get a different set of results. Sometimes the infection will die off with just the first infected person.
+
+RESULTS
+
+# End Model
 
 ## Agent Geography
 
@@ -209,7 +342,7 @@ When working with a spatially explicit model, a number of additional find functi
 
 It is useful now to introduce the concept that will be very helpful to you. When used in an Agent, \p{Self} refers to the agent itself. So if you have a primitive within an agent \p{Self} can be used from that primitive to get a reference to the agent containing the primitive. So the following in an agent will return a vector of agents that are within 15 miles of the agent itself:
 
-\e{FindNearby([Population], [Self], {15 Miles})}
+\e{{FindNearby([Population], [Self], {15 Miles})}}
 
 Two other useful functions for finding agents in relation to each other are \e{FindNearest()} and \e{FindFurthest()}. FindNearest returns the nearest agent to the a target while FindFurthest returns the agent that is farthest away from it. Each of them also allow an optional third argument determining how many nearby (or far away) agents to return.
 
@@ -225,15 +358,58 @@ While this find the three agents that are furthest from it:
 
 You can also move your agents to new positions over the course of the simulation. To do this, it is helpful to use a new primitive we have not yet introduced. This primitive is that *Action* primitive. Action primitives are designed to execute some action that changes the state of your model. For instance, they can be used to move agents or change the values of the primitives within an agent. An action is triggered in the same way a transition is triggered. Like a transition, there are three possible methods of triggering the action: timeout, probability, and condition.
 
-For instance, we can use and action primitive in an agent and the \e{Move()} function to cause our agents to move around randomly. The Move function takes two arguments: the agent to be moved, and a vector containing the x- and y-distances to move the agent. Thus, we could place an action primitive in our agent and give it the following action property to make it move the agent move randomly over time^[What we are implementing here is known as a "random walk" or Brownian motion. It is a commonly studied pattern of movement with wide applications in science.]:
+For instance, we can use and action primitive in an agent and the \e{Move()} function to cause our agents to move around randomly. The Move function takes two arguments: the agent to be moved, and a vector containing the x- and y-distances to move the agent. Thus, we could place an action primitive in our agent and give it the following action property to make it move the agent move randomly over time^[What we are implementing here is known as a "random walk" or Brownian Motion. It is a commonly studied pattern of movement with wide applications in science.]:
 
 \e{Move([Self], «rand, rand»-0.5)}
 
 Another useful movement function is the \e{MoveTowards()} function. MoveTowards moves an agents towards (or away from) the location of another agent. MoveTowards takes three arguments, the agent to be moved, the target agent to move towards, and how far to move towards that agent (with negative values indicating movement away). The following command would move an agent one meter closer to its nearest neighbor in the population.
 
-\e{Move([Self], FindNearest([Population], [Self]), {1 Meter})}
+\e{{MoveTowards([Self], FindNearest([Population], [Self]), {1 Meter})}}
 
-* Demo
+# Model
+
+{"title": "Agent Movement", "description": "This model illustrates the use of movement within an agent based models. We adapt the model so that healthy agents run away from the nearest infected agent."}
+
+{"load": "<mxGraphModel>  <root>    <mxCell id=\"0\"\/>    <mxCell id=\"1\" parent=\"0\"\/>    <Folder name=\"Person\" Note=\"\" Type=\"Agent\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"28\">      <mxCell style=\"folder\" parent=\"1\" vertex=\"1\">        <mxGeometry x=\"450\" y=\"100\" width=\"140\" height=\"320\" as=\"geometry\"\/>      <\/mxCell>    <\/Folder>    <State name=\"Healthy\" Note=\"\" Active=\"Index([Self]) &lt;&gt; 1\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"23\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"20\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Infected\" Note=\"\" Active=\"Index([Self]) == 1\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"24\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"140\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Recovered\" Note=\"\" Active=\"false\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"25\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"260\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <Transition name=\"Infection\" Note=\"\" Trigger=\"Probability\" Value=\"[Fraction Infected]\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"26\">      <mxCell style=\"transition\" parent=\"28\" source=\"23\" target=\"24\" edge=\"1\">        <mxGeometry x=\"-450\" y=\"-100\" width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint x=\"-450\" as=\"sourcePoint\"\/>          <mxPoint x=\"-350\" y=\"-100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Transition name=\"Recovery\" Note=\"\" Trigger=\"Probability\" Value=\"0.2\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"27\">      <mxCell style=\"transition\" parent=\"28\" source=\"24\" target=\"25\" edge=\"1\">        <mxGeometry x=\"-450\" y=\"-100\" width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint x=\"-450\" as=\"sourcePoint\"\/>          <mxPoint x=\"-350\" y=\"-100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Setting Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\">      <mxCell parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/Setting>    <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"23,24,25,29,30\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\">      <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/>      <\/mxCell>    <\/Display>    <Agents name=\"Population\" Note=\"\" Size=\"50\" GeoWrap=\"false\" GeoDimUnits=\"Unitless\" GeoWidth=\"200\" GeoHeight=\"100\" Placement=\"Random\" PlacementFunction=\"&lt;&lt;rand*width([Self]), rand*height([Self])&gt;&gt;\" Network=\"None\" NetworkFunction=\"randBoolean(0.02)\" Agent=\"28\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"29\">      <mxCell style=\"agents\" parent=\"1\" vertex=\"1\">        <mxGeometry x=\"220\" y=\"180\" width=\"170\" height=\"80\" as=\"geometry\"\/>      <\/mxCell>    <\/Agents>    <Variable name=\"Fraction Infected\" Note=\"\" Equation=\"Count(FindState([Population], [Infected]))\/PopulationSize([Population])\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"30\">      <mxCell style=\"variable\" vertex=\"1\" parent=\"1\">        <mxGeometry x=\"280\" y=\"90\" width=\"130\" height=\"50\" as=\"geometry\"\/>      <\/mxCell>    <\/Variable>    <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"31\">      <mxCell style=\"link\" edge=\"1\" parent=\"1\" source=\"29\" target=\"30\">        <mxGeometry width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint y=\"100\" as=\"sourcePoint\"\/>          <mxPoint x=\"100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Link>    <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"32\">      <mxCell style=\"link\" edge=\"1\" parent=\"1\" source=\"30\" target=\"26\">        <mxGeometry width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint y=\"100\" as=\"sourcePoint\"\/>          <mxPoint x=\"100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Link>  <\/root><\/mxGraphModel>"}
+	
+DIAGRAM
+	
+We will extend our model from earlier by adding movement to the agents. First we need to create an action primitive.
+
+{"target":"Person","geometry":{"x":450,"y":100,"width":250,"height":320}}
+
+{"geometry":{"x":120,"y":190,"width":120,"height":50},"create":"Action", "name":"Escape"}
+
+{"parent": "Person", "name": "Escape"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100}, "alpha":"Healthy","omega":"Escape", "create": "Link"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Population","omega":"Escape","create":"Link"}
+
+DIAGRAM
+
+We will have this action be triggered when the agent it is in is healthy and there is at least on infected agent in the simulation.
+
+{"attribute":"Value","target":"Escape","value":"[Healthy] and Count(FindState([Population], [Infected])) > 0"}
+
+The action will cause healthy agents to move away from the nearest infected agent.
+
+{"attribute":"Action","target":"Escape","value":"MoveTowards([Self], FindNearest(FindState([Population], [Infected]), [Self]), -2)", "editor": true}
+
+We can now run the simulation.
+
+{"attribute":"Primitives","target":"DISPLAY","value":["Population"]}
+
+RESULTS
+
+These results look the same as before. To see the agents moving we need to change the display type to *Map* and then we can run the simulation again.
+
+{"attribute":"Type","target":"DISPLAY","value":"Map"}
+
+RESULTS
+
+
+# End Model
 
 ### Network Geography
 
@@ -254,8 +430,6 @@ By default, no connections are created when a simulation is initially started. I
 This function is called once for each pair of agents in the model. The agents are available in the function as the variables *a* and *b*. If the function returns true, then the agents will start connected. If the function returns false, the agents will not be initially connected. You could use this function for, to instance, specify that 50% of agents will be directly connected to each other using:
 
 \e{RandBoolean(0.5)}
-
-* Demo
 
 ## Multiline Equations
 
@@ -282,23 +456,23 @@ Variable names can contain any number of letters and numbers, but should always 
 You should be familiar with the \e{IfThenElse()} function. A multiline alternative to it exists. The following is equivalent to \e{IfThenElse([Lake] > 10, 1, 2)}.
 
 \e{
-	If [Lake] > 10 Then
-		1
-	Else
-		2
-	End If
+If [Lake] > 10 Then
+	1
+Else
+	2
+End If
 }
 
 One of the benefit of these multiline equations is they can be more readable than the single line functions. This is especially true if you are trying to do nested if statements. Compare \e{IfThenElse([Lake] > 10, 1, IfThenElse([Lake] < 5, -1, 2))} to:
 
 \e{
-	If [Lake] > 10 Then
-		1
-	Else If [Lake] < 5 Then
-		-1
-	Else
-		2
-	End If
+If [Lake] > 10 Then
+	1
+Else If [Lake] < 5 Then
+	-1
+Else
+	2
+End If
 }
 
 The second one is much more readable. This makes it easier to maintain and more resilient to typos and bugs.
@@ -309,9 +483,9 @@ Loops are a programming construct that repeats some code multiple times. There a
 
 \e{
 sum <- 0
-for i from 1 to 3
+For i From 1 To 3
 	sum <- sum + i
-end loop
+End Loop
 sum
 }
 
@@ -321,9 +495,9 @@ Another variant of the *for* loop is the *for-in* loop. This uses a vector to as
 
 \e{
 sum <- 0
-for i in «1, 5, 10»
+For i In «1, 5, 10»
 	sum <- sum + i
-end loop
+End Loop
 sum
 }
 
@@ -331,9 +505,9 @@ These loops can be very useful to iterate through a vector of agents. Another lo
 
 \e{
 total <- 2
-while total < 100
+While total < 100
 	total <- total^2
-end loop
+End Loop
 total
 }
 
