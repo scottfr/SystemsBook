@@ -1,4 +1,4 @@
-# Chapter 5 Implications of Reality v0.6 13.06.17 #
+# Chapter 5 Implications of Reality v0 13.06.10 #
 
 The sections of this chapter will provide an awareness of the relationships between a number of structures that occur repeatedly across all disciplines as well as provide a sense of how these structures are actually related to each other.
 
@@ -158,117 +158,15 @@ Have you ever pursued a goal and later found that you actually overshot the goal
 
 ### Causal Loop Diagram ###
 
-![](05-im-544.png)
+![Figure 7. Balancing Loop with Delay Causal Loop Diagram](05-im-544.png)
 
-[Balancing Loop with Delay Causal Loop Diagram](http://insightmaker.com/insight/544)
-
-If you look at the Balancing Loop with Delay structure it looks identical to the standard balancing loop with the exception of the delay near the reduces link. The implication is that it takes some amount of time after the current state changes before it is actually realized and figures into the calculation of the gap which influences the subsequent action. Essentially what's happening is that action is being based on old data and therefore is probably not the appropriate action. The implications of this will become evident when we look at the simulation for this structure.
+[** Figure 7. Balancing Loop with Delay Causal Loop Diagram](http://insightmaker.com/insight/544)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/133?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/133?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 8. Balancing Loop with Delay Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Balancing Loop with Delay Stock & Flow Simulation](http://insightmaker.com/insight/133)
-
-Notice in the stock & flow structure the delay has been placed between the current state and the gap. The delay could have just as well been between the gap and action or there could have been a delay between the action and the actual change of the current state though this one is a bit more difficult to structure.
-
-Equations for this structure are
-
-> delay state = Delay(<Current State>, [time delay], 0)
-> gap = [desired state] - [delay state]
-> action = [gap] * [action factor]
-
-With settings of
-
-- current state = 0
-- action factor = 0.5
-- desired state = 1
-- time delay = 0
-- Time Step = 0.25
-
-![](05-im-133a.png)
-
-[Balancing Loop with Delay = 0](http://insightmaker.com/insight/133)
-
-As expected these settings display the typical balancing loop goal seeking behavior.
-
-With settings of
-
-- current state = 0
-- action factor = 0.5
-- desired state = 1
-- time delay = 1
-- Time Step = 0.25
-
-![](05-im-133b.png)
-
-[Balancing Loop with Delay = 1](http://insightmaker.com/insight/133)
-
-Notice that now with a delay the change in the gap and action are delayed for one time period and then the current state actually overshoots the goal and a negative action is required to bring the current state back to the goal.
-
-With settings of
-
-- current state = 0
-- action factor = 0.5
-- desired state = 1
-- time delay = 2
-- Time Step = 0.25
-
-![](05-im-133c.png)
-
-[Balancing Loop with Delay = 2](http://insightmaker.com/insight/133)
-
-With a longer time delay the overshoot is even more severe though after a few time periods the current state actually will reach the goal.
-
-----------
-
-### Modeling Note ###
-
-Notice the action flow in the diagram actually has an arrow at both ends. Click on the flow and notice the Configuration section of the configuration panel indicates Only Positive Rates is set to No. This means that the flow can flow in either direction based on whether the results of the equation are positive or negative.
-
-----------
-
-With settings of
-
-- current state = 0
-- action factor = 0.5
-- desired state = 1
-- time delay = 3
-- Time Step = 0.25
-
-![](05-im-133d.png)
-
-[Balancing Loop with Delay = 3](http://insightmaker.com/insight/133)
-
-We've now reached a delay where the action is so out of sync with an awareness of the results that the goal is never reached and the current state continually oscillates around the goal.
-
-With settings of
-
-- current state = 0
-- action factor = 0.5
-- desired state = 1
-- time delay = 3.5
-- Time Step = 0.25
-
-![](05-im-133e.png)
-
-[Balancing Loop with Delay = 3.5](http://insightmaker.com/insight/133)
-
-Now the situation is described as being out of control because rather oscillations continue to get worse because of the length of the time delay.
-
-You might ask how could it be that it might take 3.5 days for someone to get a sense of what the results of the previous actions were, which would be a good question. It's probably difficult to find a situation where this is realistic in days though what's important to realize is this structure could operate in this manner if the time units were hours, minutes, seconds or micro seconds.
-
-----------
-
-### Exercise 5-3 
-
-Run this model varying the values of action factor, time delay and time step to develop a sense of how each of these variables influences the behavior of the model.
-
-----------
-
-### Examples ###
-
-[Balancind Loop with Delay Examples](http://www.systemswiki.org/index.php?title=Category:Balancing_Loop_with_Delay)
+[** Figure 8. Balancing Loop with Delay Stock & Flow Simulation](http://insightmaker.com/insight/133)
 
 ### Effective Strategies ###
 
@@ -279,6 +177,8 @@ Run this model varying the values of action factor, time delay and time step to 
 
 There are currently no known Systems Archetypes which are direct derivatives of the Balancing Loop with Delay Systems Archetype.
 
+### Examples ###
+
 ## Things Seem to Oscillate Endlessly ##
 
 Have you ever noticed how some things just seem to oscillate back and forth endlessly? Trying to decide between two options, the way people have their ups and downs, the way supply and demand never seems to settle out are examples of just this.
@@ -287,45 +187,15 @@ This situation is characteristic of two Balancing Loops with Delays which provid
 
 ### Causal Loop Diagram ###
 
-![](05-im-545.png)
+![Figure 9. Indecision Causal Loop Diagram](05-im-545.png)
 
-[Indecision Causal Loop Diagram](http://insightmaker.com/insight/545)
+[** Figure 9. Indecision Causal Loop Diagram](http://insightmaker.com/insight/545)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/546?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/546?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 10. Indecision Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Indecision Stock & Flow Simulation](http://insightmaker.com/insight/546)
-
-With settings of
-
-- result 1 = 1
-- result 2 = 0.5
-- delay 2 = 1
-- delay 1 = 2
-- factor = 0.5
-- Time Step = 0.25
-
-![](05-im-546.png)
-
-[Indecision Example 1](http://insightmaker.com/insight/546)
-
-For these settings there is a delay for result 1 and result 2 and you can see the oscillations as action attempts to bring the two into a balance with each other. It is apparent that a balance will be achieved after some time as the oscillations are getting smaller over time.
-
-----------
-
-### Exercise 5-4 
-
-Vary the values of delay 1, delay 2, factor, and time step to get a better sense of the implications of each variable on the behavior of this structure. 
-
-----------
-
-### Examples
-
-- [Supply and Demand](http://www.systemswiki.org/index.php?title=Supply_and_Demand)
-- [Price Balancing Loops](http://www.systemswiki.org/index.php?title=Price_Balancing_Loops)
-- [Romeo & Juliet IM-759](http://insightmaker.com/insight/759)
-- [Indecision Examples](http://www.systemswiki.org/index.php?title=Category:Indecision)
+[** Figure 10. Indecision Stock & Flow Simulation](http://insightmaker.com/insight/546)
 
 ### Effective Strategies ###
 
@@ -336,51 +206,27 @@ Vary the values of delay 1, delay 2, factor, and time step to get a better sense
 
 - Presently there are no Systems Archetypes which are derivatives of the Indecision Systems Archetype.
 
+### Examples
+
 ## The Fix Creates A Problem Elsewhere ##
 
 Have you ever wondered how the apparently sensible actions by two individuals, groups, or countries for that matter, can result in both parties finding themselves where neither of them wants to be? Consider the way an argument heats up between two people, or the way that urgency begets urgency, or even the US/Soviet arms race of the past. The foundation of these activities is an Escalation structure.
 
 ### Causal Loop Diagram ###
 
-![](05-im-970.png)
+![Figure 11. Escalation Causal Loop Diagram](05-im-970.png)
 
-[Escalation Causal Loop Diagram](http://insightmaker.com/insight/970)
+[** Figure 11. Escalation Causal Loop Diagram](http://insightmaker.com/insight/970)
 
-The two balancing loops interact in such a way as to create what is essentially a single reinforcing structure. Is this this reinforcing action which typically drives the result to somewhere neither of the participants wishes to be.
+![Figure 11a. Escalation Causal Loop Diagram](05-im-970a.png)
 
-![](05-im-970a.png)
-
-[Escalation as a Reinforcing Loop](http://insightmaker.com/insight/970)
+[** Figure 11a. Escalation Causal Loop Diagram](http://insightmaker.com/insight/970)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/972?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/972?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 12. Escalation Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Escalation Stock & Flow Simulation](http://insightmaker.com/insight/972)
-
-With settings of
-
-- Ted Results = 1
-- Anne Results = 1.1
-- multiplier = 2
-- Time Step = 1
-
-![](05-im-972.png)
-
-[Escalation Example](http://insightmaker.com/insight/972)
-
-----------
-
-### Exercise 5-5 
-
-Vary the values of Ted Results, Anne Results and time step to get a better sense of the implications of each variable on the behavior of this structure. 
-
-----------
-
-### Examples ###
-
-- A kid telling a small lie to cover a small thing, only to find himself into further problems that would require bigger lies, making it all the more difficult to tell the truth later when two people walking against each other on the street try to pass by making a step sideways only to discover they block each other again and another attempt to go off the way leads to the same situation
-- [Escalation Examples](http://www.systemswiki.org/index.php?title=Category:Escalation)
+[** Figure 12. Escalation Stock & Flow Simulation](http://insightmaker.com/insight/972)
 
 ### Effective Strategies ###
 
@@ -391,49 +237,25 @@ Vary the values of Ted Results, Anne Results and time step to get a better sense
 
 - There are currently no known Systems Archetypes which are derivatives of the Escalation Systems Archetype.
 
-## Over Time There Is A Tendency To Settle For Less
+### Examples ###
+
+- a kid telling a small lie to cover a small thing, only to find himself into further problems that would require bigger lies, making it all the more difficult to tell the truth later when two people walking against each other on the street try to pass by making a step sideways only to discover they block each other again and another attempt to go off the way leads to the same situation
+
+## Over Time There Is A Tendency To Settle For Less ##
 
 Have you ever noticed how difficult it is to bring the best of intentions to fruition? How so many people's New Years resolutions only last a few days? Our inability to achieve the things we set out to achieve is very much a result of the operation of a Drifting Goals structure we generally have little awareness of.
 
 ### Causal Loop Diagram ###
 
-![](05-im-983.png)
+![Figure 13. Drifting Goals Causal Loop Diagram](05-im-983.png)
 
-[Drifting Goals Causal Loop Diagram](http://insightmaker.com/insight/983)
-
-Again we have two balancing loops which each provide a goal for the other and because of the delays in the time it takes for the action to produce results one goal overrides the other. What I Want server as the goal for B1 and Pressure to Settle for Less serves as the goal for B2.
+[** Figure 13. Drifting Goals Causal Loop Diagram](http://insightmaker.com/insight/983)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/984?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/984?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 14. Drifting Goals Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Drifting Goals Stock & Flow Simulation](http://insightmaker.com/insight/984)
-
-With settings of
-
-- desired state = 1
-- curretn state = 0
-- pct chg fact = 0.2
-- goal chg fact = 0.2
-- Time Step = 0.5
-
-![](05-im-948.png)
-
-[Drifting Goals Example with pct chg = goal chg factors](http://insightmaker.com/insight/972)
-
-In this example with the extent to which the goal drifted is about 50% which is very significant. The extent to which the goal drifts is very dependent on the goal chg fact variable.
-
-----------
-
-### Exercise 5-6 
-
-Vary the pct chg fact, goal chg fact and Time Step values to get a sense of the impact on the extent to which the goal for the structure is degraded over time.
-
-----------
-
-### Examples ###
-
-- [Drifting Goals Examples](http://www.systemswiki.org/index.php?title=Category:Drifting_Goals)
+[** Figure 14. Drifting Goals Stock & Flow Simulation](http://insightmaker.com/insight/984)
 
 ### Effective Strategies ###
 
@@ -444,6 +266,8 @@ Vary the pct chg fact, goal chg fact and Time Step values to get a sense of the 
 
 - The action toward the Desired State requires resources, which may have to be developed. Consideration needs to be given as to whether or not there really are sufficient resources to achieve the Desired State. For further insights into this see Growth and Underinvestment with a Drifting Standard.
 
+### Examples ###
+
 ## In Time The Problem Returns ##
 
 Have you noticed how often your best intentions go awry? You set out to fix a problem and shortly thereafter you find yourself fixing the same problem again, and again. This generally results from some unexpected consequences, things that come into play because of your action, or the results of your action, that you never expected, which is why they're called unexpected consequences.
@@ -452,61 +276,15 @@ A Fixes that Fail Systems Archetype consists of a Balancing Loop which is intend
 
 ### Causal Loop Diagram ###
 
-![](05-im-547.png)
+![Figure 15. Fixes that Fail Causal Loop Diagram](05-im-547.png)
 
-[Fixes that Fail Causal Loop Diagram](http://insightmaker.com/insight/547)
-
-The action of the Goal Seeking loop (B1) also influences, after some delay, unexpected consequences which diminishes the migration of the current sate in the direction of the desired state and creates the reinfocing loop (R2).
+[** Figure 15. Fixes that Fail Causal Loop Diagram](http://insightmaker.com/insight/547)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/549?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/549?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 16. Fixes that Fail Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Fixes that Fail Stock & Flow Simulation](http://insightmaker.com/insight/549)
-
-With settings of
-
-- desired state = 1
-- current state = 0
-- action factor = 0.5
-- uc factor = 0
-- ucd factor = 0.2
-- Time Step = 0.5
-
-![](05-im-549.png)
-
-[Fixes that Fail Structure as Simple Goal Seeking Loop](http://insightmaker.com/insight/549)
-
-With uc factor = 0 there is no unexpected consequences and therefor the value of ucd factor is irrelevant and the structure is essentially a standard goal seeking balancing loop (B1).
-
-With settings of
-
-- desired state = 1
-- current state = 0
-- action factor = 0.5
-- uc factor = 0.3
-- ucd factor = 0.2
-- Time Step = 0.5
-
-![](05-im-549a.png)
-
-[Fixes that Fail Structure as Simple Goal Seeking Loop](http://insightmaker.com/insight/549)
-
-As the value of uc factor increases unexpected consequences will increase more rapidly and have a more marked impact on the current state as long as the value of ucd factor remains constant.
-
-----------
-
-### Exercise 5-7 
-
-Run the Fixes that Fail structure with various values of action factor, uc factor, ucd factor, and Time Step to get a sense of how these four factors influence the behavior of the structure.
-
-----------
-
-### Examples ###
-
-- Your soccer ball is soft so you put air in it though in a few hours you have to put more air in it. And after a few weeks it seems like you spend all your time pumping up your soccer ball.
-- Often times what appears to be the most appropriate way to deal with the situation doesn't really solve the problem and in time actually makes the situation worse.
-- [Fixes that Fail Examples](http://www.systemswiki.org/index.php?title=Category:Fixes_that_Fail)
+[** Figure 16. Fixes that Fail Stock & Flow Simulation](http://insightmaker.com/insight/549)
 
 ### Effective Strategies ###
 
@@ -517,80 +295,26 @@ Run the Fixes that Fail structure with various values of action factor, uc facto
 
 - There are times when attempts to deal with a situation in a particular way makes it even more difficult to deal with the situation in an appropriate manner later on which is often an indication of a Shifting the Burden Systems Archetype.
 
+### Examples ###
+
+- Your soccer ball is soft so you put air in it though in a few hours you have to put more air in it. And after a few weeks it seems like you spend all your time pumping up your soccer ball.
+- Often times what appears to be the most appropriate way to deal with the situation doesn't really solve the problem and in time actually makes the situation worse.
+
 ## The Underlying Cause Is Not Being Addressed ##
 
 How many times have you noticed that there are some problems that seem to be addressed over and over. When the problem arises it is addressed, then some time later, maybe a day, a week, or a month, the same problem arises again. This situation is quite often the result of a Shifting the Burden structure.
 
 ### Causal Loop Diagram ###
 
-![](05-im-986.png)
+![Figure 17. Shifting the Burden Causal Loop Diagram](05-im-986.png)
 
-[Shifting the Burden Causal Loop Diagram](http://insightmaker.com/insight/986)
-
-The causal loop depicts a problem symptom which can be addressed by a symptomatic solution (B1) and a fundamental solution (B2). The symptomatic solution is easier and quicker than the fundamental solution though it only treats the symptoms rather than actually solving the problem. And the nasty aspect of this structure is that the symptomatic solution typically has a side effect that makes it more difficult to implement the fundamental solution. This means that the more one employs the symptomatic solution the less likely one is to implement the fundamental solution. And because the problem isn't solved in time it returns again and again.
+[** Figure 17. Shifting the Burden Causal Loop Diagram](http://insightmaker.com/insight/986)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/1005?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/1005?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 18. Shifting the Burden Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Shifting the Burden Stock & Flow Simulation](http://insightmaker.com/insight/1005)
-
-The Shifting the Burden Stock & Flow model is the equivalent of the Causal Loop Diagram with one addition. Problem Cause has been added to as it is essentially for the Problem Symptom to be able to return. This wasn't depicted in the Causal Loop Diagram and points out one of the shortcomings of Causal Loop Diagrams. Because they're qualitative you can argue any interactions you'd like and they're difficult to dispute because there's no data to support any of the arguments. With Stock & Flow models one can't argue things with hand waving and there's no smoke and mirrors to hide behind. Everything has to be explicit which is their strength.
-
-With settings of
-
-- sym fact = 0.5
-- prob fact = 0.5
-- fund fact = 0
-- side effect fact = 0
-- Time Step = 0.25
-
-![](05-im-1005.png)
-
-[Applying the Symptomatic Solution](http://insightmaker.com/insight/1005)
-
-The problem cause results in an increase in the Problem Symptom until it reaches a level where it needs to be dealt with and the symptomatic solution is applied. This removes the Problem Symptom though has no affect on the problem cause so the Problem Symptom again begins to increase until it reaches a point where the symptomatic solution is again applied. Unless something else changes this will repeat endlessly.
-
-With settings of
-
-- sym fact = 0.5
-- prob fact = 0.5
-- fund fact = 0.2
-- side effect fact = 0
-- Time Step = 0.25
-
-![](05-im-1005a.png)
-
-[Applying the Symptomatic Solution & Fundamental Action](http://insightmaker.com/insight/1005)
-
-In this example it is apparent that the Symptomatic Solution is still has a part to play while the fundamental solution is actually solving the problem. Once this happens the symptoms don't return and there no need to apply the symptomatic solution or fundamental action in the future.
-
-With settings of
-
-- sym fact = 0.5
-- prob fact = 0.5
-- fund fact = 0.2
-- side effect fact = 0.2
-- Time Step = 0.25
-
-![](05-im-1005b.png)
-
-[Applying the Symptomatic Solution & Fundamental Action with Side Effect](http://insightmaker.com/insight/1005)
-
-With the Side Effect coming into play you can see that the fundamental solution attempts to come into play though the side effect essentially negates it requiring that the symptomatic solution continue to be applied periodically.
-
-----------
-
-### Exercise 5-8 
-
-While there are myriad of possible variations for the variables in this model you might find the result interesting if you apply the fundamental solution without the symptomatic solution. What questions does this result raise?
-
-----------
-
-### Examples ###
-
-- [Summer Driving is an Emergency?](http://www.systemswiki.org/index.php?title=Summer_Driving_is_an_Emergency%3F)
-- [Shifting the Burden Examples](http://www.systemswiki.org/index.php?title=Category:Shifting_the_Burden)
+[** Figure 18. Shifting the Burden Stock & Flow Simulation](http://insightmaker.com/insight/1005)
 
 ### Effective Strategies ###
 
@@ -604,40 +328,24 @@ Initially I perceived there to be a single appropriate strategy for dealing with
 
 - It is often the case that the side effect promotes some sort of dependency which further inhibits development of the fundamental solution. For insights into this situation see Addiction Systems Archetype.
 
+### Examples ###
+
+
 ## Dependence on the Fix Develops ##
 
 An Addiction Systems Archetype is a variation of a Shifting the Burden Systems Archetype in which the side effect results is an addiction to the symptomatic solution. This structure is composed of two Balancing Loops and a Reinforcing Loop. It is a very annoying structure because the two Balancing Loops act as a single Reinforcing Loop migrating the situation in the same direction as the Reinforcing Loop. Both structures cooperate in moving the system in a direction other than the one desired.
 
 ### Causal Loop Diagram ###
 
-![](05-im-1085.png)
+![Figure 19. Addiction Causal Loop Diagram](05-im-1085.png)
 
-[Addiction Causal Loop Diagram](http://insightmaker.com/insight/1085)
-
-It should be immediately evident that this is the same structure as the shifting the burden structure with the Side Effect relabeled as Addiction. The difference in function will be demonstrated below in the stock & flow model.
+[** Figure 19. Addiction Causal Loop Diagram](http://insightmaker.com/insight/1085)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/1086?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/1086?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 20. Addiction Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Addiction Stock & Flow Simulation](http://insightmaker.com/insight/1086)
-
-I need to do is figure out how the addiction is different from shifting the burden structure. I think the side effect in shifting the burden may not be a stock whereas addiction is a stock. This was once the problem is solved in shifting the burden there isn't a residual influence from the side effect whereas in the addiction structure there is a significant residual.
-
-----------
-
-### Exercise 5-9 
-
-I don't know about this at the moment.
-
-----------
-
-### Examples ###
-
-- in organizations, people firefighting instead of solving the root problems, thereby reducing time available to invest in solving root problems
-- I'm sure we could easily set up a similar example for short term economical measures that redirect resources from what could fix the economy in the longer term, though any model would probably be controversial.
-- Wanting to win all the time can be really hard, and to increase your chances of winning, there are two options. One option is to cheat. The other option is to practise all the time and demonstrate a serious commitment to your sport. Whilst cheating is probably easier, it becomes highly addictive (because it doesn't require much effort) and because of this, the desire to win fairly though practise and commitment to your sport doesn't happen. Think of what happened to Lance Armstrong. https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Lance%20Armstrong%20Shifting%20the%20Burden.jpeg 
-- [Addiction Examples](http://www.systemswiki.org/index.php?title=Category:Addiction)
+[** Figure 20. Addiction Stock & Flow Simulation](http://insightmaker.com/insight/1086)
 
 ### Effective Strategies ###
 
@@ -647,48 +355,27 @@ I don't know about this at the moment.
 
 - There are currently no known direct derivatives of the Addiction Systems Archetype.
 
+### Examples ###
+
+- in organizations, people firefighting instead of solving the root problems, thereby reducing time available to invest in solving root problems
+- I'm sure we could easily set up a similar example for short term economical measures that redirect resources from what could fix the economy in the longer term, though any model would probably be controversial.
+- - Wanting to win all the time can be really hard, and to increase your chances of winning, there are two options. One option is to cheat. The other option is to practise all the time and demonstrate a serious commitment to your sport. Whilst cheating is probably easier, it becomes highly addictive (because it doesn't require much effort) and because of this, the desire to win fairly though practise and commitment to your sport doesn't happen. Think of what happened to Lance Armstrong. https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Lance%20Armstrong%20Shifting%20the%20Burden.jpeg 
+
 ## Trying to Promote Growth ##
 
-A Reinforcing Loop is one in which an action produces a result which influences more of the same action, thus resulting in a growth or decline behavior. The Reinforcing Loop is one of the two foundation Systems Archetypes, the other being the Balancing Loop.
+A Reinforcing Loop is one in which an action produces a result which influences more of the same action, thus resulting in a growth or decline behavior. The Reinforcing Loop is one of the two foundational Systems Archetypes, the other being the Balancing Loop.
 
 ### Causal Loop Diagram ###
 
-![](05-im-540.png)
+![Figure 21. Reinforcing Loop Causal Loop Diagram](05-im-540.png)
 
-[Reinforcing Loop Causal Loop Diagram](http://insightmaker.com/insight/540)
-
-You can readily tell a reinforcing structure as there are zero or an even number of balancing influences in the loop. The implication is that the loop results in exponential growth or decline as will be evident in the Stock & Flow model below. 
+[** Figure 21. Reinforcing Loop Causal Loop Diagram](http://insightmaker.com/insight/540)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/131?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/131?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 22. Reinforcing Loop Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Reinforcing Loop Stock & Flow Simulation](http://insightmaker.com/insight/131)
-
-With settings of
-
-- factor = 1
-- results = 1
-- Simulation Length = 10
-- Time Step = 1
-
-![](05-im-131.png)
-
-[Reinforcing Loop Causal Loop Diagram](http://insightmaker.com/insight/131)
-
-The result of this run should be obvious as the value of result at the end of 10 periods is 1,024 or 2^10. Though you might also note that the graph is a bit choppy meaning that the Time Step is probably longer than it should be.
-
-----------
-
-### Exercise 5-10 
-
-You can do various runs with smaller and smaller Time Step size and the answer gets larger and larger. That being the case how would you determine the appropriate Time Step for the model?
-
-----------
-
-### Examples ###
-
-- [Reinforcing Loop Examples](http://www.systemswiki.org/index.php?title=Category:Reinforcing_Loop)
+[** Figure 22. Reinforcing Loop Stock & Flow Simulation](http://insightmaker.com/insight/131)
 
 ### Effective Strategies ###
 
@@ -703,33 +390,25 @@ The reinforcing structure is one of the simplest structures and seldom ever occu
 - Since you can't create something from nothing, the growth comes with a cost somewhere. Consider whether the growth is limiting growth or creating a decline somewhere else you haven't quite noticed as of yet. For insights into this situation see Success to the Successful Systems Archetype.
 - Often the reinforcing nature of this structure is the result of a synergistic relation between two or more individuals, groups, or organizations. When this is the case there is a tendency for the involved parties to take unenlightened action which actually destroys the synergy. For insights into this situation see Accidental Adversaries Systems Archetype.
 
+### Examples ###
+
+
+
 ## Growth Leads to Decline Elsewhere ##
 
 As long as A and B are equally successful everything will remain stable. Though if A or B receive more resources than the other or A or B is more successful than the other the imbalance will result in greater success of a or b accordingly and promote even more success of the one that demonstrates greater success.
 
 ### Causal Loop Diagram ###
 
-![](05-im-552.png)
+![Figure 23. Success to the Successful Causal Loop Diagram](05-im-552.png)
 
-[Success to the Successful Causal Loop Diagram](http://insightmaker.com/insight/552)
+[** Figure 23. Success to the Successful Causal Loop Diagram](http://insightmaker.com/insight/552)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/554?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/554?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 24. Success to the Successful Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Success to the Successful Stock & Flow Simulation](http://insightmaker.com/insight/554)
-
-----------
-
-### Exercise 5-11 
-
-
-
-----------
-
-### Examples ###
-
-- balancing two boats http://bit.ly/17CI6sH
+[** Figure 24. Success to the Successful Stock & Flow Simulation](http://insightmaker.com/insight/554)
 
 ### Effective Strategies ###
 
@@ -741,35 +420,26 @@ There are actually two strategies for dealing with a Success to the Successful s
 
 - There are currently no known Systems Archetypes which are derivatives of the Success to the Successful Systems Archetype.
 
+### Examples ###
+
+
+
 ## Growth Slows Over Time ##
 
 A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth of which, after some success, is offset by the action of a Balancing Loop.
 
 ### Causal Loop Diagram ###
 
-![](05-im-550.png)
+![Figure 25. Limits to Growth Causal Loop Diagram](05-im-550.png)
 
-[Limits to Growth Causal Loop Diagram](http://insightmaker.com/insight/550)
+[** Figure 25. Limits to Growth Causal Loop Diagram](http://insightmaker.com/insight/550)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/551?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/551?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 26. Limits to Growth Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Limits to Growth Stock & Flow Simulation](http://insightmaker.com/insight/551)
+[** Figure 26. Limits to Growth Stock & Flow Simulation](http://insightmaker.com/insight/551)
 
-----------
-
-### Exercise 5-12 
-
-
-
-----------
-
-### Examples ###
-
-- Rabbits tend to multiply very rapidly so why is it we're not completely overrun by rabbits, well maybe everywhere except Australia?
-- keep playing instead of cleaning up the mess in the room, which makes further play difficult, AND the increased mess repels one from cleaning up.
-- 
 ### Effective Strategies ###
 
 - The best defense is a good offense. As defined in the effective strategies for the Reinforcing Loop, if there is a Reinforcing Loop operating start looking for what is going to become a limiting factor, and remove it before it even has a chance to create a substantial impact on the result.
@@ -784,34 +454,27 @@ A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth 
 - It is possible that limited shared resources are the source of the limiting factor leading to a Tragedy of the Commons.
 - The limit may be insufficient capacity which leads to Growth and Underinvestment.
 
+### Examples ###
+
+- Rabbits tend to multiply very rapidly so why is it we're not completely overrun by rabbits, well maybe everywhere except Australia?
+- keep playing instead of cleaning up the mess in the room, which makes further play difficult, AND the increased mess repels one from cleaning up.
+
+
 ## Partners for Growth Become Adversaries ##
 
 The Accidental Adversaries Systems Archetype represents a structure where two entities which would be in a synergistic growth relationship end up limiting each others results because of their own activities.
 
 ### Causal Loop Diagram ###
 
-![](05-im-163.png)
+![Figure 27. Accidental Adversaries Causal Loop Diagram](05-im-163.png)
 
-[Accidental Adversaries Causal Loop Diagram](http://insightmaker.com/insight/163)
+[** Figure 27. Accidental Adversaries Causal Loop Diagram](http://insightmaker.com/insight/163)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/164?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/164?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 27. Accidental Adversaries Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Accidental Adversaries Stock & Flow Simulation](http://insightmaker.com/insight/164)
-
-----------
-
-### Exercise 5-13 
-
-
-
-----------
-
-### Examples ###
-
-- Parents can be interesting. Both Mums and Dads want to act as good role models and create a positive family environment, but sometimes, each one of them gets caught up in being seen as ''the good parent" and gives in to our whims and desires. We all know how this works: If one parent says 'no' to something, we just ask the other parent. The problem is that when one or both of our parents wants to be seen as the ''good parent,'' the other one ends up being seen as the 'bad' or 'tough' parent, and the whole 'good role model' or 'good family environment' disintegrates pretty quickly. 
-https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Family%20dysfunctionality%20Accid%20Adversaries.jpeg
+[** Figure 27. Accidental Adversaries Stock & Flow Simulation](http://insightmaker.com/insight/164)
 
 ### Effective Strategies ###
 
@@ -824,31 +487,26 @@ This structure points out how myopic local activity, with the best of intentions
 
 - There are currently no known Systems Archetypes that are derivatives of the Accidental Adversaries Systems Archetype.
 
+### Examples ###
+
+- Parents can be interesting. Both Mums and Dads want to act as good role models and create a positive family environment, but sometimes, each one of them gets caught up in being seen as ''the good parent" and gives in to our whims and desires. We all know how this works: If one parent says 'no' to something, we just ask the other parent. The problem is that when one or both of our parents wants to be seen as the ''good parent,'' the other one ends up being seen as the 'bad' or 'tough' parent, and the whole 'good role model' or 'good family environment' disintegrates pretty quickly. 
+https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Family%20dysfunctionality%20Accid%20Adversaries.jpeg
+
 ## Limited Resources are Shared by Others ##
 
 A Tragedy of the Commons situation exists whenever two or more activities, each, which in order to produce results, rely on a shared limited resource. Results for these activities continue to develop as long as their use of the limited resource doesn't exceed the resource limit. Once this limit is reached the results produced by each activity are limited to the level at which the resource is replenished. As an example, consider multiple departments with an organization using IT resources, until they've exhausted IT capacity.
 
 ### Causal Loop Diagram ###
 
-![](05-im-559.png)
+![Figure 28. Tragedy of the Commons Causal Loop Diagram](05-im-559.png)
 
-[Tragedy of the Commons Causal Loop Diagram](http://insightmaker.com/insight/559)
+[** Figure 28. Tragedy of the Commons Causal Loop Diagram](http://insightmaker.com/insight/559)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/560?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/560?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 29. Tragedy of the Commons Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Tragedy of the Commons Stock & Flow Simulation](http://insightmaker.com/insight/560)
-
-----------
-
-### Exercise 5-14 
-
-
-
-----------
-
-### Examples ###
+[** Figure 29. Tragedy of the Commons Stock & Flow Simulation](http://insightmaker.com/insight/560)
 
 ### Effective Strategies ###
 
@@ -861,32 +519,24 @@ This structure repeatedly appears in organizational contexts where a service org
 
 There are currently no known Systems Archetypes which are derivatives of Tragedy of the Commons.
 
+### Examples ###
+
+
 ## More Than One Limit To Be Addressed ##
 
 It's relatively well understood that you can't be all things to all people. Somewhere one has to make choices. An Attractiveness Principle Systems Archetype is essentially a Limits to Growth Systems Archetype with multiple limits, all of which can not be addressed equally.
 
 ### Causal Loop Diagram ###
 
-![](05-im-1115.png)
+![Figure 30. Attractiveness Principle Causal Loop Diagram](05-im-1115.png)
 
-[Attractiveness Principle Causal Loop Diagram](http://insightmaker.com/insight/1115)
+[** Figure 30. Attractiveness Principle Causal Loop Diagram](http://insightmaker.com/insight/1115)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/1117?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/1117?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 31. Attractiveness Principle Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Attractiveness Principle Stock & Flow Simulation](http://insightmaker.com/insight/1117)
-
-----------
-
-### Exercise 5-15 
-
-
-
-----------
-
-### Examples ###
-
+[** Figure 31. Attractiveness Principle Stock & Flow Simulation](http://insightmaker.com/insight/1117)
 
 ### Effective Strategies ###
 
@@ -898,32 +548,24 @@ It's relatively well understood that you can't be all things to all people. Some
 
 There are currently no known direct derivatives of the Attractiveness Principle Systems Archetype.
 
+### Examples ###
+
+
 ## The Limit Is Insufficient Capacity ##
 
 A Growth and Underinvestment Systems Archetype is simply an elaborated Limits to Growth Systems Archetype where the growth inhibitor is part of another Balancing Loop with an external standard and some delay. The real nasty thing about this structure is that the two Balancing Loops form a single Reinforcing Loop which inhibits growth.
 
 ### Causal Loop Diagram ###
 
-![](05-im-1122.png)
+![Figure 32. Growth and Underinvestment Causal Loop Diagram](05-im-1122.png)
 
-[Growth and Underinvestment Causal Loop Diagram](http://insightmaker.com/insight/1122)
+[** Figure 32. Growth and Underinvestment Causal Loop Diagram](http://insightmaker.com/insight/1122)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/1124?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/1124?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 33. Growth and Underinvestment Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Growth and Underinvestment Stock & Flow Simulation](http://insightmaker.com/insight/1124)
-
-----------
-
-### Exercise 5-16 
-
-
-
-----------
-
-### Examples ###
-
+[** Figure 33. Growth and Underinvestment Stock & Flow Simulation](http://insightmaker.com/insight/1124)
 
 ### Effective Strategies ###
 
@@ -933,32 +575,23 @@ A Growth and Underinvestment Systems Archetype is simply an elaborated Limits to
 
 - It is possible that under pressure the standard may drift and this structure will develop into a Growth and Underinvestment with a Drifting Standard Systems Archetype.
 
+### Examples ###
+
 ## There Is A Tendency To Let The Standard Slip ##
 
 A Growth and Underinvestment with a Drifting Standard structure is simply an elaborated Growth and Underinvestment structure where the growth inhibitor induces a decline of the standard over time. The real nasty thing about this structure is that the growth inhibitor influence sets up a Reinforcing Loop which even further promotes a drifting of the standard over time.
 
 ### Causal Loop Diagram ###
 
-![](05-im-1123.png)
+![Figure 34. Growth and Underinvestment with a Driving Goal Causal Loop Diagram](05-im-1123.png)
 
-[Growth and Underinvestment with a Drifting Goal Causal Loop Diagram](http://insightmaker.com/insight/1123)
+[** Figure 34. Growth and Underinvestment with a Driving Goal Causal Loop Diagram](http://insightmaker.com/insight/1123)
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/1126?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/1126?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="Figure 35. Growth and Underinvestment with a Driving Goal Stock & Flow Simulation" width=950 height=650></IFRAME>
 
-[Growth and Underinvestment with a Drifting Goal Stock & Flow Simulation](http://insightmaker.com/insight/1126)
-
-----------
-
-### Exercise 5-17 
-
-
-
-----------
-
-### Examples ###
-
+[** Figure 35. Growth and Underinvestment with a Driving Goal Stock & Flow Simulation](http://insightmaker.com/insight/1126)
 
 ### Effective Strategies ###
 
@@ -969,6 +602,9 @@ A Growth and Underinvestment with a Drifting Standard structure is simply an ela
 
 - There are currently no known Systems Archetypes which are based on the Growth and Underinvestment with a Drifting Standard Systems Archetype.
 
+### Examples ###
+
+
 ## Summary ##
 
 The chapter should explicitly depict the relationships between the structures presented in the previous sections and explain the natural evolution paths for the structures.
@@ -977,6 +613,3 @@ The chapter should explicitly depict the relationships between the structures pr
 
 [Systems Archetypes Relationships](http://insightmaker.com/insight/538)
 
-## References ##
-
-- Braun, Bill. 2002. The Systems Archetypes. [http://wwwu.uni-klu.ac.at/gossimit/pap/sd/wb_sysarch.pdf](http://wwwu.uni-klu.ac.at/gossimit/pap/sd/wb_sysarch.pdf)
