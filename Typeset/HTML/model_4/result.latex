@@ -1,6 +1,6 @@
 \begin{oframed}\textbf{A State Transition Diagram for Disease} 
 
- This model illustrates the use of state transition diagrams to model a simple disease. This is a disease such as the flu where immunity is obtained once the individual recovers.
+ This model illustrates the use of state transition diagrams to model a simple disease. This is a disease such as the flu where immunity is obtained once the individual recovers from the disease.
 
 \begin{enumerate}
 \item Create a new \a{State} named \p{Healthy}.
@@ -10,7 +10,7 @@
 \end{minipage}
 \item 
 
-States represent the condition someone is in. So in our model a person can either be healthy, infected, or recovered from the infection. Now, lets add transitions that move a person from state to state.
+States represent the condition someone is in. So in our model a person can either be healthy, infected, or recovered from the infection. Now, let's add transitions that move a person from state to state.
 
 
 \item Create a new \a{Transition} going from the primitive \p{Healthy} to the primitive \p{Infected}. Name that transition \p{Infection}.
@@ -30,7 +30,7 @@ Now that the model structure has been designed, let's add equations and configur
 \end{minipage}
 \item 
 
-When a state is active, it means a person is in that state. By setting \p{Healthy} to start \textbf{true}, we have the person start in the healthy state.
+When a state is active, it means a person is in that state. By setting \p{Healthy} to start active, we have the person start in the healthy state.
 
 
 \item  Change the \a{Trigger Type} property of the primitive \p{Infection} to \e{Probability}.
@@ -39,7 +39,7 @@ When a state is active, it means a person is in that state. By setting \p{Health
 \item  Change the \a{Value/Equation} property of the primitive \p{Recovery} to \e{0.2}.
 \item 
 
-Using the Probability type for the transition trigger means that the person has a fixed probability of transitioning from one state to the next each year. Will give a 30% probability of the person becoming sick each year, and once sick a 20% chance of recovering.
+Using the Probability type for the transition trigger means that the person has a fixed probability of transitioning from one state to the next each year. We will assume a 30% probability of the person becoming sick each year and once sick, a 20% chance of recovering each year.
 
 
 \item 
@@ -51,10 +51,15 @@ Let's run the model now.
 \end{minipage}
 \item 
 
-We can run it again and we will see we get different results each time. This is because the model is stochastic and the transition triggers are random.
+A value of 1 for a state primitive means it is active. A value of 0 means it is not active. We can see from this diagram when the individual transitions from the healthy to the infected state and then from the infected state to recovered state.
 
 
-\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/result_22.png}
+\item 
+
+We can run the model again and we will see that we get different results each time we run it. This is because the model is stochastic and the transition triggers are random.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/result_23.png}
 \end{minipage}
 
 \end{enumerate} \end{oframed}

@@ -1,13 +1,13 @@
 \begin{oframed}\textbf{Agent Movement} 
 
- This model illustrates the use of movement within an agent based models. We adapt the model so that healthy agents run away from the nearest infected agent.
+ This model illustrates the use of movement within agent based models. We adapt the previous disease model so that healthy agents flee from the nearest infected agent.
 
 \begin{enumerate}
 \item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_7/diagram_3.png}
 \end{minipage}
 \item 
 
-We will extend our model from earlier by adding movement to the agents. First we need to create an action primitive.
+We will extend our disease model from earlier by adding movement to the agents. First we need to create an action primitive.
 
 
 \item Create a new \a{Action} named \p{Escape}.
@@ -17,13 +17,13 @@ We will extend our model from earlier by adding movement to the agents. First we
 \end{minipage}
 \item 
 
-We will have this action be triggered when the agent it is in is healthy and there is at least on infected agent in the simulation.
+We will have this action be triggered when the agent is healthy and there is at least one infected agent in the simulation.
 
 
 \item  Change the \a{Value/Equation} property of the primitive \p{Escape} to \e{[Healthy] and Count(FindState([Population], [Infected])) > 0}.
 \item 
 
-The action will cause healthy agents to move away from the nearest infected agent.
+The action will cause healthy agents to move away from the nearest infected agent. In effect, fleeing from sick individuals.
 
 
 \item  Change the \a{Action} property of the primitive \p{Escape} to \e{MoveTowards([Self], FindNearest(FindState([Population], [Infected]), [Self]), -2)}.
@@ -36,7 +36,7 @@ We can now run the simulation.
 \end{minipage}
 \item 
 
-These results look the same as before. To see the agents moving we need to change the display type to \textbf{Map} and then we can run the simulation again.
+These results are not too interesting as they do not show the locations of the agents. To see the agents moving, we need to change the display type to \textbf{Map} which gives us a visualization of the location of agents. Then we run the simulation again.
 
 
 \item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_7/result_20.png}
