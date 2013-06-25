@@ -273,7 +273,7 @@ table tr:nth-child(2n) {
 </style>
 </head>
 <body>
-<h1>Chapter 5 Implications of Reality v0.6 13.06.17</h1>
+<h1>Chapter 5 Implications of Reality v0.8 13.06.25</h1>
 <p>The sections of this chapter will provide an awareness of the relationships between a number of structures that occur repeatedly across all disciplines as well as provide a sense of how these structures are actually related to each other.</p>
 <h2>Three Basic Structures</h2>
 <p>In the Chapter 2 we covered the three basic structures in some detail. And it was claimed that all the models you will ever create will simply be a combination of some number of these basic structures. We don't expect that you take this on faith and while we can't prove it in this chapter we will provide you an opportunity to experience some of the more common structures which occur repeatedly across all disciplines of science.</p>
@@ -768,12 +768,36 @@ action = [gap] * [action factor]</p>
 <h3>Stock &amp; Flow Simulation</h3>
 <IFRAME SRC="http://InsightMaker.com/insight/554?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
 <p><a href="http://insightmaker.com/insight/554">Success to the Successful Stock &amp; Flow Simulation</a></p>
+<p>With settings of</p>
+<ul>
+<li>factor = 0.5</li>
+<li>when = 0</li>
+<li>pulse = 0</li>
+<li>Simulation Length = 10</li>
+<li>Time Step = 1</li>
+</ul>
+<p><img src="05-im-554.png" /></p>
+<p><a href="http://insightmaker.com/insight/554">Success to the Successful with Balanced Resources</a></p>
+<p>The above diagram should be as expected. Because the resources to A and B are the same their results are the same and developing at the same rate.</p>
+<p>With settings of</p>
+<ul>
+<li>factor = 0.5</li>
+<li>when = 4</li>
+<li>pulse = 1</li>
+<li>Simulation Length = 10</li>
+<li>Time Step = 1</li>
+</ul>
+<p><img src="05-im-554a.png" /></p>
+<p><a href="http://insightmaker.com/insight/554">Success to the Successful with A Pulse of Resources to B</a></p>
+<p>The results depicted in this graph are significantly different than the previous graph and provide a sense of the implications of an imbalance of resource allocation. The diagram actually shows that after a time resources are being taken away from A and provided to B.</p>
 <hr />
 <h3>Exercise 5-11</h3>
+<p>Run the model with different values of factor and pulse to get a sense of the impact they have on the results. What conclusions does this interaction lead you to?</p>
 <hr />
 <h3>Examples</h3>
 <ul>
 <li>balancing two boats http://bit.ly/17CI6sH</li>
+<li><a href="http://www.systemswiki.org/index.php?title=Category:Success_to_the_Successful">Success to the Successful Examples</a></li>
 </ul>
 <h3>Effective Strategies</h3>
 <p>There are actually two strategies for dealing with a Success to the Successful situation.
@@ -784,21 +808,64 @@ action = [gap] * [action factor]</p>
 <li>There are currently no known Systems Archetypes which are derivatives of the Success to the Successful Systems Archetype.</li>
 </ul>
 <h2>Growth Slows Over Time</h2>
-<p>A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth of which, after some success, is offset by the action of a Balancing Loop.</p>
+<p>A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth of which, after some success, is offset by the action of a Balancing Loop. As such it may produce exponential growth for a period of time before the growth slows.</p>
 <h3>Causal Loop Diagram</h3>
 <p><img src="05-im-550.png" /></p>
 <p><a href="http://insightmaker.com/insight/550">Limits to Growth Causal Loop Diagram</a></p>
+<p>The R1 Growth Loop is the standard reinforcing loop. It's not until the result reaches a certain level that it interacts with the limiting factor to actually detract from the results. This will be far more evident in the following simulation model.</p>
 <h3>Stock &amp; Flow Simulation</h3>
 <IFRAME SRC="http://InsightMaker.com/insight/551?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
 <p><a href="http://insightmaker.com/insight/551">Limits to Growth Stock &amp; Flow Simulation</a></p>
+<p>The structure is such that the action produces results which add to the action, the typical reinforcing structure. factor is just a value between 0 and 1 to allowing the variance of the rate of interaction. The balancing structure B2 is such that the slowing action drains from the results once the results actually reach the level of the limiting factor. The slowing factor is similar to factor in that allows for control of the rate of interaction.</p>
+<blockquote>
+<p>slowing = IfThenElse([results] &gt; [limiting factor], ([results] - [limiting factor]) * [slowing factor], 0)</p>
+</blockquote>
+<p>With settings of</p>
+<ul>
+<li>factor = 0.5</li>
+<li>results = 1</li>
+<li>limiting factor = 10</li>
+<li>slowing factor = 0</li>
+<li>Simulation Length = 15</li>
+<li>Time Step = 1</li>
+</ul>
+<p><img src="05-im-551.png" /></p>
+<p><a href="http://insightmaker.com/insight/551">Standard Reinforcing Structure if slowing factor = 0</a></p>
+<p>This graph should be expected with a slowing factor = 0.</p>
+<p>With settings of</p>
+<ul>
+<li>factor = 0.5</li>
+<li>results = 1</li>
+<li>limiting factor = 10</li>
+<li>slowing factor = 0.5</li>
+<li>Simulation Length = 15</li>
+<li>Time Step = 1</li>
+</ul>
+<p><img src="05-im-551a.png" /></p>
+<p><a href="http://insightmaker.com/insight/551">Standard Reinforcing Structure if slowing factor = 0.5</a></p>
+<p>Here it's evident that the slowing factor has a marked effect on the results though not sufficient to actually stop the growth.</p>
+<p>With settings of</p>
+<ul>
+<li>factor = 0.5</li>
+<li>results = 1</li>
+<li>limiting factor = 10</li>
+<li>slowing factor = 1</li>
+<li>Simulation Length = 15</li>
+<li>Time Step = 1</li>
+</ul>
+<p><img src="05-im-551b.png" /></p>
+<p><a href="http://insightmaker.com/insight/551">Standard Reinforcing Structure if slowing factor = 1</a></p>
+<p>Now it's quite evident that the slowing action has actually affected the result to such an extent that it's no longer growing.</p>
 <hr />
 <h3>Exercise 5-12</h3>
+<p>From the last example vary the values for factor to get a sense of how sensitive the result is to the R1 Growth loop strength.</p>
 <hr />
 <h3>Examples</h3>
 <ul>
 <li>Rabbits tend to multiply very rapidly so why is it we're not completely overrun by rabbits, well maybe everywhere except Australia?</li>
+<li>keep playing instead of cleaning up the mess in the room, which makes further play difficult, AND the increased mess repels one from cleaning up.</li>
+<li>[Limits to Growth Examples[(http://www.systemswiki.org/index.php?title=Category:Limits<em>to</em>Growth)</li>
 </ul>
-<h2>- keep playing instead of cleaning up the mess in the room, which makes further play difficult, AND the increased mess repels one from cleaning up.</h2>
 <h3>Effective Strategies</h3>
 <ul>
 <li>The best defense is a good offense. As defined in the effective strategies for the Reinforcing Loop, if there is a Reinforcing Loop operating start looking for what is going to become a limiting factor, and remove it before it even has a chance to create a substantial impact on the result.</li>
@@ -816,18 +883,45 @@ action = [gap] * [action factor]</p>
 <h2>Partners for Growth Become Adversaries</h2>
 <p>The Accidental Adversaries Systems Archetype represents a structure where two entities which would be in a synergistic growth relationship end up limiting each others results because of their own activities.</p>
 <h3>Causal Loop Diagram</h3>
-<p><img src="05-im-163.png" /></p>
-<p><a href="http://insightmaker.com/insight/163">Accidental Adversaries Causal Loop Diagram</a></p>
+<p><img src="05-im-177.png" /></p>
+<p><a href="http://insightmaker.com/insight/177">Accidental Adversaries Causal Loop Diagram</a></p>
+<p>A Activity contributes to B Success and B Activity contributes to A Success and we have a reinforcing structure R1. The problem arises when either A or B does something that promotes their own success which also acts to inhibit the success of the other. The other responds with an attempt to compensate for whatever is inhibiting their success though their action tends to inhibit the success of the other. As such the two entities that should be cooperating for their mutual success become adversaries.</p>
 <h3>Stock &amp; Flow Simulation</h3>
-<IFRAME SRC="http://InsightMaker.com/insight/164?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
-<p><a href="http://insightmaker.com/insight/164">Accidental Adversaries Stock &amp; Flow Simulation</a></p>
+<IFRAME SRC="http://InsightMaker.com/insight/178?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<p><a href="http://insightmaker.com/insight/178">Accidental Adversaries Stock &amp; Flow Simulation</a></p>
+<p>With settings of</p>
+<ul>
+<li>B Success = 0.5</li>
+<li>A Success = 0.5</li>
+<li>B to B Ctrl = 0</li>
+<li>A to A Ctrl = 0</li>
+<li>Simulation Length = 10</li>
+<li>Time Step = 1</li>
+</ul>
+<p><img src="05-im-178.png" /></p>
+<p><a href="http://insightmaker.com/insight/178">Standard Reinforcing Behavior</a></p>
+<p>When A and B are cooperating they are producing equivalent results.</p>
+<p>With settings of</p>
+<ul>
+<li>B Success = 0.5</li>
+<li>A Success = 0.5</li>
+<li>B to B Ctrl = 0</li>
+<li>A to A Ctrl = 0.5</li>
+<li>Simulation Length = 10</li>
+<li>Time Step = 1</li>
+</ul>
+<p><img src="05-im-178a.png" /></p>
+<p><a href="http://insightmaker.com/insight/178">Standard Reinforcing Behavior</a></p>
+<p>With A acting to promote it own success its actions diminish B Success and B will then expend energy attempting to compensate for the action by A. And then A will act to compensate for the actions by B which tend to inhibit the success of B. Thus we have a vicious cycle where the two were far better off cooperating.</p>
 <hr />
 <h3>Exercise 5-13</h3>
+<p>Why is it that the results balance whenever B to B Ctrl = A to A Ctrl?</p>
 <hr />
 <h3>Examples</h3>
 <ul>
 <li>Parents can be interesting. Both Mums and Dads want to act as good role models and create a positive family environment, but sometimes, each one of them gets caught up in being seen as ''the good parent&quot; and gives in to our whims and desires. We all know how this works: If one parent says 'no' to something, we just ask the other parent. The problem is that when one or both of our parents wants to be seen as the ''good parent,'' the other one ends up being seen as the 'bad' or 'tough' parent, and the whole 'good role model' or 'good family environment' disintegrates pretty quickly. 
 https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Family%20dysfunctionality%20Accid%20Adversaries.jpeg</li>
+<li><a href="http://www.systemswiki.org/index.php?title=Category:Accidental_Adversaries">Accidental Adversaries Examples</a></li>
 </ul>
 <h3>Effective Strategies</h3>
 <p>This structure points out how myopic local activity, with the best of intentions, can lead to an overall limiting development of the global system, and actually inhibit local development as well.
@@ -846,10 +940,30 @@ https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Family%20dysfunc
 <h3>Stock &amp; Flow Simulation</h3>
 <IFRAME SRC="http://InsightMaker.com/insight/560?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
 <p><a href="http://insightmaker.com/insight/560">Tragedy of the Commons Stock &amp; Flow Simulation</a></p>
+<p>With settings of</p>
+<ul>
+<li>a result = 1</li>
+<li>b result = 2</li>
+<li>resources available = 50</li>
+<li>a factor = 0.8</li>
+<li>b factor = 0.8</li>
+<li>replenishment rate = 50</li>
+<li>Simulation Length = 10</li>
+<li>Time Step = 0.5</li>
+</ul>
+<p><img src="05-im-560.png" /></p>
+<p><a href="http://insightmaker.com/insight/560">Tragedy of the Commons Example</a></p>
+<p>Notice that both A and B demonstrate exponential behavior until they diminish resources to the replenishment rate. At that time they them begin to demonstrate linear growth as they are limited by the replenishment rate. B result begins greater than A result and grows even faster than A because it consumes more resources.</p>
 <hr />
 <h3>Exercise 5-14</h3>
+<ul>
+<li>What happens if either A or B decides at some point to reduce their consumption of resources?</li>
+</ul>
 <hr />
 <h3>Examples</h3>
+<ul>
+<li><a href="http://www.systemswiki.org/index.php?title=Category:Tragedy_of_the_Commons">Tragedy of the Commons Examples</a></li>
+</ul>
 <h3>Effective Strategies</h3>
 <p>This structure repeatedly appears in organizational contexts where a service organization supports the success of multiple departments who fail to support the service organization in return. There are two strategies for dealing with this structure, one more effective than the other.
 - The most effective strategy for dealing with this structure is to wire in feedback paths from A's result and B's result to the resource replenishment so as A and B use resources their results promotes the availability of additional resources.
@@ -865,10 +979,27 @@ https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Family%20dysfunc
 <h3>Stock &amp; Flow Simulation</h3>
 <IFRAME SRC="http://InsightMaker.com/insight/1117?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
 <p><a href="http://insightmaker.com/insight/1117">Attractiveness Principle Stock &amp; Flow Simulation</a></p>
+<p>With settings of</p>
+<ul>
+<li>limiting factor 2 = 6</li>
+<li>limiting factor 1 = 4</li>
+<li>Results = 0.5</li>
+<li>action factor = 0.9</li>
+<li>slowing fact = 0.8</li>
+<li>Simulation Length = 10</li>
+<li>Time Step = 0.25</li>
+</ul>
+<p><img src="05-im-1117.png" /></p>
+<p><a href="http://insightmaker.com/insight/1117">Tragedy of the Commons Example</a></p>
+<p>With a sufficient growth rate Results grow fast enough such that limiting factor 1 can't sufficiently constrain the growth so limiting factor 2 also kicks in. With lower level growth rates it might be the case that only one constraint would become effective. And if the limiting factors came into effect at the same level then they would both have an impact. There are numerous variations for the interactions within this structure.</p>
 <hr />
 <h3>Exercise 5-15</h3>
+<ul>
+<li>Reduce the action factor to a point where growth doesn't overwhelm the limiting factors to see the affect on the result.</li>
+</ul>
 <hr />
 <h3>Examples</h3>
+<h2>- <a href="http://www.systemswiki.org/index.php?title=Category:Attractiveness_Principle">Attractiveness Principle Examples</a></h2>
 <h3>Effective Strategies</h3>
 <ul>
 <li>A strong offense is the most effective defense. Being aware that there is a growth situation in effect should induce the insightful to look for limiting factors because they will come into play sooner or later. Once limiting factors are identified steps should be taken to inhibit the limiting factors before they inhibit results.</li>
@@ -885,10 +1016,29 @@ https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Family%20dysfunc
 <h3>Stock &amp; Flow Simulation</h3>
 <IFRAME SRC="http://InsightMaker.com/insight/1124?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
 <p><a href="http://insightmaker.com/insight/1124">Growth and Underinvestment Stock &amp; Flow Simulation</a></p>
+<p>With settings of</p>
+<ul>
+<li>Result = 1</li>
+<li>Inhibitor Avoidance = 10</li>
+<li>standard = 0.2</li>
+<li>action factor = 0.5</li>
+<li>need factor = 1</li>
+<li>inhibitor factor = 0.5</li>
+<li>Simulation Length = 10</li>
+<li>Time Step = 0.5</li>
+</ul>
+<p><img src="05-im-1124.png" /></p>
+<p><a href="http://insightmaker.com/insight/1124">Tragedy of the Commons Example</a></p>
 <hr />
 <h3>Exercise 5-16</h3>
+<ul>
+<li>Can you adjust the parameters such that result growth is not inhibited?</li>
+</ul>
 <hr />
 <h3>Examples</h3>
+<ul>
+<li><a href="http://www.systemswiki.org/index.php?title=Category:Growth_and_Underinvestment">Growth and Underinvestment Examples</a></li>
+</ul>
 <h3>Effective Strategies</h3>
 <ul>
 <li>The only effective strategy for dealing with this structure is foresight. One has to study the implications of the Result before the Result actually places demands on the system and develop the slowing action avoidance before it is actually needed. Have you ever noticed that runners seem to be the people that least need to run? It's because they run.</li>
@@ -905,10 +1055,30 @@ https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Family%20dysfunc
 <h3>Stock &amp; Flow Simulation</h3>
 <IFRAME SRC="http://InsightMaker.com/insight/1126?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
 <p><a href="http://insightmaker.com/insight/1126">Growth and Underinvestment with a Drifting Goal Stock &amp; Flow Simulation</a></p>
+<p>With settings of</p>
+<ul>
+<li>Result = 0.5</li>
+<li>Inhibitor Avoidance = 0.5</li>
+<li>base standard = 1</li>
+<li>action factor = 0.5</li>
+<li>need factor = 1</li>
+<li>inhibitor factor = 0.5</li>
+<li>Simulation Length = 10</li>
+<li>Time Step = 0.5</li>
+</ul>
+<p><img src="05-im-1126.png" /></p>
+<p><a href="http://insightmaker.com/insight/1126">Tragedy of the Commons Example</a></p>
+<p>Because it takes time for the Inhibitor Avoidance to develop the standard slips from the base standard. As such the Inhibitor Avoidance doesn't develop to the extent that it should and the growth inhibitor is inhibited thus limiting the Result.</p>
 <hr />
 <h3>Exercise 5-17</h3>
+<ul>
+<li>How do you adjust the parameters so the standard doesn't slip?</li>
+</ul>
 <hr />
 <h3>Examples</h3>
+<ul>
+<li><a href="http://www.systemswiki.org/index.php?title=Category:Growth_and_Underinvestment_with_a_Drifting_Standard">Growth and Underinvestment with a Drifting Standard Examples</a></li>
+</ul>
 <h3>Effective Strategies</h3>
 <ul>
 <li>The only effective strategy for dealing with this structure is foresight. One has to study the implications of Result before Result actually places demands on the system and develop the Inhibitor Avoidance before it is actually needed. Have you ever noticed that runners seem to be the people that least need to run? It's because they run.</li>

@@ -1,4 +1,4 @@
-# Chapter 5 Implications of Reality v0.6 13.06.17 #
+# Chapter 5 Implications of Reality v0.8 13.06.25 #
 
 The sections of this chapter will provide an awareness of the relationships between a number of structures that occur repeatedly across all disciplines as well as provide a sense of how these structures are actually related to each other.
 
@@ -719,17 +719,46 @@ As long as A and B are equally successful everything will remain stable. Though 
 
 [Success to the Successful Stock & Flow Simulation](http://insightmaker.com/insight/554)
 
+With settings of
+
+- factor = 0.5
+- when = 0
+- pulse = 0
+- Simulation Length = 10
+- Time Step = 1
+
+![](05-im-554.png)
+
+[Success to the Successful with Balanced Resources](http://insightmaker.com/insight/554)
+
+The above diagram should be as expected. Because the resources to A and B are the same their results are the same and developing at the same rate.
+
+With settings of
+
+- factor = 0.5
+- when = 4
+- pulse = 1
+- Simulation Length = 10
+- Time Step = 1
+
+![](05-im-554a.png)
+
+[Success to the Successful with A Pulse of Resources to B](http://insightmaker.com/insight/554)
+
+The results depicted in this graph are significantly different than the previous graph and provide a sense of the implications of an imbalance of resource allocation. The diagram actually shows that after a time resources are being taken away from A and provided to B.
+
 ----------
 
 ### Exercise 5-11 
 
-
+Run the model with different values of factor and pulse to get a sense of the impact they have on the results. What conclusions does this interaction lead you to?
 
 ----------
 
 ### Examples ###
 
 - balancing two boats http://bit.ly/17CI6sH
+- [Success to the Successful Examples](http://www.systemswiki.org/index.php?title=Category:Success_to_the_Successful)
 
 ### Effective Strategies ###
 
@@ -743,7 +772,7 @@ There are actually two strategies for dealing with a Success to the Successful s
 
 ## Growth Slows Over Time ##
 
-A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth of which, after some success, is offset by the action of a Balancing Loop.
+A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth of which, after some success, is offset by the action of a Balancing Loop. As such it may produce exponential growth for a period of time before the growth slows.
 
 ### Causal Loop Diagram ###
 
@@ -751,17 +780,68 @@ A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth 
 
 [Limits to Growth Causal Loop Diagram](http://insightmaker.com/insight/550)
 
+The R1 Growth Loop is the standard reinforcing loop. It's not until the result reaches a certain level that it interacts with the limiting factor to actually detract from the results. This will be far more evident in the following simulation model.
+
 ### Stock & Flow Simulation ###
 
 <IFRAME SRC="http://InsightMaker.com/insight/551?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
 
 [Limits to Growth Stock & Flow Simulation](http://insightmaker.com/insight/551)
 
+The structure is such that the action produces results which add to the action, the typical reinforcing structure. factor is just a value between 0 and 1 to allowing the variance of the rate of interaction. The balancing structure B2 is such that the slowing action drains from the results once the results actually reach the level of the limiting factor. The slowing factor is similar to factor in that allows for control of the rate of interaction.
+
+> slowing = IfThenElse([results] > [limiting factor], ([results] - [limiting factor]) * [slowing factor], 0)
+
+With settings of
+
+- factor = 0.5
+- results = 1
+- limiting factor = 10
+- slowing factor = 0
+- Simulation Length = 15
+- Time Step = 1
+
+![](05-im-551.png)
+
+[Standard Reinforcing Structure if slowing factor = 0](http://insightmaker.com/insight/551)
+
+This graph should be expected with a slowing factor = 0.
+
+With settings of
+
+- factor = 0.5
+- results = 1
+- limiting factor = 10
+- slowing factor = 0.5
+- Simulation Length = 15
+- Time Step = 1
+
+![](05-im-551a.png)
+
+[Standard Reinforcing Structure if slowing factor = 0.5](http://insightmaker.com/insight/551)
+
+Here it's evident that the slowing factor has a marked effect on the results though not sufficient to actually stop the growth.
+
+With settings of
+
+- factor = 0.5
+- results = 1
+- limiting factor = 10
+- slowing factor = 1
+- Simulation Length = 15
+- Time Step = 1
+
+![](05-im-551b.png)
+
+[Standard Reinforcing Structure if slowing factor = 1](http://insightmaker.com/insight/551)
+
+Now it's quite evident that the slowing action has actually affected the result to such an extent that it's no longer growing.
+
 ----------
 
 ### Exercise 5-12 
 
-
+From the last example vary the values for factor to get a sense of how sensitive the result is to the R1 Growth loop strength.
 
 ----------
 
@@ -769,7 +849,8 @@ A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth 
 
 - Rabbits tend to multiply very rapidly so why is it we're not completely overrun by rabbits, well maybe everywhere except Australia?
 - keep playing instead of cleaning up the mess in the room, which makes further play difficult, AND the increased mess repels one from cleaning up.
-- 
+- [Limits to Growth Examples[(http://www.systemswiki.org/index.php?title=Category:Limits_to_Growth)
+
 ### Effective Strategies ###
 
 - The best defense is a good offense. As defined in the effective strategies for the Reinforcing Loop, if there is a Reinforcing Loop operating start looking for what is going to become a limiting factor, and remove it before it even has a chance to create a substantial impact on the result.
@@ -790,21 +871,53 @@ The Accidental Adversaries Systems Archetype represents a structure where two en
 
 ### Causal Loop Diagram ###
 
-![](05-im-163.png)
+![](05-im-177.png)
 
-[Accidental Adversaries Causal Loop Diagram](http://insightmaker.com/insight/163)
+[Accidental Adversaries Causal Loop Diagram](http://insightmaker.com/insight/177)
+
+A Activity contributes to B Success and B Activity contributes to A Success and we have a reinforcing structure R1. The problem arises when either A or B does something that promotes their own success which also acts to inhibit the success of the other. The other responds with an attempt to compensate for whatever is inhibiting their success though their action tends to inhibit the success of the other. As such the two entities that should be cooperating for their mutual success become adversaries.
 
 ### Stock & Flow Simulation ###
 
-<IFRAME SRC="http://InsightMaker.com/insight/164?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
+<IFRAME SRC="http://InsightMaker.com/insight/178?embed=0&editor=1&topBar=1&sideBar=1&zoom=0" TITLE="" width=950 height=650></IFRAME>
 
-[Accidental Adversaries Stock & Flow Simulation](http://insightmaker.com/insight/164)
+[Accidental Adversaries Stock & Flow Simulation](http://insightmaker.com/insight/178)
+
+With settings of
+
+- B Success = 0.5
+- A Success = 0.5
+- B to B Ctrl = 0
+- A to A Ctrl = 0
+- Simulation Length = 10
+- Time Step = 1
+
+![](05-im-178.png)
+
+[Standard Reinforcing Behavior](http://insightmaker.com/insight/178)
+
+When A and B are cooperating they are producing equivalent results.
+
+With settings of
+
+- B Success = 0.5
+- A Success = 0.5
+- B to B Ctrl = 0
+- A to A Ctrl = 0.5
+- Simulation Length = 10
+- Time Step = 1
+
+![](05-im-178a.png)
+
+[Standard Reinforcing Behavior](http://insightmaker.com/insight/178)
+
+With A acting to promote it own success its actions diminish B Success and B will then expend energy attempting to compensate for the action by A. And then A will act to compensate for the actions by B which tend to inhibit the success of B. Thus we have a vicious cycle where the two were far better off cooperating.
 
 ----------
 
 ### Exercise 5-13 
 
-
+Why is it that the results balance whenever B to B Ctrl = A to A Ctrl?
 
 ----------
 
@@ -812,6 +925,7 @@ The Accidental Adversaries Systems Archetype represents a structure where two en
 
 - Parents can be interesting. Both Mums and Dads want to act as good role models and create a positive family environment, but sometimes, each one of them gets caught up in being seen as ''the good parent" and gives in to our whims and desires. We all know how this works: If one parent says 'no' to something, we just ask the other parent. The problem is that when one or both of our parents wants to be seen as the ''good parent,'' the other one ends up being seen as the 'bad' or 'tough' parent, and the whole 'good role model' or 'good family environment' disintegrates pretty quickly. 
 https://dl.dropboxusercontent.com/u/102156844/Loop%20Structures/Family%20dysfunctionality%20Accid%20Adversaries.jpeg
+- [Accidental Adversaries Examples]( http://www.systemswiki.org/index.php?title=Category:Accidental_Adversaries)
 
 ### Effective Strategies ###
 
@@ -840,15 +954,34 @@ A Tragedy of the Commons situation exists whenever two or more activities, each,
 
 [Tragedy of the Commons Stock & Flow Simulation](http://insightmaker.com/insight/560)
 
+With settings of
+
+- a result = 1
+- b result = 2
+- resources available = 50
+- a factor = 0.8
+- b factor = 0.8
+- replenishment rate = 50
+- Simulation Length = 10
+- Time Step = 0.5
+
+![](05-im-560.png)
+
+[Tragedy of the Commons Example](http://insightmaker.com/insight/560)
+
+Notice that both A and B demonstrate exponential behavior until they diminish resources to the replenishment rate. At that time they them begin to demonstrate linear growth as they are limited by the replenishment rate. B result begins greater than A result and grows even faster than A because it consumes more resources.
+
 ----------
 
 ### Exercise 5-14 
 
-
+- What happens if either A or B decides at some point to reduce their consumption of resources?
 
 ----------
 
 ### Examples ###
+
+- [Tragedy of the Commons Examples](http://www.systemswiki.org/index.php?title=Category:Tragedy_of_the_Commons)
 
 ### Effective Strategies ###
 
@@ -877,17 +1010,34 @@ It's relatively well understood that you can't be all things to all people. Some
 
 [Attractiveness Principle Stock & Flow Simulation](http://insightmaker.com/insight/1117)
 
+With settings of
+
+- limiting factor 2 = 6
+- limiting factor 1 = 4
+- Results = 0.5
+- action factor = 0.9
+- slowing fact = 0.8
+- Simulation Length = 10
+- Time Step = 0.25
+
+![](05-im-1117.png)
+
+[Tragedy of the Commons Example](http://insightmaker.com/insight/1117)
+
+With a sufficient growth rate Results grow fast enough such that limiting factor 1 can't sufficiently constrain the growth so limiting factor 2 also kicks in. With lower level growth rates it might be the case that only one constraint would become effective. And if the limiting factors came into effect at the same level then they would both have an impact. There are numerous variations for the interactions within this structure.
+
 ----------
 
 ### Exercise 5-15 
 
-
+- Reduce the action factor to a point where growth doesn't overwhelm the limiting factors to see the affect on the result.
 
 ----------
 
 ### Examples ###
 
-
+- [Attractiveness Principle Examples](http://www.systemswiki.org/index.php?title=Category:Attractiveness_Principle)
+- 
 ### Effective Strategies ###
 
 - A strong offense is the most effective defense. Being aware that there is a growth situation in effect should induce the insightful to look for limiting factors because they will come into play sooner or later. Once limiting factors are identified steps should be taken to inhibit the limiting factors before they inhibit results.
@@ -914,16 +1064,32 @@ A Growth and Underinvestment Systems Archetype is simply an elaborated Limits to
 
 [Growth and Underinvestment Stock & Flow Simulation](http://insightmaker.com/insight/1124)
 
+With settings of
+
+- Result = 1
+- Inhibitor Avoidance = 10
+- standard = 0.2
+- action factor = 0.5
+- need factor = 1
+- inhibitor factor = 0.5
+- Simulation Length = 10
+- Time Step = 0.5
+
+![](05-im-1124.png)
+
+[Tragedy of the Commons Example](http://insightmaker.com/insight/1124)
+
 ----------
 
 ### Exercise 5-16 
 
-
+- Can you adjust the parameters such that result growth is not inhibited?
 
 ----------
 
 ### Examples ###
 
+- [Growth and Underinvestment Examples](http://www.systemswiki.org/index.php?title=Category:Growth_and_Underinvestment)
 
 ### Effective Strategies ###
 
@@ -949,16 +1115,34 @@ A Growth and Underinvestment with a Drifting Standard structure is simply an ela
 
 [Growth and Underinvestment with a Drifting Goal Stock & Flow Simulation](http://insightmaker.com/insight/1126)
 
+With settings of
+
+- Result = 0.5
+- Inhibitor Avoidance = 0.5
+- base standard = 1
+- action factor = 0.5
+- need factor = 1
+- inhibitor factor = 0.5
+- Simulation Length = 10
+- Time Step = 0.5
+
+![](05-im-1126.png)
+
+[Tragedy of the Commons Example](http://insightmaker.com/insight/1126)
+
+Because it takes time for the Inhibitor Avoidance to develop the standard slips from the base standard. As such the Inhibitor Avoidance doesn't develop to the extent that it should and the growth inhibitor is inhibited thus limiting the Result.
+
 ----------
 
 ### Exercise 5-17 
 
-
+- How do you adjust the parameters so the standard doesn't slip?
 
 ----------
 
 ### Examples ###
 
+- [Growth and Underinvestment with a Drifting Standard Examples](http://www.systemswiki.org/index.php?title=Category:Growth_and_Underinvestment_with_a_Drifting_Standard)
 
 ### Effective Strategies ###
 

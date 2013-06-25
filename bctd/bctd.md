@@ -4,6 +4,8 @@
 
 Click on the link below to get to links for content review.
 
+- <a href="#c5">13.06.25 Chapter 5v0.8</a>
+- <a href="#c13">13.06.25 Chapter 13v1</a>
 - <a href="#c4">13.06.21 Chapter 4v3</a>
 - <a href="#c3">13.06.19 Chapter 3v2</a>
 - <a href="#c5">13.06.17 Chapter 5v0.6</a>
@@ -205,6 +207,10 @@ Summary
 
 Note that Chapter 5 may take 1 to 5 minutes to load depending on the speed of your internet connection.
 
+v0.8 finished the first pass on the reinforcing structures though I still need to write additional descriptions, with additional simulation runs, and figure out some meaningful exercises.
+
+- [v0.8 13.06.25](./reality-v08/reality.html) Put comments in [Chapter 5 Comments](http://linkd.in/13xqSZv)
+
 v0.6 finishes the balancing loop structures though there's still a differentiation between the Shifting the Burden and the Addiction structure that has to be sorted out as well as identification of which examples to include for each structure.
 
 - [v0.6 13.06.17](./reality-v06/reality.html) Put comments in [Chapter 5 Comments](http://linkd.in/13xqSZv)
@@ -295,6 +301,20 @@ Note that this is a 6mb .pdf file so on a slow connection download may take a wh
 - Note that this is new chapter not previously discussed.
 
 - [v1 13.06.15](./global-v1.pdf) Put comments in -> [Chapter 11 Comments](http://linkd.in/1afeAZJ)
+
+## <a name="c13"></a>Chapter 13 - Modeling with Agents ##
+
+* The State Transition Diagram
+* Creating Agents
+* Working with Agents
+* Agent Geography
+* Multiline Equations
+* Functions
+* Integration SD and ABM
+
+- Note that this is new chapter on Agent Based Modeling not previously discussed.
+
+- [v1 13.06.25](./agents-v1.pdf) Put comments in -> [Chapter 13 Comments](http://linkd.in/19xGNJY)
 
 # Appendices #
 
