@@ -277,12 +277,12 @@ We have just put together a powerful site very quickly. Our site lets us share a
 			
 	<h1>The Model</h1>
 		<IFRAME SRC="http://InsightMaker.com/insight/1954/embed?topBar=1&sideBar=1&zoom=1"
-		TITLE="Embedded Insight" width=600 height=420></IFRAME>
+		TITLE="Embedded Insight" width=640 height=480></IFRAME>
 		
 	<h1>Discussion</h1>
 		<div id="disqus_thread">Discussion here</div>
 		<script type="text/javascript">
-		    var disqus_shortname = ''; // required: replace example with your forum shortname
+		    var disqus_shortname = ''; // required: replace with your forum shortname
 		    (function() {
 		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 		        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

@@ -18,7 +18,7 @@
 \end{minipage}
 \item 
 
-Let's now implement the simple exponential growth model we have discussed in this chapter. We have a population that starts with 100 people and increases at a rate of 10% per year. In addition to creating the stock and flow model, we have also created a variable, \p{True Population}, that contains the analytical solution to the model.
+Let's now implement the simple exponential growth model we have discussed in this chapter. We have a population that starts with 100 people and increases at a rate of 10\% per year. In addition to creating the stock and flow model, we have also created a variable, \p{True Population}, that contains the analytical solution to the model.
 
 
 \item 

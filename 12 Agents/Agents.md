@@ -44,6 +44,8 @@ Condition
 
 {"title": "A State Transition Diagram for Disease", "description": "This model illustrates the use of state transition diagrams to model a simple disease. This is a disease such as the flu where immunity is obtained once the individual recovers from the disease."}
 
+{"cmd": "Math.seedrandom(1)"}
+
 {"geometry":{"x":470,"y":120,"width":100,"height":40},"name":"Healthy","create":"State"}
 
 {"geometry":{"x":470,"y":240,"width":100,"height":40},"name":"Infected","create":"State"}
@@ -162,63 +164,65 @@ When we have a smaller number of people, the overall population changes are more
 
 ## Working with Agents
 
-Working with agents is fundamentally different from working with primitives in a pure System Dynamics your model. For instance, if you have a regular model and refer to the value of a variable or stock you get a single value back. With agents, however, when you refer to the value of a primitive you might get a separate value for each individual agent in your model. So for instance, if you have 100 agents and you refer to the primitive \p{Size}, you will get100 different sizes one for each of the agents in the model.
+Working with agents is fundamentally different from working with primitives in a pure System Dynamics model. For instance, if you have a regular model and you refer to the value of a variable or stock you get a single value back. With agents, however, when you refer to the value of a primitive you might get a separate value for each individual agent in your model.
+
+So for instance, if you have 100 agents and you refer to the primitive \p{Height}, you will get 100 different heights one for each of the agents in the model. Similarly, in the case of our disease model, if you you request the value of the state \p{Infected}, you will get a different infected value for each of the agents in the model.
 
 You will need to extend your modeling toolkit in order to be able to effectively manage agents and accomplish your goals in your model. The key building block of this extended toolkit is the vector^[In other programing languages and modeling environments vectors are sometimes called "Arrays" or "Lists".]. In the following sections we will first introduce the general concept of vectors and then show how you can use them to interact with agents.
 
 ### Working with Vectors
 
-A vector is an ordered list of items. In Insight Maker vectors can be written using the '«' sign (or '<<') followed by the '»' sign (or '>>'). For instance the following is a vector of the first four integers:
+A vector is an ordered list of items. In Insight Maker vectors can be written using the '«' sign (or '<<') followed by the '»' sign (or '>>'). For instance imagine we had a small population of only four people. If we asked the model for the heights of those four people^[Using an equation like \e{Value(FindAll([Population]), [Height])}. We'll see later how to construct equations like this.] in meters we might get something like this:
 
-\e{«1, 2, 3, 4»}
+\e{«2, 1.8, 1.9, 1.5»}
 
-Insight Maker has an extensive set of capabilities and functions for manipulating vectors. For instance you can do multiplication using vectors:
+This indicates that our population has four people with heights of 2, 1.8, 1.9 and 1.5 meters. Insight Maker has an extensive set of capabilities and functions for manipulating and summarizing vectors such as this. For instance, if we wanted to know the height of the tallest person in our population, we could use the \e{Max()} function:
 
-\e{2*«1, 2, 3, 4» # = «2, 4, 6, 8»}
+\e{Max(«2, 1.8, 1.9, 1.5») # = 2}
 
-Or do elementwise multiplication:
+If we wanted to know the height of the smallest person in the population we could use the \e{Min()} function:
 
-\e{«1, 2, 1, 2»*«1, 2, 3, 4» # = «1, 4, 3, 8»}
+\e{Min(«2, 1.8, 1.9, 1.5») # = 1.5}
 
-Or addition using vectors:
+Let's say we wanted to know the average height of the people in our our population. We could either use the \e{Mean()} or \e{Median()} functions:
 
-\e{2+«1, 2, 3, 4» # = «3, 4, 5, 6»}
+\e{Mean(«2, 1.8, 1.9, 1.5») # = 1.8}
 
-Again, we can also do addition elementwise:
+\e{Median(«2, 1.8, 1.9, 1.5») # = 1.85}
 
-\e{«1, 2, 1, 2»+«1, 2, 3, 4» # = «2, 4, 4, 6»}
+We can also use basic mathematical operations on our vectors. For example, assume we needed to design a room such that the top of the room was at least half a meter above a person's head. We could find the required room height for each person by adding 0.5 to the vector of heights:
 
-There are also a large number of functions you can use to summarize vectors. For instance, you can find the average value in a vector:
+\e{«2, 1.8, 1.9, 1.5» + 0.5 # = «2.5, 2.3, 2.4, 2»}
 
-\e{mean(«1, 2, 3, 4») # = 2.5}
+We can also add vectors together. For instance, let's imagine that some of the agents had hats on and we have measured the height of these hats and got the following vector of heights: \e{«0.05, 0, 0.1, 0»} (two of the people do not wear hats). We could find the height of the agents when they are wearing their hats using:
 
-Or the number of elements in a vector:
+\e{«2, 1.8, 1.9, 1.5» + «0.05, 0, 0.1, 0» # = «2.05, 1.8, 2, 1.5»}
 
-\e{count(«1, 2, 3, 4») # = 4 }
+Another useful vector function is the \e{Count()} function. Assuming we did not know there were four agents, we could determine how many elements there were in the vector using this function:
 
-There are also functions you can use to change the ordering of elements in a vector:
+\e{Count(«2, 1.8, 1.9, 1.5») # = 4 }
 
-\e{reverse(«1, 2, 3, 4») # = «4, 3, 2, 1» }
+You can do a lot with these basic functions but there are also two very powerful vector functions we should mention: \e{Map()} and \e{Filter()}. Map takes each element in a vector and applies some transformation to it and returns a vector of the transformations. As an example, let's say we wanted to test whether or not are agents were tall enough to ride an amusement park ride with a cutoff of 1.85 meters. We could get a vector containing whether or not each agent was tall enough using:
 
-\e{sort(«3, 4, 2, 1») # = «1, 2, 3, 4» }
+\e{Map(«2, 1.8, 1.9, 1.5», x >= 1.85) # = «true, false, true, false» }
 
-A couple of very useful functions are available to combine vectors together:
+Here the function \e{x >= 2} is applied to each element in the vector (with \e{x} representing the element value) and the results of this element-by-element evaluation of the function is returned.
+
+Filter takes a function and applies it to each element in a vector. If the function evaluates to true, the element is included in the resulting vector; if the function evaluates to false, the element is not included in the results. For instance, if we just wanted the heights of the people who were tall enough to ride the ride, we could use:
+
+\e{Filter(«2, 1.8, 1.9, 1.5», x >= 1.85) # = «2, 1.9» }
+
+Lastly, there are a couple of very useful functions are available to combine vectors together. \e{Union()} takes two vectors and combines them together removing duplicated elements. 
 
 \e{Union(«1, 2 ,3», «2, 3 ,4») # = «1, 2, 3, 4» }
 
+\e{Intersection()} takes two vectors and returns a vector containing the elements that are in both of the vectors.
+
 \e{Intersection(«1, 2 ,3», «2, 3 ,4») # = «2, 3» }
 
+\e{Difference()} takes two vectors and returns a vector containing the elements that are in either one of the vectors but *not* in both of the vectors.
+
 \e{Difference(«1, 2 ,3», «2, 3 ,4») # = «1, 4» }
-
-And lastly there are two very powerful vector functions we should mention: \e{Map()} and \e{Filter()}. Map takes each element in a vector and applies some transformation to it and returns a vector of the transformations. For instance, if we wanted to find the square of each element in a vector we could use the following:
-
-\e{Map(«1, 2, 3, 4», x^2) # = «1, 4, 9, 16» }
-
-Here the function \e{x^2} is applied to each element in the vector (with \e{x} representing the element value) and the results are returned.
-
-Filter takes a function and applies it to each element in a vector. If the function evaluates to true, the element is included in the resulting vector; if the function evaluates to false, the element is not included in the results. For instance, the following function filters out all elements that are smaller than 2:
-
-\e{Filter(«1, 2, 3, 4», x >= 2) # = «2, 3, 4» }
 
 There are many more vector functions available, but these are some of the key ones. They will prove invaluable when you come to working with vectors of agents.
 
@@ -228,43 +232,43 @@ Insight Maker includes a number of functions to access the individual agents wit
 
 \e{FindAll([Population])}
 
-So if your agent population currently had 100 agents in it, this would return a vector with 100 elements where the first element referred to the first agent, the second element referred to the second agent and so on. It is important to note that these elements are agent references, not numbers. So you can use a function like \e{Reverse()} on the resulting vector, but you cannot directly use functions like \e{Mean()} or \e{Sort()} as the agent references are not numerical values^[The agents certainly contain many numerical values in their stocks, variables, or states; but an agent reference itself is not numerical and so you cannot do things such as directly taking the average of the agents or sorting them.]. We will see how to access the values for agents next.
+So if your agent population currently had 100 agents in it, this would return a vector with 100 elements where the first element referred to the first agent, the second element referred to the second agent and so on. It is important to note that these elements are agent references, not numbers. So you can use a function like \e{Reverse()} on the resulting vector, but you cannot directly use functions like \e{Mean()} as the agent references are not numerical values^[The agents certainly contain many numerical values in their stocks, variables, or states; but an agent reference itself is not numerical and so you cannot do things such as directly taking the average of the agents or sorting them.]. We will see how to access the values for agents next.
 
-In addition to the FindAll function, there are other find functions that return a subset of the agents in the model. For instance, the \e{FindState()} and \e{FindNotState()} functions return, respectively, agents that either have the given state active or not active. For instance, if our agents had a state primitive called \p{Smoker} that represented if the agent was a smoker or not, we could get a vector of the agents in our population that were smokers using the following:
+In addition to the FindAll function, there are other find functions that return a subset of the agents in the model. For instance, the \e{FindState()} and \e{FindNotState()} functions return, respectively, agents that either have the given state active or not active. For instance, if we go back to our agent-based disease model, our agents had a state primitive called \p{Infected} that represented if the agent was currently sick, we could get a vector of the agents in our population that were currently sick using the following:
 
-\e{FindState([Population], [Smoker])}
+\e{FindState([Population], [Infected])}
 
-And we could obtain a vector of the agents that were not smokers with:
+And we could obtain a vector of the agents that were not currently infected with:
 
-\e{FindNotState([Population], [Smoker])}
+\e{FindNotState([Population], [Infected])}
 
-Find functions can also be nested. For instance, if we wanted a vector of all male smokers, we could do something like the following:
+Find functions can also be nested. For instance, if we added a \p{Male} state primitive to our agents representing whether or not the agent was a man; we could obtain a vector of all currently infected men with something like the following:
 
-\e{FindState(FindState([Population], [Smoker]), [Male])}
+\e{FindState(FindState([Population], [Infected]), [Male])}
 
-Nesting find statements is effectively using Boolean AND logic (like you might use on a search engine: "Smoker AND Male"). To do Boolean OR logic (e.g. "Male OR Smoker") and return all the agents that are either a smoker or a man (or both), you can use the Union function to merge two vectors:
+Nesting find statements is effectively using Boolean AND logic (like you might use on a search engine: "Infected AND Male"). To do Boolean OR logic (e.g. "Infected OR Male") and return all the agents that are either infected or a man (or both), you can use the Union function to merge two vectors:
 
-\e{Union(FindState([Population], [Smoker]), FindState([Population], [Male]))}
+\e{Union(FindState([Population], [Infected]), FindState([Population], [Male]))}
 
-If you wanted the agents that were either smokers or men (but not both simultaneously), you could use:
+If you wanted the agents that were either infected or men (but not both simultaneously), you could use:
 
-\e{Difference(FindState([Population], [Smoker]), FindState([Population], [Male]))}
+\e{Difference(FindState([Population], [Infected]), FindState([Population], [Male]))}
 
 ### Agent Values
 
 Once you have a vector of agents, you can extract the values of the specific primitives in those agents using the \e{Value()} and \e{SetValue()} functions.
 
-The Value function takes two arguments: a vector of agents and the primitive for which you want the value. It then returns the value of that primitive in each of the agents. For instance, let us say our agents have a stock primitive named \p{Age}. We could get a vector of the age of all the people in the model like so:
+The Value function takes two arguments: a vector of agents and the primitive for which you want the value. It then returns the value of that primitive in each of the agents. For instance, let us say our agents have a primitive named \p{Height}. We could get a vector of the height of all the people in the model like so:
 
-\e{Value(FindAll([Population]), [Age])}
+\e{Value(FindAll([Population]), [Height])}
 
-A vector of ages by itself is generally of not too much use. Often we will want to summarize it, for instance by finding the average age of the people in our population:
+A vector of heights by itself is generally of not too much use. Often we will want to summarize it, for instance by finding the average height of the people in our population:
 
-\e{Mean(Value(FindAll([Population]), [Age]))}
+\e{Mean(Value(FindAll([Population]), [Height]))}
 
-In addition to determining the value of a primitive in an agent, you can also manually set the agents’ primitive values using the SetValue function. It takes the same arguments as the Value function in addition to the value you want to set primitives to. For instance, we could use the following to set the age of all our agents to 25:
+In addition to determining the value of a primitive in an agent, you can also manually set the agents’ primitive values using the SetValue function. It takes the same arguments as the Value function in addition to the value you want to set primitives to. For instance, we could use the following to set the height of all our agents to 2.1:
 
-\e{SetValue(FindAll([Population]), [Age], 25)}
+\e{SetValue(FindAll([Population]), [Height], 2.1)}
 
 # Model
 
@@ -467,22 +471,22 @@ Variable names can contain any number of letters and numbers and must always sta
 
 ### If-Then-Else
 
-You should be familiar with the \e{IfThenElse()} function. A multiline alternative to it exists. The following is equivalent to \e{IfThenElse([Lake] > 10, 1, 2)}.
+You should be familiar with the \e{IfThenElse()} function. A multiline alternative to it exists. The following is equivalent to \e{IfThenElse([Height] > 2, 1, 2)}.
 
 \e{
-If [Lake] > 10 Then
+If [Height] > 10 Then
 	1
 Else
 	2
 End If
 }
 
-One of the benefits of these multiline equations is that they can be more readable than the single line functions. This is especially true if you are trying to do nested *if* statements. Compare \e{IfThenElse([Lake] > 10, 1, IfThenElse([Lake] < 5, -1, 2))} to:
+One of the benefits of these multiline equations is that they can be more readable than the single line functions. This is especially true if you are trying to do nested *if* statements. Compare \e{IfThenElse([Height] > 2, 1, IfThenElse([Height] < 1, -1, 2))} to:
 
 \e{
-If [Lake] > 10 Then
+If [Height] > 2 Then
 	1
-Else If [Lake] < 5 Then
+Else If [Height] < 1 Then
 	-1
 Else
 	2

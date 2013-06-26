@@ -6,7 +6,7 @@
 \item Create a new \a{State} named \p{Healthy}.
 \item Create a new \a{State} named \p{Infected}.
 \item Create a new \a{State} named \p{Recovered}.
-\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/diagram_5.png}
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/diagram_6.png}
 \end{minipage}
 \item 
 
@@ -26,7 +26,7 @@ Now that the model structure has been designed, let's add equations and configur
 
 
 \item  Change the \a{Start Active} property of the primitive \p{Healthy} to \e{True}.
-\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/diagram_12.png}
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/diagram_13.png}
 \end{minipage}
 \item 
 
@@ -39,7 +39,7 @@ When a state is active, it means a person is in that state. By setting \p{Health
 \item  Change the \a{Value/Equation} property of the primitive \p{Recovery} to \e{0.2}.
 \item 
 
-Using the Probability type for the transition trigger means that the person has a fixed probability of transitioning from one state to the next each year. We will assume a 30% probability of the person becoming sick each year and once sick, a 20% chance of recovering each year.
+Using the Probability type for the transition trigger means that the person has a fixed probability of transitioning from one state to the next each year. We will assume a 30\% probability of the person becoming sick each year and once sick, a 20\% chance of recovering each year.
 
 
 \item 
@@ -47,7 +47,7 @@ Using the Probability type for the transition trigger means that the person has 
 Let's run the model now.
 
 
-\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/result_20.png}
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/result_21.png}
 \end{minipage}
 \item 
 
@@ -59,7 +59,7 @@ A value of 1 for a state primitive means it is active. A value of 0 means it is 
 We can run the model again and we will see that we get different results each time we run it. This is because the model is stochastic and the transition triggers are random.
 
 
-\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/result_23.png}
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_4/result_24.png}
 \end{minipage}
 
 \end{enumerate} \end{oframed}
