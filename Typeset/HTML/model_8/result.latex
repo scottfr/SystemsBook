@@ -1,0 +1,77 @@
+\begin{oframed}\textbf{Optimizing Parameter Values} 
+
+ This model illustrates the use of optimization and historical data to select the growth rate for a simulated population of hamsters.
+
+\begin{enumerate}
+\item Create a new \a{Converter} named \p{Historical Hamsters}.
+\item  Change the \a{Data} property of the primitive \p{Historical Hamsters} to \e{0, 22; 2, 49; 4, 40; 6, 61; 8, 100; 10, 104; 12, 153; 14, 243; 16, 236; 18, 370; 20, 560}.
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_8/diagram_4.png}
+\end{minipage}
+\item 
+
+We start by importing our historical population data into a converter primitive. In this illustrative example we have twenty years of data with a census of the hamster population being carried out every two years. We run the model to see what this historical data looks like.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_8/result_6.png}
+\end{minipage}
+\item 
+
+There is a lot of variability and the population even declines some years. However, it looks like in general the rate of growth increases as the population size increases. This is what we would expect to see with exponential growth. Let's build a simple exponential growth model to attempt to replicate what we see with the historical data.
+
+
+\item Create a new \a{Stock} named \p{Hamsters}.
+\item Create a new \a{Flow} going from empty space to the primitive \p{Hamsters}. Name that flow \p{Net Population Growth}.
+\item Create a new \a{Variable} named \p{Net Growth Rate}.
+\item Create a new \a{Link} going from the primitive \p{Net Growth Rate} to the primitive \p{Net Population Growth}.
+\item Create a new \a{Link} going from the primitive \p{Historical Hamsters} to the primitive \p{Hamsters}.
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_8/diagram_13.png}
+\end{minipage}
+\item 
+
+That's the structure of our model. Now we can fill in the equations. We'll set the initial population size for our simulated hamster population to be the same as for the historical data.
+
+
+\item  Change the \a{Initial Value} property of the primitive \p{Hamsters} to \e{[Historical Hamsters]}.
+\item  Change the \a{Flow Rate} property of the primitive \p{Net Population Growth} to \e{[Hamsters]*[Net Growth Rate]}.
+\item 
+
+What growth rate should we begin with? We do not have any data on this. Let's experiment by starting with 10\% per year and see what we end up.
+
+
+\item  Change the \a{Equation} property of the primitive \p{Net Growth Rate} to \e{0.1}.
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_8/result_20.png}
+\end{minipage}
+\item 
+
+That does not look too great. Our simulated population is much smaller than the historical values. Let's try a larger growth rate, say 30\%.
+
+
+\item  Change the \a{Equation} property of the primitive \p{Net Growth Rate} to \e{0.3}.
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_8/result_23.png}
+\end{minipage}
+\item 
+
+That's not good either, now our population is too large! We could keep experimenting with different growth rates to find a good one, but that might take a while. Let's just let the optimizer do the work for us. First we need to create a primitive to hold the error. We will use the squared error measure we discussed earlier.
+
+
+\item Create a new \a{Variable} named \p{Squared Error}.
+\item Create a new \a{Link} going from the primitive \p{Hamsters} to the primitive \p{Squared Error}.
+\item Create a new \a{Link} going from the primitive \p{Historical Hamsters} to the primitive \p{Squared Error}.
+\item  Change the \a{Equation} property of the primitive \p{Squared Error} to \e{([Hamsters]-[Historical Hamsters])\^{}2}.
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_8/diagram_29.png}
+\end{minipage}
+\item 
+
+There, we have set up what we need for the optimizer to work. Now we can run the optimizer. We set the \textbf{Goal Primitive} to \p{Squared Error} and the \textbf{Primitive to Change} to \p{Net Growth Rate}. We tell the optimizer to minimize the integral of the error and set the optimizer to work.
+
+
+\item 
+
+The optimizer gets our results almost instantly: 0.172 or 17.2\% is the optimal growth rate. When we run the model with this value the results look great. It's an almost perfect match between the historical and simulated data.
+
+
+\item  Change the \a{Equation} property of the primitive \p{Net Growth Rate} to \e{0.172}.
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_8/result_34.png}
+\end{minipage}
+
+\end{enumerate} \end{oframed}
