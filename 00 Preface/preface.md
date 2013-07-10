@@ -1,4 +1,4 @@
-# Preface #
+## Preface ##
 
 Ludwig von Bertalanffy(1) first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another. When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. 
 
