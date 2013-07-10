@@ -75,6 +75,32 @@ An alternative to squared error that treats all types of differences the same is
 
 Many other techniques are available for measuring error or assessing goodness of fit. Most statistical approaches function by specifying a full probability model for the data and then taking the goodness of fit not as a measure of error, but rather as the *likelihood*^[Likelihood is a technical statistical term. It can be roughly thought of as equivalent to "probability", though it is not precisely that.] of observing the results we saw given the parameter values. To be clear the issue of optimizing parameter values for models is one that is more complex than what we have presented here. Many sources of error exist in time series and analyzing them is a very complex, statistical challenge. The basic techniques we have presented are, however, useful tools that serve as gateways towards further analytical work.
 
+## Multi-Objective Optimizations
+
+So far our examples have focused on optimizing parameter values for a single population of animals. But what if, instead of one population, we had two or more?
+
+Imagine we were simulation two interacting populations of animals such as the hamsters and their food source, the Hippo Toads. If we had historical data on both the toads and the hamsters we would like our choice of parameter values to result in the best fit between the simulated and historical hamster populations while at the same time resulting in the best fit between the simulated an historical toad populations. This is often quite difficult to achieve, as optimizing the fit for one population will often result in non-optimal fits for the second population.
+
+A straightforward way to try to optimize both populations at once is to make our overall error the sum of the errors for the hamsters and the errors for the toads. For instance, if we had two historical data converters, one for the toads and hamsters, and two stocks, one for each population, the following equation would combine the absolute value errors for both populations.
+
+\e{ Abs([Simulated Hamsters]-[Historical Hamsters]) + Abs([Simulated Toads]-[Historical Toads]) }
+
+Simply summing the values can sometimes create issues in practice however. Let us imagine that the toad population is generally 10 times as large as the hamster population. If this were the case, the error predicting the toads might be much larger than the error predicting the hamsters and so the optimizer will be forced to focus on optimizing the toad predictions to the detriment of the accuracy of the hamster predictions.
+
+One way to attempt to address this issue is to use the percent error instead of the error magnitude. For example:
+
+\e{ Abs([Simulated Hamsters]-[Historical Hamsters])/[Historical Hamsters] + Abs([Simulated Toads]-[Historical Toads])/[Historical Toads] }
+
+The percent error metric will be more resilient to differences in scales between the different populations. It will run into issues though if either historical population becomes 0 in size or becomes very small.
+
+Another wrinkle with multi-objective optimizations is that one objective may be more important than the other objectives. For instance, let's imagine our toad and hamster populations were roughly the same size so we do not have to worry about scaling. However, in this case we care much more about predicting the hamsters correctly than we care about the toads. The whole point of the model is to estimate the hamster population so we want to make that as accurate as possible, but we would still like to do well predicting the toads if we are able to.
+
+You can tackle issues like these by "weighting" the different objectives in your aggregate error function. This is most simply done by multiplying the different objectives by a quantity indicating their relative importances. For instance, if we thought getting the hamsters right was about twice as important as getting the toads right, we could use something like:
+
+\e{ 2*Abs([Simulated Hamsters]-[Historical Hamsters]) + Abs([Simulated Toads]-[Historical Toads]) }
+ 
+This makes one unit of error in the hamster population simulation count just as much as two units of error for the toad population simulation^[Weighting is a useful technique you can use for other optimization tasks. Imagine you had a model simulating the growth of your business in the next 20 years. You want to use this model to adjust your strategy to achieve three objectives: maximizing revenue, maximizing profit, and maximizing company size. Potentially maximizing profit would be the most important objective with maximizing company size being the least important. You can use weights to combine these three criteria into a single criterion for use by the optimizer.].
+
 ## Finding the Best Fit
 
 After choosing how to measure the quality of a fit quantitatively, we need to find the set of parameter values that maximize the fit and minimize the error. To do this we use a computer algorithm called an optimizer that automatically experiments with many different combinations of parameter values to find the set of parameters that has the best fit.
