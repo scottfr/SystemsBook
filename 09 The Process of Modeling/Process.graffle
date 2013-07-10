@@ -2388,7 +2388,7 @@
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>0</integer>
+		<integer>1</integer>
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
@@ -2406,9 +2406,9 @@
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-222.00000000000003, 0}, {1021.8181596708696, 1154.5454295213563}}</string>
+		<string>{{0, 0}, {562, 620}}</string>
 		<key>Zoom</key>
-		<real>0.55000001192092896</real>
+		<real>1</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>

@@ -1,4 +1,4 @@
-# The Process of Modeling
+# The Process of Modeling {#ModelingProcess}
 
 Now that you are well on your way to being a modeling expert, you may begin to receive requests for assistance with various modeling projects. As a motivating example, a friend -- it could also be a colleague or client -- comes to you and asks for help. This friend has been involved with the effort to protect the rare Aquatic Hamster.
 
@@ -10,7 +10,7 @@ You are at your desk to start building the model, but then realize something: Yo
 
 In this chapter, we answer that question. We explore the modeling process from start to finish, introducing the tools and techniques for getting from "I need a model" to a final product that works. As you will see, our experience is that the best approach to tackling tough modeling problems is to start deceivingly small: build the simplest model possible (what we call the "Minimum Viable Model") to get going and then iterate aggressively on this initial version.
 
-## Why model?
+## Why Model?
 
 The first step to building a model is answering the simple question: *Why am I building this model?*
 
