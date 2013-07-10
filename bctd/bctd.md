@@ -4,6 +4,11 @@
 
 Click on the link below to get to links for content review.
 
+- <a href="#c9">13.07.07 Chapter 9v1</a>
+- <a href="#c14">13.07.07 Chapter 14v1</a>
+- <a href="#c8">13.06.26 Chapter 8v1</a>
+- <a href="#c7">13.06.26 Chapter 7v2</a>
+- <a href="#cc">13.06.25 Covers v1</a>
 - <a href="#c5">13.06.25 Chapter 5v0.8</a>
 - <a href="#c13">13.06.25 Chapter 13v1</a>
 - <a href="#c4">13.06.21 Chapter 4v3</a>
@@ -41,9 +46,25 @@ Three months after the book is published, we will release the contents under a <
 
 Publishers retain ownership of their models with attribution to them as the source and they have to give us the copyright for the book.
 
-## Cover ##
+## <a name="cc"></a>Cover ##
 
 Simple and direct though it needs to depict connections or relationships. Some sort of network representation. I like the cover we used on Kickstarter though Scott said we probably can't get rights to use the image. James Cameron is working on an similar alternative that won't infringe on copyrights.
+
+Here are a few covers that James has mocked up
+
+![Cover 1](./covers/1.gif)<br>[Cover # 1](./covers/1.gif)
+
+![Cover 2](./covers/2.gif)<br>[Cover # 2](./covers/2.gif)
+>
+![Cover 3](./covers/3.gif)<br>[Cover # 3](./covers/3.gif)
+>
+![Cover 4](./covers/4.gif)<br>[Cover # 4](./covers/4.gif)
+>
+![Cover 5](./covers/5.gif)<br>[Cover # 5](./covers/5.gif)
+>
+![Cover 6](./covers/6.gif)<br>[Cover # 6](./covers/6.gif)
+>
+![Cover 7](./covers/7.gif)<br>[Cover # 7](./covers/7.gif)
 
 ## Preface ##
 
@@ -187,6 +208,7 @@ Each model is presented as a causal loop diagram and a stock & flow simulation m
 Three Basic Structures
 Typical Evolving Relationships
 Fix A Problem
+
 - Linear Progress Slows Over Time
 - The Fix Overshoots The Goal
 - Things Seem To Oscillate Endlessly
@@ -195,7 +217,9 @@ Fix A Problem
 - In Time The Problem Returns
 - The Underlying Cause Is Not Being Addressed
 - Dependence On The Fix Develops
+
 Trying To Promote Growth
+
 - Growth Leads To Decline Elsewhere
 - Growth Slows Over Time
 - Partners For Growth Become Adversaries
@@ -233,7 +257,7 @@ The following are provided as potential models for entries in segments of this c
 
 **Dynamic Models**
 
-- [The Models of Chapter 3](http://www.systemswiki.org/bctd/bctd.html)
+- The Models of Chapter 3
 - [Action Oriented Problem Solving](http://people.brandeis.edu/~bmorriso/documents/DxProblemSolving2009.pdf) and [Insight Maker Model](http://insightmaker.com/insight/2439)
 - [Nobody Ever Gets Credit for Problems That Never Happened](http://web.mit.edu/nelsonr/www/Repenning=Sterman_CMR_su01_.pdf) with [Insight Maker Model](http://insightmaker.com/insight/1899) and [Video](http://www.systemswiki.org/index.php?title=Credit_that_Never_Happened)
 - [How Small Dynamic Models Can Help Policy Makers](http://www.systemdynamics.org/conferences/2009/proceed/papers/P1388.pdf) with [Insight Maker Model](http://insightmaker.com/insight/1769) and [Video](http://www.systemswiki.org/index.php?title=Swamping_Insights)
@@ -259,22 +283,39 @@ The following are provided as potential models for entries in segments of this c
 * How to critique models (both yours and others)
 * Model validation and verification (and the limits of these techniques)
 
+With this chapter becoming too large part of it was split out and moved to the Building Confidence in Models chapter. Don't be overly concerned when you open the document and it says Chapter 8. The numbers are going to keep changing.
+
+- [v2 13.06.26](./truth-v2.pdf) Put comments in -> [Models and Truth](http://linkd.in/129rKBB)
 - [v1 13.05.14](./ModelsAndTruth-v1.pdf) Put comments in -> [Models and Truth](http://linkd.in/129rKBB)
 
 ## <a name="c8"></a>Chapter 8 - Building Confidence in Models
+
+* Model Design
+* Model Implementation
+* Model Results
+* Confidence and Philosophy
+
+This chapter was removed from the previous chapter and edited. Don't be overly concerned when you open the document and find it labeled as Chapter 9. The numbers are going to keep changing.
+
+- [v1 13.06.26](./confidence-v1.pdf) Put comments in -> [Building Confidence in Models](http://linkd.in/138p77t)
 
 ## <a name="c9"></a>Chapter 9 - The Process of Modeling ##
 
 > where does model calibration go?
 > Fabian says to add a Group Model Building in here...
 
-* Reference Modes/Pattern Matching
-* "Big Batch"/"Small Batch" Approaches to Modeling
-* Minimum Viable Models
-* The cost of complexity part 2
-* Soliciting information
-* Dealing with Data (and a lack there of)
-* Analyzing and assessing model results
+* Why Model?
+* Model Project Management
+* Failing Fast and Failing Often
+* From Mental Models to Simulation Models
+* Reference Mode Diagrams
+* Pattern-Oriented Modeling
+* Group Model Building
+* Wrapping It Up
+
+The document you access will say Chapter 10 but it's really Chapter 9
+
+- [v1 13.07.07](./process-v1.pdf) Put comments in -> [Process of Modeling Comments](http://linkd.in/1bfON3Z)
 
 ## <a name="c10"></a>Chapter 10 - The Mathematics of Modeling ##
 
@@ -315,6 +356,16 @@ Note that this is a 6mb .pdf file so on a slow connection download may take a wh
 - Note that this is new chapter on Agent Based Modeling not previously discussed.
 
 - [v1 13.06.25](./agents-v1.pdf) Put comments in -> [Chapter 13 Comments](http://linkd.in/19xGNJY)
+
+## <a name="c14"></a>Chapter 14 - Optimization and Complexity ##
+
+* Accessing Model Accuracy
+* Calibrating the Model
+* Goodness of Fit
+* Finding the Best Fit
+* The Cost of Complexity
+
+- [v1 13.07.07](./optimize-v1.pdf) Put comments in -> [Optimization and Complexity](http://linkd.in/1bfOQgb)
 
 # Appendices #
 
