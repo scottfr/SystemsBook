@@ -149,7 +149,7 @@ Some amount of stuff flowing in causes stuff to increase over time and the amoun
 
 {"title": "Swimming Pool"}
 
-Lets take a swimming pool as a specific instance Figure 5.
+Let's take a swimming pool as a specific instance of Figure 5.
 
 {"geometry":{"x":320,"y":130,"width":100,"height":40},"name":"stuff","create":"Stock"}
 
@@ -163,17 +163,17 @@ Lets take a swimming pool as a specific instance Figure 5.
 
 {"attribute":"Equation","target":"stuff out","value":"0"}
 
-Diagram
+DIAGRAM
 
 The diagram represents Figure 5 in Insight Maker, an interactive modeling and simulation environment. We'll talk about how this was done shortly. We have defined the pool to fill with a hose at 50 gallons an hour.
 
-{"attribute":"TimeLength","value":"24"},
+{"attribute":"TimeLength","value":"24"}
 
-{"attribute":"TimeUnits","value":"Hours"}]"
+{"attribute":"TimeUnits","value":"Hours"}
 
 If we let the hose run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model, actually a simulation of a model, to show changes over time.
 
-Results
+RESULTS
 
 This graph indicates that after 24 hours the swimming pool with have 1,200 gallons of water in it. Yes, it's about as interesting as watching paint dry. Actually, as you will come to find out, that's a good thing because this is really easy. A more interesting question might be, if the swimming pool holds 20,000 gallons of water how long with it take to fill with water at 50 gallons per hour? We'll get to this shortly.
 
@@ -306,9 +306,9 @@ Figure 14 is a model that reflects the the notion that rabbits create more rabbi
 
 {"attribute":"FlowRate","target":"Births","value":"[Rabbits]*[Rabbit Birth Rate]"}
 
-Diagram
+DIAGRAM
 
-Results
+RESULTS
 
 # End Model
 
