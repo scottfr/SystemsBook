@@ -40,6 +40,51 @@ Since they do not differ significantly from a mathematical standpoint, what sepa
 
 System Dynamics modelers, to go further, care greatly about communicating their models, deliberately mirroring reality to some extent and exploring the consequences of feedback. The differing focuses on communication between System Dynamics modelers and differential equation modelers can be seen in the method of naming variables. Differential equation models are generally dominated by abstract Greek symbols (e.g. $\alpha$) while System Dynamics models generally clearly spell out variable names (e.g. "Birth Rate") and additionally use a model diagram to illustrate and communicate the relationships between different parts of the model.
 
+~ Exercise
+
+You have a System Dynamics model simulating water leaking out of a hole in a jar. You have a stock \p{Jar} with an initial value of 40. Roughly 10% of the water leaks out of the jar every time period and there is a single flow leading out of the jar with the rate \e{0.10*[Jar]}. Express this model using differential equations.
+
+~ Answer
+
+You can denote volume of water in the jar using the state variable $J$. Our equations will then be:
+
+$$ J(0) = 40 $$
+$$ \frac{dJ}{dt} = -0.10 \times J$$
+
+~ End Exercise
+
+~ Exercise
+
+You have a System Dynamics model simulating people becoming sick. You have two stocks in the model \p{Healthy} and \p{Infected}. There is a single flow, \p{Infection}, going from the healthy to infected stock with a flow rate of \e{0.05*[Infected]*[Healthy]}. Initially there are 100 infected people, and 1 infected person. Express this model using differential equations.
+
+~ Answer
+
+You can denote the healthy stock using state variable $H$ and the infected stock $I$. Our equations will then be:
+
+$$ H(0) = 100 $$
+$$ I(0) = 1 $$
+$$ \frac{dH}{dt} = -0.05 \times H \times I $$
+$$ \frac{dI}{dt} = 0.05 \times H \times I $$
+
+~ End Exercise
+
+~ Exercise
+
+You have a differential equation model of an animal population's growth (denoted $P$). The animals growth is parameterized by the parameter $r$ and a maximum population size or carrying capacity of $K$. The following differential equations define this model:
+
+$$P(0) = 500$$
+$$r = 0.05$$
+$$K = 10000$$
+$$\frac{dP}{dt}=r P \left(1-\frac{P}{K}\right)$$
+
+Implement a System Dynamics version of this model. What is the size of the population after 100 years?
+
+~ Answer
+
+Approximately 8,865 animals.
+
+~ End Exercise
+
 ## Solving Differential Equations
 
 Given a differential equation or System Dynamics model specification, how do you go about determining the results of the model? This is typically referred to as "solving" the model. Since differential equation models and system dynamics models are essentially one and the same, the techniques used to solve differential equations can be directly applied to System Dynamics models and they are the techniques used by Insight Maker when you simulate any of the models in this book.
@@ -95,6 +140,45 @@ $$ P(0) = 100 $$
 $$ \frac{dP}{dt} = \alpha \times P \times \log(P) $$
 
 We have simply added a logarithm of $P$ into our growth rate. Despite the smallness of this change, this model is now impossible to solve analytically. There is no analytic solution possible, but feel free to give it a try yourself (but please don't try too hard; we promise there is no solution). When developing complex models it should generally to be assumed that in practice no analytical solution will be available. In cases like these, how can we go about developing solutions to the equations and determining the trajectory of the state variables in the system?
+
+~ Exercise
+
+Solve the differential equation:
+
+$$ P(0) = 10 $$
+$$ \frac{dP}{dt} = -\alpha $$
+
+~ Answer
+
+$$ P = 10 - \alpha \times t$$
+
+~ End Exercise
+
+~ Exercise
+
+Solve the differential equation:
+
+$$ P(0) = 10 $$
+$$ \frac{dP}{dt} = 0.05 \times P $$
+
+~ Answer
+
+$$ P = 10 \times e^{0.05\times t}$$
+
+~ End Exercise
+
+~ Exercise
+
+Solve the differential equation:
+
+$$ P(0) = 20 $$
+$$ \frac{dP}{dt} = \beta \times P^2 $$
+
+~ Answer
+
+$$ P = \frac{20}{1 - 20 \times \beta \times t }$$
+
+~ End Exercise
 
 The answer is numerical approximation. Even if we can't solve the model equations analytically, we will always be able to approximate their results numerically. A number of different algorithms exist that allow us to approximate the solution to differential equations by repeatedly plugging values into them. To discuss these methods, it is useful to introduce some additional mathematical notation.
 
@@ -206,6 +290,34 @@ As you decrease the step size for the simulation, the results of the simulation 
 
 In general, you want a step size small enough that your results are "accurate enough," but one that isn't so small that the simulation takes too long to complete. A rule of thumb for choosing the step size is to choose a starting step size that results in a fast simulation. Then cut the value of the step size in half and simulate the model again. If the results have not change materially between these two simulations, keep the larger step size. If the results have changed, cut the step size in half again and repeat until the results cease to change.
 
+~ Exercise
+Take the differential equation:
+
+$$ P(0) = 20 $$
+$$ \frac{dP}{dt} = \frac{100}{P} $$
+
+Given a step size of 1, find the values of $P$ at $t=0,1,2,3,4,5$ to one decimal place using Euler's method.
+
+~ Answer
+
+20.0, 25.0, 29.0, 32.4, 35.5, 38.3
+
+~ End Exercise
+
+~ Exercise
+Take the differential equation:
+
+$$ P(0) = 20 $$
+$$ \frac{dP}{dt} = P^2 - P $$
+
+Given a step size of 1, find the values of $P$ at $t=0,1,2,3,4,5$ to one decimal place using Euler's method.
+
+~ Answer
+
+20.0, 27.0, 37.5, 53.9, 78.3, 124.5
+
+~ End Exercise
+
 ### Runge-Kutta Methods
 
 ![Carl Runge and Martin Kutta](RungeKutta.png)
@@ -228,6 +340,42 @@ $$
 What this algorithm does is first compute the derivatives of the system at the current time ($\mathbf{a}$) and use them to move the system forward to $t+\Delta t/2$. The derivatives are evaluated at $t+\Delta t/2$ ($\mathbf{b}$) and this new set of derivatives is used to again move the system from $t$ to $t+\Delta t/2$. A third set of derivatives are evaluated again at this mid-point ($\mathbf{c}$) and they are the used to move the system from $t$ to $t+\Delta t$. A fourth set of derivatives are evaluated at this point ($\mathbf{d}$). The system is then returned to its starting point and a weighted average of derivatives are used to move the system the full time step. This weighting puts most of the weight on the middle two derivatives instead of the derivatives from the end points.
 
 This 4th-order Runge-Kutta method is generally much more accurate than Euler's method for a given step size. Using a step size of 10 for our earlier population model, the Runge-Kutta method generates a value of 270.8. A step size of 5 yields a results of 271.7, just a smidgeon away from the precise value of 271.8. Recall that for Euler's method, even with a step size of 0.1 we still were not as accurate as the Runge-Kutta method with a step size of 5. Now it is true that this 4th-Order Runge-Kutta method does a lot more work than Euler's method for each step. It evaluates the model for times and has to do some averaging of derivatives. However, it is still much more accurate than Euler's method for an equivalent level of computational effort.
+
+~ Exercise
+Take the differential equation:
+
+$$ P(0) = 20 $$
+$$ \frac{dP}{dt} = \frac{100}{P} $$
+
+Given a step size of 1, find the values of $P$ at $t=0,1,2,3,4,5$ to one decimal place using the 4th-Order Runge-Kutta method.
+
+~ Answer
+
+20.0, 24.5, 28.3, 31.6, 34.6, 37.4
+
+~ End Exercise
+
+~ Exercise
+Take the differential equation:
+
+$$ P(0) = 20 $$
+$$ \frac{dP}{dt} = P^2 - P $$
+
+Given a step size of 1, find the values of $P$ at $t=0,1,2,3,4,5$ to one decimal place using the 4th-Order Runge-Kutta method.
+
+~ Answer
+
+20.0, 29.1, 44.7, 73.6, 131.5, 260.4
+
+~ End Exercise
+
+~ Exercise
+Discuss the differences between the 4th-Order Runge Kutta solutions and the Euler solutions. What causes these differences? Which method is most accurate? Why?
+~ End Exercise
+
+~ Exercise
+Describe a model where Euler's method would be best suited as a numerical solver. Describe a model where the 4th-Order Runge-Kutta method would be best suited.
+~ End Exercise
 
 # Model
 
@@ -330,6 +478,16 @@ In the case of the highly infectious disease model, an equilibrium of everyone b
 
 The equilibrium point of everyone being sick is, on the other hand, a stable equilibrium as no one recovers from the disease on their own. Even if you introduced healthy people into a population of sick individuals -- moving the population away from the equilibrium -- they too will eventually become sick restoring the population to the equilibrium of everyone being sick.
 
+~ Exercise
+Provide two examples each of situations where stable and unstable equilibria occur in nature. Describe these equilibria.
+~ Answer
+
+Stable Equilibria: A piece of rubber that returns to its original shape after pulled, a forest where trees grow back once cut down.
+
+Unstable Equilibria: A ball balanced on top of a sloped roof, a pole balanced perfectly on the floor.
+
+~ End Exercise
+
 #### Equilibrium  Points
 
 Often, we can determine the equilibrium points for a system without fully needing to solve the trajectory for the state variables. Let's implement the simple disease model we've been discussing. We'll do so for both a differential equation model and a System Dynamics model, but we'll rely on differential equation version to do our analytic analysis.
@@ -418,9 +576,31 @@ $$ \frac{dW}{dt} = \gamma \times M \times W - \delta \times W  $$
 Let's determine what the equilibrium values are for this model. As before, we start by setting the derivatives to 0:
 
 $$ 0 = \alpha \times M - \beta \times M \times W $$
-$$ 0 = \gamma \times M \times W - \delta \times W  $$
+$$ 0 = \gamma \times M \times W - \delta \times W $$
 
 Solving this set of equations is more difficult than for the disease model. However a little bit of algebra reveals two solutions. One when $M=0$ and $W=0$ (there are no animals at all), and the second when $M=\delta/\gamma$ and $W=\alpha/\beta$. This is an example of where the equilibrium location depends on the values of the model parameters.
+
+~ Exercise
+Find the equilibrium points for the system:
+
+$$ \frac{dX}{dt} = X^2+X-3$$
+
+~ Answer
+
+$X=-2.30, X=1.30$
+
+~ End Exercise
+
+~ Exercise
+Find the equilibrium points for the system:
+
+$$ \frac{dX}{dt} = X^2+X-3$$
+
+~ Answer
+
+$X=-2.30, X=1.30$
+
+~ End Exercise
 
 #### The Phase Plane
 
