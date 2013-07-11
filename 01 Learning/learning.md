@@ -1,4 +1,4 @@
-# Chapter 1 - It's The Pattern That Connects - v3 13.05.30 #
+# It's The Pattern That Connects #
 
 What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever thought about how you really learn about the world around you? Yes, there are some things you memorize early in life, like the times tables. While you learn to remember these is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that the learning happened? In this chapter we will investigate how we actually learn. We will present a introduction to how we can improve our learning and actually test whether what we have learned is actually correct.
 
@@ -22,17 +22,17 @@ What you learn, and your capacity to learn, serves as a basis for everything you
 
 At some point in this sequence you probably became convinced that what was being described was a refrigerator. Now stop for a moment and ask yourself just how was it that you realized what was being described was a refrigerator? Yes it would have been easier if I had just shown you a picture of a refrigerator, though that would have spoiled it, wouldn't it.
 
-![Figure 1. From the description you knew it was a refrigerator - but how?](00-frig.png)
+![Figure 1. It's A Refrigerator. How do you know?](00-frig.png)
 
-[** Figure 1. From the description you knew it was a refrigerator - but how?](http://coastappliancerepair.com/los-angeles-blog/appliance-repair/ge-refrigerator-repair-los-angeles/)
+[** Figure 1 - Refrigerator](http://coastappliancerepair.com/los-angeles-blog/appliance-repair/ge-refrigerator-repair-los-angeles/)
 
 As long as you knew beforehand what a refrigerator was, the statements could have been given to you in any order, and still at some point you would have finally realized what was being described. If you had never seen, nor heard about, a refrigerator before you would still be wondering what was being described and what to call it.
 
 You have also most likely come to understand that all refrigerators are not identical. Some have one door with a separate compartment inside. Some have two doors and a drawer. Some are much smaller than others. Some can fit under a counter and some even fit on top of a counter. Some can be so large you can walk into them.
 
-![Figure 2. Many kinds of refrigerators, or freezers - But how do you know?](00-frigs.png)
+![Figure 2. Many Kinds of Refrigerators, or Freezers - How do you know?](00-frigs.png)
 
-[** Figure 2. Many kinds of refrigerators, or freezers - But how do you know?](http://www.applianceexpert24-7.com/refrigerators.html)
+[** Figure 2. Kinds of Refrigerators](http://www.applianceexpert24-7.com/refrigerators.html)
 
 If you see any of these you quickly decide it's a refrigerator. How does that happen? Gregory Bateson, one of the great thinkers of our time, said, “It’s the pattern that connects.” If you reflect on this statement you should come to realize there are actually different ways to interpret what it means. In this particular case the pattern connects you to the following purpose
 
@@ -57,9 +57,9 @@ A model is a simplified version of some aspect of the world around us to help us
 
 When we experience something that experience falls somewhere between complete novelty, meaning that we can't connect it with anything in our past experience, and complete confirmation, meaning that it represents something we perceive as already completely understood. The things we experience which lie somewhere between complete novelty and complete confirmation provide a basis for learning. They represent a basis for connecting to understood patterns, extending our understanding, and what results is learning. {Cite: Jantach, Eric. 1980. The Self-Organizing Universe: Scientific and Human Implications. Pergamon Press. http://www.amazon.com/The-Self-Organizing-Universe-Implications-Innovations/dp/0080243118/}
 
-![Figure 3. Experience between novelty and confirmation as a basis for learning](00-nov-conf.png)
+![Figure 3. Experience as a Basis for Learning](00-nov-conf.png)
 
-[** Figure 3. Experience between novelty and confirmation as a basis for learnin](http://www.systemswiki.org/images/7/7c/Tkco2.gif)
+[** Figure 3. Experience](http://www.systemswiki.org/images/7/7c/Tkco2.gif)
 
 Consider running into a refrigerator that looks like no refrigerator you've never seen before. From an initial view you are likely not to perceive it as a refrigerator. As you inspect it to find it serves the purpose you've come to understand for refrigerators or if someone tells you it's a refrigerator you then expand or extend your awareness of the range of patterns that constitute a refrigerator.
 
@@ -145,19 +145,39 @@ All the accumulations depicted in Figure 5 can be represented in a general form 
 
 Some amount of stuff flowing in causes stuff to increase over time and the amount of stuff flowing out causes stuff to decrease over time. With both of these happening at the same time stuff increases if stuff in is larger than stuff out. And if stuff out is greater than stuff in then the accumulation of stuff gets smaller. The most critical aspect of this to remember is that it takes time for stuff to increase or decrease. How fast the change happens depends on the amount of stuff in the flows.
 
-<IFRAME SRC="http://InsightMaker.com/insight/4990?embed=0&editor=1&topBar=0&sideBar=1&zoom=0" TITLE="Figure 7. Swimming Pool" width=950 height=600></IFRAME>
+# Model
 
-[** Figure 7. Swimming Pool](http://insightmaker.com/insight/4990)
+{"title": "Swimming Pool"}
 
-Lets take a specific instance. Figure 7 represents Figure 6 in Insight Maker, an interactive modeling and simulation environment. We'll talk about how this was done shortly. Suppose we have a swimming pool which we start filling it with a hose at 50 gallons an hour. If we let the hose run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model, actually a simulation of a model, to show changes over time.
+Lets take a swimming pool as a specific instance Figure 6.
 
-If I set up the model in Figure 7 with stuff = 0, stuff in = 50 and stuff out = 0, set the Time Settings for 24 hours, and then click the Run button, the model produces the graph in Figure 8.
+{"geometry":{"x":320,"y":130,"width":100,"height":40},"name":"Pool","create":"Stock"}
 
-![Figure 8. Adding water to the swimming pool](00-im-4990b.png)
+{"attribute":"InitialValue","target":"Pool","value":"0"}
 
-[** Figure 8. Adding water to the swimming pool](http://insightmaker.com/insight/4990)
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":130,"y":140},"targetPoint":{"x":0,"y":100}},"alpha":null,"name":"hose","omega":"Pool","create":"Flow"}
+
+{"attribute":"Equation","target":"hose","value":"50"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Pool","name":"drain","create":"Flow"}
+
+{"attribute":"Equation","target":"drain","value":"0"}
+
+Diagram
+
+The diagram represents Figure 6 in Insight Maker, an interactive modeling and simulation environment. We'll talk about how this was done shortly. We have defined the pool to fill with a hose at 50 gallons an hour.
+
+{"attribute":"TimeLength","value":"24"},
+
+{"attribute":"TimeUnits","value":"Hours"}]"
+
+If we let the hose run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model, actually a simulation of a model, to show changes over time.
+
+Results
 
 This graph indicates that after 24 hours the swimming pool with have 1,200 gallons of water in it. Yes, it's about as interesting as watching paint dry. Actually, as you will come to find out, that's a good thing because this is really easy. A more interesting question might be, if the swimming pool holds 20,000 gallons of water how long with it take to fill with water at 50 gallons per hour? We'll get to this shortly.
+
+# End Model
 
 ----------
 
