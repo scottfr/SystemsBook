@@ -24,7 +24,7 @@ At some point in this sequence you probably became convinced that what was being
 
 ![Figure 1. It's A Refrigerator. How do you know?](00-frig.png)
 
-[** Figure 1 - Refrigerator](http://coastappliancerepair.com/los-angeles-blog/appliance-repair/ge-refrigerator-repair-los-angeles/)
+[** Figure 1](http://coastappliancerepair.com/los-angeles-blog/appliance-repair/ge-refrigerator-repair-los-angeles/)
 
 As long as you knew beforehand what a refrigerator was, the statements could have been given to you in any order, and still at some point you would have finally realized what was being described. If you had never seen, nor heard about, a refrigerator before you would still be wondering what was being described and what to call it.
 
@@ -32,7 +32,7 @@ You have also most likely come to understand that all refrigerators are not iden
 
 ![Figure 2. Many Kinds of Refrigerators, or Freezers - How do you know?](00-frigs.png)
 
-[** Figure 2. Kinds of Refrigerators](http://www.applianceexpert24-7.com/refrigerators.html)
+[** Figure 2](http://www.applianceexpert24-7.com/refrigerators.html)
 
 If you see any of these you quickly decide it's a refrigerator. How does that happen? Gregory Bateson, one of the great thinkers of our time, said, “It’s the pattern that connects.” If you reflect on this statement you should come to realize there are actually different ways to interpret what it means. In this particular case the pattern connects you to the following purpose
 
@@ -59,7 +59,7 @@ When we experience something that experience falls somewhere between complete no
 
 ![Figure 3. Experience as a Basis for Learning](00-nov-conf.png)
 
-[** Figure 3. Experience](http://www.systemswiki.org/images/7/7c/Tkco2.gif)
+[** Figure 3](http://www.systemswiki.org/images/7/7c/Tkco2.gif)
 
 Consider running into a refrigerator that looks like no refrigerator you've never seen before. From an initial view you are likely not to perceive it as a refrigerator. As you inspect it to find it serves the purpose you've come to understand for refrigerators or if someone tells you it's a refrigerator you then expand or extend your awareness of the range of patterns that constitute a refrigerator.
 
@@ -83,9 +83,9 @@ I'm not asking you to believe the previous statement just because it was provide
 
 Consider the images in Figure 5 and ask yourself what it is that all these different items actually have in common.
 
-![Figure 5. What do these items have in common?](00-im-4957.png)
+![Figure 4. What do these items have in common?](00-im-4957.png)
 
-[** Figure 5. What do these items have in common?](http://insightmaker.com/insight/4957)
+[** Figure 4](http://insightmaker.com/insight/4957)
 
 ----------
 
@@ -137,11 +137,11 @@ Take a few minutes and identify half a dozen situations you're familiar with whe
 
 At this point you may be wondering why so much time was spent making you walk though all these examples for increasing and decreasing accumulation of stuff. Since we said this was an interactive book you're probably wondering where the interaction is.
 
-![Figure 6. The Accumulation of Stuff](00-im-4990.png)
+![Figure 5. The Accumulation of Stuff](00-im-4990.png)
 
-[** Figure 6. The Accumulation of Stuff](http://insightmaker.com/insight/4990)
+[** Figure 5](http://insightmaker.com/insight/4990)
 
-All the accumulations depicted in Figure 5 can be represented in a general form by the model in Figure 6. Remember we defined a model as a simplified version of some aspect of the world around us to help us understand something. It doesn't get much simpler than this does it?
+All the accumulations depicted in Figure 4 can be represented in a general form by the model in Figure 5. Remember we defined a model as a simplified version of some aspect of the world around us to help us understand something. It doesn't get much simpler than this does it?
 
 Some amount of stuff flowing in causes stuff to increase over time and the amount of stuff flowing out causes stuff to decrease over time. With both of these happening at the same time stuff increases if stuff in is larger than stuff out. And if stuff out is greater than stuff in then the accumulation of stuff gets smaller. The most critical aspect of this to remember is that it takes time for stuff to increase or decrease. How fast the change happens depends on the amount of stuff in the flows.
 
@@ -149,23 +149,23 @@ Some amount of stuff flowing in causes stuff to increase over time and the amoun
 
 {"title": "Swimming Pool"}
 
-Lets take a swimming pool as a specific instance Figure 6.
+Lets take a swimming pool as a specific instance Figure 5.
 
-{"geometry":{"x":320,"y":130,"width":100,"height":40},"name":"Pool","create":"Stock"}
+{"geometry":{"x":320,"y":130,"width":100,"height":40},"name":"stuff","create":"Stock"}
 
-{"attribute":"InitialValue","target":"Pool","value":"0"}
+{"attribute":"InitialValue","target":"stuff","value":"0"}
 
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":130,"y":140},"targetPoint":{"x":0,"y":100}},"alpha":null,"name":"hose","omega":"Pool","create":"Flow"}
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":130,"y":140},"targetPoint":{"x":0,"y":100}},"alpha":null,"name":"stuff in","omega":"stuff","create":"Flow"}
 
-{"attribute":"Equation","target":"hose","value":"50"}
+{"attribute":"Equation","target":"stuff in","value":"50"}
 
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Pool","name":"drain","create":"Flow"}
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Pool","name":"stuff out","create":"Flow"}
 
-{"attribute":"Equation","target":"drain","value":"0"}
+{"attribute":"Equation","target":"stuff out","value":"0"}
 
 Diagram
 
-The diagram represents Figure 6 in Insight Maker, an interactive modeling and simulation environment. We'll talk about how this was done shortly. We have defined the pool to fill with a hose at 50 gallons an hour.
+The diagram represents Figure 5 in Insight Maker, an interactive modeling and simulation environment. We'll talk about how this was done shortly. We have defined the pool to fill with a hose at 50 gallons an hour.
 
 {"attribute":"TimeLength","value":"24"},
 
@@ -179,6 +179,7 @@ This graph indicates that after 24 hours the swimming pool with have 1,200 gallo
 
 # End Model
 
+[** Model](http://insightmaker.com/insight/4990)
 ----------
 
 #### Modeling Notes ####
@@ -203,39 +204,39 @@ A directed arrow represents the flow of something into or out of a stock. Rememb
 
 #### Toolbar ####
 
-Notice in the upper right corner of the toolbar there is a small down arrow as depicted in Figure 9a.
+Notice in the upper right corner of the toolbar there is a small down arrow as depicted in Figure 6.
 
-![Figure 9a. Open Toolbar](00-im-4990c1.png)
+![Figure 6. Open Toolbar](00-im-4990c1.png)
 
-[** Figure 9a. Open Toolbar](http://insightmaker.com/insight/4990)
+[** Figure 6](http://insightmaker.com/insight/4990)
 
-If you click on this arrow it will open the toolbar displayed in Figure 9b. The toolbar contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, with a few pop up windows of course.
+If you click on this arrow it will open the toolbar displayed in Figure 7. The toolbar contains all the tools you will use to build and modify models. Yes, you get to do everything on a single screen, with a few pop up windows of course.
 
-![Figure 9b. Toolbar](00-im-4990c.png)
+![Figure 7. Toolbar](00-im-4990c.png)
 
-[** Figure 9b. Toolbar](http://insightmaker.com/insight/4990)
+[** Figure 7](http://insightmaker.com/insight/4990)
 
 #### Configuration Panel ####
 
-Just below the arrow you clicked to open the top toolbar is a right pointing double caret as depicted in Figure 10a.
+Just below the arrow you clicked to open the top toolbar is a right pointing double caret as depicted in Figure 8.
 
-![Figure 10a. Configuration Panel](00-im-4990d1.png)
+![Figure 8. Configuration Panel](00-im-4990d1.png)
 
-[** Figure 10a. Configuration Panel](http://insightmaker.com/insight/4990)
+[** Figure 8](http://insightmaker.com/insight/4990)
 
 If you click this the Configuration Panel will close and the right pointing double caret will now point left and can be used to open the parameter tab. This tab serves two different purposes.
 
-If there are no elements of the model selected on the canvas the Configuration Panel will be similar to Figure 10 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.
+If there are no elements of the model selected on the canvas the Configuration Panel will be similar to Figure 9 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.
 
-![Figure 10. Configuration Panel](00-im-4990d.png)
+![Figure 9. Configuration Panel](00-im-4990d.png)
 
-[** Figure 10. Configuration Panel](http://insightmaker.com/insight/4990)
+[** Figure 9](http://insightmaker.com/insight/4990)
 
-If there is a single element selected on the canvas then the Configuration Panel will present the list of parameters that can be set for that element. Figure 11 shows the parameters for the stuff element of the model. This is where the value of stuff was set to 50 before running the model. Please don't be overwhelmed by this long list of parameters. We'll cover them one at a time as they are actually used in a model.
+If there is a single element selected on the canvas then the Configuration Panel will present the list of parameters that can be set for that element. Figure 10 shows the parameters for the stuff element of the model. This is where the value of stuff was set to 50 before running the model. Please don't be overwhelmed by this long list of parameters. We'll cover them one at a time as they are actually used in a model.
 
-![Figure 11. Element Parameters](00-im-4990e.png)
+![Figure 10. Element Parameters](00-im-4990e.png)
 
-[** Figure 11. Element Parameters](http://insightmaker.com/insight/4990)
+[** Figure 10](http://insightmaker.com/insight/4990)
 
 You should note in Figure 11 under the User Interface section it indicates that there should be a slider for stuff and it can be set for values from 0 to 100. Each element has some of the same parameters and some unique to it. Click one of the flows and see what its parameters are.
 
@@ -243,21 +244,21 @@ Just a couple more pieces and you can go interact with the model some more and g
 
 #### Time Settings ####
 
-In conjunction with Figure 8 the swimming pool was intended to fill for 24 hours. It's the Time Settings tool that allows you to define this for the model. Figure 12 shows the elements you can set before running a model.
+In swimming pool model was intended to fill for 24 hours. It's the Time Settings tool that allows you to define this for the model. Figure 12 shows the elements you can set before running a model.
 
-![Figure 12. Time Settings](00-im-4990f.png)
+![Figure 11. Time Settings](00-im-4990f.png)
 
-[** Figure 12. Time Settings](http://insightmaker.com/insight/4990)
+[** Figure 11](http://insightmaker.com/insight/4990)
 
 This is where it was indicated that the model was to start at Time = 0 and runs for 24 time units. It steps one unit at a time and the unit is in Hours. Don't worry about Time Step for now. We'll get into that later.
 
 #### Simulation Results ####
 
-When you click the Run button the model is stepped through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as in Figure 13.
+When you click the Run button the model is stepped through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as in Figure 12.
 
-![Figure 13. Simulation Results](00-im-4990g.png)
+![Figure 12. Simulation Results](00-im-4990g.png)
 
-[** Figure 13. Simulation Results](http://insightmaker.com/insight/4990)
+[** Figure 12](http://insightmaker.com/insight/4990)
 
 #### Configure Simulation Results ####
 
@@ -279,7 +280,7 @@ Too much explaining and not enough hands on interaction may get real boring in a
 
 #### Exercise 1-3 ####
 
-Go back and consider the various pictures in Figure 5. Pick a couple of them to model. The only parts you need to set up are the Time Settings, how long will it run and the Time Units. You can also set the values for stuff, stuff in and stuff out on the Configuration Panel. After you run the model open the Chart/Table configuration window and set the Y-Axis Label appropriate for what you're modeling. I encourage you to be adventurous. Make new Displays, Table Displays, etc. You can't break anything, it's just an opportunity to become comfortable with the environment and learn.
+Go back and consider the various pictures in Figure 4. Pick a couple of them to model. The only parts you need to set up are the Time Settings, how long will it run and the Time Units. You can also set the values for stuff, stuff in and stuff out on the Configuration Panel. After you run the model open the Chart/Table configuration window and set the Y-Axis Label appropriate for what you're modeling. I encourage you to be adventurous. Make new Displays, Table Displays, etc. You can't break anything, it's just an opportunity to become comfortable with the environment and learn.
 
 ----------
 
@@ -287,11 +288,31 @@ Now that you've become intimately familiar with almost the simplest model possib
 
 ## Rabbit Population Growth ##
 
-If you modeled the accumulation of rabbits you may have already realized that the model of Figure 7 is missing something. Yes, if you add rabbits to rabbits you get even more rabbits. Though if you have more rabbits don't they create even more rabbits? Figure 14 is a model that reflects the the notion that rabbits create more rabbits.
+If you modeled the accumulation of rabbits you may have already realized that the model of Figure 5 is missing something. Yes, if you add rabbits to rabbits you get even more rabbits. Though if you have more rabbits don't they create even more rabbits?
 
-<IFRAME SRC="http://InsightMaker.com/insight/5123?embed=0&edit=1&topBar=0&sideBar=1&zoom=1" TITLE="Figure 14. Rabbit Population Growth" width=950 height=600></IFRAME>
+# Model
 
-[** Figure 14. Rabbit Population Growth](http://insightmaker.com/insight/5123)
+Figure 14 is a model that reflects the the notion that rabbits create more rabbits.
+
+{"geometry":{"x":450,"y":130,"width":100,"height":40},"name":"Rabbits","create":"Stock"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":240,"y":150},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Rabbits","name":"Births","create":"Flow"}
+
+{"geometry":{"x":250,"y":30,"width":120,"height":50},"name":"Rabbit Birth Rate","create":"Variable"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Rabbit Birth Rate","omega":"Births","create":"Link"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Rabbits","omega":"Births","create":"Link"}
+
+{"attribute":"FlowRate","target":"Births","value":"[Rabbits]*[Rabbit Birth Rate]"}
+
+Diagram
+
+Results
+
+# End Model
+
+[** Model](http://insightmaker.com/insight/5123)
 
 ----------
 
