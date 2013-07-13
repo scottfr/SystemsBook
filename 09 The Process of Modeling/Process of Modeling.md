@@ -113,6 +113,19 @@ Figure 1 illustrates two different model boundaries for the hamster model. The t
 
 When developing a model, we recommend starting with the boundaries as narrow as possible. In the minimum viable model, you will want to omit as many different mechanisms as possible. As you receive feedback and people push for the inclusion of different mechanisms, you can slowly expand the boundaries of the model. We recommend starting small and expanding as necessary.
 
+~ Exercise
+
+Create a boundary diagram for a model of human population growth in the next 100 years. What would be the endogenous, exogenous and omitted items in this model.
+
+~ End Exercise
+
+~ Exercise
+
+Create a boundary diagram for a model forecasting the total quantity of pencils sold within the united states for the next 50 years. What would be the endogenous, exogenous and omitted items in this model.
+
+~ End Exercise
+
+
 ## From Mental Models to Simulation Models
 
 Generally speaking, a single individual should ultimately be responsible for the design and implementation of a model. Models "designed-by-committee" are understandably suffused with compromise and a greater lack of focus. That said, even though one person is ultimately calling the shots, many voices and perspectives are there to be heard in the modeling process. The more input there is into a model, the better the resulting model will most likely be.
@@ -139,11 +152,45 @@ These are just two of the reference modes we might ask our friend to think about
 
 Asking non-modelers to sketch out reference modes is a great technique for several reasons. Reference modes are accessible to laypeople, force your interviewees to be concrete, and provide you with very useful and actionable material. Really, a reference mode is a projection of an individual's mental model of the system. They may be unable (or unwilling) to explain their mental model to you in equations or even words, but they generally will be able to describe how they perceive the world using these reference mode diagrams -- one small slice of their mental model at a time. Once you have the diagrams, you can proceed to translate them into model structure and equations.
 
+~ Exercise
+
+Draw a reference mode diagram for what you will think will happen to the total human population in the next 100 years. Draw additional reference modes for the following scenarios:
+
+1. Cold fusion is invented in 2050. Limitless energy is available for free to everyone.
+2. A plague wipes out 1/2 the human population in 2035. Each country is affected equally by the plague.
+3. A process for cheaply converting a drop of oil directly into a kilogram of nutritious and delicious food stuffs is invented in 2030. This can replace the need for arable land, but oil become in even greater demand.
+
+~ End Exercise
+
+~ Exercise
+
+You are hired by a paper company to create a model of paper consumption in the next fifty years. Draw reference mode diagrams of world paper demand for the most highly likely future scenarios as you see them. Consider the adoption of digital technologies and the decline of print media.
+
+~ End Exercise
+
 ### Pattern-Oriented Modeling
 
 Pattern-oriented modeling focuses on identifying key patterns in the system to be modeled. For example, we may observe a boom-and-bust pattern in our hamster population that is triggered by unusually warm weather. When we develop our model, we formulate relationships and equations that will replicate this boom-and-bust pattern in the simulation.
 
 Developed to help guide the creation of agent-based models, pattern-oriented modeling is very similar in concept to reference modes and system archetypes. Rather than building models around expected dynamic trajectories however, pattern-oriented modeling builds models to recreate patterns. Sometimes a pattern may be the same as a reference mode, but especially when dealing with agent based modeling you may not be able to define a pattern in terms of the dynamic trajectory of a reference mode. For a good overview of pattern-oriented modeling, see @Grimm:2005ei.
+
+~ Exercise
+
+What patterns might you see in the how cities are located?
+
+~ End Exercise
+
+~ Exercise
+
+What patterns might you see in the movement of a carnivore like a wolf? In an herbivore like a moose?
+
+~ End Exercise
+
+~ Exercise
+
+What patterns might you see in the movement of a competition between companies in an expanding market? In a contracting market?
+
+~ End Exercise
 
 ### Group Model Building
 
@@ -153,10 +200,15 @@ Group modeling sessions can also benefit an organization independently of the su
 
 The group modeling process can force the concrete discussion of and revealing of these mental models and the stakes involved in having these differences. Once they are revealed, they can be discussed and reconciled, potentially leading to a greater congruity of viewpoints within the group and a greater shared purpose. @Vennix:1993wv carried out a survey of participants in group model building sessions and found that this process led to insights and a shared vision more quickly than occurred in standard meetings.
 
-~ Exercise
-~ dsdsd
-~ dsds
 
 ## Wrapping it Up
 
 Completing a model is in some ways just the first step in a modeler’s work. Once the model is finished you need to make sure to develop adequate tests to ensure it is operating as designed. Moreover, a model by itself is often of little use. You will need to develop extensive sets of documentation, manuals and tutorials if you want the model to be used in practice by people other than yourself. Such efforts take time. Writing clear and useful documentation is a skill in itself and, if done right, may take as long as developing the model in the first place!
+
+In general, it is important to remember the 80/20 rule which also applies to modeling. The first 80% of modeling work generally only takes 20% of the time while the last 20% of the work can take four times as long. Getting the small details right in a model can take much longer than implementing the bulk of the model structure.
+
+~ Exercise
+
+You have been asked to model crime trends in a major city. Write out a general overview of stages you might take to developing this model from start to finish.
+
+~ End Exercise

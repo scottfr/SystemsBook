@@ -94,6 +94,54 @@ Open whatever word processor you use on your computer and save this to *MyPage.h
 
 For more information and tutorials on HTML, we recommend the Mozilla Developer Network’s guides (<https://developer.mozilla.org/en-US/docs/Web/HTML>).
 
+~ Exercise
+
+Replicate the following formatting in an HTML document:
+
+This **text is *italic* and bold.**
+
+~ Answer
+
+````html
+This <b>text is <i>italic</i> and bold.</b>
+````
+
+~ End Exercise
+
+~ Exercise
+
+Research HTML on-line, learn how to make a list of items. Create both an ordered and unordered list of the top three countries you wish to visit.
+
+~ Answer
+
+Ordered list:
+
+````html
+<ol>
+	<li>Croatia</li>
+	<li>Greece</li>
+	<li>Peru</li>
+</ol>
+````
+
+Unordered list:
+
+````html
+<ul>
+	<li>Croatia</li>
+	<li>Greece</li>
+	<li>Peru</li>
+</ul>
+````
+
+~ End Exercise
+
+~ Exercise
+
+Create an HTML document containing your resume. Use heading tags to separate sections. Include a picture of yourself in the document.
+
+~ End Exercise
+
 ### CSS Basics
 
 Where HTML is used to define the structure of a document, CSS is responsible for styling this structure. This styling includes aspects like font and color choices in addition to the general layout. A CSS document is a list of rules where each rule has two parts: a selector that tells the browser what elements of the page the rule applies to, and a set of styles that tells browser how to style those elements. For example, take the following CSS code.
@@ -139,6 +187,34 @@ Alternatively we could save the CSS to an external text file (such as *MyStyles.
 </head>
 ````
 
+~ Exercise
+
+Create a CSS rule to make \<u> tags set their text color to green in addition to adding underlining.
+
+~ Answer
+
+````css
+u {
+	color: green;
+}
+````
+
+~ End Exercise
+
+~ Exercise
+
+Read up about CSS online and create a tag that creates a red box round every link on the web page.
+
+~ Answer
+
+````css
+a {
+	border: solid 2px red;
+}
+````
+
+~ End Exercise
+
 ### JavaScript Basics
 
 JavaScript^[The name “JavaScript” is a source of perpetual confusion. What we know colloquially as JavaScript is officially called ECMAScript. Due to trademark issues Microsoft refers to it as JScript when you are using Internet Explorer. It is important to note that *JavaScript* and *Java* are different technologies. They share part of a name due to historic branding purposes but they are completely different languages.] provides interactivity for webpages. JavaScript is a powerful programming language that you can use to respond to user actions, run calculations, or modify a webpage. An example of using JavaScript code to calculate a Fibonacci number^[Where the first two Fibonacci numbers are 1 and the Fibonacci numbers thereafter are the sum of the two preceding numbers. The Fibonacci sequence begins: 1, 1, 2, 3, 5, 8, 13, 21, 44...] is below:
@@ -183,7 +259,23 @@ The second method to include the code is to save the JavaScript into a text file
 
 JavaScript is a very powerful tool but also a very complex one. This chapter will illustrate usages of JavaScript but we cannot hope to teach you how to write new JavaScript yourself in this single chapter. Again, we refer you to the Mozilla Developer Network to learn more about JavaScript (<https://developer.mozilla.org/en-US/docs/Web/JavaScript>).
 
-## Creating an Webpage for Engagement
+~ Exercise
+
+Learn about JavaScript online. Create a script that prompts the user for two numbers and then adds them.
+
+~ Answer
+
+````javascript
+var a = prompt("Enter the first number:");
+var b = prompt("Enter the second number:");
+var sum = a+b;
+
+alert("There sum is: "+sum);
+````
+
+~ End Exercise
+
+## Creating a Webpage for Engagement
 
 Now that we have made it through some of the technical details, let's jump into building a webpage for an interactive model that users can comment on. There are three basic things we want this webpage to have:
 
@@ -294,6 +386,41 @@ We have just put together a powerful site very quickly. Our site lets us share a
 ````
 
 A working version of this site may be viewed at <http://BeyondConnectingTheDots.com/book/embedded-model/>. There is a lot more we could do with the site. Spend some time now experimenting with it. Add some more descriptive text, maybe add some images, and try to use CSS to adjust the styling.
+
+~ Exercise
+
+Use CSS to make a rule to automatically underline the headings in this web page.
+
+~ Answer
+
+````css
+h1 {
+	text-decoration: underline;
+}
+````
+
+~ End Exercise
+
+~ Exercise
+
+Use CSS to add a background color to this page.
+
+~ Answer
+
+````css
+body {
+	background-color: azure;
+}
+````
+
+~ End Exercise
+
+~ Exercise
+
+Go through these same steps with a model of your choosing. Make your own custom interactive webpage.
+
+~ End Exercise
+
 
 ## Flight Simulators and Serious Games
 
@@ -507,6 +634,41 @@ The code for the completed webpage is provided below and a working version of th
 
 The key goal of this chapter is not that you completely understand this, but rather that you will be able to adapt it to your own needs. There are a lot of additional changes that could be made to this demonstration. You could clean up the control panel and make it look more attractive by adding some CSS rules. You could add additional inputs to control other parts of the model. You could show the user the trajectory of the population instead of just the final value. Go ahead and experiment with this example to see what you can make it do.
 
+~ Exercise
+
+Use CSS to change the style of the inputs. Make inputs have a yellow background and blue text.
+
+~ Answer
+
+````css
+input {
+	background-color: yellow;
+	color: navy;
+}
+````
+
+~ End Exercise
+
+~ Exercise
+
+Adjust the result message when the users have failed to reach the target population size. Tell them how far away from the target size they are.
+
+~ Answer
+
+Change the alert to:
+
+````javascript
+alert("Failed! You need "+(5000000000-pop)+" more people!");
+````
+
+~ End Exercise
+
+~ Exercise
+
+Add another input to allow users to adjust the initial amount of potentially arable land in the model.
+
+~ End Exercise
+
 ## Additional Tips
 
 Web development is a very complex topic with a lot of nuances. The preceding sections should have given you a brief introduction in how to create interactive models for engaging an audience and encouraging discussion and learning. Although we cannot give you a comprehensive course in web development, there a few additional web development tips that will be very useful when you start to develop your own webpages.
@@ -528,6 +690,12 @@ JQuery UI (<http://jqueryui.com/>)
 
 ExtJS (<http://www.sencha.com/products/extjs>)
 : ExtJS is a comprehensive library for developing powerful applications. It has extensive tools to develop interface and control panels. It is also what is used to develop Insight Maker's interface.
+
+~ Exercise
+
+Install the Twitter Bootstrap toolkit and use it to redesign the control panel web page to make it more attractive.
+
+~ End Exercise
 
 ### Debugging Webpages
 
@@ -557,6 +725,11 @@ One approach to debugging code is to put *alert* functions into the code updatin
 console.log("The value of the variable is: " + myVariable);
 console.error("An error has occurred!");
 ````
+~ Exercise
+
+Open up a complex web page such as <http://nytimes.com>. Then use you web browser develope tools to explore how the webpage is structured and designed.
+
+~ End Exercise
 
 ### Sending Complex Data Back and Forth
 
@@ -579,6 +752,7 @@ var obj = {title: "I'm a complex object", data: [1, 4, 9]};
 var str = JSON.stringify(obj); // '{"title":"I'm a complex object","data":[1,4,9]}'
 JSON.parse(str); // {title: "I'm a complex object", data: [1, 4, 9]};
 ````
+
 
 ### Hosting a webpage
 

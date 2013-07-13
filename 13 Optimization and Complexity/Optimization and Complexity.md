@@ -37,7 +37,7 @@ var nullError = 0;
 var simulatedError = 0;
 for(var t = 0; t < results.periods; t++){
 	nullError += Math.pow(results.value(historical)[t] - average, 2);
-	simulatedError += Math.pow(results.value(historical)[t] - results.value(simulated)[t], 2)
+	simulatedError += Math.pow(results.value(historical)[t] - results.value(simulated)[t], 2);
 }
 
 showMessage("Pseudo R^2: "+((nullError-simulatedError)/nullError));
@@ -75,6 +75,46 @@ An alternative to squared error that treats all types of differences the same is
 
 Many other techniques are available for measuring error or assessing goodness of fit. Most statistical approaches function by specifying a full probability model for the data and then taking the goodness of fit not as a measure of error, but rather as the *likelihood*^[Likelihood is a technical statistical term. It can be roughly thought of as equivalent to "probability", though it is not precisely that.] of observing the results we saw given the parameter values. To be clear the issue of optimizing parameter values for models is one that is more complex than what we have presented here. Many sources of error exist in time series and analyzing them is a very complex, statistical challenge. The basic techniques we have presented are, however, useful tools that serve as gateways towards further analytical work.
 
+~ Exercise
+
+You have a model simulating the number of widgets produced at a factory. The model contains a stock, \p{Widgets} containing the simulated number of widget produced. You also have a converter, \p{Historical Production} containing historical data on how many widgets were produced in the past.
+
+Write two equations. One to calculated squared error for the models simulation of historical production, and one to calculate the absolute value error of the same.
+
+~ Answer
+
+Squared error:
+
+\e{ ([Widgets]-[Historical Production])^2 }
+
+Absolute value error:
+
+\e{ Abs([Widgets]-[Historical Production]) }
+
+~ End Exercise
+
+~ Exercise
+
+You like the idea of penalizing outliers in your optimizations. In fact, you like this idea so much that you would like to penalize outliers even more than squared error does. Create an equation to calculate error that penalizes outliers more than squared error.
+
+~ Answer
+
+\e{ ([Simulated]-[Historical])^4 }
+
+~ End Exercise
+
+~ Exercise
+
+Describe why this is not a valid equation to calculate error:
+
+\e{ [Simulated]-[Historical] }
+
+~ Answer
+
+The optimizer can always minimize this simply making \p{Simulated} as small as possible. This will not result in a fit to the historical data.
+
+~ End Exercise
+
 ## Multi-Objective Optimizations
 
 So far our examples have focused on optimizing parameter values for a single population of animals. But what if, instead of one population, we had two or more?
@@ -100,6 +140,13 @@ You can tackle issues like these by "weighting" the different objectives in your
 \e{ 2*Abs([Simulated Hamsters]-[Historical Hamsters]) + Abs([Simulated Toads]-[Historical Toads]) }
  
 This makes one unit of error in the hamster population simulation count just as much as two units of error for the toad population simulation^[Weighting is a useful technique you can use for other optimization tasks. Imagine you had a model simulating the growth of your business in the next 20 years. You want to use this model to adjust your strategy to achieve three objectives: maximizing revenue, maximizing profit, and maximizing company size. Potentially maximizing profit would be the most important objective with maximizing company size being the least important. You can use weights to combine these three criteria into a single criterion for use by the optimizer.].
+
+~ Exercise
+
+Why does the percent error equation have issues when the historical data become very small? What happens when the historical data becomes 0?
+
+~ End Exercise
+
 
 ## Finding the Best Fit
 
@@ -190,9 +237,48 @@ RESULTS
 
 # End Model
 
-### Exercises
+~ Exercise
+
+You are building a model to simulated company profits into the future. You have 30 years of historical company profit data you will use to calibrate parameter values using an optimizer.
+
+Choose an error measure to use. Justify this choice and explain why you would use it instead of other measures.
+
+~ End Exercise
+
+~ Exercise
 
 Calculate the pseudo $R^2$ for \p{Growth Rate} = \e{0.1}, \e{0.3}, and \e{0.172}.
+
+~ End Exercise
+
+~ Exercise
+
+Adjust the JavaScript code to calculate pseudo $R^2$ to use absolute value error instead of squared error.
+
+~ Answer
+
+Change:
+
+````javascript
+nullError += Math.pow(results.value(historical)[t] - average, 2);
+simulatedError += Math.pow(results.value(historical)[t] - results.value(simulated)[t], 2);
+````
+
+To: 
+
+````javascript
+nullError += Math.abs(results.value(historical)[t] - average);
+simulatedError += Math.abs(results.value(historical)[t] - results.value(simulated)[t]);
+````
+
+~ End Exercise
+
+~ Exercise
+
+Describe local minimum, why they cause issues for optimizers, and strategies for dealing with them.
+
+~ End Exercise
+
 
 ## The Cost of Complexity {#ComplexityCost}
 
@@ -250,9 +336,9 @@ We can describe this phenomenon using a simple conceptual model defined by three
 
 $$ \text{Available Insights} \propto \text{Complexity} $$
 
-Conversely, our ability to understand the model and extract insights from it is inversely proportional to model complexity:
+Conversely, our ability to understand the model and extract insights from it is inversely proportional to model complexity. $\alpha$ is a constant indicating how much understandability decreases as complexity increases. This relationship is non-linear as each item added to a model can interact with every other item currently in the model. Thus, the cognitive burden increases exponentially as complexity increases.
 
-$$ \text{Understandibility} \propto \frac{1}{\text{Complexity}} $$
+$$ \text{Understandability} \propto \alpha^{-\text{Complexity}} $$
 
 The number of insights we actually obtain from a model is the product of the number of available insights and our ability to understand the model:
 
@@ -323,6 +409,34 @@ Why is that? We can trace the key issue back to the problem that our data for th
 
 We can think of life-cycle and many other kinds of models as a chain. Each link of the chain is a sub-model that takes data from the previous link, transforms them and feeds them into the next link. Like a chain, models may only be as good as their weakest link. It is often better to build a small model where all the links are strong, than a more complex model with many weak links.
 
+~ Exercise
+
+Implement a model tracking the growth of a hamster from birth to 12 months. Create the model for a single hamster and then using sensitivity testing to obtain a distribution of hamster size. Assume hamster are born with an average size of 10 and a standard deviation of 1. Use the true parameter growth rates and do not incorporate measurement uncertainty in the model;
+
+~ End Exercise
+
+~ Exercise
+
+Define a procedure for fitting a System Dynamics model of hamster growth to the hamster growth data in the table. Assume you know that their are two linear growth rates for the infant and juvenile stages but you do not know the values of these rates.
+
+~ Answer
+
+Example procedure:
+
+1. Find the average hamster size at each time period by taking the mean of observations at that period.
+2. Define two variables in the model: \p{Infant Rate} and \p{Juvenile Rate}.
+3. Define an error primitive \p{Error} the equation taking the absolute value of the difference between the simulated size and the average empirical size.
+4. Run the optimizer to minimize this error term by adjusting the two rate variables.
+
+~ End Exercise
+
+~ Exercise
+
+Apply the optimization procedure to your System Dynamics model to determine the hamster rates of growth from the empirical data.
+
+~ End Exercise
+
+
 ##### Overfitting
 
 The act of building models that are too complex for the data you have is known as "overfitting" the data^[The reverse -- building models that are too simple -- is called "underfitting". In practice, underfitting will be less of a problem as our natural tendency is to overfit.]. In the model of hamster sizes, the model where we look at each life stage separately is an overfit model; We do not have the data to justify this complex of a model. The simpler model (ignoring the different stages) is superior.
@@ -377,3 +491,18 @@ In general, overfitting should be watched for carefully. If you do not have a go
 How do we estimate the true error of the model fit? The simplest approach is to take your dataset and split it into two parts. Build the model with one half of the data and then measure the accuracy using the other half. So with our high-school students we would randomly assign each one to be used either to build the model or to assess the model’s error. Advanced statistical techniques such as *cross-validation* or *bootstrapping* are other approaches and can be more effective given a finite amount of data. Unfortunately, we do not have space to discuss them here, but we would recommend the reader explore them on their own if they are interested in this topic. 
 
 No one ever got fired for saying, "Let's make this model more complex." After this chapter, we hope you understand why this advice, though safe to say, is often exactly the wrong advice.
+
+~ Exercise
+
+What is overfitting? What is underfitting?
+
+~ End Exercise
+
+~ Exercise
+
+You have been asked to evaluate a model built by a consulting company. The company tells you that their model has an $R^2$ of 0.96 and is therefore a very accurate model.
+
+Do you agree? What questions or tests do you need to do to determine if the model is good?
+
+~ End Exercise
+

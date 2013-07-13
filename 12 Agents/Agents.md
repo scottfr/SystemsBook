@@ -12,6 +12,12 @@ Fortunately, an alternative modeling paradigm to System Dynamics exists that is 
 
 ![Figure 1. Two paradigms for modeling a population: System Dynamics and Agent Based Modeling.](SDvsABM.png)
 
+~ Exercise
+
+Discuss the challenges you might face using System Dynamics to model a the adoption of a new product like an improved mousetrap. Identify issues that could be addressed by modeling discrete consumers.
+
+~ End Exercise
+
 ## The State Transition Diagram
 
 Up until now our primary modeling tool has been the stock and flow diagram. This type of diagram is useful for summarizing systems from a high-level viewpoint. The stock is a primitive that can model entities that take on a range of values and flows are well suited for specifying the changes in stocks
@@ -39,6 +45,28 @@ Probability
 Condition
 : In this mode you create an equation that will trigger than transition when it becomes true. For instance, if we had a stock, \p{Infection Level} in our agent indicating how sick the agent was, we could have them transition out of the sick state once that stock fell to zero. The trigger condition to enable this could be something like: \e{[Infection Level] = 0}.
 
+
+~ Exercise
+
+Specify a transition trigger type and value for the following types of transition:
+
+1. Transition after 10 days.
+2. 20% chance of transitioning each year.
+3. Transitioning when value of the primitive \p{Volume} is greater than 5.
+
+~ Answer
+
+1. Timeout trigger with value 10 days.
+2. Probability trigger with value 20% (assuming time units of years).
+3. Condition trigger. Value: \e{[Volume] > 5}
+
+~ End Exercise
+
+~ Exercise
+
+Create a state transition diagram for a model of a person who three states: \p{Child}, \p{Adult}, \p{Retired}. The person starts in the \p{Child} state, transitions to the \p{Adult} state when they are 18 years old, and has a 2% chance of transitioning to the \p{Retired} state each year.
+
+~ End Exercise
 
 # Model
 
@@ -226,6 +254,46 @@ Lastly, there are a couple of very useful functions are available to combine vec
 
 There are many more vector functions available, but these are some of the key ones. They will prove invaluable when you come to working with vectors of agents.
 
+~ Exercise
+
+Given a vector of heights \e{«2, 1.8, 1.9, 1.5»}, write an equation to find the tallest height under 1.95 meters:
+
+~ Answer
+
+\e{Max(Filter(«2, 1.8, 1.9, 1.5», x < 1.95))}
+
+~ End Exercise
+
+~ Exercise
+
+Given a vector named *a*, write an equation to find the median of the squares of all the elements in *a*.
+
+~ Answer
+
+\e{Median(a^2)}
+
+~ End Exercise
+
+~ Exercise
+
+Given a vector named *a* and a vector named *b*, write an equation to find the smallest element that is in both vectors.
+
+~ Answer
+
+\e{Min(Intersection(a, b))}
+
+~ End Exercise
+
+~ Exercise
+
+Given the vector named *a*. Find the mean of the vector without using the \e{Mean()} function.
+
+~ Answer
+
+\e{Sum(a)/Count(a)}
+
+~ End Exercise
+
 ### Accessing Agents
 
 Insight Maker includes a number of functions to access the individual agents within a population. The simplest of these is the \e{FindAll()} function. Given an agent population primitive that we'll call \p{Population}, the FindAll function returns a vector containing all the agents within that agent population:
@@ -254,6 +322,26 @@ If you wanted the agents that were either infected or men (but not both simultan
 
 \e{Difference(FindState([Population], [Infected]), FindState([Population], [Male]))}
 
+~ Exercise
+
+Write an equation using the disease example to return a vector of all female infected individuals.
+
+~ Answer
+
+\e{FindState(FindState([Population], [Infected]), [Female])}
+
+~ End Exercise
+
+~ Exercise
+
+Write an equation using the disease example to return a vector of all female individuals, healthy individuals or healthy females.
+
+~ Answer
+
+\e{Union(FindNotState([Population], [Infected]), FindState([Population], [Female]))}
+
+~ End Exercise
+
 ### Agent Values
 
 Once you have a vector of agents, you can extract the values of the specific primitives in those agents using the \e{Value()} and \e{SetValue()} functions.
@@ -269,6 +357,16 @@ A vector of heights by itself is generally of not too much use. Often we will wa
 In addition to determining the value of a primitive in an agent, you can also manually set the agents’ primitive values using the SetValue function. It takes the same arguments as the Value function in addition to the value you want to set primitives to. For instance, we could use the following to set the height of all our agents to 2.1:
 
 \e{SetValue(FindAll([Population]), [Height], 2.1)}
+
+~ Exercise
+
+Assume our disease model population had a height stock. Provide an equation to find the average difference in heights between males and females.
+
+~ Answer
+
+\e{Mean(Value(FindState([Population], [Male]), [Height]))-Mean(Value(FindState([Population], [Female]), [Height]))}
+
+~ End Exercise
 
 # Model
 
@@ -382,6 +480,16 @@ For instance, we can use an action primitive in an agent and the \e{Move()} func
 Another useful movement function is the \e{MoveTowards()} function. MoveTowards moves an agent towards (or away from) the location of another agent. MoveTowards takes three arguments: the agent to be moved, the target agent to move towards, and how far to move towards that agent (with negative values indicating movement away). The following command would move an agent one meter closer to its nearest neighbor in the population.
 
 \e{{MoveTowards([Self], FindNearest([Population], [Self]), {1 Meter})}}
+
+~ Exercise
+
+Write an equation to move an agent 1 meters towards the furthest healthy agent.
+
+~ Answer
+
+\e{{MoveTowards([Self], FindFurthest(FindState([Population, [Healthy]), [Self]), {1 Meter})}}
+
+~ End Exercise
 
 # Model
 
@@ -549,6 +657,46 @@ End Function
 
 A great place to include your functions is in the *Macros* section of your model. You can enter macros by clicking the \u{Macros} button in the \u{Tools} section of the toolbar. The functions you define here will be accessible in any equation in any part of your model.
 
+~ Exercise
+
+Write a function to return the range of a vector. The range is the largest element of the vector minus the smallest element.
+
+~ Answer
+
+\e{range(x) <- max(x)-min(x)}
+
+or
+
+\e{
+Function Range(x)
+	Max(x)-Min(x)
+End Function
+}
+
+~ End Exercise
+
+~ Exercise
+
+Write a function to calculate the *n*th Fibonacci number. The Fibonacci sequence goes 1, 1, 2, 3, 5, 8, 12, ... After the first two, each number is the sum of the two proceeding numbers in the sequence.
+
+What is the 15th Fibonacci number?
+
+~ Answer
+
+\e{
+Function Fib(n)
+	If n = 1 or n = 2 Then
+		1
+	Else
+		Fib(n-1) + Fib(n-2)
+	End If
+End Function
+}
+
+The 15th Fibonacci number is 610.
+
+~ End Exercise
+
 ## Integrating SD and ABM
 
 System Dynamics modeling and Agent Based Modeling are two different ways of approaching a system. In general, System Dynamics looks at highly aggregated systems and encourages the study of feedback. Agent Based Modeling explores individuals and the interactions between these individuals.
@@ -559,3 +707,9 @@ Insight Maker (and other modeling packages such as AnyLogic <http://www.anylogic
 
 When doing modeling, it is important to not get focused on labels or taxonomies of different techniques. Given a modeling task, you want to think about what tools and techniques are best used to approach it. You want to make sure not to approach a modeling task by trying to figure out how to force that task into the constraints of a favorite modeling paradigm.
 
+
+~ Exercise
+
+Compare and contrast the Agent Based Modeling and System Dynamics approach to creating models. Provide three examples of modeling tasks where Agent Based Modeling would be better suited than System Dynamics and three examples where the reverse would be true.
+
+~ End Exercise

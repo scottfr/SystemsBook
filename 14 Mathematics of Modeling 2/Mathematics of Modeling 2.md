@@ -174,7 +174,7 @@ Find the equilibrium points for the system:
 $$
 \begin{aligned}
 \frac{dX}{dt} &= X^2 - Y \\
-\frac{dY}{dt} = -2 \times X^2 - Y^2
+\frac{dY}{dt} &= -2 \times X^2 - Y^2
 \end{aligned}
 $$
 
@@ -275,6 +275,71 @@ $$
 \end{aligned}
 $$
 
+~ Exercise 
+
+Calculate the Jacobian matrix of the system:
+
+$$
+\begin{aligned}
+\frac{dX}{dt} &=  X \\
+\frac{dY}{dt} &= Y^2 \\
+\end{aligned}
+$$
+
+~ Answer
+
+$$
+\begin{bmatrix}
+1 & 0 \\
+0 & 2 \times Y
+\end{bmatrix}
+$$
+
+
+~ End Exercise
+
+~ Exercise 
+
+Calculate the Jacobian matrix of the system:
+
+$$
+\begin{aligned}
+\frac{dX}{dt} &= X^2 - Y \\
+\frac{dY}{dt} &= -2 \times X^2 - Y^2
+\end{aligned}
+$$
+
+~ Answer
+
+$$
+\begin{bmatrix}
+2 \times X & -1  \\
+-4 \times X & -2 \times Y
+\end{bmatrix}
+$$
+
+~ End Exercise
+
+~ Exercise 
+
+Calculate the Jacobian matrix of the system:
+
+$$
+\begin{aligned}
+\frac{dX}{dt} &= X \times Y + \beta \times Y^2 \\
+\frac{dY}{dt} &= \alpha \times X^3 + X^2 \times Y
+\end{aligned}
+$$
+
+~ Answer
+
+$$
+\begin{bmatrix} Y \times X & X+2 \times \beta \times Y \\ 3 \times \alpha \times X^2 + 2 \times X \times Y & X^2 \end{bmatrix}
+$$
+
+~ End Exercise
+
+
 This is complicated so don't worry if you don't completely understand it! Once you have the Jacobian, you calculate what are known as the eigenvalues of the Jacobian at the equilibrium points. This is also a bit complicated, so if your head is starting to spin, just skip forward in this chapter!
 
 Nonetheless, eigenvalues and their sibling eigenvectors are an interesting subject. Given a square matrix (a matrix where the number of rows in equals the number of columns), an eigenvector is a vector which, when multiplied by the matrix, results is the original vector multiplied by some factor. This factor is known as an eigenvalue as is usually denoted $\lambda$. Given a matrix $\mathbf{A}$, an eigenvalue $\lambda$ with associated eigenvector $\mathbf{V}$; the following equation will be true:
@@ -320,7 +385,71 @@ $$
 
 That is a fair amount of work to do. It's even more complicated if you have more than two state variables. However, once you have gone through the calculations and determined the linearized eigenvalues for your equilibrium points, you know everything you might want to know about the stability of the system.
 
+~ Exercise 
+
+Find the eigenvalues of the following matrix:
+
+$$
+\begin{bmatrix} 2 & 4 \\  4 & 2 \end{bmatrix}
+$$
+
+(Bonus: Determine the associated eigenvectors.)
+
+~ Answer
+
+Eigenvalue of 6 with eigenvector of $[1,1]$. Eigenvalue of -2 with eigenvector of $[-1,1]$.
+
+~ End Exercise
+
+~ Exercise 
+
+Find the eigenvalues of the following matrix:
+
+$$
+\begin{bmatrix} 2 & 0 \\  5 & 1 \end{bmatrix}
+$$
+
+(Bonus: Determine the associated eigenvectors.)
+
+~ Answer
+
+Eigenvalue of 2 with eigenvector of $[1,5]$. Eigenvalue of 1 with eigenvector of $[0,1]$.
+
+~ End Exercise
+
+~ Exercise 
+
+Find the eigenvalues of the following matrix:
+
+$$
+\begin{bmatrix} \alpha & \beta \\  \beta & \alpha \end{bmatrix}
+$$
+
+(Bonus: Determine the associated eigenvectors.)
+
+~ Answer
+
+Eigenvalue of $\alpha-\beta$ with eigenvector of $[-1,1]$. Eigenvalue of $\beta+\alpha$ with eigenvector of $[1,1]$.
+
+~ End Exercise
+
+~ Exercise
+
+$$
+\begin{bmatrix} \alpha & \beta \\  0 & \beta \end{bmatrix}
+$$
+
+(Bonus: Determine the associated eigenvectors.)
+
+~ Answer
+
+Eigenvalue of $\alpha$ with eigenvector of $[1,0]$. Eigenvalue of $\beta$ with eigenvector of $\left[\frac{-\beta}{\alpha-\beta},1 \right]$.
+
+~ End Exercise
+
 In the exponential growth model we can see that when the eigenvalues are both negative we have a stable equilibrium (refer to the graphs we developed earlier), while if either one is positive (or they both are) we have an unstable equilibrium. This makes a lot of sense as if either one is positive it pushes the system away from the equilibrium making it unstable.  While if they are both negative then they both push the system towards the equilibrium point. Visualize the ball sitting in the cup or on the hill.
+
+Looking at it this way, we realize that *all we need in order to understand the stability of an equilibrium point are the eigenvalues of the Jacobian at the equilibrium point*. This is an incredibly powerful tool. It reduces the complex concept of stability, into an analytical procedure that can be applied straightforwardly.
 
 Let's now look at some more examples.
 
@@ -334,7 +463,6 @@ $$
 $$
 
 First let's calculate the Jacobian for this model. We take the partial derivatives of each of the two derivatives with respect to each of the two state variables to create a two-by-two matrix:
-
 
 $$
 \text{Jacobian} = \begin{bmatrix} \dfrac{\partial}{\partial H }  - \alpha \times H \times S& \dfrac{\partial}{\partial S }  - \alpha \times H \times S  \\  \dfrac{\partial}{\partial H } \alpha \times H \times S & \dfrac{\partial}{\partial S } \alpha \times H \times S \end{bmatrix} =\begin{bmatrix}
@@ -407,6 +535,57 @@ Both greater than or equal to 0 | Yes | Unstable Oscillations
 Both less than or equal to 0 | No | Stable
 Both less than or equal to 0 | Yes | Damped Oscillations (Stable)
 
+~ Exercise
+
+A system's Jacobian matrix has two eigenvalues at an equilibrium point. Determine the stability of the system at this point for the following pairs of eigenvalues:
+
+1. 0.5 and 4
+2. -3 and 0.2
+3. -3 and -1
+
+~ Answer
+
+1. Unstable
+2. A saddle (unstable)
+3. Stable
+
+~ End Exercise
+
+
+~ Exercise
+
+A system's Jacobian matrix has two eigenvalues at an equilibrium point. Determine the stability of the system at this point for the following pairs of eigenvalues:
+
+1. $1+2i$ and $1-2i$
+2. $-3+0.2i$ and $-3-0.2i$
+3. $0.2i$ and $0.2i$
+
+~ Answer
+
+1. Unstable oscillations
+2. Damped oscillations (stable)
+3. Stable oscillations
+
+~ End Exercise
+
+
+~ Exercise
+
+A system's Jacobian matrix has a single eigenvalue at an equilibrium point. Determine the stability of the system at this point for the following eigenvalues:
+
+1. 2.5
+2. -1.2
+3. 0.5
+
+~ Answer
+
+1. Unstable
+2. Stable
+3. Unstable
+
+~ End Exercise
+
+
 
 ## Analytical vs. Numerical Analysis
 
@@ -417,4 +596,57 @@ The great benefit of the analytical techniques we present here is that they can 
 A weakness of analytical methods is that your model must be solvable analytically. This means that you will probably need to keep your model from growing too complex in order to keep it analytically tractable. Also, some common functions such as \e{IfThenElse} logic can make analytical work much more difficult. Further, some models may simply be impossible to analyze analytically and these insolvable models may in fact be very simple in practice. For example, any model containing both $X$ and $\log(X)$ in the same equation will be intractable to many forms of analysis. 
 
 We think both analytical and numerical work has a lot of applicability in practice. We do worry, though, about some of the analytical models and work we see presented or published. Sometimes these models seem to us to be much too simple to adequately represent the system they are supposed to be modeling. True, analytically the results of the models appear elegant and clear, but if the model is too simple to be relevant these results have little use and may actually be very misleading in practice. We worry sometimes that a focus on analytical work^[And, rightly or wrongly, analytical work is generally considered more prestigious and "serious" than numerical work.] leads to modelers prioritizing analytical tractability over model utility in their decisions. We believe a focus on analytical results can lead to reductionist models with reduced practical utility and we caution modelers against becoming too focused on elegant solutions and the expense of relevance. Where available, more realistic models are preferable, even if they require numerical solutions than overly simplistic analytically solvable ones.
+
+~ Exercise
+
+What are the equilibrium points of the following system and their associated stabilities?
+
+$$
+\begin{aligned}
+\frac{dX}{dt} &= X \times Y + X^2  \\
+\frac{dY}{dt} &= Y + 2
+\end{aligned}
+$$
+
+~ Answer
+
+Equilibrium $X=2, Y=-2$ is unstable.
+ 
+$X=0, Y=-2$ is an unstable saddle point.
+ 
+ 
+~ End Exercise
+
+~ Exercise
+
+What are the equilibrium points of the following system and their associated stabilities? $\alpha$ is a scalar number that may be positive or negative.
+
+$$
+\begin{aligned}
+\frac{dQ}{dt} &= -XQ\times R + R \\
+\frac{dR}{dt} &= \alpha - \alpha \times R^2
+\end{aligned}
+$$
+
+~ Answer
+
+Equilibrium $Q=1, R=1$ is stable if $\alpha \geq 0$. Otherwise it is unstable.
+ 
+$Q=1, R=-1$ is unstable.
+ 
+~ End Exercise
+
+~ Exercise
+
+You have a system dynamics model of a population of wolves. This model consists of a single stock \p{Wolves} (initial value 100), a single flow going into the stock \p{Net Growth}, a parameter \p{Growth Rate} (value of 0.05), and a parameter \p{Carrying Capacity} (value of 6,000). The flow has the equation \e{[Growth Rate]*[Wolves]*(1-[Wolves]*[Carrying Capacity])}.
+
+Build this model determine the location of the equilibria and their stability. Then prove these conclusions analytically.
+
+~ Answer
+
+The first equilibrium has no wolves and is unstable.
+
+The second equilibrium is when the population size is equal to the carrying capacity. This equilibrium is stable.
+
+~ End Exercise
 

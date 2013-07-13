@@ -62,6 +62,18 @@ In regards to regression testing, it is important to ensure these tests are auto
 
 George Oster and his class XXX
 
+~ Exercise
+
+You have a variable representing the total population size of a small city. What constraints might you place on this variable?
+
+~ Answer
+
+Minimum value: 0
+
+Maximum value: 10,000,000 (this value is somewhat arbitrary but should be larger than the maximum size you expect this city to ever grow to)
+
+~ End Exercise
+
 ### A Second Pair of Eyes
 
 That is not to say, however, that spot and point-in-time checks are not worthwhile. It can be very useful to have a second modeler review your models and cross-check the equations. This helps not only to check simple mistakes but also to question and critique the fundamental structure and choices of the model.
@@ -182,12 +194,72 @@ We can readily see the range of results allowing us to make decisions incorporat
 
 # End Model
 
+~ Exercise
+
+Create an equation to represent the uncertainty of how many red marbles in a bag. You know there are at least 5 red marbles and no more that 14. You do not have any other information.
+
+~ Answer
+
+We use a standard deviation of 4 as we lack any information on what the dispersion should be.
+
+\e{Round(Rand(5, 15))}
+
+~ End Exercise
+
+~ Exercise
+
+Create an equation to represent the uncertainty of how many red marbles in a bag. You know there are probably about 20 red marbles and you know there are no more than 100 marbles in the bag.
+
+~ Answer
+
+\e{Round(RandTriangular(0, 100, 20))}
+
+~ End Exercise
+
+~ Exercise
+
+Create an equation to represent the uncertainty of how many red marbles in a bag. You know there are probably about 20 red marbles and you do not know how many marbles the bag can hold total.
+
+~ Answer
+
+\e{Round(RandLogNormal(20, 4))}
+
+We use a standard deviation of 4 as we lack any information on what the dispersion should be.
+
+~ End Exercise
+
+
+
 The astute reader will notice that our discussion up to this has failed to address an important point: how do we determine the uncertainty of a variable? It is very easy to say that we do not know the precise value of a variable, but it is much more difficult to define the uncertainty of it. One case where we can precisely define uncertainty is when you take a random sample of measurements. For instance, suppose our model included the height of the average American man as a variable. We could randomly select a hundred men and measure their heights. In this case our uncertainty would be normally distributed with a mean equal to the mean of our sample of one hundred men and a standard deviation equal to the standard error of our sample of one hundred men^[Please note that this contradicts slightly what we said earlier. Clearly, a person cannot have a negative height while the normal distribution will sometimes generate negative values. So wouldn't a log-normal distribution be better than a normal distribution? Mechanistically, it would, however statistically we can show that due to the Central Limit Theorem the normal distribution does asymptotically precisely model our uncertainty. Given a large enough sample size (100 is more than enough in this case), the standard deviations for uncertainty will be so small that the chances of seeing a negative number (or even one far from the mean) are effectively none.]. For any random sample of $n$ values from a population, the same should hold true: you will be able to model your uncertainty using a normal distribution with:
 
 $$ \mu = \frac{Value_1+Value_2+Value_3+...+Value_n}{n} $$
 $$ \sigma = \sqrt{\frac{1}{n} \sum_{i=1}^n (Value_i-\mu)^2} $$
 
 However, in most applied cases you will not be able to apply this normality assumption. Generally you will not have a nice random sample, or you might have no data at all and instead have some abstract variable you need to specify a value for. In these cases, it is up to you to make a judgment call on the uncertainty. Choose one of the four distributions detailed above and use whatever expert knowledge available to you to place an estimate on the parameterization of uncertainty. One rule of thumb, however, is that it is better to overestimate uncertainty than underestimate it. It is better to err on the side of overestimating your lack of knowledge than it is to obtain undue confidence in model results due to an underestimation of uncertainty.
+
+~ Exercise
+
+You have tested the diameter of 15 widgets coming out of a factory and obtained the following values: 2.3, 2.5, 1.9, 1.4, 2.0, 2.7, 1.9, 2.1, 2.1, 2.2, 1.6, 2.4, 2.0, 1.8, 2.6. 
+
+Create an equation to generate a new widget size with the same distribution as the widgets arriving from the factory.
+
+~ Answer
+
+\e{RandNormal(2.1, 0.3625)}
+
+~ End Exercise
+
+~ Exercise
+
+You have taken 12 sheep from a population and weighed the amount of wool on each sheep to obtain the following weights in kilograms: 1.005, 0.817, 0.756, 0.821, 0.9, 0.962, 0.692, 0.976, 0.721, 0.828, 0.718, 0.852. 
+
+Create an equation to generate how much a random variable for how much wool you will obtain from a sheep.
+
+~ Answer
+
+\e{RandNormal(0.837, 0.106)}
+
+~ End Exercise
 
 ## Confidence and Philosophy
 
@@ -198,3 +270,17 @@ Epistemological theories that are primarily in the first camp are those such as 
 In our discussion of confidence building we repeatedly refer to matching the beliefs of the audience. We recommend creating simulations and behavior in our models that match an audience's expectations for the behavior of the system. This is distinct from saying that you should match the reality of true system. Ideally, true behavior of the system and an audience's mental models of the system should be equivalent, but in practice they may well differ. Although confidence in a model will be boosted by strictly matching the mental models of an audience, a truly effective narrative model should be persuasive enough to change the mental models of an audience.
 
 Our discussion of predictive models from the previous chapter does not fall within a constructivist world-view as we are claiming that there are objective "outside-ourselves" measures of predictive accuracy we can obtain. It should go without saying that predictive models may not be accurate reflections of reality, even in their own terms. The mathematics of a predictive model may be unrelated to the true system that is being modeled, yet is may still create accurate predictions. As such, our discussion of predictive models is not really a positivist or empiricist one. Instead this discussion would fall under the epistemological theories of pragmatism or instrumentalism which claim a theory or model should be assessed on how well it predicts which may be independent of the truth of the theory itself.
+
+~ Exercise
+
+You are asked to evaluate a model simulating the growth of an endangered species in its habitat. What tests and demonstrations would you like to see in order to trust the model and recommend its use in practice?
+
+~ End Exercise
+
+~ Exercise
+
+You are asked to evaluate a model simulating the potential adoption for a new product at your company. The basic results of the model are very encouraging for the product suggesting it would make a significant return on investment.
+
+What tests and demonstrations of the model would you like to see in order to recommend the product be produced based on the model results?
+
+~ End Exercise

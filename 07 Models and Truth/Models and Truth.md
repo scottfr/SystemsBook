@@ -27,6 +27,28 @@ If the first question is answered in the affirmative, you can build a mechanisti
 
 If neither question is answered affirmatively... well in that case there isn't much of anything you can build.
 
+~ Exercise
+
+A credit card company has hired you to build a model to predict defaults of new applicants. They give you a data set containing information on one million of their customers along with whether or not the customer defaulted.
+
+Would it be better to build a mechanistic or statistical model for this data?
+
+~ Answer
+
+It would be better to build a statistical model in this case.
+
+~ End Exercise
+
+~ Exercise
+
+You have been commissioned to build a model of population growth for a herd of Zebra in Namibia. You have some data on the historical size of the population of Zebras but this data is limited. You also have access to over a dozen experts who have studied Zebras their whole life and have an intimate understanding of the behavior of the Zebras.
+
+~ Answer
+
+It would be better to build a mechanistic model in this case.
+
+~ End Exercise
+
 
 ### Aggregated versus Disaggregated
 
@@ -40,6 +62,18 @@ At what scale do we build this model? The range of possible scales is wide:
 * At the extreme disaggregated level, we might even want to model individual people -- all 7 billion of them -- and their needs and movements around the world.
 
 There is no simple answer to this question of optimal scale. The best choice is highly context-sensitive and depends on the needs of the specific modeler and application.
+
+~ Exercise
+
+You have been hired to build a model of world population growth. What is an appropriate level of aggregation/disaggregation for this model? Does your answer change if you very the time scale? What would be the differences between a model designed to work 10 years in the future, one designed to work for 100 years, and one designed to work for a 1,000 years?
+
+~ End Exercise
+
+~ Exercise
+
+Your company builds rulers. You have been asked to develop a model of global demand for rulers. What is an appropriate level of aggregation/disaggregation for this model?
+
+~ End Exercise
 
 ## Prediction, Inference and Narrative
 
@@ -57,7 +91,7 @@ Prediction
 : Models used for prediction are the most straightforward. They attempt to forecast some outcome given information about variables that may influence that outcome. A weather forecast is an example of a model used for prediction. Likewise, when you apply for a credit card at a bank, they run a predictive model to determine your risk of not paying them back what you owe and defaulting. When you apply for life insurance, the company has a model that predicts how long they think you will live in order to determine how much they should charge you. All these models take in data (the current temperature for the weather forecast, the amount of money in your bank account for your risk of default, your age for the life insurance application) and apply various forms of analysis to generate a prediction of the outcome.
 
 Inference
-: Models used for inference are most common in academic research. Often, academic research questions distills down to this simple template: "Does *X* affect *Y*?" These are inferential questions. As an example, a researcher may make a hypothesis statement such as, "The wealthier a high-school student's family is, then the higher the student's test scores will be." The researcher may then build a model to test the validity of this hypothesis and the model's results will generally be phrased in terms of a *p* value indicating the statistical significance of the evidence in support of the hypothesis.
+: Models used for inference are most common in academic research. Often, academic research questions distills down to this simple template: "Does *X* affect *Y*?" These are inferential questions^[Predictions are also inferential results, but we prefer to discuss prediction and more hypothesis-testing types of inference separately. This distinction makes our understanding of modeling clearer.]. As an example, a researcher may make a hypothesis statement such as, "The wealthier a high-school student's family is, then the higher the student's test scores will be." The researcher may then build a model to test the validity of this hypothesis and the model's results will generally be phrased in terms of a *p* value indicating the statistical significance of the evidence in support of the hypothesis.
 
 Narrative
 : Models are often used to tell a persuasive story. When the Obama administration wanted to persuade lawmakers and the public to support their economic stimulus, they famously published the graph shown in Figure 2. A great deal of complex modeling and mathematics surely went into constructing this figure. However its core purpose was to tell the nation a story: Things are going to be bad, but the recovery plan will make them less so. Such stories are at the heart of narrative models and we will return to this figure later on and why it is not really a predictive model despite it generating predictions.
@@ -65,6 +99,28 @@ Narrative
 ![Figure 2. The Obama Administration's Predictions for the Effects of the Recovery Plan [@Romer:2009tx]](Stimulus.png)
 
 All models can be classified in terms of these three primary purposes and we will see how useful it is to discuss modeling projects in terms of them^[And we strongly recommend doing so. It is important to clearly define the purpose at the start of a project. The techniques used and data required depend significantly on the model's overall purpose. To be very clear, it is important to clarify at the outset whether your primary goal is to use a model for prediction or for narrative. Many modeling projects may attempt to do both only to find themselves with a model that does neither.].
+
+~ Exercise
+
+Classify each of these modeling tasks as either primary prediction, inference, or narrative tasks:
+
+1. A model to determine the average ocean temperature in 2020.
+2. A model to determine whether deforestation affects temperatures.
+3. A model to determine whether a company should supply a credit card to a specific applicant.
+4. A model to help students understand the risks of global climate change.
+5. A model to convince your manager to green-light your new initiative.
+6. A model to assess whether nutrition has an effect of infant mortality.
+
+~ Answer
+
+1. Prediction
+2. Inference
+3. Prediction
+4. Narrative
+5. Narrative
+6. Inference
+
+~ End Exercise
 
 ## The Strange Case of Inference
 
@@ -105,6 +161,26 @@ Using this equation, at low values of wealth the $\beta_1 \times \text{Wealth}$ 
 What are we really doing when we assume regression forms like this? Now it might not be immediately obvious, but what we are in fact doing is telling a story. Using our first equation, we are telling the story that as wealth increases test scores will almost always increase. Bill Gate's children will preform amazingly well here! Using the second equation we are telling a different story: As wealth increases test scores initially do as well but after a certain point increased wealth will hurt test scores. That picture isn't so rosy for the Bill Gates of the world!
 
 And so we arrive at a key insight. By choosing our equations to tell a story, our inferences are in fact based on narrative modeling approaches. True, these inferences build upon numerous calculations and very advanced theoretical underpinnings, but ultimately what governs our conclusions and inferences are the stories or narratives we tell about our system. These are choices that we as narrators make and they not determined by an objective truth or reality.
+
+~ Exercise
+
+You are given the following linear regression model that predicts the growth rate of a tree (in meters per year):
+
+$$\text{Growth Rate} = 3.2 + 0.013 \times \text{Mean Annual Temperature} + 0.021 \times \text{Annual Precipitation} - 2.3 \times \text{Moose Density}$$
+
+Take this mathematical model and convert it to a textual narrative.
+
+~ End Exercise
+
+~ Exercise
+
+You are given the following linear regression model that predicts the demand for hats (in thousands of hats sold per day):
+
+$$\text{Hat Demand} = 23.4 + 3.4 * (\text{Temperature in Celsius} - 22)- 1.2 \times \text{Wind Speed} - 0.21 \times \text{Unemployment Rate}$$
+
+Take this mathematical model and convert it to a textual narrative.
+
+~ End Exercise
 
 ### Predictive Inference
 
@@ -199,6 +275,12 @@ When building a narrative it is very important to use tools that are well suited
 This is a shame in our view. Such a stratagem can be successful if the authority presenting the model is prestigious enough. But the misdirection will quickly fail if any kind of rigorous scrutiny is applied to the model. Narrative models should never be given any real credence if the operation of the model is not transparent. Most statistical models are built on assumptions that are never made transparent to the audience.
 
 The modeling techniques presented in this book, on the other hand, are well suited for narrative modeling. The techniques we present are "clear box" modeling where the workings of the model are transparently evident and accessible. Our models have their structure explicitly described using an accessible modeling diagram showing the interactions between the different components in the model. The equations governing the model’s evolution are clear and readily available for each part of the model^[Admittedly, for complex models it may still require a significant investment on the part of an audience to fully understand the logic and equations in the model. But the opportunity is available.]. Furthermore, these modeling techniques used here make it straightforward to generate animated illustrations and displays to clearly communicate model results.
+
+~ Exercise
+
+Summarize the distinction between predictive and narrative models.
+
+~ End Exercise
 
 ## Synthesis
 
