@@ -77,9 +77,7 @@ Ludwig von Bertalanffy first proposed, in 1937, that the same basic structures o
 
 I'm not asking you to believe the previous statement just because it was provided here. Though through the experience presented shortly should allow you to arrive at a sensibility of the statement from your own perspective.
 
-----------
-
-### Exercise 1-1 ###
+~ Exercise
 
 Consider the images in Figure 5 and ask yourself what it is that all these different items actually have in common.
 
@@ -87,7 +85,7 @@ Consider the images in Figure 5 and ask yourself what it is that all these diffe
 
 [** Figure 4](http://insightmaker.com/insight/4957)
 
-----------
+~ End Exercise
 
 Each of these items represents a collection of stuff. Admittedly each image represents different stuff though stuff just the same. Because in each case this stuff collected over time it's really more appropriate to refer to the the collections of stuff as accumulations.  And as you will come to realize it is extremely important to remember that accumulations take time to accumulate, and often even longer to get rid of when you find out you don't want them.
 
@@ -127,13 +125,11 @@ A savings account is a bank account where if you put money in and keep it there 
 
 Swimming pools usually hold thousands of gallons of water and you usually have a couple of options to fill one. You might use a garden hose, which will take days, or a hose from a fire hydrant, which will take a few hours, or from a tanker truck, which probably takes a few loads. In each case the water filling the pool is probably measured in gallons per hour. Once you fill the pool you loose a little water when people in the pool get out, thought not too much. Most of the water loss from a pool is though evaporation due to the sun and when you backwash the filter used to keep the pool clean. The change in the amount of water is usually measured in gallons per hour.
 
-----------
-
-#### Exercise 1-2 ####
+~ Exercise
 
 Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that accumulate, or decrease, over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc. What are the flows that increase or decrease those stocks, and what are the time frames over which you think about the accumulation?
 
-----------
+~ End Exercise
 
 At this point you may be wondering why so much time was spent making you walk though all these examples for increasing and decreasing accumulation of stuff. Since we said this was an interactive book you're probably wondering where the interaction is.
 
@@ -159,7 +155,7 @@ Let's take a swimming pool as a specific instance of Figure 5.
 
 {"attribute":"Equation","target":"stuff in","value":"50"}
 
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Pool","name":"stuff out","create":"Flow"}
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"stuff","name":"stuff out","create":"Flow"}
 
 {"attribute":"Equation","target":"stuff out","value":"0"}
 
@@ -180,6 +176,7 @@ This graph indicates that after 24 hours the swimming pool with have 1,200 gallo
 # End Model
 
 [** Model](http://insightmaker.com/insight/4990)
+
 ----------
 
 #### Modeling Notes ####
@@ -276,13 +273,11 @@ Hopefully you haven't found this short introduction to the modeling environment 
 
 Too much explaining and not enough hands on interaction may get real boring in a hurry. As such you are encouraged to actually do the exercises. By interacting with the various aspects of the modeling environment you will develop a level of comfort and expertise which will serve you well throughout the rest of the book.
 
-----------
-
-#### Exercise 1-3 ####
+~ Exercise
 
 Go back and consider the various pictures in Figure 4. Pick a couple of them to model. The only parts you need to set up are the Time Settings, how long will it run and the Time Units. You can also set the values for stuff, stuff in and stuff out on the Configuration Panel. After you run the model open the Chart/Table configuration window and set the Y-Axis Label appropriate for what you're modeling. I encourage you to be adventurous. Make new Displays, Table Displays, etc. You can't break anything, it's just an opportunity to become comfortable with the environment and learn.
 
-----------
+-~ End Exercise
 
 Now that you've become intimately familiar with almost the simplest model possible lets go back and look at a couple of the pictures in Figure 5 and think about how the accumulations change in a bit more detail.
 
@@ -292,7 +287,9 @@ If you modeled the accumulation of rabbits you may have already realized that th
 
 # Model
 
-Figure 14 is a model that reflects the the notion that rabbits create more rabbits.
+{"title": "Rabbit Population Growth"}
+
+The following is a model that reflects the the notion that rabbits create more rabbits.
 
 {"geometry":{"x":450,"y":130,"width":100,"height":40},"name":"Rabbits","create":"Stock"}
 
@@ -310,9 +307,35 @@ DIAGRAM
 
 RESULTS
 
+The results really shouldn't be a surprise as we started with 0 Rabbits and a 0 Rabbit Birth Rate. If there are no Rabbits how could anything happen? And if we had some Rabbits with a Rabbit Birth Rate of 0 what would you expect the result to be?
+
+Suppose we start with 10 Rabbits, half of which are male and half of which are female. Research indicates that a female rabbit can give birth to between 18 and 26 Rabbits a year. The average for this, (18 + 24) / 2 = 22, though we'll round this up to 24 just because it will make the math easier. If a female Rabbit can produce 24 Rabbits a year, that's 2 per months, though it actually takes two Rabbits, one male and one female. With all these assumptions we get about 1 new Rabbit per month for each Rabbit.
+
+{"attribute":"InitialValue","target":"Rabbits","value":"10"},
+
+{"attribute":"Equation","target":"Rabbit Birth Rate","value":"1"}
+
+Based on the previous modeling notes the model indicates that if you start with some population of Rabbits and each time period the current number of Rabbits times the Rabbit Birth Rate will result in a number of Births. This number of Births will then be added to the accumulation of Rabbis and figure into the calculation for the next period.
+
+RESULTS
+
+Forty thousand Rabbits in a year? That seems a bit bizarre doesn't it? This result actually points out the real value of modeling, which is learning. You build a model based on what you think you understand. You then populate it with assumptions about the values and you run it. The result then either seems to make sense or seems really bizarre. When the results are really bizarre what the model is telling you is that either the structure is wrong, the assumptions are wrong, or both, because the world can't possibly be this bizarre. As a result you investigate the model and your assumptions. As your understanding improves the model gets better. At some point the model finally serves its purpose, to be a simplification of some aspect of the world which leads to a better understanding. Hopefully you come to find that going round and round with a model can be a delightful learning process.
+
+Did you notice the choppy nature of the graph in Figure 16? This is a result of the Time Step in the Time Settings window is too large. We'll talk about why this is happens and how to address it in Chapter 2.
+
+After that sidetrack lets get back to our 40,000 Rabbits that can't possibly exist after a year. You can be pretty sure how many Rabbits you started with at the beginning. And when you check the formula for Births it seems to be in order. This sort of means the assumption for Rabbit Birth Rate must be too big. If you think about what the model is doing it's probably not too difficult to figure out that the model assumes that a Rabbit can be born this month and then give birth to another Rabbit next month. If a Rabbit has to mature for six months before it gives birth to Rabbits then the Rabbit Birth Rate might be something more like 20%.
+
+attribute":"Equation","target":"Rabbit Birth Rate","value":".2"}
+
+{"attribute":"TimeStep","value":"0.25"}
+
+Is this right? A good thing to remember at this point is that "Is it right?" is actually the wrong question. A better question might be, "What have I learned, and is there more I can learn?" The graph sure seems more reasonable than what the model presented in Figure 16 though do you have a high degree of confidence in the current Rabbit Birth Rate. Are there a number of other questions we could ask about our Rabbits. What is the Rabbit Death Rate? Do they have enough food to eat? Are they living out in the open where Coyotes and Foxes can get at them? Does their owner have a passion for Rabbit Stew? These might each be a basis for building a better model, though at this point we're going to leave the Rabbits alone and move on to something else.
+
 # End Model
 
 [** Model](http://insightmaker.com/insight/5123)
+
+The most important learning you should take away from this model is that when what flows into the accumulation increases as the accumulation increases the accumulation can get real big in a hurry. This is actually called exponential grown and we'll talk in more detail about this in Chapter 2.
 
 ----------
 
@@ -334,82 +357,53 @@ If you mouse over the elements of the model you'll notice an \u{=} and an \u{i} 
 
 ----------
 
-Based on the previous modeling notes the model depicted in Figure 14 indicates that if you start with some population of Rabbits and each time period the current number of Rabbits times the Rabbit Birth Rate will result in a number of Births. This number of Births will then be added to the accumulation of Rabbis and figure into the calculation for the next period. If you mouse over the elements of the model and click on the = sign you can look at the definitions for the elements.
-
-The Time Settings for the model were set up to run from 0 to 12 months. If you click the Run button you you might be surprised when the model produces the graph in image in Figure 15.
-
-![Figure 15. Rabbit Population Growth with No Rabbits](00-im-5123.png)
-
-[** Figure 15. Rabbit Population Growth with No Rabbits](http://insightmaker.com/insight/5123)
-
-Figure 15 really shouldn't be a surprise. If you look at the Configuration Panel you'll see that it indicates 0 Rabbits and 0 Rabbit Birth Rate. If there are no Rabbits how could anything happen? And if we had some Rabbits with a Rabbit Birth Rate of 0 what would you expect the result to be?
-
-Suppose we start with 10 Rabbits, half of which are male and half of which are female. Research indicates that a female rabbit can give birth to between 18 and 26 Rabbits a year. The average for this, (18 + 24) / 2 = 22, though we'll round this up to 24 just because it will make the math easier. If a female Rabbit can produce 24 Rabbits a year, that's 2 per months, though it actually takes two Rabbits, one male and one female. With all these assumptions we get about 1 new Rabbit per month for each Rabbit. If you set the sliders to Rabbits = 10 and Rabbit Birth Rate = 1 and run the model you should see Figure 16.
-
-![Figure 16. Rabbit Population Growth with 10 Rabbits](00-im-5123a.png)
-
-[** Figure 16. Rabbit Population Growth with 10 Rabbits](http://insightmaker.com/insight/5123)
-
-Forty thousand Rabbits in a year? That seems a bit bizarre doesn't it? This result actually points out the real value of modeling, which is learning. You build a model based on what you think you understand. You then populate it with assumptions about the values and you run it. The result then either seems to make sense or seems really bizarre. When the results are really bizarre what the model is telling you is that either the structure is wrong, the assumptions are wrong, or both, because the world can't possibly be this bizarre. As a result you investigate the model and your assumptions. As your understanding improves the model gets better. At some point the model finally serves its purpose, to be a simplification of some aspect of the world which leads to a better understanding. Hopefully you come to find that going round and round with a model can be a delightful learning process.
-
-----------
-
-### Modeling Note ###
-
-Did you notice the choppy nature of the graph in Figure 16? This is a result of the Time Step in the Time Settings window is too large. We'll talk about why this is happens and how to address it in Chapter 2.
-
-----------
-
-After that sidetrack lets get back to our 40,000 Rabbits that can't possibly exist after a year. You can be pretty sure how many Rabbits you started with at the beginning. And when you check the formula for Births
-
-> Births = Rabbits * Rabbit Birth Rate
-
-it seems to be in order. This sort of means the assumption for Rabbit Birth Rate must be too big. If you think about what the model is doing it's probably not too difficult to figure out that the model assumes that a Rabbit can be born this month and then give birth to another Rabbit next month. If a Rabbit has to mature for six months before it gives birth to Rabbits then the Rabbit Birth Rate might be something more like 20%. Using this estimate for Rabbit Birth Rate the model produces Figure 17.
-
-![Figure 17. Rabbit Population Growth with 10 Rabbits and 20% Birth Rate](00-im-5123b.png)
-
-[** Figure 17. Rabbit Population Growth with 10 Rabbits and 20% Birth Rate](http://insightmaker.com/insight/5123)
-
-Is this right? A good thing to remember at this point is that "Is it right?" is actually the wrong question. A better question might be, "What have I learned, and is there more I can learn?" The graph in Figure 17 sure seems more reasonable than what the model presented in Figure 16 though do you have a high degree of confidence in the current Rabbit Birth Rate. Are there a number of other questions we could ask about our Rabbits. What is the Rabbit Death Rate? Do they have enough food to eat? Are they living out in the open where Coyotes and Foxes can get at them? Does their owner have a passion for Rabbit Stew? These might each be a basis for building a better model, though at this point we're going to leave the Rabbits alone and move on to something else.
-
-The most important learning you should take away from this model is that when what flows into the accumulation increases as the accumulation increases the accumulation can get real big in a hurry. This is actually called exponential grown and we'll talk in more detail about this in Chapter 2.
-
 ## Filling A Swimming Pool ##
 
-Long long ago, meaning back in Figure 7 and Figure 8, filling a swimming pool presented, though not very detailed. A more useful question might be, if the pool holds 20,000 gallons of water and the hose fills the pool at 50 gallons per hour, how long will it take to fill the pool. I know, you can do the math faster than it will take to build the model. Please bear with as there's another aspect of models right around the corner you will find very useful on an ongoing basis.
+Long long ago a filling a swimming pool model was presented, though not in a very detailed manner. A more useful question might be, if the pool holds 20,000 gallons of water and the hose fills the pool at 50 gallons per hour, how long will it take to fill the pool. I know, you can do the math faster than it will take to build the model. Please bear with as there's another aspect of models right around the corner you will find very useful on an ongoing basis.
 
-<IFRAME SRC="http://InsightMaker.com/insight/5128?embed=0&eidt=1&topBar=0&sideBar=1&zoom=0" TITLE="Figure 18. Filling a Swimming Pool v1.0" width=950 height=600></IFRAME>
+# Model
 
-[** Figure 18. Filling a Swimming Pool v1.0](http://insightmaker.com/insight/5128)
+{"title": "Filling a Swimming Pool Revisited"}
 
-We begin with a Swimming Pool that needs to be filled with a hose. We know how many gallows of water it takes to fill the pool and we don't want to put too much water in the pool. The model is created to compare the amount of the water in the Swimming Pool with the the Full Level and use that to decide whether water is flowing in the hose or not. If you mouse over Hose and click the = sign you'll see the following equation.
+{"target":"Swimmng Pool","geometry":{"x":400,"y":165,"width":100,"height":40}},
 
-> IfThenElse([Swimmng Pool] &lt; [Full Level], [Full Level]-[Swimmng Pool]), 0)
+{"target":"Hose","geometry":{"x":20,"y":25,"width":100,"height":100,"sourcePoint":{"x":230,"y":185},"targetPoint":{"x":20,"y":125}}}
 
-This says that if the Swimming Pool isn't full then add enough water to fill the pool. And if the Swimming Pool is full then add 0.
+{"target":"Full Level","geometry":{"x":240,"y":25,"width":80,"height":55}}
 
-----------
+{"target":"Link","geometry":{"x":110,"y":-65,"width":100,"height":100,"sourcePoint":{"x":110,"y":35},"targetPoint":{"x":210,"y":-65}}}
 
-#### Modeling Note ####
+{"target":"Link","geometry":{"x":110,"y":-65,"width":100,"height":100,"sourcePoint":{"x":110,"y":35},"targetPoint":{"x":320,"y":185}}}
 
+DIAGRAM
 
-Isn't it curious that the structure of this model looks just like the one for the Rabbit Population growth in Figure 14. We'll come back to this after we figure out how long it's going to take to fill the Swimming Pool.
+We begin with a Swimming Pool that needs to be filled with a hose. We know how many gallows of water it takes to fill the pool and we don't want to put too much water in the pool. The model is created to compare the amount of the water in the Swimming Pool with the the Full Level and use that to decide whether water is flowing in the hose or not.
 
-----------
+{"attribute":"InitialValue","target":"Swimmng Pool","value":"0"}
 
-With the Time Settings set for the model to run for 24 hours. Set the Swimming Pool to 0, meaning empty, and the Full Level to 20,000, on the Configuration Panel go ahead and click the Run button. You should end up with the graph as shown in Figure 19.
+{"attribute":"Equation","target":"Full Level","value":"20000"}
 
-Note the choppy nature of the graph. Again this is a result of a Time Step that's too small and this will be addressed in Chapter 2.
+{"attribute":"FlowRate","target":"Hose","value":"IfThenElse([Swimmng Pool] < [Full Level], [Full Level]-[Swimmng Pool], 0)"}
 
-![Figure 19. How long to fill the pool](00-im-5128.png)
+{"attribute":"TimeLength","value":"24"},
 
-[** Figure 19. How long to fill the pool](http://www.insightmaker.com/insight/5128)
+{"attribute":"TimeUnits","value":"Hours"}
+
+RESULTS
 
 This is really great. We can fill the Swimming Pool in just 1 day, or can we? Either it's a really really big hose or we've done something wrong because it's probably not possible to fill the Swimming Pool with a Hose in one day if it takes 20,000 gallons or water.
 
+Note the choppy nature of the graph. Again this is a result of a Time Step that's too small and this will be addressed in Chapter 2.
+
+# End Model
+
+[** Filling a Swimming Pool v1.0](http://insightmaker.com/insight/5128)
+
 ----------
 
 #### Modeling Note ####
+
+Isn't it curious that the structure of this model looks just like the one for the Rabbit Population growth in Figure 14. We'll come back to this after we figure out how long it's going to take to fill the Swimming Pool.
 
 Hopefully you come to understand that when your models don't do what you expect them to do it's not a problem -- it's an opportunity for learning. This is the real reason why we do modeling - to understand and learn. Just think of it as, the more things don't go the way you expect them too, the more opportunities you have to learn.
 
@@ -417,51 +411,65 @@ Hopefully you come to understand that when your models don't do what you expect 
 
 If you look back at the formula for the Hose, notice it didn't take into account the initial statement that the Hose could only deliver 50 gallons per hour. And, might it be useful if we could see what happened with different Hose capacities?
 
-Figure 20 is a revised version of the model with Hose Capacity as a variable so you can set the capacity of the hose before you run the model.
+Lets us a revised version of the model with Hose Capacity as a variable so you can set the capacity of the hose before you run the model.
 
-<IFRAME SRC="http://InsightMaker.com/insight/5130?embed=0&edit=1&topBar=0&sideBar=1&zoom=0" TITLE="Figure 20. Filling a Swimming Pool v2.0" width=950 height=600></IFRAME>
+# Model
 
-[** Figure 20. Filling a Swimming Pool v2.0](http://insightmaker.com/insight/5130)
+{"title": "Filling a Swimming Pool One More Time"}
+
+{"load": "<InsightMakerModel> <root> <mxCell id=\"0\"/> <mxCell id=\"1\" parent=\"0\"/> <Setting Note=\"\" Version=\"28\" TimeLength=\"24\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Hours\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"-1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"> <mxCell parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"/> </mxCell> </Setting> <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"Gallons\" ThreeDimensional=\"false\" Primitives=\"24,25,30,33\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"> <mxCell style=\"roundImage;image=/builder/images/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"/> </mxCell> </Display> <Stock name=\"Swimmng Pool\" Note=\"Swimming Pool to be filled.\" InitialValue=\"0\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"24\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"425\" y=\"170\" width=\"100\" height=\"40\" as=\"geometry\"/> </mxCell> </Stock> <Flow name=\"Hose\" Note=\"The Hose that adds so many gallons per hour.\" FlowRate=\"IfThenElse([Swimmng Pool] &lt; [Full Level], min([Full Level]-[Swimmng Pool],[Hose Capacity]), 0)\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"200\" SliderMin=\"0\" id=\"25\"> <mxCell style=\"flow\" parent=\"1\" target=\"24\" edge=\"1\"> <mxGeometry x=\"45\" y=\"30\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"255\" y=\"190\" as=\"sourcePoint\"/> <mxPoint x=\"45\" y=\"130\" as=\"targetPoint\"/> </mxGeometry> </mxCell> </Flow> <Display name=\"Tabular Display\" Note=\"\" Type=\"Tabular\" xAxis=\"Time (%u)\" yAxis=\"Gallons\" yAxis2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" ThreeDimensional=\"false\" Primitives=\"25,24\" Primitives2=\"\" AutoAddPrimitives=\"false\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Bottom\" legendPosition=\"Automatic\" id=\"29\"> <mxCell style=\"display\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"10\" y=\"10\" width=\"64\" height=\"64\" as=\"geometry\"/> </mxCell> </Display> <Variable name=\"Full Level\" Note=\"Pool capacity\" Equation=\"20000\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"20000\" SliderMin=\"10000\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"30\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"265\" y=\"30\" width=\"80\" height=\"55\" as=\"geometry\"/> </mxCell> </Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"31\"> <mxCell style=\"link\" parent=\"1\" source=\"30\" target=\"25\" edge=\"1\"> <mxGeometry x=\"135\" y=\"-60\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"135\" y=\"40\" as=\"sourcePoint\"/> <mxPoint x=\"235\" y=\"-60\" as=\"targetPoint\"/> </mxGeometry> </mxCell> </Link> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"32\"> <mxCell style=\"link\" parent=\"1\" source=\"24\" edge=\"1\"> <mxGeometry x=\"135\" y=\"-60\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"135\" y=\"40\" as=\"sourcePoint\"/> <mxPoint x=\"345\" y=\"190\" as=\"targetPoint\"/> <Array as=\"points\"> <mxPoint x=\"435\" y=\"120\"/> <mxPoint x=\"405\" y=\"110\"/> <mxPoint x=\"365\" y=\"130\"/> </Array> </mxGeometry> </mxCell> </Link> <Variable name=\"Hose Capacity\" Note=\"\" Equation=\"50\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"500\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"33\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"195\" y=\"255\" width=\"100\" height=\"50\" as=\"geometry\"/> </mxCell> </Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"34\"> <mxCell style=\"link\" parent=\"1\" source=\"33\" target=\"25\" edge=\"1\"> <mxGeometry x=\"135\" y=\"-60\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"135\" y=\"40\" as=\"sourcePoint\"/> <mxPoint x=\"235\" y=\"-60\" as=\"targetPoint\"/> <Array as=\"points\"> <mxPoint x=\"305\" y=\"240\"/> <mxPoint x=\"325\" y=\"220\"/> </Array> </mxGeometry> </mxCell> </Link> </root> </InsightMakerModel> "}
+
+DIAGRAM
 
 The new formula for Hose takes into account both the current amount of water in the Swimming Pool, Full Level and Hose Capacity
 
 > IfThenElse([Swimmng Pool] &lt; [Full Level], min([Full Level]-[Swimmng Pool],[Hose Capacity]), 0)
 
-With Hose Capacity = 50 if you run the model it should produce Figure 21.
+RESULTS
 
-![Figure 21. How long to fill the pool at 50 gallons per hour](00-im-5130.png)
+With Hose Capacity = 50 over a period of 24 hours we've not even come close to filling the Swimming Pool.
 
-[** Figure 21. How long to fill the pool at 50 gallons per hour](http://www.insightmaker.com/insight/5128)
+Open the Time Settings and set the Simulation Length to 600 hours and Run the model again.
 
-Was this what you expected? Probably not. Over a period of 24 hours we've not even come close to filling the Swimming Pool.
+{"attribute":"TimeLength","value":"600"}
 
-Open the Time Settings and set the Simulation Length to 600 hours and Run the model again. Your run should produce the an equivalent of Figure 22.
+RESULTS
 
-![Figure 22. Filling the pool takes how long?](00-im-5130a.png)
-
-[** Figure 22. Filling the pool takes how long?](http://www.insightmaker.com/insight/5128)
-
-Figure 22 indicates we need to wait 400 hours to fill the pool. That's a little over 16.5 days. Do we need a bigger hose?
+This graph indicates we need to wait 400 hours to fill the pool. That's a little over 16.5 days. Do we need a bigger hose?
 
 While there are a number of things we could do to improve the model at this point we've gone far enough with this one.
 
-----------
+# End Model
 
-#### Exercise 1-4 ####
+[** Filling a Swimming Pool v2.0](http://insightmaker.com/insight/5130)
+
+~ Exercise
 
 Do a number of runs for the model in Figure 20 with different values for Full Level and Hose Capacity. Do you get a sense of how your choice of values impacts the results that appear over time?
 
-----------
+~ End Exercise
 
 ## Similar Structures / Different Behavior ##
 
-If you compare Figures 7, 14 and 20 you should find them to be quite similar. And yet the behavior of the models are distinctly different.
+If you compare models presented to this point you should find them to be quite similar. And yet the behavior of the models are distinctly different.
 
-<IFRAME SRC="http://InsightMaker.com/insight/5138?embed=0&editor=1&topBar=0&sideBar=1&zoom=0" TITLE="Figure 23. Similar Structures/Different Behaviors" width=950 height=650></IFRAME>
+# Model
 
-[** Figure 23. Similar Structures/Different Behaviors](http://insightmaker.com/insight/5138)
+{"title": "Similar Structures / Different Behavior"}
 
-Figure 23 presents the previous three models in a general form. This is so you can compare the different behavior of structures that are very similar. Flow Rate, Seeking Factor and Growth Factor are each factors which govern he rate of flow. Goal is a target value which the Growth model doesn't have. The difference that makes a difference is what happens in the connection between the accumulation, or stock, and the flow.
+{"load": "<InsightMakerModel>  <root>   <mxCell id="0"/>   <mxCell id="1" parent="0"/>   <Setting Note="" Version="28" TimeLength="10" TimeStart="0" TimeStep="1" TimeUnits="Hours" StrictUnits="true" Units="" HiddenUIGroups="Validation,User Interface" SolutionAlgorithm="RK1" BackgroundColor="white" Throttle="-1" Macros="" SensitivityPrimitives="" SensitivityRuns="50" SensitivityBounds="50, 80, 95, 100" SensitivityShowRuns="false" id="2">    <mxCell parent="1" vertex="1" visible="0">     <mxGeometry x="20" y="20" width="80" height="40" as="geometry"/>    </mxCell>   </Setting>   <Display name="Default Display" Note="" Type="Time Series" xAxis="Time (%u)" yAxis="" ThreeDimensional="false" Primitives="24,25,30,35,42" AutoAddPrimitives="true" ScatterplotOrder="X Primitive, Y Primitive" Image="Display" yAxis2="" Primitives2="" showMarkers="false" showLines="true" showArea="false" legendPosition="Automatic" id="3">    <mxCell style="roundImage;image=/builder/images/DisplayFull.png;" parent="1" vertex="1" visible="0">     <mxGeometry x="50" y="20" width="64" height="64" as="geometry"/>    </mxCell>   </Display>   <Stock name="Current State" Note="Where we&#39;re starting from to pursue the goal." InitialValue="0" StockMode="Store" Delay="10" Volume="100" NonNegative="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="true" SliderMax="500" SliderMin="0" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" SliderStep="50" id="24">    <mxCell style="stock" parent="1" vertex="1">     <mxGeometry x="237.5" y="302.5" width="100" height="40" as="geometry"/>    </mxCell>   </Stock>   <Flow name="State Change" Note="The Hose that adds so many gallons per hour." FlowRate="([Goal]-[Current State])*[Seeking Factor]" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="200" SliderMin="0" id="25">    <mxCell style="flow" parent="1" target="24" edge="1">     <mxGeometry x="-142.5" y="162.5" width="100" height="100" as="geometry">      <mxPoint x="67.5" y="322.5" as="sourcePoint"/>      <mxPoint x="-142.5" y="262.5" as="targetPoint"/>     </mxGeometry>    </mxCell>   </Flow>   <Display name="Tabular Display" Note="" Type="Tabular" xAxis="Time (%u)" yAxis="Gallons" yAxis2="" showMarkers="false" showLines="true" showArea="false" ThreeDimensional="false" Primitives="25,24" Primitives2="" AutoAddPrimitives="false" ScatterplotOrder="X Primitive, Y Primitive" Image="Display" FlipHorizontal="false" FlipVertical="false" LabelPosition="Bottom" legendPosition="Automatic" id="29">    <mxCell style="display" parent="1" vertex="1" visible="0">     <mxGeometry x="10" y="10" width="64" height="64" as="geometry"/>    </mxCell>   </Display>   <Variable name="Goal" Note="The goal being pursued." Equation="1000" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="true" SliderMax="1000" SliderMin="0" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" SliderStep="100" id="30">    <mxCell style="variable" parent="1" vertex="1">     <mxGeometry x="50" y="162.5" width="80" height="55" as="geometry"/>    </mxCell>   </Variable>   <Link name="Link" Note="" BiDirectional="false" id="31">    <mxCell style="link" parent="1" source="30" target="25" edge="1">     <mxGeometry x="-52.5" y="72.5" width="100" height="100" as="geometry">      <mxPoint x="-52.5" y="172.5" as="sourcePoint"/>      <mxPoint x="47.5" y="72.5" as="targetPoint"/>      <Array as="points">       <mxPoint x="130" y="240"/>       <mxPoint x="140" y="270"/>      </Array>     </mxGeometry>    </mxCell>   </Link>   <Link name="Link" Note="" BiDirectional="false" id="32">    <mxCell style="link" parent="1" source="24" edge="1">     <mxGeometry x="-52.5" y="72.5" width="100" height="100" as="geometry">      <mxPoint x="-52.5" y="172.5" as="sourcePoint"/>      <mxPoint x="157.5" y="322.5" as="targetPoint"/>      <Array as="points">       <mxPoint x="247.5" y="252.5"/>       <mxPoint x="217.5" y="242.5"/>       <mxPoint x="177.5" y="262.5"/>      </Array>     </mxGeometry>    </mxCell>   </Link>   <Variable name="Seeking Factor" Note="What percentage of change can happen in a time period?" Equation="0.25" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="true" SliderMax="1" SliderMin="0" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" SliderStep="0.05" id="33">    <mxCell style="variable" parent="1" vertex="1">     <mxGeometry x="7.5" y="387.5" width="100" height="50" as="geometry"/>    </mxCell>   </Variable>   <Link name="Link" Note="" BiDirectional="false" id="34">    <mxCell style="link" parent="1" source="33" target="25" edge="1">     <mxGeometry x="-52.5" y="72.5" width="100" height="100" as="geometry">      <mxPoint x="-52.5" y="172.5" as="sourcePoint"/>      <mxPoint x="47.5" y="72.5" as="targetPoint"/>      <Array as="points">       <mxPoint x="117.5" y="372.5"/>       <mxPoint x="137.5" y="352.5"/>      </Array>     </mxGeometry>    </mxCell>   </Link>   <Stock name="Reinforcing Accumulation" Note="Reinforcing accumulation." InitialValue="1" StockMode="Store" Delay="10" Volume="100" NonNegative="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="true" SliderMax="10" SliderMin="0" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" SliderStep="1" id="35">    <mxCell style="stock" parent="1" vertex="1">     <mxGeometry x="512.5" y="302.5" width="100" height="40" as="geometry"/>    </mxCell>   </Stock>   <Flow name="Added" Note="The Hose that adds so many gallons per hour." FlowRate="[Reinforcing Accumulation] * [Growth Factor]" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="200" SliderMin="0" id="36">    <mxCell parent="1" target="35" edge="1">     <mxGeometry x="132.5" y="162.5" width="100" height="100" as="geometry">      <mxPoint x="367.5" y="327.5" as="sourcePoint"/>      <mxPoint x="132.5" y="262.5" as="targetPoint"/>     </mxGeometry>    </mxCell>   </Flow>   <Variable name="Growth Factor" Note="Rabbit birth rate." Equation="1" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="true" SliderMax="1" SliderMin="0" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" id="37">    <mxCell style="variable" parent="1" vertex="1">     <mxGeometry x="317.5" y="390" width="80" height="55" as="geometry"/>    </mxCell>   </Variable>   <Link name="Link" Note="" BiDirectional="false" id="38">    <mxCell style="link" parent="1" source="37" target="36" edge="1">     <mxGeometry x="222.5" y="72.5" width="100" height="100" as="geometry">      <mxPoint x="222.5" y="172.5" as="sourcePoint"/>      <mxPoint x="322.5" y="72.5" as="targetPoint"/>      <Array as="points">       <mxPoint x="417.5" y="390"/>       <mxPoint x="427.5" y="360"/>      </Array>     </mxGeometry>    </mxCell>   </Link>   <Link name="Link" Note="" BiDirectional="false" id="39">    <mxCell style="link" parent="1" source="35" edge="1">     <mxGeometry x="222.5" y="72.5" width="100" height="100" as="geometry">      <mxPoint x="222.5" y="172.5" as="sourcePoint"/>      <mxPoint x="432.5" y="322.5" as="targetPoint"/>      <Array as="points">       <mxPoint x="522.5" y="252.5"/>       <mxPoint x="492.5" y="242.5"/>       <mxPoint x="452.5" y="262.5"/>      </Array>     </mxGeometry>    </mxCell>   </Link>   <Text name="Balancing&#xa;Goal Seeking" LabelPosition="Middle" id="40">    <mxCell style="text;fontSize=24" parent="1" vertex="1">     <mxGeometry x="110" y="360" width="210" height="80" as="geometry"/>    </mxCell>   </Text>   <Text name="Reinforcing&#xa;Exponential Growth" LabelPosition="Middle" id="41">    <mxCell style="text;fontSize=24" parent="1" vertex="1">     <mxGeometry x="410" y="367.5" width="240" height="72.5" as="geometry"/>    </mxCell>   </Text>   <Stock name="Accumulation of Stuff" Note="Just a bunch of stuff." InitialValue="0" StockMode="Store" Delay="10" Volume="100" NonNegative="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="true" SliderMax="100" SliderMin="0" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" SliderStep="10" id="42">    <mxCell style="stock" parent="1" vertex="1">     <mxGeometry x="402.5" y="75.44583482740688" width="100" height="40" as="geometry"/>    </mxCell>   </Stock>   <Flow name="Flow" Note="The Hose that adds so many gallons per hour." FlowRate="[Flow Rate]" OnlyPositive="true" TimeIndependent="false" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="false" SliderMax="200" SliderMin="0" id="43">    <mxCell style="flow" parent="1" target="42" edge="1">     <mxGeometry x="22.5" y="-64.55416517259312" width="100" height="100" as="geometry">      <mxPoint x="232.5" y="95.44583482740688" as="sourcePoint"/>      <mxPoint x="22.5" y="35.445834827406884" as="targetPoint"/>     </mxGeometry>    </mxCell>   </Flow>   <Variable name="Flow Rate" Note="The rate at which stuff is added to the accumulation." Equation="100" Units="Unitless" MaxConstraintUsed="false" MinConstraintUsed="false" MaxConstraint="100" MinConstraint="0" ShowSlider="true" SliderMax="100" SliderMin="0" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" SliderStep="5" id="46">    <mxCell style="variable" parent="1" vertex="1">     <mxGeometry x="172.5" y="160.44583482740688" width="100" height="50" as="geometry"/>    </mxCell>   </Variable>   <Link name="Link" Note="" BiDirectional="false" id="47">    <mxCell style="link" parent="1" source="46" target="43" edge="1">     <mxGeometry x="112.5" y="-154.55416517259312" width="100" height="100" as="geometry">      <mxPoint x="112.5" y="-54.554165172593116" as="sourcePoint"/>      <mxPoint x="212.5" y="-154.55416517259312" as="targetPoint"/>      <Array as="points">       <mxPoint x="282.5" y="145.44583482740688"/>       <mxPoint x="302.5" y="125.44583482740688"/>      </Array>     </mxGeometry>    </mxCell>   </Link>   <Text name="Linear&#xa;Linear Growth" LabelPosition="Middle" id="48">    <mxCell style="text;fontSize=24" parent="1" vertex="1">     <mxGeometry x="287.5" y="140" width="180" height="64.10833034518623" as="geometry"/>    </mxCell>   </Text>   <Button name="Run" Note="Change the sliders and then click this button to see the results." Function="runModel();" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" id="52">    <mxCell style="button" parent="1" vertex="1">     <mxGeometry x="10" y="40" width="80" height="20" as="geometry"/>    </mxCell>   </Button>   <Button name="Demo" Note="Baseline run with preset parameters for the 3 basic structures." Function="setValue(findName(&quot;Current State&quot;),&quot;0&quot;);&#xa;setValue(findName(&quot;Goal&quot;),&quot;1000&quot;);&#xa;setValue(findName(&quot;Seeking Factor&quot;),&quot;0.25&quot;);&#xa;setValue(findName(&quot;Reinforcing Accumulation&quot;),&quot;1&quot;);&#xa;setValue(findName(&quot;Accumulation of Stuff&quot;),&quot;0&quot;);&#xa;setValue(findName(&quot;Flow Rate&quot;),&quot;100&quot;);&#xa;setValue(findName(&quot;Growth Factor&quot;),&quot;1&quot;);&#xa;showNote(findName(&quot;Run&quot;));&#xa;updateSideBar();&#xa;runModel({onSuccess: function(results){results.window.items.getAt(0).setActiveTab(0);}});" Image="None" FlipHorizontal="false" FlipVertical="false" LabelPosition="Middle" id="53">    <mxCell style="button" parent="1" vertex="1">     <mxGeometry x="10" y="10" width="80" height="20" as="geometry"/>    </mxCell>   </Button>  </root> </InsightMakerModel> "}
+
+DIAGRAM
+
+The previous three models in a general form. This is so you can compare the different behavior of structures that are very similar. Flow Rate, Seeking Factor and Growth Factor are each factors which govern he rate of flow. Goal is a target value which the Growth model doesn't have. The difference that makes a difference is what happens in the connection between the accumulation, or stock, and the flow.
+
+RESULTS
+
+# End Model
+
+[** Similar Structures/Different Behaviors](http://insightmaker.com/insight/5138)
+
+
 
 The link between the stock and the flow provides information from one point to the other and is generally referred to as feedback, mostly likely because the information travels in the opposite direction as the flow.
 
@@ -479,21 +487,15 @@ In the Reinforcing model Added depends on the value of Reinforcing Accumulation.
 
 Would you believe that no matter how complicated a model may look it's really only some number of these structures connected together? In the next chapter you will learn more about the modeling and simulation environment, actually begin building some models and investigating the implications of these structures.
 
-![Figure 24. Balancing and Reinforcing Results](00-im-5138.png)
+~ Exercise
 
-[** Figure 24. Balancing and Reinforcing Results](http://www.insightmaker.com/insight/5128)
-
-----------
-
-#### Exercise 1-5 ####
-
-The values in the Figure 23 model were contrived so when you click the Demo button the model it will produce the graph in Figure 24. 
+The values in the previous model were contrived so when you click the Demo button the model it will produce the graph in displayed graph. 
 
 - Can you figure out why the values assigned are responsible for the curves produced?
 - Alter the values for the parameters in the Configuration Panel and run the model to get a sense of the impact initial values have on the behavior of these structures.
 - Can you explain to someone else the difference between the Linear, Balancing and Reinforcing models in terms of why the structures produce the behavior they do?
 
-----------
+~ End Exercise
 
 ## Summary ##
 
@@ -504,5 +506,3 @@ The values in the Figure 23 model were contrived so when you click the Demo butt
 - We learn as we go and seldom do we get models right the first time.
 - Linear, Reinforcing and Balancing structures are the basic building blocks for all models.
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
-
-----------
