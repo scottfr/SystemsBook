@@ -8,7 +8,7 @@ Heterogeneity, differences between individuals, is difficult to represent using 
 
 Granted, this approach can be made to work, but it requires a lot of effort to set up and configure even in the simple two-gender case. When you have more than two cases it can quickly become completely unmanageable. Furthermore, duplicating parts of your model is a recipe for creating unmaintainable models afflicted by hard to track down bugs. The reason for this is that when you later make changes to your model, you are going to need to ensure the changes are made correctly to each one of the model copies. Although simple in principle, in practice this is very easy to mess up and it is a direct route for bugs to be introduced into the model.
 
-Fortunately, an alternative modeling paradigm to System Dynamics exists that is excellent for modeling discrete individuals. It is called Agent Based Modeling and is focused on simulating individual agents and the interactions between these agents^[System Dynamics also has another standard tool for dealing with heterogeneity. This tool is called "vectors", "arrays", "subscripting", or "indexing" and allows you to transparently create multiple copies of your model during simulation to match different classes. Imagine you had a stock representing the population of a school with 300 students. In Insight Maker you could convert this stock to a vector by setting its initial value to \e{«"Males": 160, "Females": 140»}. Now you could keep track of each gender in your model separately. Arrays are not as flexible as fully Agent Based Models though. If you consider the continuum of fully aggregate System Dynamics models on one end to fully individualized Agent Based Models on the other, we can think of arrays as existing part way along this continuum.]. In this chapter we will introduce Agent Based Modeling and show how you can use it to explore questions that cannot be answered with pure System Dynamics.
+Fortunately, an alternative modeling paradigm to System Dynamics exists that is excellent for modeling discrete individuals. It is called Agent Based Modeling and is focused on simulating individual agents and the interactions between these agents^[System Dynamics also has another standard tool for dealing with heterogeneity. This tool is called "vectors", "arrays", "subscripting", or "indexing" and allows you to transparently create multiple copies of your model during simulation to match different classes. Arrays are not as flexible as fully Agent Based Models though. If you consider the continuum of fully aggregate System Dynamics models on one end to fully individualized Agent Based Models on the other, we can think of arrays as existing part way along this continuum.]. In this chapter we will introduce Agent Based Modeling and show how you can use it to explore questions that cannot be answered with pure System Dynamics.
 
 ![Figure 1. Two paradigms for modeling a population: System Dynamics and Agent Based Modeling.](SDvsABM.png)
 
@@ -200,7 +200,7 @@ You will need to extend your modeling toolkit in order to be able to effectively
 
 ### Working with Vectors
 
-A vector is an ordered list of items. In Insight Maker vectors can be written using the '«' sign (or '<<') followed by the '»' sign (or '>>'). For instance imagine we had a small population of only four people. If we asked the model for the heights of those four people^[Using an equation like \e{Value(FindAll([Population]), [Height])}. We'll see later how to construct equations like this.] in meters we might get something like this:
+A vector is an ordered list of items. In Insight Maker vectors can be written using the '«' sign (or '<<') followed by the '»' sign (or '>>'). For instance imagine we had a small population of only four people. If we asked the model for the heights of those four people^[Using an equation like *Value(FindAll([Population]), [Height])*. We'll see later how to construct equations like this.] in meters we might get something like this:
 
 \e{«2, 1.8, 1.9, 1.5»}
 
@@ -447,7 +447,7 @@ Network
 Custom Function
 : Here you can specify a custom function to control the layout of the agents. This function will be called once for each agent in the population and should return a two-element vector where the first element is the *x*-coordinate of the agent, and the second element is the *y*-coordinate. The primitive \p{Self} in this function will refer to the agent that is being positioned.
 
-![Figure 4. Illustration of the four agent placement algorithms. From the top: random, grid, ellipse, and a custom function using: \e{<<2*index([Self]), 50+50*sin(index([Self])/10)>>}.](AgentPlacement.png)
+![Figure 4. Illustration of the four agent placement algorithms. From the top: random, grid, ellipse, and a custom function using: *<<2\*index([Self]), 50+50\*sin(index([Self])/10)>>*.](AgentPlacement.png)
 
 #### Spatial Find Functions
 

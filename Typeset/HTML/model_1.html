@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	
+    <title>Insight Maker</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=IE8">
+
+ 	<link rel="stylesheet" type="text/css" href="../builder/resources/ext/resources/css/ext-all-gray.css" />
+ 	
+	<link rel="shortcut icon" href="../builder/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" type="text/css" href="../builder/css/BoxSelect.css" />
+	<link rel="stylesheet" type="text/css" href="../builder/css/insighteditor.css" />
+
+</head>
+<body>
+	
+
+<div id="loading-mask"></div>
+<div id="loading">
+  <div class="loading-indicator">
+
+	        Loading Insight Maker...
+  	<br/><p>
+  	<img src="../builder/images/loading.gif" width=54 height=55/></p><br/>
+  	(This may take a few moments)
+	
+  </div>
+</div>
+<div id="toplinks-holder" name="toplinks-holder"></div>
+
+<script type="text/javascript" src="../builder/resources/ext/ext-all.js"></script>
+
+<script type="text/javascript">
+var base_path = "http:\/\/insightmaker.com";
+var builder_path = "http:\/\/insightmaker.com\/builder";
+var logged_in = true;
+var drupal_node_ID = 1;
+var graph_title = "";
+var graph_description = "";
+var graph_tags = "";
+var graph_author_name = '';
+var graph_author_id = -1;
+var saved_enabled = true;
+var is_editor = true;
+var is_embed = false;
+var is_topBar = false;
+var is_sideBar = false;
+var is_zoom = true;
+
+var graph_source_data = "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><Setting unfolding=\"{&quot;children&quot;:[{&quot;children&quot;:[{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;Let\'s take a swimming pool as a specific instance of Figure 5.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nvar newPrimitive = createPrimitive(\'stuff\', \'Stock\', [320, 130], [100, 40]);\\n\\nfindName(\'stuff\').setAttribute(\'InitialValue\', \'0\');\\n\\nvar cell =createConnector(\'stuff in\', \'Flow\', null, findName(\'stuff\'));\\nvar geo = new mxGeometry(0, 0, 100, 100);\\ngeo.setTerminalPoint(new mxPoint(130, 140), true);\\ngeo.setTerminalPoint(new mxPoint(0, 100), false);\\ngraph.model.execute(new mxGeometryChange(graph.model, cell, geo));\\n\\nfindName(\'stuff in\').setAttribute(\'Equation\', \'50\');\\n\\nvar cell =createConnector(\'stuff out\', \'Flow\', findName(\'Pool\'), null);\\nvar geo = new mxGeometry(0, 0, 100, 100);\\ngraph.model.execute(new mxGeometryChange(graph.model, cell, geo));\\n\\nfindName(\'stuff out\').setAttribute(\'Equation\', \'0\');&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;The diagram represents Figure 5 in Insight Maker, an interactive modeling and simulation environment. We\'ll talk about how this was done shortly. We have defined the pool to fill with a hose at 50 gallons an hour.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\ngetSetting().setAttribute(\'TimeLength\', \'24\');\\n\\ngetSetting().setAttribute(\'TimeUnits\', \'Hours\');&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;If we let the hose run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model, actually a simulation of a model, to show changes over time.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nrunModel();&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;This graph indicates that after 24 hours the swimming pool with have 1,200 gallons of water in it. Yes, it\'s about as interesting as watching paint dry. Actually, as you will come to find out, that\'s a good thing because this is really easy. A more interesting question might be, if the swimming pool holds 20,000 gallons of water how long with it take to fill with water at 50 gallons per hour? We\'ll get to this shortly.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;}],&quot;text&quot;:&quot;Root Node&quot;}\" unfoldingStatus=\"on\" unfoldingAuto=\"always\" Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"><mxCell parent=\"1\" vertex=\"1\" visible=\"0\"><mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"/></mxCell></Setting><Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"><mxCell style=\"roundImage;image=/builder/images/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"/></mxCell></Display></root></mxGraphModel>";
+</script>
+
+<div id="header"><div style="float:right;margin:5px;" class="x-small-editor"></div></div>
+
+
+<script type="text/javascript">
+var scriptBase = builder_path;
+var mxBasePath = builder_path;
+var mxLoadResources = false;
+var mxLoadStylesheets = false;
+</script>
+
+<script type="text/javascript" src="../builder/out.js"></script>
+  
+</body>
+</html>
+
