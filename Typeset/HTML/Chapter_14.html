@@ -51,8 +51,11 @@
 			-moz-hyphens: none;
 			hyphens: none;
 			text-indent: 0px;
-			display: block;
 			white-space: pre-wrap;
+		}
+		
+		.blockSource{
+			display: block;
 		}
 		
 		p {
@@ -118,16 +121,16 @@
 <p>Maximum value: 10,000,000 (this value is somewhat arbitrary but should be larger than the maximum size you expect this city to ever grow to)</p>
 <h3 id="Ans-7-2"><a href="#Ans-7-2"><a href="Chapter_7.html#Ex-7-2">Exercise 7-2</a></a></h3>
 <p>We use a standard deviation of 4 as we lack any information on what the dispersion should be.</p>
-<p><code class="sourceCode javascript"><span class="fu">Round</span>(<span class="fu">Rand</span>(<span class="dv">5</span>, <span class="dv">15</span>))</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Round</span>(<span class="fu">Rand</span>(<span class="dv">5</span>, <span class="dv">15</span>))</code></p>
 <h3 id="Ans-7-3"><a href="#Ans-7-3"><a href="Chapter_7.html#Ex-7-3">Exercise 7-3</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">Round</span>(<span class="fu">RandTriangular</span>(<span class="dv">0</span>, <span class="dv">100</span>, <span class="dv">20</span>))</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Round</span>(<span class="fu">RandTriangular</span>(<span class="dv">0</span>, <span class="dv">100</span>, <span class="dv">20</span>))</code></p>
 <h3 id="Ans-7-4"><a href="#Ans-7-4"><a href="Chapter_7.html#Ex-7-4">Exercise 7-4</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">Round</span>(<span class="fu">RandLogNormal</span>(<span class="dv">20</span>, <span class="dv">4</span>))</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Round</span>(<span class="fu">RandLogNormal</span>(<span class="dv">20</span>, <span class="dv">4</span>))</code></p>
 <p>We use a standard deviation of 4 as we lack any information on what the dispersion should be.</p>
 <h3 id="Ans-7-5"><a href="#Ans-7-5"><a href="Chapter_7.html#Ex-7-5">Exercise 7-5</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">RandNormal</span>(<span class="fl">2.1</span>, <span class="fl">0.3625</span>)</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">RandNormal</span>(<span class="fl">2.1</span>, <span class="fl">0.3625</span>)</code></p>
 <h3 id="Ans-7-6"><a href="#Ans-7-6"><a href="Chapter_7.html#Ex-7-6">Exercise 7-6</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">RandNormal</span>(<span class="fl">0.837</span>, <span class="fl">0.106</span>)</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">RandNormal</span>(<span class="fl">0.837</span>, <span class="fl">0.106</span>)</code></p>
 <h2 id="chapter-9"><a href="#chapter-9">Chapter 9</a></h2>
 <h3 id="Ans-9-1"><a href="#Ans-9-1"><a href="Chapter_9.html#Ex-9-1">Exercise 9-1</a></a></h3>
 <p>You can denote volume of water in the jar using the state variable <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOBAMAAADkjZCYAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAADnRSTlMAbn6fHl7fPu8urw7Pv+w2BzYAAABCSURBVAgdY2BgYFRSYgACPgMQ6RcAIuMcQKQZiGBIBhEsT0Ek6xMQyZwAJBjYgMorJoCUa23QAfKnst4GktwlQAIAN28JZBjBNhcAAAAASUVORK5CYII=" style="vertical-align:middle" alt="J" title="J" />. Our equations will then be:</p>
@@ -205,23 +208,23 @@
 <li>Condition trigger. Value: <code class="sourceCode javascript">[Volume] &gt; <span class="dv">5</span></code></li>
 </ol>
 <h3 id="Ans-11-4"><a href="#Ans-11-4"><a href="Chapter_11.html#Ex-11-4">Exercise 11-4</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">Max</span>(<span class="fu">Filter</span>(«2, <span class="fl">1.8</span>, <span class="fl">1.9</span>, <span class="fl">1.5</span>», x &lt; <span class="fl">1.95</span>))</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Max</span>(<span class="fu">Filter</span>(«2, <span class="fl">1.8</span>, <span class="fl">1.9</span>, <span class="fl">1.5</span>», x &lt; <span class="fl">1.95</span>))</code></p>
 <h3 id="Ans-11-5"><a href="#Ans-11-5"><a href="Chapter_11.html#Ex-11-5">Exercise 11-5</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">Median</span>(a^<span class="dv">2</span>)</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Median</span>(a^<span class="dv">2</span>)</code></p>
 <h3 id="Ans-11-6"><a href="#Ans-11-6"><a href="Chapter_11.html#Ex-11-6">Exercise 11-6</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">Min</span>(<span class="fu">Intersection</span>(a, b))</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Min</span>(<span class="fu">Intersection</span>(a, b))</code></p>
 <h3 id="Ans-11-7"><a href="#Ans-11-7"><a href="Chapter_11.html#Ex-11-7">Exercise 11-7</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">Sum</span>(a)/<span class="fu">Count</span>(a)</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Sum</span>(a)/<span class="fu">Count</span>(a)</code></p>
 <h3 id="Ans-11-8"><a href="#Ans-11-8"><a href="Chapter_11.html#Ex-11-8">Exercise 11-8</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">FindState</span>(<span class="fu">FindState</span>([Population], [Infected]), [Female])</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">FindState</span>(<span class="fu">FindState</span>([Population], [Infected]), [Female])</code></p>
 <h3 id="Ans-11-9"><a href="#Ans-11-9"><a href="Chapter_11.html#Ex-11-9">Exercise 11-9</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">Union</span>(<span class="fu">FindNotState</span>([Population], [Infected]), <span class="fu">FindState</span>([Population], [Female]))</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Union</span>(<span class="fu">FindNotState</span>([Population], [Infected]), <span class="fu">FindState</span>([Population], [Female]))</code></p>
 <h3 id="Ans-11-10"><a href="#Ans-11-10"><a href="Chapter_11.html#Ex-11-10">Exercise 11-10</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">Mean</span>(<span class="fu">Value</span>(<span class="fu">FindState</span>([Population], [Male]), [Height]))-<span class="fu">Mean</span>(<span class="fu">Value</span>(<span class="fu">FindState</span>([Population], [Female]), [Height]))</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Mean</span>(<span class="fu">Value</span>(<span class="fu">FindState</span>([Population], [Male]), [Height]))-<span class="fu">Mean</span>(<span class="fu">Value</span>(<span class="fu">FindState</span>([Population], [Female]), [Height]))</code></p>
 <h3 id="Ans-11-11"><a href="#Ans-11-11"><a href="Chapter_11.html#Ex-11-11">Exercise 11-11</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">MoveTowards</span>([Self], <span class="fu">FindFurthest</span>(<span class="fu">FindState</span>([Population, [Healthy]), [Self]), {<span class="dv">1</span> Meter})</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">MoveTowards</span>([Self], <span class="fu">FindFurthest</span>(<span class="fu">FindState</span>([Population, [Healthy]), [Self]), {<span class="dv">1</span> Meter})</code></p>
 <h3 id="Ans-11-12"><a href="#Ans-11-12"><a href="Chapter_11.html#Ex-11-12">Exercise 11-12</a></a></h3>
-<p><code class="sourceCode javascript"><span class="fu">range</span>(x) &lt;- <span class="fu">max</span>(x)-<span class="fu">min</span>(x)</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">range</span>(x) &lt;- <span class="fu">max</span>(x)-<span class="fu">min</span>(x)</code></p>
 <p>or</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript">Function <span class="fu">Range</span>(x)
     <span class="fu">Max</span>(x)-<span class="fu">Min</span>(x)
@@ -238,11 +241,11 @@ End Function</code></pre>
 <h2 id="chapter-12"><a href="#chapter-12">Chapter 12</a></h2>
 <h3 id="Ans-12-1"><a href="#Ans-12-1"><a href="Chapter_12.html#Ex-12-1">Exercise 12-1</a></a></h3>
 <p>Squared error:</p>
-<p><code class="sourceCode javascript">([Widgets]-[Historical Production])^<span class="dv">2</span></code></p>
+<p><code class="blockSource sourceCode javascript">([Widgets]-[Historical Production])^<span class="dv">2</span></code></p>
 <p>Absolute value error:</p>
-<p><code class="sourceCode javascript"><span class="fu">Abs</span>([Widgets]-[Historical Production])</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Abs</span>([Widgets]-[Historical Production])</code></p>
 <h3 id="Ans-12-2"><a href="#Ans-12-2"><a href="Chapter_12.html#Ex-12-2">Exercise 12-2</a></a></h3>
-<p><code class="sourceCode javascript">([Simulated]-[Historical])^<span class="dv">4</span></code></p>
+<p><code class="blockSource sourceCode javascript">([Simulated]-[Historical])^<span class="dv">4</span></code></p>
 <h3 id="Ans-12-3"><a href="#Ans-12-3"><a href="Chapter_12.html#Ex-12-3">Exercise 12-3</a></a></h3>
 <p>The optimizer can always minimize this simply making <span class="primitive">Simulated</span> as small as possible. This will not result in a fit to the historical data.</p>
 <h3 id="Ans-12-7"><a href="#Ans-12-7"><a href="Chapter_12.html#Ex-12-7">Exercise 12-7</a></a></h3>
