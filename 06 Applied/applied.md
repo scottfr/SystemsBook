@@ -1,1 +1,1 @@
-Chapter 6 - Applied Understanding
+Applied Understanding
