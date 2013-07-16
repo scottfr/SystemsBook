@@ -160,6 +160,8 @@ Let's illustrate the usage of sensitivity testing using our rabbit example. Firs
 
 {"attribute":"FlowRate","target":"Births","value":"[Birth Rate]*[Rabbits]"}
 
+{"attribute":"Primitives","target":"DISPLAY","value":["Rabbits"]}
+
 DIAGRAM
 
 This is the basic outline for the model. We assume a fixed value of 12 rabbits and a fixed birth rate of 0.05.
@@ -196,7 +198,7 @@ We can readily see the range of results allowing us to make decisions incorporat
 
 ~ Exercise
 
-Create an equation to represent the uncertainty of how many red marbles in a bag. You know there are at least 5 red marbles and no more that 14. You do not have any other information.
+Create an equation to represent the uncertainty of how many red marbles there are in a bag. You know there are at least 5 red marbles and no more that 14. You do not have any other information.
 
 ~ Answer
 
@@ -208,7 +210,7 @@ We use a standard deviation of 4 as we lack any information on what the dispersi
 
 ~ Exercise
 
-Create an equation to represent the uncertainty of how many red marbles in a bag. You know there are probably about 20 red marbles and you know there are no more than 100 marbles in the bag.
+Create an equation to represent the uncertainty of how many red marbles there are in a bag. You know there are probably about 20 red marbles and you know there are no more than 100 marbles in the bag.
 
 ~ Answer
 
@@ -218,7 +220,7 @@ Create an equation to represent the uncertainty of how many red marbles in a bag
 
 ~ Exercise
 
-Create an equation to represent the uncertainty of how many red marbles in a bag. You know there are probably about 20 red marbles and you do not know how many marbles the bag can hold total.
+Create an equation to represent the uncertainty of how many red marbles there are in a bag. You know there are probably about 20 red marbles and you do not know how many marbles the bag can hold total.
 
 ~ Answer
 
