@@ -326,3 +326,10 @@ The values in the previous model were contrived so when you click the Demo butto
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
 
 In the next chapter you will learn about the Insight Maker environment and actually build the models that were presented in this chapter.
+
+## References ##
+
+- Kauffman, Draper L. 1980. Systems One: An Introduction to Systems Thinking. http://www.amazon.com/Systems-One-An-Introduction-Thinking/dp/9996280519/
+- Meadows, Donella. 2013. Thinking in Systems: A Primer. http://www.amazon.com/Thinking-Systems-A-Primer-ebook/dp/B005VSRFEA/
+- McDermott, Ian & O'Connor, Joseph. Unk. The Art of Systems Thinking. http://www.amazon.com/The-Art-Systems-Thinking-ebook/dp/B0091XFU70/
+- Sherwood, Dennis. 2002. Seeing the Forest for the Trees: A Manager's Guide to Applying Systems Thinking. http://www.amazon.com/Seeing-Forest-Trees-Managers-ebook/dp/B004GCK63Y/
