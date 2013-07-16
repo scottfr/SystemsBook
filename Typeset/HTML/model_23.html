@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	
+    <title>Insight Maker</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=IE8">
+
+ 	<link rel="stylesheet" type="text/css" href="../builder/resources/ext/resources/css/ext-all-gray.css" />
+ 	
+	<link rel="shortcut icon" href="../builder/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" type="text/css" href="../builder/css/BoxSelect.css" />
+	<link rel="stylesheet" type="text/css" href="../builder/css/insighteditor.css" />
+
+</head>
+<body>
+	
+
+<div id="loading-mask"></div>
+<div id="loading">
+  <div class="loading-indicator">
+
+	        Loading Insight Maker...
+  	<br/><p>
+  	<img src="../builder/images/loading.gif" width=54 height=55/></p><br/>
+  	(This may take a few moments)
+	
+  </div>
+</div>
+<div id="toplinks-holder" name="toplinks-holder"></div>
+
+<script type="text/javascript" src="../builder/resources/ext/ext-all.js"></script>
+
+<script type="text/javascript">
+var base_path = "http:\/\/insightmaker.com";
+var builder_path = "http:\/\/insightmaker.com\/builder";
+var logged_in = true;
+var drupal_node_ID = 1;
+var graph_title = "";
+var graph_description = "";
+var graph_tags = "";
+var graph_author_name = '';
+var graph_author_id = -1;
+var saved_enabled = true;
+var is_editor = true;
+var is_embed = false;
+var is_topBar = false;
+var is_sideBar = false;
+var is_zoom = true;
+
+var graph_source_data = "<mxGraphModel><root><mxCell id=\"0\"/><mxCell id=\"1\" parent=\"0\"/><Setting unfolding=\"{&quot;children&quot;:[{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\ngraph.model.execute(new mxGeometryChange(graph.model, findName(\'Swimmng Pool\'), new mxGeometry(400, 165, 100, 40)));\\n\\ngraph.model.execute(new mxGeometryChange(graph.model, findName(\'Hose\'), new mxGeometry(20, 25, 100, 100)));\\n\\ngraph.model.execute(new mxGeometryChange(graph.model, findName(\'Full Level\'), new mxGeometry(240, 25, 80, 55)));\\n\\ngraph.model.execute(new mxGeometryChange(graph.model, findName(\'Link\'), new mxGeometry(110, -65, 100, 100)));\\n\\ngraph.model.execute(new mxGeometryChange(graph.model, findName(\'Link\'), new mxGeometry(110, -65, 100, 100)));&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;We begin with a Swimming Pool that needs to be filled with a hose. We know how many gallows of water it takes to fill the pool and we don\'t want to put too much water in the pool. The model is created to compare the amount of the water in the Swimming Pool with the the Full Level and use that to decide whether water is flowing in the hose or not.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;action&quot;,&quot;data&quot;:&quot;\\n\\nfindName(\'Swimmng Pool\').setAttribute(\'InitialValue\', \'0\');\\n\\nfindName(\'Full Level\').setAttribute(\'Equation\', \'20000\');\\n\\nfindName(\'Hose\').setAttribute(\'FlowRate\', \'IfThenElse([Swimmng Pool] &lt; [Full Level], [Full Level]-[Swimmng Pool], 0)\');\\n\\ngetSetting().setAttribute(\'TimeLength\', \'24\');\\n\\ngetSetting().setAttribute(\'TimeUnits\', \'Hours\');\\n\\nrunModel();&quot;,&quot;text&quot;:&quot;Run Action&quot;,&quot;leaf&quot;:true},{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;This is really great. We can fill the Swimming Pool in just 1 day, or can we? Either it\'s a really really big hose or we\'ve done something wrong because it\'s probably not possible to fill the Swimming Pool with a Hose in one day if it takes 20,000 gallons or water.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[{&quot;type&quot;:&quot;note&quot;,&quot;data&quot;:&quot;Note the choppy nature of the graph. Again this is a result of a Time Step that\'s too small and this will be addressed in Chapter 2.&quot;,&quot;text&quot;:&quot;Show Message&quot;,&quot;leaf&quot;:true}],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;},{&quot;children&quot;:[],&quot;type&quot;:&quot;group&quot;,&quot;text&quot;:&quot;New Group&quot;}],&quot;text&quot;:&quot;Root Node&quot;}\" unfoldingStatus=\"on\" unfoldingAuto=\"always\" Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"><mxCell parent=\"1\" vertex=\"1\" visible=\"0\"><mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"/></mxCell></Setting><Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"><mxCell style=\"roundImage;image=/builder/images/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"/></mxCell></Display></root></mxGraphModel>";
+</script>
+
+<div id="header"><div style="float:right;margin:5px;" class="x-small-editor"></div></div>
+
+
+<script type="text/javascript">
+var scriptBase = builder_path;
+var mxBasePath = builder_path;
+var mxLoadResources = false;
+var mxLoadStylesheets = false;
+</script>
+
+<script type="text/javascript" src="../builder/out.js"></script>
+  
+</body>
+</html>
+
