@@ -2,6 +2,8 @@
 
 In the previous chapters you worked with what is referred to Stock & Flow Simulation Models. These are also referred to as quantitative models because of the numerical values associated with them. While there are other types of quantitative models we won't get into them here. There is also another class of models referred to as qualitative models because they have no numeric values associated with them. There is a level of understanding well served by the use of qualitative models and as such this chapter will serve to acquaint you with several qualitative models that you can create with Insight Maker and find use for in your study of systems.
 
+The models presented in this chapter are presented as images because of the graphic images included. 
+
 Models are simplifications of some aspect of the world around us intended to help us understand something. The Stock & Flow Simulation Models are very explicit as they the relations are represented by numerical formulas and the model may be iterated over time. The models presented in the sections of this chapter will present models which may also assist in understanding situations though only from a relationship perspective as there are generally no numerical values associated with the model and they are not iterated over time.
 
 ## Rich Pictures ##

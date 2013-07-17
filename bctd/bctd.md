@@ -50,7 +50,7 @@ Publishers retain ownership of their models with attribution to them as the sour
 
 Simple and direct though it needs to depict connections or relationships. Some sort of network representation. I like the cover we used on Kickstarter though Scott said we probably can't get rights to use the image. James Cameron is working on an similar alternative that won't infringe on copyrights.
 
-Here are a few covers that James has mocked up
+Here are a few covers James has mocked up. Place comments in [Covers Options Comments](http://linkd.in/1asJcWH)
 
 ![Cover 1](./covers/1.gif)<br>[Cover # 1](./covers/1.gif)
 
