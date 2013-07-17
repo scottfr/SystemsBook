@@ -82,7 +82,7 @@ Create a state transition diagram for a model of a person who three states: \p{C
 
 DIAGRAM
 
-States represent the condition someone is in. So in our model a person can either be healthy, infected, or recovered from the infection. Now, let's add transitions that move a person from state to state.
+States can be used to represent a person's condition. In our model a person can either be healthy, infected, or recovered from the infection. Now, let's add transitions that move a person from state to state.
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Healthy","omega":"Infected","name":"Infection","create":"Transition"}
 

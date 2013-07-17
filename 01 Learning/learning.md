@@ -245,11 +245,8 @@ DIAGRAM
 
 The new formula for Hose takes into account both the current amount of water in the Swimming Pool, Full Level and Hose Capacity
 
-<<<<<<< HEAD
-> IfThenElse([Swimmng Pool] < [Full Level], min([Full Level]-[Swimmng Pool],[Hose Capacity]), 0)
-=======
-\e{ Hose = IfThenElse([Swimming Pool] &lt; [Full Level], min([Full Level]-[Swimming Pool],[Hose Capacity]), 0) }
->>>>>>> Chapter 1 Revision
+
+\e{ Hose = IfThenElse([Swimming Pool] < [Full Level], min([Full Level]-[Swimming Pool],[Hose Capacity]), 0) }
 
 RESULTS
 
