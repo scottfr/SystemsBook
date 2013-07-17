@@ -500,11 +500,13 @@ The reason the graph looks like this is because of the constraint placed on the 
 
 [Work] = IfThenElse([Work Remaining] > [Workers],[Workers],[Work Remaining])
 
-This says that if there is more Work Remaining than there are Workers available to do the work then the amount of work that day equals the number of Workers. This goes on for the first 7 days then on the 8th day there are only four days work required to finish the project which is represented by the different slope on the line on the 8th day. You can see this in detail if you look at the Tabular Display.
+This says that if there is more [Work Remaining] than there are [Workers] available to do the work then the amount of work that day equals the number of [Workers]. This goes on for the first 7 days then on the 8th day there are only four days work required to finish the project which is represented by the different slope on the line on the 8th day. You can see this in detail if you look at the Tabular Display.
 
 # End Model
 
 [** Goal Seeking with Constraint](http://insightmaker.com/insight/6171)
+
+Note that in this model you might have considered the \p{Workers} as a \p{Stock} as they are actually a collection. The reason they're not considered as a \p{Stock} in this model is that the number remains constant in the context of this particular model. In a different model \p{Workers} might actually be a \p{Stock} with an inflow and and outflow.
 
 ~ Exercise
 
