@@ -117,7 +117,7 @@ If the images make it easier for the model to develop and convey understanding t
 
 ![Figure 7. The Boy Who Cried Wolf](03-im-7103.png)
 
-[** The Boy Who Cried Wolf](http://insightmaker.com/insight/7103)
+[** Figure 7](http://insightmaker.com/insight/7103)
 
 ## Storytelling ##
 
@@ -125,13 +125,11 @@ Even though you may conscientiously develop your model and add comments often it
 
 Storytelling a model is intended to reveal a model little by little and explain it along the way. Click on the View Story button in the lower left corner of the screen, read the text, and then click the Step Forward arrow on the right repeatedly to have the model presented as a story.
 
-[** Storytelling Example](http://insightmaker.com/insight/7104)
+Adding a story to a model is very straight forward and is initiated by clicking \u{Add Story} in the \u{Tools} section of the \u{Toolbar}. This opens the \u{Story Designer} which is described as follows.
 
-This sequencing you just experienced was all done with the **Add Story** function on the right side of the Tools section of the Toolbar. If you click **Add Story** you should see the **Story Designer** window.
+![Figure 8. Story Designer](03-im-7104.png)
 
-![Figure x. Story Designer](03-im-7104.png)
-
-[** Figure x](http://www.insightmaker.com/insight/7085)
+[** Figure 8](http://www.insightmaker.com/insight/7085)
 
 The main elements of this window are...
 
@@ -145,9 +143,9 @@ The main elements of this window are...
 
 There are five different types of steps you can include in a story.
 
-![Figure x. Steps of a Story](03-im-7104a.png)
+![Figure 9. Steps of a Story](03-im-7104a.png)
 
-[** Figure x](http://www.insightmaker.com/insight/7104)
+[** Figure 9](http://www.insightmaker.com/insight/7104)
 
 When you select any one of these steps it will be added to the bottom of the list. You can move the step to the location where you want it. As the following step types are described you might want open the Story Designer and click on different Unfolding Steps to visualize how they're defined.
 
@@ -157,17 +155,15 @@ When you select any one of these steps it will be added to the bottom of the lis
 - **Run Action**. Provides you with a window in which you can enter Javascript commands to control various aspects of the model. And there are a large number of functions in the [Insight Maker API](http://insightmaker.com/sites/default/files/API/files/API-js.html) that you can employ in this step.
 - **Group Steps**. This step creates a folder in the sequence in which you can place multiple steps. This allows you to indicate there are several steps you want to execute with a single Next Step click. You can see how this was used in the Figure 11 definition of the unfolding for the model in Figure 10. You can open and close a New Group folder by toggling the little triangle to the left of it. Also if you click on a folder you can rename it in the **Name** field on the right.
 
-All new steps are added to the bottom of the list of steps. If you're creating a long series of steps and then you need to add one near the top this may be difficult. In an attempt to provide a work around the Model Unfolding Designer window is resizable.
-
-The Boy Who Cried Wolf is repeated here from above so you can unfold this model and then take a look at the Story Designer to see how it was setup. Just click the View Story in the lower left of the window.
-
-[** The Boy Who Cried Wolf](http://insightmaker.com/insight/7103)
+All new steps are added to the bottom of the list of steps. If you're creating a long series of steps and then you need to add one near the top this may be difficult. In an attempt to provide a work around the Model Unfolding Designer window is re-sizable.
 
 By creating an story of your model you significantly increase the likelihood that others will understand the insights your model is endeavoring to surface. You might even find that in the process of creating the story you uncover ways to improve or clarify the model for yourself.
 
-Systems Thinking: The Essence of And? is another story you can walk through and study as to how it was put together. This story attempts to explain why applying pesticides can increase the requirement for spraying more pesticides. It also attempt to distill the concept of Systems Thinking to a single word... And?
+The following storytelling examples may be viewed by clicking the following links.
 
-[** Systems Thinking: The Essence of And?](http://insightmaker.com/insight/3365)
+* [Rabbit Population](http://insightmaker.com/insight/7104)
+* [The Boy Who Cried Wolf](http://insightmaker.com/insight/7103)
+* [Systems Thinking: The Essence of And?](http://insightmaker.com/insight/3365)
 
 ## Summary ##
 
