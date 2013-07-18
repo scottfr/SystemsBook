@@ -28,7 +28,7 @@ When you create a New Insight in Insight Maker you don't actually have to start 
 
 DIAGRAM
 
-If you click the \p{Clear Sample Model} button you will then have a blank canvas on which to create a model. In the next few segments you will learn how to create the three basic structures from which all models are constructed.
+If you click the [Clear Sample Model] button you will then have a blank canvas on which to create a model. In the next few segments you will learn how to create the three basic structures from which all models are constructed.
 
 # End Model
 
