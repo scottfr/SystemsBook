@@ -17,25 +17,25 @@ We develop models to help us understand the implications of interactions, and so
 
 There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These will be presented as Modeling Tips throughout this chapter. The idea is to ensure that the model serves the purpose you started building it for.
 
-![](03-im-184.png)
+![Figure 1. Model Construction Process](03-im-184.png)
 
-[Model Construction Process](http://www.insightmaker.com/insight/184)
+[** Figure 1](http://www.insightmaker.com/insight/184)
 
 The difference between Real Events and Conclusions and Behaviors result in the creation of an Abstract Version of Real Events. The abstraction is then used to develop a Model which promotes a revision to Conclusions and Behaviors. This cycle continues until the Model produces a set of Conclusions and Behaviors which are congruent with Real Events. At this point there's no longer a need to create an Abstract Version of Real Events, meaning you have achieved the understanding you were seeking.
 
 The construction process of Figure 0 is very conceptual and as you continue to develop models you will arrive at a sequence that you are comfortable with an enables you to achieve the understanding your seeking. The following two figures present the two model formulation processes presented by Andrew Ford in Modeling the Environment.
 
-![](03-im-220.png)
+![Figure 2. Emphasis on Model Formulation](03-im-220.png)
 
-[Emphasis on Model Formulation](http://www.insightmaker.com/insight/220)
+[** Figure 2](http://www.insightmaker.com/insight/220)
 
 In this approach one focuses on the understanding the qualitative dynamics, i.e., problem familiarization, problem definition and model formulation. Not until such time as there is a level of comfort in the understanding of these dimensions, which may employ Rich Pictures or Causal Loop Diagrams, does one progress to the quantitative aspect of model building, i.e., estimating parameters, simulating to explain the problem and sensitivity and policy analysis, which is where the Stock & Flow simulation model is employed. The quantitative dynamics may produce sufficient understanding or the process may continue back into the qualitative dynamics area. Model development is an iterative process.
 
 The following figure, which may look like complete chaos, emphasizes simulation to provide feedback to provide a better understanding of all other aspects of the modeling process.
 
-![](03-im-219.png)
+![Figure 3. Emphasis on Simulation Early & Simulate Often](03-im-219.png)
 
-[Emphasis on Simulate Early & Simulate Often](http://www.insightmaker.com/insight/219)
+[** Figure 3](http://www.insightmaker.com/insight/219)
 
 Here the believe is that actually simulating all stages of the model are the best way to ground one's understanding of all other aspects of the model development process.
 
@@ -45,13 +45,13 @@ As you develop models you will develop an approach which is probably somewhere b
 
 the next figure presents a number of guidelines or rules of thumb it would be good for you to keep in mind as you develop your models. Some of the following are only relevant to Stock & Flow simulations, and which they are should be quite obvious.
 
-![](03-im-1784.png)
+![Figure 4. Modeling Guidelines](03-im-1784.png)
 
-[Modeling Guidelines](http://www.insightmaker.com/insight/1784)
+[** Figure 4](http://www.insightmaker.com/insight/1784)
 
 Remember that model development and the understanding that comes with it is an iterative process. It's almost impossible to create all the pieces as they should be the first time around. Look at it as do a little, learning a little and repeat.
 
-- **Purpose**. Have a sense of what you want the model to accomplish and expect the thought to evolve as you devleop the model.
+- **Purpose**. Have a sense of what you want the model to accomplish and expect the thought to evolve as you develop the model.
 - **Boundary**. A boundary allows you to explicitly define what's part of the model and what's not part of the model. If you're unclear on the purpose of the model and unable to establish a boundary how will you ever know when to stop adding things to the model?
 - **Time Units**. Will the interactions in this model be depicted over Years, Months, Days, etc. In this case the initial thought is that it will be hours. And you should realize that you initial thought may have to be revised once you begin developing the model.
 - **Simulation Length**. How long might the interactions have to be modeled for. Here again the answer may be obvious, or you may have to start with an estimate and revise it after working with the model. Here we'll estimate 4 hrs.
@@ -73,8 +73,6 @@ The following items are most likely relevant only for Stock & Flow simulations.
 
 The guidelines are far too much to memorize though if you refer to them as a check list over time they will actually become second nature and you'll find yourself checking them as you're adding elements to a model.
 
-----------
-
 ## Can Red Get to Grandma's House ##
 
 Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?
@@ -91,21 +89,21 @@ While this may look like a rather trivial model there are several aspects of thi
 
 If you click on the stock and look at the configuration panel you'll notice that the last item in the list, Units, is set to miles. Units were not addressed in the first two chapters as they are so important we wanted to ensure we could focus on them in this chapter. You use units to help ensure that your models are sound. Not that units will not guarantee that your model is sound though it the units don't work out right you can be sure it's not, and Insight Maker checks them for you. This figure shows the Configuration Panel for the stock.
 
-![](03-im-6767.png)
+![Figure 5. Units for Distance to Grandma's House in miles](03-im-6767.png)
 
-[Units for Distance to Grandma's House is in miles](http://www.insightmaker.com/insight/6767)
+[** Figure 5](http://www.insightmaker.com/insight/6767)
 
 If you click on the flow and look at the configuration panel you'll notice that the units for walk is miles/hour as depicted below.
 
-![](03-im-6767a.png)
+![Figure 6. Units for Walk is in miles/hour](03-im-6767a.png)
 
-[Units for Walk is in miles/hour](http://www.insightmaker.com/insight/6767)
+[** Figure 6](http://www.insightmaker.com/insight/6767)
 
 The flow has a units of hours as that's what was set up in Time Settings as the Time Units for the model. All the time settings are showing in the following figure.
 
-![](03-im-6767b.png)
+![Figure 7. Time Settings for Walk to Grandma's House](03-im-6767b.png)
 
-[Time Settings for the Walk to Grandma's House](http://www.insightmaker.com/insight/6767)
+[** Figure 7](http://www.insightmaker.com/insight/6767)
 
 You might now be asking, how the Walk in miles/hour gets turned in to Distance to Grandma's in miles? Because we've selected a Time Step of 0.5 each simulation step multiplies 0.5 hours x 2 miles/hour to get 1 mile traveled each time step. And the units are consistent. Later you can try changing the Time Units and running the model to see how that affects the answers. It's not actually this simple though with a constant flow rate this description is close enough.
 
