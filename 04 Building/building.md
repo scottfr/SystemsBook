@@ -77,29 +77,56 @@ The guidelines are far too much to memorize though if you refer to them as a che
 
 Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?
 
-Little Red Riding Hood want's to know how long it will take her to get to Grandma's house if she walks at 2 miles per hour and Grandma's house is 4.5 miles away thought the woods.
+# Model
+
+{"title": "Going to Grandma's House", "description": "Little Red Riding Hood want's to know how long it will take her to get to Grandma's house if she walks at 2 miles per hour and Grandma's house is 4.5 miles away thought the woods."}
+{"load": ""}
 
 In this statement what is to be figured out is very easy to identify. Sometimes it's not so easy and you have to dig a little.
 
-The following figure represents a simple model of Little Red Riding Hood walking to Grandma's house.
+{"geometry":{"x":190,"y":180,"width":120,"height":40},"name":"Distance to Grandmas House","create":"Stock"}
 
-[Walking to Grandma's House](http://insightmaker.com/insight/6767)
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Distance to Grandmas House","name":"Walk","create":"Flow"}
 
-While this may look like a rather trivial model there are several aspects of this model that warrant a few notes, and some of them we've not considered before.
+Now lets add a slider for each [Primitive] so we can adjust the values later.
 
-If you click on the stock and look at the configuration panel you'll notice that the last item in the list, Units, is set to miles. Units were not addressed in the first two chapters as they are so important we wanted to ensure we could focus on them in this chapter. You use units to help ensure that your models are sound. Not that units will not guarantee that your model is sound though it the units don't work out right you can be sure it's not, and Insight Maker checks them for you. This figure shows the Configuration Panel for the stock.
+{"attribute":"ShowSlider","target":"Distance to Grandmas House","value":"true"}
+
+{"attribute":"SliderMax","target":"Distance to Grandmas House","value":"10"}
+
+{"attribute":"SliderStep","target":"Distance to Grandmas House","value":"0.5"}
+
+{"attribute":"ShowSlider","target":"Walk","value":"true"}
+
+{"attribute":"SliderMax","target":"Walk","value":"5"}
+
+{"attribute":"SliderStep","target":"Walk","value":"0.1"}
+
+DIAGRAM
+
+This figure represents a simple model of Little Red Riding Hood walking to Grandma's house. While this may look like a rather trivial model there are several aspects of this model that warrant a few notes, and some of them we've not considered before.
+
+# End Model
+
+[** Going to Grandma's House](http://insightmaker.com/insight/6767)
+
+## Setting Units ##
+
+If you click on the stock and look at the configuration panel you'll notice that the last item in the list, Units, has a value of unitless. Units were not addressed in the first two chapters as they are so important we wanted to ensure we could focus on them in this chapter. You use units to help ensure that your models are sound. Not that units will guarantee that your model is sound though if the units don't work out right you can be sure there's a problem, so Insight Maker checks them for you.
+
+This figure shows the Configuration Panel for the stock where Units is assigned a value of miles. For this particular model miles makes sense as we're trying to figure out how long it gets to Grandma's House and we know it's 4.5 miles away.
 
 ![Figure 5. Units for Distance to Grandma's House in miles](03-im-6767.png)
 
 [** Figure 5](http://www.insightmaker.com/insight/6767)
 
-If you click on the flow and look at the configuration panel you'll notice that the units for walk is miles/hour as depicted below.
+If you click on the flow and look at the configuration panel you'll notice that the Units for walk is miles/hour as depicted below. A flow represents the movement of something during a time period which is why this is 1/hours.
 
 ![Figure 6. Units for Walk is in miles/hour](03-im-6767a.png)
 
 [** Figure 6](http://www.insightmaker.com/insight/6767)
 
-The flow has a units of hours as that's what was set up in Time Settings as the Time Units for the model. All the time settings are showing in the following figure.
+The flow has a units of hours as that's what will be set up in Time Settings as the Time Units for the model. All the time settings are showing in the following figure.
 
 ![Figure 7. Time Settings for Walk to Grandma's House](03-im-6767b.png)
 
@@ -119,19 +146,35 @@ There are a large number of units predefined in Insight Maker. If you click in t
 
 ----------
 
-Now click the Run Button to simulate the model. The Run Button was added as a convenience because the Run button on the menu bar is off the right side at the top. The Run Button in the model will probably go away in the final version of this writing.
+# Model
 
-From the graphic and tabular results in the following figures it should be evident that there are some enhancements that need to be made to our Walk to Grandma's House model.
+{"title": "Going to Grandma's House Revisited", "description": "Now that we've talked about Units we can finish up this model and run it."}
 
-![](03-im-6767c.png)
+{"load": "<mxGraphModel> <root> <mxCell id=\"0\"\/> <mxCell id=\"1\" parent=\"0\"\/> <Setting Note=\"\" Version=\"28\" TimeLength=\"10\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"-1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"> <mxCell parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Setting> <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"Miles\" ThreeDimensional=\"false\" Primitives=\"52\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"> <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Display name=\"Tabular Display\" Note=\"\" Type=\"Tabular\" xAxis=\"Time (%u)\" yAxis=\"Gallons\" yAxis2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" ThreeDimensional=\"false\" Primitives=\"\" Primitives2=\"\" AutoAddPrimitives=\"false\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Bottom\" legendPosition=\"Automatic\" id=\"29\"> <mxCell style=\"display\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"10\" y=\"10\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Stock name=\"Distance to Grandmas House\" Note=\"\" InitialValue=\"4.5\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"10\" SliderMin=\"0\" SliderStep=\"0.5\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"52\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"220\" y=\"60\" width=\"120\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Flow name=\"Walk\" Note=\"\" FlowRate=\"2\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"5\" SliderMin=\"0\" SliderStep=\"0.1\" id=\"53\"> <mxCell style=\"flow\" parent=\"1\" source=\"52\" edge=\"1\"> <mxGeometry x=\"30\" y=\"-120\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"30\" y=\"-20\" as=\"sourcePoint\"\/> <mxPoint x=\"540\" y=\"80\" as=\"targetPoint\"\/> <\/mxGeometry> <\/mxCell> <\/Flow> <\/root> <\/mxGraphModel> "}
 
-[Walk to Grandma's/Graphic Results](http://www.insightmaker.com/insight/6767)
+DIAGRAM
 
-![](03-im-6767d.png)
+Now we can assign the units for the stock and the flow.
 
-[Walk to Grandma's/Tabular Results](http://www.insightmaker.com/insight/6767)
+{"attribute":"Units","target":"Distance to Grandmas House","value":"miles"}
 
-In both the graphic display and tabular display it's evident that Red didn't stop when she got to Grandma's house, and one might wonder where she ended up after 5 hours of walking. And from the tabular display at 2 hours Red was 0.5 miles from Grandma's House and at 2.5 hours she was 0.5 miles past Grandma's House.That there is no time with the Distance to Grandma's House equal to zero indicates that the time step is to large. This simply tells us that our Time Step is too large for the relationships in the model. 
+{"attribute":"Units","target":"Walk","value":"miles/hour"}
+
+And assign the Time Settings.
+
+{"attribute":"TimeLength","value":"5"}
+
+{"attribute":"TimeStep","value":"0.5"}
+
+{"attribute":"TimeUnits","value":"Hours"}
+
+RESULTS
+
+From the graphic it should be evident that there are some enhancements that need to be made to our Going to Grandma's House model. 
+
+# End Model
+
+It's evident that Red didn't stop when she got to Grandma's house, and one might wonder where she ended up after 5 hours of walking. It appears that at 2 hours Red was 0.5 miles from Grandma's House and at 2.5 hours she was 0.5 miles past Grandma's House. That there is no time with the Distance to Grandma's House equal to zero indicates that the time step is to large. This simply tells us that our Time Step is too large for the relationships in the model. 
 
 ~ Exercise
 
