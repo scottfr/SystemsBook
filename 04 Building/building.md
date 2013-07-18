@@ -174,23 +174,44 @@ From the graphic it should be evident that there are some enhancements that need
 
 # End Model
 
-It's evident that Red didn't stop when she got to Grandma's house, and one might wonder where she ended up after 5 hours of walking. It appears that at 2 hours Red was 0.5 miles from Grandma's House and at 2.5 hours she was 0.5 miles past Grandma's House. That there is no time with the Distance to Grandma's House equal to zero indicates that the time step is to large. This simply tells us that our Time Step is too large for the relationships in the model. 
+It's evident that Red didn't stop when she got to Grandma's house, and one might wonder where she ended up after 5 hours of walking. It appears that at 2 hours Red was 0.5 miles from Grandma's House and at 2.5 hours she was 0.5 miles past Grandma's House. That there is no time with the Distance to Grandma's House equal to zero indicates that the time step is to large for the relationships in the model. 
 
 ~ Exercise
 
 Run this model with a Time Step of 0.25 and 0.125 and from the Tabular Display which Time Step do you think is most appropriate and why?
 
+~ Answer
+
+Hopefully you found that both 0.25 and 0.125 produced a step with a distance to Grandma's House of 0 at 2.25 hours. In finding no difference between the results for 0.25 and 0.125 you should have concluded that 0.25 was a small enough for this model. Smaller is not always better. In this case it just makes the model run for more steps.
+
 ~ End Exercise
 
-Figure 8 represents a modification of the Little Red Riding Hood walking to Grandma's house which was presented in Figure 1.
+# Model
 
-[Stopping at Grandma's House](http://insightmaker.com/insight/6778)
+{"title": "Stopping At Grandma's", "description": "We'll begin with the previous model and add an option that tells the model to stop when Red actually gets to Grandma's."}
 
-Hopefully you found in Exercise 3-1 that both 0.25 and 0.125 produced a step with a distance to Grandma's House of 0 at 2.25 hours. In finding no difference between the results for 0.25 and 0.125 you should have concluded that 0.25 was a small enough for this model.
+{"load": "<mxGraphModel> <root> <mxCell id=\"0\"\/> <mxCell id=\"1\" parent=\"0\"\/> <Setting Note=\"\" Version=\"28\" TimeLength=\"5\" TimeStart=\"0\" TimeStep=\"0.25\" TimeUnits=\"Hours\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"-1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"> <mxCell parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Setting> <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"Miles\" ThreeDimensional=\"false\" Primitives=\"42,43\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"> <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Display name=\"Tabular Display\" Note=\"\" Type=\"Tabular\" xAxis=\"Time (%u)\" yAxis=\"Gallons\" yAxis2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" ThreeDimensional=\"false\" Primitives=\"42\" Primitives2=\"\" AutoAddPrimitives=\"false\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Bottom\" legendPosition=\"Automatic\" id=\"29\"> <mxCell style=\"display\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"10\" y=\"10\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Stock name=\"Distance to Grandmas House\" Note=\"The stock is the distance to Grandma&#39;s house.\" InitialValue=\"4.5\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"miles\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"10\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"0.5\" id=\"42\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"190\" y=\"50.445834827406884\" width=\"117.5\" height=\"44.554165172593116\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Flow name=\"Walk\" Note=\"The flow is how fast Red is walking toward Grandma&#39;s house.\" FlowRate=\"2\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"miles\/hour\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"5\" SliderMin=\"0\" SliderStep=\"0.1\" id=\"43\"> <mxCell style=\"flow\" parent=\"1\" source=\"42\" edge=\"1\"> <mxGeometry x=\"-190\" y=\"-89.55416517259312\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"-190\" y=\"10.445834827406884\" as=\"sourcePoint\"\/> <mxPoint x=\"507.5\" y=\"85\" as=\"targetPoint\"\/> <\/mxGeometry> <\/mxCell> <\/Flow> <\/root> <\/mxGraphModel> "}
 
-The time step in the this version has been set to 0.25 and the Stop at Grandmas variable has been added to tell the simulation to stop when Red has reached Grandma's House. If you run the model you'll see that it does just what we want it to do though if you look at the formula in Stop at Grandmas some explanation is probably in order.
+DIAGRAM
 
-    IfThenElse([Distance to Grandmas House] < {0 miles}, STOP, 0)
+The time step in the this version has been set to 0.25.
+RESULTS
+
+Now we'll add a variable to check whether Red is at Grandma's or not, and if she is the simulation should stop.
+
+{"geometry":{"x":390,"y":170,"width":120,"height":50},"name":"Stop at Grandmas","create":"Variable"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Distance to Grandmas House","omega":"Stop at Grandmas","create":"Link"}
+
+{"attribute":"Equation","target":"Stop at Grandmas","value":"IfThenElse([Distance to Grandmas House] < {0 miles}, STOP, 0)"}
+
+RESULTS
+
+Now you can see that Red stops walking at Grandma's House after 2.25 hours of walking.
+
+# End Model
+
+[** Stopping at Grandma's House](http://insightmaker.com/insight/6778)
 
 If you look at the Configuration Panel for Stop at Grandmas you'll notice that the Units are Unitless. The variable itself doesn't need a definition of units because it's not participating in any calculations. It's just a test.
 
@@ -200,13 +221,21 @@ As for the formula what you should remember is that when you start using units i
 
 In the [Stop at Grandmas] variable change {0 miles} to {0 kilometers}. Does the model still work? Why?
 
-~ End Exercise
+~ Answer
 
 The simulation engine in Insight Maker is smart enough to convert between the myriad of similar dimensions, e.g., miles, kilometers, feet, etc. Though it's recommended that you make conversions explicit otherwise models become very difficult to understand.
+
+Insight Maker doesn't complain because you're still comparing distance to distance and it doesn't matter that they're in different scales simply because zero = zero in any scale. It's really better to keep your units in the same scale.
+
+~ End Exercise
 
 ~ Exercise
 
 Seldom is there ever just one right way to build a model. You build the model to help you understand something and you might do that in different ways. Even for a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 2.5 and reducing it by walking. Try to build one or two alternatives to this model.
+
+~ Answer
+
+One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as one walks toward it. This way you're tracking the distance traveled rather than the distance left to travel.
 
 ~ End Exercise
 
