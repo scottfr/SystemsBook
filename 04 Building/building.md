@@ -575,11 +575,21 @@ DIAGRAM
 
 RESULTS
 
+When we run this model for 10 years things seem to be fine. The number of mature trees is declining a little thought it doesn't seem to be much to worry about.
+
+{"attribute":"TimeLength","value":"20"}
+
+When we look at 20 years the situation is very different and should generate major concern.
+
+{"attribute":"TimeLength","value":"60"}
+
+And when we look at 60 years there seems to be a very major boom and bust cycle acting here.
+
+RESULTS
+
 # End Model
 
-View the story for the following model.
-
-[Where have all the trees gone?](http://insightmaker.com/insight/7543)
+[** Where have all the trees gone?](http://insightmaker.com/insight/7543)
 
 ~ Exercise
 
