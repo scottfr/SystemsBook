@@ -243,11 +243,57 @@ Hopefully the Going to Grandma's model has given you a sense of an approach for 
 
 ## Why Aren't We All Rich ##
 
+If one can put money in an investment account and it grows over time, and it grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years though for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs?
+
 The following is intended to be another example of he development of a model, though somewhat more involved than the previous one. Here's the initial question describing what I'd like to understand.
 
-> If one can put money in an investment account and it grows over time, and it grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years though for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs?
+# Model
 
-[Why Aren't We All Rich v0](http://insightmaker.com/insight/6780)
+{"title": "Why Aren't We All Rich/Initial Setup", "description": "We begin with the simplest model possible relevant to the question."}
+
+First we create the Investment Account and the Initial Deposit and assign the appropriate units.
+
+{"geometry":{"x":260,"y":300,"width":100,"height":40},"name":"Investment Account","create":"Stock"}
+
+{"geometry":{"x":460,"y":230,"width":120,"height":50},"name":"Initial Deposit","create":"Variable"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Initial Deposit","omega":"Investment Account","create":"Link"}
+
+Now we set the values for the Investment Account and create a slider and set the value for the Initial Deposit.
+
+{"attribute":"InitialValue","target":"Investment Account","value":"[Initial Deposit]"}
+
+{"attribute":"Units","target":"Investment Account","value":"Dollars"}
+
+{"attribute":"Units","target":"Initial Deposit","value":"Dollars"}
+
+{"attribute":"ShowSlider","target":"Initial Deposit","value":"true"}
+
+{"attribute":"SliderMax","target":"Initial Deposit","value":"500"}
+
+{"attribute":"SliderStep","target":"Initial Deposit","value":"100"}
+
+{"attribute":"Equation","target":"Initial Deposit","value":"100"}
+
+{"attribute":"Units","target":"Initial Deposit","value":"Dollars"}
+
+And we set the initial Time Settings.
+
+{"attribute":"TimeLength","value":"36"}
+
+{"attribute":"TimeStep","value":"1"}
+
+{"attribute":"TimeUnits","value":"Months"}
+
+DIAGRAM
+
+All the model does at the moment is assign the Initial Deposit to the Investment Account at the beginning of the simulation.
+
+RESULTS
+
+# End Model
+
+[** Why Aren't We All Rich v0](http://insightmaker.com/insight/6780)
 
 This figure presents the initial set up for this model.
 
@@ -255,33 +301,93 @@ This figure presents the initial set up for this model.
 - **Initial Deposit**. is a variable used to specify the amount of money that is initially put into the [Investment Account] when it is opened. Remember we said only a flow can increase or decrease a stock, though you can use a external variable to set the initial value for a stock. This is done done to make the [Initial Deposit] explicit with a slider for testing. The Units for [Initial Deposit] is also set to Dollars.
 - **Time Setting**. We've assumed that this is an investment account that will compute and add interest on a monthly basis so the time settings are set up to run for 36 months with an initial Time Step = 1 knowing that we will have to test this later on.
 
-If you run the model you'll find out it's about as interesting as watching pain dry, thought it does run.
-
 ----------
 
 ### Modeling Tips ###
 
-Before you run a model you should develop a sense of the result you expect from the model at this point of its development. Then once you run the model you should be certain that is it performing as expected. When the result is not what you expect then either the structure is wrong, your assumptions are wrong, or you simply have an opportunity to develop your understanding.
+Before you run a model you should develop a sense of the result you expect from the model at this point in its development. Once you run the model you should be certain that is it performing as expected. When the result is not what you expect then either the structure is wrong, your assumptions are wrong, or you simply have an opportunity to further develop your understanding.
 
-You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict though after you add several elements to a model and it doesn't work and you spend hours trying to figure out why you may have a better appreciation for this statement.
+You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict though after you add several elements to a model and it doesn't work and you spend hours trying to figure out why you may have a better appreciation for this guideline.
 
 ----------
 
-Since this is an investment account that is supposed to grow based on monthly interest Figure 10 provides a few additions.
+# Model
 
-[Why Aren't We All Rich v1](http://insightmaker.com/insight/6783)
+{"title": "Why Aren't We All Rich/Interest", "description": "We begin with the previous model and add components to calculate monthly interest."}
 
-**Annual Interest Rate**, as depicted above, is the rate that will be used to compute the interest on the account on a yearly basis. Not the a slider has been included with a .01 step size to make it easy to test different values. Units is 1/year as this is the per year interest rate.
+{"load": "<mxGraphModel> <root> <mxCell id=\"0\"\/> <mxCell id=\"1\" parent=\"0\"\/> <Setting Note=\"\" Version=\"28\" TimeLength=\"36\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Months\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"-1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"> <mxCell parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Setting> <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"Dollars\" ThreeDimensional=\"false\" Primitives=\"42\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"> <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Display name=\"Tabular Display\" Note=\"\" Type=\"Tabular\" xAxis=\"Time (%u)\" yAxis=\"Gallons\" yAxis2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" ThreeDimensional=\"false\" Primitives=\"42\" Primitives2=\"\" AutoAddPrimitives=\"false\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Bottom\" legendPosition=\"Automatic\" id=\"29\"> <mxCell style=\"display\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"10\" y=\"10\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Stock name=\"Investment Account\" Note=\"The stock represents the current amount of money in the Investment Account.\" InitialValue=\"[Initial Deposit]\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"Dollars\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"10\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"0.5\" id=\"42\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"312.5\" y=\"139.55416517259312\" width=\"117.5\" height=\"44.554165172593116\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Variable name=\"Initial Deposit\" Note=\"\" Equation=\"100\" Units=\"Dollars\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"500\" SliderMin=\"50\" SliderStep=\"100\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"54\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"502.5\" y=\"40\" width=\"70\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"55\"> <mxCell style=\"link\" parent=\"1\" source=\"54\" target=\"42\" edge=\"1\"> <mxGeometry x=\"82.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"82.5\" y=\"100\" as=\"sourcePoint\"\/> <mxPoint x=\"182.5\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"472.5\" y=\"70\"\/> <mxPoint x=\"442.5\" y=\"90\"\/> <mxPoint x=\"442.5\" y=\"120\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <\/root> <\/mxGraphModel> "}
 
-![](03-im-6783.png)
+DIAGRAM
 
-[Annual Interest Rate Configuration Pane](http://www.insightmaker.com/insight/6783)
+Interest is a product of the Investment Account and the Monthly Interest Rate.
 
-**Months Per Year**, as depicted in the figure, is just the number of months per year, a fixed constant of 12, to be used to convert the Annual Interest Rate to a monthly interest rate. The Units for this variable are Months/Year.
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":100,"y":150},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Investment Account","name":"Interest","create":"Flow"}
 
-![](03-im-6783a.png)
+{"attribute":"Units","target":"Interest","value":"Dollars/Month"}
 
-[Months per Year Configuration Pane](http://www.insightmaker.com/insight/6783)
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"points":[{"x":330,"y":80},{"x":280,"y":70},{"x":230,"y":80}]},"alpha":"Investment Account","omega":"Interest","create":"Link"}
+
+{"geometry":{"x":80,"y":240,"width":120,"height":50},"name":"Annual Interest Rate","create":"Variable"}
+
+{"attribute":"ShowSlider","target":"Annual Interest Rate","value":"true"}
+
+{"attribute":"SliderMax","target":"Annual Interest Rate","value":"0.1"}
+
+{"attribute":"SliderStep","target":"Annual Interest Rate","value":"0.01"}
+
+{"attribute":"Units","target":"Annual Interest Rate","value":"1/Year"}
+
+{"attribute":"Equation","target":"Annual Interest Rate","value":"0.02"}
+
+{"target":"Annual Interest Rate","geometry":{"x":80,"y":240,"width":120,"height":50}}
+
+{"geometry":{"x":280,"y":240,"width":120,"height":50},"name":"Months per Year","create":"Variable"}
+
+{"attribute":"Equation","target":"Months per Year","value":"12"}
+
+{"attribute":"Units","target":"Months per Year","value":"Months/Year"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Annual Interest Rate","omega":"Interest","create":"Link"}
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Months per Year","omega":"Interest","create":"Link"}
+
+{"attribute":"FlowRate","target":"Interest","value":"[Investment Account] * ([Annual Interest Rate]/[Months per Year])"}
+
+{"geometry":{"x":270,"y":100,"width":30,"height":30},"name":"R1","create":"Picture"}
+
+{"attribute":"Image","target":"R1","value":"Positive Feedback Counterclockwise"}
+
+{"target":"R1","geometry":{"x":270,"y":100,"width":30,"height":30}}
+
+DIAGRAM
+
+[Annual Interest Rate], as depicted above, is the rate that will be used to compute the interest on the account on a yearly basis. Note the a slider has been included with a .01 step size to make it easy to test different values. Units is 1/year as this is the per year interest rate.
+
+[Months Per Year], as depicted in the figure, is just the number of months per year, a fixed constant of 12, to be used to convert the Annual Interest Rate to a monthly interest rate. The Units for this variable are Months/Year.
+
+[Interest] contains the calculation for the Interest at each step of the simulation. The Units for interest are Dollars/Month which is derived from the formula.
+
+[Interest] = [Investment Account] * ([Annual Interest Rate]/[Months per Year])
+
+In Units: Dollars * (1/Year) / (Months/Year) = Dollars/Month
+
+And as the simulation sums Dollars/Month over months the result added to the Investment Account is in Dollars which is consistent with the units specified for the Investment Account stock.RESULTS
+
+[R1] makes use of the Picture primitive used to indicate that the relationship between Investment Account and Interest created a Reinforcing structure, with the 1 simply meaning it's the first one in the model.
+
+RESULTS
+
+The run of this model over the three years with a 2% annual interest rate still isn't very interesting though it does show a growth in the Investment Account as expected.
+
+Now change the display so only the [Investment Account] value is shown.
+
+{"attribute":"Primitives","target":"DISPLAY","value":["Investment Account"]}
+
+Admittedly $6 dollars in interest wouldn't seem like much of an incentive to invest in a investment account for three years. Though there are several additional aspects of the Investment Account that we might take into consideration.
+
+# End Model
+
+[** Why Aren't We All Rich v1](http://insightmaker.com/insight/6783)
 
 ----------
 
@@ -291,67 +397,71 @@ Making all the elements of a model visible makes it much easier for others to un
 
 And what's definitely worth repeating is that providing comments for all the elements of a model will also make it much easier for others to understand. All one need do is mouse over an element and click on the "i" that appears to read the comment.
 
-----------
-
-**Interest**, ad depicted in Figure 13, contains the calculation for the Interest at each step of the simulation. The Units for interest are Dollars/Month which is derived from the formula.
-
-> [Investment Account] * ([Annual Interest Rate]/[Months per Year])
-
-> In Units: Dollars * (1/Year) / (Months/Year) = Dollars/Month
-
-And as the simulation sums Dollars/Month over months the result added to the Investment Account is in Dollars which is consistent with the units specified for the Investment Account stock.
-
-![](03-im-6783b.png)
-
-[Interest Configuration Pane](http://www.insightmaker.com/insight/6783)
-
-----------
-
-### Modeling Tip ###
-
-**R1** makes use of the Picture primitive used to indicate that the relationship between Investment Account and Interest created a Reinforcing structure, with the 1 simply meaning it's the first one in the model.
-
-![](03-im-6783c.png)
-
-[Picture Configuration Pane](http://www.insightmaker.com/insight/6783)
-
 You have the option of adding notes to the Picture element and there are a number of predefined images  that you can select from the pull down that can be assigned to the element. There are images for balancing and reinforcing loops, both clockwise and counter clockwise. These pictures can be assigned to Variables and Stocks also.
 
 The other option is that you can put a URL in this field for an image somewhere on the web and that image will be displayed and may be resized.
 
 ----------
 
-Figure 15 depicts a run of this model over the three years with a 2% annual interest rate.
+# Model
 
-![](03-im-6783d.png)
+{"title": "Why Aren't We All Rich/Monthly Deposits", "description": "One typically adds to an investment account on a regular basis."}
 
-[Why Aren't We All Rich v1](http://www.insightmaker.com/insight/6783)
+{"load": "<mxGraphModel> <root> <mxCell id=\"0\"\/> <mxCell id=\"1\" parent=\"0\"\/> <Setting Note=\"\" Version=\"28\" TimeLength=\"36\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Months\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"-1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"> <mxCell parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Setting> <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"Dollars\" ThreeDimensional=\"false\" Primitives=\"42\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"> <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Display name=\"Tabular Display\" Note=\"\" Type=\"Tabular\" xAxis=\"Time (%u)\" yAxis=\"Gallons\" yAxis2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" ThreeDimensional=\"false\" Primitives=\"42\" Primitives2=\"\" AutoAddPrimitives=\"false\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Bottom\" legendPosition=\"Automatic\" id=\"29\"> <mxCell style=\"display\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"10\" y=\"10\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Stock name=\"Investment Account\" Note=\"The stock represents the current amount of money in the Investment Account.\" InitialValue=\"[Initial Deposit]\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"Dollars\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"10\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"0.5\" id=\"42\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"312.5\" y=\"139.55416517259312\" width=\"117.5\" height=\"44.554165172593116\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Variable name=\"Initial Deposit\" Note=\"\" Equation=\"100\" Units=\"Dollars\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"500\" SliderMin=\"50\" SliderStep=\"50\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"54\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"502.5\" y=\"40\" width=\"70\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"55\"> <mxCell style=\"link\" parent=\"1\" source=\"54\" target=\"42\" edge=\"1\"> <mxGeometry x=\"82.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"82.5\" y=\"100\" as=\"sourcePoint\"\/> <mxPoint x=\"182.5\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"472.5\" y=\"70\"\/> <mxPoint x=\"442.5\" y=\"90\"\/> <mxPoint x=\"442.5\" y=\"120\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Flow name=\"Intest\" Note=\"The periodic calculated [Interest] added to the [Investment Account].\" FlowRate=\"[Investment Account] * ([Annual Interest Rate]\/[Months per Year])\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"Dollars\/Month\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"56\"> <mxCell style=\"flow\" parent=\"1\" target=\"42\" edge=\"1\"> <mxGeometry x=\"82.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"122.5\" y=\"160\" as=\"sourcePoint\"\/> <mxPoint x=\"82.5\" y=\"100\" as=\"targetPoint\"\/> <\/mxGeometry> <\/mxCell> <\/Flow> <Variable name=\"Annual Interest Rate\" Note=\"The annual interest rate.\" Equation=\"0.1\" Units=\"1\/Year\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"0.1\" SliderMin=\"0\" SliderStep=\"0.01\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"57\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"80\" y=\"210\" width=\"80\" height=\"60\" as=\"geometry\"\/> <\/mxCell> <\/Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"58\"> <mxCell style=\"link\" parent=\"1\" source=\"57\" target=\"56\" edge=\"1\"> <mxGeometry width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint y=\"100\" as=\"sourcePoint\"\/> <mxPoint x=\"100\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"190\" y=\"210\"\/> <mxPoint x=\"200\" y=\"190\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"59\"> <mxCell style=\"link\" parent=\"1\" source=\"42\" target=\"56\" edge=\"1\"> <mxGeometry width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint y=\"100\" as=\"sourcePoint\"\/> <mxPoint x=\"100\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"330\" y=\"90\"\/> <mxPoint x=\"290\" y=\"80\"\/> <mxPoint x=\"230\" y=\"100\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Picture name=\"R1\" Note=\"The relationship between Investment Account and Interest is such that it creates a Reinforcing loop and the circulation is counter-clockwise.\" Image=\"Positive Feedback Counterclockwise\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Bottom\" id=\"60\"> <mxCell style=\"picture;image=http:\/\/insightmaker.com\/builder\/images\/SD\/Positive Feedback Counterclockwise.png;imageFlipV=0;imageFlipH=0;shape=image\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"270\" y=\"100\" width=\"34\" height=\"34\" as=\"geometry\"\/> <\/mxCell> <\/Picture> <Variable name=\"Months per Year\" Note=\"A constant of the number of months in a year.\" Equation=\"12\" Units=\"Months\/Year\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"61\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"242.5\" y=\"230\" width=\"70\" height=\"50\" as=\"geometry\"\/> <\/mxCell> <\/Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"62\"> <mxCell style=\"link\" parent=\"1\" source=\"61\" target=\"56\" edge=\"1\"> <mxGeometry width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint y=\"100\" as=\"sourcePoint\"\/> <mxPoint x=\"100\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"240\" y=\"210\"\/> <mxPoint x=\"230\" y=\"190\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <\/root><\/mxGraphModel>"}
 
-Admittedly $6 dollars in interest wouldn't seem like much of an incentive to invest in a investment account for three years. Though there are several aspects of the Investment Account that we might take into consideration.
+DIAGRAM
 
-The following figure depicts a couple several update to the model which are described below.
+Beginning with the previous model we now add [Monthly Deposit] with a slider so we can adjust the value for different runs.
+
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":370,"y":10},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Investment Account","name":"Monthly Deposit","create":"Flow"}
+
+{"attribute":"Units","target":"Monthly Deposit","value":"Dollars/Month"}
+
+{"attribute":"ShowSlider","target":"Monthly Deposit","value":"true"}
+
+{"attribute":"SliderStep","target":"Monthly Deposit","value":"5"}
+
+{"attribute":"FlowRate","target":"Monthly Deposit","value":"75"}
+
+Now we adjust the simulation lenght to 30 years, or 360 months.
+
+{"attribute":"TimeLength","value":"360"}
+
+[Annual Interest Rate] has been changed to 10% because one is likely to find an investment account that will average 10% over a period of 30 years, or so it would seem based on Whitfield & Co[1].
+
+{"attribute":"Equation","target":"Annual Interest Rate","value":"0.1"}
+
+RESULTS
+
+This result is significantly different than the previous version of the model though is it enough to retire on? Not likely.
+
+Suppose we change to 40 years and with $100 Dollars/Month recurring deposits.
+
+{"attribute":"TimeLength","value":"480"}
+
+{"attribute":"FlowRate","target":"Monthly Deposit","value":"100"}
+
+RESULTS
+
+This shows a significant difference between $160 thousand dollars and $640 thousand dollars. The difference being based on what you are willing to invest and for how long.
+
+# End Model
 
 [Why Aren't We All Rich v2](http://insightmaker.com/insight/6788)
 
-**Time Settings** have been changed so the model runs for 30 years, or 360 months.
+It's best if we don't lose sight of the initial question, that being why more people employ this model and become rich. Part of the difference between Figure 17 and Figure 18 is the extra $30 dollars/month in periodic deposits. One of the difficulties is finding the money to deposit on a monthly basis.
 
-**Monthly Deposits** have been added as a flow allowing one to indicate that there are additional monthly deposits into the investment account. A slider has been included to allow for testing this model with different monthly deposits. The Units for this flow are Dollars/Month, the same as for Interest.
+# Model
 
-**Annual Interest Rate** has been changed to 10% because one is likely to find an investment account that will average 10% over a period of 30 years, or so it would seem based on Whitfield & Co[1].
+{"title": "", "description": ""}
 
-The following figure shows the new result from the model with these parameters. Though is this enough to retire on? Not likely.
+{"load": ""}
 
-![](03-im-6783e.png)
+DIAGRAM
 
-[Why Aren't We All Rich v2 for 30 years, 10% interest, $70/month deposits](http://www.insightmaker.com/insight/6783)
+RESULTS
 
-Figure 18 is the same model with the years changed to 40 years and with $100 Dollars/Month recurring deposits. And there's a significant difference between $160 thousand dollars and $640 thousand dollars. The difference being what you are willing to invest and for how long.
-
-![](03-im-6783f.png)
-
-[Why Aren't We All Rich v2 for 40 years, 10% interest, $100/month deposits](http://www.insightmaker.com/insight/6783)
-
-That said it's best if we don't lose sight of the initial question, that being why more people employ this model and become rich. Part of the difference between Figure 17 and Figure 18 is the extra $30 dollars/month in periodic deposits. One of the difficulties is finding the money to deposit on a monthly basis.
+# End Model
 
 The next figure expands on where the money comes from for the monthly deposits.
 
