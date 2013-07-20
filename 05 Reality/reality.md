@@ -1,16 +1,26 @@
 # Implications of Reality
 
-The sections of this chapter will provide an awareness of the relationships between a number of structures that occur repeatedly across all disciplines as well as provide a sense of how these structures are actually related to each other.
+Chapter 1 presented Bertalanffy's premise that that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another. In that chapter and those following there has been a focus on three basic structures in support of Bertalanffy's premise. In this chapter will will build on those three basic structures in such a way as to demonstrate that there are a set of more complex structures composed of combinations of the basic three which also recur repeatedly across all disciplines.
 
-## Three Basic Structures ##
+## Basic Structures ##
+
+The three basic structures and their characteristics behavior curves are depicted in Figure 1 and Figure 2.
+
+![Figure 1. Three Basic Structures](05-im-5138.png)
+
+[** Figure 1](http://insightmaker.com/insight/5138)
+
+![Figure 2. Three Basic Structures Behavior](05-im-5138a.png)
+
+[** Figure 2](http://insightmaker.com/insight/5138)
 
 In the Chapter 2 we covered the three basic structures in some detail. And it was claimed that all the models you will ever create will simply be a combination of some number of these basic structures. We don't expect that you take this on faith and while we can't prove it in this chapter we will provide you an opportunity to experience some of the more common structures which occur repeatedly across all disciplines of science.
 
-[Similar Structures/Different Behaviors](http://insightmaker.com/insight/5138)
-
 ## Typical Evolving Relationships ##
 
-Figure 2 depicts the manner in which the Balancing/Goal Seeking and Reinforcing/Exponential structures tend to evolve into more complex interactions when not appropriately tended to.
+Figure 3 depicts the manner in which the Balancing/Goal Seeking and Reinforcing/Exponential structures tend to evolve into more complex interactions when not appropriately tended to.
+
+![Figure 3. Typical Evolving Relationships](05-im-538.png)
 
 [Typical Evolving Relationships](http://insightmaker.com/insight/538)
 

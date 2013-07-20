@@ -17,7 +17,7 @@ We develop models to help us understand the implications of interactions, and so
 
 There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These will be presented as Modeling Tips throughout this chapter. The idea is to ensure that the model serves the purpose you started building it for.
 
-![Figure 1. Model Construction Process](03-im-184.png)
+![Figure 1. Model Construction Process](04-im-184.png)
 
 [** Figure 1](http://www.insightmaker.com/insight/184)
 
@@ -25,7 +25,7 @@ The difference between Real Events and Conclusions and Behaviors result in the c
 
 The construction process of Figure 0 is very conceptual and as you continue to develop models you will arrive at a sequence that you are comfortable with an enables you to achieve the understanding your seeking. The following two figures present the two model formulation processes presented by Andrew Ford in Modeling the Environment.
 
-![Figure 2. Emphasis on Model Formulation](03-im-220.png)
+![Figure 2. Emphasis on Model Formulation](04-im-220.png)
 
 [** Figure 2](http://www.insightmaker.com/insight/220)
 
@@ -33,7 +33,7 @@ In this approach one focuses on the understanding the qualitative dynamics, i.e.
 
 The following figure, which may look like complete chaos, emphasizes simulation to provide feedback to provide a better understanding of all other aspects of the modeling process.
 
-![Figure 3. Emphasis on Simulation Early & Simulate Often](03-im-219.png)
+![Figure 3. Emphasis on Simulation Early & Simulate Often](04-im-219.png)
 
 [** Figure 3](http://www.insightmaker.com/insight/219)
 
@@ -45,7 +45,7 @@ As you develop models you will develop an approach which is probably somewhere b
 
 the next figure presents a number of guidelines or rules of thumb it would be good for you to keep in mind as you develop your models. Some of the following are only relevant to Stock & Flow simulations, and which they are should be quite obvious.
 
-![Figure 4. Modeling Guidelines](03-im-1784.png)
+![Figure 4. Modeling Guidelines](04-im-1784.png)
 
 [** Figure 4](http://www.insightmaker.com/insight/1784)
 
@@ -116,19 +116,19 @@ If you click on the stock and look at the configuration panel you'll notice that
 
 This figure shows the Configuration Panel for the stock where Units is assigned a value of miles. For this particular model miles makes sense as we're trying to figure out how long it gets to Grandma's House and we know it's 4.5 miles away.
 
-![Figure 5. Units for Distance to Grandma's House in miles](03-im-6767.png)
+![Figure 5. Units for Distance to Grandma's House in miles](04-im-6767.png)
 
 [** Figure 5](http://www.insightmaker.com/insight/6767)
 
 If you click on the flow and look at the configuration panel you'll notice that the Units for walk is miles/hour as depicted below. A flow represents the movement of something during a time period which is why this is 1/hours.
 
-![Figure 6. Units for Walk is in miles/hour](03-im-6767a.png)
+![Figure 6. Units for Walk is in miles/hour](04-im-6767a.png)
 
 [** Figure 6](http://www.insightmaker.com/insight/6767)
 
 The flow has a units of hours as that's what will be set up in Time Settings as the Time Units for the model. All the time settings are showing in the following figure.
 
-![Figure 7. Time Settings for Walk to Grandma's House](03-im-6767b.png)
+![Figure 7. Time Settings for Walk to Grandma's House](04-im-6767b.png)
 
 [** Figure 7](http://www.insightmaker.com/insight/6767)
 
@@ -140,7 +140,7 @@ You might now be asking, how the Walk in miles/hour gets turned in to Distance t
 
 There are a large number of units predefined in Insight Maker. If you click in the Units field and then click on the drop down on the right the Units Selection window will open as depicted in the following figure. Here you can select from predefined units, though it's usually easier to just enter the appropriate units into the Units field. There is  also a way to define Custom Units thought we'll cover this option in a later chapter.
 
-![Figure 8. Units Selection](03-im-6767e.png)
+![Figure 8. Units Selection](04-im-6767e.png)
 
 [** Units Selection Window](http://www.insightmaker.com/insight/6767)
 
@@ -447,7 +447,7 @@ This shows a significant difference between $160 thousand dollars and $640 thous
 
 # End Model
 
-[Why Aren't We All Rich v2](http://insightmaker.com/insight/6788)
+[** Why Aren't We All Rich v2](http://insightmaker.com/insight/6788)
 
 It's best if we don't lose sight of the initial question, that being why more people employ this model and become rich. Part of the difference between the previous model and this one is the extra $30 dollars/month in periodic deposits. One of the difficulties is finding the money to deposit on a monthly basis.
 
@@ -503,13 +503,13 @@ It is often the case that a variable to be used in a model can not be represente
 
 The next figure shows the Configuration Panel for Attractiveness Principle. Note that many of the configuration options are the same as other modeling elements. The ones that are different are in Configuration and Input/Output Table.
 
-![Figure 9. Attractiveness Control Panel](03-im-6827.png)
+![Figure 9. Attractiveness Control Panel](04-im-6827.png)
 
 [** Figure 9](http://www.insightmaker.com/insight/6827)
 
 Because the variable is defines as a set of XY coordinates the Data has to be defined point by point as depicted below, or the table may be imported.
 
-![Figure 10. Attractiveness Data Specification](03-im-6827a.png)
+![Figure 10. Attractiveness Data Specification](04-im-6827a.png)
 
 [** Figure 10](http://www.insightmaker.com/insight/6827)
 
@@ -517,7 +517,7 @@ Also notice on the Converter Configuration Panel there is an option for Interpol
 
 Figure 22 shows the curve for the Interpolation option of None meaning that it treats all the Y values between point X1Y1 and X2Y2 as Y1.
 
-![Figure 11. Attractiveness Data Specification with Interpolation = None](03-im-6827b.png)
+![Figure 11. Attractiveness Data Specification with Interpolation = None](04-im-6827b.png)
 
 [** Figure 11](http://www.insightmaker.com/insight/6827)
 
@@ -525,19 +525,19 @@ Figure 22 shows the curve for the Interpolation option of None meaning that it t
 
 The following figures show the various display tabs for a run of this model with a Determination to save of 50%.
 
-![Figure 12. Investment Account Limited by Attractiveness](03-im-6827c.png)
+![Figure 12. Investment Account Limited by Attractiveness](04-im-6827c.png)
 
 [** Figure 12](http://www.insightmaker.com/insight/6827)
 
 When the Investment Account reaches $87,000 dollars after 255 months it is sufficiently attractive to overcome the Determination to Save so money is withdrawn from the account every month and the account no longer grows. Is this a bad thing? That depends on the intent.
 
-![Figure 13. ]Investment Account Attractiveness and Determination(03-im-6827d.png)
+![Figure 13. Investment Account Attractiveness and Determination](04-im-6827d.png)
 
 [** Figure 13](http://www.insightmaker.com/insight/6827)
 
 Figure 24 just shows that the Attractiveness has reached the Determination to Save level so withdrawals begin happening every month.
 
-![Figure 14. Investment Account Withdrawal and Penalty](03-im-6827e.png)
+![Figure 14. Investment Account Withdrawal and Penalty](04-im-6827e.png)
 
 [** Figure 14](http://www.insightmaker.com/insight/6827)
 
@@ -545,7 +545,7 @@ The above figure shows that there is almost $800 dollars a month being withdrawn
 
 Note the large overshoot on the Withdrawal curve and a small one on the Penalty curve. This is most likely because the Time Step is too large. The next figure is the same display tab for the model run with a Time Step of 0.5. Notice how the curve cleans up.
 
-![Figure 15. Investment Account Withdrawal and Penalty with Time Step = 0.5](03-im-6827f.png)
+![Figure 15. Investment Account Withdrawal and Penalty with Time Step = 0.5](04-im-6827f.png)
 
 [** Figure 15](http://www.insightmaker.com/insight/6827)
 
