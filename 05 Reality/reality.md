@@ -22,7 +22,7 @@ Figure 3 depicts the manner in which the Balancing/Goal Seeking and Reinforcing/
 
 ![Figure 3. Typical Evolving Relationships](05-im-538.png)
 
-[Typical Evolving Relationships](http://insightmaker.com/insight/538)
+[** Figure 3](http://insightmaker.com/insight/538)
 
 The following sections of this chapter will present an investigation of the more frequently occurring structures. At the end of the chapter links will be provided as to where you can continue to investigate those structures not presented here.
 
@@ -54,7 +54,11 @@ The choppy nature of the diagram will be addressed in the exercise below.
 
 ~ Exercise
 
-Run the model with different values for limit. And see what happens if you change the Time Step to 0.5 or 1.0.
+Run the model with different values for limit. And see what happens if you change the Time Step to 0.5 or 1.0. What is the most appropriate value to use for Time Step?
+
+~ Answer
+
+There isn't a noticeable difference between the graph for 0.25 and 0.125 so 0.25 would be the most appropriate value to use for Time Step.
 
 ~ End Exercise
 
@@ -64,4 +68,4 @@ Run the model with different values for limit. And see what happens if you chang
 
 ### Effective Strategies ###
 
-- The effective way to avoid a Limits to Results scenario is simply to plan ahead to ensure there are sufficient resources available so progress toward results is not limited to a greater extent than are acceptable.
+- The effective way to avoid a Limits to Results scenario is simply to plan ahead to ensure there are sufficient resources available so progress toward results is not limited to a greater extent than are acceptable. That said, remember that more of a good thing is not always the best answer. There is often a trade off and more resources may cost more than one gains by reducing the time by using more resources. There's always more than one things that should be considered.
