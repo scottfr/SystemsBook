@@ -110,18 +110,22 @@ Now it's quite evident that the slowing action has actually affected the result 
 
 # End Model
 
-[Limits to Growth Stock & Flow Simulation](http://insightmaker.com/insight/551)
+[** Limits to Growth Stock & Flow Simulation](http://insightmaker.com/insight/551)
 
 ~ Exercise
 
-From the last example vary the values for factor to get a sense of how sensitive the result is to the R1 Growth loop strength.
+The structure provided for Limits to Growth limits growth via a balancing loop that attempts to move [results] in the direction of the [limiting factor]. How else might you construct a limits to growth structure.
+
+~ Answer
+
+The [limiting factor] could interact with [results] in such a way that what becomes limited is the [action] that produces the [results].
 
 ~ End Exercise
 
 ### Examples ###
 
 - Rabbits tend to multiply very rapidly so why is it we're not completely overrun by rabbits, well maybe everywhere except Australia?
-- keep playing instead of cleaning up the mess in the room, which makes further play difficult, AND the increased mess repels one from cleaning up.
+- Keep playing instead of cleaning up the mess in the room, which makes further play difficult, AND the increased mess repels one from cleaning up.
 - [Limits to Growth Examples[(http://www.systemswiki.org/index.php?title=Category:Limits_to_Growth)
 
 ### Effective Strategies ###
