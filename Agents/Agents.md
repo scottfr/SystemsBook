@@ -483,11 +483,11 @@ Another useful movement function is the \e{MoveTowards()} function. MoveTowards 
 
 ~ Exercise
 
-Write an equation to move an agent 1 meters towards the furthest healthy agent.
+Write an equation to move an agent 2 meters towards the furthest healthy agent.
 
 ~ Answer
 
-\e{{MoveTowards([Self], FindFurthest(FindState([Population, [Healthy]), [Self]), {1 Meter})}}
+\e{{MoveTowards([Self], FindFurthest(FindState([Population, [Healthy]), [Self]), {2 Meters})}}
 
 ~ End Exercise
 
