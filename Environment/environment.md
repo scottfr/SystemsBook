@@ -1,10 +1,10 @@
 # Tools for Understanding
 
-As we work with tools to build things we develop our skills using the tools and this has a very definite impact on things we create. In this chapter you will learn to use Insight Maker. You will learn to construct the models below and develop an understanding of why these structures for the building blocks of everything will create in the Insight Maker to further your understanding.
+As we work with tools to build things we develop skills using the tools and these skills have a very definite impact on things we create. In this chapter you will learn to use Insight Maker. You will learn to construct the models below and develop an understanding of why these structures form the building blocks of everything you will create in Insight Maker to further your understanding. As such it is strongly recommended that you actually use the features described and build the models. You can't learn to ride a bicycle by reading a book. You develop skills by actually riding the bicycle.
 
 # Model
 
-{"title": "Similar Structures/Different Behaviors", "description": "These are the structures from the previous chapter which you will investigate in detail as you learn how to build them."}
+{"title": "Similar Structures/Different Behaviors", "description": "These are the structures from the previous chapter which you will investigate in detail as you learn various aspects of Insight Maker."}
 
 {"load": "<mxGraphModel> <root> <mxCell id=\"0\"\/> <mxCell id=\"1\" parent=\"0\"\/> <Setting Note=\"\" Version=\"28\" TimeLength=\"10\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Hours\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"-1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"> <mxCell parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Setting> <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"24,25,30,35,42\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"> <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Stock name=\"Current State\" Note=\"Where we&#39;re starting from to pursue the goal.\" InitialValue=\"0\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"500\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"50\" id=\"24\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"237.5\" y=\"302.5\" width=\"100\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Flow name=\"State Change\" Note=\"The Hose that adds so many gallons per hour.\" FlowRate=\"([Goal]-[Current State])*[Seeking Factor]\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"200\" SliderMin=\"0\" id=\"25\"> <mxCell style=\"flow\" parent=\"1\" target=\"24\" edge=\"1\"> <mxGeometry x=\"-142.5\" y=\"162.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"67.5\" y=\"322.5\" as=\"sourcePoint\"\/> <mxPoint x=\"-142.5\" y=\"262.5\" as=\"targetPoint\"\/> <\/mxGeometry> <\/mxCell> <\/Flow> <Display name=\"Tabular Display\" Note=\"\" Type=\"Tabular\" xAxis=\"Time (%u)\" yAxis=\"Gallons\" yAxis2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" ThreeDimensional=\"false\" Primitives=\"25,24\" Primitives2=\"\" AutoAddPrimitives=\"false\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Bottom\" legendPosition=\"Automatic\" id=\"29\"> <mxCell style=\"display\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"10\" y=\"10\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Variable name=\"Goal\" Note=\"The goal being pursued.\" Equation=\"1000\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"1000\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"100\" id=\"30\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"50\" y=\"162.5\" width=\"80\" height=\"55\" as=\"geometry\"\/> <\/mxCell> <\/Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"31\"> <mxCell style=\"link\" parent=\"1\" source=\"30\" target=\"25\" edge=\"1\"> <mxGeometry x=\"-52.5\" y=\"72.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"-52.5\" y=\"172.5\" as=\"sourcePoint\"\/> <mxPoint x=\"47.5\" y=\"72.5\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"130\" y=\"240\"\/> <mxPoint x=\"140\" y=\"270\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"32\"> <mxCell style=\"link\" parent=\"1\" source=\"24\" edge=\"1\"> <mxGeometry x=\"-52.5\" y=\"72.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"-52.5\" y=\"172.5\" as=\"sourcePoint\"\/> <mxPoint x=\"157.5\" y=\"322.5\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"247.5\" y=\"252.5\"\/> <mxPoint x=\"217.5\" y=\"242.5\"\/> <mxPoint x=\"177.5\" y=\"262.5\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Variable name=\"Seeking Factor\" Note=\"What percentage of change can happen in a time period?\" Equation=\"0.25\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"1\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"0.05\" id=\"33\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"7.5\" y=\"387.5\" width=\"100\" height=\"50\" as=\"geometry\"\/> <\/mxCell> <\/Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"34\"> <mxCell style=\"link\" parent=\"1\" source=\"33\" target=\"25\" edge=\"1\"> <mxGeometry x=\"-52.5\" y=\"72.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"-52.5\" y=\"172.5\" as=\"sourcePoint\"\/> <mxPoint x=\"47.5\" y=\"72.5\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"117.5\" y=\"372.5\"\/> <mxPoint x=\"137.5\" y=\"352.5\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Stock name=\"Reinforcing Accumulation\" Note=\"Reinforcing accumulation.\" InitialValue=\"1\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"10\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"1\" id=\"35\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"512.5\" y=\"302.5\" width=\"100\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Flow name=\"Added\" Note=\"The Hose that adds so many gallons per hour.\" FlowRate=\"[Reinforcing Accumulation] * [Growth Factor]\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"200\" SliderMin=\"0\" id=\"36\"> <mxCell parent=\"1\" target=\"35\" edge=\"1\"> <mxGeometry x=\"132.5\" y=\"162.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"367.5\" y=\"327.5\" as=\"sourcePoint\"\/> <mxPoint x=\"132.5\" y=\"262.5\" as=\"targetPoint\"\/> <\/mxGeometry> <\/mxCell> <\/Flow> <Variable name=\"Growth Factor\" Note=\"Rabbit birth rate.\" Equation=\"1\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"1\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"37\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"317.5\" y=\"390\" width=\"80\" height=\"55\" as=\"geometry\"\/> <\/mxCell> <\/Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"38\"> <mxCell style=\"link\" parent=\"1\" source=\"37\" target=\"36\" edge=\"1\"> <mxGeometry x=\"222.5\" y=\"72.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"222.5\" y=\"172.5\" as=\"sourcePoint\"\/> <mxPoint x=\"322.5\" y=\"72.5\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"417.5\" y=\"390\"\/> <mxPoint x=\"427.5\" y=\"360\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"39\"> <mxCell style=\"link\" parent=\"1\" source=\"35\" edge=\"1\"> <mxGeometry x=\"222.5\" y=\"72.5\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"222.5\" y=\"172.5\" as=\"sourcePoint\"\/> <mxPoint x=\"432.5\" y=\"322.5\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"522.5\" y=\"252.5\"\/> <mxPoint x=\"492.5\" y=\"242.5\"\/> <mxPoint x=\"452.5\" y=\"262.5\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Text name=\"Balancing&#xa;Goal Seeking\" LabelPosition=\"Middle\" id=\"40\"> <mxCell style=\"text;fontSize=24\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"110\" y=\"360\" width=\"210\" height=\"80\" as=\"geometry\"\/> <\/mxCell> <\/Text> <Text name=\"Reinforcing&#xa;Exponential Growth\" LabelPosition=\"Middle\" id=\"41\"> <mxCell style=\"text;fontSize=24\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"410\" y=\"367.5\" width=\"240\" height=\"72.5\" as=\"geometry\"\/> <\/mxCell> <\/Text> <Stock name=\"Accumulation of Stuff\" Note=\"Just a bunch of stuff.\" InitialValue=\"0\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"100\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"10\" id=\"42\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"402.5\" y=\"75.44583482740688\" width=\"100\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Flow name=\"Flow\" Note=\"The Hose that adds so many gallons per hour.\" FlowRate=\"[Flow Rate]\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"200\" SliderMin=\"0\" id=\"43\"> <mxCell style=\"flow\" parent=\"1\" target=\"42\" edge=\"1\"> <mxGeometry x=\"22.5\" y=\"-64.55416517259312\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"232.5\" y=\"95.44583482740688\" as=\"sourcePoint\"\/> <mxPoint x=\"22.5\" y=\"35.445834827406884\" as=\"targetPoint\"\/> <\/mxGeometry> <\/mxCell> <\/Flow> <Variable name=\"Flow Rate\" Note=\"The rate at which stuff is added to the accumulation.\" Equation=\"100\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"100\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"5\" id=\"46\"> <mxCell style=\"variable\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"172.5\" y=\"160.44583482740688\" width=\"100\" height=\"50\" as=\"geometry\"\/> <\/mxCell> <\/Variable> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"47\"> <mxCell style=\"link\" parent=\"1\" source=\"46\" target=\"43\" edge=\"1\"> <mxGeometry x=\"112.5\" y=\"-154.55416517259312\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"112.5\" y=\"-54.554165172593116\" as=\"sourcePoint\"\/> <mxPoint x=\"212.5\" y=\"-154.55416517259312\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"282.5\" y=\"145.44583482740688\"\/> <mxPoint x=\"302.5\" y=\"125.44583482740688\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <Text name=\"Linear&#xa;Linear Growth\" LabelPosition=\"Middle\" id=\"48\"> <mxCell style=\"text;fontSize=24\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"287.5\" y=\"140\" width=\"180\" height=\"64.10833034518623\" as=\"geometry\"\/> <\/mxCell> <\/Text> <Button name=\"Run\" Note=\"Change the sliders and then click this button to see the results.\" Function=\"runModel();\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"52\"> <mxCell style=\"button\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"10\" y=\"40\" width=\"80\" height=\"20\" as=\"geometry\"\/> <\/mxCell> <\/Button> <Button name=\"Demo\" Note=\"Baseline run with preset parameters for the 3 basic structures.\" Function=\"setValue(findName(&quot;Current State&quot;),&quot;0&quot;);&#xa;setValue(findName(&quot;Goal&quot;),&quot;1000&quot;);&#xa;setValue(findName(&quot;Seeking Factor&quot;),&quot;0.25&quot;);&#xa;setValue(findName(&quot;Reinforcing Accumulation&quot;),&quot;1&quot;);&#xa;setValue(findName(&quot;Accumulation of Stuff&quot;),&quot;0&quot;);&#xa;setValue(findName(&quot;Flow Rate&quot;),&quot;100&quot;);&#xa;setValue(findName(&quot;Growth Factor&quot;),&quot;1&quot;);&#xa;showNote(findName(&quot;Run&quot;));&#xa;updateSideBar();&#xa;runModel({onSuccess: function(results){results.window.items.getAt(0).setActiveTab(0);}});\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"53\"> <mxCell style=\"button\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"10\" y=\"10\" width=\"80\" height=\"20\" as=\"geometry\"\/> <\/mxCell> <\/Button> <\/root> <\/mxGraphModel> "}
 
@@ -18,7 +18,7 @@ In the next few segments you will learn how to create these three basic structur
 
 ## New Insight ##
 
-When you create a New Insight in Insight Maker you don't actually have to start with a blank canvas. Insight Maker presents you with a very simple working Rabbits Population model so there's something there to work with and get you started. 
+When you create a New Insight in Insight Maker you don't actually have to start with a blank canvas. Insight Maker presents you with a very simple working Rabbits Population model so there's something there to interact with and get you started. 
 
 # Model
 
@@ -28,67 +28,63 @@ When you create a New Insight in Insight Maker you don't actually have to start 
 
 DIAGRAM
 
-If you click the [Clear Sample Model] button you will then have a blank canvas on which to create a model. In the next few segments you will learn how to create the three basic structures from which all models are constructed.
+If you click the [Clear Sample Model] button you will then have a blank canvas on which to create a new model.
 
 # End Model
 
 [** New Insight](http://insightmaker.com/insight/7070)
 
-Various aspects of the modeling environment will be explained when they are initially used in a model or needed to do the exercises. We won't spend a lot of time on pieces you're not going to use immediately so please don't let any of the displays overwhelm you. It's far easier to remember things when you actually use them.
+In the next few segments you will learn how to create the three basic structures from which all models are constructed. Various aspects of the modeling environment will be explained when they are initially used in a model, or needed to do the exercises. We won't spend a lot of time on pieces you're not going to use immediately so please don't let any of the displays overwhelm you. It's far easier to remember things when you actually use them.
 
 ### Canvas ###
 
-The center area is the work area where you create a model. This area may be scrolled if necessary.
+The center area is the work area where you create a model. This area may be scrolled if necessary. All the modeling and simulation is done on the canvas.
 
 ### Toolbar ###
 
-All the modeling and simulation is done on the canvas using the Toolbar at the top and the Configuration panel at the right. For certain functions small windows will open on top of the canvas though you'll never be taken away from the canvas while developing a model.
-
-All the tools you will use to work with are located on the \u{toolbar} at the top of the screen which is depicted in Fig 1.
+The \u{Toolbar} at the top of the window and the \u{Configuration Panel} at the right provide all the tools you will use to create and simulate models. The \u{Toolbar} is depicted in Figure 1. For certain functions small windows will open on top of the canvas though you'll never be taken away from the canvas while working with a model.
 
 ![Figure 1. Toolbar](02-im-7070.png)
 
 [** Figure 1](http://insightmaker.com/insight/7070)
 
-If the Toolbar isn't visible is may simply be closed, in which case there will be a small down arrow as depicted in Figure 2.
+If the Toolbar isn't visible is may simply be closed, in which case there will be a small down arrow as depicted in Figure 2. If you click on this arrow it will open the toolbar displayed in Figure 1. The alternative is also true. If the Toolbar is visible you can click on this arrow to hide it.
 
 ![Figure 2. Open Toolbar](02-im-4990c1.png)
 
 [** Figure 2](http://insightmaker.com/insight/4990)
 
-If you click on this arrow it will open the toolbar displayed in Figure 1. The alternative is also true. If the Toolbar is visible you can click on this arrow to hide it.
-
 Models are created with \u{Primitives} and then relations established between them with \u{Connectors}. In this chapter we're only going to use the \p{Stock} and \p{Variable} primitives.
 
 ### Stock ###
 
-A rectangle indicates a quantity of something that changes over time. Remember the over time part as stocks don't change in the blink of an eye, well unless you blink very slowly.
+A rectangle indicates a quantity of something that changes over time. Remember the over time part as stocks don't change in the blink of an eye, well unless there is a flow and you blink very slowly.
 
 ### Flow ###
 
-A directed arrow represents the flow of something into or out of a stock. Remember that a stock can only be changed by a flow. Hand waving and magic don't work. The flow has to be explicit to cause a stock to change, and it takes time.
+A directed arrow represents the flow of something into or out of a stock. Remember that a stock can only be changed by a flow. Hand waving, magic or smoke and mirrors don't work. The flow has to be explicit to cause a stock to change, which is why it takes time.
 
 ### Creating Stocks and Flows ###
 
-To use a \u{Primitive} click on the icon on the \u{Toolbar} to select it, then click on the canvas where you want the item located. For each \u{Primitive} there are a set of allowed uses in a simulation model. Once you place the item on the canvas it is named for what it is, with that name selected so you can type in the name you want. Names can contain any characters except braces "{}", brackets "\[\]", parentheses \(\), and quotes '. If the label is not selected you can double-click it to select the label and then enter a new one, or you can enter the label in the \u{Configuration Panel} though we'll address that in a bit more detail later.
+To use a \up{Primitive} click on the icon on the \u{Toolbar} to select it, then click on the canvas where you want the item located. For each \u{Primitive} there are a set of allowed uses in a simulation model, and we'll cover these later. Once you place the item on the canvas it is named for what it is, with that name selected so you can type in the name you want. Names can contain any characters except braces "{}", brackets "\[\]", parentheses \(\), and quotes '. If the label is not selected you can double-click the label to select it and then enter a new one, or you can enter the label in the \u{Configuration Panel}, though we'll address that in a bit more detail later.
 
 ~ Exercise
 
-Clear the sample model on the previous model and Practice placing \p{Stock} and \p{Variable} \u{Primitives} on a blank canvas and naming them. You can remove a \p{Primitive} by clicking on it to select it and then pressing the \u{Delete} key or clicking the \u{Delete} button in the \u{Actions} section of the \u{Toolbar}.
+Clear the sample model presented previously and practice placing \p{Stock} and \p{Variable} \u{Primitives} on a blank canvas and naming them. You can remove a \u{Primitive} by clicking on it to select it and then pressing the \u{Delete} key or clicking the \u{Delete} function in the \u{Actions} section of the \u{Toolbar}.
 
 ~ End Exercise
 
 ## Stocks, Flows, Variables and Links ##
 
-\p{Stocks} and \p{Variables} are connected to other \p{Stocks} and \p{Variables} using \p{Link} and \p{Flow} \p{Connectors}. The rules for connections are very explicit because Insight Maker has to figure out how to simulate the model. The allowed connections are constructed in the following model. The next chapter will present several types of models where the rules for connections aren't nearly as rigid.
+\p{Stocks} and \p{Variables} are connected to other \p{Stocks} and \p{Variables} using \u{Link} and \u{Flow} \u{Connectors}. The rules for connections are very explicit because Insight Maker has to figure out how to simulate the model. The allowed connections are constructed in the following model. The next chapter will present several types of models where the rules for connections aren't nearly as rigid.
 
-If you select \u{Link} from the \u{Connections} segment of the \u{Toolbar} then hover over a model \p{Primitive} on the canvas a small arrow pointing to the right shows at the center of the \p{Primitives). If you select a \u{Flow} the small arrow will only show up over a \p{Stock} as a \u{Flow} can only connect to a \p{Stock}.
+If you select \u{Link} from the \u{Connections} segment of the \u{Toolbar} then hover over a model \u{Primitive} on the canvas a small arrow pointing to the right shows at the center of the \u{Primitive}. If you select a \u{Flow} the small arrow will only show up over a \p{Stock} as a \u{Flow} can only connect to a \p{Stock}.
 
-Center the \u{cursor crossing double arrows} over the right arrow, which should then change to a \u{pointing finger hand}. Drag the mouse over to a second model element and the arrow tags along while the \u{Connections} is drawn. If neither \u{Link} or \u{Flow} is selected then there will be no right pointing arrow when you mouse over the \p{Primitive}. We'll go into more detail about the validity of connections shortly.
+Center the \u{cursor crossing double arrows} over the right arrow, which should then change to a \u{pointing finger hand}. Drag the mouse over to a second model element and the arrow tags along while the connection is drawn. If neither the \u{Link} or \u{Flow} is selected in the \u{Toolbar} then there will be no right pointing arrow when you mouse over the \u{Primitive}. We'll go into more detail about the validity of connections shortly.
 
 # Model
 
-{"title": "Valid Stock & Variable Connections", "description": "Understanding why the following connections are the only ones valid is essential for keeping you out of trouble along the way in the future."}
+{"title": "Valid Stock & Variable Connections", "description": "The following sequence presents, and explains, the valid connections for elements of a simulation model."}
 
 {"geometry":{"x":230,"y":230,"width":100,"height":40},"name":"Stock 1","create":"Stock"}
 
@@ -96,13 +92,13 @@ A [Stock] represents a quantity of something that will increase or decrease duri
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":50,"y":250},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Stock 1","name":"Flow 1","create":"Flow"}
 
-A [Stock] can only change via a [Flow]. To create an inflow first create an inflow and then select [Reverse] to change the direction of the flow. A flow that doesn't have a specific origin simply means we're not concerned with where the flow comes from. When you fill the bathtub do you think about where the water comes from?
+A [Stock] can only change via a [Flow]. To create an inflow first create an outflow and then select [Reverse] to change the direction of the flow. This is just a quirk of the environment. A flow that doesn't have a specific origin simply means we're not concerned with where the flow comes from. When you fill the bathtub do you think about where the water comes from?
 
 {"geometry":{"x":500,"y":230,"width":100,"height":40},"name":"Stock 2","create":"Stock"}
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Stock 1","omega":"Stock 2","name":"Flow 2","create":"Flow"}
 
-A [Flow] can move stuff from one [Stock] to another. [Stock 1] decreases by the same amount that [Stock 2] increases. You can't create something form nothing in a model.
+A [Flow] can move stuff from one [Stock] to another. [Stock 1] decreases by the same amount that [Stock 2] increases. Flows need to be conserved because you can't create something form nothing in a model.
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Stock 2","name":"Flow 3","create":"Flow"}
 
@@ -110,11 +106,13 @@ A [Flow] that doesn't have a specific destination simply means we're not concern
 
 DIAGRAM
 
-The diagram presents the valid [Flow] connections which can only be to or from a [Stock]
+The diagram presents the valid [Flow] connections which can only be to, from, or between [Stocks]
+
+You can connect a [Stock] to a [Flow] with a [Link] to indicate that somehow the [Flow] depends on the value of the [Stock]. The [Link] does not change the value of the [Stock].
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"points":[{"x":240,"y":190},{"x":200,"y":180},{"x":150,"y":200}]},"alpha":"Stock 1","omega":"Flow 1","create":"Link"}
 
-You can connect a [Stock] to a [Flow] with a [Link] to indicate that somehow the [Flow] depends on the value of the [Stock]. The [Link] does not change the value of the [Stock].
+If you select a link then hold the \u{shift key} while you click on the link you create \u{handles} that you can move separately to create a segmented curve.
 
 {"geometry":{"x":280,"y":370,"width":120,"height":50},"name":"Variable 1","create":"Variable"}
 
@@ -128,7 +126,7 @@ A [Link] can be used to have a [Variable] influence a [Flow] and the [Link] does
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Flow 3","omega":"Variable 2","create":"Link"}
 
-You can use a [Link] from a [Stock] or a [Flow] to influence a [Variable]. The [Link] does not change the values of the [Stock] or the [Flow].
+You can use a [Link] from a [Stock] or a [Flow] to influence a [Variable]. The [Link] does not change the value of the [Stock] or the [Flow].
 
 {"geometry":{"x":580,"y":370,"width":120,"height":50},"name":"Initial Value","create":"Variable"}
 
@@ -150,27 +148,27 @@ You have now completed a model that represents the valid connections for a simul
 
 ~ Exercise
 
-Now that you understand the valid connections for a simulation model recreate this model for yourself. And as you create each element think about what that particular element is for. Actually making the connections helps develop a level of skill and comfort which will serve you well in the future. You can't learn to ride a bicycle by reading a book. You have to actually get on the bicycle. Learning to build models is the same way. To learn to build models you have to build models. Think Nike, "Just do it!"
+Now that you understand the valid connections for a simulation model recreate this model for yourself. And as you create each element think about what the particular element is for. Actually making the connections helps develop a level of skill and comfort which will serve you well in the future. You can't learn to ride a bicycle by reading a book. You have to actually get on the bicycle. Learning to build models is the same way. To learn to build models you have to build models. Think Nike, "Just do it!"
 
 ~ End Exercise
 
 #### Configuration Panel ####
 
-Just below the arrow you clicked to open the top toolbar is a right pointing double caret as depicted in Figure 3.
+Just below the arrow you clicked to open or close the \u{Toolbar} is a right pointing double caret as depicted in Figure 3.
 
 ![Figure 3. Configuration Panel](02-im-4990d1.png)
 
 [** Figure 3](http://insightmaker.com/insight/4990)
 
-If you click this the Configuration Panel will close and the right pointing double caret will now point left and can be used to open the configuration panel. 
+If you click this the \u{Configuration Panel} will close and the right pointing double caret will now point left and can be used to open the configuration panel. 
 
-The Configuration Panel serves two different purposes. If there are no elements of the model selected on the canvas the Configuration Panel will be similar to Figure 4 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.
+The \u{Configuration Panel} serves two different purposes. If there are no elements of the model selected on the canvas the \{Configuration Panel} will be similar to Figure 4 and contain the model description, tags, and parameter sliders used to set parameter values just before running the model.
 
 ![Figure 4. Configuration Panel](02-im-4990d.png)
 
 [** Figure 4](http://insightmaker.com/insight/4990)
 
-If there is a single element selected on the canvas then the Configuration Panel will present the list of parameters that can be set for that element. Figure 5 shows the parameters for the stuff element of the model. Please don't be overwhelmed by this long list of parameters. We'll cover them one at a time as they are actually used in a model.
+If there is a single element selected on the canvas then the \u{Configuration Panel} will present the list of parameters that can be set for that element. Figure 5 shows the parameters for the stuff element of the model. Please don't be overwhelmed by this long list of parameters. We'll cover them one at a time as they are actually used in a model.
 
 ![Figure 5. Element Parameters](02-im-4990e.png)
 
@@ -188,8 +186,8 @@ The Configuration Panels for Stock 1, Flow 1 and Variable 1 from the previous mo
 
 This section is where you can assign the (name) and Note for an item.
 
-- **(name)**. This is the label that you see on the item. You can double-click the item on the canvas and edit the label on the item itself or change it here in the configuration panel.
-- **Note**. Here you can enter a description of the item. You can enter short descriptions directly into the field. If you click the down arrow in right of the field it will open the **Note Editor** dialogue window which allows some formatting options. The note that you enter here will pop up when you mouse over an item and click on the little \u{i} that appears on the item. If the element of the model is selected you can also open the Note Editor window by CTRL+`(Control+Backquote). Adding comments to a model helps others to understand what you were thinking and when you go back to the model in the future the comments will help you understand what you were thinking when you put the model together. Yes, you completely understand now, though will you remember next week, or a year from now?
+- \a{name}. This is the label that you see on the item. You can double-click the item on the canvas and edit the label on the item itself or change it here in the configuration panel.
+- \a{Note}. Here you can enter a description of the item. You can enter short descriptions directly into the field. If you click the down arrow in right of the field it will open the \u{Note Editor} dialogue window which allows some formatting options. The note that you enter here will pop up when you mouse over an item and click on the little \u{i} that appears on the item. If the element of the model is selected you can also open the \u{Note Editor} window by \u{CTRL+`(Control+Backquote)}. Adding comments to a model helps others to understand what you were thinking when you constructed the model. And, when you go back to the model in the future the comments will help you understand what you were thinking when you constructed the model together. Yes, you completely understand now, though will you remember next week, or a year from now?
 
 ![Figure 7. Note Editor](02-im-5275a.png)
 
@@ -197,17 +195,17 @@ This section is where you can assign the (name) and Note for an item.
 
 ### Configuration ###
 
-This section is used to define how the primitive behaves during the simulation and is a little different for Stocks, Flows and Variables, though quite similar. The behavior is essentially controlled by an equation which is defined in terms of the variables connected to it. This is an initial value for a Stock. You may enter a short value into the field though if you click the down arrow in the right of the field the **Equation Editor** window will open. In this window you can define the formula that defines the behavior of the element. You can also open the **Equation Editor** for an element by mousing over the element and clicking on the **equals (=)** sign that appears. All the built in functions on the tabs at the bottom of the window have descriptions associated descriptions and examples.
+This section is used to define how the primitive behaves during the simulation and is a little different for Stocks, Flows and Variables. The behavior is essentially controlled by an equation which is defined in terms of the variables connected to it. This is an initial value for a Stock. You may enter a short value into the field though if you click the down arrow in the right of the field the \u{Equation Editor} window will open. In this window you can define the formula that defines the behavior of the element. You can also open the \u{Equation Editor} for an element by mousing over the element and clicking on the \u{equals (=)} sign that appears. All the built in functions on the tabs at the bottom of the window have descriptions associated descriptions and examples.
 
 ![Figure 8. Equation Editor](02-im-5275b.png)
 
 [** Figure 8](http://www.insightmaker.com/insight/5275)
 
-Additionally in this section you define whether stocks can have negative values and whether flows can flow in both directions. We'll talk more about these options the first time we use them.
+Additionally in this section you define whether stocks can have negative values and whether flows can flow in one direction or both directions. We'll talk more about these options the first time we use them.
 
 ### User Interface ###
 
-It is in this segment of the configuration panel that you define a slider for an element, if there is to be one. You can define a sliders for Stocks, to define it's initial value and for Flows and for Variables. Once you indicate there is to be a slider you then define the maximum and minimum values it may have, as well as the step size, how small are the variations allowed. If you leave the step size field blank then the slider can vary continuously.
+It is in this segment of the configuration panel that you define a slider for an element, if there is to be one. You can define a sliders for Stocks, Flows or Variables and use them to establish their value at the start of the simulation. Once you indicate there is to be a slider you then define the maximum and minimum values it may have, as well as the step size, how small are the variations allowed. If you leave the step size field blank then the slider can vary continuously.
 
 An element may have a slider or a formula though not both. Sliders override equations. If you enter an equation and it disappears check to see if there was a slider defined and it hasn't been turned off.
 
@@ -227,7 +225,7 @@ Time Settings as depicted in Figure 9 are used to indicate when the simulation s
 
 #### Simulation Results ####
 
-When you click the Run button the model is stepped through the defined time period and produces a display of the results. There are various options for the type of display and which elements are displayed as shown in Figure 11.
+When you click the \u{Run} button the model is stepped through the defined time period and produces a display of the results as depicted in Figure 10. There are various options for the type of display and which elements are displayed as shown in Figure 11.
 
 ![Figure 10. Simulation Results](02-im-4990g.png)
 
@@ -235,9 +233,9 @@ When you click the Run button the model is stepped through the defined time peri
 
 #### Configure Simulation Results ####
 
-A default configuration is put together when the model is constructed on the canvas. If you click the Configure button in the upper right corner of the Simulation Results window the Chart/Table Configuration window will open. It is in this window you indicate what type of display you want and which items of the model are to be displayed. The only part you need to be concerned about at the moment is the Y-Axis Label field. That's where I indicated that the items displayed were in Gallons. You will need to change this shortly in the next exercise.
+A default configuration is put together when the model is constructed on the canvas. If you click the \u{Configure} button in the upper right corner of the \{Simulation Results} window the \u{Chart/Table Configuration} window as depicted in Figure 11 will open. It is in this window you indicate what type of display you want and which items of the model are to be displayed. The only part you need to be concerned about at the moment is the Y-Axis Label field. This where it was indicated that the items displayed were in Gallons. You will need to change this shortly in the next exercise.
 
-Note that if you change items in the configuration they will be immediately reflected in the Simulation Results window when you click Apply. You don't need to run the model again to see a different configuration of the data. This makes it very convenient when when you decide you need another display for one or two of the items.
+Note that if you change items in the configuration they will be immediately reflected in the \u{Simulation Results} window when you click \u{Apply}. You don't need to run the model again to see a different configuration of the data. This makes it very convenient when when you decide you need another display for some items of the model.
 
 ![Figure 11. Chart/Table Configuration](02-im-4990h.png)
 
@@ -249,15 +247,15 @@ Too much explaining and not enough hands on interaction may get real boring in a
 
 ## Common Property # 1 ##
 
-To this point you've learned how to develop a static picture of a model. It is actually a model and provides a sense of the relationships between the various elements. What it doesn't give you a sense of is the dynamic nature of these interactions over time. What are the implications of the relationships? In the next few sections you'll learn how to bring your model to life.
+To this point you've learned how to develop a static picture of a model. It is actually a model and provides a sense of the relationships between the various elements. What it doesn't give you a sense of is the dynamic nature of these over time. What are the implications of the relationships? In the next few sections you'll learn how to bring your model to life.
 
-Look at the images in Figure 12 and ask yourself what it is that these images have in common. The images all represent very different kinds of things, some living, some not, though there is a characteristics they all have in common. Have you figured it out?
+Look at the images in Figure 12 and ask yourself what these images have in common. The images all represent very different kinds of things, some living, some not, though there is a characteristic they all have in common. Have you figured it out?
 
 ![Figure 12. Common Property # 1](02-im-4548.png)
 
 [** Figure 12](http://www.insightmaker.com/insight/4548)
 
-Maybe you notice the rabbits from the previous chapter? All the images represent things that grow in one way or another, and some faster than others.
+Maybe you notice the rabbits from the previous chapter? All the images represent things that grow over time in one way or another, and some faster than others.
 
 ## Reinforcing Growth Structure ##
 
@@ -307,11 +305,17 @@ Notice that the curve in the previous model is a bit choppy where it turns up. R
 
 ### Time Units and Time Step Selection ###
 
-The \u{Time Units} and \u{Time Step} selected for a model should be consistent with the time frame and level of detail of the model. You probably wouldn't develop a model about filling a bathtub with water and use \u{Time Units} of months. Minutes are probably more appropriate for this model. The \u{Time Step} is then selected to ensure none of the relevant transitions associated with the dynamic nature of the model are missed. A \u{Time Step} of .25, meaning 15 seconds, is probably sufficiently small to ensure there are no transitions missed.
+The \u{Time Units} and \u{Time Step} selected for a model should be consistent with the time frame and level of detail of the model. You probably wouldn't develop a model about filling a bathtub with water and use \u{Time Units} of months. Minutes are probably more appropriate for this model. The \u{Time Step} is then selected to ensure none of the relevant transitions associated with the dynamic nature of the model are missed. A \u{Time Step} of .25, meaning 15 seconds for a model with \u{Time Units} in minutes, is probably sufficiently small to ensure there are no transitions missed.
 
-Trial is actually the most appropriate approach to determine if you have an appropriate value for \u{Time Step}. If you think .5 is appropriate then run the model with 1, .5, and .25 and if the results for 1 and .25 don't differ from .5 then you're probably OK. If .25 produced a different result then compare the .25 result with the .125 result. Once you get two runs where the values don't change then use the larger one.
+Trial is actually the most appropriate approach to determine if you have an appropriate value for \u{Time Step}. If you think .5 is appropriate then run the model with 1, .5, and .25 and if the results for 1 and .25 don't differ from .5 then you're probably OK. If .25 produced a different result then compare the .25 result with the .125 result. Once you get two runs where the values don't change then use the larger value.
+
+~ Exercise
 
 Given this guidance how would you interpret the results you experienced in the previous exercise?
+
+~ Answer
+
+You haven't been given enough information about what's being modeled to determine what might be the appropriate \u{Time Units} or \u{Time Step}.
 
 ### References ###
 
@@ -328,7 +332,7 @@ One aspect of trying to model the contexts of Figure 12 that should have become 
 
 # Model
 
-{"title": "Feedback Dependent Growth with Control", "description": "We're going to add a factor to the previous model so you can control the extent to which the stock influences the flow."}
+{"title": "Feedback Dependent Growth with Control", "description": "We're now going to add a factor to the previous model so you can control the extent to which the stock influences the flow."}
 
 {"load": "<mxGraphModel> <root> <mxCell id=\"0\"\/> <mxCell id=\"1\" parent=\"0\"\/> <Setting Note=\"\" Version=\"28\" TimeLength=\"10\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"-1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"> <mxCell parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Setting> <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"23\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"> <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Stock name=\"stuff\" Note=\"\" InitialValue=\"1\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"10\" SliderMin=\"0\" SliderStep=\"1\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"23\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"210\" y=\"90\" width=\"100\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Flow name=\"Flow\" Note=\"\" FlowRate=\"[stuff]\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"24\"> <mxCell style=\"flow\" parent=\"1\" target=\"23\" edge=\"1\"> <mxGeometry width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"490\" y=\"110\" as=\"sourcePoint\"\/> <mxPoint y=\"100\" as=\"targetPoint\"\/> <\/mxGeometry> <\/mxCell> <\/Flow> <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"25\"> <mxCell style=\"link\" parent=\"1\" source=\"23\" target=\"24\" edge=\"1\"> <mxGeometry width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint y=\"100\" as=\"sourcePoint\"\/> <mxPoint x=\"100\" as=\"targetPoint\"\/> <Array as=\"points\"> <mxPoint x=\"290\" y=\"60\"\/> <mxPoint x=\"340\" y=\"40\"\/> <mxPoint x=\"380\" y=\"60\"\/> <\/Array> <\/mxGeometry> <\/mxCell> <\/Link> <\/root> <\/mxGraphModel> "}
 
@@ -354,7 +358,7 @@ And we'll add a slider to the [factor] to make it easy to adjust its values.
 
 DIAGRAM
 
-With this version of the model you vary the values of [factor] to get a sense of the impact the [factor] has on the growth of [stuff]].
+With this version of the model you can vary the values of [factor] to get a sense of the impact the [factor] has on the growth of [stuff]].
 
 RESULTS
 
@@ -364,7 +368,11 @@ RESULTS
 
 ~ Exercise
 
-Using the Feedback Dependent Growth model to implement the models does this structure allow you to construct more realistic representations of the growth situations presented in Figure 5? Why?
+Using the Feedback Dependent Growth model to implement the models does this structure allow you to construct more realistic representations of the growth situations presented in Figure 12? Why?
+
+~ Answer
+
+While each of the situations in Figure 12 represents growth dependent on the current value of the situation each one has a different growth factor.
 
 ~ End Exercise
 
@@ -372,9 +380,13 @@ Using the Feedback Dependent Growth model to implement the models does this stru
 
 Imagine that the feedback dependent growth model is actually a Savings Account that is defined as compounding annually, i.e. calculating and adding interest once a year. This means that the most appropriate \u{Time Units} would be years with a \u{Time Step} of 1. There are no other transitions in this model that need to be accommodated. If you run this model with any \u{Time Step} other than 1 it will result in a less accurate result. Why does this happen?
 
+~ Answer
+
+Other values for \u{Time Step} produce less correct answers because 1 is the value most appropriately representing what the model was created to model.
+
 ~ End Exercise
 
-This model is the standard reinforcing growth model depicted at the beginning of this chapter. In the process of arriving this model the linear growth was developed first, and then evolved. Hopefully through the exercises to this point you have gained a deeper understanding of how this structure works and the extent to which it may be applied to various situations.
+This model just developed is the standard reinforcing growth model depicted at the beginning of this chapter. In the process of arriving at this model the linear growth was developed first, and then evolved. Hopefully through the exercises to this point you have gained a deeper understanding of how this structure works and the extent to which it may be applied to various situations.
 
 ## Common Property # 2 ##
 
@@ -384,13 +396,11 @@ Look at the activities depicted by the images in Figure 13 and ask yourself what
 
 [** Figure 13](http://www.insightmaker.com/insight/6120)
 
-Each activity depicted in Figure 12 represents the pursuit of some goal or objective. Admittedly the goals are very different and each is pursued in a very different manner.
+Each activity depicted in Figure 13 represents the pursuit of some goal or objective. Admittedly the goals are very different and each is pursued in a very different manner.
 
 ## Constructing a Balancing/Goal Seeking Structure ##
 
 A Balancing/Goal Seeking structure is one where there is a difference between two values and the activity of relationships works to develop a balance between the two values. Essentially what the structure does is move the \p{Current} value to the value of the \p{Goal}.
-
-
 
 # Model
 
@@ -422,7 +432,7 @@ Now we add a goal and compare the goal to the current value.
 
 DIAGRAM
 
-When you look at the model admittedly we added Gap which we haven't addressed before. This was done so we could explicitly plot the difference between the Current value and the Goal.
+When you look at the model admittedly we added [Gap] which we haven't addressed before. This was done so we could explicitly plot the difference between the value of [Current] and [Goal].
 
 Now assign values to the various primitives.
 
@@ -454,9 +464,9 @@ Now set the Time Settings for the simulation run.
 
 RESULTS
 
-Take a look at the Time Settings for the model and you'll see that the model was set up to run from 0 to 10 with a time step of 0.5 and a units of hours. These were just selected to create a generic model where you could consider the Goal to be 100% and the other values as having values between 0 and 100%. This way we can consider the implications of the interactions without getting hung up on the actual values.
+Take a look at the Time Settings for the model and you'll see that the model was set up to run from 0 to 10 with a [Time Step] of 0.5 and a [Units] of hours. These were just selected to create a generic model where you could consider the Goal to be 100% and the other values as having values between 0 and 100%. This way we can consider the implications of the interactions without getting hung up on the actual values.
 
-The graph shows that as Current moves toward the Goal the Gap decreases as does the change which is moving Current in the direction of Goal. Once Current reaches Goal the Gap is zero is change. This structure endeavors to remove the tension between Current and Goal, the Gap, to bring a balance to the situation.
+The graph shows that as [Current] moves toward the [Goal] the [Gap] decreases as does [Change] which is moving [Current] in the direction of [Goal]. Once [Current] reaches [Goal] the [Gap] is zero is [Change]. This structure endeavors to remove the tension between [Current] and [Goal], the [Gap], to bring a balance to the situation.
 
 # End Model
 
@@ -464,11 +474,11 @@ The graph shows that as Current moves toward the Goal the Gap decreases as does 
 
 ~ Exercise
 
-Run the above model with various values for factor. What do you notice about the relation between Current and Gap? And what do you notice about the curves as the factor gets larger and larger?
+Run the above model with various values for factor. What do you notice about the relation between \p{Current} and \p{Gap}? And what do you notice about the curves as the factor gets larger and larger?
 
 ~ End Exercise
 
-Under Time Units and Step Selection we talked about it being essential that the the Time Units were selected appropriate to what was being modeled. In this case since it's a generic model one Time Unit is pretty much as appropriate as any other. The Time Step is another matter though, or is it? We said one chooses a Time Step such that none of the relevant interactions are missed and the change from one Time Step to another doesn't change the result.
+Under Time Units and Step Selection we talked about it being essential that the the \u{Time Units} were selected appropriate to what was being modeled. In this case since it's a generic model one Time Unit is pretty much as appropriate as any other. The Time Step is another matter though, or is it? We said one chooses a Time Step such that none of the relevant interactions are missed and the change from one Time Step to another doesn't change the result.
 
 ~ Exercise
 
@@ -496,7 +506,7 @@ Settings for the model are: Project Days Work = 60, Workers = 8 and Days Work Co
 
 RESULTS
 
-The reason the graph looks like this is because of the constraint placed on the the work because of the number of Workers available. This is accomplished by the formula embedded in the flow.
+The reason the graph looks like this is because of the constraint placed on the the work by the number of Workers available. This is accomplished by the formula embedded in the flow.
 
 [Work] = IfThenElse([Work Remaining] > [Workers],[Workers],[Work Remaining])
 
@@ -510,11 +520,11 @@ Note that in this model you might have considered the \p{Workers} as a \p{Stock}
 
 ~ Exercise
 
-Set up the model in Figure 16 to run with Time Step of .5. Compare the Tabular Display of this run with the results of the previous run above. By making the time step smaller have we improved the accuracy of result? Why?
+Set up the above model to run with Time Step of 0.5. Compare the results of this run with the results of the previous run above. By making the time step smaller have we improved the accuracy of result? Why?
 
 ~ End Exercise
 
-Again the appropriate Time Step is one that captures the activity occurring within the model. In this case the Workers are in integers and Project Work days are in integers, and with the Time Units in days the appropriate Time Step is 1. If there were events which happened in the model on the order of hours then you would have to decide whether to alter the model to run in hours or reduce the Time Step to ensure it was small enough so no interactions in the model were missed.
+Again the appropriate Time Step is one that captures the activity occurring within the model. In this case the Workers are in integers and Project Work in days, both of which are in integers, and with the Time Units in days the appropriate Time Step is 1. If there were events which happened in the model on the order of hours then you would have to decide whether to alter the model to run in hours or reduce the Time Step to ensure it was small enough so no interactions in the model were missed.
 
 ~ Exercise
 
