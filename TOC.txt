@@ -1,16 +1,16 @@
-00 Preface
-01 Learning
-02 Environment
-03 Models
-04 Building
-05 Reality
-06 Applied
-07 Models and Truth
-08 Building Confidence
-09 The Process of Modeling
-10 Mathematics of Modeling
-14 Mathematics of Modeling 2
-11 Going Global
-12 Agents
-13 Optimization and Complexity
-99 End Matter
+Preface
+Learning
+Environment
+Models
+Building
+Reality
+Applied
+Models and Truth
+Building Confidence
+The Process of Modeling
+Mathematics of Modeling
+Mathematics of Modeling 2
+Going Global
+Agents
+Optimization and Complexity
+End Matter
