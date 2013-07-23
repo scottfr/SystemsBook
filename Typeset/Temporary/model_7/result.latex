@@ -1,0 +1,15 @@
+\begin{oframed}\textbf{Sample Model} 
+
+ The Sample model is something to start with so you don't have to face a blank page.
+
+\begin{enumerate}
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_7/diagram_3.png}
+\end{minipage}
+\item 
+
+If you click the \p{Clear Sample Model} button you will then have a blank canvas on which to create a model. In the next few segments you will learn how to create the three basic structures from which all models are constructed.
+
+
+
+\end{enumerate} \end{oframed}
+

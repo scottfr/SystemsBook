@@ -1,0 +1,32 @@
+\begin{oframed}\textbf{Swimming Pool} 
+
+ This model uses a swimming pool as a stock.
+
+\begin{enumerate}
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_1/diagram_3.png}
+\end{minipage}
+\item 
+
+The diagram represents a swimming pool being filled with a hose at a rate pf 50 gallons an hour.
+
+
+\item 
+
+The drain is closed so there is not water draining out of the pool.
+
+
+\item 
+
+If we let the hose run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model, actually a simulation of a model, to show changes over time.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_1/result_7.png}
+\end{minipage}
+\item 
+
+This graph indicates that after 24 hours the swimming pool with have 1,200 gallons of water in it. Yes, it's about as interesting as watching paint dry. Actually, as you will come to find out, that's a good thing because this is really easy. A more interesting question might be, if the swimming pool holds 20,000 gallons of water how long with it take to fill with water at 50 gallons per hour? We'll get to this shortly.
+
+
+
+\end{enumerate} \end{oframed}
+

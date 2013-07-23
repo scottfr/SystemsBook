@@ -1,0 +1,22 @@
+\begin{oframed}\textbf{Similar Structures / Different Behavior} 
+
+ The behavior of a model depends on the structure of the model as well as the formulas that define the nature of the relationships.
+
+\begin{enumerate}
+\item The model diagram should now look something like this: \par \begin{minipage}{\linewidth}  \centering \includegraphics{model_5/diagram_3.png}
+\end{minipage}
+\item 
+
+These three models are in a general form so you can compare the different behavior of the structures that are very similar. Flow Rate, Seeking Factor and Growth Factor are each factors which govern he rate of flow. Goal is a target value which the Growth model doesn't have.
+
+
+\item Run the model. Here are sample results:\par \begin{minipage}{\linewidth}  \centering \includegraphics{model_5/result_5.png}
+\end{minipage}
+\item 
+
+The difference that makes a difference is what happens in the connection between the accumulation, or stock, and the flow.
+
+
+
+\end{enumerate} \end{oframed}
+
