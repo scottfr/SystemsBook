@@ -1,3 +1,0 @@
-~ Exercise Answers
-
-# References
