@@ -87,7 +87,7 @@ In this statement what is to be figured out is very easy to identify. Sometimes 
 
 {"geometry":{"x":190,"y":180,"width":120,"height":40},"name":"Distance to Grandmas House","create":"Stock"}
 
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Distance to Grandmas House","name":"Walk","create":"Flow"}
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"targetPoint":{"x":540,"y":80}},"alpha":"Distance to Grandmas House","omega": null,"name":"Walk","create":"Flow"}
 
 Now lets add a slider for each [Primitive] so we can adjust the values later.
 
