@@ -66,7 +66,7 @@ A directed arrow represents the flow of something into or out of a stock. Rememb
 
 ### Creating Stocks and Flows ###
 
-To use a \up{Primitive} click on the icon on the \u{Toolbar} to select it, then click on the canvas where you want the item located. For each \u{Primitive} there are a set of allowed uses in a simulation model, and we'll cover these later. Once you place the item on the canvas it is named for what it is, with that name selected so you can type in the name you want. Names can contain any characters except braces "{}", brackets "\[\]", parentheses \(\), and quotes '. If the label is not selected you can double-click the label to select it and then enter a new one, or you can enter the label in the \u{Configuration Panel}, though we'll address that in a bit more detail later.
+To use a \p{Primitive} click on the icon on the \u{Toolbar} to select it, then click on the canvas where you want the item located. For each \u{Primitive} there are a set of allowed uses in a simulation model, and we'll cover these later. Once you place the item on the canvas it is named for what it is, with that name selected so you can type in the name you want. Names can contain any characters except braces "{}", brackets "\[\]", parentheses \(\), and quotes '. If the label is not selected you can double-click the label to select it and then enter a new one, or you can enter the label in the \u{Configuration Panel}, though we'll address that in a bit more detail later.
 
 ~ Exercise
 
