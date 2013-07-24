@@ -100,7 +100,7 @@ A [Stock] can only change via a [Flow]. To create an inflow first create an outf
 
 A [Flow] can move stuff from one [Stock] to another. [Stock 1] decreases by the same amount that [Stock 2] increases. Flows need to be conserved because you can't create something form nothing in a model.
 
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Stock 2","name":"Flow 3","create":"Flow"}
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"targetPoint":{"x":760,"y":250}},"alpha":"Stock 2","omega":null,"name":"Flow 3","create":"Flow"}
 
 A [Flow] that doesn't have a specific destination simply means we're not concerned with where the [Flow] goes.
 
@@ -269,7 +269,7 @@ First we build the linear accumulator model.
 
 {"geometry":{"x":230,"y":110,"width":100,"height":40},"name":"stuff","create":"Stock"}
 
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":520,"y":130},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"stuff","create":"Flow"}
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":520,"y":130},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"stuff","name":"Flow","create":"Flow"}
 
 Then we add the reinforcing feedback loop.
 
@@ -410,7 +410,7 @@ First we build the linear accumulator model with a control factor.
 
 {"geometry":{"x":480,"y":160,"width":100,"height":40},"name":"Current","create":"Stock"}
 
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":280,"y":180},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Current","create":"Flow"}
+{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":280,"y":180},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Current","name":"Flow","create":"Flow"}
 
 {"geometry":{"x":260,"y":260,"width":120,"height":50},"name":"factor","create":"Variable"}
 
