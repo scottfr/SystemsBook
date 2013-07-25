@@ -401,7 +401,7 @@ Each activity depicted in Figure 13 represents the pursuit of some goal or objec
 ## Constructing a Balancing/Goal Seeking Structure ##
 
 A Balancing/Goal Seeking structure is one where there is a difference between two values and the activity of relationships works to develop a balance between the two values. Essentially what the structure does is move the \p{Current} value to the value of the \p{Goal}.
-
+[** This model was fixed 13.07.25
 # Model
 
 {"title": "Balancing/Goal Seeking Model", "description": "As we have done repeatedly to this point we begin with a linear model consisting of a flow and a stock, along with a flow rate variable. To this we simply have to add a goal and the appropriate feedback and we end up with a goal seeking model."}
@@ -440,9 +440,9 @@ Now assign values to the various primitives.
 
 {"attribute":"Equation","target":"Goal","value":"1"}
 
-{"attribute":"Equation","target":"Goal","value":"[Goal]-[Current]"}
+{"attribute":"Equation","target":"Gap","value":"[Goal]-[Current]"}
 
-{"attribute":"Equation","target":"Goal","value":"[Gap]*[factor]"}
+{"attribute":"Equation","target":"Flow","value":"[Gap]*[factor]"}
 
 Create the slider to adjust the [factor] value and set it to 0.5.
 

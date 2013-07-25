@@ -406,7 +406,7 @@ Let's see what happens with an increased resource utilization, which is likely a
 
 {"attribute":"Equation","target":"b factor","value":"0.8"}
 
-RESULT
+RESULTS
 
 Notice that both A and B demonstrate exponential behavior until they diminish resources to the replenishment rate. At that time they them begin to demonstrate linear growth as they are limited by the replenishment rate. B result begins greater than A result and grows even faster than A because it consumes more resources.
 

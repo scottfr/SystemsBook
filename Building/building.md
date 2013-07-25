@@ -187,6 +187,8 @@ Hopefully you found that both 0.25 and 0.125 produced a step with a distance to 
 
 ~ End Exercise
 
+[** Fixed to this model on 13.07.25]
+
 # Model
 
 {"title": "Stopping At Grandma's", "description": "We'll begin with the previous model and add an option that tells the model to stop when Red actually gets to Grandma's."}
@@ -199,7 +201,7 @@ The time step in the this version has been set to 0.25.
 
 RESULTS
 
-Now we'll add a variable to check whether Red is at Grandma's or not, and if she is the simulation should stop.
+Red still needs to stop when she gets to Grandma's House.
 
 {"geometry":{"x":390,"y":170,"width":120,"height":50},"name":"Stop at Grandmas","create":"Variable"}
 
@@ -208,6 +210,8 @@ Now we'll add a variable to check whether Red is at Grandma's or not, and if she
 {"attribute":"Equation","target":"Stop at Grandmas","value":"IfThenElse([Distance to Grandmas House] < {0 miles}, STOP, 0)"}
 
 DIAGRAM
+
+Now we'll add a variable to check whether Red is at Grandma's or not, and if she is the simulation should stop.
 
 RESULTS
 

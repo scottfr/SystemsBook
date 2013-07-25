@@ -211,7 +211,7 @@ DIAGRAM
 
 We begin with a Swimming Pool that needs to be filled with a hose. We know how many gallows of water it takes to fill the pool and we don't want to put too much water in the pool. The model is created to compare the amount of the water in the Swimming Pool with the the Full Level and use that to decide whether water is flowing in the hose or not.
 
-*Hose = IfThenElse([Swimming Pool] < [Full Level], [Full Level]-[Swimming Pool], 0) }*
+*Hose = IfThenElse([Swimming Pool] < [Full Level], [Full Level]-[Swimming Pool], 0)*
 
 RESULTS
 
@@ -239,7 +239,7 @@ DIAGRAM
 
 The new formula for Hose takes into account both the current amount of water in the [Swimming Pool], [Full Level] and [Hose Capacity]
 
-*[Hose] = IfThenElse([Swimming Pool] < [Full Level], min([Full Level]-[Swimming Pool],[Hose Capacity]), 0) }*
+*[Hose] = IfThenElse([Swimming Pool] < [Full Level], min([Full Level]-[Swimming Pool],[Hose Capacity]), 0)*
 
 RESULTS
 
