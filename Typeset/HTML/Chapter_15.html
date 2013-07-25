@@ -455,7 +455,10 @@
 <div class="exercise_answer">
 
 <h3 id="Ans-12-1"><a href="#Ans-12-1"><a href="Chapter_12.html#Ex-12-1">Exercise 12-1</a></a></h3>
-<pre class="sourceCode html"><code class="sourceCode html">This <span class="kw">&lt;b&gt;</span>text is <span class="kw">&lt;i&gt;</span>italic<span class="kw">&lt;/i&gt;</span> and bold.<span class="kw">&lt;/b&gt;</span></code></pre>
+<p>Squared error:</p>
+<p><code class="blockSource sourceCode javascript">([Widgets]-[Historical Production])^<span class="dv">2</span></code></p>
+<p>Absolute value error:</p>
+<p><code class="blockSource sourceCode javascript"><span class="fu">Abs</span>([Widgets]-[Historical Production])</code></p>
 </div>
 
 
@@ -463,50 +466,15 @@
 <div class="exercise_answer">
 
 <h3 id="Ans-12-2"><a href="#Ans-12-2"><a href="Chapter_12.html#Ex-12-2">Exercise 12-2</a></a></h3>
-<p>Ordered list:</p>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ol&gt;</span>
-    <span class="kw">&lt;li&gt;</span>Croatia<span class="kw">&lt;/li&gt;</span>
-    <span class="kw">&lt;li&gt;</span>Greece<span class="kw">&lt;/li&gt;</span>
-    <span class="kw">&lt;li&gt;</span>Peru<span class="kw">&lt;/li&gt;</span>
-<span class="kw">&lt;/ol&gt;</span></code></pre>
-<p>Unordered list:</p>
-<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul&gt;</span>
-    <span class="kw">&lt;li&gt;</span>Croatia<span class="kw">&lt;/li&gt;</span>
-    <span class="kw">&lt;li&gt;</span>Greece<span class="kw">&lt;/li&gt;</span>
-    <span class="kw">&lt;li&gt;</span>Peru<span class="kw">&lt;/li&gt;</span>
-<span class="kw">&lt;/ul&gt;</span></code></pre>
+<p><code class="blockSource sourceCode javascript">([Simulated]-[Historical])^<span class="dv">4</span></code></p>
 </div>
 
 
 
 <div class="exercise_answer">
 
-<h3 id="Ans-12-4"><a href="#Ans-12-4"><a href="Chapter_12.html#Ex-12-4">Exercise 12-4</a></a></h3>
-<pre class="sourceCode css"><code class="sourceCode css">u <span class="kw">{</span>
-    <span class="kw">color:</span> <span class="dt">green</span><span class="kw">;</span>
-<span class="kw">}</span></code></pre>
-</div>
-
-
-
-<div class="exercise_answer">
-
-<h3 id="Ans-12-5"><a href="#Ans-12-5"><a href="Chapter_12.html#Ex-12-5">Exercise 12-5</a></a></h3>
-<pre class="sourceCode css"><code class="sourceCode css">a <span class="kw">{</span>
-    <span class="kw">border:</span> <span class="dt">solid</span> <span class="dt">2px</span> <span class="dt">red</span><span class="kw">;</span>
-<span class="kw">}</span></code></pre>
-</div>
-
-
-
-<div class="exercise_answer">
-
-<h3 id="Ans-12-6"><a href="#Ans-12-6"><a href="Chapter_12.html#Ex-12-6">Exercise 12-6</a></a></h3>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> a = <span class="fu">prompt</span>(<span class="st">&quot;Enter the first number:&quot;</span>);
-<span class="kw">var</span> b = <span class="fu">prompt</span>(<span class="st">&quot;Enter the second number:&quot;</span>);
-<span class="kw">var</span> sum = a+b;
-
-<span class="fu">alert</span>(<span class="st">&quot;There sum is: &quot;</span>+sum);</code></pre>
+<h3 id="Ans-12-3"><a href="#Ans-12-3"><a href="Chapter_12.html#Ex-12-3">Exercise 12-3</a></a></h3>
+<p>The optimizer can always minimize this simply making <span class="primitive">Simulated</span> as small as possible. This will not result in a fit to the historical data.</p>
 </div>
 
 
@@ -514,19 +482,12 @@
 <div class="exercise_answer">
 
 <h3 id="Ans-12-7"><a href="#Ans-12-7"><a href="Chapter_12.html#Ex-12-7">Exercise 12-7</a></a></h3>
-<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
-    <span class="kw">text-decoration:</span> <span class="dt">underline</span><span class="kw">;</span>
-<span class="kw">}</span></code></pre>
-</div>
-
-
-
-<div class="exercise_answer">
-
-<h3 id="Ans-12-8"><a href="#Ans-12-8"><a href="Chapter_12.html#Ex-12-8">Exercise 12-8</a></a></h3>
-<pre class="sourceCode css"><code class="sourceCode css">body <span class="kw">{</span>
-    <span class="kw">background-color:</span> azure<span class="kw">;</span>
-<span class="kw">}</span></code></pre>
+<p>Change:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript">nullError += <span class="ot">Math</span>.<span class="fu">pow</span>(<span class="ot">results</span>.<span class="fu">value</span>(historical)[t] - average, <span class="dv">2</span>);
+simulatedError += <span class="ot">Math</span>.<span class="fu">pow</span>(<span class="ot">results</span>.<span class="fu">value</span>(historical)[t] - <span class="ot">results</span>.<span class="fu">value</span>(simulated)[t], <span class="dv">2</span>);</code></pre>
+<p>To:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript">nullError += <span class="ot">Math</span>.<span class="fu">abs</span>(<span class="ot">results</span>.<span class="fu">value</span>(historical)[t] - average);
+simulatedError += <span class="ot">Math</span>.<span class="fu">abs</span>(<span class="ot">results</span>.<span class="fu">value</span>(historical)[t] - <span class="ot">results</span>.<span class="fu">value</span>(simulated)[t]);</code></pre>
 </div>
 
 
@@ -534,19 +495,13 @@
 <div class="exercise_answer">
 
 <h3 id="Ans-12-10"><a href="#Ans-12-10"><a href="Chapter_12.html#Ex-12-10">Exercise 12-10</a></a></h3>
-<pre class="sourceCode css"><code class="sourceCode css">input <span class="kw">{</span>
-    <span class="kw">background-color:</span> <span class="dt">yellow</span><span class="kw">;</span>
-    <span class="kw">color:</span> <span class="dt">navy</span><span class="kw">;</span>
-<span class="kw">}</span></code></pre>
-</div>
-
-
-
-<div class="exercise_answer">
-
-<h3 id="Ans-12-11"><a href="#Ans-12-11"><a href="Chapter_12.html#Ex-12-11">Exercise 12-11</a></a></h3>
-<p>Change the alert to:</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="fu">alert</span>(<span class="st">&quot;Failed! You need &quot;</span>+(<span class="dv">5000000000</span>-pop)+<span class="st">&quot; more people!&quot;</span>);</code></pre>
+<p>Example procedure:</p>
+<ol style="list-style-type: decimal">
+<li>Find the average hamster size at each time period by taking the mean of observations at that period.</li>
+<li>Define two variables in the model: <span class="primitive">Infant Rate</span> and <span class="primitive">Juvenile Rate</span>.</li>
+<li>Define an error primitive <span class="primitive">Error</span> the equation taking the absolute value of the difference between the simulated size and the average empirical size.</li>
+<li>Run the optimizer to minimize this error term by adjusting the two rate variables.</li>
+</ol>
 </div>
 
 
@@ -659,10 +614,7 @@ End Function</code></pre>
 <div class="exercise_answer">
 
 <h3 id="Ans-14-1"><a href="#Ans-14-1"><a href="Chapter_14.html#Ex-14-1">Exercise 14-1</a></a></h3>
-<p>Squared error:</p>
-<p><code class="blockSource sourceCode javascript">([Widgets]-[Historical Production])^<span class="dv">2</span></code></p>
-<p>Absolute value error:</p>
-<p><code class="blockSource sourceCode javascript"><span class="fu">Abs</span>([Widgets]-[Historical Production])</code></p>
+<pre class="sourceCode html"><code class="sourceCode html">This <span class="kw">&lt;b&gt;</span>text is <span class="kw">&lt;i&gt;</span>italic<span class="kw">&lt;/i&gt;</span> and bold.<span class="kw">&lt;/b&gt;</span></code></pre>
 </div>
 
 
@@ -670,15 +622,50 @@ End Function</code></pre>
 <div class="exercise_answer">
 
 <h3 id="Ans-14-2"><a href="#Ans-14-2"><a href="Chapter_14.html#Ex-14-2">Exercise 14-2</a></a></h3>
-<p><code class="blockSource sourceCode javascript">([Simulated]-[Historical])^<span class="dv">4</span></code></p>
+<p>Ordered list:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ol&gt;</span>
+    <span class="kw">&lt;li&gt;</span>Croatia<span class="kw">&lt;/li&gt;</span>
+    <span class="kw">&lt;li&gt;</span>Greece<span class="kw">&lt;/li&gt;</span>
+    <span class="kw">&lt;li&gt;</span>Peru<span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;/ol&gt;</span></code></pre>
+<p>Unordered list:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;ul&gt;</span>
+    <span class="kw">&lt;li&gt;</span>Croatia<span class="kw">&lt;/li&gt;</span>
+    <span class="kw">&lt;li&gt;</span>Greece<span class="kw">&lt;/li&gt;</span>
+    <span class="kw">&lt;li&gt;</span>Peru<span class="kw">&lt;/li&gt;</span>
+<span class="kw">&lt;/ul&gt;</span></code></pre>
 </div>
 
 
 
 <div class="exercise_answer">
 
-<h3 id="Ans-14-3"><a href="#Ans-14-3"><a href="Chapter_14.html#Ex-14-3">Exercise 14-3</a></a></h3>
-<p>The optimizer can always minimize this simply making <span class="primitive">Simulated</span> as small as possible. This will not result in a fit to the historical data.</p>
+<h3 id="Ans-14-4"><a href="#Ans-14-4"><a href="Chapter_14.html#Ex-14-4">Exercise 14-4</a></a></h3>
+<pre class="sourceCode css"><code class="sourceCode css">u <span class="kw">{</span>
+    <span class="kw">color:</span> <span class="dt">green</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</div>
+
+
+
+<div class="exercise_answer">
+
+<h3 id="Ans-14-5"><a href="#Ans-14-5"><a href="Chapter_14.html#Ex-14-5">Exercise 14-5</a></a></h3>
+<pre class="sourceCode css"><code class="sourceCode css">a <span class="kw">{</span>
+    <span class="kw">border:</span> <span class="dt">solid</span> <span class="dt">2px</span> <span class="dt">red</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</div>
+
+
+
+<div class="exercise_answer">
+
+<h3 id="Ans-14-6"><a href="#Ans-14-6"><a href="Chapter_14.html#Ex-14-6">Exercise 14-6</a></a></h3>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> a = <span class="fu">prompt</span>(<span class="st">&quot;Enter the first number:&quot;</span>);
+<span class="kw">var</span> b = <span class="fu">prompt</span>(<span class="st">&quot;Enter the second number:&quot;</span>);
+<span class="kw">var</span> sum = a+b;
+
+<span class="fu">alert</span>(<span class="st">&quot;There sum is: &quot;</span>+sum);</code></pre>
 </div>
 
 
@@ -686,12 +673,19 @@ End Function</code></pre>
 <div class="exercise_answer">
 
 <h3 id="Ans-14-7"><a href="#Ans-14-7"><a href="Chapter_14.html#Ex-14-7">Exercise 14-7</a></a></h3>
-<p>Change:</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript">nullError += <span class="ot">Math</span>.<span class="fu">pow</span>(<span class="ot">results</span>.<span class="fu">value</span>(historical)[t] - average, <span class="dv">2</span>);
-simulatedError += <span class="ot">Math</span>.<span class="fu">pow</span>(<span class="ot">results</span>.<span class="fu">value</span>(historical)[t] - <span class="ot">results</span>.<span class="fu">value</span>(simulated)[t], <span class="dv">2</span>);</code></pre>
-<p>To:</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript">nullError += <span class="ot">Math</span>.<span class="fu">abs</span>(<span class="ot">results</span>.<span class="fu">value</span>(historical)[t] - average);
-simulatedError += <span class="ot">Math</span>.<span class="fu">abs</span>(<span class="ot">results</span>.<span class="fu">value</span>(historical)[t] - <span class="ot">results</span>.<span class="fu">value</span>(simulated)[t]);</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">text-decoration:</span> <span class="dt">underline</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</div>
+
+
+
+<div class="exercise_answer">
+
+<h3 id="Ans-14-8"><a href="#Ans-14-8"><a href="Chapter_14.html#Ex-14-8">Exercise 14-8</a></a></h3>
+<pre class="sourceCode css"><code class="sourceCode css">body <span class="kw">{</span>
+    <span class="kw">background-color:</span> azure<span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 </div>
 
 
@@ -699,13 +693,19 @@ simulatedError += <span class="ot">Math</span>.<span class="fu">abs</span>(<span
 <div class="exercise_answer">
 
 <h3 id="Ans-14-10"><a href="#Ans-14-10"><a href="Chapter_14.html#Ex-14-10">Exercise 14-10</a></a></h3>
-<p>Example procedure:</p>
-<ol style="list-style-type: decimal">
-<li>Find the average hamster size at each time period by taking the mean of observations at that period.</li>
-<li>Define two variables in the model: <span class="primitive">Infant Rate</span> and <span class="primitive">Juvenile Rate</span>.</li>
-<li>Define an error primitive <span class="primitive">Error</span> the equation taking the absolute value of the difference between the simulated size and the average empirical size.</li>
-<li>Run the optimizer to minimize this error term by adjusting the two rate variables.</li>
-</ol>
+<pre class="sourceCode css"><code class="sourceCode css">input <span class="kw">{</span>
+    <span class="kw">background-color:</span> <span class="dt">yellow</span><span class="kw">;</span>
+    <span class="kw">color:</span> <span class="dt">navy</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</div>
+
+
+
+<div class="exercise_answer">
+
+<h3 id="Ans-14-11"><a href="#Ans-14-11"><a href="Chapter_14.html#Ex-14-11">Exercise 14-11</a></a></h3>
+<p>Change the alert to:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="fu">alert</span>(<span class="st">&quot;Failed! You need &quot;</span>+(<span class="dv">5000000000</span>-pop)+<span class="st">&quot; more people!&quot;</span>);</code></pre>
 </div>
 
 

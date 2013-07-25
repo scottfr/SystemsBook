@@ -10,7 +10,7 @@ Building Confidence
 The Process of Modeling
 Mathematics of Modeling
 Mathematics of Modeling 2
-Going Global
-Agents
 Optimization and Complexity
+Agents
+Going Global
 End Matter
