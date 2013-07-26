@@ -1,5 +1,10 @@
 ## Preface ##
 
+The future is a result of our actions. Our actions are based on what we beliefs. Many of our beliefs are wrong. What implication do you think that has for the future?
+
+People always, always, always do exactly what makes the most amount of sense to them in the context of the moment based on their current understanding. 
+
+
 Ludwig von Bertalanffy(1) first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another. When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. 
 
 However, if you think about it, maybe there is some truth to it after all. What follows is the introduction to a live Systems Thinking book presented from a cross discipline models perspective. Live in the sense that the models are presented in a form that allows you to actually interact with them. 
