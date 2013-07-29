@@ -200,67 +200,67 @@ You will need to extend your modeling toolkit in order to be able to effectively
 
 ### Working with Vectors
 
-A vector is an ordered list of items. In Insight Maker vectors can be written using the '«' sign (or '<<') followed by the '»' sign (or '>>'). For instance imagine we had a small population of only four people. If we asked the model for the heights of those four people^[Using an equation like *Value(FindAll([Population]), [Height])*. We'll see later how to construct equations like this.] in meters we might get something like this:
+A vector is an ordered list of items. In Insight Maker vectors can be written using the '{' followed by the '}' sign. For instance imagine we had a small population of only four people. If we asked the model for the heights of those four people^[Using an equation like *Value(FindAll([Population]), [Height])*. We'll see later how to construct equations like this.] in meters we might get something like this:
 
-\e{«2, 1.8, 1.9, 1.5»}
+\e{{ {2, 1.8, 1.9, 1.5} }}
 
 This indicates that our population has four people with heights of 2, 1.8, 1.9 and 1.5 meters. Insight Maker has an extensive set of capabilities and functions for manipulating and summarizing vectors such as this. For instance, if we wanted to know the height of the tallest person in our population, we could use the \e{Max()} function:
 
-\e{Max(«2, 1.8, 1.9, 1.5») # = 2}
+\e{{ Max({2, 1.8, 1.9, 1.5}) # = 2 }}
 
 If we wanted to know the height of the smallest person in the population we could use the \e{Min()} function:
 
-\e{Min(«2, 1.8, 1.9, 1.5») # = 1.5}
+\e{{ Min({2, 1.8, 1.9, 1.5}) # = 1.5 }}
 
 Let's say we wanted to know the average height of the people in our our population. We could either use the \e{Mean()} or \e{Median()} functions:
 
-\e{Mean(«2, 1.8, 1.9, 1.5») # = 1.8}
+\e{{ Mean({2, 1.8, 1.9, 1.5}) # = 1.8 }}
 
-\e{Median(«2, 1.8, 1.9, 1.5») # = 1.85}
+\e{{ Median({2, 1.8, 1.9, 1.5}) # = 1.85 }}
 
 We can also use basic mathematical operations on our vectors. For example, assume we needed to design a room such that the top of the room was at least half a meter above a person's head. We could find the required room height for each person by adding 0.5 to the vector of heights:
 
-\e{«2, 1.8, 1.9, 1.5» + 0.5 # = «2.5, 2.3, 2.4, 2»}
+\e{{ {2, 1.8, 1.9, 1.5} + 0.5 # = {2.5, 2.3, 2.4, 2} }}
 
-We can also add vectors together. For instance, let's imagine that some of the agents had hats on and we have measured the height of these hats and got the following vector of heights: \e{«0.05, 0, 0.1, 0»} (two of the people do not wear hats). We could find the height of the agents when they are wearing their hats using:
+We can also add vectors together. For instance, let's imagine that some of the agents had hats on and we have measured the height of these hats and got the following vector of heights: \e{{ {0.05, 0, 0.1, 0} }} (two of the people do not wear hats). We could find the height of the agents when they are wearing their hats using:
 
-\e{«2, 1.8, 1.9, 1.5» + «0.05, 0, 0.1, 0» # = «2.05, 1.8, 2, 1.5»}
+\e{{ {2, 1.8, 1.9, 1.5} + {0.05, 0, 0.1, 0} # = {2.05, 1.8, 2, 1.5} }}
 
 Another useful vector function is the \e{Count()} function. Assuming we did not know there were four agents, we could determine how many elements there were in the vector using this function:
 
-\e{Count(«2, 1.8, 1.9, 1.5») # = 4 }
+\e{{ Count({2, 1.8, 1.9, 1.5}) # = 4 }}
 
 You can do a lot with these basic functions but there are also two very powerful vector functions we should mention: \e{Map()} and \e{Filter()}. Map takes each element in a vector and applies some transformation to it and returns a vector of the transformations. As an example, let's say we wanted to test whether or not are agents were tall enough to ride an amusement park ride with a cutoff of 1.85 meters. We could get a vector containing whether or not each agent was tall enough using:
 
-\e{Map(«2, 1.8, 1.9, 1.5», x >= 1.85) # = «true, false, true, false» }
+\e{{ Map({2, 1.8, 1.9, 1.5}, x >= 1.85) # = {true, false, true, false} }}
 
 Here the function \e{x >= 2} is applied to each element in the vector (with \e{x} representing the element value) and the results of this element-by-element evaluation of the function is returned.
 
 Filter takes a function and applies it to each element in a vector. If the function evaluates to true, the element is included in the resulting vector; if the function evaluates to false, the element is not included in the results. For instance, if we just wanted the heights of the people who were tall enough to ride the ride, we could use:
 
-\e{Filter(«2, 1.8, 1.9, 1.5», x >= 1.85) # = «2, 1.9» }
+\e{{ Filter({2, 1.8, 1.9, 1.5}, x >= 1.85) # = {2, 1.9} }}
 
 Lastly, there are a couple of very useful functions are available to combine vectors together. \e{Union()} takes two vectors and combines them together removing duplicated elements. 
 
-\e{Union(«1, 2 ,3», «2, 3 ,4») # = «1, 2, 3, 4» }
+\e{{ Union({1, 2 ,3}, {2, 3 ,4}) # = {1, 2, 3, 4} }}
 
 \e{Intersection()} takes two vectors and returns a vector containing the elements that are in both of the vectors.
 
-\e{Intersection(«1, 2 ,3», «2, 3 ,4») # = «2, 3» }
+\e{{ Intersection({1, 2 ,3}, {2, 3 ,4}) # = {2, 3} }}
 
 \e{Difference()} takes two vectors and returns a vector containing the elements that are in either one of the vectors but *not* in both of the vectors.
 
-\e{Difference(«1, 2 ,3», «2, 3 ,4») # = «1, 4» }
+\e{{ Difference({1, 2 ,3}, {2, 3 ,4}) # = {1, 4} }}
 
 There are many more vector functions available, but these are some of the key ones. They will prove invaluable when you come to working with vectors of agents.
 
 ~ Exercise
 
-Given a vector of heights \e{«2, 1.8, 1.9, 1.5»}, write an equation to find the tallest height under 1.95 meters:
+Given a vector of heights \e{{2, 1.8, 1.9, 1.5}}, write an equation to find the tallest height under 1.95 meters:
 
 ~ Answer
 
-\e{Max(Filter(«2, 1.8, 1.9, 1.5», x < 1.95))}
+\e{{ Max(Filter({2, 1.8, 1.9, 1.5}, x < 1.95)) }}
 
 ~ End Exercise
 
@@ -447,7 +447,7 @@ Network
 Custom Function
 : Here you can specify a custom function to control the layout of the agents. This function will be called once for each agent in the population and should return a two-element vector where the first element is the *x*-coordinate of the agent, and the second element is the *y*-coordinate. The primitive \p{Self} in this function will refer to the agent that is being positioned.
 
-![Figure 4. Illustration of the four agent placement algorithms. From the top: random, grid, ellipse, and a custom function using: *<<2\*index([Self]), 50+50\*sin(index([Self])/10)>>*.](AgentPlacement.png)
+![Figure 4. Illustration of the four agent placement algorithms. From the top: random, grid, ellipse, and a custom function using: *{2\*index([Self]), 50+50\*sin(index([Self])/10)}*.](AgentPlacement.png)
 
 #### Spatial Find Functions
 
@@ -475,7 +475,7 @@ You can also move agents to new locations during simulation. To do this, it is h
 
 For instance, we can use an action primitive in an agent and the \e{Move()} function to make agents move during the simulation. The Move function takes two arguments: the agent to be moved, and a vector containing the *x*- and *y*-distances to move the agent. Thus, we could place an action primitive in our agent and give it the following action property to make the agent move randomly over time^[What we are implementing here is known as a "random walk" or Brownian motion. It is a commonly studied pattern of movement with wide applications in science.]. The equation will move the agent a random distance between -0.5 and 0.5 units in the *x*-direction and a random distance between -0.5 and 0.5 units in the *y*-direction.
 
-\e{Move([Self], «rand, rand»-0.5)}
+\e{Move([Self], {rand, rand}-0.5)}
 
 Another useful movement function is the \e{MoveTowards()} function. MoveTowards moves an agent towards (or away from) the location of another agent. MoveTowards takes three arguments: the agent to be moved, the target agent to move towards, and how far to move towards that agent (with negative values indicating movement away). The following command would move an agent one meter closer to its nearest neighbor in the population.
 
@@ -621,7 +621,7 @@ Another variant of the *for* loop is the *for-in* loop. This uses a vector to as
 
 \e{
 sum <- 0
-For i In «1, 5, 10»
+For i In {1, 5, 10}
 	sum <- sum + i
 End Loop
 sum

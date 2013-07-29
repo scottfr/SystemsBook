@@ -83,6 +83,8 @@ This is the structure of our model. We have two stocks of people with people mov
 
 There our model is fully setup. We've set it to start with everyone being healthy.
 
+{"attribute":"Primitives","target":"DISPLAY","value":["Healthy", "Sick"]}
+
 RESULTS
 
 These results are quite stable. Everyone is healthy and no one gets sick. That indicates we have an equilibrium here. Let's now experiment by making a single person in the population sick.
@@ -496,10 +498,13 @@ Now let's find the eigenvalues for this matrix. Once we go through the math we g
 It's time to look at a more complex example, we'll consider our predator prey model. First we calculate the Jacobian matrix for this model:
 
 $$
-\text{Jacobian} = \begin{bmatrix} \dfrac{\partial}{\partial M }  \alpha \times M - \beta \times M \times W & \dfrac{\partial}{\partial W }  \alpha \times M - \beta \times M \times W  \\  \dfrac{\partial}{\partial M } \gamma \times M \times W - \delta \times W & \dfrac{\partial}{\partial W } \gamma \times M \times W - \delta \times W \end{bmatrix} = \begin{bmatrix}
+\begin{split}
+\text{Jacobian} &= \begin{bmatrix} \dfrac{\partial}{\partial M }  \alpha \times M - \beta \times M \times W & \dfrac{\partial}{\partial W }  \alpha \times M - \beta \times M \times W  \\  \dfrac{\partial}{\partial M } \gamma \times M \times W - \delta \times W & \dfrac{\partial}{\partial W } \gamma \times M \times W - \delta \times W \end{bmatrix} \\
+& = \begin{bmatrix}
 \alpha - \beta \times W & -\beta \times M \\
 \gamma \times W & \gamma \times M - \delta
 \end{bmatrix}
+\end{split}
 $$
 
 Now that we have the Jacobian, we'll evaluate it at the trivial equilibrium of $M=0$ and $W=0$. The resulting matrix is:
@@ -623,7 +628,7 @@ What are the equilibrium points of the following system and their associated sta
 
 $$
 \begin{aligned}
-\frac{dQ}{dt} &= -XQ\times R + R \\
+\frac{dQ}{dt} &= -Q \times R + R \\
 \frac{dR}{dt} &= \alpha - \alpha \times R^2
 \end{aligned}
 $$

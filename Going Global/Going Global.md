@@ -270,7 +270,7 @@ var a = prompt("Enter the first number:");
 var b = prompt("Enter the second number:");
 var sum = a+b;
 
-alert("There sum is: "+sum);
+alert("Their sum is: "+sum);
 ````
 
 ~ End Exercise

@@ -166,7 +166,14 @@ And so we arrive at a key insight. By choosing our equations to tell a story, ou
 
 You are given the following linear regression model that predicts the growth rate of a tree (in meters per year):
 
-$$\text{Growth Rate} = 3.2 + 0.013 \times \text{Mean Annual Temperature} + 0.021 \times \text{Annual Precipitation} - 2.3 \times \text{Moose Density}$$
+$$
+\begin{split}
+\text{Growth Rate} = 3.2 + \\
+& 0.013 \times \text{Mean Annual Temperature} + \\
+& 0.021 \times \text{Annual Precipitation} - \\
+& 2.3 \times \text{Moose Density}
+\end{split}
+$$
 
 Take this mathematical model and convert it to a textual narrative.
 
@@ -176,7 +183,14 @@ Take this mathematical model and convert it to a textual narrative.
 
 You are given the following linear regression model that predicts the demand for hats (in thousands of hats sold per day):
 
-$$\text{Hat Demand} = 23.4 + 3.4 * (\text{Temperature in Celsius} - 22)- 1.2 \times \text{Wind Speed} - 0.21 \times \text{Unemployment Rate}$$
+$$
+\begin{split}
+\text{Hat Demand} = 23.4 + 3.4 * \\
+& (\text{Temperature in Celsius} - 22)- \\
+&1.2 \times \text{Wind Speed} -\\
+& 0.21 \times \text{Unemployment Rate}
+\end{split}
+$$
 
 Take this mathematical model and convert it to a textual narrative.
 
