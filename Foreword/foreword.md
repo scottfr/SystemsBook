@@ -10,13 +10,11 @@ The list of questions is rather endless, and our normal pursuit from a cause and
 
 Systems thinking is a perspective we can all relate to, as examples of it can be repeatedly found in our daily lives. Peter Senge’s “The Fifth Discipline,” (Doubleday 1994) has contributed greatly toward popularizing it, yet his context is that of Organizational Learning, wherein Systems Thinking was the fifth of five disciplines. My own thought as I read Senge’s book, five times in five years, was that it should have been called “The First Discipline” as the other four disciplines are essentially applied systems thinking. 
 
-The Art of Systems Thinking enables us to develop an understanding of systems thinking, why it is so important to us in our daily lives, and how one and all can benefit form the understanding. Once we embrace the complexity we have created, and find the simplicity on the other side, we no longer need to be victims, for we can use our understanding to change our actions and thereby our world. 
+The Art of Systems Thinking enables us to develop an understanding of systems thinking, why it is so important to us in our daily lives, and how one and all can benefit from the understanding. Once we embrace the complexity we have created, and find the simplicity on the other side, we no longer need to be victims, for we can use our understanding to change our actions and thereby our world. 
 
 You have probably heard of the Butterfly Effect, where it was proposed that a butterfly flapping its wings in Miami could cause a hail storm in Beijing. Our actions today have more immediate far reaching consequences, which was simply not the case in the past. And the pace of our interactions continues to increase. Systems Thinking is a perspective more important for our time than any other we have ever had the opportunity to embrace. 
 
 I would like to express my sincere appreciation to the authors for investing the thought and effort required to provide this opportunity for understanding to the world. 
 
 Gene R. Bellinger 
-Primus 
-Virginia USA 
 February 1997
