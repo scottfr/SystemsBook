@@ -145,11 +145,7 @@ Some amount of \p{stuff in} flowing causes \p{stuff} to increase over time and t
 
 DIAGRAM
 
-The diagram represents a swimming pool being filled with a hose at a rate of 50 gallons an hour.
-
-The drain is closed so there is no water draining out of the pool.
-
-If we let the hose run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model, a simulation of a model actually, to show changes over time.
+The diagram represents a swimming pool being filled with a hose at a rate of 50 gallons an hour. The drain is closed so there is no water draining out of the pool. If we let the hose run for 24 hours how much water will be in the pool? Admittedly the math is pretty straight forward though the idea here is to show how you can use a model, a simulation of a model actually, to show changes over time.
 
 RESULTS
 

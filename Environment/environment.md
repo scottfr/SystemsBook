@@ -70,7 +70,7 @@ To use a \p{Primitive} click on the icon on the \u{Toolbar} to select it, then c
 
 ~ Exercise
 
-Clear the sample model presented previously and practice placing \p{Stock} and \p{Variable} \u{Primitives} on a blank canvas and naming them. You can remove a \u{Primitive} by clicking on it to select it and then pressing the \u{Delete} key or clicking the \u{Delete} function in the \u{Actions} section of the \u{Toolbar}.
+Clear the sample model presented previously and practice placing \p{Stock} and \p{Flow} \u{Primitives} on a blank canvas and naming them. You can remove a \u{Primitive} by clicking on it to select it and then pressing the \u{Delete} key or clicking the \u{Delete} function in the \u{Actions} section of the \u{Toolbar}.
 
 ~ End Exercise
 
@@ -108,11 +108,11 @@ DIAGRAM
 
 The diagram presents the valid [Flow] connections which can only be to, from, or between [Stocks]
 
-You can connect a [Stock] to a [Flow] with a [Link] to indicate that somehow the [Flow] depends on the value of the [Stock]. The [Link] does not change the value of the [Stock].
-
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"points":[{"x":240,"y":190},{"x":200,"y":180},{"x":150,"y":200}]},"alpha":"Stock 1","omega":"Flow 1","create":"Link"}
 
-If you select a link then hold the \u{shift key} while you click on the link you create \u{handles} that you can move separately to create a segmented curve.
+You can connect a [Stock] to a [Flow] with a [Link] to indicate that somehow the [Flow] depends on the value of the [Stock]. The [Link] does not change the value of the [Stock].
+
+If you select a link then hold the *shift key* while you click on the link you create \u{handles} that you can move separately to create a segmented curve.
 
 {"geometry":{"x":280,"y":370,"width":120,"height":50},"name":"Variable 1","create":"Variable"}
 
@@ -265,29 +265,25 @@ A reinforcing growth structure is one where growth produces a result which promo
 
 {"title": "Reinforcing Growth Model", "description": "We're going to create a generic exponential growth structure for study and reuse."}
 
-First we build the linear accumulator model.
-
 {"geometry":{"x":230,"y":110,"width":100,"height":40},"name":"stuff","create":"Stock"}
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":520,"y":130},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"stuff","name":"Flow","create":"Flow"}
 
-Then we add the reinforcing feedback loop.
+First we build the linear accumulator model.
 
 {"geometry":{"x":-1.4285714285714448,"y":0,"width":100,"height":100,"sourcePoint":{"x":-1.4285714285714448,"y":100},"targetPoint":{"x":98.57142857142856,"y":0},"points":[{"x":320,"y":70},{"x":360,"y":60},{"x":390,"y":70}]},"alpha":"stuff","omega":"Flow","create":"Link"}
 
-DIAGRAM
-
-Now we assign values to the relationships.
+Then we add the reinforcing feedback loop.
 
 {"attribute":"InitialValue","target":"stuff","value":"1"}
 
 {"attribute":"FlowRate","target":"Flow","value":"[stuff]"}
 
-And set up the Time Settings for the simulation.
-
 {"attribute":"TimeLength","value":"10"}
 
 {"attribute":"TimeStep","value":"1"}
+
+DIAGRAM
 
 RESULTS
 
@@ -338,15 +334,13 @@ One aspect of trying to model the contexts of Figure 12 that should have become 
 
 DIAGRAM
 
-We begin with the previous model and we add a factor to control the flow.
-
 {"geometry":{"x":450,"y":190,"width":120,"height":50},"name":"factor","create":"Variable"}
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"factor","omega":"Flow","create":"Link"}
 
-{"attribute":"FlowRate","target":"Flow","value":"[stuff]*[factor]"}
+We begin with the previous model and we add a factor to control the flow.
 
-And we'll add a slider to the [factor] to make it easy to adjust its values.
+{"attribute":"FlowRate","target":"Flow","value":"[stuff]*[factor]"}
 
 {"attribute":"ShowSlider","target":"factor","value":"true"}
 
@@ -355,6 +349,8 @@ And we'll add a slider to the [factor] to make it easy to adjust its values.
 {"attribute":"SliderStep","target":"factor","value":"0.1"}
 
 {"attribute":"Equation","target":"factor","value":"1"}
+
+And we'll add a slider to the [factor] to make it easy to adjust its values.
 
 DIAGRAM
 
@@ -406,8 +402,6 @@ A Balancing/Goal Seeking structure is one where there is a difference between tw
 
 {"title": "Balancing/Goal Seeking Model", "description": "As we have done repeatedly to this point we begin with a linear model consisting of a flow and a stock, along with a flow rate variable. To this we simply have to add a goal and the appropriate feedback and we end up with a goal seeking model."}
 
-First we build the linear accumulator model with a control factor.
-
 {"geometry":{"x":480,"y":160,"width":100,"height":40},"name":"Current","create":"Stock"}
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":280,"y":180},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Current","name":"Flow","create":"Flow"}
@@ -416,9 +410,9 @@ First we build the linear accumulator model with a control factor.
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"factor","omega":"Flow","create":"Link"}
 
-DIAGRAM
+First we build the linear accumulator model with a control factor.
 
-Now we add a goal and compare the goal to the current value.
+DIAGRAM
 
 {"geometry":{"x":270,"y":20,"width":120,"height":50},"name":"Goal","create":"Variable"}
 
@@ -430,11 +424,11 @@ Now we add a goal and compare the goal to the current value.
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Gap","omega":"Flow","create":"Link"}
 
+Now we add a goal and compare the goal to the current value.
+
 DIAGRAM
 
 When you look at the model admittedly we added [Gap] which we haven't addressed before. This was done so we could explicitly plot the difference between the value of [Current] and [Goal].
-
-Now assign values to the various primitives.
 
 {"attribute":"InitialValue","target":"Current","value":"0"}
 
@@ -453,8 +447,6 @@ Create the slider to adjust the [factor] value and set it to 0.5.
 {"attribute":"SliderStep","target":"factor","value":"0.1"}
 
 {"attribute":"Equation","target":"factor","value":"0.5"}
-
-Now set the Time Settings for the simulation run.
 
 {"attribute":"TimeLength","value":"10"}
 
@@ -508,7 +500,7 @@ RESULTS
 
 The reason the graph looks like this is because of the constraint placed on the the work by the number of Workers available. This is accomplished by the formula embedded in the flow.
 
-[Work] = IfThenElse([Work Remaining] > [Workers],[Workers],[Work Remaining])
+*[Work] = IfThenElse([Work Remaining] > [Workers],[Workers],[Work Remaining])*
 
 This says that if there is more [Work Remaining] than there are [Workers] available to do the work then the amount of work that day equals the number of [Workers]. This goes on for the first 7 days then on the 8th day there are only four days work required to finish the project which is represented by the different slope on the line on the 8th day. You can see this in detail if you look at the Tabular Display.
 
