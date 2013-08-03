@@ -9,34 +9,9 @@ Turnock
 
 ** Evangelist Level **
 
-Anthony Akins, David Allen, David
-Dangaasuren, Enkhbat
-Gehres, Paul
-Golding, Jon
-Hilton, Jeremy
-Lee, Jin
-Lundberg, Paul
-McManus, Michael
-Meyers, Dean
-Newman, Damien
-Oosthuizen, Rene
-Pairish, Richard Shaun
-Sauer, Francois
-Schrum, Bill
-Soul, David
-van der Velde, Harry
-Vermes, John
-Vermet, Franck
-Williams, Steve
-Wright, Richard
-Adams, Denis Conway
-Finidori, Helene
-Fortmann, Louise
-Olson, Jeanne Marie
-Schoenfeldinger, Werner
-Zaini, Raafat
+Denis Conway Adams, Anthony Akins, David Allen, Enkhbat Dangaasuren,Helene Finidori,  Louise Fortmann, Paul Gehres, Jon Golding, Jeremy Hilton, Jin Lee, Paul Lundberg, Michael McManus, Dean Meyers, Damien Newman,Jeanne Marie Olson,  Rene Oosthuizen, Richard Shaun Pairish, Francois Sauer, Bill Schrum, David Soul, Harry van der Velde, John Vermes, Franck Vermet, Steve Williams, Richard Wright, Werner Schoenfeldinger, Raafat Zaini
 
-Benefactor Level
+** Benefactor Level **
 
 Aga, Zareer
 Akkermans, Henk
@@ -104,23 +79,11 @@ Wasilewski, Stefan Michal
 Wu, Edward Bing
 Young, Rob
 
-Engraved Level
+** Engraved Level **
 
-Masnick, Keith
-Bennett, Cliff
-Farrelly, Colin
-Gould, John M.
-Hathaway, Philip
-Maguire, Anne
-Mandl, Christoph
-Packer, David
-Rominger, Ruth
-Schoos, Geoffrey A.
-Thomas, Dave
-Van Steen, Joe
-Veldsink, Jan
+Cliff Bennett, Colin Farrelly, John M Gould, Philip Hathaway, Anne Maguire, Christoph Mandl, Keith Masnick, David Packer, Ruth Rominger, Geoffrey A. Schoos, Dave Thomas, Joe Van Steen, Jan Veldsink
 
-Champion Level
+** Champion Level **
 
 Mahaboob, Habeeb
 Abbey, Chris
@@ -219,7 +182,7 @@ Zamir, Akbar
 Zivanovic, Stevan
 Zuniga, Roy
 
-Advocate Level
+** Advocate Level **
 
 Lilius, Ilkka
 Papegaaij, Bard C.
@@ -371,29 +334,6 @@ Wondrasek, Evan
 Woodward, Terry
 Zeitz, Wendy
 
-Contributor Level
+** Contributor Level **
 
-Santamaria, Gerardo del cerro
-Morgan, John
-Aw, KK
-Battel-Fisher, Michele
-Bhattari, Hitesh
-Brodsky, Julia
-Burk, Bruce
-De, Dibyendu
-DuVal, Cynthia
-Hooper, David
-Krejci, Igor
-Luras, Sigrun
-Mariategui, Francisoc
-Newton, Tim
-Rockower, Edward B.
-Rodríguez-Ulloa, Ricardo
-Sales, Michael
-van der Zouwen, Tonnie
-Woodman, George
-Bell, Tom
-Browne, Chris
-Hydru, Nishanth K
-McGowan, Kevin
-Strongin, Dan
+KK Aw, Michele Battel-Fisher, Tom Bell, Hitesh Bhattari, Julia Brodsky, Chris Browne, Bruce Burk, Dibyendu De, Cynthia DuVal, David Hooper, Nishanth K Hydru,Igor Krejci, Sigrun Luras, Francisoc Mariategui, Kevin McGowan, John Morgan, Tim Newton, Edward B. Rockower, Ricardo Rodríguez-Ulloa, Michael Sales, Gerardo del cerro Santamaria, Dan Strongin, Tonnie van der Zouwen, George Woodman
