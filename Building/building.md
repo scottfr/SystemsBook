@@ -83,13 +83,9 @@ Here's a simple example of a question that might be answered with a model. And y
 
 {"title": "Going to Grandma's House", "description": "Little Red Riding Hood want's to know how long it will take her to get to Grandma's house if she walks at 2 miles per hour and Grandma's house is 4.5 miles away through the woods."}
 
-In this statement what is to be figured out is very easy to identify. Sometimes it's not so easy and you have to dig a little.
-
 {"geometry":{"x":190,"y":180,"width":120,"height":40},"name":"Distance to Grandmas House","create":"Stock"}
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"targetPoint":{"x":540,"y":80}},"alpha":"Distance to Grandmas House","omega": null,"name":"Walk","create":"Flow"}
-
-Now lets add a slider for each [Primitive] so we can adjust the values later.
 
 {"attribute":"ShowSlider","target":"Distance to Grandmas House","value":"true"}
 
@@ -105,7 +101,7 @@ Now lets add a slider for each [Primitive] so we can adjust the values later.
 
 DIAGRAM
 
-This figure represents a simple model of Little Red Riding Hood walking to Grandma's house. While this may look like a rather trivial model there are several aspects of this model that warrant a few notes, and some of them we've not considered before.
+In this statement what is to be figured out is very easy to identify. Sometimes it's not so easy and you have to dig a little. This figure represents a simple model of Little Red Riding Hood walking to Grandma's house. While this may look like a rather trivial model there are several aspects of this model that warrant a few notes, and some of them we've not considered before.
 
 # End Model
 
@@ -155,13 +151,9 @@ There are a large number of units predefined in Insight Maker. If you click in t
 
 DIAGRAM
 
-Now we can assign the units for the stock and the flow.
-
 {"attribute":"Units","target":"Distance to Grandmas House","value":"miles"}
 
 {"attribute":"Units","target":"Walk","value":"miles/hour"}
-
-And assign the Time Settings.
 
 {"attribute":"TimeLength","value":"5"}
 
@@ -171,7 +163,7 @@ And assign the Time Settings.
 
 RESULTS
 
-From the graphic it should be evident that there are some enhancements that need to be made to our Going to Grandma's House model. 
+The model is that same as the previous model though we've added values so Red is actually walking. From the graphic it should be evident that there are some enhancements that need to be made to our Going to Grandma's House model. 
 
 # End Model
 
@@ -195,14 +187,6 @@ Hopefully you found that both 0.25 and 0.125 produced a step with a distance to 
 
 {"load": "<mxGraphModel> <root> <mxCell id=\"0\"\/> <mxCell id=\"1\" parent=\"0\"\/> <Setting Note=\"\" Version=\"28\" TimeLength=\"5\" TimeStart=\"0\" TimeStep=\"0.25\" TimeUnits=\"Hours\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"-1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\"> <mxCell parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/> <\/mxCell> <\/Setting> <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"Miles\" ThreeDimensional=\"false\" Primitives=\"42,43\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\"> <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Display name=\"Tabular Display\" Note=\"\" Type=\"Tabular\" xAxis=\"Time (%u)\" yAxis=\"Gallons\" yAxis2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" ThreeDimensional=\"false\" Primitives=\"42\" Primitives2=\"\" AutoAddPrimitives=\"false\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Bottom\" legendPosition=\"Automatic\" id=\"29\"> <mxCell style=\"display\" parent=\"1\" vertex=\"1\" visible=\"0\"> <mxGeometry x=\"10\" y=\"10\" width=\"64\" height=\"64\" as=\"geometry\"\/> <\/mxCell> <\/Display> <Stock name=\"Distance to Grandmas House\" Note=\"The stock is the distance to Grandma&#39;s house.\" InitialValue=\"4.5\" StockMode=\"Store\" Delay=\"10\" Volume=\"100\" NonNegative=\"false\" Units=\"miles\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"10\" SliderMin=\"0\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" SliderStep=\"0.5\" id=\"42\"> <mxCell style=\"stock\" parent=\"1\" vertex=\"1\"> <mxGeometry x=\"190\" y=\"50.445834827406884\" width=\"117.5\" height=\"44.554165172593116\" as=\"geometry\"\/> <\/mxCell> <\/Stock> <Flow name=\"Walk\" Note=\"The flow is how fast Red is walking toward Grandma&#39;s house.\" FlowRate=\"2\" OnlyPositive=\"true\" TimeIndependent=\"false\" Units=\"miles\/hour\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"true\" SliderMax=\"5\" SliderMin=\"0\" SliderStep=\"0.1\" id=\"43\"> <mxCell style=\"flow\" parent=\"1\" source=\"42\" edge=\"1\"> <mxGeometry x=\"-190\" y=\"-89.55416517259312\" width=\"100\" height=\"100\" as=\"geometry\"> <mxPoint x=\"-190\" y=\"10.445834827406884\" as=\"sourcePoint\"\/> <mxPoint x=\"507.5\" y=\"85\" as=\"targetPoint\"\/> <\/mxGeometry> <\/mxCell> <\/Flow> <\/root> <\/mxGraphModel> "}
 
-DIAGRAM
-
-The time step in the this version has been set to 0.25.
-
-RESULTS
-
-Red still needs to stop when she gets to Grandma's House.
-
 {"geometry":{"x":390,"y":170,"width":120,"height":50},"name":"Stop at Grandmas","create":"Variable"}
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Distance to Grandmas House","omega":"Stop at Grandmas","create":"Link"}
@@ -211,11 +195,13 @@ Red still needs to stop when she gets to Grandma's House.
 
 DIAGRAM
 
-Now we'll add a variable to check whether Red is at Grandma's or not, and if she is the simulation should stop.
+We've add a variable to check whether Red is at Grandma's or not, and if she is the simulation should stop.
+
+*IfThenElse([Distance to Grandmas House] < {0 miles}, STOP, 0)*
 
 RESULTS
 
-Now you can see that Red stops walking at Grandma's House after 2.25 hours of walking.
+With Time Step = 0.25 and the test you can see that Red stops at Grandma's House after 2.25 hours of walking.
 
 # End Model
 
@@ -259,15 +245,13 @@ The following is intended to be another example of he development of a model, th
 
 {"title": "Why Aren't We All Rich/Initial Setup", "description": "We begin with the simplest model possible relevant to the question."}
 
-First we create the Investment Account and the Initial Deposit and assign the appropriate units.
-
 {"geometry":{"x":260,"y":300,"width":100,"height":40},"name":"Investment Account","create":"Stock"}
 
 {"geometry":{"x":460,"y":230,"width":120,"height":50},"name":"Initial Deposit","create":"Variable"}
 
 {"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Initial Deposit","omega":"Investment Account","create":"Link"}
 
-Now we set the values for the Investment Account and create a slider and set the value for the Initial Deposit.
+First we create the Investment Account and the Initial Deposit and assign the appropriate units.
 
 {"attribute":"InitialValue","target":"Investment Account","value":"[Initial Deposit]"}
 
@@ -284,8 +268,6 @@ Now we set the values for the Investment Account and create a slider and set the
 {"attribute":"Equation","target":"Initial Deposit","value":"100"}
 
 {"attribute":"Units","target":"Initial Deposit","value":"Dollars"}
-
-And we set the initial Time Settings.
 
 {"attribute":"TimeLength","value":"36"}
 
@@ -327,8 +309,6 @@ You should never be more than a single concept change away from a running model 
 
 DIAGRAM
 
-Interest is a product of the Investment Account and the Monthly Interest Rate.
-
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":100,"y":150},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Investment Account","name":"Interest","create":"Flow"}
 
 {"attribute":"Units","target":"Interest","value":"Dollars/Month"}
@@ -336,6 +316,8 @@ Interest is a product of the Investment Account and the Monthly Interest Rate.
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"points":[{"x":330,"y":80},{"x":280,"y":70},{"x":230,"y":80}]},"alpha":"Investment Account","omega":"Interest","create":"Link"}
 
 {"geometry":{"x":80,"y":240,"width":120,"height":50},"name":"Annual Interest Rate","create":"Variable"}
+
+Interest is a product of the Investment Account and the Monthly Interest Rate.
 
 {"attribute":"ShowSlider","target":"Annual Interest Rate","value":"true"}
 
@@ -385,13 +367,7 @@ And as the simulation sums Dollars/Month over months the result added to the Inv
 
 RESULTS
 
-The run of this model over the three years with a 2% annual interest rate still isn't very interesting though it does show a growth in the Investment Account as expected.
-
-Now change the display so only the [Investment Account] value is shown.
-
-{"attribute":"Primitives","target":"DISPLAY","value":["Investment Account"]}
-
-Admittedly $6 dollars in interest wouldn't seem like much of an incentive to invest in a investment account for three years. Though there are several additional aspects of the Investment Account that we might take into consideration.
+The run of this model over the three years with a 2% annual interest rate still isn't very interesting though it does show a growth in the Investment Account as expected. Admittedly $6 dollars in interest wouldn't seem like much of an incentive to invest in a investment account for three years. Though there are several additional aspects of the Investment Account that we might take into consideration.
 
 # End Model
 
@@ -419,9 +395,9 @@ The other option is that you can put a URL in this field for an image somewhere 
 
 DIAGRAM
 
-Beginning with the previous model we now add [Monthly Deposit] with a slider so we can adjust the value for different runs.
-
 {"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":370,"y":10},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Investment Account","name":"Monthly Deposit","create":"Flow"}
+
+Beginning with the previous model we now add [Monthly Deposit] with a slider so we can adjust the value for different runs.
 
 {"attribute":"Units","target":"Monthly Deposit","value":"Dollars/Month"}
 
@@ -431,19 +407,13 @@ Beginning with the previous model we now add [Monthly Deposit] with a slider so 
 
 {"attribute":"FlowRate","target":"Monthly Deposit","value":"75"}
 
-Now we adjust the simulation lenght to 30 years, or 360 months.
-
 {"attribute":"TimeLength","value":"360"}
-
-[Annual Interest Rate] has been changed to 10% because one is likely to find an investment account that will average 10% over a period of 30 years, or so it would seem based on Whitfield & Co[1].
 
 {"attribute":"Equation","target":"Annual Interest Rate","value":"0.1"}
 
 RESULTS
 
-This result is significantly different than the previous version of the model though is it enough to retire on? Not likely.
-
-Suppose we change to 40 years and with $100 Dollars/Month recurring deposits.
+The simulation lenght to 30 years, or 360 months and [Annual Interest Rate] has been changed to 10% because one is likely to find an investment account that will average 10% over a period of 30 years, or so it would seem based on Whitfield & Co[1]. This result is significantly different than the previous version of the model though is it enough to retire on? Not likely.
 
 {"attribute":"TimeLength","value":"480"}
 
@@ -451,7 +421,7 @@ Suppose we change to 40 years and with $100 Dollars/Month recurring deposits.
 
 RESULTS
 
-This shows a significant difference between $160 thousand dollars and $640 thousand dollars. The difference being based on what you are willing to invest and for how long.
+Suppose we change to 40 years and with $100 Dollars/Month recurring deposits. This shows a significant difference between $160 thousand dollars and $640 thousand dollars. The difference being based on what you are willing to invest and for how long.
 
 # End Model
 
@@ -581,6 +551,8 @@ We had a forest reserve of over a million trees and the logging company guarante
 
 DIAGRAM
 
+[New Trees] are planted for each tree that's cut. The more trees loggers cut the more money they make which makes the business more attractive resulting in more trees cut.
+
 RESULTS
 
 When we run this model for 10 years things seem to be fine. The number of mature trees is declining a little thought it doesn't seem to be much to worry about.
@@ -600,6 +572,7 @@ And when we look at 60 years there seems to be a very major boom and bust cycle 
 # End Model
 
 [** Where have all the trees gone?/embed](http://insightmaker.com/insight/7543)
+
 [** Where have all the trees gone?/story](http://insightmaker.com/insight/8238)
 
 ~ Exercise
