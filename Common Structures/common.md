@@ -1,4 +1,4 @@
-# Recurring Structures
+# Frequently Recurring Structures
 
 Chapter 1 presented Bertalanffy's premise that that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another. In the previous chapters there has been a focus on three basic structures in support of Bertalanffy's premise. In this chapter will will build on those three basic structures in such a way as to demonstrate that there exists a set of more complex structures composed of combinations of the basic three which also repeatedly occur across all disciplines of science.
 
