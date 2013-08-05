@@ -151,11 +151,31 @@ When you select any one of these steps it will be added after the currently sele
 
 By creating a story of your model you significantly increase the likelihood that others will understand the insights your model is endeavoring to surface. You might even find that in the process of creating the story you uncover ways to improve or clarify the model for yourself.
 
-The following storytelling examples may be viewed by clicking the following links.
+The following storytelling examples may be viewed by opening the model and repeatedly clicking **Step Forward** in the bottom right of the model.
 
-* [Rabbit Population](http://insightmaker.com/insight/7104)
-* [The Boy Who Cried Wolf](http://insightmaker.com/insight/7103)
-* [Systems Thinking: The Essence of And?](http://insightmaker.com/insight/3365)
+# Model
+
+{"title": "Rabbit Population", "description": "The rabbit population model demonstrates exponential growth.", "load": "http://insightmaker.com/insight/7104"}
+
+DIAGRAM
+
+# End Model
+
+# Model
+
+{"title": "The Boy Who Cried Wolf", "description": "Short term actions are defeated by the longer term response.", "load": "http://insightmaker.com/insight/7103"}
+
+DIAGRAM
+
+# End Model
+
+# Model
+
+{"title": "Systems Thinking: The Essence of And?", "description": "To uncover the system one must continue to seek out the inflences.", "load": "http://insightmaker.com/insight/3365"}
+
+DIAGRAM
+
+# End Model
 
 ## Summary ##
 
