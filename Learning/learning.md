@@ -83,7 +83,7 @@ DIAGRAM
 
 If we begin with 150 [Moose], 100 [Wolves], [Wolf Birth Rate] = 16%, [Moose Death Rate] = .08% * [Wolves], [Wolf Birth Rate] = 0.1% * [Moose] and [Wolf Death Rate] = 12% what does your intuition tell you the [Moose] and [Wolves] populations should look like over the next 100 years? It isn't expected that anyone can answer this question without some help. The help is a simulation of the relations. Press *Step Forward* to see the results.
 
-DISPLAY
+RESULTS
 
 Was this anything close to what you expected? 
 
