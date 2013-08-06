@@ -541,11 +541,39 @@ DIAGRAM
 
 # End Model
 
-[** Where have all the trees gone?/embed](http://insightmaker.com/insight/7543)
-
 ~ Exercise
 
 What have you come to understand about the difference between short term and long term perspectives and how do delays figure into surprises?
+
+~ Answer
+
+While it is difficult to guess at the results of two or more dynamic interactions delays in the structure will make it even worse. In many cases simulations are the only way to develop a meaningful understanding.
+
+~ End Exercise
+
+## Moose and Wolves Revisited ##
+
+In Chapter 1 a model which revealed the dynamic relationship between the population of Moose and Wolves. The model is presented here with an exercise to test your intuition.
+
+# Model
+
+{"title": "Moose and Wolves Revisited", "description": "The populations of Moose and Wolves are dynamically linked."}
+
+{"load": "http://insightmaker.com/insight/8590"}
+
+DIAGRAM
+
+DISPLAY
+
+# End Model
+
+~ Exercise
+
+What would you expect to happen in the Moose and Wolves model if there were no Moose or no Wolves? Open the model and run it for each situation.
+
+~ Answer
+
+If there are no Moose in time the Wolves will starve to death. If there are no Wolves the Moose will eventually over populate and probably starve to death though that's not shown because the Moose food supply isn't built into the model.
 
 ~ End Exercise
 

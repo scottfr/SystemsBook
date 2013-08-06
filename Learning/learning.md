@@ -71,25 +71,27 @@ When we act on flawed beliefs attempting to solve problems we typically create m
 
 ## Simulations ##
 
-While models can help us understand the world around us we live in a dynamic every changing world where the only real constant is change. Simulations allow us to bring the models we build to life to get a sense of the implications of the relations over time. It has been said that we as humans have a very limited capacity to understand the implication of two or more dynamic relations over time. To help us develop our understanding in this area we build simulation models.
+While models can help us understand the world around us we live in a dynamic ever changing world, where the only real constant is change. Simulations allow us to bring the models we build to life and get a sense of the implications of the relations over time. It has been said that we as humans have a very limited capacity to understand the implication of two or more dynamic relations over time. To help us develop our understanding in this area we simulate the models we build.
 
 # Model
 
-{"title": "Moose and Wolves", "description": "The population of Moose and Wolves are dynamically linked."}
+{"title": "Moose and Wolves", "description": "The populations of Moose and Wolves are dynamically linked."}
 
 {"load": "http://insightmaker.com/insight/8590"}
 
 DIAGRAM
 
-If we begin with 150 Moose, 100 Wolves, Wolf Birth Rate = 16%, Moose Death Rate = .08% * [Wolves], Wolf Birth Rate = 0.1% * Moose and Wolf Death Rate = 12% what does your intuition tell you the Moose and Wolves populations should look like over the next 100 years? It isn't expected that anyone can answer this question without some help. The help is a simulation of the relations. Press *Step Forward* to see the results.
+If we begin with 150 [Moose], 100 [Wolves], [Wolf Birth Rate] = 16%, [Moose Death Rate] = .08% * [Wolves], [Wolf Birth Rate] = 0.1% * [Moose] and [Wolf Death Rate] = 12% what does your intuition tell you the [Moose] and [Wolves] populations should look like over the next 100 years? It isn't expected that anyone can answer this question without some help. The help is a simulation of the relations. Press *Step Forward* to see the results.
 
 DISPLAY
 
+Was this anything close to what you expected? 
+
 # End Model
 
-----------
+In this book you will learn how to develop models and simulations to understand the implications of relations over time. We will start slow and build piece by piece so don't let this first simulation seem overwhelming. Later you'll get a chance to change the parameters of the Moose and Wolves model to investigate how changes affect the populations over time.
 
-Was this anything close to what you expected? In this book you will learn how to develop models and simulations to help understand the implications of relations over time. We will start slow and build piece by piece so don't let this seem overwhelming. And later you'll get a chance to change the parameters of the Moose and Wolves model to investigate how changes affect the populations over time.
+----------
 
 #### Simulation ####
 
