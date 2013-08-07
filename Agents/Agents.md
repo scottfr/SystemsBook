@@ -475,7 +475,7 @@ You can also move agents to new locations during simulation. To do this, it is h
 
 For instance, we can use an action primitive in an agent and the \e{Move()} function to make agents move during the simulation. The Move function takes two arguments: the agent to be moved, and a vector containing the *x*- and *y*-distances to move the agent. Thus, we could place an action primitive in our agent and give it the following action property to make the agent move randomly over time^[What we are implementing here is known as a "random walk" or Brownian motion. It is a commonly studied pattern of movement with wide applications in science.]. The equation will move the agent a random distance between -0.5 and 0.5 units in the *x*-direction and a random distance between -0.5 and 0.5 units in the *y*-direction.
 
-\e{Move([Self], {rand, rand}-0.5)}
+\e{Move([Self], {rand(), rand()}-0.5)}
 
 Another useful movement function is the \e{MoveTowards()} function. MoveTowards moves an agent towards (or away from) the location of another agent. MoveTowards takes three arguments: the agent to be moved, the target agent to move towards, and how far to move towards that agent (with negative values indicating movement away). The following command would move an agent one meter closer to its nearest neighbor in the population.
 
@@ -537,7 +537,7 @@ RESULTS
 
 ### Network Geography
 
-To create connections and remove connections between agents you can use the \e{Connect()} and \e{Unconnect()} functions. Both of these functions take two arguments: the agents that should be connected or disconnected. For example, to connect an agent to its nearest neighbor, you could use the following
+To create connections and remove connections between agents you can use the \e{Connect()} and \e{Unconnect()} functions. Both of these functions take two arguments: the agents that should be connected or disconnected. For example, to connect an agent to its nearest neighbor, you could use the following:
 
 \e{Connect([Self], FindNearest([Population], [Self]))}
 
