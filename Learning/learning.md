@@ -1,5 +1,29 @@
 # It's The Pattern That Connects #
 
+# Model
+
+{"title": "Where have all the trees gone?", "description": "Is the forest you care about actually sustainable with current practices?", "load": "http://insightmaker.com/insight/8889"}
+
+DIAGRAM
+
+# End Model
+
+# Model
+
+{"title": "The bird feeder dilemma!", "description": "All I wanted was a more pleasant morning breakfast.", "load": "http://insightmaker.com/insight/8872"}
+
+DIAGRAM
+
+# End Model
+
+# Model
+
+{"title": "The future we create.", "description": "There is an intent to it all.", "load": "http://insightmaker.com/insight/8892"}
+
+DIAGRAM
+
+# End Model
+
 What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever really thought about how you learn about the world around you? There are some things you memorize early in life, like the times tables. While you memorize these is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that the learning happened? In this chapter we will investigate how you actually learn. We will also present a introduction to how you can improve your learning and actually test whether what you have learned is actually correct.
 
 ## Patterns ##
