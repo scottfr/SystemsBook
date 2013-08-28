@@ -1,10 +1,12 @@
 # A Model Is A Model Is A Model
 
-In previous chapters you worked with what is referred to Stock & Flow Simulation Models. These are also referred to as quantitative models because of the numerical values associated with them. While there are other types of quantitative models in this text we're focusing on Stock & Flow Simulation Models. There is also a class of models referred to as qualitative models because they have no numeric values associated with them. There is a level of understanding well served by qualitative models. This chapter will serve to acquaint you with a couple types you can create with Insight Maker and are likely to be useful in your study of systems.
+In previous chapter you worked two types of models qualitative models, i.e., no numbers, Follow the Clues and The Bird Feeder Dilemma! and quantitative models, with numbers, all the simulation models you ran. In this chapter we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about Stock & Flow Simulation Models, which are quantitative, and additional information that will help you develop better models.
 
-The models presented in this chapter are presented as images because they're really just pictures and not simulations. Links are provided if you want to access the sample models directly in Insight Maker. 
+# Model
 
-As we've said repeatedly, models are simplifications of some aspect of the world around us intended to help us understand something. The Stock & Flow Simulation Models are very explicit as they the relations are represented by numerical formulas and the model may be iterated over time. The models presented in the sections of this chapter may also assist in understanding situations though only from a relationship perspective. There are generally no numerical values associated with these model and they are not iterated over time.
+{"title": "Three Types of Models", "description": "Different though each aiding understanding.", "load": "http://insightmaker.com/insight/"}
+
+# End Model
 
 ## Rich Pictures ##
 

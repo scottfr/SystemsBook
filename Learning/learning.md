@@ -187,7 +187,7 @@ Investigation of a simple Rabbit Population Model can be most informative.
 - Linear, Reinforcing and Balancing structures are the basic building blocks for all models.
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
 - 
-Please continue to the next chapter where you will learn more about the Insight Maker environment so you can actually build the models that were presented in this chapter.
+Please continue to the next chapter where you will learn more about different types of models and the Insight Maker environment you have been interacting with.
 
 ## References ##
 
