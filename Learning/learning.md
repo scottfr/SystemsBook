@@ -29,9 +29,9 @@ It has been said that you can learn about riding a bicycle from reading a book t
 
 # End Model
 
-How each of the accumulations in the simulation changes is a bit different, as are the time frames of concern. Time frame being the time it takes for some noticeable change in the accumulation.
-
 ~ Exercise
+
+How each of the accumulations in the simulation changes is a bit different, as are the time frames of concern. Time frame being the time it takes for some noticeable change in the accumulation.
 
 Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that increase, or decrease, over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc? What are the flows that increase or decrease those stocks? What are the time frames over which you think about the increase, or decrease of the stock?
 
@@ -45,7 +45,7 @@ Take a few minutes and identify half a dozen situations you're familiar with whe
 
 ~ Exercise
 
-As in the previous exercise take a few minutes and identify a number of situations you are familiar with which are represented by the model just presented. What re the quantities for the stocks and flows in those situations?
+As in the previous exercise take a few minutes and identify a number of situations you are familiar with which are represented by the model just presented. What are the quantities for the stocks and flows in those situations?
 
 ~ End Exercise
 
@@ -69,7 +69,7 @@ What you learn, and your capacity to learn, serves as a basis for everything you
 
 # Model
 
-{"title": "Follow the clues", "description": "", "load": "http://insightmaker.com/insight/8893"}
+{"title": "Follow the clues", "description": "Does the order matter?", "load": "http://insightmaker.com/insight/8893"}
 
 # End Model
 
@@ -122,7 +122,7 @@ A simulation is a dynamic model that allows us to understand the implications of
 
 Ludwig von Bertalanffy first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another.{Davidson, Mark. 1983. Uncommon Sense: The Life and Thought of Ludwig von Bertalanffy. J.P. Tarcher, Inc. http://www.amazon.com/Uncommon-Sense-Thought-Bertalanffy-1901-1972/dp/087477165X/} When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. However, if you think about it, maybe there is some truth to it after all.
 
-We're not simply asking you to believe the previous statement because haven't you already demonstrated it to yourself with the first three models you created? This continued learning experience is expected to reinforce the sensibility of the statement from your own perspective.
+We're not simply asking you to believe the previous statement because haven't you already demonstrated it to yourself with the first three models you worked with and created? This continued learning experience is expected to reinforce the sensibility of the statement from your own perspective.
 
 The next model will give you a better sense of the detail associated with the unexpected unfolding of the future.
 
@@ -160,9 +160,9 @@ Let us now venture into the realm of trying to fill a swimming pool with water.
 
 # End Model
 
-Investigation of a simple Rabbit Population Model can be most informative.
-
 ## Rabbit Population Growth ##
+
+Investigation of a simple Rabbit Population Model can be most informative.
 
 # Model
 
@@ -186,6 +186,7 @@ Investigation of a simple Rabbit Population Model can be most informative.
 - We learn as we go and seldom do we get models right the first time.
 - Linear, Reinforcing and Balancing structures are the basic building blocks for all models.
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
+- 
 Please continue to the next chapter where you will learn more about the Insight Maker environment so you can actually build the models that were presented in this chapter.
 
 ## References ##
