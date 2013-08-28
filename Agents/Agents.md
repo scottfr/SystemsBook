@@ -212,11 +212,17 @@ If we wanted to know the height of the smallest person in the population we coul
 
 \e{{ Min({2, 1.8, 1.9, 1.5}) # = 1.5 }}
 
+Most vector functions can also be written using Object-notation. Object notation takes the following form: \e{Object.Function()}. Object notation is often cleaner and clearer when working with objects. A vector is a type of object and as we'll see an agent is also a type of object. We'll primarily use object notation for the rest of this chapter. Here is how we would rewrite the max and min examples using object notation:
+
+\e{{ {2, 1.8, 1.9, 1.5}.Max() # = 2 }}
+
+\e{{ {2, 1.8, 1.9, 1.5}.Min() # = 2 }}
+
 Let's say we wanted to know the average height of the people in our our population. We could either use the \e{Mean()} or \e{Median()} functions:
 
-\e{{ Mean({2, 1.8, 1.9, 1.5}) # = 1.8 }}
+\e{{ {2, 1.8, 1.9, 1.5}.Mean() # = 1.8 }}
 
-\e{{ Median({2, 1.8, 1.9, 1.5}) # = 1.85 }}
+\e{{ {2, 1.8, 1.9, 1.5}.Median() # = 1.85 }}
 
 We can also use basic mathematical operations on our vectors. For example, assume we needed to design a room such that the top of the room was at least half a meter above a person's head. We could find the required room height for each person by adding 0.5 to the vector of heights:
 
@@ -226,19 +232,19 @@ We can also add vectors together. For instance, let's imagine that some of the a
 
 \e{{ {2, 1.8, 1.9, 1.5} + {0.05, 0, 0.1, 0} # = {2.05, 1.8, 2, 1.5} }}
 
-Another useful vector function is the \e{Count()} function. Assuming we did not know there were four agents, we could determine how many elements there were in the vector using this function:
+Another useful vector function is the \e{Length()} function. Assuming we did not know there were four agents, we could determine how many elements there were in the vector using this function:
 
-\e{{ Count({2, 1.8, 1.9, 1.5}) # = 4 }}
+\e{{ {2, 1.8, 1.9, 1.5}.Length() # = 4 }}
 
 You can do a lot with these basic functions but there are also two very powerful vector functions we should mention: \e{Map()} and \e{Filter()}. Map takes each element in a vector and applies some transformation to it and returns a vector of the transformations. As an example, let's say we wanted to test whether or not are agents were tall enough to ride an amusement park ride with a cutoff of 1.85 meters. We could get a vector containing whether or not each agent was tall enough using:
 
-\e{{ Map({2, 1.8, 1.9, 1.5}, x >= 1.85) # = {true, false, true, false} }}
+\e{{ {2, 1.8, 1.9, 1.5}.Map(x >= 1.85) # = {true, false, true, false} }}
 
 Here the function \e{x >= 2} is applied to each element in the vector (with \e{x} representing the element value) and the results of this element-by-element evaluation of the function is returned.
 
 Filter takes a function and applies it to each element in a vector. If the function evaluates to true, the element is included in the resulting vector; if the function evaluates to false, the element is not included in the results. For instance, if we just wanted the heights of the people who were tall enough to ride the ride, we could use:
 
-\e{{ Filter({2, 1.8, 1.9, 1.5}, x >= 1.85) # = {2, 1.9} }}
+\e{{ ({2, 1.8, 1.9, 1.5}.Filter(x >= 1.85) # = {2, 1.9} }}
 
 Lastly, there are a couple of very useful functions are available to combine vectors together. \e{Union()} takes two vectors and combines them together removing duplicated elements. 
 
@@ -260,6 +266,10 @@ Given a vector of heights \e{{2, 1.8, 1.9, 1.5}}, write an equation to find the 
 
 ~ Answer
 
+\e{{ {2, 1.8, 1.9, 1.5}.Filter(x < 1.95).Max() }}
+
+or
+
 \e{{ Max(Filter({2, 1.8, 1.9, 1.5}, x < 1.95)) }}
 
 ~ End Exercise
@@ -269,6 +279,10 @@ Given a vector of heights \e{{2, 1.8, 1.9, 1.5}}, write an equation to find the 
 Given a vector named *a*, write an equation to find the median of the squares of all the elements in *a*.
 
 ~ Answer
+
+\e{(a^2).Median()}
+
+or
 
 \e{Median(a^2)}
 
@@ -280,6 +294,10 @@ Given a vector named *a* and a vector named *b*, write an equation to find the s
 
 ~ Answer
 
+\e{Intersection(a, b).Min()}
+
+or
+
 \e{Min(Intersection(a, b))}
 
 ~ End Exercise
@@ -290,7 +308,11 @@ Given the vector named *a*. Find the mean of the vector without using the \e{Mea
 
 ~ Answer
 
-\e{Sum(a)/Count(a)}
+\e{a.Sum()/a.Length()}
+
+or 
+
+\e{Sum(a)/Length(a)}
 
 ~ End Exercise
 
@@ -298,29 +320,29 @@ Given the vector named *a*. Find the mean of the vector without using the \e{Mea
 
 Insight Maker includes a number of functions to access the individual agents within a population. The simplest of these is the \e{FindAll()} function. Given an agent population primitive that we'll call \p{Population}, the FindAll function returns a vector containing all the agents within that agent population:
 
-\e{FindAll([Population])}
+\e{[Population].FindAll()}
 
 So if your agent population currently had 100 agents in it, this would return a vector with 100 elements where the first element referred to the first agent, the second element referred to the second agent and so on. It is important to note that these elements are agent references, not numbers. So you can use a function like \e{Reverse()} on the resulting vector, but you cannot directly use functions like \e{Mean()} as the agent references are not numerical values^[The agents certainly contain many numerical values in their stocks, variables, or states; but an agent reference itself is not numerical and so you cannot do things such as directly taking the average of the agents or sorting them.]. We will see how to access the values for agents next.
 
 In addition to the FindAll function, there are other find functions that return a subset of the agents in the model. For instance, the \e{FindState()} and \e{FindNotState()} functions return, respectively, agents that either have the given state active or not active. For instance, if we go back to our agent-based disease model, our agents had a state primitive called \p{Infected} that represented if the agent was currently sick, we could get a vector of the agents in our population that were currently sick using the following:
 
-\e{FindState([Population], [Infected])}
+\e{[Population].FindState([Infected])}
 
 And we could obtain a vector of the agents that were not currently infected with:
 
-\e{FindNotState([Population], [Infected])}
+\e{[Population].FindNotState([Infected])}
 
-Find functions can also be nested. For instance, if we added a \p{Male} state primitive to our agents representing whether or not the agent was a man; we could obtain a vector of all currently infected men with something like the following:
+Find functions can also be chained together. For instance, if we added a \p{Male} state primitive to our agents representing whether or not the agent was a man; we could obtain a vector of all currently infected men with something like the following:
 
-\e{FindState(FindState([Population], [Infected]), [Male])}
+\e{[Population].FindState([Infected]).FindState([Male])}
 
 Nesting find statements is effectively using Boolean AND logic (like you might use on a search engine: "Infected AND Male"). To do Boolean OR logic (e.g. "Infected OR Male") and return all the agents that are either infected or a man (or both), you can use the Union function to merge two vectors:
 
-\e{Union(FindState([Population], [Infected]), FindState([Population], [Male]))}
+\e{Union([Population].FindState([Infected]), [Population].FindState([Male]))}
 
 If you wanted the agents that were either infected or men (but not both simultaneously), you could use:
 
-\e{Difference(FindState([Population], [Infected]), FindState([Population], [Male]))}
+\e{Difference([Population].FindState([Infected]), [Population].FindState([Male]))}
 
 ~ Exercise
 
@@ -328,7 +350,7 @@ Write an equation using the disease example to return a vector of all female inf
 
 ~ Answer
 
-\e{FindState(FindState([Population], [Infected]), [Female])}
+\e{[Population].FindState([Infected]).FindState([Female])}
 
 ~ End Exercise
 
@@ -338,7 +360,7 @@ Write an equation using the disease example to return a vector of all female ind
 
 ~ Answer
 
-\e{Union(FindNotState([Population], [Infected]), FindState([Population], [Female]))}
+\e{Union([Population].FindNotState([Infected]), [Population].FindState([Female]))}
 
 ~ End Exercise
 
@@ -348,15 +370,15 @@ Once you have a vector of agents, you can extract the values of the specific pri
 
 The Value function takes two arguments: a vector of agents and the primitive for which you want the value. It then returns the value of that primitive in each of the agents. For instance, let us say our agents have a primitive named \p{Height}. We could get a vector of the height of all the people in the model like so:
 
-\e{Value(FindAll([Population]), [Height])}
+\e{[Population].FindAll().Value([Height])}
 
 A vector of heights by itself is generally of not too much use. Often we will want to summarize it, for instance by finding the average height of the people in our population:
 
-\e{Mean(Value(FindAll([Population]), [Height]))}
+\e{Mean([Population].FindAll().Value([Height]))}
 
 In addition to determining the value of a primitive in an agent, you can also manually set the agents’ primitive values using the SetValue function. It takes the same arguments as the Value function in addition to the value you want to set primitives to. For instance, we could use the following to set the height of all our agents to 2.1:
 
-\e{SetValue(FindAll([Population]), [Height], 2.1)}
+\e{[Population].FindAll().SetValue([Height], 2.1)}
 
 ~ Exercise
 
@@ -364,7 +386,7 @@ Assume our disease model population had a height stock. Provide an equation to f
 
 ~ Answer
 
-\e{Mean(Value(FindState([Population], [Male]), [Height]))-Mean(Value(FindState([Population], [Female]), [Height]))}
+\e{Mean([Population].FindState([Male]).Value([Height]))-Mean([Population].FindState([Female]).Value([Height]))}
 
 ~ End Exercise
 
@@ -388,7 +410,7 @@ DIAGRAM
 
 Now let's configure the value of [Percent Infected] and change the [Infection ]transition to use it.
 
-{"attribute":"Equation","target":"Fraction Infected","value":"Count(FindState([Population], [Infected]))/PopulationSize([Population])", "editor": true}
+{"attribute":"Equation","target":"Fraction Infected","value":"[Population].FindState([Infected]).Length()/[Population].PopulationSize()", "editor": true}
 
 This equation uses the FindState function to select all the people in the [Population] who are in the Infected state. It then divides the number of those people by the total size of the population.
 
@@ -404,9 +426,9 @@ That was a bit of a disappointment wasn't it? Nothing happened. Why is this?
 
 Well since our infection rate now depends on the number of people who are infected we have to have at least one person infected to get the epidemic going. Let's change the [Healthy] and [Infected] states so one person starts in the infected state at the beginning of the simulation.
 
-{"attribute":"Active","target":"Healthy","value":"Index([Self]) <> 1"}
+{"attribute":"Active","target":"Healthy","value":"[Self].Index() <> 1"}
 
-{"attribute":"Active","target":"Infected","value":"Index([Self]) == 1", "editor": true}
+{"attribute":"Active","target":"Infected","value":"[Self].Index() == 1", "editor": true}
 
 Each agent has an index starting with 1, we have set our initially active equations so the first agent in the population will start the simulation in the infected state. Let's run the model to see this working.
 
@@ -457,29 +479,29 @@ When working with a spatially explicit model, a number of additional find functi
 
 It is useful now to introduce a concept that will be very helpful to you. When used in an Agent, \p{Self} always refers to the agent itself. If you have a primitive within an agent, \p{Self} can be used from that primitive to get a reference to the agent containing the primitive. So the following equation in an agent will return a vector of agents that are within 15 miles of the agent itself:
 
-\e{{FindNearby([Population], [Self], {15 Miles})}}
+\e{{[Population].FindNearby([Self], {15 Miles})}}
 
 Two other useful functions for finding agents in spatial relation to each other are \e{FindNearest()} and \e{FindFurthest()}. FindNearest returns the nearest agent to the target while FindFurthest returns the agent that is farthest away from it. Each of them also supports an optional third argument determining how many nearby (or far away) agents to return (this optional argument defaults to one when omitted).
 
 For example, the following equation finds the nearest agent to the current agent:
 
-\e{FindNearest([Population], [Self])}
+\e{[Population].FindNearest([Self])}
 
 While this finds the three agents that are furthest from the current agent:
 
-\e{FindFurthest([Population], [Self], 3)}
+\e{[Population].FindFurthest([Self], 3)}
 
 #### Movement Functions
 
 You can also move agents to new locations during simulation. To do this, it is helpful to introduce a new primitive we have not yet discussed. This primitive is the *Action* primitive. Action primitives are designed to execute some action that changes the state of your model. For instance, they can be used to move agents or change the values of the primitives within an agent. An action is triggered in the same way a transition is triggered. Like a transition, there are three possible methods of triggering the action: timeout, probability, and condition.
 
-For instance, we can use an action primitive in an agent and the \e{Move()} function to make agents move during the simulation. The Move function takes two arguments: the agent to be moved, and a vector containing the *x*- and *y*-distances to move the agent. Thus, we could place an action primitive in our agent and give it the following action property to make the agent move randomly over time^[What we are implementing here is known as a "random walk" or Brownian motion. It is a commonly studied pattern of movement with wide applications in science.]. The equation will move the agent a random distance between -0.5 and 0.5 units in the *x*-direction and a random distance between -0.5 and 0.5 units in the *y*-direction.
+For instance, we can use an action primitive in an agent and the \e{Move()} function to make agents move during the simulation. The Move function takes one arguments: a vector containing the *x*- and *y*-distances to move the agent. Thus, we could place an action primitive in our agent and give it the following action property to make the agent move randomly over time^[What we are implementing here is known as a "random walk" or Brownian motion. It is a commonly studied pattern of movement with wide applications in science.]. The equation will move the agent a random distance between -0.5 and 0.5 units in the *x*-direction and a random distance between -0.5 and 0.5 units in the *y*-direction.
 
-\e{Move([Self], {rand(), rand()}-0.5)}
+\e{[Self].Move({rand(), rand()}-0.5)}
 
-Another useful movement function is the \e{MoveTowards()} function. MoveTowards moves an agent towards (or away from) the location of another agent. MoveTowards takes three arguments: the agent to be moved, the target agent to move towards, and how far to move towards that agent (with negative values indicating movement away). The following command would move an agent one meter closer to its nearest neighbor in the population.
+Another useful movement function is the \e{MoveTowards()} function. MoveTowards moves an agent towards (or away from) the location of another agent. MoveTowards takes two arguments: the target agent to move towards and how far to move towards that agent (with negative values indicating movement away). The following command would move an agent one meter closer to its nearest neighbor in the population.
 
-\e{{MoveTowards([Self], FindNearest([Population], [Self]), {1 Meter})}}
+\e{{[Self].MoveTowards([Population].FindNearest([Self]), {1 Meter})}}
 
 ~ Exercise
 
@@ -487,7 +509,7 @@ Write an equation to move an agent 2 meters towards the furthest healthy agent.
 
 ~ Answer
 
-\e{{MoveTowards([Self], FindFurthest(FindState([Population, [Healthy]), [Self]), {2 Meters})}}
+\e{{[Self].MoveTowards([Population.FindState([Healthy]).FindFurthest([Self]), {2 Meters})}}
 
 ~ End Exercise
 
@@ -515,11 +537,11 @@ DIAGRAM
 
 We will have this action be triggered when the agent is healthy and there is at least one infected agent in the simulation.
 
-{"attribute":"Value","target":"Escape","value":"[Healthy] and Count(FindState([Population], [Infected])) > 0"}
+{"attribute":"Value","target":"Escape","value":"[Healthy] and [Population].FindState([Infected]).Count() > 0"}
 
 The action will cause healthy agents to move away from the nearest infected agent. In effect, fleeing from sick individuals.
 
-{"attribute":"Action","target":"Escape","value":"MoveTowards([Self], FindNearest(FindState([Population], [Infected]), [Self]), -2)", "editor": true}
+{"attribute":"Action","target":"Escape","value":"[Self].MoveTowards([Population].FindState([Infected]).FindNearest([Self]), -2)", "editor": true}
 
 We can now run the simulation.
 
@@ -539,15 +561,15 @@ RESULTS
 
 To create connections and remove connections between agents you can use the \e{Connect()} and \e{Unconnect()} functions. Both of these functions take two arguments: the agents that should be connected or disconnected. For example, to connect an agent to its nearest neighbor, you could use the following:
 
-\e{Connect([Self], FindNearest([Population], [Self]))}
+\e{[Self].Connect([Population].FindNearest([Self]))}
 
 To disconnect an agent from its nearest neighbor (assuming they are connected), you would use:
 
-\e{Unconnect([Self], FindNearest([Population], [Self]))}
+\e{[Self].Unconnect([Population].FindNearest([Self]))}
 
 To obtain a vector of connections to an agent, use the \e{Connected()} function:
 
-\e{Connected([Self])}
+\e{[Self].Connected()}
 
 Connections are not directed so creating a connection from agent *A* to agent *B* is the same as creating a connection from agent *B* to agent *A*. Also only one connection between a given pair of agents will exist at a time. So creating two connections between a given pair of agents will have the same effect as creating a single connection.
 
