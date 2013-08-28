@@ -168,16 +168,6 @@ Let us now venture into the realm of trying to fill a swimming pool with water.
 
 # End Model
 
-## Similar Structures / Different Behavior ##
-
-If you compare the models presented to this point you should find them quite similar. And yet, the behavior of the models are distinctly different.
-
-# Model
-
-{"title": "Similar Structures / Different Behavior", "description": "The behavior of a model depends on the structure as well as the formulas that define the nature of the relationships.", "load": "http://insightmaker.com/insight/5138"}
-
-# End Model
-
 ## Summary ##
 
 - Models are simplified versions of the world around us.
@@ -189,7 +179,13 @@ If you compare the models presented to this point you should find them quite sim
 - Linear, Reinforcing and Balancing structures are the basic building blocks for all models.
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
 
-Please continue to the next chapter where you will learn about the Insight Maker environment so you can actually build the models that were presented in this chapter.
+# Model
+
+{"title": "Similar Structures / Different Behavior", "description": "The behavior of a model depends on the structure as well as the formulas that define the nature of the relationships.", "load": "http://insightmaker.com/insight/5138"}
+
+# End Model
+
+Please continue to the next chapter where you will learn more about the Insight Maker environment so you can actually build the models that were presented in this chapter.
 
 ## References ##
 

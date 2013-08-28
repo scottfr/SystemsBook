@@ -2,67 +2,9 @@
 
 # Model
 
-{"title": "Valid Stock & Variable Connections", "description": "The following sequence presents, and explains, the valid connections for elements of a simulation model."}
-
-{"geometry":{"x":230,"y":230,"width":100,"height":40},"name":"Stock 1","create":"Stock"}
-
-A [Stock] represents a quantity of something that will increase or decrease during the simulation.
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":50,"y":250},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Stock 1","name":"Flow 1","create":"Flow"}
-
-A [Stock] can only change via a [Flow]. To create an inflow first create an outflow and then select [Reverse] to change the direction of the flow. This is just a quirk of the environment. A flow that doesn't have a specific origin simply means we're not concerned with where the flow comes from. When you fill the bathtub do you think about where the water comes from?
-
-{"geometry":{"x":500,"y":230,"width":100,"height":40},"name":"Stock 2","create":"Stock"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Stock 1","omega":"Stock 2","name":"Flow 2","create":"Flow"}
-
-A [Flow] can move stuff from one [Stock] to another. [Stock 1] decreases by the same amount that [Stock 2] increases. Flows need to be conserved because you can't create something form nothing in a model.
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"targetPoint":{"x":760,"y":250}},"alpha":"Stock 2","omega":null,"name":"Flow 3","create":"Flow"}
-
-A [Flow] that doesn't have a specific destination simply means we're not concerned with where the [Flow] goes.
-
-DIAGRAM
-
-The diagram presents the valid [Flow] connections which can only be to, from, or between [Stocks]
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"points":[{"x":240,"y":190},{"x":200,"y":180},{"x":150,"y":200}]},"alpha":"Stock 1","omega":"Flow 1","create":"Link"}
-
-You can connect a [Stock] to a [Flow] with a [Link] to indicate that somehow the [Flow] depends on the value of the [Stock]. The [Link] does not change the value of the [Stock].
-
-If you select a link then hold the *shift key* while you click on the link you create \u{handles} that you can move separately to create a segmented curve.
-
-{"geometry":{"x":280,"y":370,"width":120,"height":50},"name":"Variable 1","create":"Variable"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Variable 1","omega":"Flow 2","create":"Link"}
-
-A [Link] can be used to have a [Variable] influence a [Flow] and the [Link] does not change the value of the [Variable].
-
-{"geometry":{"x":500,"y":100,"width":120,"height":50},"name":"Variable 2","create":"Variable"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Stock 1","omega":"Variable 2","create":"Link"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Flow 3","omega":"Variable 2","create":"Link"}
-
-You can use a [Link] from a [Stock] or a [Flow] to influence a [Variable]. The [Link] does not change the value of the [Stock] or the [Flow].
-
-{"geometry":{"x":580,"y":370,"width":120,"height":50},"name":"Initial Value","create":"Variable"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Initial Value","omega":"Stock 2","create":"Link"}
-
-You can use a [Link] from a [Variable] to a [Stock] to assign an initial value to the [Stock] when the simulation starts. The [Link] does not change the value of the [Variable].
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Initial Value","omega":"Variable 1","create":"Link"}
-
-You can use a [Link] from a [Variable] to influence another [Variable]. The [Link] does not change the value of the source [Variable].
-
-DIAGRAM
-
-You have now completed a model that represents the valid connections for a simulation model.
+{"title": "Valid Stock & Variable Connections", "description": "The following sequence presents, and explains, the valid connections for elements of a simulation model.", "load": "http://insightmaker.com/insight/5275"}
 
 # End Model
-
-[** Valid Primitive Connections](http://insightmaker.com/insight/5275)
 
 ### User Interface ###
 
@@ -124,35 +66,9 @@ A reinforcing growth structure is one where growth produces a result which promo
  
 # Model
 
-{"title": "Reinforcing Growth Model", "description": "We're going to create a generic exponential growth structure for study and reuse."}
-
-{"geometry":{"x":230,"y":110,"width":100,"height":40},"name":"stuff","create":"Stock"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":520,"y":130},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"stuff","name":"Flow","create":"Flow"}
-
-First we build the linear accumulator model.
-
-{"geometry":{"x":-1.4285714285714448,"y":0,"width":100,"height":100,"sourcePoint":{"x":-1.4285714285714448,"y":100},"targetPoint":{"x":98.57142857142856,"y":0},"points":[{"x":320,"y":70},{"x":360,"y":60},{"x":390,"y":70}]},"alpha":"stuff","omega":"Flow","create":"Link"}
-
-Then we add the reinforcing feedback loop.
-
-{"attribute":"InitialValue","target":"stuff","value":"1"}
-
-{"attribute":"FlowRate","target":"Flow","value":"[stuff]"}
-
-{"attribute":"TimeLength","value":"10"}
-
-{"attribute":"TimeStep","value":"1"}
-
-DIAGRAM
-
-RESULTS
-
-The graph shows the value of [stuff] after 10 Years is 1,024 which you should realize is just 2^10 as expected because we started with a value of 1 and doubled it every year. This curve is referred to as an exponential growth curve.
+{"title": "Reinforcing Growth Model", "description": "We're going to create a generic exponential growth structure for study and reuse.", "load": "http://insightmaker.com/insight/5351"}
 
 # End Model
-
-[** Model](http://insightmaker.com/insight/5351)
 
 ~ Exercise
 
@@ -189,35 +105,7 @@ One aspect of trying to model the contexts of Figure 12 that should have become 
 
 # Model
 
-{"title": "Feedback Dependent Growth with Control", "description": "We're now going to add a factor to the previous model so you can control the extent to which the stock influences the flow."}
-
-{"load": "http://insightmaker.com/insight/5887"}
-
-DIAGRAM
-
-{"geometry":{"x":450,"y":190,"width":120,"height":50},"name":"factor","create":"Variable"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"factor","omega":"Flow","create":"Link"}
-
-We begin with the previous model and we add a factor to control the flow.
-
-{"attribute":"FlowRate","target":"Flow","value":"[stuff]*[factor]"}
-
-{"attribute":"ShowSlider","target":"factor","value":"true"}
-
-{"attribute":"SliderMax","target":"factor","value":"1"}
-
-{"attribute":"SliderStep","target":"factor","value":"0.1"}
-
-{"attribute":"Equation","target":"factor","value":"1"}
-
-And we'll add a slider to the [factor] to make it easy to adjust its values.
-
-DIAGRAM
-
-With this version of the model you can vary the values of [factor] to get a sense of the impact the [factor] has on the growth of [stuff]].
-
-RESULTS
+{"title": "Feedback Dependent Growth with Control", "description": "We're now going to add a factor to the previous model so you can control the extent to which the stock influences the flow.", "load": "http://insightmaker.com/insight/5887"}
 
 # End Model
 
@@ -243,86 +131,15 @@ Other values for \u{Time Step} produce less correct answers because 1 is the val
 
 This model just developed is the standard reinforcing growth model depicted at the beginning of this chapter. In the process of arriving at this model the linear growth was developed first, and then evolved. Hopefully through the exercises to this point you have gained a deeper understanding of how this structure works and the extent to which it may be applied to various situations.
 
-## Common Property # 2 ##
-
-Look at the activities depicted by the images in Figure 13 and ask yourself what it is that these activities have in common. The images represent very different kinds of activities though there is a characteristics they all have in common. Have you figured it out?
-
-![Figure 13. Common Property # 2](02-im-6120.png)
-
-[** Figure 13](http://www.insightmaker.com/insight/6120)
-
-Each activity depicted in Figure 13 represents the pursuit of some goal or objective. Admittedly the goals are very different and each is pursued in a very different manner.
-
 ## Constructing a Balancing/Goal Seeking Structure ##
 
 A Balancing/Goal Seeking structure is one where there is a difference between two values and the activity of relationships works to develop a balance between the two values. Essentially what the structure does is move the \p{Current} value to the value of the \p{Goal}.
 [** This model was fixed 13.07.25
 # Model
 
-{"title": "Balancing/Goal Seeking Model", "description": "As we have done repeatedly to this point we begin with a linear model consisting of a flow and a stock, along with a flow rate variable. To this we simply have to add a goal and the appropriate feedback and we end up with a goal seeking model."}
-
-{"geometry":{"x":480,"y":160,"width":100,"height":40},"name":"Current","create":"Stock"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":280,"y":180},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Current","name":"Flow","create":"Flow"}
-
-{"geometry":{"x":260,"y":260,"width":120,"height":50},"name":"factor","create":"Variable"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"factor","omega":"Flow","create":"Link"}
-
-First we build the linear accumulator model with a control factor.
-
-DIAGRAM
-
-{"geometry":{"x":270,"y":20,"width":120,"height":50},"name":"Goal","create":"Variable"}
-
-{"geometry":{"x":450,"y":60,"width":120,"height":50},"name":"Gap","create":"Variable"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Goal","omega":"Gap","create":"Link"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Current","omega":"Gap","create":"Link"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Gap","omega":"Flow","create":"Link"}
-
-Now we add a goal and compare the goal to the current value.
-
-DIAGRAM
-
-When you look at the model admittedly we added [Gap] which we haven't addressed before. This was done so we could explicitly plot the difference between the value of [Current] and [Goal].
-
-{"attribute":"InitialValue","target":"Current","value":"0"}
-
-{"attribute":"Equation","target":"Goal","value":"1"}
-
-{"attribute":"Equation","target":"Gap","value":"[Goal]-[Current]"}
-
-{"attribute":"Equation","target":"Flow","value":"[Gap]*[factor]"}
-
-Create the slider to adjust the [factor] value and set it to 0.5.
-
-{"attribute":"ShowSlider","target":"factor","value":"true"}
-
-{"attribute":"SliderMax","target":"factor","value":"1"}
-
-{"attribute":"SliderStep","target":"factor","value":"0.1"}
-
-{"attribute":"Equation","target":"factor","value":"0.5"}
-
-{"attribute":"TimeLength","value":"10"}
-
-{"attribute":"TimeStep","value":"0.5"}
-
-{"attribute":"TimeUnits","value":"Hours"}
-
-RESULTS
-
-Take a look at the Time Settings for the model and you'll see that the model was set up to run from 0 to 10 with a [Time Step] of 0.5 and a [Units] of hours. These were just selected to create a generic model where you could consider the Goal to be 100% and the other values as having values between 0 and 100%. This way we can consider the implications of the interactions without getting hung up on the actual values.
-
-The graph shows that as [Current] moves toward the [Goal] the [Gap] decreases as does [Change] which is moving [Current] in the direction of [Goal]. Once [Current] reaches [Goal] the [Gap] is zero is [Change]. This structure endeavors to remove the tension between [Current] and [Goal], the [Gap], to bring a balance to the situation.
+{"title": "Balancing/Goal Seeking Model", "description": "As we have done repeatedly to this point we begin with a linear model consisting of a flow and a stock, along with a flow rate variable. To this we simply have to add a goal and the appropriate feedback and we end up with a goal seeking model.", "load": "http://insightmaker.com/insight/6168"}
 
 # End Model
-
-[** Balancing/Goal Seeking](http://insightmaker.com/insight/6168)
-
 ~ Exercise
 
 Run the above model with various values for factor. What do you notice about the relation between \p{Current} and \p{Gap}? And what do you notice about the curves as the factor gets larger and larger?
@@ -347,21 +164,7 @@ The following model presents a modification to the previous model where the fact
 
 # Model
 
-{"title": "Work Completion Model", "description": "In this model [Workers] is not a factor but a limit on the amount of [work] that can be performed in a time period."}
-
-{"load": "http://insightmaker.com/insight/6171"}
-
-DIAGRAM
-
-Settings for the model are: Project Days Work = 60, Workers = 8 and Days Work Completed set at the default of zero and Time Step = 1.
-
-RESULTS
-
-The reason the graph looks like this is because of the constraint placed on the the work by the number of Workers available. This is accomplished by the formula embedded in the flow.
-
-*[Work] = IfThenElse([Work Remaining] > [Workers],[Workers],[Work Remaining])*
-
-This says that if there is more [Work Remaining] than there are [Workers] available to do the work then the amount of work that day equals the number of [Workers]. This goes on for the first 7 days then on the 8th day there are only four days work required to finish the project which is represented by the different slope on the line on the 8th day. You can see this in detail if you look at the Tabular Display.
+{"title": "Work Completion Model", "description": "In this model [Workers] is not a factor but a limit on the amount of [work] that can be performed in a time period.", "load": "http://insightmaker.com/insight/6171"}
 
 # End Model
 

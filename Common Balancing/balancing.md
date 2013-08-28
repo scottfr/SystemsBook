@@ -12,17 +12,7 @@ A Limits to Results structure represents a situation where a Balancing Loop movi
 
 # Model
 
-{"title": "Limits to Results", "description": "A balancing loop seldom progresses simply based on the difference between the [current state] and the [desired state]."}
-
-{"load": "http://insightmaker.com/insight/543"}
-
-DIAGRAM
-
-Initial settings are: [current state] = 0, [desired state] = 1, [limit] = 0.3 and [action] = IfThenElse([gap] > [limit], [limit], [gap])
-
-RESULTS
-
- Action is a constant value until the gap < limit. The choppy nature of the diagram will be addressed in the exercise below.
+{"title": "Limits to Results", "description": "A balancing loop seldom progresses simply based on the difference between the [current state] and the [desired state].", "load": "http://insightmaker.com/insight/543"}
 
 # End Model
 
@@ -58,47 +48,7 @@ If you look at the Balancing Loop with Delay structure it looks identical to the
 
 # Model
 
-{"title": "The Fix Overshoots The Goal", "description": "Lets take a look at the implications of varying delays on the effect of a balancing loop."}
-
-{"load": "http://insightmaker.com/insight/133"}
-
-DIAGRAM
-
-Notice in the stock & flow structure the delay has been placed between the current state and the gap. The delay could have just as well been between the gap and action or there could have been a delay between the action and the actual change of the current state though this one is a bit more difficult to structure.
-
-Notice the action flow in the diagram actually has an arrow at both ends. Click on the flow and notice the Configuration section of the configuration panel indicates Only Positive Rates is set to No. This means that the flow can flow in either direction based on whether the results of the equation are positive or negative.
-
-Initial parameters are [currents state] = 0, [action factor] = 0.5, [desired state] = 1 and [Time Step] = 0.25
-
-{"attribute":"Equation","target":"time delay","value":"0"}
-
-RESULTS
-
-With [Time Delay] = 0 the results are simply those of the standard balancing loop.
-
-{"attribute":"Equation","target":"time delay","value":"0.25"}
-
-RESULTS
-
-Notice that now with a delay the change in the gap and action are delayed for one time period and then the current state actually overshoots the goal and a negative action is required to bring the current state back to the goal.
-
-{"attribute":"Equation","target":"time delay","value":"2"}
-
-RESULTS
-
-With a longer time delay the overshoot is even more severe though after a few time periods the current state actually will reach the goal.
-
-{"attribute":"Equation","target":"time delay","value":"3"}
-
-RESULTS
-
-We've now reached a delay where the action is so out of sync with an awareness of the results that the goal is never reached and the current state continually oscillates around the goal.
-
-{"attribute":"Equation","target":"time delay","value":"3.5"}
-
-RESULTS
-
-Now the situation is described as being out of control because rather oscillations continue to get worse because of the length of the time delay.
+{"title": "The Fix Overshoots The Goal", "description": "Lets take a look at the implications of varying delays on the effect of a balancing loop.", "load": "http://insightmaker.com/insight/133"}
 
 # End Model
 
@@ -125,27 +75,7 @@ Have you ever noticed how difficult it is to bring the best of intentions to fru
 
 # Model
 
-{"title": "Drifting Goals", "description": "If it takes an extended period of time to achieve a goal there is a tendency to settle for achieving a lesser goal."}
-
-{"load": "http://insightmaker.com/insight/984"}
-
-DIAGRAM
-
-Again we have two balancing loops which each provide a goal for the other and because of the delays in the time it takes for the action to produce results one goal overrides the other. What I Want server as the goal for B1 and Pressure to Settle for Less serves as the goal for B2.
-
-The initial settings are: [desried state] = 1, [current state] = 0, [pct chg fact] = 0.2, [Time Step] = 0.5.
-
-{"attribute":"Equation","target":"goal chg fact","value":"0"}
-
-RESULTS
-
-With [goal chg fact] = 0 the results are those of the simple balancing loop.
-
-{"attribute":"Equation","target":"goal chg fact","value":"0.1"}
-
-RESULTS
-
-In this example with the extent to which the goal drifted is about 30% which is very significant. The extent to which the goal drifts is very dependent on the [pct chg fact] and the [goal chg fact] variable.
+{"title": "Drifting Goals", "description": "If it takes an extended period of time to achieve a goal there is a tendency to settle for achieving a lesser goal.", "load": "http://insightmaker.com/insight/984"}
 
 # End Model
 
@@ -175,27 +105,7 @@ Have you noticed how often your best intentions go awry? You set out to fix a pr
 
 # Model
 
-{"title": "Fixes that Fail", "description": "This structure consists of a balancing loop intended to achieve a particular result which is foiled by an insidious reinforcing loop."}
-
-{"load": "http://insightmaker.com/insight/549"}
-
-DIAGRAM
-
-The action of the Goal Seeking loop (B1) also influences, after some delay, unexpected consequences which diminishes the migration of the current sate in the direction of the desired state and creates the reinforcing loop (R2).
-
-We begin with initial settings of [desired state] = 1, [current state] = 0, [action factor] = 0.5, [ucd factor] = 1 and [Time Step] = .5
-
-{"attribute":"Equation","target":"uc factor","value":"0"}
-
-RESULTS
-
-With [uc factor] = 0 there is no unexpected consequences and therefor the value of [ucd factor] is irrelevant and the structure is essentially a standard goal seeking balancing loop (B1).
-
-{"attribute":"Equation","target":"uc factor","value":"0.2"}
-
-RESULTS
-
-As the value of uc factor increases unexpected consequences will increase more rapidly and have a more marked impact on the current state as long as the value of ucd factor remains constant.
+{"title": "Fixes that Fail", "description": "This structure consists of a balancing loop intended to achieve a particular result which is foiled by an insidious reinforcing loop.", "load": "http://insightmaker.com/insight/549"}
 
 # End Model
 
@@ -227,37 +137,7 @@ How many times have you noticed that there are some problems that seem to be add
 
 # Model
 
-{"title": "Shifting the Burden", "description": "This model demonstrates the difference between treating the symptoms and actually solving the problem."}
-
-{"load": "http://insightmaker.com/insight/1005"}
-
-DIAGRAM
-
-Given a [Problem Symptom] resulting from a [problem cause] can be addressed by a [symptomatic solution] or a [Fundamental Solution]. The [symptomatic solution] is generally being easier to implement while the [Fundamental Solution] takes time to develop. Implementing the [symptomatic solution] also tends to promote a [Side Effect] which detracts from the development of the [Fundamental Solution].
-
-For a first run we set [sum fact] = 0.5, [prob fact] = 0.5, and a [Time Step] = 0.25 and we set [fund fact] = 0 to disable the [Fundamental Solution] and [side effect fact] = 0 to disable the [Side Effect].
-
-RESULTS
-
-The [problem cause] results in an increase in the [Problem Symptom] until it reaches a level where it needs to be dealt with and the [symptomatic solution] is applied. This removes the [Problem Symptom] though has no affect on the [problem cause] so the [Problem Symptom] again begins to increase until it reaches a point where the [symptomatic solution] is again applied. Unless something else changes this will repeat endlessly.
-
-Now we set [fund fact] = 0.2 so the [Fundamental Solution] is also developed while the [symptomatic solution] is being applied.
-
-{"attribute":"Equation","target":"fund fact","value":"0.2"}
-
-RESULTS
-
-Notice that now the [symptomatic solution] is implemented twice as the [Fundamental Solution] is being developed. Once the [Fundamental Solution] develops it diminishes the [problem cause] to a point where the [Problem Symptom] no longer develops. When this is reached the [symptomatic solution] will not need to be implemented again in the future.
-
-For the next run we set [side effect fact] = 0.2 to investigate the impact of the [Side Effect] on the situation. We're also setting [Time Length] = 20 to investigate a longer time period.
-
-{"attribute":"Equation","target":"side effect fact","value":"0.2"}
-
-{"attribute":"TimeLength","value":"20"}
-
-RESULTS
-
-The result shows that with the development of the [Side Effect] depresses the development of the [Fundamental Solution]. The result of this is that the [symptomatic solution] has to be repeatedly applied though at a declining frequency. It is expected that if we look at a longer period of time the [Fundamental Solution] would develop to a point where the [symptomatic solution] will no longer need to be applied.
+{"title": "Shifting the Burden", "description": "This model demonstrates the difference between treating the symptoms and actually solving the problem.", "load": "http://insightmaker.com/insight/1005"}
 
 # End Model
 

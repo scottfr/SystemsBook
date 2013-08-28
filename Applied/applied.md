@@ -34,21 +34,23 @@ In contrast, well grounded and proven approaches to problem solving have not bee
 
 Whether we’re considering a problem, a situation, an objective, or a desire, the underlying essence of the manner in which we proceed to deal with it is the essentially the same.
 
-![Figure 1. The Future We Create](ap-im-443.png)
+# Model
 
-[** Figure 1](http://insightmaker.com/insight/443)
+{"title": "The Future We Create", "description": "Solving problems without creating new ones.", "load": "http://insightmaker.com/insight/443"}
 
-Given a situation that we consider warrants attention we first need to develop an understanding. An understanding that will enable us to develop a strategy which actually improves the situation while minimizing unintended consequences. Our desire to minimize unintended consequences is based on our experiences. We have learned that unintended consequences typically make the initial situation worse or end up creating new problems that we ourselves or others have to figure out how to deal with. A well crafted strategy well executed can serve to minimize unintended consequences; although whatever unintended consequences still arise are likely to make the situation worse or result in new problems. The total elimination of unintended consequences is generally impossible.
+# End Model
 
-Whether we realize it or not Fig. 1 can be applied to just about everything that happens in our lives. Even when we don’t consciously think about it the interactions depicted in Fig. 1 are operating. The extent to which people consciously think about these relations varies. Some people think about the implication of their actions and stop there. And some people think about the implications of implications of implications. They do this because they understand that things are highly interconnected and the implications are difficult to foresee.
+Whether we realize it or not this model can be applied to just about everything that happens in our lives. Even when we don’t consciously think about it the interactions depicted in Fig. 1 are operating. The extent to which people consciously think about these relations varies. Some people think about the implication of their actions and stop there. And some people think about the implications of implications of implications. They do this because they understand that things are highly interconnected and the implications are difficult to foresee.
 
 ### Strategy ###
 
 Given the realization that there is an underlying set of interactions as depicted in Fig. 1 which is essentially the foundation of all our endeavors, seeking a deeper awareness of how we develop the requisite understanding would seem a sensible undertaking. An introduction to developing this understanding is depicted in Fig. 2.
 
-![Figure 2. The Future We Create](ap-im-1366.png)
+# Model
 
-[** Figure 2](http://insightmaker.com/insight/1366)
+{"title": "Systemic Strategy", "description": "Relevant pieces of the puzzle", "load": "http://insightmaker.com/insight/1366"}
+
+# End Model
 
 Fig. 2 represents an iterative unfolding of understanding intended to provide the basis for developing a strategy which, when implemented, is highly likely to address the situation of interest as intended, while minimizing the likelihood of unintended consequences or creating new problems.
 

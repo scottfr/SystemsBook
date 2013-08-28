@@ -79,34 +79,6 @@ The guidelines are far too much to memorize though if you refer to them as a che
 
 Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?
 
-# Model
-
-{"title": "Going to Grandma's House", "description": "Little Red Riding Hood want's to know how long it will take her to get to Grandma's house if she walks at 2 miles per hour and Grandma's house is 4.5 miles away through the woods."}
-
-{"geometry":{"x":190,"y":180,"width":120,"height":40},"name":"Distance to Grandmas House","create":"Stock"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"targetPoint":{"x":540,"y":80}},"alpha":"Distance to Grandmas House","omega": null,"name":"Walk","create":"Flow"}
-
-{"attribute":"ShowSlider","target":"Distance to Grandmas House","value":"true"}
-
-{"attribute":"SliderMax","target":"Distance to Grandmas House","value":"10"}
-
-{"attribute":"SliderStep","target":"Distance to Grandmas House","value":"0.5"}
-
-{"attribute":"ShowSlider","target":"Walk","value":"true"}
-
-{"attribute":"SliderMax","target":"Walk","value":"5"}
-
-{"attribute":"SliderStep","target":"Walk","value":"0.1"}
-
-DIAGRAM
-
-In this statement what is to be figured out is very easy to identify. Sometimes it's not so easy and you have to dig a little. This figure represents a simple model of Little Red Riding Hood walking to Grandma's house. While this may look like a rather trivial model there are several aspects of this model that warrant a few notes, and some of them we've not considered before.
-
-# End Model
-
-[** Going to Grandma's House](http://insightmaker.com/insight/6767)
-
 ## Setting Units ##
 
 If you click on the stock and look at the configuration panel you'll notice that the last item in the list, \a{Units}, has a value of unitless. Units were not addressed in the first three chapters as they are so important we wanted to ensure we could provide them the focus they deserve. You use units to help ensure that your models are sound. Not that units will guarantee that your model is sound, though if the units don't work out right you can be sure there's a problem, so Insight Maker checks them for you.
@@ -115,19 +87,13 @@ Figure 5 shows the Configuration Panel for the stock where Units is assigned a v
 
 ![Figure 5. Units for Distance to Grandma's House in miles](04-im-6767.png)
 
-[** Figure 5](http://www.insightmaker.com/insight/6767)
-
 If you click on the flow and look at the configuration panel you'll notice that the Units for walk is miles/hour as depicted in Figure 6. A flow represents the movement of something during a time period which is why this is 1/hours.
 
 ![Figure 6. Units for Walk is in miles/hour](04-im-6767a.png)
 
-[** Figure 6](http://www.insightmaker.com/insight/6767)
-
 The flow has a units of hours as that's what will be set up in \u{Time Settings} as the \u{Time Units} for the model. All the time settings are shown in Figure 7.
 
 ![Figure 7. Time Settings for Walk to Grandma's House](04-im-6767b.png)
-
-[** Figure 7](http://www.insightmaker.com/insight/6767)
 
 You might now be asking, how the \p{Walk} in miles/hour gets turned in to \p{Distance to Grandma's} in miles? Because we've selected a \a{Time Step} of 0.5 each simulation step multiplies 0.5 hours x 2 miles/hour to get 1 mile traveled each time step. And the units are consistent. Later you can try changing the \u{Time Units} and running the model to see how that affects the answers. It's not actually this simple though with a constant flow rate this description is close enough.
 
@@ -145,63 +111,7 @@ There are a large number of units predefined in Insight Maker. If you click in t
 
 # Model
 
-{"title": "Going to Grandma's House Revisited", "description": "Now that we've talked about Units we can finish up this model and run it."}
-
-{"load": "http://insightmaker.com/insight/6767"}
-
-DIAGRAM
-
-{"attribute":"Units","target":"Distance to Grandmas House","value":"miles"}
-
-{"attribute":"Units","target":"Walk","value":"miles/hour"}
-
-{"attribute":"TimeLength","value":"5"}
-
-{"attribute":"TimeStep","value":"0.5"}
-
-{"attribute":"TimeUnits","value":"Hours"}
-
-RESULTS
-
-The model is that same as the previous model though we've added values so Red is actually walking. From the graphic it should be evident that there are some enhancements that need to be made to our Going to Grandma's House model. 
-
-# End Model
-
-It's evident that Red didn't stop when she got to Grandma's house, and one might wonder where she ended up after 5 hours of walking. It appears that at 2 hours Red was 0.5 miles from Grandma's House and at 2.5 hours she was 0.5 miles past Grandma's House. That there is no time with the Distance to Grandma's House equal to zero indicates that the time step is to large for the relationships in the model. 
-
-~ Exercise
-
-Run this model with a Time Step of 0.25 and 0.125 and from the Tabular Display which Time Step do you think is most appropriate and why?
-
-~ Answer
-
-Hopefully you found that both 0.25 and 0.125 produced a step with a distance to Grandma's House of 0 at 2.25 hours. In finding no difference between the results for 0.25 and 0.125 you should have concluded that 0.25 was a small enough for this model. Smaller is not always better. In this case it just makes the model run for more steps.
-
-~ End Exercise
-
-[** Fixed to this model on 13.07.25]
-
-# Model
-
-{"title": "Stopping At Grandma's", "description": "We'll begin with the previous model and add an option that tells the model to stop when Red actually gets to Grandma's."}
-
-{"load": "http://insightmaker.com/insight/6778"}
-
-{"geometry":{"x":390,"y":170,"width":120,"height":50},"name":"Stop at Grandmas","create":"Variable"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Distance to Grandmas House","omega":"Stop at Grandmas","create":"Link"}
-
-{"attribute":"Equation","target":"Stop at Grandmas","value":"IfThenElse([Distance to Grandmas House] < {0 miles}, STOP, 0)"}
-
-DIAGRAM
-
-We've add a variable to check whether Red is at Grandma's or not, and if she is the simulation should stop.
-
-*IfThenElse([Distance to Grandmas House] < {0 miles}, STOP, 0)*
-
-RESULTS
-
-With Time Step = 0.25 and the test you can see that Red stops at Grandma's House after 2.25 hours of walking.
+{"title": "Stopping At Grandma's", "description": "We'll begin with the previous model and add an option that tells the model to stop when Red actually gets to Grandma's.", "load": "http://insightmaker.com/insight/6778"}
 
 # End Model
 
@@ -239,50 +149,6 @@ If one can put money in an investment account and it grows over time, and it gro
 
 The following is intended to be another example of he development of a model, though somewhat more involved than the previous one. Here's the initial question describing what I'd like to understand.
 
-# Model
-
-{"title": "Why Aren't We All Rich/Initial Setup", "description": "We begin with the simplest model possible relevant to the question."}
-
-{"geometry":{"x":260,"y":300,"width":100,"height":40},"name":"Investment Account","create":"Stock"}
-
-{"geometry":{"x":460,"y":230,"width":120,"height":50},"name":"Initial Deposit","create":"Variable"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Initial Deposit","omega":"Investment Account","create":"Link"}
-
-First we create the Investment Account and the Initial Deposit and assign the appropriate units.
-
-{"attribute":"InitialValue","target":"Investment Account","value":"[Initial Deposit]"}
-
-{"attribute":"Units","target":"Investment Account","value":"Dollars"}
-
-{"attribute":"Units","target":"Initial Deposit","value":"Dollars"}
-
-{"attribute":"ShowSlider","target":"Initial Deposit","value":"true"}
-
-{"attribute":"SliderMax","target":"Initial Deposit","value":"500"}
-
-{"attribute":"SliderStep","target":"Initial Deposit","value":"100"}
-
-{"attribute":"Equation","target":"Initial Deposit","value":"100"}
-
-{"attribute":"Units","target":"Initial Deposit","value":"Dollars"}
-
-{"attribute":"TimeLength","value":"36"}
-
-{"attribute":"TimeStep","value":"1"}
-
-{"attribute":"TimeUnits","value":"Months"}
-
-DIAGRAM
-
-All the model does at the moment is assign the Initial Deposit to the Investment Account at the beginning of the simulation.
-
-RESULTS
-
-# End Model
-
-[** Why Aren't We All Rich v0](http://insightmaker.com/insight/6780)
-
 This figure presents the initial set up for this model.
 
 - **Investment Account**. represents the amount of money, in Dollars, in the account. If you look at the Configuration Panel you'll notice that Units are set to Dollars.
@@ -297,82 +163,6 @@ Before you run a model you should develop a sense of the result you expect from 
 
 You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict though after you add several elements to a model and it doesn't work and you spend hours trying to figure out why you may have a better appreciation for this guideline.
 
-----------
-
-# Model
-
-{"title": "Why Aren't We All Rich/Interest", "description": "We begin with the previous model and add components to calculate monthly interest."}
-
-{"load": "http://insightmaker.com/insight/6783"}
-
-DIAGRAM
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":100,"y":150},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Investment Account","name":"Interest","create":"Flow"}
-
-{"attribute":"Units","target":"Interest","value":"Dollars/Month"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"points":[{"x":330,"y":80},{"x":280,"y":70},{"x":230,"y":80}]},"alpha":"Investment Account","omega":"Interest","create":"Link"}
-
-{"geometry":{"x":80,"y":240,"width":120,"height":50},"name":"Annual Interest Rate","create":"Variable"}
-
-Interest is a product of the Investment Account and the Monthly Interest Rate.
-
-{"attribute":"ShowSlider","target":"Annual Interest Rate","value":"true"}
-
-{"attribute":"SliderMax","target":"Annual Interest Rate","value":"0.1"}
-
-{"attribute":"SliderStep","target":"Annual Interest Rate","value":"0.01"}
-
-{"attribute":"Units","target":"Annual Interest Rate","value":"1/Year"}
-
-{"attribute":"Equation","target":"Annual Interest Rate","value":"0.02"}
-
-{"target":"Annual Interest Rate","geometry":{"x":80,"y":240,"width":120,"height":50}}
-
-{"geometry":{"x":280,"y":240,"width":120,"height":50},"name":"Months per Year","create":"Variable"}
-
-{"attribute":"Equation","target":"Months per Year","value":"12"}
-
-{"attribute":"Units","target":"Months per Year","value":"Months/Year"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Annual Interest Rate","omega":"Interest","create":"Link"}
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100},"alpha":"Months per Year","omega":"Interest","create":"Link"}
-
-{"attribute":"FlowRate","target":"Interest","value":"[Investment Account] * ([Annual Interest Rate]/[Months per Year])"}
-
-{"geometry":{"x":270,"y":100,"width":30,"height":30},"name":"R1","create":"Picture"}
-
-{"attribute":"Image","target":"R1","value":"Positive Feedback Counterclockwise"}
-
-{"target":"R1","geometry":{"x":270,"y":100,"width":30,"height":30}}
-
-DIAGRAM
-
-[Annual Interest Rate], as depicted above, is the rate that will be used to compute the interest on the account on a yearly basis. Note the a slider has been included with a .01 step size to make it easy to test different values. Units is 1/year as this is the per year interest rate.
-
-[Months Per Year], as depicted in the figure, is just the number of months per year, a fixed constant of 12, to be used to convert the Annual Interest Rate to a monthly interest rate. The Units for this variable are Months/Year.
-
-[Interest] contains the calculation for the Interest at each step of the simulation. The Units for interest are Dollars/Month which is derived from the formula.
-
-[Interest] = [Investment Account] * ([Annual Interest Rate]/[Months per Year])
-
-In Units: Dollars * (1/Year) / (Months/Year) = Dollars/Month
-
-And as the simulation sums Dollars/Month over months the result added to the Investment Account is in Dollars which is consistent with the units specified for the Investment Account stock.RESULTS
-
-[R1] makes use of the Picture primitive used to indicate that the relationship between Investment Account and Interest created a Reinforcing structure, with the 1 simply meaning it's the first one in the model.
-
-RESULTS
-
-The run of this model over the three years with a 2% annual interest rate still isn't very interesting though it does show a growth in the Investment Account as expected. Admittedly $6 dollars in interest wouldn't seem like much of an incentive to invest in a investment account for three years. Though there are several additional aspects of the Investment Account that we might take into consideration.
-
-# End Model
-
-----------
-
-### Modeling Tips ###
-
 Making all the elements of a model visible makes it much easier for others to understand it. This is why Months per Year and Initial Deposit were created as explicit variables rather than embedding the valued inside other elements.
 
 And what's definitely worth repeating is that providing comments for all the elements of a model will also make it much easier for others to understand. All one need do is mouse over an element and click on the "i" that appears to read the comment.
@@ -382,82 +172,6 @@ You have the option of adding notes to the Picture element and there are a numbe
 The other option is that you can put a URL in this field for an image somewhere on the web and that image will be displayed and may be resized.
 
 ----------
-
-# Model
-
-{"title": "Why Aren't We All Rich/Monthly Deposits", "description": "One typically adds to an investment account on a regular basis."}
-
-{"load": "http://insightmaker.com/insight/6788"}
-
-DIAGRAM
-
-{"geometry":{"x":0,"y":0,"width":100,"height":100,"sourcePoint":{"x":370,"y":10},"targetPoint":{"x":0,"y":100}},"alpha":null,"omega":"Investment Account","name":"Monthly Deposit","create":"Flow"}
-
-Beginning with the previous model we now add [Monthly Deposit] with a slider so we can adjust the value for different runs.
-
-{"attribute":"Units","target":"Monthly Deposit","value":"Dollars/Month"}
-
-{"attribute":"ShowSlider","target":"Monthly Deposit","value":"true"}
-
-{"attribute":"SliderStep","target":"Monthly Deposit","value":"5"}
-
-{"attribute":"FlowRate","target":"Monthly Deposit","value":"75"}
-
-{"attribute":"TimeLength","value":"360"}
-
-{"attribute":"Equation","target":"Annual Interest Rate","value":"0.1"}
-
-RESULTS
-
-The simulation lenght to 30 years, or 360 months and [Annual Interest Rate] has been changed to 10% because one is likely to find an investment account that will average 10% over a period of 30 years, or so it would seem based on Whitfield & Co[1]. This result is significantly different than the previous version of the model though is it enough to retire on? Not likely.
-
-{"attribute":"TimeLength","value":"480"}
-
-{"attribute":"FlowRate","target":"Monthly Deposit","value":"100"}
-
-RESULTS
-
-Suppose we change to 40 years and with $100 Dollars/Month recurring deposits. This shows a significant difference between $160 thousand dollars and $640 thousand dollars. The difference being based on what you are willing to invest and for how long.
-
-# End Model
-
-It's best if we don't lose sight of the initial question, that being why more people employ this model and become rich. Part of the difference between the previous model and this one is the extra $30 dollars/month in periodic deposits. One of the difficulties is finding the money to deposit on a monthly basis.
-
-# Model
-
-{"title": "Why Aren't We All Rich/Income & Expenses", "description": "In this version of the model we add elements to show where the Monthly Deposit comes from."}
-
-{"load": "http://insightmaker.com/insight/6794"}
-
-DIAGRAM
-
-The Monthly Deposit is just the difference between Income and Expenses.
-
-RESULTS
-
-The results from this model are the same as the previous model though with the added definition of where the Monthly Deposit comes from.
-
-# End Model
-
-Based on this model if one wants to increase the monthly deposits then it is necessary to increase Income or decrease Expenses as the Monthly Deposits are what's left over. Part of the difficulty is that when one has money the tendency seems for most to spend it rather than save it.
-
-There are a couple additional aspects related to deposits that should be mentioned though won't actually be added to the model. Many companies allow employees to have payroll deductions directly deposited into a retirement account. This helps take care of the problem of having the money and spending it rather than depositing it in the investment account. Also, at least in the US their are tax laws that allow for the investment of some amount of pretax fund, money that you don't have to pay taxes on, to be placed in an investment account. The idea being that you would withdraw the money sometime in the future when you're in a lower tax bracket. Some companies will even match a portion of your investment account deposits up to a certain amount each year. These options, which you could add to the model, would increase the resultant funds available at the end of the simulation.
-
-The question we started with was that is this approach can be used to amass a sizable amount of money then why aren't more people using it to become well off. Part of the answer had to do with the idea that with money in their pocket people are more likely to spend it than save it even though there are incentives to save it.
-
-# Model
-
-{"title": "Why Aren't We All Rich/Attractiveness", "description": "The next version of the model provides an enhancement to add Withdrawal and Penalty flows with some associated variables which are described below."}
-
-{"load": "http://insightmaker.com/insight/6827"}
-
-DIAGRAM
-
-With a 50% Determination to Save and an 8% Penalty you notice a very distinct decrease in the dollars actually saved.
-
-RESULTS
-
-# End Model
 
 **Penalty** is levied by the Government if the funds are withdrawn before you reach 59 1/2 and is meant to be an encouragement to save. The % Penalty is a variable with a slider defined to you can test the value during runs. The Units for Penalty are Dollars/Month.
 
@@ -557,13 +271,7 @@ In Chapter 1 a model which revealed the dynamic relationship between the populat
 
 # Model
 
-{"title": "Moose and Wolves Revisited", "description": "The populations of Moose and Wolves are dynamically linked."}
-
-{"load": "http://insightmaker.com/insight/8590"}
-
-DIAGRAM
-
-DISPLAY
+{"title": "Moose and Wolves Revisited", "description": "The populations of Moose and Wolves are dynamically linked.", "load": "http://insightmaker.com/insight/8590"}
 
 # End Model
 

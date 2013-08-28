@@ -14,31 +14,7 @@ A Limits to Growth Systems Archetype consists of a Reinforcing Loop, the growth 
 
 # Model
 
-{"title": "Limits to Growth", "description": "The natural exponential growth of the reinforcing structure is restricted by a balancing loop."}
-
-{"load": "http://insightmaker.com/insight/551"}
-
-DIAGRAM
-
-The structure is such that the action produces results which add to the action, the typical reinforcing structure. factor is just a value between 0 and 1 to allowing the variance of the rate of interaction. The balancing structure B2 is such that the slowing action drains from the results once the results actually reach the level of the limiting factor. The slowing factor is similar to factor in that allows for control of the rate of interaction.
-
-[slowing] = IfThenElse([results] > [limiting factor], ([results] - [limiting factor]) * [slowing factor], 0)
-
-RESULTS
-
-With a [slowing factor] = 0 the balancing loop is disabled and the typical exponential growth curve is displayed.
-
-{"attribute":"Equation","target":"slowing factor","value":"0.5"}
-
-RESULTS
-
-With a [slowing factor] = 0.5 and a [limiting factor] = 10 it is evident that the [results] are significantly diminished from the previous results.
-
-{"attribute":"Equation","target":"slowing factor","value":"1.0"}
-
-RESULTS
-
-Now it's quite evident that the slowing action has actually affected the result to such an extent that it's no longer growing.
+{"title": "Limits to Growth", "description": "The natural exponential growth of the reinforcing structure is restricted by a balancing loop.", "load": "http://insightmaker.com/insight/551"}
 
 # End Model
 
@@ -92,29 +68,7 @@ The problem arises when either A or B does something that promotes their own suc
 
 # Model
 
-{"title": "Accidental Adversaries", "description": ""}
-
-{"load": "http://insightmaker.com/insight/178"}
-
-DIAGRAM
-
-A Activity contributes to B Success and B Activity contributes to A Success and we have a reinforcing structure R1
-
-Initial settings of [A Success] = 1, [B Success] = 1, [A to A Ctrl] = 0, and [B t B Ctrl] = 0 and [Time Step] = 1.
-
-RESULTS
-
-With the initial setting the inner loops are essentially turned off so the results are simply the result of the outer reinforcing loop R1.
-
-Now because A likes it's success it begins acting to promote it's own success. The difficulty is that these activities by A detract from B's success so B responds to make corrections by promoting it's own success.
-
-{"attribute":"Equation","target":"A to A Ctrl","value":"0.3"}
-
-{"attribute":"Equation","target":"B to B Ctrl","value":"0.2"}
-
-RESULTS
-
-Here we can see that the total results of A and B are actually less than they would have been were they cooperating. With A acting to promote it own success its actions diminish B Success and B will then expend energy attempting to compensate for the action by A. And then A will act to compensate for the actions by B which tend to inhibit the success of B. Thus we have a vicious cycle where the two were far better off cooperating.
+{"title": "Accidental Adversaries", "description": "When the synergy isn't!", "load": "http://insightmaker.com/insight/178"}
 
 # End Model
 
@@ -151,27 +105,7 @@ A Tragedy of the Commons situation exists whenever two or more activities, each,
 
 # Model
 
-{"title": "Tragedy of the Commons", "description": "The following model will compare two levels of resource usage for a given set of available resources."}
-
-{"load": "http://insightmaker.com/insight/560"}
-
-DIAGRAM
-
-Initial settings are [a result] = 1, [b result] = 2, [resources available] = 50, [a factor] = 0.4, [b factor] = 0.4, [replenishment rater] = 50
-
-RESULTS
-
-With these settings growth in [a result] and [b result] ensures that the total activity will exceed the carrying capacity of the resources.
-
-Let's see what happens with an increased resource utilization, which is likely as both the [a result] and [b result] promote more of the same.
-
-{"attribute":"Equation","target":"b factor","value":"0.8"}
-
-{"attribute":"Equation","target":"b factor","value":"0.8"}
-
-RESULTS
-
-Notice that both A and B demonstrate exponential behavior until they diminish resources to the replenishment rate. At that time they them begin to demonstrate linear growth as they are limited by the replenishment rate. B result begins greater than A result and grows even faster than A because it consumes more resources.
+{"title": "Tragedy of the Commons", "description": "The following model will compare two levels of resource usage for a given set of available resources.", "load": "http://insightmaker.com/insight/560"}
 
 # End Model
 
