@@ -4,7 +4,7 @@ In previous chapter you worked two types of models qualitative models, i.e., no 
 
 # Model
 
-{"title": "Three Types of Models", "description": "Different though each aiding understanding.", "load": "http://insightmaker.com/insight/"}
+{"title": "Three Types of Models", "description": "Different though each aiding understanding.", "load": "http://insightmaker.com/insight/8932"}
 
 # End Model
 
@@ -173,7 +173,7 @@ DIAGRAM
 
 # Model
 
-{"title": "Systems Thinking: The Essence of And?", "description": "To uncover the system one must continue to seek out the inflences.", "load": "http://insightmaker.com/insight/3365"}
+{"title": "Systems Thinking: The Essence of And?", "description": "To uncover the system one must continue to seek out the influences.", "load": "http://insightmaker.com/insight/3365"}
 
 DIAGRAM
 

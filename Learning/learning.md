@@ -178,7 +178,7 @@ Investigation of a simple Rabbit Population Model can be most informative.
 
 # End Model
 
-- Models are simplified versions of the world around us.
+* Models are simplified versions of the world around us.
 - Simulations are dynamic models that help us understand changes over time.
 - We build models to help us understand and learn.
 - We build simple models and add to them as we learn with them.
@@ -186,7 +186,7 @@ Investigation of a simple Rabbit Population Model can be most informative.
 - We learn as we go and seldom do we get models right the first time.
 - Linear, Reinforcing and Balancing structures are the basic building blocks for all models.
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
-- 
+
 Please continue to the next chapter where you will learn more about different types of models and the Insight Maker environment you have been interacting with.
 
 ## References ##
