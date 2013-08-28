@@ -21,7 +21,7 @@ Hope you found it interesting how unexpected the future can be. Though we also h
 
 All too often the world around us seems so complicated and apparently so difficult to pursue our dreams that we almost want to give up. The answer to complicated is to simplify the complicated and understand complexity. This will happen in very short order.
 
-It has been said that you can learn about riding a bicycle from reading a book though to learn to ride a bicycle you actually have to spend tme on the bicycle. Please experience the next model.
+It has been said that you can learn about riding a bicycle from reading a book though to learn to ride a bicycle you actually have to spend time on the bicycle. Please experience the next model.
 
 # Model
 
@@ -160,6 +160,8 @@ Let us now venture into the realm of trying to fill a swimming pool with water.
 
 # End Model
 
+Investigation of a simple Rabbit Population Model can be most informative.
+
 ## Rabbit Population Growth ##
 
 # Model
@@ -170,6 +172,12 @@ Let us now venture into the realm of trying to fill a swimming pool with water.
 
 ## Summary ##
 
+# Model
+
+{"title": "Similar Structures / Different Behavior", "description": "The behavior of a model depends on the structure as well as the formulas that define the nature of the relationships.", "load": "http://insightmaker.com/insight/5138"}
+
+# End Model
+
 - Models are simplified versions of the world around us.
 - Simulations are dynamic models that help us understand changes over time.
 - We build models to help us understand and learn.
@@ -178,13 +186,6 @@ Let us now venture into the realm of trying to fill a swimming pool with water.
 - We learn as we go and seldom do we get models right the first time.
 - Linear, Reinforcing and Balancing structures are the basic building blocks for all models.
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
-
-# Model
-
-{"title": "Similar Structures / Different Behavior", "description": "The behavior of a model depends on the structure as well as the formulas that define the nature of the relationships.", "load": "http://insightmaker.com/insight/5138"}
-
-# End Model
-
 Please continue to the next chapter where you will learn more about the Insight Maker environment so you can actually build the models that were presented in this chapter.
 
 ## References ##
