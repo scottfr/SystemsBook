@@ -9,7 +9,7 @@
 
 Lewis Carroll - Alice in Wonderland
 
-The interactive learning experience which follows is very much about figuring out where you want to get to, and developing skills to improve your likelihood of getting there. Please open the following model and walk through it to get a sense of the adventure to follow.
+The interactive learning experience you're about to undertake is about figuring out where you want to get to and developing skills to improve your likelihood of getting there. Please open the following model and walk through it to get a sense of the adventure to follow.
 
 # Model
 
@@ -17,15 +17,15 @@ The interactive learning experience which follows is very much about figuring ou
 
 # End Model
 
-Hope you found it interesting how unexpected the future can be. Though we also hope you realized there was a good reason for things unfolding in the manner they did.
+Did you find it interesting how unexpected the future can be. We also hope you sensed there was a good reason for things unfolding in the manner they did, and you'll develop an understanding of that along the way.
 
 All too often the world around us seems so complicated and apparently so difficult to pursue our dreams that we almost want to give up. The answer to complicated is to simplify the complicated and understand complexity. This will happen in very short order.
 
-It has been said that you can learn about riding a bicycle from reading a book though to learn to ride a bicycle you actually have to spend time on the bicycle. Please experience the next model.
+It has been said that you can learn about riding a bicycle from reading a book though to learn to ride a bicycle you actually have to spend time on the bicycle. The models to follow are designed to provide an interactive experience. You are strongly encouraged to spend time with them and think about the interactions.
 
 # Model
 
-{"title": "Simplifying Everything", "Find the common among the different.": "", "load": "http://insightmaker.com/insight/4957"}
+{"title": "Simplifying Everything", "description": "Finding the common among the different.", "load": "http://insightmaker.com/insight/4957"}
 
 # End Model
 
