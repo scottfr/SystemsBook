@@ -1,38 +1,11 @@
 # Building a Model
 
-Now that the most relevant aspects of Insight Maker have been introduced it is appropriate to provide you with a meaningful process and guidelines to use when you set out to build a model to promote an understanding of an area of interest. An aspect of this essential for the development of sound models is the topic of units. While units don't ensure a model is sound, if the units don't match up one can be certain the model is not sound.
 
-## Model Construction Process ##
 
-We develop models to help us understand the implications of interactions, and sometimes guidance. As such, as with Alice above, it is essential that before you begin to build a model you know what it is that you want to understand otherwise how will you know if the model does what you needs to do.
-
-There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These will be presented as Modeling Tips throughout this chapter. The idea is to ensure that the model serves the purpose you started building it for.
-
-![Figure 1. Model Construction Process](04-im-184.png)
-
-[** Figure 1](http://www.insightmaker.com/insight/184)
 
 The difference between \p{Real Events} and \p{Conclusions and Behaviors} result in the creation of an \p{Abstract Version of Real Events}. The abstraction is then used to develop a \p{Model} which promotes a revision to \p{Conclusions and Behaviors}. This cycle continues until the \p{Model} produces a set of \p{Conclusions and Behaviors} which are congruent with \p{Real Events}. At this point there's no longer a need to create an \p{Abstract Version of Real Events}, meaning you have achieved the understanding you were seeking.
 
-The model construction process of Figure 1 is very conceptual. As you continue to develop models you will arrive at a sequence that you are comfortable with an enables you to achieve the understanding your seeking.
 
-The following two figures present the two model formulation processes presented by Andrew Ford in Modeling the Environment{cite: Ford, A. 2009. Modeling the Environment. http://www.amazon.com/Modeling-Environment-Second-Edition-Andrew/dp/1597264733/}
-
-![Figure 2. Emphasis on Model Formulation](04-im-220.png)
-
-[** Figure 2](http://www.insightmaker.com/insight/220)
-
-In approach presented in Figure 2 one focuses on the understanding the qualitative dynamics, i.e., problem familiarization, problem definition and model formulation. Not until such time as there is a level of comfort in the understanding of these dimensions, which may employ Rich Pictures or Causal Loop Diagrams, does one progress to the quantitative aspect of model building, i.e., estimating parameters, simulating to explain the problem and sensitivity and policy analysis, which is where the Stock & Flow simulation model is employed. The quantitative dynamics may produce sufficient understanding or the process may continue back into the qualitative dynamics area. Model development is an iterative process.
-
-Figure 3, which may look like complete chaos, emphasizes simulation to provide feedback to provide a better understanding of all other aspects of the modeling process.
-
-![Figure 3. Emphasis on Simulation Early & Simulate Often](04-im-219.png)
-
-[** Figure 3](http://www.insightmaker.com/insight/219)
-
-Here the belief is that actually simulating all stages of the model are the best way to ground one's understanding of all other aspects of the model development process.
-
-As you develop models you will develop an approach which is probably somewhere between Figure 2 and Figure 3 that you are comfortable with. That is probably the most critical aspect, i.e., that you be comfortable with your process and it make sense to you and helps you understand.
 
 ## Modeling Guidelines ##
 
