@@ -1,6 +1,8 @@
 # A Model Is A Model Is A Model
 
-In previous chapter you worked two types of models qualitative models, i.e., no numbers, Follow the Clues and The Bird Feeder Dilemma! and quantitative models, with numbers, all the simulation models you ran. In this chapter we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about Stock & Flow Simulation Models, which are quantitative, and additional information that will help you develop better models.
+In previous chapter you interacted with two types of models qualitative models, i.e., no numbers, Follow the Clues and The Bird Feeder Dilemma! and quantitative models, with numbers, all the simulation models you ran. In this chapter we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about Stock & Flow Simulation Models, which are quantitative.
+
+## Three Types of Models ##
 
 # Model
 
@@ -63,8 +65,6 @@ When you select any one of these steps it will be added after the currently sele
 - **Group Steps**. This step creates a folder in the sequence in which you can place multiple steps. This allows you to indicate there are several steps you want to execute with a single Next Step click. You can see how this was used in the Figure 8 definition of an unfolding. You can open and close a New Group folder by toggling the little triangle to the left of it. Also if you click on a folder you can rename it in the **Name** field on the right.
 
 By creating a story of your model you significantly increase the likelihood that others will understand the insights your model is endeavoring to surface. You might even find that in the process of creating the story you uncover ways to improve or clarify the model for yourself.
-
-
 
 ## Summary ##
 

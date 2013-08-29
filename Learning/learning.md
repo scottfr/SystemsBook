@@ -11,6 +11,8 @@ Lewis Carroll - Alice in Wonderland
 
 The interactive learning experience you're about to undertake is about figuring out where you want to get to and developing skills to improve your likelihood of getting there. Please open the following model and walk through it to get a sense of the adventure to follow.
 
+## Complicated Reality ##
+
 # Model
 
 {"title": "Where have all the trees gone?", "description": "Is the forest you care about sustainable with current practices?", "load": "http://insightmaker.com/insight/8889"}
@@ -22,6 +24,8 @@ Did you find it interesting how unexpected the future can be. We also hope you s
 All too often the world around us seems so complicated and apparently so difficult to pursue our dreams that we almost want to give up. The answer to complicated is to simplify the complicated and understand complexity. This will happen in very short order.
 
 It has been said that you can learn about riding a bicycle from reading a book though to learn to ride a bicycle you actually have to spend time on the bicycle. The models to follow are designed to provide an interactive experience. You are strongly encouraged to spend time with them and think about the interactions.
+
+## Simplifying Reality ##
 
 # Model
 
@@ -106,7 +110,7 @@ While reading the previous paragraphs did it dawn on you that much of this patte
 
 When we act on flawed beliefs attempting to solve problems we typically create more problems. It has been said repeatedly that the majority of today's problems are the direct result of yesterday's solutions. Wouldn't this provide a sense that we might really benefit from a better way to think about the world around us, develop better understanding, and develop solutions that don't come back to haunt us in the future?
 
-## Simulations ##
+## Simulation ##
 
 While models can help us understand the world around us we live in a dynamic ever changing world, where the only real constant is change. Simulations allow us to bring the models we build to life and get a sense of the implications of the relations over time. It has been said that we as humans have a very limited capacity to understand the implication of two or more dynamic relations over time. To help us develop our understanding in this area we simulate the models we build.
 

@@ -1,14 +1,5 @@
 # Building a Model
 
-    “Would you tell me, please, which way I ought to go from here?”
-    “That depends a good deal on where you want to get to,” said the Cat.
-    “I don’t much care where–” said Alice.
-    “Then it doesn’t matter which way you go,” said the Cat.
-    “–so long as I get SOMEWHERE,” Alice added as an explanation.
-    “Oh, you’re sure to do that,” said the Cat, “if you only walk long enough.”
-    
-    Lewis Carroll - Alice in Wonderland
-
 Now that the most relevant aspects of Insight Maker have been introduced it is appropriate to provide you with a meaningful process and guidelines to use when you set out to build a model to promote an understanding of an area of interest. An aspect of this essential for the development of sound models is the topic of units. While units don't ensure a model is sound, if the units don't match up one can be certain the model is not sound.
 
 ## Model Construction Process ##

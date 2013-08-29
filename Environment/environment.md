@@ -1,11 +1,5 @@
 # Tools for Understanding
 
-# Model
-
-{"title": "Valid Stock & Variable Connections", "description": "The following sequence presents, and explains, the valid connections for elements of a simulation model.", "load": "http://insightmaker.com/insight/5275"}
-
-# End Model
-
 ### User Interface ###
 
 It is in this segment of the configuration panel that you define a slider for an element, if there is to be one. You can define a sliders for Stocks, Flows or Variables and use them to establish their value at the start of the simulation. Once you indicate there is to be a slider you then define the maximum and minimum values it may have, as well as the step size, how small are the variations allowed. If you leave the step size field blank then the slider can vary continuously.
@@ -47,18 +41,6 @@ Note that if you change items in the configuration they will be immediately refl
 Hopefully you haven't found this short introduction to the modeling environment too overwhelming. Different parts of the environment will be presented just as you need them to interact with the models presented. 
 
 Too much explaining and not enough hands on interaction may get real boring in a hurry. As such you are encouraged to actually do the exercises. By interacting with the various aspects of the modeling environment you will develop a level of comfort and expertise which will serve you well throughout the rest of the book.
-
-## Common Property # 1 ##
-
-To this point you've learned how to develop a static picture of a model. It is actually a model and provides a sense of the relationships between the various elements. What it doesn't give you a sense of is the dynamic nature of these over time. What are the implications of the relationships? In the next few sections you'll learn how to bring your model to life.
-
-Look at the images in Figure 12 and ask yourself what these images have in common. The images all represent very different kinds of things, some living, some not, though there is a characteristic they all have in common. Have you figured it out?
-
-![Figure 12. Common Property # 1](02-im-4548.png)
-
-[** Figure 12](http://www.insightmaker.com/insight/4548)
-
-Maybe you notice the rabbits from the previous chapter? All the images represent things that grow over time in one way or another, and some faster than others.
 
 ## Reinforcing Growth Structure ##
 
