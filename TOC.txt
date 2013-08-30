@@ -1,8 +1,7 @@
 Preface
 Learning
-Models
 Building
-Environment
+Understanding
 Common Structures
 Common Balancing
 Common Reinforcing
