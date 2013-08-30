@@ -42,12 +42,6 @@ As you develop models you will develop an approach which is probably somewhere b
 
 In the next section you will be introduced to the Unfolding feature of Insight Maker which you can use to build a script so the model will explain itself to someone else when you're not there.
 
-## Uncovering the System ##
-
-# Model
-{"title": "Systems Thinking: The Essence of And?", "description": "To uncover the system one must continue to seek out the influences.", "load": "http://insightmaker.com/insight/3365"}
-# End Model
-
 ## Modeling Guidelines ##
 
 Figure 4 presents a number of guidelines or rules of thumb it would be good for you to keep in mind as you develop models. Some of the following are only relevant to Stock & Flow simulations, and which they are should be quite obvious.
@@ -57,28 +51,6 @@ Figure 4 presents a number of guidelines or rules of thumb it would be good for 
 # End Model
 
 Remember that model development and the understanding that comes with it is an iterative process. It's almost impossible to create all the pieces as they should be the first time around. Look at it as do a little, learn a little, and repeat.
-
-- **Purpose**. Have a sense of what you want the model to accomplish and expect the thought to evolve as you develop the model.
-- **Boundary**. A boundary allows you to explicitly define what's part of the model and what's not part of the model. If you're unclear on the purpose of the model and unable to establish a boundary how will you ever know when to stop adding things to the model?
-- **Time Units**. Will the interactions in this model be depicted over Years, Months, Days, etc. And you should realize that you initial thought may have to be revised once you begin developing the model.
-- **Simulation Length**. How long might the interactions have to be modeled for. Here again the answer may be obvious, or you may have to start with an estimate and revise it after working with the model.
-- **Time Step**. Here again you have to estimate a value based on the smallest time of transition you expect in the interactions and then test it to see if you you're close enough.
-- **Notes Notes Notes**. As you build your model add notes to the elements so you can refer back to them later to get a sense of what you were thinking when you created them. Yes, you tell yourself you know what you're doing at the moment, though you'll be surprised at what you won't remember a week, a month or even a year from now. Notes also make it much easier for others to understand what you intended when you created elements.
-- **Variable Names**. A stock represents a quantity and should be labeled with a directionless noun our noun phrase, you know, a person, place or thing. Avoid directional modifiers such as increasing, decreasing, growing, slowing, etc. as they tend to make a model very difficult to understand. A flow represents something moving over time so it's label should be something one would easily think of as moving over time as walk, speed, flow, etc.
-- **Loop Labels**. If you're developing a Causal Loop Diagram or Stock & Flow Diagram be sure to label and sequence your loops so others have a sense in what order to read your story.
-- **Goals**. Balancing loops always have goals. Make sure they're explicitly identified.
-- **Influences**. Make sure you include all relevant influences and only the relevant influences. Sometimes you include items because you can't figure out if they're relevant or not. That's OK as long as you remember to later take out the ones that aren't relevant. If you leave influenced which aren't relevant they are likely to result in confusion later.
-
-The following items are most likely relevant only for Stock & Flow simulations.
-
-- **Stocks**. Identify which items are the the stocks, or accumulations, in the model that will change over time. Stocks are often easy to identify if you think about stopping time. When time stops a stock still has a quantity. In this case it's the distance from Grandma's house as Red walks toward it.
-- **Flows**. Identify the flows which are responsible for changing the stocks over time. If time stops a flow has no value. In this case it's walking.
-- **Delay**. Delays can have very unexpected impacts on the behavior of a model. Where there are delays make sure they're explicitly identified.
-- **Units**. Units can be very instrumental in assuring model validity. While consistency of units doesn't guarantee model validity if the units are inconsistent you can be sure the model is not valid.
-- **Limits**. If there are limits on Stocks, Variables or Flows be sure they are explicitly stated so Insight Maker can inform you if the model generates out of limit value. This will signal you that there is a problem with assumptions or initial values.
-- **Reality Check**. Ensure the model is producing results which are consistent with reality. If it is not then it's an opportunity for learning.
-
-The guidelines are far too much to memorize though if you refer to them as a check list over time they will actually become second nature and you'll find yourself checking them as you're adding elements to a model.
 
 ## Storytelling ##
 
@@ -90,7 +62,10 @@ Because the Storytelling function isn't included in this environment references 
 
 ## Summary ##
 
-Always remember that a model is a simplification of the world around you intended to help you understand something. You should use a modeling form that adequately serves your quest for understanding. Stock & Flow, Rich Picture, and Causal Loop models are only three of a very large array of possible modeling forms that exist. Use them to the extent that they serve you and when they don't find a form that does. The Modeling and Simulation references provide access to several additional types of diagrams that have been created with Insight Maker, though there are probably more that haven't yet been identified. The Model Thinking Course by Scott E. Page presents a very extensive exposure to many types of models useful for understanding different aspects of the world around us.
+- A model is a simplification of the world around you intended to help you understand something.
+- Use a modeling form that adequately serves your quest for understanding.
+- Stock & Flow, Rich Picture, and Causal Loop models are only three of a very large array of possible modeling forms that exist. Use them to the extent that they serve you and when they don't find a form that does.
+- The Model Thinking Course by Scott E. Page presents a very extensive exposure to many types of models useful for understanding different aspects of the world around us.
 
 ### Rich Pictures ###
 
@@ -104,6 +79,20 @@ Always remember that a model is a simplification of the world around you intende
 - Color coding relations is an alternative to the + and - notation, though be consistent.
 - Employing explicit stock representations often reduces misinterpretations.
 - Hybrid Rich Pictures/Causal Loop Diagrams are often the very meaningful.
+
+### Stock & Flow Simulations ###
+
+- The most explicit model form with well defined rules for construction that must be followed.
+- The dynamic nature allows you to compress time and distance to see the implications of relations.
+
+### Construction Process
+
+- Use a process that suits you and the purpose you're trying to achieve.
+
+### Guidelines ###
+
+- The guidelines are intended to help you develop better models.
+- Use the guidelines as a checklist.
 
 ### Storytelling ###
 

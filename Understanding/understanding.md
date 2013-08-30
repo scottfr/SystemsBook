@@ -1,5 +1,11 @@
 # Developing Understanding
 
+Evolving a model to surface insights can be a relatively straightforward and simple process as presented by the following model.
+
+# Model
+{"title": "Systems Thinking: The Essence of And?", "description": "To uncover the system one must continue to seek out the influences.", "load": "http://insightmaker.com/insight/3365"}
+# End Model
+
 ## Can Red Get to Grandma's House ##
 
 Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?
