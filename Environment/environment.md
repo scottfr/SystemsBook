@@ -1,46 +1,5 @@
 # Tools for Understanding
 
-### User Interface ###
-
-It is in this segment of the configuration panel that you define a slider for an element, if there is to be one. You can define a sliders for Stocks, Flows or Variables and use them to establish their value at the start of the simulation. Once you indicate there is to be a slider you then define the maximum and minimum values it may have, as well as the step size, how small are the variations allowed. If you leave the step size field blank then the slider can vary continuously.
-
-An element may have a slider or a formula though not both. Sliders override equations. If you enter an equation and it disappears check to see if there was a slider defined and it hasn't been turned off.
-
-### Validation ###
-
-This section allows you to indicate if there are Maximum and/or Minimum constraints on a Stock, Flow or Variable.
-
-Additionally it is in this section that you assign the Units for an Stock, Flow, and Variable. Units are very useful in helping to ensure the soundness of a model. Units will be covered extensively in Chapter 4.
-
-#### Time Settings ####
-
-Time Settings as depicted in Figure 9 are used to indicate when the simulation starts, how long it runs, and the time step it increments during the simulation. Just how to determine the step size will be addressed shortly.
-
-![Figure 9. Time Settings](02-im-4990f.png)
-
-[** Figure 9](http://insightmaker.com/insight/4990)
-
-#### Simulation Results ####
-
-When you click the \u{Run} button the model is stepped through the defined time period and produces a display of the results as depicted in Figure 10. There are various options for the type of display and which elements are displayed as shown in Figure 11.
-
-![Figure 10. Simulation Results](02-im-4990g.png)
-
-[** Figure 10](http://insightmaker.com/insight/4990)
-
-#### Configure Simulation Results ####
-
-A default configuration is put together when the model is constructed on the canvas. If you click the \u{Configure} button in the upper right corner of the \{Simulation Results} window the \u{Chart/Table Configuration} window as depicted in Figure 11 will open. It is in this window you indicate what type of display you want and which items of the model are to be displayed. The only part you need to be concerned about at the moment is the Y-Axis Label field. This where it was indicated that the items displayed were in Gallons. You will need to change this shortly in the next exercise.
-
-Note that if you change items in the configuration they will be immediately reflected in the \u{Simulation Results} window when you click \u{Apply}. You don't need to run the model again to see a different configuration of the data. This makes it very convenient when when you decide you need another display for some items of the model.
-
-![Figure 11. Chart/Table Configuration](02-im-4990h.png)
-
-[** Figure 11. Chart/Table Configuration](http://insightmaker.com/insight/4990)
-
-Hopefully you haven't found this short introduction to the modeling environment too overwhelming. Different parts of the environment will be presented just as you need them to interact with the models presented. 
-
-Too much explaining and not enough hands on interaction may get real boring in a hurry. As such you are encouraged to actually do the exercises. By interacting with the various aspects of the modeling environment you will develop a level of comfort and expertise which will serve you well throughout the rest of the book.
 
 ## Reinforcing Growth Structure ##
 
@@ -71,11 +30,6 @@ Given this guidance how would you interpret the results you experienced in the p
 ~ Answer
 
 You haven't been given enough information about what's being modeled to determine what might be the appropriate \u{Time Units} or \u{Time Step}.
-
-### References ###
-
-- [How does DT work? from isee Systems](http://www.iseesystems.com/Helpv9/Content/DT/How_does_DT_work_.htm)
-- [DT Situations Requiring Special Care from isee Systems](http://www.iseesystems.com/Helpv9/Content/DT/DT_Special_Care.htm)
 
 ~ Exercise
 
@@ -166,17 +120,8 @@ Use the previous model and reconfigure it for a couple of the activities depicte
 
 ~ End Exercise
 
-## Summary ##
+### References ###
 
-Hopefully this chapter has helped you become more familiar with the modeling environment and the four model elements you will use most often.
+- [How does DT work? from isee Systems](http://www.iseesystems.com/Helpv9/Content/DT/How_does_DT_work_.htm)
+- [DT Situations Requiring Special Care from isee Systems](http://www.iseesystems.com/Helpv9/Content/DT/DT_Special_Care.htm)
 
-- **Stock**. An accumulation of something that can only be changed by something flowing into or out of it.
-- **Flow**. Something moving over time which adds to a stock or subtracts from a stock.
-- **Variable**. Constant or equation computed each time the simulation steps.
-- **Link**. Used to communicate a value from a Stock, Flow, or Variable, to a Stock, Flow or Variable. The source is not changed and a link to a stock can only be used to set it's initial value.
-
-Because of the nature of the building blocks themselves there are only a small number of valid connections as depicted in valid connections model.
-
-These valid connections are used to create only three different types of structures, linear growth, goal seeking and reinforcing growth. If you are comfortable with these you should be relieved to know that's all there are. Just three simple structures will be used for all the models you will ever build. Of course at times there may be quite a few of these connected together though you should be confident that you know about the pieces.
-
-The models that you have experienced in Chapter 1 and Chapter 2 are referred to as Stock & Flow Simulation Models. They are also referred to as quantitative models because of the values associated with the simulation of these models. In the next chapter we'll investigate a number qualitative models which are also used in developing understanding. These are referred to as qualitative models because there are no numerical values associated with them, though there are times when they can be quite useful.

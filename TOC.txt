@@ -1,8 +1,8 @@
 Preface
 Learning
 Models
-Environment
 Building
+Environment
 Common Structures
 Common Balancing
 Common Reinforcing
