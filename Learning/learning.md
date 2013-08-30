@@ -1,80 +1,58 @@
 # It's The Pattern That Connects #
 
-“Would you tell me, please, which way I ought to go from here?”
-“That depends a good deal on where you want to get to,” said the Cat.
-“I don’t much care where–” said Alice.
-“Then it doesn’t matter which way you go,” said the Cat.
-“–so long as I get SOMEWHERE,” Alice added as an explanation.
-“Oh, you’re sure to do that,” said the Cat, “if you only walk long enough.”
-
-Lewis Carroll - Alice in Wonderland
+    “Would you tell me, please, which way I ought to go from here?”
+    “That depends a good deal on where you want to get to,” said the Cat.
+    “I don’t much care where–” said Alice.
+    “Then it doesn’t matter which way you go,” said the Cat.
+    “–so long as I get SOMEWHERE,” Alice added as an explanation.
+    “Oh, you’re sure to do that,” said the Cat, “if you only walk long enough.”
+    
+    Lewis Carroll - Alice in Wonderland
 
 The interactive learning experience you're about to undertake is about figuring out where you want to get to and developing skills to improve your likelihood of getting there. Please open the following model and walk through it to get a sense of the adventure to follow.
 
-## Complicated Reality ##
+## Creating the Future ##
+
+The world we experience today is a result of our past actions and the world of tomorrow will be the result of our actions today and in the future. So why is today in such a state and how do we improve tomorrow? The following model is intended to present a general perspective.
 
 # Model
+{"title": "Creating the Future", "description": "A general perspective the intent.", "load": "http://insightmaker.com/insight/8892"}
+# End Model
 
-{"title": "Where have all the trees gone?", "description": "Is the forest you care about sustainable with current practices?", "load": "http://insightmaker.com/insight/8889"}
+Any time you set out to do anything the previous model presents a general sense of your intent. Based on past experience the question is how do you get better at doing this to improve the chances of creating the future you're trying to create?
 
+The following model is intended to provide you a view of an all too typical unfolding of a simple situation.
+
+# Model
+{"title": "Bird Feeder Dilemma", "description": "All I wanted was a more pleasant morning breakfast.", "load": "http://insightmaker.com/insight/8872"}
+# End Model
+
+Hopefully this gives you a sense of difficulty one can get into when simply thinking about a single action taken to achieve a goal without consideration of the associated implications of that action. The limitations of this model are that it's simply a picture of relations and doesn't give you a real sense of the magnitude of anything, though it does provide a sense of a situation that's not what it was intended to be.
+
+The next model will provide a sense of how a dynamic model can be so valuable when considering the implications of current actions.
+
+# Model
+{"title": "Sustainable Forest", "description": "Is the forest you care about sustainable with current practices?", "load": "http://insightmaker.com/insight/8889"}
 # End Model
 
 Did you find it interesting how unexpected the future can be. We also hope you sensed there was a good reason for things unfolding in the manner they did, and you'll develop an understanding of that along the way.
 
 All too often the world around us seems so complicated and apparently so difficult to pursue our dreams that we almost want to give up. The answer to complicated is to simplify the complicated and understand complexity. This will happen in very short order.
 
-It has been said that you can learn about riding a bicycle from reading a book though to learn to ride a bicycle you actually have to spend time on the bicycle. The models to follow are designed to provide an interactive experience. You are strongly encouraged to spend time with them and think about the interactions.
-
-## Simplifying Reality ##
+The next model should provide additional support for why dynamic models are so essential to help us develop our understanding.
 
 # Model
-
-{"title": "Simplifying Everything", "description": "Finding the common among the different.", "load": "http://insightmaker.com/insight/4957"}
-
+{"title": "Moose and Wolves", "description": "The populations of Moose and Wolves are dynamically linked.", "load": "http://insightmaker.com/insight/8590"}
 # End Model
 
-~ Exercise
-
-How each of the accumulations in the simulation changes is a bit different, as are the time frames of concern. Time frame being the time it takes for some noticeable change in the accumulation.
-
-Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that increase, or decrease, over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc? What are the flows that increase or decrease those stocks? What are the time frames over which you think about the increase, or decrease of the stock?
-
-~ End Exercise
-
-# Model
-
-{"title": "Common Property # 1", "description": "A simple change can have a great impact on the result.", "load": "http://insightmaker.com/insight/4548"}
-
-# End Model
-
-~ Exercise
-
-As in the previous exercise take a few minutes and identify a number of situations you are familiar with which are represented by the model just presented. What are the quantities for the stocks and flows in those situations?
-
-~ End Exercise
-
-# Model
-
-{"title": "Common Property # 2", "description": "And there is an alternative.", "load": "http://insightmaker.com/insight/6120"}
-
-# End Model
-
-~ Exercise
-
-As in the previous exercise take a few minutes and identify a number of situations you are familiar with which are represented by the model just presented. What re the quantities for the stocks and flows in those situations?
-
-~ End Exercise
-
-In the next sections we'll take a bit of a side trip and then return to the previous three models.
+If we are to create a tomorrow far better than today we need to find a way to deal with the complicated nature of reality with its complexity and time/space separation of cause and effect.
 
 ## Patterns ##
 
 What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever really thought about how you learn about the world around you? There are some things you memorize early in life, like the times tables. While you memorize these is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that the learning happened? In this chapter we will investigate how you actually learn. We will also present a introduction to how you can improve your learning and actually test whether what you have learned is actually correct.
 
 # Model
-
-{"title": "Follow the clues", "description": "Does the order matter?", "load": "http://insightmaker.com/insight/8893"}
-
+{"title": "Follow the Clues", "description": "How we know what we know.", "load": "http://insightmaker.com/insight/8893"}
 # End Model
 
 You have most likely come to understand that all refrigerators are not identical. Some have one door with a separate compartment inside. Some have two doors and a drawer. Some are much smaller than others. Some can fit under a counter and some even fit on top of a counter. Some can be so large you can walk into them.
@@ -122,46 +100,44 @@ A simulation is a dynamic model that allows us to understand the implications of
 
 ----------
 
-## A Better Way ##
+## Simplifying Reality ##
 
 Ludwig von Bertalanffy first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another.{Davidson, Mark. 1983. Uncommon Sense: The Life and Thought of Ludwig von Bertalanffy. J.P. Tarcher, Inc. http://www.amazon.com/Uncommon-Sense-Thought-Bertalanffy-1901-1972/dp/087477165X/} When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. However, if you think about it, maybe there is some truth to it after all.
 
-We're not simply asking you to believe the previous statement because haven't you already demonstrated it to yourself with the first three models you worked with and created? This continued learning experience is expected to reinforce the sensibility of the statement from your own perspective.
-
-The next model will give you a better sense of the detail associated with the unexpected unfolding of the future.
+We're not simply asking you to believe the previous statement though we expect that the next few models may provide a basis for the sensibility of this claim.
 
 # Model
-
-{"title": "The future we create.", "description": "There is an intent to it all.", "load": "http://insightmaker.com/insight/8892"}
-
+{"title": "Simplifying Everything", "description": "Finding the common among the different.", "load": "http://insightmaker.com/insight/4957"}
 # End Model
 
-Any time you set out to do anything the previous model presents a sense of what you're doing. Based on past experience the question is how do you get better at doing this to improve the chances of creating the future you're trying to create?
+~ Exercise
+How each of the accumulations in the simulation changes is a bit different, as are the time frames of concern. Time frame being the time it takes for some noticeable change in the accumulation.
+
+Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that increase, or decrease, over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc? What are the flows that increase or decrease those stocks? What are the time frames over which you think about the increase, or decrease of the stock?
+~ End Exercise
 
 # Model
-
-{"title": "The bird feeder dilemma!", "description": "All I wanted was a more pleasant morning breakfast.", "load": "http://insightmaker.com/insight/8872"}
-
+{"title": "Common Property # 1", "description": "A simple change can have a great impact on the result.", "load": "http://insightmaker.com/insight/4548"}
 # End Model
 
-Hopefully this gives you a sense of difficulty one can get into when simply thinking about a single action taken to achieve a goal without consideration of the associated implications of that action. Though the limitations of this model are that it's simply a picture of relations and doesn't give you a real sense of the magnitude of anything.
-
-The next model should provide a better sense of why dynamic models are so essential to help us develop our understanding.
+~ Exercise
+As in the previous exercise take a few minutes and identify a number of situations you are familiar with which are represented by the model just presented. What are the quantities for the stocks and flows in those situations?
+~ End Exercise
 
 # Model
-
-{"title": "Moose and Wolves", "description": "The populations of Moose and Wolves are dynamically linked.", "load": "http://insightmaker.com/insight/8590"}
-
+{"title": "Common Property # 2", "description": "And there is an alternative.", "load": "http://insightmaker.com/insight/6120"}
 # End Model
 
-Let us now venture into the realm of trying to fill a swimming pool with water.
+~ Exercise
+As in the previous exercise take a few minutes and identify a number of situations you are familiar with which are represented by the model just presented. What re the quantities for the stocks and flows in those situations?
+~ End Exercise
+
+In the next sections we'll take a bit of a side trip and then return to these three models.
 
 ## Filling a Swimming Pool ##
 
 # Model
-
 {"title": "Filling a Swimming Pool", "description": "The following model investigates a swimming pool as a stock.", "load": "http://insightmaker.com/insight/4990"}
-
 # End Model
 
 ## Rabbit Population Growth ##
@@ -169,17 +145,13 @@ Let us now venture into the realm of trying to fill a swimming pool with water.
 Investigation of a simple Rabbit Population Model can be most informative.
 
 # Model
-
 {"title": "Rabbit Population Growth", "description": "This model that reflects the the notion that more rabbits create even more rabbits.", "load": "http://insightmaker.com/insight/5123"}
-
 # End Model
 
 ## Summary ##
 
 # Model
-
 {"title": "Similar Structures / Different Behavior", "description": "The behavior of a model depends on the structure as well as the formulas that define the nature of the relationships.", "load": "http://insightmaker.com/insight/5138"}
-
 # End Model
 
 * Models are simplified versions of the world around us.
