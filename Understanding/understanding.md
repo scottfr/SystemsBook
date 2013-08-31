@@ -1,14 +1,22 @@
 # Developing Understanding
 
-Evolving a model to surface insights can be a relatively straightforward and simple process as presented by the following model.
+Developing models is actually the easy part. What you should strive for is to develop models that advance your understanding and allow you to surface insights to better address situations around you. Evolving a model to surface insights can be a relatively straightforward and simple process as presented by the following model.
 
 # Model
-{"title": "Systems Thinking: The Essence of And?", "description": "To uncover the system one must continue to seek out the influences.", "load": "http://insightmaker.com/insight/3365"}
+{"title": "Systems Thinking: The Essence of And?", "description": "Continuing to seek the relevant influences.", "load": "http://insightmaker.com/insight/3365"}
 # End Model
+
+The process presented in the previous model can be used with Rich Pictures and Causal Loop Diagrams as well as Stock & Flow Simulations. Though when developing Stock & Flow Simulations you also have to be certain that the model runs and produces a meaningful result. And when developing a simulation model you should never be more than a couple clicks away from a running model. You'll better understand this advice after you make a substantial number of changes to a working model, it then doesn't run, and you spend hours trying to figure out how you broke it. Do yourself a favor, run after every change. It only takes a minute.
+
+The rest of this chapter will present several models attempting to demonstrate a development process, and acquaint you with a few additional relevant aspects of simulation models.
 
 ## Can Red Get to Grandma's House ##
 
-Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math though would you get any better at building models if you did?
+Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did?
+
+# Model
+{"title": "Stopping At Grandma's", "description": "We'll begin with the previous model and add an option that tells the model to stop when Red actually gets to Grandma's.", "load": "http://insightmaker.com/insight/6778"}
+# End Model
 
 ## Setting Units ##
 
@@ -40,11 +48,7 @@ There are a large number of units predefined in Insight Maker. If you click in t
 
 ----------
 
-# Model
 
-{"title": "Stopping At Grandma's", "description": "We'll begin with the previous model and add an option that tells the model to stop when Red actually gets to Grandma's.", "load": "http://insightmaker.com/insight/6778"}
-
-# End Model
 
 If you look at the \u{Configuration Panel} for \p{Stop at Grandmas} you'll notice that the \a{Units} are unitless. The variable itself doesn't need a definition of units because it's not participating in any calculations. It's just a test.
 
