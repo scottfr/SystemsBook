@@ -3,8 +3,6 @@ Learning
 Building
 Understanding
 Common Structures
-Common Balancing
-Common Reinforcing
 Applied
 Models and Truth
 Building Confidence
