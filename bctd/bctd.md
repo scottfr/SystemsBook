@@ -1,16 +1,12 @@
 # Beyond Connecting the Dots #
 
-The 2nd beta version of Beyond Connecting the Dots interactive is now available. As you access this version please remember that it's a "beta"! There's an overview video at...
+The beta v3 of Beyond Connecting the Dots interactive is now available. As you access this version please remember that it's a "beta"! There's an overview video at...
 
 * [http://www.youtube.com/watch?v=8Jjeyfds9mY](http://www.youtube.com/watch?v=8Jjeyfds9mY)
 
-You can download the .pdf file from the following URL though please be advised that it's a 20mb file so it could take a while. This file will be updated about every two weeks so please check the latest Manager's Choice posts in the Sponsors subgroup at [http://linkd.in/XiTwOJ](http://linkd.in/XiTwOJ)
+The electronic copy of the book is available at the URL below and is password protected. Please read the following notes before accessing the online version of the book. Note the online version will be updated every couple weeks also.
 
-* [http://www.systemswiki.org/bctd/Book.pdf](http://www.systemswiki.org/bctd/Book.pdf)
-
-The electronic copy of the book is available at the URL below and is password protected. Please read the following notes before accessing the online version of the book. Note the online version will be updated every couple weeks also. Check the date on the first page or the latest Manager's Choice posts in the Sponsors subgroup at [http://linkd.in/XiTwOJ](http://linkd.in/XiTwOJ) 
-
-Interactive BCTD User Interface 
+Interactive User Interface 
 
 * Tap or click the page to switch pages (tap on the right to move forward, tap on the left to move back) 
 * Click the book title to open the table of contents 
@@ -34,11 +30,9 @@ Beta Access
 
 * [http://beta.BeyondConnectingTheDots.com](http://beta.BeyondConnectingTheDots.com) 
 * username: betabook 
-* password: feedback 
+* password: feedback
 
-Please post feedback to the following discussion thread 
-
-* [http://linkd.in/18AYzvG](http://linkd.in/18AYzvG) 
+Send feedback to Gene at systemswiki@gmail.com
 
 be well, 
 Gene
