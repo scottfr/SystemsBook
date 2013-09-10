@@ -1,5 +1,5 @@
 # It's The Pattern That Connects #
-
+~~~
 “Would you tell me, please, which way I ought to go from here?”
 “That depends a good deal on where you want to get to,” said the Cat.
 “I don’t much care where–” said Alice.
@@ -8,7 +8,7 @@
 “Oh, you’re sure to do that,” said the Cat, “if you only walk long enough.”
 
 Lewis Carroll - Alice in Wonderland
-
+~~~
 The interactive learning experience you're about to undertake is about figuring out where you want to get to and developing skills to improve your likelihood of getting there. Please open the following model and walk through it to get a sense of the adventure to follow.
 
     Add note in first model about closing the model to return to the app.
