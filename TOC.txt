@@ -1,6 +1,5 @@
 Preface
 Learning
-Building
 Understanding
 Applied
 Models and Truth
