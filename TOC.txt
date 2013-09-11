@@ -2,7 +2,6 @@ Preface
 Learning
 Building
 Understanding
-Common Structures
 Applied
 Models and Truth
 Building Confidence

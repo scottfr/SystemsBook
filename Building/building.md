@@ -1,4 +1,4 @@
-# Building a Model
+# Building a Model #
 
 In previous chapter you interacted with two types of models qualitative models, i.e., no numbers, Follow the Clues and Bird Feeder Dilemma and quantitative models, with numbers, all the simulation models you ran. In this chapter we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about quantitative Stock & Flow Simulation Models.
 
@@ -8,15 +8,7 @@ In previous chapter you interacted with two types of models qualitative models, 
 {"title": "Three Types of Models", "description": "Different though each aiding understanding.", "load": "http://insightmaker.com/insight/8932"}
 # End Model
 
-## The Boy Who Cried Wolf ##
-
-# Model
-{"title": "The Boy Who Cried Wolf", "description": "Storytelling as you unfold a model.", "load": "http://insightmaker.com/insight/7103"}
-# End Model
-
-## The Construction Process ##
-
-We develop models to help us understand the implications of interactions, and sometimes guidance. As such, as with Alice at the beginning of Chapter 1, it is essential that before you begin to build a model you know what it is that you want to understand otherwise how will you know if the model does what you need it to do.
+## Construction Concept ##
 
 There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These will be presented as Modeling Tips throughout this chapter. The idea is to ensure that the model serves the purpose you started building it for.
 
@@ -24,23 +16,15 @@ There are a number of guidelines or rules of thumb that you will find helpful wh
 {"title": "Model Construction Process", "description": "The overall intent is always the same.", "load": "http://insightmaker.com/insight/184"}
 # End Model
 
-The model construction process of the previous model is very conceptual. The following two models present a more detailed perspective on model formulation processes presented by Andrew Ford in Modeling the Environment{cite: Ford, A. 2009. Modeling the Environment. http://www.amazon.com/Modeling-Environment-Second-Edition-Andrew/dp/1597264733/}
+## The Essence of AND? ##
+
+Developing models is actually the easy part. What you should strive for is to develop models that advance your understanding and allow you to surface insights to better address situations around you. Evolving a model to surface insights can be a relatively straightforward and simple process as presented by the following model.
 
 # Model
-{"title": "Emphasis on Model Formulation", "description": "Sometimes a qualitative emphasis is more appropriate.", "load": "http://insightmaker.com/insight/220"}
+{"title": "Systems Thinking: The Essence of And?", "description": "Continuing to seek the relevant influences.", "load": "http://insightmaker.com/insight/3365"}
 # End Model
 
-The approach presented in the model focuses on the understanding the qualitative dynamics, i.e., problem familiarization, problem definition and model formulation. Not until such time as there is a level of comfort in the understanding of these dimensions, which may employ Rich Pictures or Causal Loop Diagrams, does one progress to the quantitative aspect of model building, i.e., estimating parameters, simulating to explain the problem and sensitivity and policy analysis, which is where the Stock & Flow simulation model is employed. The quantitative dynamics may produce sufficient understanding or the process may continue back into the qualitative dynamics area. Model development is an iterative process.
-
-The next model, which may look like complete chaos, emphasizes simulation to provide feedback to develop a better understanding of all other aspects of the modeling process.
-
-# Model
-{"title": "Emphasis on Simulation Early & Simulate Often", "description": "Sometimes a quantitative dynamic emphasis is more appropriate.", "load": "http://insightmaker.com/insight/219"}
-# End Model
-
-As you develop models you will develop an approach which is probably somewhere between the two previous models you are comfortable with. That is probably the most critical aspect, i.e., that you be comfortable with your process and it make sense to you and helps you understand.
-
-In the next section you will be introduced to the Unfolding feature of Insight Maker which you can use to build a script so the model will explain itself to someone else when you're not there.
+The process presented in the previous model can be used with Rich Pictures and Causal Loop Diagrams as well as Stock & Flow Simulations. Though when developing Stock & Flow Simulations you also have to be certain that the model runs and produces a meaningful result. And when developing a simulation model you should never be more than a couple clicks away from a running model. You'll better understand this advice after you make a substantial number of changes to a working model, it then doesn't run, and you spend hours trying to figure out how you broke it. Do yourself a favor, run after every change. It only takes a minute.
 
 ## Modeling Guidelines ##
 
@@ -51,14 +35,6 @@ Figure 4 presents a number of guidelines or rules of thumb it would be good for 
 # End Model
 
 Remember that model development and the understanding that comes with it is an iterative process. It's almost impossible to create all the pieces as they should be the first time around. Look at it as do a little, learn a little, and repeat.
-
-## Storytelling ##
-
-Even though you may conscientiously develop your model and add comments often it turns out that people initially look at the whole model and are immediately overwhelmed. It might be somewhat like trying to eat a whole Elephant in a single bite. Storytelling provides a way to overcome this difficulty.
-
-Storytelling a model is intended to reveal a model little by little and explain it along the way. Click on the View Story button in the lower left corner of the screen, read the text, and then click the Step Forward arrow on the right repeatedly to have the model presented as a story.
-
-Because the Storytelling function isn't included in this environment references are presented to acquaint you with how to create stories in Insight Maker.
 
 ## Summary ##
 
@@ -93,10 +69,6 @@ Because the Storytelling function isn't included in this environment references 
 
 - The guidelines are intended to help you develop better models.
 - Use the guidelines as a checklist.
-
-### Storytelling ###
-
-- Makes it far easier for others to understand the insights you're trying to surface with your model.
 
 ## References ##
 

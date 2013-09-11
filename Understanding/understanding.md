@@ -1,12 +1,4 @@
-# Developing Understanding
-
-Developing models is actually the easy part. What you should strive for is to develop models that advance your understanding and allow you to surface insights to better address situations around you. Evolving a model to surface insights can be a relatively straightforward and simple process as presented by the following model.
-
-# Model
-{"title": "Systems Thinking: The Essence of And?", "description": "Continuing to seek the relevant influences.", "load": "http://insightmaker.com/insight/3365"}
-# End Model
-
-The process presented in the previous model can be used with Rich Pictures and Causal Loop Diagrams as well as Stock & Flow Simulations. Though when developing Stock & Flow Simulations you also have to be certain that the model runs and produces a meaningful result. And when developing a simulation model you should never be more than a couple clicks away from a running model. You'll better understand this advice after you make a substantial number of changes to a working model, it then doesn't run, and you spend hours trying to figure out how you broke it. Do yourself a favor, run after every change. It only takes a minute.
+# Developing Understanding #
 
 The rest of this chapter will present several models attempting to demonstrate a development process, and acquaint you with a few additional relevant aspects of simulation models.
 
@@ -36,6 +28,19 @@ One alternative would be to start with Distance to Grandmas House = 0 and add to
 
 Hopefully the Going to Grandma's model has given you a sense of an approach for developing models along with some useful tips and an introduction to using units and why they can be so useful to you. Oh, and don't forget about putting notes in your models. Wiring diagrams without knowing what the pieces mean are generally not very useful.
 
+
+## The Boy Who Cried Wolf ##
+
+# Model
+{"title": "The Boy Who Cried Wolf", "description": "Storytelling as you unfold a model.", "load": "http://insightmaker.com/insight/7103"}
+# End Model
+
+## The Construction Process ##
+
+We develop models to help us understand the implications of interactions, and sometimes guidance. As such, as with Alice at the beginning of Chapter 1, it is essential that before you begin to build a model you know what it is that you want to understand otherwise how will you know if the model does what you need it to do.
+
+
+
 ## Work Completion ##
 
 The following model presents a modification to the previous model where the factor has been replaced by a constraint. It looks like there have been lots of changes though they all cosmetic except the way Workers influence work on a daily basis.
@@ -61,6 +66,26 @@ Again the appropriate Time Step is one that captures the activity occurring with
 Use the previous model and reconfigure it for a couple of the activities depicted in Figure 13. Note that for this exercise you will have to relabel the stock, flow, and variables accordingly. You will also have to decide on the most appropriate Time Units and Time Step to use.
 
 ~ End Exercise
+
+Let us now venture into the realm of trying to fill a swimming pool with water.
+
+## Filling a Swimming Pool ##
+
+# Model
+
+{"title": "Filling a Swimming Pool", "description": "The following model investigates a swimming pool as a stock.", "load": "http://insightmaker.com/insight/4990"}
+
+# End Model
+
+## Rabbit Population Growth ##
+
+Investigation of a simple Rabbit Population Model can be most informative.
+
+# Model
+
+{"title": "Rabbit Population Growth", "description": "This model that reflects the the notion that more rabbits create even more rabbits.", "load": "http://insightmaker.com/insight/5123"}
+
+# End Model
 
 ## Savings Account ##
 
@@ -106,47 +131,28 @@ We now have a model which provides some incentives to start and continue to depo
 
 Is the model done? As usual, the answer is; "It Depends!" If it has provided sufficient understanding to address the situation posed then it is sufficient. If not then it should be taken further, though once it is sufficient you should STOP!
 
-## Where Have All The Trees Gone? ##
+## The Fix Overshoots the Goal ##
 
-We had a forest reserve of over a million trees and the logging company guaranteed us they would plant a new tree for every one they cut down, yet all of a sudden there are no trees left to harvest. What happened?
+Have you ever pursued a goal and later found that you actually overshot the goal and had to back up to get back to the goal? The Balancing Loop with Delay structure is a variation of the standard Balancing Loop. The variation being that there are one or more delays in the structure which are responsible for producing, as will be demonstrated, a very different behavior pattern than the standard Balancing Loop.
 
-# Model
-
-{"title": "Where Have All The Trees Gone", "description": "Investigating the implications of different time horizons.", "load": "http://insightmaker.com/insight/8238"}
-
-DIAGRAM
-
-# End Model
-
-~ Exercise
-
-What have you come to understand about the difference between short term and long term perspectives and how do delays figure into surprises?
-
-~ Answer
-
-While it is difficult to guess at the results of two or more dynamic interactions delays in the structure will make it even worse. In many cases simulations are the only way to develop a meaningful understanding.
-
-~ End Exercise
-
-## Moose and Wolves Revisited ##
-
-In Chapter 1 a model which revealed the dynamic relationship between the population of Moose and Wolves. The model is presented here with an exercise to test your intuition.
+If you look at the Balancing Loop with Delay structure it looks identical to the standard balancing loop with the exception of the delay near the reduces link. The implication is that it takes some amount of time after the current state changes before it is actually realized and figures into the calculation of the gap which influences the subsequent action. Essentially what's happening is that action is being based on old data and therefore is probably not the appropriate action. The implications of this will become evident when we look at the simulation for this structure.
 
 # Model
 
-{"title": "Moose and Wolves Revisited", "description": "The populations of Moose and Wolves are dynamically linked.", "load": "http://insightmaker.com/insight/8590"}
+{"title": "The Fix Overshoots The Goal", "description": "Lets take a look at the implications of varying delays on the effect of a balancing loop.", "load": "http://insightmaker.com/insight/133"}
 
 # End Model
 
-~ Exercise
+You might ask how could it be that it might take 3.5 days for someone to get a sense of what the results of the previous actions were, which would be a good question. It's probably difficult to find a situation where this is realistic in days though what's important to realize is this structure could operate in this manner if the time units were hours, minutes, seconds or microseconds.
 
-What would you expect to happen in the Moose and Wolves model if there were no Moose or no Wolves? Open the model and run it for each situation.
+## Systems Archetypes ##
 
-~ Answer
+There are a set of frequently recurring structures that have a very distinct structure and characteristic pattern of behavior. Understanding the manner in which the relations within these structures unfold can be very helpful in determining how to deal with situation.
 
-If there are no Moose in time the Wolves will starve to death. If there are no Wolves the Moose will eventually over populate and probably starve to death though that's not shown because the Moose food supply isn't built into the model.
+# Model
+{"title": "Systems Archetypes", "description": "There is a typical unfolding relationship between the common recurring structures.", "load": "http://insightmaker.com/insight/538"}
+# End Model
 
-~ End Exercise
 
 ## Summary ##
 
