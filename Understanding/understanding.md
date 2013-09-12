@@ -1,12 +1,10 @@
-# Developing Understanding #
+# Developing Understanding though Models
 
-The rest of this chapter will present several models attempting to demonstrate a development process, and acquaint you with a few additional relevant aspects of simulation models.
+The chapter will present a number of models to demonstrate a development process, and acquaint you with a few additional relevant aspects of simulation models.
 
 ## Can Red Get to Grandma's House ##
 
-Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did?
-
-Also in this model we'll introduce the idea of Units which are used to help ensure the soundness of your model. Insight Maker checks Units to ensure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.
+Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did? Also in this model we'll introduce the idea of Units which are used to help ensure the soundness of your model. Insight Maker checks Units to ensure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.
 
 # Model
 {"title": "Walking to Grandma's", "description": "How long will it take us to get there?", "load": "http://insightmaker.com/insight/6778"}
@@ -23,27 +21,24 @@ Insight Maker doesn't complain because you're still comparing distance to distan
 ~ Exercise
 Seldom is there ever just one right way to build a model. You build the model to help you understand something and you might do that in different ways. Even for a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 4.5 and reducing it by walking. Try to build one or two alternatives to this model.
 ~ Answer
-One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as one walks toward it. This way you're tracking the distance traveled rather than the distance left to travel.
+One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as Red walks toward it. This way the model is tracking the distance traveled rather than the distance left to travel.
 ~ End Exercise
 
 Hopefully the Going to Grandma's model has given you a sense of an approach for developing models along with some useful tips and an introduction to using units and why they can be so useful to you. Oh, and don't forget about putting notes in your models. Wiring diagrams without knowing what the pieces mean are generally not very useful.
 
-
 ## The Boy Who Cried Wolf ##
+
+All stories are actually models simply expressed in words rather than diagrams. All of the interactions in a story can be expressed in the form of model which actually allows one to get an overview sense of the interactions in a single picture. 
 
 # Model
 {"title": "The Boy Who Cried Wolf", "description": "Storytelling as you unfold a model.", "load": "http://insightmaker.com/insight/7103"}
 # End Model
 
-## The Construction Process ##
-
-We develop models to help us understand the implications of interactions, and sometimes guidance. As such, as with Alice at the beginning of Chapter 1, it is essential that before you begin to build a model you know what it is that you want to understand otherwise how will you know if the model does what you need it to do.
-
-
+Just as all stories are models, you should attempt to ensure that all models you develop actually tell a story. Telling stories makes it easier to communicate the insights surfaced in the model to others and stories are much easier to remember than bits and pieces of data.
 
 ## Work Completion ##
 
-The following model presents a modification to the previous model where the factor has been replaced by a constraint. It looks like there have been lots of changes though they all cosmetic except the way Workers influence work on a daily basis.
+The following model presents a situation where a number of workers are working a project and you want to know how long it is going to take them to finish.
 
 # Model
 
@@ -61,15 +56,10 @@ Set up the above model to run with Time Step of 0.5. Compare the results of this
 
 Again the appropriate Time Step is one that captures the activity occurring within the model. In this case the Workers are in integers and Project Work in days, both of which are in integers, and with the Time Units in days the appropriate Time Step is 1. If there were events which happened in the model on the order of hours then you would have to decide whether to alter the model to run in hours or reduce the Time Step to ensure it was small enough so no interactions in the model were missed.
 
-~ Exercise
-
-Use the previous model and reconfigure it for a couple of the activities depicted in Figure 13. Note that for this exercise you will have to relabel the stock, flow, and variables accordingly. You will also have to decide on the most appropriate Time Units and Time Step to use.
-
-~ End Exercise
-
-Let us now venture into the realm of trying to fill a swimming pool with water.
 
 ## Filling a Swimming Pool ##
+
+Let us now venture into the realm of trying to fill a swimming pool with water.
 
 # Model
 
@@ -95,8 +85,6 @@ Investigation of a simple Rabbit Population Model can be most informative.
 
 # End Model
 
-
-
 ## Why Aren't We All Rich ##
 
 If one can put money in an investment account and it grows over time, and it grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years though for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs?
@@ -119,13 +107,11 @@ And what's definitely worth repeating is that providing comments for all the ele
 
 ----------
 
-----------
-
-### Exercise 3-4 ###
+~ Exercise
 
 There is a logic flaw in this model which you might try to repair. The Penalty is not actually taken from the Investment Account but from the Withdrawal itself so it reduces the amount you actually get from the Withdrawal. Be warned that is might be a tricky fix.
 
-----------
+~ End Exercise
 
 We now have a model which provides some incentives to start and continue to deposit in an Investment Account, and some disincentives toward the withdrawal of funds, though have we really addressed the initial situation posed? Not really. As far as starting the Investment Account and regularly depositing money, there are incentives, and for many these incentives were enough to get them to invest. For many the incentive, for one reason or another, has not been sufficient. And, any more strict incentives would likely be looked on unfavorably. People do not like to be manipulated, even when it is for their own benefit. The penalty for withdrawal is a deterrent in some respects though as the Investment Account continues to grow its attractiveness in terms of what it can purchase continues to entice. The best answer for this situation is to legally tie up the withdrawal process so it's only an option in the case of dire emergencies. Though as much as people find being manipulated by others distasteful, being controlled by themselves is just as distasteful.
 

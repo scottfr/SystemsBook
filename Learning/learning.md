@@ -1,4 +1,4 @@
-# Web of Wonder #
+# Web of Wonder
 ~~~
 “Would you tell me, please, which way I ought to go from here?”
 “That depends a good deal on where you want to get to,” said the Cat.
@@ -9,17 +9,17 @@
 
 Lewis Carroll - Alice in Wonderland
 ~~~
-The world we live in is much like a giant spider web where everything is connected to everything else. When something changes in one part of the web it ripples though the whole web. We tend to live in the moment not realizing how actions ripple over time thorough distant parts of the web. When we don't understand the web things around us tend to seem extremely complicated, confusing and overwhelming. We feel caught in the web. What we need is a web of understanding for this web of extended interactions around us.
+The world we live in is much like a giant spider web where everything is connected to everything else. When something changes in one part of the web it ripples though the whole web. We tend to live in the moment not realizing how our actions ripple over time thorough distant parts of the web. When we don't understand the web things around us tend to seem extremely complicated, confusing and overwhelming. We feel caught in the web. What we need is a web of understanding for this web of extended interactions.
 
-It has been said that you can learn about riding a bicycle from reading a book though to learn to ride a bicycle you actually have to spend time on the bicycle. The interactive learning environments (ILEs) you're about to experience are intended to develop a web of understanding for the web of extended interactions around you. You are encouraged to engage with the ILEs as the understanding you develop will aid you in figuring out where you want to get to and develop skills which will improve your likelihood of getting there.
+It has been said that you can learn about riding a bicycle from reading a book, though to learn to ride a bicycle you actually have to spend time on a bicycle. The interactive learning environments (ILEs) you're about to experience are intended to develop a web of understanding for the web of extended interactions around you. You are encouraged to engage with the ILEs as the understanding you develop will aid you in figuring out where you want to get to and develop skills which will improve your likelihood of getting there. These ILEs are very much like reading a book about riding a bike as you're actually on the bike learning to ride it.
 
 ## Experiencing the Web ##
 
-Please click on the title and step through the following ILE for an initial sense of how a simple action can impact many things in the web of relations.
+Please click on the title and step through the following ILE for an initial sense of how a simple action can impact many things in the web of relations. It is best to click on the title for if you click anywhere else on the ILE it will open and also do a page forward or back depending on where you click. If this happens when you exit the ILE you may not be where you think you should be.
 
 # Model
 
-{"title": "Bird Feeder Dilemma", "description": "All I wanted was a more pleasant morning breakfast.", "load": "http://insightmaker.com/insight/8872"}
+{"title": "Bird Feeder Dilemma", "description": "All I wanted was a more pleasant morning at breakfast.", "load": "http://insightmaker.com/insight/8872"}
 
 # End Model
 
@@ -33,31 +33,29 @@ Hopefully this gives you a sense of difficulty one can get into when simply thin
 
 Was the interaction of the population of Moose and Wolves what you expected? Probably not. It's the nature of a web of interactions over time that we simply can't see by looking at a picture. The behavior over time is often critical for a sense of what's really happening in the web.
 
-The following ILE is provided as another example of how unexpected the behavior of a web of extended interactions can be over time.
+The following ILE is provided as another example of how unexpected the behavior of a web of extended interactions can be.
 
 # Model
 
-{"title": "Sustaining the Forest", "description": "Is the forest you care about sustainable with current practices?", "load": "http://insightmaker.com/insight/8889"}
+{"title": "Sustaining the Forest", "description": "Is the forest you care about sustainable under current practices?", "load": "http://insightmaker.com/insight/8889"}
 
 # End Model
 
-Did you find it interesting how unexpected the future can be? Did you sense there was a good reason for things unfolding in the manner they did in the web? As you continue you will develop a skill for understanding in interactions in the web.
+Did you find it interesting how unexpected the future can be? Did you sense there was a good reason for things unfolding in the manner they did? As you continue you will develop a skill for understanding interactions in the web.
 
-## The Future We Create ##
+## Creating the Future ##
 
-The next ILE is intended to provide a better sense of the detail associated with the unexpected unfolding of the future.
+Yesterday's actions are responsible for the the world we experience today. And today's actions are responsible for the world that we will experience tomorrow. The next ILE is intended to provide a better sense of the detail associated with the unexpected unfolding of the future.
 
 # Model
 
-{"title": "Creating the Future.", "description": "There is a meaning to it all.", "load": "http://insightmaker.com/insight/8892"}
+{"title": "Creating the Future", "description": "There is a meaning to it all.", "load": "http://insightmaker.com/insight/8892"}
 
 # End Model
 
-This ILE presents a sense of what what you are doing any time you set out to do anything. Based on past experience the question is how do you get better at doing this to improve the chances of creating the future you're trying to create?
+If this ILE presents a sense of what is essential if you want to address a situation without making things worse the question is how do you get better at doing this to improve the chances of creating the future you're trying to create? All too often the world around us seems so complicated and apparently so difficult to pursue our dreams that we almost want to give up. The answer to complicated is to simplify the complicated and allow us to develop a web of understand. The next few sections will specifically address how we get better at this.
 
-All too often the world around us seems so complicated and apparently so difficult to pursue our dreams that we almost want to give up. The answer to complicated is to simplify the complicated and understand complexity. This will happen in very short order.
-
-## Patterns in Complexity ##
+## Patterns in the Web ##
 
 What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever really thought about how you learn about the world around you? There are some things you memorize early in life, like the times tables. While you memorize these is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that the learning happened? In this chapter we will investigate how you actually learn. We will also present a introduction to how you can improve your learning and actually test whether what you have learned is actually correct.
 
@@ -110,7 +108,7 @@ A simulation is the dynamics manipulation of a pattern over time that allows us 
 
 ----------
 
-## New Patterns - A Better Way - ##
+## New Patterns - A Better Way ##
 
 Ludwig von Bertalanffy first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another.{Davidson, Mark. 1983. Uncommon Sense: The Life and Thought of Ludwig von Bertalanffy. J.P. Tarcher, Inc. http://www.amazon.com/Uncommon-Sense-Thought-Bertalanffy-1901-1972/dp/087477165X/} When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. However, if you think about it, maybe there is some truth to it after all.
 
@@ -144,7 +142,7 @@ As in the previous exercise take a few minutes and identify a number of situatio
 
 ~ End Exercise
 
-Now that you have a sense of the implications of reinforcing feedback on the behavior of a stock, the next ILE will introduce a very different perspective of feedback.
+Exponential growth results from reinforcing feedback from a stock to a flow, the next ILE will introduce a very different perspective of feedback.
 
 # Model
 
@@ -160,6 +158,8 @@ As in the previous exercise take a few minutes and identify a number of situatio
 
 A goal seeking structure pursues the goal in a manner which depends on balancing feedback. Every goal seeking structure has one or more balancing feedback and every balancing structure has a goal it is tending toward.
 
+## Three Structures ##
+
 You have now experienced the three structures, or models, which will combine in various ways to create every model you ever create in the future. Those three structures are the building blocks out of which everything else is created. No matter how complex or complicated the model may seem, it is simply some number of these three structures interacting. These three structures are presented together in the following ILE so you can experience them together for reinforcement.
 
 # Model
@@ -168,15 +168,17 @@ You have now experienced the three structures, or models, which will combine in 
 
 # End Model
 
-In previous sections you interacted with two different kinds of models qualitative models, i.e., no numbers, Follow the Clues and Bird Feeder Dilemma and quantitative models, with numbers, all the simulation models you ran. In this chapter we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about quantitative Stock & Flow Simulation Models.
+Hopefully you have become comfortable with the three different structures presented as you will experience them over and over. If you're not comfortable please interact with the ILE until you are.
 
 ## Three Types of Models ##
+
+In previous sections you interacted with two different kinds of models qualitative models, i.e., no numbers, Follow the Clues and Bird Feeder Dilemma and quantitative models, with numbers, all the simulation models you ran. In this chapter we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about quantitative Stock & Flow Simulation Models.
 
 # Model
 {"title": "Three Types of Models", "description": "Different though each aiding understanding.", "load": "http://insightmaker.com/insight/8932"}
 # End Model
 
-## Construction Concept ##
+## Construction Process ##
 
 There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These will be presented as Modeling Tips throughout this chapter. The idea is to ensure that the model serves the purpose you started building it for.
 
@@ -186,17 +188,17 @@ There are a number of guidelines or rules of thumb that you will find helpful wh
 
 ## The Essence of AND? ##
 
-Developing models is actually the easy part. What you should strive for is to develop models that advance your understanding and allow you to surface insights to better address situations around you. Evolving a model to surface insights can be a relatively straightforward and simple process as presented by the following model.
+Developing models is actually the easy part. What you should strive for is to develop models that advance your understanding and allow you to surface insights to better address situations around you. Evolving a model to surface insights can be a relatively straightforward and simple process as presented by the following ILE.
 
 # Model
 {"title": "Systems Thinking: The Essence of And?", "description": "Continuing to seek the relevant influences.", "load": "http://insightmaker.com/insight/3365"}
 # End Model
 
-The process presented in the previous model can be used with Rich Pictures and Causal Loop Diagrams as well as Stock & Flow Simulations. Though when developing Stock & Flow Simulations you also have to be certain that the model runs and produces a meaningful result. And when developing a simulation model you should never be more than a couple clicks away from a running model. You'll better understand this advice after you make a substantial number of changes to a working model, it then doesn't run, and you spend hours trying to figure out how you broke it. Do yourself a favor, run after every change. It only takes a minute.
+The process presented can be used with Rich Pictures and Causal Loop Diagrams as well as Stock & Flow Simulations. Though when developing Stock & Flow Simulations you also have to be certain that the model runs and produces a meaningful result. When developing a simulation model you should never be more than a couple clicks away from a running model. You'll better understand this advice after you make a substantial number of changes to a working model, it then doesn't run, and you spend hours trying to figure out how you broke it. Do yourself a favor, think about what the changed should produce, run after every change and verify the model produces what you expect. It only takes a minute. when the simulation doesn't produce what you expect it's not a problem, it's an opportunity for learning.
 
 ## Modeling Guidelines ##
 
-Figure 4 presents a number of guidelines or rules of thumb it would be good for you to keep in mind as you develop models. Some of the following are only relevant to Stock & Flow simulations, and which they are should be quite obvious.
+There are a number of guidelines, or rules of thumb, it would be good for you to keep in mind as you develop models. Some of the following are only relevant to Stock & Flow simulations, and which they are should be quite obvious.
 
 # Model
 {"title": "Modeling Guidelines", "description": "Essential thinks to guide you.", "load": "http://insightmaker.com/insight/1784"}
@@ -214,11 +216,8 @@ Remember that model development and the understanding that comes with it is an i
 - We learn as we go and seldom do we get models right the first time.
 - Linear, Reinforcing and Balancing structures are the basic building blocks for all models.
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
-
-Please continue to the next chapter where you will learn more about the Insight Maker environment so you can actually build the models that were presented in this chapter.
-- A model is a simplification of the world around you intended to help you understand something.
-- Use a modeling form that adequately serves your quest for understanding.
 - Stock & Flow, Rich Picture, and Causal Loop models are only three of a very large array of possible modeling forms that exist. Use them to the extent that they serve you and when they don't find a form that does.
+- Use a modeling form that adequately serves your quest for understanding.
 - The Model Thinking Course by Scott E. Page presents a very extensive exposure to many types of models useful for understanding different aspects of the world around us.
 
 ### Rich Pictures ###
@@ -248,6 +247,8 @@ Please continue to the next chapter where you will learn more about the Insight 
 - The guidelines are intended to help you develop better models.
 - Use the guidelines as a checklist.
 
+Please continue to the next chapter where you will learn more about working though the development of models.
+
 ## References ##
 
 - Davidson, Mark. 1983. Uncommon Sense: The Life and Thought of Ludwig von Bertalanffy. J.P. Tarcher, Inc. http://www.amazon.com/Uncommon-Sense-Thought-Bertalanffy-1901-1972/dp/087477165X/
@@ -260,6 +261,3 @@ Please continue to the next chapter where you will learn more about the Insight 
 - [Rich Pictures](http://systems.open.ac.uk/materials/T552/pages/rich/richAppendix.html) from Open University Course T552
 - [Senge, P. 1990. The Fifth Discipline: The Art & Practice of the Learning Organization](http://www.amazon.com/Fifth-Discipline-Practice-Organization-ebook/dp/B000SEIFKK/)
 - Sherwood, Dennis. 2002. Seeing the Forest for the Trees: A Manager's Guide to Applying Systems Thinking. http://www.amazon.com/Seeing-Forest-Trees-Managers-ebook/dp/B004GCK63Y/
-
-
-
