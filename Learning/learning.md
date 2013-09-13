@@ -19,15 +19,15 @@ Please click on the title and step through the following ILE for an initial sens
 
 # Model
 
-{"title": "Bird Feeder Dilemma", "description": "All I wanted was a more pleasant morning at breakfast.", "load": "http://insightmaker.com/insight/8872"}
+{"title": "Bird Feeder Dilemma", "description": "All you wanted was a more pleasant morning at breakfast.", "load": "http://insightmaker.com/insight/8872"}
 
 # End Model
 
-Hopefully this gives you a sense of difficulty one can get into when simply thinking about a single action taken to achieve a goal without considering the effects of that action. This web provides a limited view as it's only a picture of relations. The picture doesn't give you any real sense of the quantity of anything over time. The next ILE should provide a better sense of why it's important to have a sense of how the web of extended interactions develops over time if we are to really develop a web of understand.
+Hopefully this gives you a sense of difficulty one can get into when simply thinking about a single action taken to achieve a goal without considering the effects of that action. This web provides a limited view as it's only a picture of relations, and probably not all of them. The picture doesn't give you any real sense of the quantity of anything over time. The next ILE should provide a better sense of why it's important to have a sense of how the web of extended interactions develops over time if we are to really develop a web of understanding.
 
 # Model
 
-{"title": "Moose and Wolves", "description": "The populations of Moose and Wolves are dynamically linked.", "load": "http://insightmaker.com/insight/8590"}
+{"title": "Moose and Wolves", "description": "How do the populations of Moose and Wolves interact?", "load": "http://insightmaker.com/insight/8590"}
 
 # End Model
 

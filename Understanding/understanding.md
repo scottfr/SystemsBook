@@ -1,6 +1,16 @@
 # Developing Understanding though Models
 
-The chapter will present a number of models to demonstrate a development process, and acquaint you with a few additional relevant aspects of simulation models.
+This chapter will present a number of models to demonstrate the development process, various aspects of the model development guidelines and acquaint you with a few additional relevant aspects of simulation models.
+
+## The Boy Who Cried Wolf ##
+
+All stories are actually models expressed in words rather than diagrams. All of the interactions in a story can be expressed in the form of model which actually allows one to get an overview of the main interactions in a single picture. The following model will unfold a story and show the difference between a Rich Picture and a Causal Loop Diagram for the same story.
+
+# Model
+{"title": "The Boy Who Cried Wolf", "description": "Telling a story as you unfold a model.", "load": "http://insightmaker.com/insight/7103"}
+# End Model
+
+Just as all stories are models, you should attempt to ensure that all models you develop actually tell a story. Telling stories makes it easier to communicate the insights surfaced in the model to others and stories are much easier to remember than bits and pieces of data.
 
 ## Can Red Get to Grandma's House ##
 
@@ -25,16 +35,6 @@ One alternative would be to start with Distance to Grandmas House = 0 and add to
 ~ End Exercise
 
 Hopefully the Going to Grandma's model has given you a sense of an approach for developing models along with some useful tips and an introduction to using units and why they can be so useful to you. Oh, and don't forget about putting notes in your models. Wiring diagrams without knowing what the pieces mean are generally not very useful.
-
-## The Boy Who Cried Wolf ##
-
-All stories are actually models simply expressed in words rather than diagrams. All of the interactions in a story can be expressed in the form of model which actually allows one to get an overview sense of the interactions in a single picture. 
-
-# Model
-{"title": "The Boy Who Cried Wolf", "description": "Storytelling as you unfold a model.", "load": "http://insightmaker.com/insight/7103"}
-# End Model
-
-Just as all stories are models, you should attempt to ensure that all models you develop actually tell a story. Telling stories makes it easier to communicate the insights surfaced in the model to others and stories are much easier to remember than bits and pieces of data.
 
 ## Work Completion ##
 
