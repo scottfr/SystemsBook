@@ -4,7 +4,7 @@ This chapter will present a number of models on different subjects offered by th
 
 ## Sustainable Capitalism ##
 
-The current life expectancy for a Fortune-500 company is 40 to 50 years, less than 10 years for a newly started company, and about 12.5 years for all companies together. And during this lifespan the tendency is to focus on short-term profits with little or no concern for the impact the company has on society or the environment. Have you ever wondered about the reasons behind this?
+The current life expectancy for a Fortune-500 company is 40 to 50 years, less than 10 years for a newly started company, and about 12.5 years for all companies together. And during this lifespan the tendency is to focus on short-term profits with little or no concern for the impact the company has on society or the environment. Have you ever wondered about the reasons behind this? This model is from Mark Van Clieaf sponsored by Ken Shepard.
 
 # Model
 
@@ -14,7 +14,7 @@ DIAGRAM
 
 # End Model
 
-This model is from Mark Van Clieaf sponsored by Ken Shepard.
+
 
 ### References ###
 

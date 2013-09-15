@@ -8,8 +8,13 @@ With this awakening the label for this creation began to look something like "Sy
 
 An additional realization is that the ILE is just that, an interactive learning environment. It is not a development environment. While one can construct models and simulations in the environment any serious development should be done in Insight Maker at InsightMaker.com. There are critical functions that can be performed on a workstation for which there is no equivalent on a tablet or cell phone, e.g., mouseover, shift+click, ctrl+click, which are critical operations for doing some development. As you experience the restructured first two chapters you'll get a sense of this if you're on a tablet or cell phone and the alternatives will be described initially where appropriate.
 
+Some of the implications of this being an interactive learning environment and not a development environment are:
+
+- **No Storytelling Exit**. There is no way to exit from the storytelling mode. You can open the Toolbar and Configuration Panel and make changes to any model while in storytelling mode, and run simulations where appropriate, though these changes can not be saved.
+- **Insight Maker Model Link**. For each model that exists in Insight Maker there will be a footnote that contains a link to that model in Insight Maker. You can follow this link to access the source model. There you can clone the model and make changes to your copy to as you wish.
+
 People tend to read books in different ways. With that in mind we've designed this Interactive Learning Environment in a manner such that the first section is the only one you need to experience sequentially. It presents foundation concepts necessary to help you make sense out of rest of the ILE. Once you finish the first section you should be able to skip around as your interest directs.
 ~~~
-August 30, 2013
+September 16, 2013
 Gene & Scott
 ~~~
