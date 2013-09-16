@@ -426,9 +426,9 @@ That was a bit of a disappointment wasn't it? Nothing happened. Why is this?
 
 Well since our infection rate now depends on the number of people who are infected we have to have at least one person infected to get the epidemic going. Let's change the [Healthy] and [Infected] states so one person starts in the infected state at the beginning of the simulation.
 
-{"attribute":"Active","target":"Healthy","value":"[Self].Index() <> 1"}
+{"attribute":"Active","target":"Healthy","value":"Self.Index() <> 1"}
 
-{"attribute":"Active","target":"Infected","value":"[Self].Index() == 1", "editor": true}
+{"attribute":"Active","target":"Infected","value":"Self.Index() == 1", "editor": true}
 
 Each agent has an index starting with 1, we have set our initially active equations so the first agent in the population will start the simulation in the infected state. Let's run the model to see this working.
 
@@ -469,7 +469,7 @@ Network
 Custom Function
 : Here you can specify a custom function to control the layout of the agents. This function will be called once for each agent in the population and should return a two-element vector where the first element is the *x*-coordinate of the agent, and the second element is the *y*-coordinate. The primitive \p{Self} in this function will refer to the agent that is being positioned.
 
-![Figure 4. Illustration of the four agent placement algorithms. From the top: random, grid, ellipse, and a custom function using: *{2\*index([Self]), 50+50\*sin(index([Self])/10)}*.](AgentPlacement.png)
+![Figure 4. Illustration of the four agent placement algorithms. From the top: random, grid, ellipse, and a custom function using: *{2\*Self.Index(), 50+50\*sin(Self.Index())/10)}*.](AgentPlacement.png)
 
 #### Spatial Find Functions
 
@@ -479,17 +479,17 @@ When working with a spatially explicit model, a number of additional find functi
 
 It is useful now to introduce a concept that will be very helpful to you. When used in an Agent, \p{Self} always refers to the agent itself. If you have a primitive within an agent, \p{Self} can be used from that primitive to get a reference to the agent containing the primitive. So the following equation in an agent will return a vector of agents that are within 15 miles of the agent itself:
 
-\e{{[Population].FindNearby([Self], {15 Miles})}}
+\e{{[Population].FindNearby(Self, {15 Miles})}}
 
 Two other useful functions for finding agents in spatial relation to each other are \e{FindNearest()} and \e{FindFurthest()}. FindNearest returns the nearest agent to the target while FindFurthest returns the agent that is farthest away from it. Each of them also supports an optional third argument determining how many nearby (or far away) agents to return (this optional argument defaults to one when omitted).
 
 For example, the following equation finds the nearest agent to the current agent:
 
-\e{[Population].FindNearest([Self])}
+\e{[Population].FindNearest(Self)}
 
 While this finds the three agents that are furthest from the current agent:
 
-\e{[Population].FindFurthest([Self], 3)}
+\e{[Population].FindFurthest(Self, 3)}
 
 #### Movement Functions
 
@@ -497,11 +497,11 @@ You can also move agents to new locations during simulation. To do this, it is h
 
 For instance, we can use an action primitive in an agent and the \e{Move()} function to make agents move during the simulation. The Move function takes one arguments: a vector containing the *x*- and *y*-distances to move the agent. Thus, we could place an action primitive in our agent and give it the following action property to make the agent move randomly over time^[What we are implementing here is known as a "random walk" or Brownian motion. It is a commonly studied pattern of movement with wide applications in science.]. The equation will move the agent a random distance between -0.5 and 0.5 units in the *x*-direction and a random distance between -0.5 and 0.5 units in the *y*-direction.
 
-\e{[Self].Move({rand(), rand()}-0.5)}
+\e{Self.Move({rand(), rand()}-0.5)}
 
 Another useful movement function is the \e{MoveTowards()} function. MoveTowards moves an agent towards (or away from) the location of another agent. MoveTowards takes two arguments: the target agent to move towards and how far to move towards that agent (with negative values indicating movement away). The following command would move an agent one meter closer to its nearest neighbor in the population.
 
-\e{{[Self].MoveTowards([Population].FindNearest([Self]), {1 Meter})}}
+\e{{Self.MoveTowards([Population].FindNearest(Self), {1 Meter})}}
 
 ~ Exercise
 
@@ -509,7 +509,7 @@ Write an equation to move an agent 2 meters towards the furthest healthy agent.
 
 ~ Answer
 
-\e{{[Self].MoveTowards([Population.FindState([Healthy]).FindFurthest([Self]), {2 Meters})}}
+\e{{Self.MoveTowards([Population.FindState([Healthy]).FindFurthest(Self), {2 Meters})}}
 
 ~ End Exercise
 
@@ -517,7 +517,7 @@ Write an equation to move an agent 2 meters towards the furthest healthy agent.
 
 {"title": "Agent Movement", "description": "This model illustrates the use of movement within agent based models. We adapt the previous disease model so that healthy agents flee from the nearest infected agent."}
 
-{"load": "<mxGraphModel>  <root>    <mxCell id=\"0\"\/>    <mxCell id=\"1\" parent=\"0\"\/>    <Folder name=\"Person\" Note=\"\" Type=\"Agent\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"28\">      <mxCell style=\"folder\" parent=\"1\" vertex=\"1\">        <mxGeometry x=\"450\" y=\"100\" width=\"140\" height=\"320\" as=\"geometry\"\/>      <\/mxCell>    <\/Folder>    <State name=\"Healthy\" Note=\"\" Active=\"Index([Self]) &lt;&gt; 1\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"23\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"20\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Infected\" Note=\"\" Active=\"Index([Self]) == 1\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"24\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"140\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Recovered\" Note=\"\" Active=\"false\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"25\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"260\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <Transition name=\"Infection\" Note=\"\" Trigger=\"Probability\" Value=\"[Fraction Infected]\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"26\">      <mxCell style=\"transition\" parent=\"28\" source=\"23\" target=\"24\" edge=\"1\">        <mxGeometry x=\"-450\" y=\"-100\" width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint x=\"-450\" as=\"sourcePoint\"\/>          <mxPoint x=\"-350\" y=\"-100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Transition name=\"Recovery\" Note=\"\" Trigger=\"Probability\" Value=\"0.2\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"27\">      <mxCell style=\"transition\" parent=\"28\" source=\"24\" target=\"25\" edge=\"1\">        <mxGeometry x=\"-450\" y=\"-100\" width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint x=\"-450\" as=\"sourcePoint\"\/>          <mxPoint x=\"-350\" y=\"-100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Setting Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\">      <mxCell parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/Setting>    <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"23,24,25,29,30\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\">      <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/>      <\/mxCell>    <\/Display>    <Agents name=\"Population\" Note=\"\" Size=\"50\" GeoWrap=\"false\" GeoDimUnits=\"Unitless\" GeoWidth=\"200\" GeoHeight=\"100\" Placement=\"Random\" PlacementFunction=\"&lt;&lt;rand*width([Self]), rand*height([Self])&gt;&gt;\" Network=\"None\" NetworkFunction=\"randBoolean(0.02)\" Agent=\"28\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"29\">      <mxCell style=\"agents\" parent=\"1\" vertex=\"1\">        <mxGeometry x=\"220\" y=\"180\" width=\"170\" height=\"80\" as=\"geometry\"\/>      <\/mxCell>    <\/Agents>    <Variable name=\"Fraction Infected\" Note=\"\" Equation=\"Count(FindState([Population], [Infected]))\/PopulationSize([Population])\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"30\">      <mxCell style=\"variable\" vertex=\"1\" parent=\"1\">        <mxGeometry x=\"280\" y=\"90\" width=\"130\" height=\"50\" as=\"geometry\"\/>      <\/mxCell>    <\/Variable>    <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"31\">      <mxCell style=\"link\" edge=\"1\" parent=\"1\" source=\"29\" target=\"30\">        <mxGeometry width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint y=\"100\" as=\"sourcePoint\"\/>          <mxPoint x=\"100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Link>    <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"32\">      <mxCell style=\"link\" edge=\"1\" parent=\"1\" source=\"30\" target=\"26\">        <mxGeometry width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint y=\"100\" as=\"sourcePoint\"\/>          <mxPoint x=\"100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Link>  <\/root><\/mxGraphModel>"}
+{"load": "<mxGraphModel>  <root>    <mxCell id=\"0\"\/>    <mxCell id=\"1\" parent=\"0\"\/>    <Folder name=\"Person\" Note=\"\" Type=\"Agent\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"28\">      <mxCell style=\"folder\" parent=\"1\" vertex=\"1\">        <mxGeometry x=\"450\" y=\"100\" width=\"140\" height=\"320\" as=\"geometry\"\/>      <\/mxCell>    <\/Folder>    <State name=\"Healthy\" Note=\"\" Active=\"Self.Index() &lt;&gt; 1\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"23\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"20\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Infected\" Note=\"\" Active=\"Self.Index() == 1\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"24\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"140\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <State name=\"Recovered\" Note=\"\" Active=\"false\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"25\">      <mxCell style=\"state\" parent=\"28\" vertex=\"1\">        <mxGeometry x=\"20\" y=\"260\" width=\"100\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/State>    <Transition name=\"Infection\" Note=\"\" Trigger=\"Probability\" Value=\"[Fraction Infected]\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"26\">      <mxCell style=\"transition\" parent=\"28\" source=\"23\" target=\"24\" edge=\"1\">        <mxGeometry x=\"-450\" y=\"-100\" width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint x=\"-450\" as=\"sourcePoint\"\/>          <mxPoint x=\"-350\" y=\"-100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Transition name=\"Recovery\" Note=\"\" Trigger=\"Probability\" Value=\"0.2\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" id=\"27\">      <mxCell style=\"transition\" parent=\"28\" source=\"24\" target=\"25\" edge=\"1\">        <mxGeometry x=\"-450\" y=\"-100\" width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint x=\"-450\" as=\"sourcePoint\"\/>          <mxPoint x=\"-350\" y=\"-100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Transition>    <Setting Note=\"\" Version=\"28\" TimeLength=\"20\" TimeStart=\"0\" TimeStep=\"1\" TimeUnits=\"Years\" StrictUnits=\"true\" Units=\"\" HiddenUIGroups=\"Validation,User Interface\" SolutionAlgorithm=\"RK1\" BackgroundColor=\"white\" Throttle=\"1\" Macros=\"\" SensitivityPrimitives=\"\" SensitivityRuns=\"50\" SensitivityBounds=\"50, 80, 95, 100\" SensitivityShowRuns=\"false\" id=\"2\">      <mxCell parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"20\" y=\"20\" width=\"80\" height=\"40\" as=\"geometry\"\/>      <\/mxCell>    <\/Setting>    <Display name=\"Default Display\" Note=\"\" Type=\"Time Series\" xAxis=\"Time (%u)\" yAxis=\"\" ThreeDimensional=\"false\" Primitives=\"23,24,25,29,30\" AutoAddPrimitives=\"true\" ScatterplotOrder=\"X Primitive, Y Primitive\" Image=\"Display\" yAxis2=\"\" Primitives2=\"\" showMarkers=\"false\" showLines=\"true\" showArea=\"false\" legendPosition=\"Automatic\" id=\"3\">      <mxCell style=\"roundImage;image=\/builder\/images\/DisplayFull.png;\" parent=\"1\" vertex=\"1\" visible=\"0\">        <mxGeometry x=\"50\" y=\"20\" width=\"64\" height=\"64\" as=\"geometry\"\/>      <\/mxCell>    <\/Display>    <Agents name=\"Population\" Note=\"\" Size=\"50\" GeoWrap=\"false\" GeoDimUnits=\"Unitless\" GeoWidth=\"200\" GeoHeight=\"100\" Placement=\"Random\" PlacementFunction=\"&lt;&lt;rand*width([Self]), rand*height([Self])&gt;&gt;\" Network=\"None\" NetworkFunction=\"randBoolean(0.02)\" Agent=\"28\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"29\">      <mxCell style=\"agents\" parent=\"1\" vertex=\"1\">        <mxGeometry x=\"220\" y=\"180\" width=\"170\" height=\"80\" as=\"geometry\"\/>      <\/mxCell>    <\/Agents>    <Variable name=\"Fraction Infected\" Note=\"\" Equation=\"Count(FindState([Population], [Infected]))\/PopulationSize([Population])\" Units=\"Unitless\" MaxConstraintUsed=\"false\" MinConstraintUsed=\"false\" MaxConstraint=\"100\" MinConstraint=\"0\" ShowSlider=\"false\" SliderMax=\"100\" SliderMin=\"0\" SliderStep=\"\" Image=\"None\" FlipHorizontal=\"false\" FlipVertical=\"false\" LabelPosition=\"Middle\" id=\"30\">      <mxCell style=\"variable\" vertex=\"1\" parent=\"1\">        <mxGeometry x=\"280\" y=\"90\" width=\"130\" height=\"50\" as=\"geometry\"\/>      <\/mxCell>    <\/Variable>    <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"31\">      <mxCell style=\"link\" edge=\"1\" parent=\"1\" source=\"29\" target=\"30\">        <mxGeometry width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint y=\"100\" as=\"sourcePoint\"\/>          <mxPoint x=\"100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Link>    <Link name=\"Link\" Note=\"\" BiDirectional=\"false\" id=\"32\">      <mxCell style=\"link\" edge=\"1\" parent=\"1\" source=\"30\" target=\"26\">        <mxGeometry width=\"100\" height=\"100\" as=\"geometry\">          <mxPoint y=\"100\" as=\"sourcePoint\"\/>          <mxPoint x=\"100\" as=\"targetPoint\"\/>        <\/mxGeometry>      <\/mxCell>    <\/Link>  <\/root><\/mxGraphModel>"}
 	
 DIAGRAM
 	
@@ -541,7 +541,7 @@ We will have this action be triggered when the agent is healthy and there is at 
 
 The action will cause healthy agents to move away from the nearest infected agent. In effect, fleeing from sick individuals.
 
-{"attribute":"Action","target":"Escape","value":"[Self].MoveTowards([Population].FindState([Infected]).FindNearest([Self]), -2)", "editor": true}
+{"attribute":"Action","target":"Escape","value":"Self.MoveTowards([Population].FindState([Infected]).FindNearest(Self), -2)", "editor": true}
 
 We can now run the simulation.
 
@@ -561,15 +561,15 @@ RESULTS
 
 To create connections and remove connections between agents you can use the \e{Connect()} and \e{Unconnect()} functions. Both of these functions take two arguments: the agents that should be connected or disconnected. For example, to connect an agent to its nearest neighbor, you could use the following:
 
-\e{[Self].Connect([Population].FindNearest([Self]))}
+\e{Self.Connect([Population].FindNearest(Self))}
 
 To disconnect an agent from its nearest neighbor (assuming they are connected), you would use:
 
-\e{[Self].Unconnect([Population].FindNearest([Self]))}
+\e{Self.Unconnect([Population].FindNearest(Self))}
 
 To obtain a vector of connections to an agent, use the \e{Connected()} function:
 
-\e{[Self].Connected()}
+\e{Self.Connected()}
 
 Connections are not directed so creating a connection from agent *A* to agent *B* is the same as creating a connection from agent *B* to agent *A*. Also only one connection between a given pair of agents will exist at a time. So creating two connections between a given pair of agents will have the same effect as creating a single connection.
 
