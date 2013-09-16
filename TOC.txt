@@ -1,7 +1,6 @@
 Preface
 Learning
 Understanding
-Applied
 Models and Truth
 Building Confidence
 The Process of Modeling
