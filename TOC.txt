@@ -1,5 +1,6 @@
 Preface
 Learning
+Applied
 Understanding
 Models and Truth
 Building Confidence

@@ -26,7 +26,7 @@ The electronic copy of the book is available at the URL below and is password pr
 * Book content is still under development and being edited 
 * Some of the model/graph displays are out of sequence so the graph gets displayed before the model. Just click the Red-X Stop sign in the upper right corner to close the graph. 
 
-## Beta v3 13.08.30 Access ##
+## Beta v43 13.09.16 Access ##
 
 Note that Scott has indicated he can't create a new betaX. URL for each revised Beta. This means that when the new one is posted it will be at the same URL as the old one. Please check the first page to ensure it has the above date. If it doesn't then tell your browser to reload it.
 
@@ -34,12 +34,17 @@ Note that Scott has indicated he can't create a new betaX. URL for each revised 
 * username: betabook 
 * password: feedback
 
-You can send feedback to Gene at systemswiki@gmail.com or comment in the [Beta v3 Available](http://linkd.in/17NArs4) thread in the STW Sponsors group on LinkedIn if you're a member.
+You can send feedback to Gene at systemswiki@gmail.com or comment in the [Beta v4 Available](http://linkd.in/14WyUzp) thread in the STW Sponsors group on LinkedIn if you're a member.
 
 be well, 
 Gene
 
 ## Ancient History ##
+
+Each new Beta version of the app overwrites the older one so the history is not available.
+
+- Beta v4 available 13.09.16
+- Beta v3 available 13.08.30
 
 The .pdf copies of the content were discontinued when the content migrated to the Interactive Learning Environment format. Here are the last two that were generated. They take a while to open as they're 19-20 Mb.
 

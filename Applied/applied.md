@@ -2,24 +2,6 @@
 
 This chapter will present a number of models on different subjects offered by the sponsors of Beyond Connecting the Dots
 
-## Sustainable Capitalism ##
-
-The current life expectancy for a Fortune-500 company is 40 to 50 years, less than 10 years for a newly started company, and about 12.5 years for all companies together. And during this lifespan the tendency is to focus on short-term profits with little or no concern for the impact the company has on society or the environment. Have you ever wondered about the reasons behind this? This model is from Mark Van Clieaf sponsored by Ken Shepard.
-
-# Model
-
-{"title": "Sustainable Capitalism", "description": "The influences leading to short term focus and long term decline.", "load": "http://insightmaker.com/insight/7691"}
-
-DIAGRAM
-
-# End Model
-
-
-
-### References ###
-
-- The Living Company: Habits for survival in a turbulent business environment. [http://www.businessweek.com/chapter/degeus.htm](http://www.businessweek.com/chapter/degeus.htm). Bloomburg Businessweek.
-
 ## Systemic Strategy ##
 
 As we think about the problems we face today it becomes readily evident that the majority of these problems are the direct result of yesterday’s solutions. If we desire to enable a better tomorrow, the foundation of that tomorrow must be the development of a viable approach for dealing with situations. We need an approach which actually addresses the situation while minimizing the likelihood of making the situation worse or creating new problems that we will have to address in the future. The foundation of this approach, as with all real progress, is learning. This paper presents a model for the requisite learning.
@@ -30,7 +12,7 @@ Over the years numerous new approaches to problem solving have been developed an
 
 In contrast, well grounded and proven approaches to problem solving have not been widely adopted. Those with flawed mental models consider the proven approaches to be too complicated or time consuming. The quest for the ever elusive quick fix condemns us to repeatedly solving the new problems created by the quick fix. This is the type of result expected from operating with flawed mental models [Senge, 1990] We must realize the quick fix is a mirage and invest the time to learn the proven methods and create sound solutions.
 
-### Intent ###
+### The Future We Create ###
 
 Whether we’re considering a problem, a situation, an objective, or a desire, the underlying essence of the manner in which we proceed to deal with it is the essentially the same.
 
@@ -68,6 +50,81 @@ Fig. 2 represents an iterative unfolding of understanding intended to provide th
 ### Conclusion ###
 
 If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] it is essential we embrace learning and become far more adept at developing truly viable approaches for dealing with situations. And attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling which makes the situation worse or creates new problems that have to be dealt with. There are well defined proven approaches for developing each aspect of the model presented in Fig. 2. [Bellinger, 2012] These can be explored in more detail in the videos at the Systemic Perspective/Foundations page on the Systems Thinking World Wiki.
+
+## tbd / Pedro Almaguer ##
+
+
+## tbd / Lory Antonucci ##
+
+
+## tbd / Hugh Campbell ##
+
+
+## tbd / Jamie Chapman ##
+
+
+
+## tbd / Stephen Hobs ##
+
+
+## Restaurant Covers / Lise Inman ##
+
+# Model
+{"title": "Restaurant Covers", "description": "Servicing Tables", "load": "http://insightmaker.com/insight/8743"}
+# End Model
+
+## tbd / Justin Lyon ##
+
+
+## tbd / Mike Parker ##
+
+
+## tbd / David Patterson ##
+
+
+## tbd / Anand Rao ##
+
+
+## To Degree or Not / Matt Sadinsky ##
+
+# Model
+{"title": "", "description": "", "load": "http://insightmaker.com/insight/8727"}
+# End Model
+
+# Model
+{"title": "", "description": "", "load": "http://insightmaker.com/insight/8729"}
+# End Model
+
+# Model
+{"title": "", "description": "", "load": "http://insightmaker.com/insight/8735"}
+# End Model
+
+## Sustainable Capitalism / Ken Shepard ##
+
+The current life expectancy for a Fortune-500 company is 40 to 50 years, less than 10 years for a newly started company, and about 12.5 years for all companies together. And during this lifespan the tendency is to focus on short-term profits with little or no concern for the impact the company has on society or the environment. Have you ever wondered about the reasons behind this? This model is from Mark Van Clieaf sponsored by Ken Shepard.
+
+# Model
+{"title": "Sustainable Capitalism", "description": "The influences leading to short term focus and long term decline.", "load": "http://insightmaker.com/insight/7691"}
+# End Model
+
+## tbd / Janet Singer ##
+
+
+## tbd / Raji Sirajuddin ##
+
+
+## tbd / Ben Taylor ##
+
+
+## tbd / Raid Mahmoud Zaini ##
+
+
+
+### References ###
+
+- The Living Company: Habits for survival in a turbulent business environment. [http://www.businessweek.com/chapter/degeus.htm](http://www.businessweek.com/chapter/degeus.htm). Bloomburg Businessweek.
+
+
 
 ### References ###
 

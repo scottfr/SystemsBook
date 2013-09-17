@@ -14,6 +14,7 @@ Some of the implications of this being an interactive learning environment and n
 - **Insight Maker Model Link**. For each model that exists in Insight Maker there will be a footnote that contains a link to that model in Insight Maker. You can follow this link to access the source model. There you can clone the model and make changes to your copy to as you wish.
 
 People tend to read books in different ways. With that in mind we've designed this Interactive Learning Environment in a manner such that the first section is the only one you need to experience sequentially. It presents foundation concepts necessary to help you make sense out of rest of the ILE. Once you finish the first section you should be able to skip around as your interest directs.
+
 ~~~
 September 16, 2013
 Gene & Scott
