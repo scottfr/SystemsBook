@@ -76,6 +76,8 @@ Remember the previous comment about seldom developing a model in the form it nee
 
 # End Model
 
+As demonstrated in the unfolding of this model you should approach the development of a model as a learning experience. When things go wrong it's an opportunity for learning. You learn from the model and the model learns from you, and once the two of you learn enough it's probably a meaningful model.
+
 ## Savings Account ##
 
 Building and working with a model for a bank savings account can be most informative also.^[Savings Account [http://insightmaker.com/insight/5887](http://insightmaker.com/insight/5887)]
@@ -125,24 +127,34 @@ Is the model done? As usual, the answer is; "It Depends!" If it has provided suf
 As an example that one really simulate anything this model shows the implications of the dynamic implications of the love between Romeo and Juliet.^[Romeo and Juliet [http://insightmaker.com/insight/759](http://insightmaker.com/insight/759)]
 
 # Model
-{"title": "Romeo and Juliet", "description": "", "load": "http://insightmaker.com/insight/759"}
+{"title": "Romeo and Juliet", "description": "The implications of the relations between two people can be vary drastically.", "load": "http://insightmaker.com/insight/759"}
 # End Model
+
+We hope this model gave you a more comfortable feeling that it is possible to model very intangible things. You will find that some of the most influential aspects of the models you will build in the future are actually the intangibles.
 
 ## Climate Stabilization Task ##
 
-The model starts in 1900. In the year 2000 you get the chance to set a new emission target and nominal time to reach it. Your aim is to have atmospheric CO2 stabilise at about 400 ppmv in 2100.^[Climate Stabilization Task [http://insightmaker.com/insight/694](http://insightmaker.com/insight/694)] {cite: Sterman, John D. (2008)  Risk Communication on Climate:  Mental Models and Mass Balance.  Science 322 (24 October): 532-533}
+The model starts in 1900. In the year 2000 you get the chance to set a new emission target and nominal time to reach it. Your aim is to have atmospheric CO2 stabilise at about 400 ppmv in 2100.^[Climate Stabilization Task [http://insightmaker.com/insight/9283](http://insightmaker.com/insight/9283)] {cite: Sterman, John D. (2008)  Risk Communication on Climate:  Mental Models and Mass Balance.  Science 322 (24 October): 532-533}
 
 # Model
-{"title": "Climate Stabilization Task", "description": "", "load": "http://insightmaker.com/insight/694"}
+{"title": "Climate Stabilization Task", "description": "Can you get the CO2 levels to stabilize?", "load": "http://insightmaker.com/insight/9283"}
 # End Model
+
+~ Exercise
+Did you notice in working with the model that if you took too long to reach the new emissions level you selected there was no way you could ever reach the 400 ppm target? What is it about the interactions that might responsible for that?
+~ Answer
+The difficulty arises because it takes time for a stock to change a flow and reducing the flow still adds to the result, just a bit slower.
+~ End Exercise
 
 ## Maintaining Personnel Resources ##
 
 The following simulation provides an example of where an established policy for hiring new employees won't suffice in the face of certain changes.^[Maintaining Personnel Resources [http://insightmaker.com/insight/162](http://insightmaker.com/insight/162)]
 
 # Model
-{"title": "Maintaining Personnel Resources", "description": "", "load": "http://insightmaker.com/insight/162"}
+{"title": "Maintaining Personnel Resources", "description": "Why things aren't where you think they are.", "load": "http://insightmaker.com/insight/162"}
 # End Model
+
+Any time there are delays in the relationships, which actually occurs any time there is a stock involved, our intuition is easily deceived into assuming we know the implications of the interactions. The Maintaining Personnel Resources model should have put that assumption to rest. The model serves again to point out that there are things we simply can't get a sense of from a picture and only a simulation will inform us to the extent necessary to understand the situation.
 
 ## The Fix Overshoots the Goal ##
 
@@ -151,12 +163,20 @@ Have you ever pursued a goal and later found that you actually overshot the goal
 If you look at the Balancing Loop with Delay structure it looks identical to the standard balancing loop with the exception of the delay near the reduces link. The implication is that it takes some amount of time after the current state changes before it is actually realized and figures into the calculation of the gap which influences the subsequent action. Essentially what's happening is that action is being based on old data and therefore is probably not the appropriate action. The implications of this will become evident when we look at the simulation for this structure.^[The Fix Overshoots The Goal [http://insightmaker.com/insight/133](http://insightmaker.com/insight/133)]
 
 # Model
-
-{"title": "", "description": "Lets take a look at the implications of varying delays on the effect of a balancing loop.", "load": "http://insightmaker.com/insight/133"}
-
+{"title": "Balancing Loop with Delay", "description": "Lets take a look at the implications of varying delays on the effect of a balancing loop.", "load": "http://insightmaker.com/insight/133"}
 # End Model
 
 You might ask how could it be that it might take 3.5 days for someone to get a sense of what the results of the previous actions were, which would be a good question. It's probably difficult to find a situation where this is realistic in days though what's important to realize is this structure could operate in this manner if the time units were hours, minutes, seconds or microseconds.
+
+## Infinite Drinkers ##
+
+This is a simulation attempt at humor. Hope you enjoy it.
+
+# Model
+{"title": "An Infinite Number of Drinkers", "description": "How many beers does it take to server an infinite number of drinkers?", "load": "http://insightmaker.com/insight/850"}
+# End Model
+
+You can build models to help understand almost any set of interactions and at times they can be really simple.
 
 ## Systems Archetypes ##
 
@@ -166,6 +186,9 @@ There are a set of frequently recurring structures that have a very distinct str
 {"title": "Systems Archetypes", "description": "There is a typical unfolding relationship between the common recurring structures.", "load": "http://insightmaker.com/insight/538"}
 # End Model
 
+Hopefully the relationships between the Systems Archetype has provided a lot of food for thought in terms of how connected things really are, and how there are very typical paths of evolution.
+
+In the next chapter we'll delve a bit deeper into some more involved models in a number of different disciplines.
 
 ## Summary ##
 

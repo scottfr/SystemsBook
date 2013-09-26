@@ -26,7 +26,7 @@ The electronic copy of the book is available at the URL below and is password pr
 * Book content is still under development and being edited 
 * Some of the model/graph displays are out of sequence so the graph gets displayed before the model. Just click the Red-X Stop sign in the upper right corner to close the graph. 
 
-## Beta v43 13.09.16 Access ##
+## Beta v4 13.09.16 Access ##
 
 Note that Scott has indicated he can't create a new betaX. URL for each revised Beta. This means that when the new one is posted it will be at the same URL as the old one. Please check the first page to ensure it has the above date. If it doesn't then tell your browser to reload it.
 

@@ -17,39 +17,36 @@ In contrast, well grounded and proven approaches to problem solving have not bee
 Whether we’re considering a problem, a situation, an objective, or a desire, the underlying essence of the manner in which we proceed to deal with it is the essentially the same.
 
 # Model
-
-{"title": "The Future We Create", "description": "Solving problems without creating new ones.", "load": "http://insightmaker.com/insight/443"}
-
+{"title": "Creating the Future", "description": "Solving problems without creating new ones.", "load": "http://insightmaker.com/insight/8892"}
 # End Model
 
 Whether we realize it or not this model can be applied to just about everything that happens in our lives. Even when we don’t consciously think about it the interactions depicted in Fig. 1 are operating. The extent to which people consciously think about these relations varies. Some people think about the implication of their actions and stop there. And some people think about the implications of implications of implications. They do this because they understand that things are highly interconnected and the implications are difficult to foresee.
 
-### Strategy ###
+### Systemic Strategy ###
 
 Given the realization that there is an underlying set of interactions as depicted in Fig. 1 which is essentially the foundation of all our endeavors, seeking a deeper awareness of how we develop the requisite understanding would seem a sensible undertaking. An introduction to developing this understanding is depicted in Fig. 2.
 
 # Model
-
-{"title": "Systemic Strategy", "description": "Relevant pieces of the puzzle", "load": "http://insightmaker.com/insight/1366"}
-
+{"title": "Systemic Strategy", "description": "Relevant pieces of the puzzle of real progress.", "load": "http://insightmaker.com/insight/1366"}
 # End Model
 
 Fig. 2 represents an iterative unfolding of understanding intended to provide the basis for developing a strategy which, when implemented, is highly likely to address the situation of interest as intended, while minimizing the likelihood of unintended consequences or creating new problems.
 
-- **Situation** of interest considered to warrant attention, along with an assessment of the implications of not acting, and a definition of the preferred alternative situation. These form the basis for developing understanding. The situation may be undesirable or simply warrants an undertaking to ensure that it remains desirable. The situation as it is actually represents the current state of a developing pattern of behavior.
-- **Behavior** represents an unfolding pattern of some aspects of a number of relationships that finally developed to a point where it captured attention. As such, one works backward from the described situation to understand the developing patterns of behavior. The patterns of behavior are the result of a set of interactions which we also must understand.
-- **Model** represents the relations unfolding over time that are responsible for the patterns of behavior experienced. These interactions are the result of some set of actions by one or more stakeholders. As such we endeavor to understand the mental models and motivations of the stakeholders responsible for the situation.
-- **Stakeholders’** motivations and mental models must be understood as they are responsible for the structure of interactions producing the current situation.
-- **Boundaries** are established to keep track of which stakeholders are responsible for which aspects of the interactions, which set of relations are considered addressable, and which relations are part of the environment we’re not in a position to address.
-- **Assumptions** which have been made while developing an understanding to this point must be validated. It is essential that we challenge those assumptions because decisions made on invalid assumptions are unlikely to support the intended results.
-- **Leverage** is an effort to identify places where small changes in the relationships will have a large impact and are likely to transform the current situation into the desired alternative situation.
-- **Strategy** is developed as a set of actions to be undertaken by the stakeholders which will alter the relationships in a way which will migrate the situation of interest in the direction of the desired alternative situation while attempting to ensure the minimization of unintended consequences.
-- **Unintended Consequences** are typically the result of actions taken without appropriate due consideration of the implications of those actions. And unintended consequences are seldom beneficial. As such, the intent of the strategy is to minimize them. Note that the unintended consequences may make the current situation worse or be responsible for triggering a whole new set of problems.
-- **New problems** are one of the expected results from unintended consequences that don’t actually make the original situation worse. These new problems will then also have to be dealt with in a similar manner.
+## Victims of the System or Systems of the Victim ##
 
-### Conclusion ###
+American business is in its fifth decade of management fads. In some organizations the fads have worked, in most they have not, and in some they have even made matters worse. Many reasons have been advanced for the failure of fads, none of them quite complete. The fault lies not with the fads, but with our attempt to use them to change things for which we have insufficient understanding. 
 
-If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] it is essential we embrace learning and become far more adept at developing truly viable approaches for dealing with situations. And attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling which makes the situation worse or creates new problems that have to be dealt with. There are well defined proven approaches for developing each aspect of the model presented in Fig. 2. [Bellinger, 2012] These can be explored in more detail in the videos at the Systemic Perspective/Foundations page on the Systems Thinking World Wiki.
+Experience has taught us well to react to events and to respond to patterns of behavior. Yet, there is a deeper level of understanding possible. An understanding on the level of structure. There are underlying structures responsible for the patterns of behavior and the events. Our lack of awareness of these structures often makes us the victim of them, even though many of the structures are of our own creation. The structures are not hidden, they are simply not obvious. We have never developed a way to see and understand them. Once we become aware of structures, know how to look for them, and understand them, they become readily apparent all around us.
+
+# Model
+{"title": "Home Heating System", "description": "How can an understanding of a home heating system improve our ability to deal with dilemmas.", "load": "http://insightmaker.com/insight/910"}
+# End Model
+
+
+
+
+
+
 
 ## tbd / Pedro Almaguer ##
 
@@ -118,16 +115,13 @@ The current life expectancy for a Fortune-500 company is 40 to 50 years, less th
 
 ## tbd / Raid Mahmoud Zaini ##
 
+### Conclusion ###
 
+If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] it is essential we embrace learning and become far more adept at developing truly viable approaches for dealing with situations. And attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling which makes the situation worse or creates new problems that have to be dealt with. There are well defined proven approaches for developing each aspect of the model presented in Fig. 2. [Bellinger, 2012] These can be explored in more detail in the videos at the Systemic Perspective/Foundations page on the Systems Thinking World Wiki.
 
 ### References ###
 
 - The Living Company: Habits for survival in a turbulent business environment. [http://www.businessweek.com/chapter/degeus.htm](http://www.businessweek.com/chapter/degeus.htm). Bloomburg Businessweek.
-
-
-
-### References ###
-
 - The Future We Create. [http://insightmaker.com/insight/443](http://insightmaker.com/insight/443)
 - Systemic Strategy. [http://insightmaker.com/insight/1366](http://insightmaker.com/insight/1366)
 - Bellinger, Gene R., 2012, Systemic Strategy, http://www.systemswiki.org/index.php?title=Systemic_Strategy
