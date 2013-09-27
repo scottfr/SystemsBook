@@ -42,11 +42,7 @@ Experience has taught us well to react to events and to respond to patterns of b
 {"title": "Home Heating System", "description": "How can an understanding of a home heating system improve our ability to deal with dilemmas.", "load": "http://insightmaker.com/insight/910"}
 # End Model
 
-
-
-
-
-
+Yes, we're being very redundant though the message we're trying to convey is essential. Models are a critical component of developing understanding and we have to keep asking AND? And what else is happening here that's relevant to what's happening and essential to include for the understanding we're trying to achieve.
 
 ## tbd / Pedro Almaguer ##
 
@@ -114,6 +110,7 @@ The current life expectancy for a Fortune-500 company is 40 to 50 years, less th
 
 
 ## tbd / Raid Mahmoud Zaini ##
+
 
 ### Conclusion ###
 
