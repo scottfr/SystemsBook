@@ -15,6 +15,8 @@ Some of the implications of this being an interactive learning environment and n
 
 People tend to read books in different ways. With that in mind we've designed this Interactive Learning Environment in a manner such that the first section is the only one you need to experience sequentially. It presents foundation concepts necessary to help you make sense out of rest of the ILE. Once you finish the first section you should be able to skip around as your interest directs.
 
+Expand Intro to present insight into what's about to be experienced, and do it as an insght maker model.
+
 ~~~
 September 16, 2013
 Gene & Scott
