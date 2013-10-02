@@ -6,7 +6,7 @@ A model is a tool designed to reflect reality. A model is never a perfect mirror
 
 The ultimate destination of this journey will be a clear understanding of the fundamental principles and approaches used to construct models. We will make many detours before arriving at this destination. In the end we will be able to divide models into two overarching categories based on their purposes and the techniques used to construct them. By mastering this divide, and how the work we and others do fits into it, we will obtain a rich perspective and understanding of the relationship between models and truth. We will also have a renewed appreciation for the strength and power of the techniques introduced in this book for tackling a wide swath of modeling problems.
 
-Before we get there, however, let's introduce some of the terminology commonly used to describe models. We'll begin by taking a step back do discuss different kinds of models. Modeling is a wide-ranging field with many distinctions made by modelers and mathematicians. Three of these distinctions are presented below:
+Before we get there, however, let's introduce some of the terminology commonly used to describe models. We'll begin by taking a step back to discuss different kinds of models. Modeling is a wide-ranging field with many distinctions made by modelers and mathematicians. Three of these distinctions are presented below:
 
 ### Deterministic versus Stochastic Models
 
