@@ -13,6 +13,24 @@
 	</head>
 	<body><h1 id="exercise-answers"><a href="#exercise-answers">Exercise Answers</a></h1>
 <p>This section contains answers to selected exercises.</p>
+<h2 id="chapter-2"><a href="#chapter-2">Chapter 2</a></h2>
+<div class="exercise_answer">
+
+<h3 id="Ans-2-1"><a href="#Ans-2-1"><a href="Chapter_2.html#Ex-2-1">Exercise 2-1</a></a></h3>
+<p>The simulation engine in Insight Maker is smart enough to convert between the myriad of similar dimensions, e.g., miles, kilometers, feet, etc. Though it’s recommended that you make conversions explicit otherwise models become very difficult to understand.</p>
+<p>Insight Maker doesn’t complain because you’re still comparing distance to distance and it doesn’t matter that they’re in different scales simply because zero = zero in any scale. It’s really better to keep your units in the same scale.</p>
+</div>
+
+
+
+<div class="exercise_answer">
+
+<h3 id="Ans-2-2"><a href="#Ans-2-2"><a href="Chapter_2.html#Ex-2-2">Exercise 2-2</a></a></h3>
+<p>One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as Red walks toward it. This way the model is tracking the distance traveled rather than the distance left to travel.</p>
+</div>
+
+
+
 <h2 id="chapter-3"><a href="#chapter-3">Chapter 3</a></h2>
 <div class="exercise_answer">
 
@@ -500,7 +518,7 @@ simulatedError += <span class="ot">Math</span>.<span class="fu">abs</span>(<span
 <div class="exercise_answer">
 
 <h3 id="Ans-9-11"><a href="#Ans-9-11"><a href="Chapter_9.html#Ex-9-11">Exercise 9-11</a></a></h3>
-<p><code class="blockSource sourceCode javascript">[Self].<span class="fu">MoveTowards</span>([<span class="ot">Population</span>.<span class="fu">FindState</span>([Healthy]).<span class="fu">FindFurthest</span>([Self]), {<span class="dv">2</span> Meters})</code></p>
+<p><code class="blockSource sourceCode javascript"><span class="ot">Self</span>.<span class="fu">MoveTowards</span>([<span class="ot">Population</span>.<span class="fu">FindState</span>([Healthy]).<span class="fu">FindFurthest</span>(Self), {<span class="dv">2</span> Meters})</code></p>
 </div>
 
 
