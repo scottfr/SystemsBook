@@ -1,12 +1,12 @@
 # The Process of Modeling {#ModelingProcess}
 
-Now that you are well on your way to being a modeling expert, you may begin to receive requests for assistance with various modeling projects. As a motivating example, a friend -- it could also be a colleague or client -- comes to you and asks for help. This friend has been involved with the effort to protect the rare Aquatic Hamster.
+Now that you are well on your way to being a modeling expert, you may be asked to assist with various modeling projects. As a motivating example, a friend -- it could also be a colleague or client -- comes to you and asks for help. This friend has been involved with the effort to protect the rare Aquatic Hamster.
 
-The Aquatic Hamster is an endangered species that spends most of its life living in lakes and rivers. Unfortunately, development and human encroachment has steadily reduced the available habitat for these hamsters and their population has plummeted. Indeed, now there is just one last population of them left located on a lake just south of the Canada/United States border.
+The Aquatic Hamster is an endangered species that spends most of its life living in lakes and rivers. Unfortunately, development and human encroachment has steadily reduced the available habitat for these hamsters, and their population has plummeted. Indeed, now there is just one last population of them left. It is located on a lake just south of the Canada/United States border.
 
-Your friend asks you to build a model of this hamster population in order to help prioritize protection efforts and to rally support from governmental agencies and non-profits to protect this last hamster colony. You want to be of real assistance to your friend, and the hamsters are admittedly cute, so you agree to take on this modeling project.
+Your friend asks you to build a model of this hamster population in order to help prioritize protection efforts and to rally support from governmental agencies and non-profits to protect this last hamster colony. You want to help your friend, and the hamsters are admittedly cute, so you agree to take on this modeling project.
 
-You are at your desk to start building the model, but then realize something: You aren't sure what to do next. There are so many candidates for first steps. Do you start sketching diagrams? Do you talk to hamster experts? Do you start coding up a model? You are paralyzed by the sheer number of different choices. You know your friend is counting on you, so what do you do now?
+You are at your desk ready to start building the model, but then realize something: You aren't sure what to do next. There are so many candidates for first steps. Do you start sketching diagrams? Do you talk to hamster experts? Do you start coding up a model? You are paralyzed by the sheer number of different choices. You know your friend is counting on you, so what do you do now?
 
 In this chapter, we answer that question. We explore the modeling process from start to finish, introducing the tools and techniques for getting from "I need a model" to a final product that works. As you will see, our experience is that the best approach to tackling tough modeling problems is to start deceivingly small: build the simplest model possible (what we call the "Minimum Viable Model") to get going and then iterate aggressively on this initial version.
 
@@ -14,19 +14,19 @@ In this chapter, we answer that question. We explore the modeling process from s
 
 The first step to building a model is answering the simple question: *Why am I building this model?*
 
-This question seems obvious, but it is often hard to answer in practice. Let's try answering it for our hamster population model: Why are we building this model? The truth is that so far we do not have a real understanding of this.
+This question seems obvious, but in practice it is often hard to answer. Let's try answering it for our hamster population model: Why are we building this model? The truth is that so far we do not have a real understanding of this.
 
-Oftentimes, the lack of focus begins with the friend/client/colleague who commissioned the model. Laypeople frequently do not have a strong understanding of what modeling is,including what modeling can accomplish and what it cannot. Instead, your friend might have a simplistic view of a model, almost as if were a magic wand. He feels he just needs a model and then, *abracadabra*, it will solve his problem. His thought process on what to do with a model might be as bareboned as:
+Oftentimes, the lack of focus begins with the friend/client/colleague who commissioned the model. Laypeople frequently do not have a strong understanding of what modeling is, including what modeling can accomplish and what it cannot. Instead, your friend might have a simplistic view of a model, almost as if it were a magic wand. He feels he just needs a model and then, *abracadabra*, it will solve his problem. His thought process on what to do with a model might be as bareboned as:
 
 1. Build Model.
 2. ...
 3. Hamsters Saved.
 
-Of course this is not the case. You build a model with a specific purpose in mind otherwise it will most likely accomplish nothing. Worse yet, when it comes to the hamsters, it will be too little too late. Your first action should be to work with your friend to make sure you have filled in the "..." step. The best way to do this is generally working backwards from the final step rather than working upwards from the first one. For us that would be to first figure out how the hamster population is to be protected.
+Of course this is not the case. You build a model with a specific purpose in mind, otherwise it will most likely accomplish nothing. Worse yet, when it comes to the hamsters, it will be too little too late. Your first action should be to work with your friend to make sure you have filled in the "..." step. The best way to do this is generally working backwards from the final step rather than working forwards from the first one. For us that would be to first figure out how the hamster population is to be protected.
 
-Paradoxically, in order to answer the question of why we are building a model, we are going to need to ask many questions of our own. Why should we protect the hamsters? What risks do the hamsters face? What do the hamsters need to be protected? What avenues to obtaining these protections are there? What techniques to protecting the hamsters are most effective? Cheapest? Most expedient? And so on. We need to obtain a good understanding of the root cause of the problem you friend wants to tackle with this model and force out the concrete steps to getting there.
+Paradoxically, in order to answer the question of why we are building a model, we are going to need to ask many questions of our own. Why should we protect the hamsters? What risks do the hamsters face? What do the hamsters need to be protected from? What avenues to obtaining these protections are there? What techniques to protecting the hamsters are most effective? Cheapest? Most expedient? And so on. We need to obtain a good understanding of the root cause of the problem your friend wants to tackle with this model and force out the concrete steps to getting there.
 
-After discussing this with your friend and the two of you come to the conclusion that you will need two things in order to reliably protect the hamster population. First, government regulatory agencies need to pass (stronger) rules protecting the hamster habitat. Second, non-governmental organizations (NGO's) need to provide funds for hamster conservation and protection efforts.
+After discussing this with your friend let's say the two of you come to the conclusion that you will need two things in order to reliably protect the hamster population. First, government regulatory agencies need to pass (stronger) rules protecting the hamster habitat. Second, non-governmental organizations (NGO's) need to provide funds for hamster conservation and protection efforts.
 
 Using this, we can expand our plan with more details:
 
@@ -35,23 +35,23 @@ Using this, we can expand our plan with more details:
 3. Agencies enact rules to reliably protect hamsters. NGO's provide money for conservation efforts.
 4. Hamsters Saved.
 
-This focuses things for us. Rather than "Building a model to save the hamsters" (which is too vague and completely unactionable leading to our quandary about what to model), we are building a model designed to persuade governmental regulators and NGO's that they should devote resources to protecting the hamsters.
+This focuses things for us. Rather than "Building a model to save the hamsters" (which is too vague and completely unactionable, leading to our quandary about what to model), we are building a model designed to persuade governmental regulators and NGO's that they should devote resources to protecting the hamsters.
 
 So how do we do that? Let's simplify the complex issue into two specific goals for our model:
 
 * Show that given the *status quo* (business as usual) the hamster population will go extinct.
 * Show that alternatives to the *status quo* exist (which require regulatory action or investments) that enable the hamster population not only to survive, but also to thrive.
 
-If our model demonstrates both these things it could be a highly persuasive tool to shape decisions and policies. By building a model that does these two things^[The model of course must also inspire confidence in its audience. They must believe its results are reliable otherwise the results will have no persuasive power. Review the previous chapter for tools for building confidence in models.] we will have given our friend a powerful tool to push for regulatory action and financial support.
+If our model demonstrates both these things it could be a highly persuasive tool to shape decisions and policies. By building a model that does these two things^[The model of course must also inspire confidence in its audience. They must believe its results are reliable, otherwise the results will have no persuasive power. Review the previous chapter for tools for building confidence in models.] we will have given our friend a powerful tool to push for regulatory action and financial support.
 
-When building your own models you’ll want to go through a similar thought process to get at the core goal or question the model should address. Going into a modeling project with the attitude "First we'll build a great model, then we'll figure out how to apply it" is a prescription for failure. Of course, as you go through the process you might discover insights you never expected or you might in fact determine that your original hypothesis was wrong. Such discovery is always a great outcome, but you can never count on it happening in the course of building your model. It's best to start very focused in your modeling efforts and treat any discoveries or broadening of scope later on as a lucky bonus.
+When building your own models you’ll want to go through a similar thought process to get at the core goal or question the model should address. Going into a modeling project with the attitude "First we'll build a great model, then we'll figure out how to apply it" is a prescription for failure. Of course, as you go through the process you might discover insights you never expected or you might determine that your original hypothesis was wrong. Such discovery is always a great outcome, but you can never count on it happening in the course of building your model. It's best to start very focused in your modeling efforts and treat any discoveries or broadening of scope later on as a lucky bonus.
 
 ## Model Project Management
 
 When tackling modeling projects such as our hamster-population model, there are two basic overarching project management approaches. The first is founded on detailed planning and preparation. Tackling the hamster model using this approach might look something like the following sequential phases:
 
 Research
-: Find and obtain relevant literature on Aquatic Hamsters. Read peer-reviewed publications. Locate hamster experts and interview them. Identify key mechanisms affecting hamster population growth. Some mechanisms may require further study. For example, if human expansion and urbanization affect the hamster habitat area, for example, you may need to study the forces influencing urbanization. These may require additional literature searches and expert interviews.
+: Find and obtain relevant literature on Aquatic Hamsters. Read peer-reviewed publications. Locate hamster experts and interview them. Identify key mechanisms affecting hamster population growth. Some mechanisms may require further study. For example, if human expansion and urbanization affect the hamster habitat area, you may need to study the forces influencing urbanization. These may require additional literature searches and expert interviews.
 
 Design
 : Once you have completed your background research on the hamsters, start to design the model. Create causal loop diagrams and develop stock and flow diagrams. Break your hamster population model into different sectors. You will have the hamster-specific sector, which includes sub-sectors for each of the life-stages these endangered hamsters go through. You will also need sectors for other parts of the model that affect the hamster population growth: an urbanization sector with its own model, a climate sector with a climate model, and so on. Write out equations for all these sectors and resurvey experts you have contacted to review the overall model design and the specific equations. There will probably be several cycles of iteration and model expansion during this stage as additional key areas to include are identified.
@@ -60,9 +60,9 @@ Construction
 : Now that you have completed a model design and received a seal of approval from experts in the field, you are ready to start building the model itself. Decide what modeling software package (or programming environment) you will use. Implement the equations as they were specified in the design phase.
 
 Wrapping Things Up
-: Go through the confidence building steps from the previous chapter. Develop tests for your model to ensure it works correctly. Create model documentation. Show the model demonstrates expected behavior and obtain final approval from experts.
+: Go through the confidence building steps from the previous chapter. Develop tests for your model to ensure it works correctly. Create model documentation. Show that the model demonstrates expected behavior and obtain final approval from experts.
 
-This approach to building a model is a very linear process where you go sequentially from stage to stage. In the project management field, this is the classic "waterfall" project where you proceed phase by phase through the project. You plan out the whole thing ahead of time estimating how long each phase would take and identifying dependencies between phases. This form of project management can work well if done expertly and it is well suited for certain kinds of projects such as constructing a building.
+This approach to building a model is a very linear process where you go sequentially from stage to stage. In the project management field, this is the classic "waterfall" project where you proceed phase by phase through the project. You plan out the whole thing ahead of time, estimating how long each phase would take and identifying dependencies between phases. This form of project management is well suited for certain kinds of projects such as constructing a building, and can work well if done expertly.
 
 In our opinion, however, this approach to tackling a project is quite poorly suited to the task of building a model. There are several reasons for this.
 
