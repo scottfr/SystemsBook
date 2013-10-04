@@ -98,7 +98,7 @@ There are many different mechanisms and entities we could include in our model o
 
 ![Figure 1. Two different sets of boundaries for the hamster population model.](Boundaries.png)
 
-We can illustrate model system boundaries using a boundary diagram as illustrated in the excellent book *The Electronic Oracle* (@Meadows:1985wb)^[This book provides an excellent overview of a number of different models and, very interestingly, it tracks the ultimate reception and the success or failure of these models.]. When using a model boundary diagram, we classify items of interest into one of three categories:
+We can illustrate model system boundaries using a boundary diagram as illustrated in the excellent book *The Electronic Oracle* (@Meadows:1985wb)^[This book provides an excellent overview of a number of different models and, very interestingly, it tracks the ultimate reception and success or failure of these models.]. When using a model boundary diagram, we classify items of interest into one of three categories:
 
 Endogenous
 : Endogenous items are at the core of the model. They are things that the model itself determines. For instance, the size of the hamster population is endogenous to the model. The model itself simulates this population.
@@ -107,30 +107,30 @@ Exogenous
 : Exogenous items are those that you include in the model but which you do not directly simulate. For instance, if we thought temperature had a significant effect on hamster survival, we might want to include historical temperature data in the model. We do not want to simulate this data though, we just want to use it as an exogenous input into the model.
 
 Omitted
-: Omitted items are those that, though we may acknowledge they do impact the hamsters either directly or indirectly, we choose not to include in the model. Even the most ambitious and comprehensive model will need to draw the line somewhere.
+: Omitted items are those that we choose not to include in the model, even though we may acknowledge their existence and potential (direct or indirect) impact on the hamsters. Even the most ambitious and comprehensive model will need to draw the line somewhere.
 
-Figure 1 illustrates two different model boundaries for the hamster model. The top diagram depicts a small, conservative model with many features excluded from the model. The bottom figure illustrates a much more ambitious model where many additional items are made endogenous to the model and there are much fewer omitted items.
+Figure 1 illustrates two different model boundaries for the hamster model. The top diagram depicts a small, conservative model with many features excluded from the model. The bottom figure illustrates a much more ambitious model where many additional items are made endogenous to the model and there are many fewer omitted items.
 
-When developing a model, we recommend starting with the boundaries as narrow as possible. In the minimum viable model, you will want to omit as many different mechanisms as possible. As you receive feedback and people push for the inclusion of different mechanisms, you can slowly expand the boundaries of the model. We recommend starting small and expanding as necessary.
+We recommend starting with narrow boundaries. In the minimum viable model, you will want to omit as many different mechanisms as possible. As you receive feedback and people push you to include more mechanisms, you can slowly expand the boundaries of the model. We recommend starting small and expanding as necessary.
 
 ~ Exercise
 
-Create a boundary diagram for a model of human population growth in the next 100 years. What would be the endogenous, exogenous and omitted items in this model.
+Create a boundary diagram for a model of human population growth over the next 100 years. What would be the endogenous, exogenous, and omitted items in this model?
 
 ~ End Exercise
 
 ~ Exercise
 
-Create a boundary diagram for a model forecasting the total quantity of pencils sold within the united states for the next 50 years. What would be the endogenous, exogenous and omitted items in this model.
+Create a boundary diagram for a model forecasting the total quantity of pencils sold within the United States for the next 50 years. What would be the endogenous, exogenous, and omitted items in this model?
 
 ~ End Exercise
 
 
 ## From Mental Models to Simulation Models
 
-Generally speaking, a single individual should ultimately be responsible for the design and implementation of a model. Models "designed-by-committee" are understandably suffused with compromise and a greater lack of focus. That said, even though one person is ultimately calling the shots, many voices and perspectives are there to be heard in the modeling process. The more input there is into a model, the better the resulting model will most likely be.
+Generally speaking, a single individual should be responsible for the design and implementation of a model. Models "designed-by-committee" are understandably suffused with compromise and a greater lack of focus. That said, even though one person is ultimately calling the shots, many voices and perspectives are there to be heard in the modeling process. The more input there is into a model, the better the resulting model will most likely be.
 
-The people you are working with generally will not be experts in modeling. Because of this, even if they are intimately familiar with the system you are attempting to model, it will sometimes be difficult to take their freeform insights and transform them into a formal model structure and accompanying numerical equations. In fact people often have great difficulty communicating and describing their own mental models of a system. A number of useful tools and techniques can be used to help elicit information on people's mental models. We discuss three of these tools in the following sections.
+The people you are working with generally will not be experts in modeling. Even if they are intimately familiar with the system you are attempting to model, it may be difficult to transform their freeform insights into a formal model structure and accompanying numerical equations. In fact, people often have great difficulty communicating and describing their own mental models of a system. A number of useful tools and techniques can be used to help elicit information on people's mental models. We discuss three of these tools in the following sections.
 
 ### Reference Mode Diagrams
 
@@ -138,7 +138,7 @@ A reference mode is a graph that plots how the key stocks and variables in the s
 
 For our hamster model we could start simply by asking our friend to sketch out what he thinks will happen with the hamster population in the future assuming business as usual (remember that the status quo does not mean no-action). When we do this, he sketches out the top graph in Figure 2.
 
-While your friend probably would use different terminology, to us the curve he sketched immediately looks like an exponential decay model. The instant we see this sketch we should start mapping out a stock and flow diagram in our mind to implement this type of model. Your friend does not need to understand any modeling concepts though, he just needs to be able to draw a picture of what he thinks will happen in the future. This is something that is easy to ask most people to do.
+While your friend probably would use different terminology, the curve he sketched immediately looks to us like an exponential decay model. The instant we see this sketch we should start mapping out a stock and flow diagram in our mind to implement this type of model. Your friend does not need to understand any modeling concepts though, he just needs to be able to draw a picture of what he thinks will happen in the future. This is something that is easy to ask most people to do.
 
 ![Figure 2. Sample reference modes for our hamster model.](ReferenceModes.png)
 
@@ -148,9 +148,9 @@ We can ask our friend to create a second sketch that shows how the hamster popul
 
 Again, your friend never said this, but looking at this second drawing we should immediately start thinking of logistic growth models. The leveling off implies that there is some carrying capacity limit for the hamsters. This carrying capacity is probably a function of the available hamster habitat and the disturbances that are going on around the hamsters. We can start to sketch out stock and flow and causal loop diagrams to implement these types of dynamics and reproduce the behaviors our friend has drawn.
 
-These are just two of the reference modes we might ask our friend to think about. We could go on to explore other scenarios and see how he thinks the changes in the scenarios would affect the hamster population. We could also ask him to sketch out other key variables in the system -- such as the quantity of food available to the hamsters -- to understand how he thinks these key variables interact. We could go on to interview other people familiar with the system and take them through the same process. Ideally, all the reference modes between individual people will agree, but differences are in themselves also useful in revealing different mental models between our interviewees. Bridging differences will be a key interest of ours as we attempt to develop a persuasive model that will bring everyone on board and gain wide support.
+These are just two of the reference modes we might ask our friend to think about. We could go on to explore other scenarios and see how he thinks the changes in the scenarios would affect the hamster population. We could also ask him to sketch out other key variables in the system -- such as the quantity of food available to the hamsters -- to understand how he thinks these key variables interact. We could go on to interview other people familiar with the system and take them through the same process. Ideally, all the reference modes among individual people will agree, but differences in the individuals themselves are also useful in revealing different mental models across our interviewees. Bridging differences will be a key interest of ours as we attempt to develop a persuasive model that will bring everyone on board and gain wide support.
 
-Asking non-modelers to sketch out reference modes is a great technique for several reasons. Reference modes are accessible to laypeople, force your interviewees to be concrete, and provide you with very useful and actionable material. Really, a reference mode is a projection of an individual's mental model of the system. They may be unable (or unwilling) to explain their mental model to you in equations or even words, but they generally will be able to describe how they perceive the world using these reference mode diagrams -- one small slice of their mental model at a time. Once you have the diagrams, you can proceed to translate them into model structure and equations.
+Asking non-modelers to sketch out reference modes is a great technique for several reasons. Reference modes are accessible to laypeople. Force your interviewees to be concrete, and provide you with very useful and actionable material. Really, a reference mode is a projection of an individual's mental model of the system. They may be unable (or unwilling) to explain their mental model to you in equations or even words, but they generally will be able to describe how they perceive the world using these reference mode diagrams -- one small slice of their mental model at a time. Once you have the diagrams, you can proceed to translate them into model structure and equations.
 
 ~ Exercise
 
@@ -172,11 +172,11 @@ You are hired by a paper company to create a model of paper consumption in the n
 
 Pattern-oriented modeling focuses on identifying key patterns in the system to be modeled. For example, we may observe a boom-and-bust pattern in our hamster population that is triggered by unusually warm weather. When we develop our model, we formulate relationships and equations that will replicate this boom-and-bust pattern in the simulation.
 
-Developed to help guide the creation of agent-based models, pattern-oriented modeling is very similar in concept to reference modes and system archetypes. Rather than building models around expected dynamic trajectories however, pattern-oriented modeling builds models to recreate patterns. Sometimes a pattern may be the same as a reference mode, but especially when dealing with agent based modeling you may not be able to define a pattern in terms of the dynamic trajectory of a reference mode. For a good overview of pattern-oriented modeling, see @Grimm:2005ei.
+Developed to help guide the creation of agent-based models, pattern-oriented modeling is very similar in concept to reference modes and system archetypes. Rather than building models around expected dynamic trajectories, however, pattern-oriented modeling builds models to recreate patterns. Sometimes a pattern may be the same as a reference mode. Especially when dealing with agent based modeling you may not be able to define a pattern in terms of the dynamic trajectory of a reference mode. For a good overview of pattern-oriented modeling, see @Grimm:2005ei.
 
 ~ Exercise
 
-What patterns might you see in the how cities are located?
+What patterns might you see in how cities are located?
 
 ~ End Exercise
 
@@ -194,21 +194,21 @@ What patterns might you see in the movement of a competition between companies i
 
 ### Group Model Building
 
-Group modeling sessions are a powerful tool to capitalize on the collective thoughts of a group to inform model structure and design. Instead of individually surveying experts and those involved in a system, a group session with many interested parties can be conducted. The term "group model building" is a bit of a misnomer as generally the model itself will be built away from the group by the facilitator or modeler and the group work will be focused on identifying and ranking key variables and mechanisms and developing high-level causal loop or stock and flow diagrams. See @Andersena:1997tg for a very practical overview of running and facilitating group model building sessions.
+A group modeling session is a powerful tool to capitalize on the collective thoughts of a group to inform model structure and design. Instead of individually surveying experts and those involved in a system, a group session with many interested parties can be conducted. The term "group model building" is a bit of a misnomer, as generally the model itself will be built away from the group by the facilitator or modeler. The group work will be focused on identifying and ranking key variables and mechanisms, and developing high-level causal loop or stock and flow diagrams. See @Andersena:1997tg for a very practical overview of running and facilitating group model building sessions.
 
-Group modeling sessions can also benefit an organization independently of the success or failure of the model itself. You might expect that the mental models of individuals within an organization would be aligned and the members of the organization would share a common objective and understanding of the challenges and needs required to achieve this objective. However, this is often not the case as different organization members may hold distinct mental models of the organization's purpose and operation within the world. Additionally, it is quite possible that these differences may never be realized as people may fail to adequately communicate their mental models assumptions and beliefs during the course of regular interactions.
+Group modeling sessions can also benefit an organization independently of the success or failure of the model itself. You might expect the mental models of individuals within an organization to be aligned. You may also expect the members to share a common objective and understanding of the challenges and requirements to achieve this objective. However, this is often not the case, as different members may hold distinct mental models of the organization's purpose and operation within the world. Additionally, it is quite possible that these differences may never be realized, as people may fail to adequately communicate their mental model assumptions and beliefs during the course of regular interactions.
 
-The group modeling process can force the concrete discussion of and revealing of these mental models and the stakes involved in having these differences. Once they are revealed, they can be discussed and reconciled, potentially leading to a greater congruity of viewpoints within the group and a greater shared purpose. @Vennix:1993wv carried out a survey of participants in group model building sessions and found that this process led to insights and a shared vision more quickly than occurred in standard meetings.
+The group modeling process can force the concrete discussion and revealing of these mental models, and the impact of the existence of these differences. Once revealed, the various models can be discussed and reconciled, potentially leading to a greater congruity of viewpoints within the group and a greater shared purpose. @Vennix:1993wv carried out a survey of participants in group model building sessions and found that this process led to insights and a shared vision more quickly than occurred in standard meetings.
 
 
 ## Wrapping it Up
 
-Completing a model is in some ways just the first step in a modeler’s work. Once the model is finished you need to make sure to develop adequate tests to ensure it is operating as designed. Moreover, a model by itself is often of little use. You will need to develop extensive sets of documentation, manuals and tutorials if you want the model to be used in practice by people other than yourself. Such efforts take time. Writing clear and useful documentation is a skill in itself and, if done right, may take as long as developing the model in the first place!
+Completing a model is in some ways just the first step in a modeler’s work. Once the model is finished you should develop adequate tests to ensure it is operating as designed. Moreover, a model by itself is often of little use. You will need to develop extensive sets of documentation, manuals, and tutorials if you want the model to be used in practice by anyone other than yourself. Such efforts take time. Writing clear and useful documentation is a skill in itself and, if done right, may take as long as developing the model in the first place!
 
-In general, it is important to remember the 80/20 rule which also applies to modeling. The first 80% of modeling work generally only takes 20% of the time while the last 20% of the work can take four times as long. Getting the small details right in a model can take much longer than implementing the bulk of the model structure.
+In general, it is important to remember the 80/20 rule which also applies to modeling. The first 80% of modeling work generally only takes 20% of the time, while the last 20% of the work can take four times as long. Getting the small details right in a model can take much longer than implementing the bulk of the model structure.
 
 ~ Exercise
 
-You have been asked to model crime trends in a major city. Write out a general overview of stages you might take to developing this model from start to finish.
+You have been asked to model crime trends in a major city. Compose a general overview of the stages you might take to develop this model from start to finish.
 
 ~ End Exercise
