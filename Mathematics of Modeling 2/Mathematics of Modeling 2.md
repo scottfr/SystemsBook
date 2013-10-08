@@ -194,15 +194,15 @@ Why or why not?
 
 ## The Phase Plane
 
-Up until now, when looking at model results we have been focused on time series plots and we have mainly been interested in the trajectory of the variables and stocks over time. For the mathematical analysis of differential equations, however, the primary graphical tool is not this time series plot; instead it is what is known as a phase plane plot.
+When looking at model results we have been focused on time series plots and we have mainly been interested in the trajectory of the variables and stocks over time. For the mathematical analysis of differential equations, however, the primary graphical tool is not this time series plot; instead it is what is known as a phase plane plot.
 
-Phase planes are almost like scatterplots. They show one of the state variables plotted against another of the state variables. A scatterplot could be used to show the path for these two variables over the course of a simulation. In the predator prey model the results of a scatterplot of the wolf and moose population will be an ellipsoid. The two populations will cycle continuously. A phase plane plot is similar to this, but rather than just showing one of these cycles for a given simulation run, the phase plane shows the trajectories for *all* combinations of moose and wolf population sizes.
+Phase planes are almost like scatterplots. They show one of the state variables plotted against another of the state variables. A scatterplot could be used to show the path for these two variables over the course of a simulation. In the predator-prey model the results of a scatterplot of the wolf and moose population will be an ellipsoid. The two populations will cycle continuously. A phase plane plot is similar to this, but rather than just showing one of these cycles for a given simulation run, the phase plane shows the trajectories for *all* combinations of moose and wolf population sizes.
 
 ![Figure 2. Predator prey phase plane plot. The trajectory for a single set of initial conditions is highlighted in red.](PredatorPreyPhasePlane.png)
 
-Figure 2 illustrates a phase plane plot for the predator prey system. The trajectory for one set of parameter and state variable values is highlighted in red and, as expected, we see a continual oscillation. We can also see the trajectories for all the other combinations of state variables. We see that the system will always oscillate and the size of this oscillation depends on the initial conditions for the state variables. This illustration provides us with a good deal of information in a single graphic and the phase plane plot is a great way to summarize the behavior of a system with two state variables.
+Figure 2 illustrates a phase plane plot for the predator-prey system. The trajectory for one set of parameter and state variable values is highlighted in red and, as expected, we see a continual oscillation. We can also see the trajectories for all the other combinations of state variables. We see that the system will always oscillate and the size of this oscillation depends on the initial conditions for the state variables. This illustration provides us with a good deal of information in a single graphic; the phase plane plot is a great way to summarize the behavior of a system with two state variables.
 
-Let's quickly explore the phase plane plots for a simpler system than our predator prey model. Take a system consisting of two state variables^[Just a helpful reminder if you are starting to get lost in some of this differential equation jargon. A "state variable" is just a stock. Return to the table at the beginning of this chapter to see how these terms relate to the system dynamics modeling terminology we have already learned.] both of which grow (or decay) exponentially. These state variables will be assumed to be independent from each other so the value of one does not affect the value of the other:
+Let's quickly explore the phase plane plots for a simpler system. Take a system consisting of two state variables, both of which grow (or decay) exponentially.^[A helpful reminder: if you are starting to get lost in some of this differential equation jargon, a "state variable" is just a stock. Return to the table at the beginning of this chapter to see how these terms relate to the system dynamics modeling terminology we have already learned.] These state variables will be assumed to be independent from each other, so the value of one does not affect the value of the other:
 
 $$
 \begin{aligned}
@@ -211,11 +211,11 @@ $$
 \end{aligned}
 $$
 
-Clearly, there is an equilibrium point for this model at $X=0$ and $Y=0$. There are four general types of behavior around this equilibrium. One when $\alpha>0$ and $\beta>0$, one when $\alpha<0$ and $\beta>0$, one when $\alpha>0$ and $\beta<0$, and one when $\alpha<0$ and $\beta<0$. The phase planes for each of the four cases are shown in Figure 3.
+Clearly, there is an equilibrium point for this model at $X=0$ and $Y=0$. There are four general types of behavior around this equilibrium. 1) when $\alpha>0$ and $\beta>0$, 2) when $\alpha<0$ and $\beta>0$, 3) when $\alpha>0$ and $\beta<0$, and 4) when $\alpha<0$ and $\beta<0$. The phase planes for each of the four cases are shown in Figure 3.
 
 ![Figure 3. Phase planes for a simple two state variable exponential growth model.](SimplePhasePlanes.png)
 
-From these plots we can visually determine how the stability of the equilibrium point at $X=0, Y=0$ changes as we change $\alpha$ and $\beta$. When $\alpha<0$ and $\beta<0$, we have a stable equilibrium; in all other cases we have an unstable equilibrium.
+From these plots we can visually determine how the stability of the equilibrium point at $X=0, Y=0$ changes as we change $\alpha$ and $\beta$. When $\alpha<0$ and $\beta<0$, we have a stable equilibrium. In all other cases we have an unstable equilibrium.
 
 ~ Exercise
 
@@ -246,17 +246,17 @@ $$
 
 ## Stability Analysis
 
-Now that we have learned how to analytically determine the location of equilibrium points, we may want to determine what type of stability occurs at these equilibria. As we stated earlier, for the incurable disease model it is trivial to arrive at the conclusion that the state of everyone being healthy is unstable while the state of everyone being sick is stable. In more complex models, it may be harder to draw conclusions or the stability of an equilibrium point may change as a function of the model's parameter values. Fortunately, there is a general way to determine the precise stability nature of the equilibrium points analytically.
+Now that we have learned how to analytically determine the location of equilibrium points, we may want to determine what type of stability occurs at these equilibria. As we stated earlier, for the incurable disease model it is trivial to conclude that the state of everyone being healthy is unstable, while the state of everyone being sick is stable. In more complex models, it may be harder to draw conclusions, or the stability of an equilibrium point may change as a function of the model's parameter values. Fortunately, there is a general way to determine the precise stability nature of the equilibrium points analytically.
 
 The procedure to do this is relatively straightforward, but the theory behind it can be difficult to understand. The first key principle that must be understood is that of "linearization". To get a feel for linearization, let's take the curve in Figure 4. Clearly this curve is not linear. It has lots of bends and does not look at all like a line.
 
 ![Figure 4. As we zoom in on a function it becomes more and more linear.](Linearization.png)
 
-If we zoom in on any one part of the curve, however, the section we are zoomed in on starts to straighten out. If we keep zooming in, we will eventually reach a point where the section we are zoomed in on is effectively linear: basically a straight line. This is true for whatever part of the curve we zoom in on^[The one exception to this rule is if your curve is some sort of fractal. In this case no matter how much you zoom in on it, it will never become straight. In practice, however, this caveat is a non-issue.]. The more bendy parts of the curve will just take more zooming to convert them to a line.
+If we zoom in on any one part of the curve, however, the section we are zoomed in on starts to straighten out. If we keep zooming in, we will eventually reach a point where the section we are zoomed in on is effectively linear: basically a straight line. This is true for whatever part of the curve we zoom in on^[The one exception to this rule is if your curve is some sort of fractal. In this case no matter how much you zoom in on it, the curve will never become straight. In practice, however, this caveat is a non-issue.]. The more bendy parts of the curve will just take more zooming to convert them to a line.
 
-We can conceptually do the same process for the equilibrium points in our phase planes. Even if the trajectories of the state variables in the phase planes are very curvy, if we zoom in enough on the equilibrium points, the trajectories at a point will eventually become effectively linear. The simple, two-state variable exponential growth model we illustrated with phase planes above are examples of a fully linear model. If we zoom in sufficiently on the equilibrium points for most models, the phase planes for the zoomed-in version of the model will eventually start to look like one of these linear cases.
+We can conceptually do the same for the equilibrium points in our phase planes. Even if the trajectories of the state variables in the phase planes are very curvy, if we zoom in enough on the equilibrium points, the trajectories at a point will eventually become effectively linear. The simple, two-state variable exponential growth model we illustrated with phase planes above is an example of a fully linear model. If we zoom in sufficiently on the equilibrium points for most models, the phase planes for the zoomed-in version of the model will eventually start to look like one of these linear cases.
 
-Mathematically, we apply linearization to an arbitrary model by first calculating what is called the Jacobian matrix of the model. The Jacobian matrix is the matrix of partial derivatives of each of derivatives in the model with respect to each of the state variables:
+Mathematically, we apply linearization to an arbitrary model by first calculating what is called the Jacobian matrix of the model. The Jacobian matrix is the matrix of partial derivatives of each derivative in the model with respect to each of the state variables:
 
 $$ \text{Jacobian} = \begin{bmatrix} \dfrac{\partial }{\partial X} X' & \cdots & \dfrac{\partial }{\partial Z} X' \\ \vdots & \ddots & \vdots \\ \dfrac{\partial }{\partial X} Z' & \cdots & \dfrac{\partial }{\partial Z} Z'  \end{bmatrix} $$
 
@@ -344,7 +344,7 @@ $$
 
 This is complicated so don't worry if you don't completely understand it! Once you have the Jacobian, you calculate what are known as the eigenvalues of the Jacobian at the equilibrium points. This is also a bit complicated, so if your head is starting to spin, just skip forward in this chapter!
 
-Nonetheless, eigenvalues and their sibling eigenvectors are an interesting subject. Given a square matrix (a matrix where the number of rows in equals the number of columns), an eigenvector is a vector which, when multiplied by the matrix, results is the original vector multiplied by some factor. This factor is known as an eigenvalue as is usually denoted $\lambda$. Given a matrix $\mathbf{A}$, an eigenvalue $\lambda$ with associated eigenvector $\mathbf{V}$; the following equation will be true:
+Nonetheless, eigenvalues and their sibling eigenvectors are an interesting subject. Given a square matrix (a matrix where the number of rows equals the number of columns), an eigenvector is a vector which, when multiplied by the matrix, results in the original vector multiplied by some factor. This factor is known as an eigenvalue and is usually denoted as $\lambda$. Given a matrix $\mathbf{A}$, an eigenvalue $\lambda$ with associated eigenvector $\mathbf{V}$; the following equation will be true:
 
 $$\mathbf{A} \times \mathbf{V} = \lambda \times \mathbf{V}$$
 
@@ -360,15 +360,15 @@ $$\begin{bmatrix} 1 & 2 \\ 1 & 0 \end{bmatrix} \times \begin{bmatrix} -1 \\ 1 \e
 
 Naturally, any multiple of an eigenvector will also be an eigenvector. For instance, in the case above, $[1, 0.5]$ and $[-2, 2]$ are also eigenvectors of the matrix.
 
-We can interpret eigenvectors geometrically. Looking at the $2\times2$ matrix case, we can think of a vector as representing a coordinate in a two-dimensional plane: $[x,y]$. When we multiply our $2\times2$ matrix by the point, we transform the point into another point also in the two-dimensional plane. Due to the properties of eigenvectors, we know that when we transform an eigenvector, the transformed point will just be a multiple of the original point. Thus when a point that is on a matrix's eigenvector is transformed by that matrix, it will move inwards or outwards from the origin along the line defined by the matrix's eigenvector.
+We can interpret eigenvectors geometrically. Looking at the $2\times2$ matrix case, we can think of a vector as representing a coordinate in a two-dimensional plane: $[x,y]$. When we multiply our $2\times2$ matrix by the point, we transform the point into another point in the two-dimensional plane. Due to the properties of eigenvectors, we know that when we transform an eigenvector, the transformed point will just be a multiple of the original point. Thus, when a point on an eigenvector of a matrix is transformed by that matrix, it will move inward or outward from the origin along the line defined by the eigenvector.
 
-We can now relate the concept of eigenvalues and eigenvectors to our differential equation models. Take a look back at the phase planes for the exponential model example. For each of the phase planes, there are at least two straight lines of trajectories. In these cases the *x*- axis and the *y*-axis are the locations of these trajectories. If you have a system on the *x*- or *y*-axis in this example it will remain on that axis as it changes. This indicates that for this model, the eigenvectors are the two axises as a system on either of them does not change direction as it develops. That's the definition of of an eigenvector.
+We can now relate the concept of eigenvalues and eigenvectors to our differential equation models. Take a look back at the phase planes for the exponential model example. For each phase plane, there are at least two straight lines of trajectories. The *x*- axis and the *y*-axis are the locations of these trajectories. A system on the *x*- or *y*-axis will remain on that axis as it changes. This indicates that for this model, the eigenvectors are the two axes, as a system on either of them does not change direction as it develops. That's the definition of an eigenvector.
 
-For our purposes though, we do not really care about the actual direction or angle for these eigenvectors. We instead care about whether the state variables move inwards or outwards along these vectors. We can determine this from the eigenvalues of the Jacobian matrix. If the eigenvalue for an eigenvector is negative, then the values move inwards along that eigenvector; while if the eigenvalue is positive, they move outward along the eigenvector.
+For our purposes though, we do not really care about the actual direction or angle for these eigenvectors. Rather, we care about whether the state variables move inward or outward along these vectors. We can determine this from the eigenvalues of the Jacobian matrix. If the eigenvalue for an eigenvector is negative, the values move inward along that eigenvector; if the eigenvalue is positive, the values move outward.
 
-These eigenvalues tell us all we need to know about the stability of the system. Returning to our illustration of stability as a ball on a hill, we can think of these eigenvalues as being the slopes of the hill around the equilibrium point. If the eigenvalues are negative, the ground slopes down towards the equilibrium point forming a cup (leading to a stable equilibrium). If the eigenvalues are positive, the ground slopes away from the equilibrium point creating a hill (leading to an unstable equilibrium).
+These eigenvalues tell us all we need to know about the stability of the system. Returning to our illustration of stability as a ball on a hill, we can think of eigenvalues as being the slopes of the hill around the equilibrium point. If the eigenvalues are negative, the ground slopes down towards the equilibrium point, forming a cup (leading to a stable equilibrium). If the eigenvalues are positive, the ground slopes away from the equilibrium point, creating a hill (leading to an unstable equilibrium).
 
-Eigenvalues can be calculated straightforwardly for a given Jacobian matrix. Briefly, for the Jacobian matrix $J$, the eigenvalues $\lambda$ are the values that satisfy the following equation where $det$ is the matrix determinant and $I$ is the identity matrix.
+Eigenvalues can be calculated straightforwardly for a given Jacobian matrix. Briefly, for the Jacobian matrix $J$, the eigenvalues $\lambda$ are the values that satisfy the following equation, where $det$ is the matrix determinant and $I$ is the identity matrix.
 
 $$
 0=det(J-\lambda \times I)
@@ -449,13 +449,13 @@ Eigenvalue of $\alpha$ with eigenvector of $[1,0]$. Eigenvalue of $\beta$ with e
 
 ~ End Exercise
 
-In the exponential growth model we can see that when the eigenvalues are both negative we have a stable equilibrium (refer to the graphs we developed earlier), while if either one is positive (or they both are) we have an unstable equilibrium. This makes a lot of sense as if either one is positive it pushes the system away from the equilibrium making it unstable.  While if they are both negative then they both push the system towards the equilibrium point. Visualize the ball sitting in the cup or on the hill.
+In the exponential growth model we can see that when the eigenvalues are both negative we have a stable equilibrium (refer to the graphs we developed earlier), while if either one is positive (or they both are) we have an unstable equilibrium. This is logical, since if either one is positive it pushes the system away from the equilibrium, making it unstable. If they are both negative, they both push the system toward the equilibrium point. Visualize the ball sitting in the cup or on the hill.
 
-Looking at it this way, we realize that *all we need in order to understand the stability of an equilibrium point are the eigenvalues of the Jacobian at the equilibrium point*. This is an incredibly powerful tool. It reduces the complex concept of stability, into an analytical procedure that can be applied straightforwardly.
+Looking at it this way, we realize that *all we need in order to understand the stability of an equilibrium point are the eigenvalues of the Jacobian at the equilibrium point*. This is an incredibly powerful tool. It reduces the complex concept of stability into an analytical procedure that can be applied straightforwardly.
 
 Let's now look at some more examples.
 
-First let's take our simple disease model from earlier. If you recall that model was:
+First let's take our simple disease model from earlier. If you recall, that model was:
 
 $$
 \begin{aligned}
@@ -464,7 +464,7 @@ $$
 \end{aligned}
 $$
 
-First let's calculate the Jacobian for this model. We take the partial derivatives of each of the two derivatives with respect to each of the two state variables to create a two-by-two matrix:
+First let's calculate the Jacobian for this model. We take the partial derivatives of the two derivatives with respect to each of the two state variables to create a two-by-two matrix:
 
 $$
 \text{Jacobian} = \begin{bmatrix} \dfrac{\partial}{\partial H }  - \alpha \times H \times S& \dfrac{\partial}{\partial S }  - \alpha \times H \times S  \\  \dfrac{\partial}{\partial H } \alpha \times H \times S & \dfrac{\partial}{\partial S } \alpha \times H \times S \end{bmatrix} =\begin{bmatrix}
@@ -482,9 +482,9 @@ $$
 \end{bmatrix}
 $$
 
-We can now find the eigenvalues for this matrix. Once we go through the math we get two eigenvalues: 0 and $\alpha \times P$. What do these mean? Well, since one of the eigenvalues is positive, this indicates we have movement away from the equilibrium point along at least one of the eigenvectors. The other vector has no movement (0 as the eigenvalue), but this one positive value will ensure we have an unstable equilibrium. Again, think of the ball, the positive eigenvalue indicates the ground slopes downwards from the equilibrium point so a ball balanced on top of this hill will be very unstable.
+We can now find the eigenvalues for this matrix. Once we go through the math we get two eigenvalues: 0 and $\alpha \times P$. What do these mean? Well, since one of the eigenvalues is positive, this indicates we have movement away from the equilibrium point along at least one of the eigenvectors. The other vector has no movement (0 as the eigenvalue), but this one positive value will ensure we have an unstable equilibrium. Again, think of the ball. The positive eigenvalue indicates the ground slopes downward from the equilibrium point so a ball balanced on top of this hill will be very unstable.
 
-Now let's do the second equilibrium. The one where $S=P$ and $H=0$ (everyone is sick). Let's evaluate the Jacobian at this equilibrium:
+Now let's do the second equilibrium - the one where $S=P$ and $H=0$ (everyone is sick). Let's evaluate the Jacobian at this equilibrium:
 
 $$
 \begin{bmatrix}
@@ -493,9 +493,9 @@ $$
 \end{bmatrix}
 $$
 
-Now let's find the eigenvalues for this matrix. Once we go through the math we get two eigenvalues: this time 0 and $-\alpha \times P$. Again, the 0 eigenvalue can be ignored as it does not cause growth or change. The second eigenvalue however is negative, indicating the system moves toward the equilibrium point again. Look back at our exponential growth phase planes. Negative coefficients indicate trajectories towards the equilibrium (create a cup for the ball). Thus this second equilibrium is a stable one.
+Now let's find the eigenvalues for this matrix. Once we go through the math we get two eigenvalues: this time 0 and $-\alpha \times P$. Again, the 0 eigenvalue can be ignored, as it does not cause growth or change. However, the second eigenvalue is negative, indicating the system moves toward the equilibrium point again. Look back at our exponential growth phase planes. Negative coefficients indicate trajectories towards the equilibrium (create a cup for the ball). Thus, this second equilibrium is a stable one.
 
-It's time to look at a more complex example, we'll consider our predator prey model. First we calculate the Jacobian matrix for this model:
+It's time to look at a more complex example; we'll consider our predator-prey model. First we calculate the Jacobian matrix for this model:
 
 $$
 \begin{split}
@@ -516,7 +516,7 @@ $$
 \end{bmatrix}
 $$
 
-The eigenvalues of this matrix are $\alpha$ and $-\delta$. Thus one of the eigenvectors approach the equilibrium and the other moves away from it. This means we have an unstable equilibrium, which is actually good news as it indicates that the two animal populations will not spontaneously go extinct.
+The eigenvalues of this matrix are $\alpha$ and $-\delta$. One of the eigenvectors approaches the equilibrium and the other moves away from it. This means we have an unstable equilibrium. This is actually good news, as it indicates that the two animal populations will not spontaneously go extinct.
 
 Let's now evaluate the more complex equilibrium point we identified earlier of $M=\delta/\gamma$ and $W=\alpha/\beta$. First we calculate the Jacobian at this point:
 
@@ -527,9 +527,9 @@ $$
 \end{bmatrix}
 $$
 
-When we calculate the eigenvalues for this point we obtain $i\sqrt{\alpha \times \delta}$ and $-i\sqrt{\alpha \times \delta}$. Here the $i$ indicates the imaginary number $\sqrt{-1}$. That's a little strange, so how do we interpret this? Well, it turns out that imaginary numbers in the eigenvalues indicate oscillations in the phase planes, thus this results means we have oscillations around the point of equilibrium. Since we have no real component in the eigenvalues, there is neither attraction towards the point of equilibrium or repulsion away from it so we have a stable oscillation around the equilibrium.
+When we calculate the eigenvalues for this point we obtain $i\sqrt{\alpha \times \delta}$ and $-i\sqrt{\alpha \times \delta}$. Here the $i$ indicates the imaginary number $\sqrt{-1}$. That's a little strange, so how do we interpret this? Imaginary numbers in the eigenvalues indicate oscillations in the phase planes, thus this result means we have oscillations around the point of equilibrium. Since we have no real component in the eigenvalues, there is neither attraction towards the point of equilibrium or repulsion away from it, so we have a stable oscillation around the equilibrium.
 
-Of course we already knew that from our simulations, but this stability analysis allows us to mathematically determine this relationship, a capability that is a very powerful tool. The following table summarizes the different types of eigenvalues that can be found for a system with two state variables and their associated stabilities.
+Of course we already knew that from our simulations, but this stability analysis allows us to mathematically determine this relationship. You can see this is a very powerful tool. The following table summarizes the types of eigenvalues that can be found for a system with two state variables and their associated stabilities.
 
 Real Parts | Imaginary Part? | Stability
 ---|---|---
@@ -594,13 +594,13 @@ A system's Jacobian matrix has a single eigenvalue at an equilibrium point. Dete
 
 ## Analytical vs. Numerical Analysis
 
-The majority of this book has been focused on the numerical analysis of models and the qualitative conclusions that can be drawn from these results. This chapter has introduced a set of analytical tools that can be used -- for the most part -- to analyze the same models we have presented elsewhere in the book. Now take a moment to reflect on these different forms of analysis and what each one can offer.
+The majority of this ILE has been focused on the numerical analysis of models and the qualitative conclusions that can be drawn from these results. In this chapter we introduced analytical tools that can be used -- for the most part -- to analyze the same models we have presented elsewhere. Take a moment to reflect on these different forms of analysis and what each one can offer.
 
-The great benefit of the analytical techniques we present here is that they can provide precise answers to the general behavior of the system. Most of these same answers can also be determined numerically (e.g. running the simulation many times and exploring the results), but those answers will be less precise and definite. If you manually attempt to explore the parameter space of your model, it is possible that you could miss some set of parameter values that will give you unexpected behavior. An analytical analysis may be fully comprehensive and can guarantee the completeness of your conclusions.
+The great benefit of the analytical techniques is that they can provide precise answers to the general behavior of the system. Most of these same answers can also be determined numerically (e.g., running the simulation many times and exploring the results), but those answers will be less precise and definite. If you manually attempt to explore the parameter space of your model, it is possible that you could miss some set of parameter values that will give you unexpected behavior. An analytical analysis may be fully comprehensive and can guarantee the completeness of your conclusions.
 
-A weakness of analytical methods is that your model must be solvable analytically. This means that you will probably need to keep your model from growing too complex in order to keep it analytically tractable. Also, some common functions such as \e{IfThenElse} logic can make analytical work much more difficult. Further, some models may simply be impossible to analyze analytically and these insolvable models may in fact be very simple in practice. For example, any model containing both $X$ and $\log(X)$ in the same equation will be intractable to many forms of analysis. 
+A weakness of analytical methods is that your model must be solvable analytically. This means that you will probably need to keep your model from growing too complex in order to keep it analytically tractable. Also, some common functions such as \e{IfThenElse} logic can make analytical work much more difficult. Further, some models may simply be impossible to analyze analytically, and may in fact be very simple in practice. For example, any model containing both $X$ and $\log(X)$ in the same equation will be intractable to many forms of analysis. 
 
-We think both analytical and numerical work has a lot of applicability in practice. We do worry, though, about some of the analytical models and work we see presented or published. Sometimes these models seem to us to be much too simple to adequately represent the system they are supposed to be modeling. True, analytically the results of the models appear elegant and clear, but if the model is too simple to be relevant these results have little use and may actually be very misleading in practice. We worry sometimes that a focus on analytical work^[And, rightly or wrongly, analytical work is generally considered more prestigious and "serious" than numerical work.] leads to modelers prioritizing analytical tractability over model utility in their decisions. We believe a focus on analytical results can lead to reductionist models with reduced practical utility and we caution modelers against becoming too focused on elegant solutions and the expense of relevance. Where available, more realistic models are preferable, even if they require numerical solutions than overly simplistic analytically solvable ones.
+We think both analytical and numerical work are very applicable in practice. We do worry, though, about some of the analytical models and work we see presented or published. Sometimes these models seem to us to be much too simple to adequately represent the system they are supposed to be modeling. True, analytically the results of the models appear elegant and clear. But if the model is too simple to be relevant, these results have little use and may actually be very misleading. We sometimes worry that a focus on analytical work leads modelers to prioritize analytical tractability over model utility. ^[Rightly or wrongly, analytical work is generally considered more prestigious and "serious" than numerical work.] We believe a focus on analytical results can lead to reductionist models with reduced practical utility, and we caution modelers against becoming too focused on elegant solutions at the expense of relevance. Where available, more realistic models are preferable, even if they require numerical solutions rather than overly simplistic analytically solvable ones.
 
 ~ Exercise
 
@@ -645,7 +645,7 @@ $Q=1, R=-1$ is unstable.
 
 You have a system dynamics model of a population of wolves. This model consists of a single stock \p{Wolves} (initial value 100), a single flow going into the stock \p{Net Growth}, a parameter \p{Growth Rate} (value of 0.05), and a parameter \p{Carrying Capacity} (value of 6,000). The flow has the equation \e{[Growth Rate]*[Wolves]*(1-[Wolves]*[Carrying Capacity])}.
 
-Build this model determine the location of the equilibria and their stability. Then prove these conclusions analytically.
+Build this model to determine the location of the equilibria and their stability. Then prove these conclusions analytically.
 
 ~ Answer
 
