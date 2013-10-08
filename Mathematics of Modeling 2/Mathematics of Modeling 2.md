@@ -7,11 +7,11 @@ Although the trajectory for the state variables in differential equation models 
 * The location of equilibrium points
 * The stability of the equilibrium points
 
-An equilibrium point is defined as a set of state variable values that will cause the system to cease to change. Once the system enters an equilibrium configuration, it will not leave that configuration without an external stimulus. For instance, in our exponential growth model a single equilibrium point exists: that of zero people. If the population is empty, then the population will not grow and instead remain at 0 indefinitely.
+An equilibrium point is defined as a set of state variable values that will cause the system to cease changing. Once the system enters an equilibrium configuration, it will not leave that configuration without an external stimulus. For instance, in our exponential growth model a single equilibrium point exists: that of zero people. If the population is empty, then the population will not grow and instead remain at 0 indefinitely.
 
 In the exponential growth population model there is only one equilibrium point ($P=0$). In other models you may have multiple equilibrium points. In a model of a highly infectious, incurable disease you can imagine a system where two equilibrium points exist: one where no one is infected and a second point where everyone is infected. As long as there were no infectious individuals, the population would remain healthy. If just a single infected individual were introduced into the population, the infection would, however, spread until everyone was infected and the population would then remain at that point (remember this hypothetical disease is incurable).
 
-Multiple types of equilibria exist. Figure 1 illustrates what is known as the *stability* of equilibrium points. Each of the three panes in this figure show a different form of equilibrium for the ball. In all three the balls are in equilibrium: if the no external forces come into play, the balls will not move. What differs in each of the three is what occurs if the balls are displaced a small amount.
+Multiple types of equilibria exist. Figure 1 illustrates what is known as the *stability* of equilibrium points. Each of the three panes in this figure shows a different form of equilibrium for the ball. In all three the balls are in equilibrium; if the no external forces come into play, the balls will not move. What differs in each of the three is what occurs if the balls are displaced by a small amount.
 
 ![Figure 1. Three different types of stability.](Stability.png)
 
@@ -19,28 +19,28 @@ Stable Equilibrium
 : In this type of equilibrium the ball will return to its original position if it is displaced. The structure of the system is such that the system is naturally attracted to the point of equilibrium. To use the physical metaphor, the equilibrium is at the bottom of a dip and the system naturally rolls into it.
 
 Unstable Equilibrium
-: Here the ball will move further and further away from the point of equilibrium if it is displaced even a small amount. The equilibrium is unstable in that if we are just a small distance away from it, we move further away from it. To use the physical metaphor, the equilibrium is at the top of the hill and the system will move away from it unless it is placed at the exact point of equilibrium.
+: Here the ball will move further and further away from the point of equilibrium if it is displaced by even a small amount. The equilibrium is unstable in that if we are just a small distance away from it, we move further away from it. To use the physical metaphor, the equilibrium is at the top of the hill and the system will move away from it unless it is placed at the exact point of equilibrium.
 
 "Neutrally Stable Equilibrium"
-: This is a less common form of equilibrium and goes by several different names. In this case if the ball is moved it will stay fixed at its new location. It will not move closer to or further from the original equilibrium. Of the three types of equilibrium, this one is less interest or relevance in practice.
+: This is a less common form of equilibrium and goes by several different names. In this case if the ball is moved it will stay fixed at its new location. It will not move closer to or further from the original equilibrium. Of the three types of equilibrium, this one is of less interest or relevance in practice.
 
 In the case of the highly infectious disease model, an equilibrium of everyone being healthy would be classified as an unstable equilibrium. The equilibrium would persist as long as no one brought the disease into the population (someone would not just spontaneously become ill), but if as little as a single sick person entered the population, the population would move further and further away from the equilibrium point of everyone being healthy and would never naturally return to it.
 
-The equilibrium point of everyone being sick is, on the other hand, a stable equilibrium as no one recovers from the disease on their own. Even if you introduced healthy people into a population of sick individuals -- moving the population away from the equilibrium -- they too will eventually become sick restoring the population to the equilibrium of everyone being sick.
+On the other hand, the equilibrium point of everyone being sick is a stable equilibrium, as no one recovers from the disease on their own. Even if you introduced healthy people into a population of sick individuals -- moving the population away from the equilibrium -- they too would eventually become sick, restoring the population to the equilibrium of everyone being sick.
 
 ~ Exercise
 Provide two examples each of situations where stable and unstable equilibria occur in nature. Describe these equilibria.
 ~ Answer
 
-Stable Equilibria: A piece of rubber that returns to its original shape after pulled, a forest where trees grow back once cut down.
+Stable Equilibria: A piece of rubber that returns to its original shape after pulled; a forest where trees grow back once cut down.
 
-Unstable Equilibria: A ball balanced on top of a sloped roof, a pole balanced perfectly on the floor.
+Unstable Equilibria: A ball balanced on top of a sloped roof; a pole balanced perfectly on the floor.
 
 ~ End Exercise
 
 ## Equilibrium  Points
 
-Often, we can determine the equilibrium points for a system without fully needing to solve the trajectory for the state variables. Let's implement the simple disease model we've been discussing. We'll do so for both a differential equation model and a System Dynamics model, but we'll rely on differential equation version to do our analytic analysis.
+Often, we can determine the equilibrium points for a system without fully needing to solve the trajectory for the state variables. Let's implement the simple disease model we've been discussing. We'll do so for both a differential equation model and a System Dynamics model, but we'll rely on the differential equation version to do our analytic analysis.
 
 One way to express the differential version of the model is to define two state variables: the number of healthy people ($H$) and the number of sick people ($S$). The rate of infection between sick and healthy people can be made a function of the number of people in each category. Clearly, if there are no sick people the infection rate is 0; but, just as clearly, if everyone is already sick then the infection rate will also be zero. One workable differential equation model to implement this behavior is shown below:
 
@@ -53,7 +53,7 @@ S(0) &= 1 \\
 \end{aligned}
 $$
 
-This model uses a single parameter ($\alpha$) to control the infection rate. $alpha$ is a non-zero positive value; the smaller $\alpha$ is, the slower the infection will progress and vice versa. This notation illustrates one of the clumsier aspects of implementing stock and flow models using differential equations. The flow values between two stocks have to be repeated twice once for each of the two connected state variable's derivatives.
+This model uses a single parameter ($\alpha$) to control the infection rate. $alpha$ is a non-zero positive value; the smaller $\alpha$ is, the slower the infection will progress and vice versa. This notation illustrates one of the clumsier aspects of implementing stock and flow models using differential equations. The flow values between two stocks have to be repeated twice; once for each of the two connected state variables' derivatives.
 
 # Model
 
@@ -71,7 +71,7 @@ This model uses a single parameter ($\alpha$) to control the infection rate. $al
 
 DIAGRAM
 
-This is the structure of our model. We have two stocks of people with people moving from the healthy stock to the sick stock as they become infected. Let's add the values and equations now.
+This is the structure of our model. We have two stocks of people, with people moving from the healthy stock to the sick stock as they become infected. Let's add the values and equations now.
 
 {"attribute":"InitialValue","target":"Healthy","value":"100"}
 
@@ -99,7 +99,7 @@ That's more interesting! We can see that everyone being healthy is an unstable e
 
 # End Model
 
-Finding the equilibria for differential equation models is by-and-large straightforward analytically. We simply need to harness the definition of an equilibrium point: an equilibrium point is one where the state variables are constant and unchanging. Since the derivatives represent changes in the state variables, this statement is equivalent to saying the derivatives for the model are 0 at equilibrium points.
+Analytically, finding the equilibria for differential equation models is by-and-large straightforward. We simply need to harness the definition of an equilibrium point: an equilibrium point is one where the state variables are constant and unchanging. Since the derivatives represent changes in the state variables, this statement is equivalent to saying the derivatives for the model are 0 at equilibrium points.
 
 Based on this, in order to find the equilibrium points we simply need to set the derivatives in our model to 0 and solve the resulting equations. For the disease model we get:
 
@@ -112,25 +112,25 @@ S(0) = 1 \\
 \end{aligned}
 $$
 
-The initial conditions will determine what equilibrium is arrived at but they do not affect the existence of the equilibria. Furthermore, the two equations we have set to 0 are equivalent^[Although we expressed this model as a function of two state variables $H$ and $S$, it only has one independent state variable. Given the fixed population size, you know the value of $H$ given $S$ and vice versa.] so we can simplify these equations to simply be:
+The initial conditions will determine the equilibrium but they do not affect the existence of the equilibria. Furthermore, the two equations we have set to 0 are equivalent^[Although we expressed this model as a function of two state variables $H$ and $S$, it only has one independent state variable. Given the fixed population size, you know the value of $H$ given $S$ and vice versa.]. We can simplify these equations to:
 
 $$ 
 0 = \alpha \times H \times S
 $$
 
-Simple inspection reveals that this equation is true if and only if either $H=0$, $S=0$, or $\alpha=0$. Thus we have mathematically shown that our equilibria are either when everyone is sick or everyone is healthy (or there is no infection whatsoever). Granted this is a trivial conclusion for this model and we stated it earlier. However, for more complex models this type of analysis can be very useful and will often reveal that equilibria are functions of the different parameter values in the model and they may enable you to explicitly determine how the equilibria changes as the model configuration changes.
+Simple inspection reveals that this equation is true if and only if either $H=0$, $S=0$, or $\alpha=0$. Thus we have mathematically shown that our equilibria are either when everyone is sick or everyone is healthy (or there is no infection whatsoever). As we said earlier, this is a trivial conclusion for this model. However, for more complex models this type of analysis can be very useful and will often reveal that equilibria are functions of the different parameter values in the model. They may enable you to explicitly determine how the equilibria changes as the model configuration changes.
 
-Let's try a more complex example. Remember the predator prey model from earlier? We had the following set of equations to simulate the relationship between a moose and wolf population:
+Let's try a more complex example. Remember the predator-prey model from earlier? We had the following set of equations to simulate the relationship between a moose and wolf population:
 
 $$ \frac{dM}{dt} = \alpha \times M - \beta \times M \times W $$
 $$ \frac{dW}{dt} = \gamma \times M \times W - \delta \times W  $$
 
-Let's determine what the equilibrium values are for this model. As before, we start by setting the derivatives to 0:
+Let's determine the equilibrium values for this model. As before, we start by setting the derivatives to 0:
 
 $$ 0 = \alpha \times M - \beta \times M \times W $$
 $$ 0 = \gamma \times M \times W - \delta \times W $$
 
-Solving this set of equations is more difficult than for the disease model. However a little bit of algebra reveals two solutions. One when $M=0$ and $W=0$ (there are no animals at all), and the second when $M=\delta/\gamma$ and $W=\alpha/\beta$. This is an example of where the equilibrium location depends on the values of the model parameters.
+Solving this set of equations is more difficult than for the disease model. However, a little bit of algebra reveals two solutions. The first is when $M=0$ and $W=0$ (there are no animals at all), and the second is when $M=\delta/\gamma$ and $W=\alpha/\beta$. This illustrates the dependency of the equilibrium location on the values of the model parameters. 
 
 ~ Exercise
 Find the equilibrium points for the system:
