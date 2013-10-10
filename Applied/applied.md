@@ -80,6 +80,14 @@ Yes, we're being very redundant though the message we're trying to convey is ess
 
 ## To Degree or Not / Matt Sadinsky ##
 
+There's a new normal in careers across many industries.  While 12 M americans are unemployed and 12 million are underemployed, over 3 Million jobs remain unfilled due to skills mismatch.  This summer at the National Boy Scout Jamboree over 45,000 boys and their leaders heard Mike Rowe from DIrty Jobs talk about the disconnection between today's and tomorrows careers and our system of K-12, college and university education.  ( I have a very cool 2 min video clip)
+
+In a day when the suicide rate among vets has never been higher the amount of student loan debt has never been greater and the number of hard working well meaning Americans with 20-30 years of strong work experience have lost there jobs due to no fault of their own and exhausted 99 weeks of unemployment insurance - it may well be time to reexamine some of the classical decision making around when and how to make the best decisions around careers.
+
+Perhaps a plumber who graduates High school and starts to make 30,000 in his first year and saves 10% a year and sees his earning rise to 33, 36, 42, 50, 60, 70 K over 10 years, saving 10% by living within his mens may be well ahead of the dentist student who goes into debt to finish school, open a practice and defers savings 10 years.  These models are meant to tease these issues out in an engaging way.
+
+How long would it take the dentist to catch up?
+
 # Model
 {"title": "", "description": "", "load": "http://insightmaker.com/insight/8727"}
 # End Model
@@ -91,6 +99,16 @@ Yes, we're being very redundant though the message we're trying to convey is ess
 # Model
 {"title": "", "description": "", "load": "http://insightmaker.com/insight/8735"}
 # End Model
+
+See his Mike Rowes website "Proundly disconnected" for more information on the importance of recoonecting education to more effective career choices
+
+What are the implications for K-12 and college advising?
+
+Perhaps career choice decisions are one of the most relevant areas of strategic thinking any parent and counselor could involve their children and students in.
+
+THis chapter/appendix of models begins to get to some of these issues.
+
+See also this video to hear a bit more about this discussion - Bill Maher interview Mike Rowe
 
 ## Sustainable Capitalism / Ken Shepard ##
 
