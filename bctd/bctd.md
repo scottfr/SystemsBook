@@ -1,6 +1,6 @@
 # Beyond Connecting the Dots #
 
-The beta v3 of Beyond Connecting the Dots interactive is now available. As you access this version please remember that it's still a "beta"! There's an overview video at...
+The beta v4 of Beyond Connecting the Dots interactive is now available. As you access this version please remember that it's still a "beta"! The overview video  at the following URL will help you understand what to expect once you're in the bets. I strongly recommend you take a few minutes to watch it. It's not very long.
 
 * [http://www.youtube.com/watch?v=8Jjeyfds9mY](http://www.youtube.com/watch?v=8Jjeyfds9mY)
 
@@ -24,11 +24,15 @@ The electronic copy of the book is available at the URL below and is password pr
 * It has only been tested on Chrome and Firefox. 
 * Cover-page and art to be added 
 * Book content is still under development and being edited 
-* Some of the model/graph displays are out of sequence so the graph gets displayed before the model. Just click the Red-X Stop sign in the upper right corner to close the graph. 
+* Some of the model/graph displays are out of sequence so the graph gets displayed before the model. Just click the Red-X Stop sign in the upper right corner to close the graph.
+
+## BCTD Is An Interactive Learning Environment ##
+
+BCTD is developed as an interactive learning environment. While in this environment you get to interact with models and at times even build small models. If you really want to build model then go to [Insight Maker](http://insightmaker.com/), acquire a username and password, **It's FREE**, and do development in Insight Maker. There is and extensive set of document within Insight Maker and there are numerous videos on just about every feature and function at [Modeling & Simulation with Insight Maker](http://webbrain.com/u/14xv).
 
 ## Beta v4 13.09.16 Access ##
 
-Note that Scott has indicated he can't create a new betaX. URL for each revised Beta. This means that when the new one is posted it will be at the same URL as the old one. Please check the first page to ensure it has the above date. If it doesn't then tell your browser to reload it.
+Note that Scott has indicated he can't create a new betaX URL for each revised Beta. This means that when the new one is posted it will be at the same URL as the old one. Please check the first page to ensure it has the above date. If it doesn't then reload the URL in your browser.
 
 * [http://beta.BeyondConnectingTheDots.com](http://beta.BeyondConnectingTheDots.com) 
 * username: betabook 
@@ -40,6 +44,8 @@ be well,
 Gene
 
 ## Ancient History ##
+
+None of the information below this point should be of any value to you. It is maintained here simply as a historical reference.
 
 Each new Beta version of the app overwrites the older one so the history is not available.
 
