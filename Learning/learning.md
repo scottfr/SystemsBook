@@ -15,52 +15,48 @@ It has been said that you can learn about riding a bicycle from reading a book, 
 
 ## Experiencing the Web ##
 
-Please click on the title and step through the following ILE for an initial sense of how a simple action can impact many things in the web of relations. It is best to click on the title for if you click anywhere else on the ILE it will open and also do a page forward or back depending on where you click. If this happens when you exit the ILE you may not be where you think you should be.^[Bird Feeder Dilemma Model [http://insightmaker.com/insight/8872](http://insightmaker.com/insight/8872)]
+Please click on "Bird Feeder Dilemma"^[Bird Feeder Dilemma Model [http://insightmaker.com/insight/8872](http://insightmaker.com/insight/8872)] title and step through the following ILE for an initial sense of how a simple action can impact many things in the web of relations. It is best to click on the title for if you click anywhere else on the ILE it will open and also do a page forward or back depending on where you click. If this happens then when you exit the ILE you may not be where you think you should be.
 
 # Model
-
 {"title": "Bird Feeder Dilemma", "description": "All you wanted was a more pleasant morning at breakfast.", "load": "http://insightmaker.com/insight/8872"}
-
 # End Model
 
-Hopefully this gives you a sense of difficulty one can get into when simply thinking about a single action taken to achieve a goal without considering the effects of that action. This web provides a limited view as it's only a picture of relations, and probably not all of them. The picture doesn't give you any real sense of the quantity of anything over time. The next ILE should provide a better sense of why it's important to have a sense of how the web of extended interactions develops over time if we are to really develop a web of understanding.^[Moose and Wolves Model [http://insightmaker.com/insight/8590](http://insightmaker.com/insight/8590)]
+Hopefully this gives you a sense of difficulty one can get into when simply thinking about a single action taken to achieve a goal without considering the effects of that action. This web provides a limited view as it's only a picture of relations, and probably not all of them. The picture doesn't give you any real sense of the quantity of anything over time.
+
+The "Moose and Wolves"^[Moose and Wolves Model [http://insightmaker.com/insight/8590](http://insightmaker.com/insight/8590)] ILE should provide a better sense of why it's important to have a sense of how the web of extended interactions develops over time if we are to really develop a web of understanding.
 
 # Model
-
 {"title": "Moose and Wolves", "description": "How do the populations of Moose and Wolves interact?", "load": "http://insightmaker.com/insight/8590"}
-
 # End Model
 
-Was the interaction of the population of Moose and Wolves what you expected? Probably not. It's the nature of a web of interactions over time that we simply can't see by looking at a picture. The behavior over time is often critical for a sense of what's really happening in the web. The following ILE is provided as another example of how unexpected the behavior of a web of extended interactions can be.^[Sustaining the Forest Model [http://insightmaker.com/insight/8889](http://insightmaker.com/insight/8889)]
+Was the interaction of the population of Moose and Wolves what you expected? Probably not. It's the nature of a web of interactions over time that we simply can't see by looking at a picture. The behavior over time is often critical for a sense of what's really happening in the web.
+
+The following "Sustaining the Forest"^[Sustaining the Forest Model [http://insightmaker.com/insight/8889](http://insightmaker.com/insight/8889)] ILE is provided as another example of how unexpected the behavior of a web of extended interactions can be.
 
 # Model
-
 {"title": "Sustaining the Forest", "description": "Is the forest you care about sustainable under current practices?", "load": "http://insightmaker.com/insight/8889"}
-
 # End Model
 
 Did you find it interesting how unexpected the future can be? Did you sense there was a good reason for things unfolding in the manner they did? As you continue you will develop a skill for understanding interactions in the web.
 
 ## Creating the Future ##
 
-Yesterday's actions are responsible for the the world we experience today. And today's actions are responsible for the world that we will experience tomorrow. The next ILE is intended to provide a better sense of the common process associated with the unexpected unfolding of the future.^[Creating the Future [http://insightmaker.com/insight/8892](http://insightmaker.com/insight/8892)]
+Yesterday's actions are responsible for the the world we experience today. And today's actions are responsible for the world that we will experience tomorrow. The "Creating the Future"^[Creating the Future [http://insightmaker.com/insight/8892](http://insightmaker.com/insight/8892)] ILE is intended to provide a better sense of the common process associated with the unexpected unfolding of the future.
 
 # Model
-
 {"title": "Creating the Future", "description": "There is a meaning to it all.", "load": "http://insightmaker.com/insight/8892"}
-
 # End Model
 
-If this ILE presents a sense of what is essential if you want to address a situation without making things worse the question is how do you get better at doing this to improve the chances of creating the future you're trying to create? All too often the world around us seems so complicated and apparently so difficult to pursue our dreams that we almost want to give up. The answer to complicated is to simplify the complicated and allow us to develop a web of understand. The next few sections will specifically address how we get better at this.
+If this ILE presents a sense of what is essential if you want to address a situation without making things worse the question is how do you get better at doing this. How do you improve the chances of creating the future you're trying to create? All too often the world around us seems so complicated and so apparently difficult to pursue our dreams that we almost want to give up. The answer to complicated is to find the essence within the complicated allowing us to develop a web of understand. The next few sections will specifically address how we get better at this.
 
 ## Patterns in the Web ##
 
-What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever really thought about how you learn about the world around you? There are some things you memorize early in life, like the times tables. While you memorize these is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that the learning happened? The following sections will investigate a bit how you actually learn. We will also present a introduction as to how you can improve your learning and actually test whether what you have learned is actually correct.^[Follow the Clues [http://insightmaker.com/insight/8893](http://insightmaker.com/insight/8893)]
+What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever really thought about how you learn about the world around you? There are some things you memorize early in life, like the times tables. While you memorize these is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that the learning happened?
+
+The "Follow the Clues"^[Follow the Clues [http://insightmaker.com/insight/8893](http://insightmaker.com/insight/8893)] ILE is intended to provide an insight as to how you actually learn. We will also present a introduction as to how you can improve your learning and actually test whether what you have learned is actually correct.
 
 # Model
-
-{"title": "Follow the clues", "description": "Does the order matter?", "load": "http://insightmaker.com/insight/8893"}
-
+{"title": "Follow the clues", "description": "Does the order of the clues really matter?", "load": "http://insightmaker.com/insight/8893"}
 # End Model
 
 You have most likely come to understand that all refrigerators are not identical. Some have one door with a separate compartment inside. Some have two doors and a drawer. Some are much smaller than others. Some can fit under a counter and some even fit on top of a counter. Some may be so large you can walk into them.
@@ -70,9 +66,9 @@ Even when you see different looking refrigerators you quickly decide it's a refr
 - The box keeps food from readily spoiling by keeping it cold
 - Part of the box is a freezer which keeps food from spoiling for even longer
 
-And with this realization you understand it to be a refrigerator. Though now that we've arrived at this point we still haven't addressed the question of how you know. You were probably not actually taught that it's the above purpose that represents the essence of a refrigerator. Most people were not, though they have essentially learned it over time.
+And with this realization you understand it to be a refrigerator. Though now that we've arrived at this understanding we still haven't addressed the question of how you know. You were probably not actually taught that it's the above purpose that represents the essence of a refrigerator. Most people were not, though they have essentially learned it over time.
 
-Patterns in the web are the way we look at, and understand the world around us. All we have are our patterns. They are the way we understand everything. This is so because we build our understanding based on what we already understand. The world around us simply has too much detail for us to pay attention to everything. A refrigerator has many pieces though how many do you really pay attention to? Probably not many unless you build or repair refrigerators. We choose what to pay attention to in the world around us and we filter out much of the detail so we don't become overloaded. Sometimes we do this consciously and sometimes we do it subconsciously through experience. In the midst of what we choose to pay attention to there are patterns. Whether we realize it or not it is these patterns that we pay attention to and attempt to make sense of. We understand these patterns by linking them to extend patterns we already understand while we ignore much of the detail around us.
+Patterns in the web are the way we look at, and understand the world around us. All we have are our patterns. They are the way we understand everything. This is so because we build our understanding based on what we already understand. The world around us simply has too much detail for us to pay attention to everything. A refrigerator has many pieces, though how many do you really pay attention to? Probably not many, unless you build or repair refrigerators. We choose what to pay attention to in the world around us filtering out much of the detail so we don't become overloaded. Sometimes we do this consciously and sometimes we do it subconsciously through experience. In the midst of what we choose to pay attention to there are patterns. Whether we realize it or not it is these patterns that we pay attention to and attempt to make sense of. We understand these patterns by linking them to and extending patterns we already understand, while we ignore much of the detail around us.
 
 ----------
 
@@ -84,19 +80,19 @@ A pattern is a simplified version of some aspect of the world around us to help 
 
 ## Learning ##
 
-When we experience something that experience falls somewhere between complete novelty, meaning that we can't connect it with anything in our past experience, and complete confirmation, meaning that it represents something we already completely understand. Experiences which lie somewhere between complete novelty and complete confirmation provide a basis for learning. They represent a basis for connecting to understood patterns, extending those patterns and our understanding, and what results is learning. {Cite: Jantach, Eric. 1980. The Self-Organizing Universe: Scientific and Human Implications. Pergamon Press. http://www.amazon.com/The-Self-Organizing-Universe-Implications-Innovations/dp/0080243118/}
+When we experience something that experience falls somewhere between complete novelty, meaning that we can't connect it with anything in our past experience, and complete confirmation, meaning that it represents something we already believe we completely understand. Experiences which lie somewhere between complete novelty and complete confirmation provide a basis for learning. They represent a basis for connecting to understood patterns, extending those patterns and our understanding, and what results is learning. {Cite: Jantach, Eric. 1980. The Self-Organizing Universe: Scientific and Human Implications. Pergamon Press. http://www.amazon.com/The-Self-Organizing-Universe-Implications-Innovations/dp/0080243118/}
 
 Consider running into a refrigerator that looks like no refrigerator you've ever seen before. From an initial view you are unlikely to perceive it as a refrigerator? As you inspect it and find it serves the purpose you've come to understand for refrigerators, or if someone tells you it's a refrigerator, you then expand or extend your awareness of the range of patterns that constitute a refrigerator. And as Bateson said, "It's the pattern that connects."
 
 ## A Basis for Flawed Learning ##
 
-While reading the previous paragraphs did it dawn on you that much of this pattern recognition/connection/extension learning doesn't happen consciously? We connect with patterns and extend our knowledge at times without even being consciously aware that it is happening. And when this happens subconsciously there isn't really any critical validation that happens along with the learning. Because this ongoing learning happens without critical validation there are things we learn and come to believe which are actually incorrect. We have perceived patterns and extended our learning in a flawed manner. The really annoying thing is that we then act on these beliefs, and when we produce results that don't go the way we planned we wonder why. Or even worse, we don't actually learn from the unexpected results and correct the flawed models which served as the basis for our flawed actions.
+While reading the previous paragraphs did it dawn on you that much of this pattern recognition/connection/extension learning doesn't happen consciously? We connect with patterns and extend our knowledge at times without even being consciously aware that it is happening. And when this happens subconsciously there isn't really any critical validation that happens along with the learning. Because this ongoing learning happens without critical validation there are things we learn and come to believe which are actually incorrect. We may have perceived patterns and extended our learning in a flawed manner. The really annoying thing is that we then act on these beliefs, and when we produce results that don't go the way we planned we wonder why. Or even worse, we don't actually learn from the unexpected results and correct the flawed models which served as the basis for our flawed actions.
 
 When we act on flawed beliefs attempting to solve problems we typically create more problems. It has been said repeatedly that the majority of today's problems are the direct result of yesterday's solutions. Shouldn't this provide a sense that we might really benefit from a better way to think about the world around us, develop better understanding, and develop solutions that don't come back to haunt us in the future?
 
 ## Simulation ##
 
-While patterns can help us understand the world around us we live in a dynamic ever changing world, where the only real constant is change. Simulations allow us to bring the patterns we build to life and get a sense of the implications of the relations over time. It has been said that we as humans have a very limited capacity to understand the implication of two or more dynamic relations over time. To help us develop our understanding in this area we simulate the patterns we develop. We expect you experienced this with the previous Moose and Wolves and Sustainable Forest models.
+While patterns can help us understand the world around us we live in a dynamic ever changing world, where the only real constant is change. Simulations allow us to bring the patterns we build to life and get a sense of the implications of the relations over time. It has been said that we as humans have a very limited capacity to understand the implication of two or more dynamic relations over time. To help us develop our understanding in this area we simulate the patterns we develop. We expect you experienced this with the previous "Moose and Wolves" and "Sustainable Forest" models.
 
 ----------
 
@@ -110,12 +106,12 @@ A simulation is the dynamics manipulation of a pattern over time that allows us 
 
 Ludwig von Bertalanffy first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another.{cite: Davidson, Mark. 1983. Uncommon Sense: The Life and Thought of Ludwig von Bertalanffy. J.P. Tarcher, Inc. http://www.amazon.com/Uncommon-Sense-Thought-Bertalanffy-1901-1972/dp/087477165X/} When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. However, if you think about it, maybe there is some truth to it after all.
 
-We're not simply asking you to believe the previous statement though this continued learning experience is expected to shortly reinforce the sensibility of the statement from your own perspective. And it is hoped that the next ILE should provide the first hint of that.^[Simplifying Everything [http://insightmaker.com/insight/4957](http://insightmaker.com/insight/4957)]
+We're not asking you to simply believe the previous statement though this continued learning experience is expected to shortly reinforce the sensibility of the statement from your own perspective. The next three ILEs are intended to present a set of common properties considered to provide the essence of understanding.
+
+It is expected that "Essence Property # 1^[Essence Property # 1 [http://insightmaker.com/insight/4957](http://insightmaker.com/insight/4957)]" should provide a very different view of the world around you.
 
 # Model
-
-{"title": "Simplifying Everything", "description": "Finding the common among the different.", "load": "http://insightmaker.com/insight/4957"}
-
+{"title": "Essence Property # 1", "description": "Finding the common among the different.", "load": "http://insightmaker.com/insight/4957"}
 # End Model
 
 ~ Exercise
@@ -126,31 +122,27 @@ Take a few minutes and identify half a dozen situations you're familiar with whe
 
 ~ End Exercise
 
-The previous ILE presented the concept of a stock which changes based on flows in and flows out. The manner in which the stock changes is independent of the stock itself. The next ILE will present an additional dimension to the previous structure.^[Common Property # 1 [http://insightmaker.com/insight/4548](http://insightmaker.com/insight/4548)]
+The ILE "Essence Property # 1" presented the concept of a stock which changes based on flows in and flows out. The manner in which the stock changes is independent of the stock itself. The ILE "Essence Property # 2"^[Essence Property # 2 [http://insightmaker.com/insight/4548](http://insightmaker.com/insight/4548)] will present an additional dimension to the previous structure.
 
 # Model
-
-{"title": "Common Property # 1", "description": "A simple change can have a great impact on the result.", "load": "http://insightmaker.com/insight/4548"}
-
+{"title": "Essence Property # 2", "description": "A simple change in structure can have a great impact on the result.", "load": "http://insightmaker.com/insight/4548"}
 # End Model
 
 ~ Exercise
 
-As in the previous exercise take a few minutes and identify a number of situations you are familiar with which are represented by the model just presented. What are the quantities for the stocks and flows in those situations?
+As in the previous exercise take a few minutes and identify a number of situations you are familiar with which demonstrate exponential growth. What are the quantities for the stocks and flows in those situations? What are the time frames for the exponential growth? Why doesn't the growth continue forever?
 
 ~ End Exercise
 
-Exponential growth results from reinforcing feedback from a stock to a flow, the next ILE will introduce a very different perspective of feedback.^[Common Property # 2 [http://insightmaker.com/insight/6120](http://insightmaker.com/insight/6120)]
+Exponential growth results from reinforcing feedback from a stock to a flow. The "Essense Property # 3"^[Common Property # 2 [http://insightmaker.com/insight/6120](http://insightmaker.com/insight/6120)] ILE will introduce a different perspective of feedback.
 
 # Model
-
-{"title": "Common Property # 2", "description": "And there is an alternative.", "load": "http://insightmaker.com/insight/6120"}
-
+{"title": "Essence Property # 3", "description": "There is more than one type of feedback.", "load": "http://insightmaker.com/insight/6120"}
 # End Model
 
 ~ Exercise
 
-As in the previous exercise take a few minutes and identify a number of situations you are familiar with which are represented by the model just presented. What re the quantities for the stocks and flows in those situations?
+As in the previous exercise take a few minutes and identify a number of situations you are familiar with which demonstrate goal seeking behavior. What are the quantities for the stocks and flows in those situations? What defines the goal for these situations? What governs the time frame over which the goal is achieved?
 
 ~ End Exercise
 
@@ -158,48 +150,50 @@ A goal seeking structure pursues the goal in a manner which depends on balancing
 
 ## Three Structures ##
 
-You have now experienced the three structures, or models, which will combine in various ways to create every model you ever create in the future. Those three structures are the building blocks out of which everything else is created. No matter how complex or complicated the model may seem, it is simply some number of these three structures interacting. These three structures are presented together in the following ILE so you can experience them together for reinforcement.^[Similar Structures / Different Behavior [http://insightmaker.com/insight/5138](http://insightmaker.com/insight/5138)]
+You have now experienced the three structures, or models, which will combine in various ways to create every model you ever develop in the future. These three structures are the building blocks out of which everything else is created. No matter how complex or complicated the model may seem, it is simply some number of these three structures interacting. These three structures are presented together in the "Similar Structures / Different Behavior"^[Similar Structures / Different Behavior [http://insightmaker.com/insight/5138](http://insightmaker.com/insight/5138)] ILE so you can experience them together for reinforcement.
 
 # Model
-
-{"title": "Similar Structures / Different Behavior", "description": "The behavior of a model depends on the structure as well as the formulas that define the nature of the relationships.", "load": "http://insightmaker.com/insight/5138"}
-
+{"title": "Similar Structures / Different Behavior", "description": "The behavior of a model depends its structure and the formulas that define the nature of the relationships.", "load": "http://insightmaker.com/insight/5138"}
 # End Model
 
-Hopefully you have become comfortable with the three different structures presented as you will experience them over and over. If you're not comfortable please interact with the ILE until you are.
+Hopefully you have become comfortable with the three structures presented as you will experience them over and over. If you're not comfortable please interact with the ILE until you are.
 
 ## Three Types of Models ##
 
-In previous sections you interacted with two different kinds of models qualitative models, i.e., no numbers, Follow the Clues and Bird Feeder Dilemma and quantitative models, with numbers, all the simulation models you ran. In this chapter we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about quantitative Stock & Flow Simulation Models.^[Three Types of Models [http://insightmaker.com/insight/8932](http://insightmaker.com/insight/8932)]
+In previous sections you interacted with two different kinds of models qualitative models, i.e., no numbers, "Follow the Clues" and "Bird Feeder Dilemma" and quantitative models, with numbers, all the simulation models you ran. In the "Three Types of Models"^[Three Types of Models [http://insightmaker.com/insight/8932](http://insightmaker.com/insight/8932)] ILE we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about quantitative Stock & Flow Simulation Models.
 
 # Model
-{"title": "Three Types of Models", "description": "Different though each aiding understanding.", "load": "http://insightmaker.com/insight/8932"}
+{"title": "Three Types of Models", "description": "Though there are different types of models each may contribute to understanding is a particular way.", "load": "http://insightmaker.com/insight/8932"}
 # End Model
+
+Which type of model you develop depends on what you're trying to understand and how you intend to use the model after you develop it. At times you may even use multiple types of models. You may use a rich picture to get an initial sense of the interactions, then develop a simulation model and finally use a causal loop diagram to present the insights identified to others. It's of critical importance to consider the audience.
 
 ## Construction Process ##
 
-^[Model Construction Process [http://insightmaker.com/insight/184](http://insightmaker.com/insight/184)]
+The "Model Construction Process"^[Model Construction Process [http://insightmaker.com/insight/184](http://insightmaker.com/insight/184)] ILE is intended to present the essence of all model development.
 
 # Model
-{"title": "Model Construction Process", "description": "The overall intent is always the same.", "load": "http://insightmaker.com/insight/184"}
+{"title": "Model Construction Process", "description": "Regardless of the specific purpose the overall intent is always the same.", "load": "http://insightmaker.com/insight/184"}
 # End Model
+
+It is hoped that this model reinforces the idea that models can cut through all the confusion and present the essence of a set of interactions to provide a consistent understanding. Can you see this essence in the models that have been developed to this point?
 
 ## The Essence of AND? ##
 
-Developing models is actually the easy part. What you should strive for is to develop models that advance your understanding and allow you to surface insights to better address situations around you. Evolving a model to surface insights can be a relatively straightforward and simple process as presented by the following ILE.^[Systems Thinking: The Essence of AND? [http://insightmaker.com/insight/3365](http://insightmaker.com/insight/3365)]
+Developing models is actually the easy part. What you should strive for is to develop models that advance your understanding and allow you to surface insights to better address situations around you. Evolving a model to surface insights can be a relatively straightforward and simple process which we hope is conveyed by the following "The Essence of AND?"^[Systems Thinking: The Essence of AND? [http://insightmaker.com/insight/3365](http://insightmaker.com/insight/3365)] ILE.
 
 # Model
-{"title": "Systems Thinking: The Essence of AND?", "description": "Continuing to seek the relevant influences.", "load": "http://insightmaker.com/insight/3365"}
+{"title": "Systems Thinking: The Essence of AND?", "description": "Continuing to seek out the relevant influences lies in asking a single question, AND?", "load": "http://insightmaker.com/insight/3365"}
 # End Model
 
-The process presented can be used with Rich Pictures or Causal Loop Diagrams as well as Stock & Flow Simulations. Though when developing Stock & Flow Simulations you also have to be certain that the model runs and produces a meaningful result. When developing a simulation you should never be more than a couple clicks away from a running model. You'll better understand this advice after you make a substantial number of changes to a working model, it then doesn't run, and you spend hours trying to figure out how you broke it. Do yourself a favor, think about what the changed should produce, run after every change and verify the model produces what you expect. It only takes a minute. When the simulation doesn't produce what you expect it's not a problem, it's an opportunity for learning.
+The process presented can be used with Rich Pictures or Causal Loop Diagrams as well as Stock & Flow Simulations. When developing Stock & Flow Simulations you also have to be certain that the model runs and produces a meaningful result. When developing a simulation you should never be more than a couple clicks away from a working model. You'll better understand this advice after you make a substantial number of changes to a working model, it then doesn't run, and you spend hours trying to figure out how you broke it. Do yourself a favor, think about what the changed should produce, run after every change and verify the model produces what you expect. It only takes a minute. And when the simulation doesn't produce what you expect it's not a problem, it's an opportunity for learning.
 
 ## Modeling Guidelines ##
 
-There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These will be presented as Modeling Tips throughout this chapter. The idea is to ensure that the model serves the purpose you started building it for. Some of these guidelines are only relevant to Stock & Flow simulations, and which they are should be quite obvious.^[Modeling Guidelines [http://insightmaker.com/insight/1784](http://insightmaker.com/insight/1784)]
+There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These are presented in the following "Modeling Guidelines"^[Modeling Guidelines [http://insightmaker.com/insight/1784](http://insightmaker.com/insight/1784)] ILE. The idea is to ensure that the model serves the purpose you started building it for. Some of these guidelines are only relevant to Stock & Flow simulations. Which they are should be quite obvious.
 
 # Model
-{"title": "Modeling Guidelines", "description": "Essential thinks to guide you.", "load": "http://insightmaker.com/insight/1784"}
+{"title": "Modeling Guidelines", "description": "Essential thoughts to guide you to building better more meaningful models.", "load": "http://insightmaker.com/insight/1784"}
 # End Model
 
 Remember that model development and the understanding that comes with it is an iterative process. It's almost impossible to create all the pieces as they should be the first time around. Look at it as do a little, learn a little, and repeat.

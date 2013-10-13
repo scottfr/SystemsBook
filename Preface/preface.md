@@ -18,6 +18,10 @@ Read the directions at the bottom of the page and click **Step Forward** at the 
 
 As you unfold the model you will be provided with a description of aspects of the model along with associated concepts. Some models are qualitative and only contain pictorial relationships and some are actually simulations where parameters will be changed and the simulation run to produce a relationship trends over time. In most of these simulation models you will be placed in an interactive mode where you get to alter parameters and run the simulation to develop a better sense of the implications of the relationships. A few also provide the opportunity for you to construct simple example models for certain concepts. The intent it to allow you to learn through interaction with models and simulations. Each situation will be explained when presented.
 
+For each model there is an footnote which will provide a link to the actual source of the model at InsightMaker.com. There you may clone a copy of the model that you will own. You can then interact with your copy of the model with all the features of Insight Maker.
+
+There are numerous exercises presented. Some of these are presented with answers you can review and others are simply presented as questions related to concepts that it is considered appropriate to reflect on. Doing this reflection with others can be very beneficial.
+
 There are a couple of the implications of this being an interactive learning environment rather than a development environment are:
 
 - **No Storytelling Exit**. There is no way to exit from the storytelling mode. You can open the Toolbar and Configuration Panel and make changes to any model while in storytelling mode, and run simulations where appropriate, though these changes can not be saved.
