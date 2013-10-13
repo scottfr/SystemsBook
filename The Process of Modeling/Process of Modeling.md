@@ -128,7 +128,7 @@ Create a boundary diagram for a model forecasting the total quantity of pencils 
 
 ## From Mental Models to Simulation Models
 
-Generally speaking, a single individual should be responsible for the design and implementation of a model. Models "designed-by-committee" are understandably suffused with compromise and a greater lack of focus. That said, even though one person is ultimately calling the shots, many voices and perspectives are there to be heard in the modeling process. The more input there is into a model, the better the resulting model will most likely be.
+Generally speaking, a single individual should be responsible for the design and implementation of a model. Models "designed-by-committee" are understandably suffused with compromise and a greater lack of focus. That said, even though one person is ultimately calling the shots, many voices and perspectives are there to be heard in the modeling process. Ideally a modeling project should be directed by a strong modeler who is not afraid to make decisions or even reject advice. Given the existence of this leadership, the more input there is into a model, the better the resulting model will most likely be.
 
 The people you are working with generally will not be experts in modeling. Even if they are intimately familiar with the system you are attempting to model, it may be difficult to transform their freeform insights into a formal model structure and accompanying numerical equations. In fact, people often have great difficulty communicating and describing their own mental models of a system. A number of useful tools and techniques can be used to help elicit information on people's mental models. We discuss three of these tools in the following sections.
 

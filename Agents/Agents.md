@@ -132,7 +132,7 @@ Now that we have learned about state transition diagrams, we are ready to start 
 
 We have already introduced the folder primitive as a tool for grouping primitives together and as a tool for unfolding a model. The folder primitive plays an additional role in Agent Based Modeling, as we use folders to define what our agent consists of.
 
-To create an agent, construct the state transition diagram for your agent (and also add any stocks, flows, or any other primitives you want to assign). Then create a folder containing all these primitives. Give the folder the name of your agent such as "Person" or "Individual" or even just "Agent". This is all similar to what we have done with folders before, but now there is one extra step. Edit the folder configuration and set the folder \u{Behavior} to "Agent". You have now created the definition of your first agent! 
+To create an agent, construct the state transition diagram for your agent (and also add any stocks, flows, or any other primitives you want to this agent). Then create a folder containing all these primitives. Give the folder the name of your agent such as "Person" or "Individual" or even just "Agent". This is all similar to what we have done with folders before, but now there is one extra step. Edit the folder configuration and set the folder \u{Behavior} to "Agent". You have now created the definition of your first agent! 
 
 You can have as many different types of agents in your model as you would like. Just create a new agent model and use a new folder to define each of the different types of agents. For instance, in a predator-prey model you could have one agent definition describing the behavior of the prey, and a second agent definition describing the behavior of the predators.
 
@@ -372,7 +372,7 @@ The Value function uses two arguments: a vector of agents and the primitive for 
 
 \e{[Population].FindAll().Value([Height])}
 
-A vector of heights by itself is generally of not much use. Often we will want to summarize it, for instance by finding the average height of the people in our population:
+A vector of heights by itself is generally of not much use. Often we will want to summarize the vector of agents: converting the vector to a single number that represents some property of the population. For instance, we could determine the average height of individuals in the population. The following equation calculates the mean value of an agent's height:
 
 \e{Mean([Population].FindAll().Value([Height]))}
 
@@ -699,7 +699,7 @@ End Function
 
 ~ Exercise
 
-Write a function to calculate the *n*th Fibonacci number. The Fibonacci sequence goes 1, 1, 2, 3, 5, 8, 12, ... After the first two, each number is the sum of the two proceeding numbers in the sequence.
+Write a function to calculate the *n*th Fibonacci number. The Fibonacci sequence goes 1, 1, 2, 3, 5, 8, 13, ... After the first two, each number is the sum of the two proceeding numbers in the sequence.
 
 What is the 15th Fibonacci number?
 
@@ -729,9 +729,18 @@ Insight Maker (and other modeling packages such as AnyLogic <http://www.anylogic
 
 When modeling, it is important  not to focus on labels or taxonomies of different techniques. Given a modeling task, you want to think about what tools and techniques are best suited. Make sure not to approach a modeling task by trying to figure out how to force that task into the constraints of a favorite modeling paradigm.
 
-
 ~ Exercise
 
 Compare and contrast the Agent Based Modeling and System Dynamics approach to creating models. Provide three examples of modeling tasks where Agent Based Modeling would be better suited than System Dynamics and three examples where the reverse would be true.
 
 ~ End Exercise
+
+## Concluding Thoughts
+
+![Figure 5. Agents at different scales.](Scales.png)
+
+Modelers create models at many different scales. Models are used for representing the smallest atom (or the even smaller elemental particles that comprise an atom) to the massively large size of a galaxy. At each of these scales we have individuals. At a human scale we have individual animals or plants. As we increase our scale, we can start to talk about  the interactions between individual companies or even countries. At the largest of scales, we can discuss the slow dance between individual galaxies.
+
+Starting again at the human scale and this time reducing the magnitude of scale, we can see that our bodies are comprised of individual cells which in turn are comprised of individual atoms. Agent Based Modeling is a powerful tool for modeling these systems of individuals at whichever scale is best suited to the task.
+
+In this chapter, we have taken you through the steps of constructing an agent based model. We described key tools such as the State Transition diagram and also introduced more advanced programming concepts. Using this toolset you will now be able to begin building your own agent based models. As you do so, always remember to first consider whether an Agent Based Model could more easily be represented as an aggregate System Dynamics model. Agent Based Modeling is a powerful tool but its power comes at a cost both in terms of computational power and cognitive effort in designing the model and interpreting its results.

@@ -95,7 +95,7 @@ These results are quite stable. Everyone is healthy and no one gets sick. That i
 
 RESULTS
 
-That's more interesting! We can see that everyone being healthy is an unstable equilibrium as the system moves away from it if we deviate from it by even a small amount. We can also see that the second equilibrium (everyone being sick) is stable as the system moves towards it naturally.
+That's more interesting! We can see that everyone being healthy is an unstable equilibrium as the system moves away from the equilibrium if we deviate from it by even a small amount. We can also see that the second equilibrium (everyone being sick) is stable as the system moves towards it naturally.
 
 # End Model
 
@@ -198,7 +198,7 @@ When looking at model results we have been focused on time series plots and we h
 
 Phase planes are almost like scatterplots. They show one of the state variables plotted against another of the state variables. A scatterplot could be used to show the path for these two variables over the course of a simulation. In the predator-prey model the results of a scatterplot of the wolf and moose population will be an ellipsoid. The two populations will cycle continuously. A phase plane plot is similar to this, but rather than just showing one of these cycles for a given simulation run, the phase plane shows the trajectories for *all* combinations of moose and wolf population sizes.
 
-![Figure 2. Predator prey phase plane plot. The trajectory for a single set of initial conditions is highlighted in red.](PredatorPreyPhasePlane.png)
+![Figure 2. Predator-prey phase plane plot. The trajectory for a single set of initial conditions is highlighted in red.](PredatorPreyPhasePlane.png)
 
 Figure 2 illustrates a phase plane plot for the predator-prey system. The trajectory for one set of parameter and state variable values is highlighted in red and, as expected, we see a continual oscillation. We can also see the trajectories for all the other combinations of state variables. We see that the system will always oscillate and the size of this oscillation depends on the initial conditions for the state variables. This illustration provides us with a good deal of information in a single graphic; the phase plane plot is a great way to summarize the behavior of a system with two state variables.
 
@@ -529,7 +529,7 @@ $$
 
 When we calculate the eigenvalues for this point we obtain $i\sqrt{\alpha \times \delta}$ and $-i\sqrt{\alpha \times \delta}$. Here the $i$ indicates the imaginary number $\sqrt{-1}$. That's a little strange, so how do we interpret this? Imaginary numbers in the eigenvalues indicate oscillations in the phase planes, thus this result means we have oscillations around the point of equilibrium. Since we have no real component in the eigenvalues, there is neither attraction towards the point of equilibrium or repulsion away from it, so we have a stable oscillation around the equilibrium.
 
-Of course we already knew that from our simulations, but this stability analysis allows us to mathematically determine this relationship. You can see this is a very powerful tool. The following table summarizes the types of eigenvalues that can be found for a system with two state variables and their associated stabilities.
+Of course we already knew that from our simulations, but this stability analysis allows us to mathematically determine this relationship. You can see this is a very powerful tool. The following table summarizes the types of eigenvalues that can be found for a system with two state variables and their associated stabilities. In this table, "damped" oscillations refers to a system that oscillates around a point of stability. Over time, the oscillations will "dampen" growing smaller and smaller in size until the system arrives at the point of stability.
 
 Real Parts | Imaginary Part? | Stability
 ---|---|---
@@ -539,6 +539,9 @@ Both greater than or equal to 0 | No | Unstable
 Both greater than or equal to 0 | Yes | Unstable Oscillations
 Both less than or equal to 0 | No | Stable
 Both less than or equal to 0 | Yes | Damped Oscillations (Stable)
+One greater than 0, when less than 0 | No | Saddle (Unstable)
+
+A "saddle" point is a point where one eigenvalue is positive and the other one is negative. In this case, one eigenvalue pushes the system towards stability, and the other eigenvalue pushes the system away from stability. The net effect of this process is actually instability. Only a single eigenvalue pushing the system away from stability is enough to make the system unstable.
 
 ~ Exercise
 
@@ -655,3 +658,6 @@ The second equilibrium is when the population size is equal to the carrying capa
 
 ~ End Exercise
 
+## Summary
+
+In this chapter we have introduced equilibrium and stability analyses. These are advanced, very powerful techniques that can be used to draw definitive conclusions about the behavior of a system. These conclusions can supplement your simulation work to generate a comprehensive analysis of a dynamic system.

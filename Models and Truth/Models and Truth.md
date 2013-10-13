@@ -29,7 +29,7 @@ If neither question is answered affirmatively...well, in that case there isn't m
 
 ~ Exercise
 
-A credit card company has hired you to build a model to predict defaults of new applicants. They give you a data set containing information on one million of their customers along with whether or not the customer defaulted.
+A credit card company has hired you to build a model to predict defaults of new applicants. They give you a data set containing information on one million of their previous customers along with whether or not those customers customers ultimately defaulted.
 
 Would it be better to build a mechanistic or statistical model for this data?
 
@@ -42,6 +42,8 @@ It would be better to build a statistical model in this case.
 ~ Exercise
 
 You have been commissioned to build a model of population growth for a herd of zebra in Namibia. You have some data on the historical size of the population of zebras but this data is limited. You also have access to more than a dozen experts who have studied zebras their whole life and have an intimate understanding of the behavior of the zebras.
+
+Would it be better to build a mechanistic or statistical model for this data?
 
 ~ Answer
 
@@ -79,11 +81,11 @@ Your company builds rulers. You have been asked to develop a model of global dem
 
 The three distinctions just presented -- deterministic vs. stochastic, mechanistic vs. statistical, aggregated vs. disaggregated -- can be used to classify models. We can even use them to classify the models we have discussed in this ILE. Most of our models would be classified as deterministic (random chance is generally not explicitly incorporated in these models), mechanistic (we generally assume mechanisms rather than estimating dependencies from data), and highly aggregated (the agent based models are an exception).
 
-There are many nuances to these broad distinctions(e.g., the type of statistical techniques used for a statistical model). Many other distinctions can be made between model implementations, for example, the programming language or software that was used to implement the model. These distinctions and technical choices are important when constructing a model, however, what is of key importance is the utility of the model for fulfilling a specific goal.
+There are many nuances to these broad distinctions (e.g., the type of statistical techniques used for a statistical model). Many other distinctions can be made between model implementations, for example, the programming language or software that was used to implement the model. These distinctions and technical choices are important when constructing a model, however, what is of key importance is the utility of the model for fulfilling a specific goal.
 
 Technical details matter -- they can affect maintainability and other factors -- but they are of secondary interest to the adequacy of a model in fulfilling it main purpose. It would make as little sense to say a model was fundamentally bad because it was written in a relatively ancient programming language (like Pascal) as it would to say a model was fundamentally bad because it was, for instance, deterministic. Let's look back at Box's quote at the beginning of this chapter. We know all models are wrong, what we should really care about is their utility in meeting a specific task.
 
-So rather than using the aforementioned technical classifications to discuss models, we think it is more useful to base our discussions of models on the model’s driving purpose. This allows us to leave behind relatively mundane technical and implementation details to focus on what we really care about. Among the many different reasons for building models, they all boil down basically to three broad purposes: prediction, inference, and narrative.
+So rather than using the aforementioned technical classifications to discuss models, we think it is more useful to base our discussions of models on the model’s driving purpose. This allows us to leave behind relatively mundane technical and implementation details to focus on what we really care about. Among the many different reasons for building models, they all boil down basically to three broad purposes displayed in Figure 1: prediction, inference, and narrative.
 
 ![Figure 1. Three Usages of Models](Usages.png)
 
@@ -278,7 +280,7 @@ This equation defines a narrative. Translating this narrative into words, we wou
 
 >  Test scores are only determined by the wealth of a student’s family. A child whose family is broke will have a test score, on average, of $\beta_0$. For every dollar of wealth a child's family accumulates, the child will score, on average, better on tests by $\beta_1$.
 
-You might or might not agree with this storyline (in our view it is a nonsensical and reductionist view of child achievement) but it shows the strict equivalence between this mathematical narrative and narrative prose. This process can be applied to all mathematical models. The mathematical definition of the model can be converted directly, with more or less lucidity, into a story describing how the system operates. The same can also be done in the reverse: we can take a descriptive narrative of a system and convert it into a mathematical description. As we have seen (will see? XXX) this is what tools like reference models and pattern matching are designed to do efficiently: elicit a narrative from a subject in a way which can be reformulated quantitatively.
+You might or might not agree with this storyline (in our view it is a nonsensical and reductionist view of child achievement) but it shows the strict equivalence between this mathematical narrative and narrative prose. This process can be applied to all mathematical models. The mathematical definition of the model can be converted directly, with more or less lucidity, into a story describing how the system operates. The same can also be done in the reverse: we can take a descriptive narrative of a system and convert it into a mathematical description. As described in the chapter [The Process of Modeling](#ModelingProcess), this is what tools like reference models and pattern matching are designed to do efficiently: elicit a narrative from a subject in a way which can be reformulated quantitatively.
 
 The question of how to assess the quality of a narrative model is an important one. With predictive models, we can compare competing models based primarily on predictive accuracy^[Other criteria include ease of use, cost of filling data requirements, and computational requirements. But all those are generally secondary to prediction accuracy.]. But how do we evaluate and compare the quality of narrative models?
 
@@ -296,9 +298,9 @@ Summarize the distinction between predictive and narrative models.
 
 ~ End Exercise
 
-## Synthesis
+## Summary
 
-Now that we have thoroughly described the concepts of narrative and predictive models we can conclude this chapter by taking a step back and reemphasizing that these two categories do to represent specific modeling techniques. You can build a stock and flow model to tell a story about a system resulting in a narrative model. If your story of the system accurately represents how the system operates in reality, then you will also have a model that generates accurate predictions.
+Now that we have thoroughly described the concepts of narrative and predictive models we can conclude this chapter by taking a step back and reemphasizing that these two categories do not represent specific modeling techniques. You can build a stock and flow model to tell a story about a system resulting in a narrative model. If your story of the system accurately represents how the system operates in reality, then you will also have a model that generates accurate predictions.
 
 Similarly, you can apply a linear regression to a dataset. If the relationship in the data is truly a completely linear one, then the result of this regression will be the most accurate predictive model you could build. On the other hand, if you do not assess the predictive accuracy of the model and just use a linear regression because it is easy to interpret or because it matches you understanding of reality, then you have a narrative model.
 
