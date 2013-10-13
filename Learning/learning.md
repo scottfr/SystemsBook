@@ -80,7 +80,7 @@ A pattern is a simplified version of some aspect of the world around us to help 
 
 ## Learning ##
 
-When we experience something that experience falls somewhere between complete novelty, meaning that we can't connect it with anything in our past experience, and complete confirmation, meaning that it represents something we already believe we completely understand. Experiences which lie somewhere between complete novelty and complete confirmation provide a basis for learning. They represent a basis for connecting to understood patterns, extending those patterns and our understanding, and what results is learning. {Cite: Jantach, Eric. 1980. The Self-Organizing Universe: Scientific and Human Implications. Pergamon Press. http://www.amazon.com/The-Self-Organizing-Universe-Implications-Innovations/dp/0080243118/}
+When we experience something that experience falls somewhere between complete novelty, meaning that we can't connect it with anything in our past experience, and complete confirmation, meaning that it represents something we already believe we completely understand. Experiences which lie somewhere between complete novelty and complete confirmation provide a basis for learning. They represent a basis for connecting to understood patterns, extending those patterns and our understanding, and what results is learning. {Cite: Jantsch, Eric. 1980. The Self-Organizing Universe: Scientific and Human Implications. Pergamon Press. http://www.amazon.com/The-Self-Organizing-Universe-Implications-Innovations/dp/0080243118/}
 
 Consider running into a refrigerator that looks like no refrigerator you've ever seen before. From an initial view you are unlikely to perceive it as a refrigerator? As you inspect it and find it serves the purpose you've come to understand for refrigerators, or if someone tells you it's a refrigerator, you then expand or extend your awareness of the range of patterns that constitute a refrigerator. And as Bateson said, "It's the pattern that connects."
 
@@ -240,16 +240,3 @@ Remember that model development and the understanding that comes with it is an i
 - Use the guidelines as a checklist.
 
 Please continue to the next chapter where you will learn more about working though the development of models.
-
-## References ##
-
-- Davidson, Mark. 1983. Uncommon Sense: The Life and Thought of Ludwig von Bertalanffy. J.P. Tarcher, Inc. http://www.amazon.com/Uncommon-Sense-Thought-Bertalanffy-1901-1972/dp/087477165X/
-- Jantach, Eric. 1980. The Self-Organizing Universe: Scientific and Human Implications. Pergamon Press. http://www.amazon.com/The-Self-Organizing-Universe-Implications-Innovations/dp/0080243118/
-- Kauffman, Draper L. 1980. Systems One: An Introduction to Systems Thinking. http://www.amazon.com/Systems-One-An-Introduction-Thinking/dp/9996280519/
-- Meadows, Donella. 2013. Thinking in Systems: A Primer. http://www.amazon.com/Thinking-Systems-A-Primer-ebook/dp/B005VSRFEA/
-- McDermott, Ian & O'Connor, Joseph. Unk. The Art of Systems Thinking. http://www.amazon.com/The-Art-Systems-Thinking-ebook/dp/B0091XFU70/
-- [Model Thinking Course](https://www.coursera.org/course/modelthinking) by Scott E. Page, University of Michigan
-- [Modeling & Simulation with Insight Maker](http://www.systemswiki.org/index.php?title=Modeling_%26_Simulation_with_Insight_Maker)
-- [Rich Pictures](http://systems.open.ac.uk/materials/T552/pages/rich/richAppendix.html) from Open University Course T552
-- [Senge, P. 1990. The Fifth Discipline: The Art & Practice of the Learning Organization](http://www.amazon.com/Fifth-Discipline-Practice-Organization-ebook/dp/B000SEIFKK/)
-- Sherwood, Dennis. 2002. Seeing the Forest for the Trees: A Manager's Guide to Applying Systems Thinking. http://www.amazon.com/Seeing-Forest-Trees-Managers-ebook/dp/B004GCK63Y/

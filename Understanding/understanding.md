@@ -4,7 +4,7 @@ This chapter will present a number of models to demonstrate the development proc
 
 ## The Boy Who Cried Wolf ##
 
-All stories are actually models expressed in words rather than diagrams. All of the interactions in a story can be expressed in the form of a model which allows one to get an overview of the main interactions in a single picture. The following model will unfold a story and show the difference between a Rich Picture and a Causal Loop Diagram for the same story.^[The Boy Who Cried Wolf [http://insightmaker.com/insight/7103](http://insightmaker.com/insight/7103)]
+All stories are actually models expressed in words rather than diagrams. All of the interactions in a story can be expressed in the form of a model which allows one to get an overview of the main interactions in a single picture. "The Boy Who Cried Wolf"^[The Boy Who Cried Wolf [http://insightmaker.com/insight/7103](http://insightmaker.com/insight/7103)] will unfold a model as a story and show the difference between a Rich Picture and a Causal Loop Diagram for the same story.
 
 # Model
 {"title": "The Boy Who Cried Wolf", "description": "Telling a story as you unfold a model.", "load": "http://insightmaker.com/insight/7103"}
@@ -14,7 +14,7 @@ Just as all stories are models, you should attempt to ensure that all models you
 
 ## Can Red Get to Grandma's House ##
 
-Here's a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did? Also in this model we'll introduce the idea of Units which are used to help ensure the soundness of your model. Insight Maker checks Units to ensure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.^[Walking to Grandma's [http://insightmaker.com/insight/6778](http://insightmaker.com/insight/6778)]
+"Walking to Grandma's"^[Walking to Grandma's [http://insightmaker.com/insight/6778](http://insightmaker.com/insight/6778)] is a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did? Also this model will introduce the idea of Units which are used to help ensure the soundness of your model. Insight Maker checks Units to ensure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.
 
 # Model
 {"title": "Walking to Grandma's", "description": "How long will it take us to get there?", "load": "http://insightmaker.com/insight/6778"}
@@ -29,7 +29,7 @@ Insight Maker doesn't complain because you're still comparing distance to distan
 ~ End Exercise
 
 ~ Exercise
-Seldom is there ever just one right way to build a model. You build the model to help you understand something and you might do that in different ways. Even for a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 4.5 and reducing it by walking. Try to build one or two alternatives to this model.
+Seldom is there ever just one right way to build a model. You build the model to help you understand something and you might do that in different ways. Even for a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 4.5 and reducing it by walking. Go to Insight Maker and try to build one or two alternatives to this model.
 ~ Answer
 One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as Red walks toward it. This way the model is tracking the distance traveled rather than the distance left to travel.
 ~ End Exercise
@@ -38,12 +38,10 @@ Hopefully the Going to Grandma's model has given you a sense of an approach for 
 
 ## Work Completion ##
 
-The following model presents a situation where a number of workers are working a project and you want to know how long it is going to take them to finish.^["Work Completion Model [http://insightmaker.com/insight/6171](http://insightmaker.com/insight/6171)]
+The "Work Completion Model"^["Work Completion Model [http://insightmaker.com/insight/6171](http://insightmaker.com/insight/6171)] model presents a situation where a number of workers are working a project and you want to know how long it is going to take them to finish.
 
 # Model
-
 {"title": "Work Completion Model", "description": "In this model [Workers] is not a factor but a limit on the amount of [work] that can be performed in a time period.", "load": "http://insightmaker.com/insight/6171"}
-
 # End Model
 
 Note that in this model you might have considered the \p{Workers} as a \p{Stock} as they are actually a collection. The reason they're not considered as a \p{Stock} in this model is that the number remains constant in the context of this particular model. In a different model \p{Workers} might actually be a \p{Stock} with an inflow and and outflow.
@@ -58,22 +56,22 @@ Again the appropriate Time Step is one that captures the activity occurring with
 
 ## Filling a Swimming Pool ##
 
-Let us now venture into the realm of trying to fill a sizable swimming pool with water using a garden hose.^[Filling a Swimming Pool [http://insightmaker.com/insight/4990](http://insightmaker.com/insight/4990)]
+Let us now venture into the realm of "Filling a Swimming Pool"^[Filling a Swimming Pool [http://insightmaker.com/insight/4990](http://insightmaker.com/insight/4990)] for a sizable swimming pool with water using a garden hose.
 
 # Model
-
-{"title": "Filling a Swimming Pool", "description": "The following model investigates a swimming pool as a stock.", "load": "http://insightmaker.com/insight/4990"}
-
+{"title": "Filling a Swimming Pool", "description": "The following model investigates filling a swimming pool as a stock.", "load": "http://insightmaker.com/insight/4990"}
 # End Model
 
-## Rabbit Population Growth ##
+This most again attempts to demonstrate that building a model is an iterative process where you build a little and test. And when things don't go the way you expect them to go it's an opportunity for learning.
 
-Remember the previous comment about seldom developing a model in the form it needs to be on the first try? Investigation of a simple Rabbit Population Model can be most informative.^[Rabbit Population Growth [http://insightmaker.com/insight/5123](http://insightmaker.com/insight/5123)]
+It's also important to note that it's best not to bury variables inside other variables. Making them explicit in the diagram was was done with \p{Hose Capacity} makes it easier for others to see what the relevant influences are.
+
+## Rabbit Population ##
+
+Remember the previous comment about seldom developing a model in the form it needs to be on the first try? Investigation of a simple "Rabbit Population"^[Rabbit Population Growth [http://insightmaker.com/insight/5123](http://insightmaker.com/insight/5123)] model can be most informative.
 
 # Model
-
-{"title": "Rabbit Population Growth", "description": "This model that reflects the the notion that more rabbits create even more rabbits.", "load": "http://insightmaker.com/insight/5123"}
-
+{"title": "Rabbit Population", "description": "This model that reflects the the notion that more rabbits create even more rabbits.", "load": "http://insightmaker.com/insight/5123"}
 # End Model
 
 As demonstrated in the unfolding of this model you should approach the development of a model as a learning experience. When things go wrong it's an opportunity for learning. You learn from the model and the model learns from you, and once the two of you learn enough it's probably a meaningful model.
@@ -83,9 +81,7 @@ As demonstrated in the unfolding of this model you should approach the developme
 Building and working with a model for a bank savings account can be most informative also.^[Savings Account [http://insightmaker.com/insight/5887](http://insightmaker.com/insight/5887)]
 
 # Model
-
 {"title": "Savings Account", "description": "How does a savings account really work?", "load": "http://insightmaker.com/insight/5887"}
-
 # End Model
 
 All of the pieces of the model are relevant and have an impact on the behavior of the model. As indicated a model tells a story, a story for which only pieces of can be found in the pieces of the model. The model itself is more than just the sum of its parts.
@@ -199,14 +195,4 @@ In the next chapter we'll delve a bit deeper into some more involved models in a
 - **Variables & Links**. Add Variables & Links to influence the flows.
 - **Test Often**. Each time you make a logical addition to the model think about how you expect the model to behave then run the model and see if there is agreement with your expectation. If it isn't then it's an opportunity to learn and improve the model. And if it does agree you should still consider the output. It may be that your expectation and the model are both wrong.
 - **Time Step**. Test the Time Step to ensure it's small enough to capture all relevant transitions in the model.
-- **Stop at the End**. When the model serves the purpose for which you are developing it, STOP! There is always more you can add to a model. You should only include what is relevant to satisfy the initial intent.
-
-## References ##
-
-- Catalina Foothills School District. 2003. Tips for Using System Dynamics Tools. [http://www.clexchange.org/ftp/documents/Implementation/IM2003-12TipsUsingSDTools.pdf](http://www.clexchange.org/ftp/documents/Implementation/IM2003-12TipsUsingSDTools.pdf)
-- Ford, Andrew. 2009. Modeling the Environment. [http://www.amazon.com/Modeling-Environment-Second-Andrew-Ford/dp/1597264733/](http://www.amazon.com/Modeling-Environment-Second-Andrew-Ford/dp/1597264733/)
-- Keeting, Elizabeth K. Internet 2013. Everything You Ever Wanted to Know about How to Develop A System Dynamics Model, But Were Afraid to Ask. [http://www.systemdynamics.org/conferences/1998/PROCEED/00024.PDF](http://www.systemdynamics.org/conferences/1998/PROCEED/00024.PDF)
-- Newell, Barry & Proust, Katrina. 2012. Introduction to Collaborative Conceptual Modelling. [https://digitalcollections.anu.edu.au/bitstream/1885/9386/3/Newell_IntroductionCollaborative_2012.pdf](https://digitalcollections.anu.edu.au/bitstream/1885/9386/3/Newell_IntroductionCollaborative_2012.pdf)
-- Whiftield, Caraig. 2012. What Returns Should We Expect from the Stock Market. [http://www.whitfieldco.com/blog/?p=39](http://www.whitfieldco.com/blog/?p=39)
-- [How does DT work? from isee Systems](http://www.iseesystems.com/Helpv9/Content/DT/How_does_DT_work_.htm)
-- [DT Situations Requiring Special Care from isee Systems](http://www.iseesystems.com/Helpv9/Content/DT/DT_Special_Care.htm)
+- **Stop at the End**. When the model serves the purpose for which you are developing it, STOP! There is always more thing you can add to a model, resist the urge. You should only include what is relevant to satisfy the initial intent. That said, there are times when we learn things during the development of a model which warrant modifying the initial intent. Just be sure you know just how you're doing that.

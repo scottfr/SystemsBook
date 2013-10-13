@@ -133,13 +133,3 @@ The current life expectancy for a Fortune-500 company is 40 to 50 years, less th
 ### Conclusion ###
 
 If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] it is essential we embrace learning and become far more adept at developing truly viable approaches for dealing with situations. And attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling which makes the situation worse or creates new problems that have to be dealt with. There are well defined proven approaches for developing each aspect of the model presented in Fig. 2. [Bellinger, 2012] These can be explored in more detail in the videos at the Systemic Perspective/Foundations page on the Systems Thinking World Wiki.
-
-### References ###
-
-- The Living Company: Habits for survival in a turbulent business environment. [http://www.businessweek.com/chapter/degeus.htm](http://www.businessweek.com/chapter/degeus.htm). Bloomburg Businessweek.
-- The Future We Create. [http://insightmaker.com/insight/443](http://insightmaker.com/insight/443)
-- Systemic Strategy. [http://insightmaker.com/insight/1366](http://insightmaker.com/insight/1366)
-- Bellinger, Gene R., 2012, Systemic Strategy, http://www.systemswiki.org/index.php?title=Systemic_Strategy
-- Kelly, Walt, 1970, Earth Day, Wikipedia, http://en.wikipedia.org/wiki/Pogo_(comic_strip)#.22We_have_met_the_enemy_and_he_is_us..22
-- McGill, Michael E., 1991, American Business and the Quick Fix, Henry Hold & Co, http://www.amazon.com/American-Business-Quick-Michael-McGill/dp/0805015477
-- Senge, Peter M., 2010, The Fifth Discipline: The Art & Practice of the Learning Organization, Crown Business, http://www.amazon.com/The-Fifth-Discipline-Organization-ebook/dp/B000SEIFKK/
