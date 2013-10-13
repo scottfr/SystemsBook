@@ -78,21 +78,31 @@ As demonstrated in the unfolding of this model you should approach the developme
 
 ## Savings Account ##
 
-Building and working with a model for a bank savings account can be most informative also.^[Savings Account [http://insightmaker.com/insight/5887](http://insightmaker.com/insight/5887)]
+Building and working with a model for a bank "Savings Account"^[Savings Account [http://insightmaker.com/insight/5887](http://insightmaker.com/insight/5887)] can also be most informative also.
 
 # Model
 {"title": "Savings Account", "description": "How does a savings account really work?", "load": "http://insightmaker.com/insight/5887"}
 # End Model
 
-All of the pieces of the model are relevant and have an impact on the behavior of the model. As indicated a model tells a story, a story for which only pieces of can be found in the pieces of the model. The model itself is more than just the sum of its parts.
+All of the pieces of the model are relevant and have an impact on the behavior of the model. As indicated a model tells a story, a story for which only pieces of can be found in the model. The model itself is more than just the sum of its parts.
 
 ## Why Aren't We All Rich ##
 
-If one can put money in an investment account and it grows over time, and it grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years though for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs?^[Why Aren't We All Rich? [http://insightmaker.com/insight/6827](http://insightmaker.com/insight/6827)]
+If one can put money in an investment account and it grows over time, and it grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years though for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs? "Why Aren't We All Rich?"^[Why Aren't We All Rich? [http://insightmaker.com/insight/6827](http://insightmaker.com/insight/6827)] investigates some of the reasons behind this.
 
 # Model
 {"title": "Why Aren't We All Rich?", "description": "", "load": "http://insightmaker.com/insight/6827"}
 # End Model
+
+~ Exercise
+
+There is a logic flaw in this model which you might try to repair. The Penalty is not actually taken from the Investment Account but from the Withdrawal itself so it reduces the amount you actually get from the Withdrawal. Be warned that is might be a tricky fix.
+
+~ End Exercise
+
+We now have a model which provides some incentives to start and continue to deposit in an Investment Account, and some disincentives toward the withdrawal of funds, though have we really addressed the initial situation posed? Not really. As far as starting the Investment Account and regularly depositing money, there are incentives, and for many these incentives were enough to get them to invest. For many the incentive, for one reason or another, has not been sufficient. And, any more strict incentives would likely be looked on unfavorably. People do not like to be manipulated, even when it is for their own benefit. The penalty for withdrawal is a deterrent in some respects though as the Investment Account continues to grow its attractiveness in terms of what it can purchase continues to entice. The best answer for this situation is to legally tie up the withdrawal process so it's only an option in the case of dire emergencies. Though as much as people find being manipulated by others distasteful, being controlled by themselves is just as distasteful.
+
+Is the model done? As usual, the answer is; "It Depends!" If it has provided sufficient understanding to address the situation posed then it is sufficient. If not then it should be taken further, though once it is sufficient you should STOP!
 
 ----------
 
@@ -107,16 +117,6 @@ Making all the elements of a model visible makes it much easier for others to un
 And what's definitely worth repeating is that providing comments for all the elements of a model will also make it much easier for others to understand. All one need do is mouse over an element and click on the "i" that appears to read the comment.
 
 ----------
-
-~ Exercise
-
-There is a logic flaw in this model which you might try to repair. The Penalty is not actually taken from the Investment Account but from the Withdrawal itself so it reduces the amount you actually get from the Withdrawal. Be warned that is might be a tricky fix.
-
-~ End Exercise
-
-We now have a model which provides some incentives to start and continue to deposit in an Investment Account, and some disincentives toward the withdrawal of funds, though have we really addressed the initial situation posed? Not really. As far as starting the Investment Account and regularly depositing money, there are incentives, and for many these incentives were enough to get them to invest. For many the incentive, for one reason or another, has not been sufficient. And, any more strict incentives would likely be looked on unfavorably. People do not like to be manipulated, even when it is for their own benefit. The penalty for withdrawal is a deterrent in some respects though as the Investment Account continues to grow its attractiveness in terms of what it can purchase continues to entice. The best answer for this situation is to legally tie up the withdrawal process so it's only an option in the case of dire emergencies. Though as much as people find being manipulated by others distasteful, being controlled by themselves is just as distasteful.
-
-Is the model done? As usual, the answer is; "It Depends!" If it has provided sufficient understanding to address the situation posed then it is sufficient. If not then it should be taken further, though once it is sufficient you should STOP!
 
 ## Romeo and Juliet ##
 
