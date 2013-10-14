@@ -743,7 +743,7 @@ var str = data.join("; "); // "1; 4; 9; 16; 25"
 str.split(", "); // [1, 4, 9, 16, 25]
 ````
 
-By far the JSON commands are the most useful and flexible for converting JavaScript objects to and from strings. JSON  (JavaScript Object Notation) is a general file format for storing data. It is based on the standard method for declaring JavaScript objects (e.g., {key: value}) into a string and then later back into an object. What is great about JSON is that your browser already has built-in commands for converting JavaScript objects (a number, array, or other object)but has some differences.
+By far the most useful and flexible method of converting JavaScript objects to and from strings are the *JSON* commands. JSON, JavaScript Object Notation, is a general file format for storing data. It is based on the standard method for declaring JavaScript objects (e.g. {key: value}) but has some differences. What is great about JSON is that your browser already has built-in commands for converting JavaScript objects (a number, array, or other object) into a string and then later converting that string back into an object.
 
 You can use this technique to send arbitrarily complex objects back and forth from your simulation to your webpage. Let's see how the JSON commands works:
 
