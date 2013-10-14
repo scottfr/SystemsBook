@@ -12,7 +12,7 @@ All stories are actually models expressed in words rather than diagrams. All of 
 
 Just as all stories are models, you should attempt to ensure that all models you develop actually tell a story. Telling stories makes it easier to communicate the insights surfaced in the model to others and stories are much easier to remember than bits and pieces of data.
 
-## Can Red Get to Grandma's House ##
+## Can Red Get to Grandma's House {#RedModel}
 
 "Walking to Grandma's"^[Walking to Grandma's [http://insightmaker.com/insight/6778](http://insightmaker.com/insight/6778)] is a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did? Also this model will introduce the idea of Units which are used to help ensure the soundness of your model. Insight Maker checks Units to ensure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.
 
@@ -176,7 +176,7 @@ You can build models to help understand almost any set of interactions and at ti
 
 ## Systems Archetypes ##
 
-There are a set of frequently recurring structures that have a very distinct structure and characteristic pattern of behavior. Understanding the manner in which the relations within these structures unfold can be very helpful in determining how to deal with situation.^[Systems Archetypes [http://insightmaker.com/insight/538](http://insightmaker.com/insight/538)]
+There are a set of frequently recurring structures that have a very distinct structure and characteristic pattern of behavior. Understanding the manner in which the relations within these structures unfold can be very helpful in determining how to deal with situation. The "Systems Archetypes"^[Systems Archetypes [http://insightmaker.com/insight/538](http://insightmaker.com/insight/538)] model provides an initial introduction to these structures.
 
 # Model
 {"title": "Systems Archetypes", "description": "There is a typical unfolding relationship between the common recurring structures.", "load": "http://insightmaker.com/insight/538"}
