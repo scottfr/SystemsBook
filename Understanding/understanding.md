@@ -108,11 +108,11 @@ Is the model done? As usual, the answer is; "It Depends!" If it has provided suf
 
 ### Modeling Tips ###
 
-Before you run a model you should develop a sense of the result you expect from the model at this point in its development. Once you run the model you should be certain that is it performing as expected. When the result is not what you expect then either the structure is wrong, your assumptions are wrong, or you simply have an opportunity to further develop your understanding.
+Before you run a model you should develop a sense of the result you expect from the model at the current point in its development. Once you run the model you should be certain that is it performing as expected. When the result is not what you expect then either the structure is wrong, your assumptions are wrong, or you simply have an opportunity to further develop your understanding.
 
 You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict though after you add several elements to a model and it doesn't work and you spend hours trying to figure out why you may have a better appreciation for this guideline.
 
-Making all the elements of a model visible makes it much easier for others to understand it. This is why Months per Year and Initial Deposit were created as explicit variables rather than embedding the valued inside other elements.
+Making all the elements of a model visible makes it much easier for others to understand it. This is why Months per Year and Initial Deposit were created as explicit variables rather than embedding the values inside other elements.
 
 And what's definitely worth repeating is that providing comments for all the elements of a model will also make it much easier for others to understand. All one need do is mouse over an element and click on the "i" that appears to read the comment.
 
@@ -120,17 +120,17 @@ And what's definitely worth repeating is that providing comments for all the ele
 
 ## Romeo and Juliet ##
 
-As an example that one really simulate anything this model shows the implications of the dynamic implications of the love between Romeo and Juliet.^[Romeo and Juliet [http://insightmaker.com/insight/759](http://insightmaker.com/insight/759)]
+As an example that one really can simulate anything this model shows the implications of the dynamic implications of the love between "Romeo and Juliet".^[Romeo and Juliet [http://insightmaker.com/insight/759](http://insightmaker.com/insight/759)]
 
 # Model
 {"title": "Romeo and Juliet", "description": "The implications of the relations between two people can be vary drastically.", "load": "http://insightmaker.com/insight/759"}
 # End Model
 
-We hope this model gave you a more comfortable feeling that it is possible to model very intangible things. You will find that some of the most influential aspects of the models you will build in the future are actually the intangibles.
+We hope this model gave you a more comfortable feeling that it is possible to model very intangible things. You will find intangibles to be some of the most influential aspects of some of the models you will build in the future.
 
 ## Climate Stabilization Task ##
 
-The model starts in 1900. In the year 2000 you get the chance to set a new emission target and nominal time to reach it. Your aim is to have atmospheric CO2 stabilise at about 400 ppmv in 2100.^[Climate Stabilization Task [http://insightmaker.com/insight/9283](http://insightmaker.com/insight/9283)] {cite: Sterman, John D. (2008)  Risk Communication on Climate:  Mental Models and Mass Balance.  Science 322 (24 October): 532-533}
+The "Climate Stabilization Task"^[Climate Stabilization Task [http://insightmaker.com/insight/9283](http://insightmaker.com/insight/9283)] model starts in 1900. In the year 2000 you get the chance to set a new emission target and nominal time to reach it. Your aim is to have atmospheric CO2 stabilise at about 400 ppmv in 2100.{cite: Sterman, John D. (2008)  Risk Communication on Climate:  Mental Models and Mass Balance.  Science 322 (24 October): 532-533}
 
 # Model
 {"title": "Climate Stabilization Task", "description": "Can you get the CO2 levels to stabilize?", "load": "http://insightmaker.com/insight/9283"}
@@ -144,7 +144,7 @@ The difficulty arises because it takes time for a stock to change a flow and red
 
 ## Maintaining Personnel Resources ##
 
-The following simulation provides an example of where an established policy for hiring new employees won't suffice in the face of certain changes.^[Maintaining Personnel Resources [http://insightmaker.com/insight/162](http://insightmaker.com/insight/162)]
+The "Maintaining Personnel Resources"^[Maintaining Personnel Resources [http://insightmaker.com/insight/162](http://insightmaker.com/insight/162)] simulation provides insights into a situation where an established policy for hiring new employees won't suffice in the face of other changes.
 
 # Model
 {"title": "Maintaining Personnel Resources", "description": "Why things aren't where you think they are.", "load": "http://insightmaker.com/insight/162"}
@@ -154,22 +154,22 @@ Any time there are delays in the relationships, which actually occurs any time t
 
 ## The Fix Overshoots the Goal ##
 
-Have you ever pursued a goal and later found that you actually overshot the goal and had to back up to get back to the goal? The Balancing Loop with Delay structure is a variation of the standard Balancing Loop. The variation being that there are one or more delays in the structure which are responsible for producing, as will be demonstrated, a very different behavior pattern than the standard Balancing Loop.
+Have you ever pursued a goal and later found that you actually overshot the goal and had to back up to get back to the goal? The "Balancing Loop with Delay"^[Balancing Loop with Delay [http://insightmaker.com/insight/133](http://insightmaker.com/insight/133)] structure is a variation of the standard Balancing Loop. The variation being that there are one or more delays in the structure which are responsible for producing, as will be demonstrated, a very different behavior pattern than the standard Balancing Loop.
 
-If you look at the Balancing Loop with Delay structure it looks identical to the standard balancing loop with the exception of the delay near the reduces link. The implication is that it takes some amount of time after the current state changes before it is actually realized and figures into the calculation of the gap which influences the subsequent action. Essentially what's happening is that action is being based on old data and therefore is probably not the appropriate action. The implications of this will become evident when we look at the simulation for this structure.^[The Fix Overshoots The Goal [http://insightmaker.com/insight/133](http://insightmaker.com/insight/133)]
+If you look at the Balancing Loop with Delay structure it looks identical to the standard balancing loop with the exception of the delay near the reduces link. The implication is that it takes some amount of time after the current state changes before it is actually realized and figures into the calculation of the gap which influences the subsequent action. Essentially what's happening is that action is being based on old data and therefore is probably not the appropriate action. The implications of this will become evident when we look at the simulation for this structure.
 
 # Model
-{"title": "Balancing Loop with Delay", "description": "Lets take a look at the implications of varying delays on the effect of a balancing loop.", "load": "http://insightmaker.com/insight/133"}
+{"title": "Balancing Loop with Delay", "description": "Delay in a structure can make it almost impossible to intuit the implications of the interactions.", "load": "http://insightmaker.com/insight/133"}
 # End Model
 
 You might ask how could it be that it might take 3.5 days for someone to get a sense of what the results of the previous actions were, which would be a good question. It's probably difficult to find a situation where this is realistic in days though what's important to realize is this structure could operate in this manner if the time units were hours, minutes, seconds or microseconds.
 
 ## Infinite Drinkers ##
 
-This is a simulation attempt at humor. Hope you enjoy it.
+The "Infinite Drinkers"^[Infinite Drinkers [http://insightmaker.com/insight/850](http://insightmaker.com/insight/850)] is a modeling attempt at humor. Hope you enjoy it.
 
 # Model
-{"title": "An Infinite Number of Drinkers", "description": "How many beers does it take to server an infinite number of drinkers?", "load": "http://insightmaker.com/insight/850"}
+{"title": "Infinite Drinkers", "description": "How many beers does it take to server an infinite number of drinkers?", "load": "http://insightmaker.com/insight/850"}
 # End Model
 
 You can build models to help understand almost any set of interactions and at times they can be really simple.
