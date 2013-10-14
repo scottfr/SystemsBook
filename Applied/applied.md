@@ -54,6 +54,36 @@ Often we are victims of our own beliefs and pursue approaches to deal with situa
 
 This model hopefully provides an additional sense of the importance of soft variables in some models.
 
+## Are There Limits ##
+
+Are there really limits to the development of humanity on a finite planet. The "Are There Limits"^[Are There Limits [http://insightmaker.com/insight/9569](http://insightmaker.com/insight/9569)] model from Tom Fiddaman provides some thought provoking perspectives.
+
+# Model
+{"title": "Are There Limits", "description": "Are there ways to overcome the limits presented by life on a finite plant?", "load": "http://insightmaker.com/insight/9569"}
+# End Model
+
+While the model provides food for thought the answer to the question remains to be determined.
+
+## Productivity Challenge ##
+
+"Joe P. Management Challenge"^[Joe P. Management Challenge [http://insightmaker.com/insight/9576](http://insightmaker.com/insight/9576)]
+
+# Model
+{"title": "Joe P. Management Challenge", "description": "What are the most obvious options when a project is behind schedule? Do they work?", "load": "http://insightmaker.com/insight/9576"}
+# End Model
+
+"Credit Never Happened: Relations"^[Credit Never Happened: Relations [http://insightmaker.com/insight/752](http://insightmaker.com/insight/752)]
+
+# Model
+{"title": "Credit Never Happened: Relations", "description": "There are more relevant relations needed to really understand the situation.", "load": "http://insightmaker.com/insight/752"}
+# End Model
+
+"Credit Never Happened: Simulation"^[Credit Never Happened: Simulation [http://insightmaker.com/insight/1899](http://insightmaker.com/insight/1899)]
+
+# Model
+{"title": "Credit Never Happened: Simulation", "description": "This third model in the series provides a simulation to get a dynamic sense of the situation.", "load": "http://insightmaker.com/insight/1899"}
+# End Model
+
 ## Restaurant Covers ##
 
 The following "Restaurant Covers"^[Restaurant Covers [http://insightmaker.com/insight/8743](http://insightmaker.com/insight/8743)] model was developed by Lise Inman and Keith Margerison. The intent is to better understand what happens as customers arrive and are serviced at a restaurant based on the arrival interval and the service time.
@@ -109,6 +139,42 @@ The current life expectancy for a Fortune-500 company is 40 to 50 years, less th
 # End Model
 
 Structure influences behavior and an often used definition of insanity is to continue taking the same actions and expecting different results. If you want different behavior you need a different structure otherwise aren't you simply practicing insanity?
+
+## Swamping Insights ##
+
+This common archetype of systems that include relapse or recidivism allows exploration of the unintended effects of increasing upstream capacity and swamping downstream capacity. The increase in the relapse rate eventually returns to swamp upstream capacity as well. A social welfare example, based on a TANF case study, from "How Small System Dynamics Models Can Help the Policy Process". N. Ghaffarzadegan, J. Lyneis, GP Richardson. System Dynamics Review 27,1 (2011) 22-44 [Conference Version](http://www.systemdynamics.org/conferences/2009/proceed/papers/P1388.pdf)
+
+"Swamping Insights"^[Swamping Insights [http://insightmaker.com/insight/1769](http://insightmaker.com/insight/1769)]
+
+# Model
+{"title": "Swamping Insights", "description": "Enhancing one part of a process may ensure the whole process gets worse.", "load": "http://insightmaker.com/insight/1769"}
+# End Model
+
+## Control Theory ##
+
+Control systems act to make their own input match internal standards or reference signals. Competent control systems create illusions of stimulus response causality. Stimulus-response theory can approximate the relationship between disturbance and action, but it can't predict the consequences of behavior. These consequences are maintained despite disturbances.
+
+"Control Theory: A Model of Organisms"^[Control Theory: A Model of Organisms [http://insightmaker.com/insight/8908](http://insightmaker.com/insight/8908)].
+
+# Model
+{"title": "Control Theory: A Model of Organisms", "description": "The environment and the active system are both engaged in the output.", "load": "http://insightmaker.com/insight/8908"}
+# End Model
+
+"Double Loop Control Theory"^[Double Loop Control Theory [http://insightmaker.com/insight/9007](http://insightmaker.com/insight/9007)].
+
+# Model
+{"title": "Double Loop Control Theory", "description": "There is a an equivalence between control theory and double loop learning.", "load": "http://insightmaker.com/insight/9007"}
+# End Model
+
+## New Learning Inhibited ##
+
+New Learning tend to reduce Outdated Thinking, Communicating & Learning though our Outdated Thinking, Communicating & Learning inhibits new learning. The question is then how do we break this cycle. Adopted from "An Introduction to Systems Thinking with STELLA" by Barry Richmond.
+
+"New Learning Inhibited"^[New Learning Inhibited [http://insightmaker.com/insight/7018](http://insightmaker.com/insight/7018)].
+
+# Model
+{"title": "New Learning Inhibited", "description": "Is it possible to break out of a vicious cycle?", "load": "http://insightmaker.com/insight/7018"}
+# End Model
 
 ## Conclusion ##
 
