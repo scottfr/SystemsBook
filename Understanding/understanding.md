@@ -164,6 +164,14 @@ If you look at the Balancing Loop with Delay structure it looks identical to the
 
 You might ask how could it be that it might take 3.5 days for someone to get a sense of what the results of the previous actions were, which would be a good question. It's probably difficult to find a situation where this is realistic in days though what's important to realize is this structure could operate in this manner if the time units were hours, minutes, seconds or microseconds.
 
+## The Rain Barrel ##
+
+A times even with some of the simplest models it's difficult to intuit what the behavior is likely to be. This should be rather evident from "The Rain Barrel"^[The Rain Barrel [http://insightmaker.com/insight/6770](http://insightmaker.com/insight/6770)] model developed by Richard Turnock.
+
+# Model
+{"title": "The Rain Barrel", "description": "Even simplicity can be deceptive.", "load": "http://insightmaker.com/insight/6770"}
+# End Model
+
 ## Infinite Drinkers ##
 
 The "Infinite Drinkers"^[Infinite Drinkers [http://insightmaker.com/insight/850](http://insightmaker.com/insight/850)] is a modeling attempt at humor. Hope you enjoy it.

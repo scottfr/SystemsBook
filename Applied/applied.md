@@ -100,13 +100,31 @@ A couple of interesting enhancement to this model would be to 1) employ a Conver
 
 ## To Degree or Not ##
 
-There's a new normal in careers across many industries. While 12 million Americans are unemployed and 12 million are underemployed, over 3 Million jobs remain unfilled due to skills mismatch. This summer at the National Boy Scout Jamboree over 45,000 boys and their leaders heard Mike Rowe from Dirty Jobs talk about the disconnection between today's and tomorrow's careers and our system of K-12, college and university education.  ( I have a very cool 2 min video clip)
+Strategic Thinking Skills are important in many areas of Decision Making.
 
-In a day when the suicide rate among vets has never been higher the amount of student loan debt has never been greater and the number of hard working well meaning Americans with 20-30 years of strong work experience have lost there jobs due to no fault of their own and exhausted 99 weeks of unemployment insurance - it may well be time to reexamine some of the classical decision making around when and how to make the best decisions around careers.
+Decision Making around one's career may be a lot like shoots and ladders - well made early decisions have great results later. Racing to the top of a career to find out it is NOT your passion, may indeed turn into a shoot way back.
 
-Perhaps a plumber who graduates High school and starts to make 30,000 in his first year and saves 10% a year and sees his earning rise to 33, 36, 42, 50, 60, 70 K over 10 years, saving 10% by living within his means may be well ahead of the dentist student who goes into debt to finish school, open a practice and defers savings 10 years.  These models are meant to tease these issues out in an engaging way.
+My friend and fellow scout leader Andy became a dentist because his dad, brother and uncle are all dentists.  Then after 7 years of school and over $100,000 of debt and no savings, and three years of hating to get up in the morning to go to work - he finally admitted to himself and family that he hates looking in peoples mouths!  Andy started a new career as a computer programmer not all the way at the bottom, but close - 10 years behind where he might have been with a more deliberate exploration of career options and costs.
 
-How long would it take the dentist to catch up?
+While it has always been the case, that choosing ones career is a mix of exploration, finding one's passion, mentoring, formal and informal education, our world and labor economy has changed dramatically in the past 40 years.  Our schools and employers especially public employers like utilities are just catching up.  Moreover, [our k-12 system may have been designed for a different age and time](http://www.youtube.com/watch?v=zDZFcDGpL4U) when jobs were plentiful and employers had formal training programs.  College grads used to spend 3-5 years in a job and a department before moving to another and another over a 20-30 year career.  
+
+In those days, the classical discussion on the merits and returns on going to college turned on the employers well documented data that hiring high school and college educated employees led to lower job training costs.  A more literate and capable workforce permit the corporation to save training dollars and produce revenue faster.   (Gary Becker, Human Capital, (NY:NBER 1964)). 
+
+A world full of blue chip employers seeking high school and college grads for many entry level jobs with training just does not exist as it once did. Unemployment at all time highs also has great social costs in crime, foreclosures, poverty and health. 
+
+Many college grads today find themselves up to their ears in debt and living in the basement working minimum wage jobs in retail and fast food.  Some economists believe that student loan debt and the [SALLYMAE bubble is the next shoe to drop](http://blogs.reuters.com/great-debate/2013/03/07/student-loan-bubble-babble/).  College grad starting salaries are at at all time lows while student loans are at all time highs.  Employees change jobs every 2-3 years (often a  victim of economic downturns) and hold seven careers in a 30-40 year work life. As retirement becomes out of reach for many, older employees are working longer if they can for all sorts of reasons, competing for the same few spots keeping wages depressed and blocking ports of entry for others.
+
+Want to be a doctor today you still have to get good grades, complete a BS degree, go to medical school and work through a residency. Climbing the ladder still works in some careers. But if ever there was a place for Strategic Thinking it is in how one starts, manages, builds, grows or extends one's Career.  We want to tease these issues in a short but engaging and appropriate way.
+
+These Insight Models are meant to leave three types of readers with three take aways:
+
+1. For the Teacher or Parent - how to coach your child and student on some of the decisions and opportunity costs to begin to model income over a career path as they find their passion involves looking at some basic assumptions;
+2. For the student - on their path to become a talented engaged motivated employee - when to go fast? And what are the benefits of taking it slow, going to community college and being sure before committing to a career that requires an advanced degree;
+3. For the employer and human resource managers  - what the implications of our new normal on assessing talent, staffing, onboarding, on the job training and mentoring in the culture of the organization.
+
+Public private college initiatives like Siemens, Olympic High School and Central Piedmont Community College here in Charlotte are finding great success in growing their own talent, targeting talent and optimizing educational and corporate resources.  We may try to figure out a way to use the model to show how social costs are limited, while individual student, employer and college resources maximized by these kinds of programs...  
+
+Career education partnerships becomes one possible cure for the profoundly disconnected system we have today.
 
 The following three models were developed by Matt Sadinsky, CEO at Prequalified Ready Employees for Power International.
 
