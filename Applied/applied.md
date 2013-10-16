@@ -194,6 +194,16 @@ New Learning tend to reduce Outdated Thinking, Communicating & Learning though o
 {"title": "New Learning Inhibited", "description": "Is it possible to break out of a vicious cycle?", "load": "http://insightmaker.com/insight/7018"}
 # End Model
 
+## Increasing Indebtedness to Banks ##
+
+The issue of increasing private and government debt to banks is a major concern after the financial crisis of 2008 as depicted in Figure 1. In order to understand why our society and government is increasingly indebted to banks we need to understand how our current money system works and why we need a continuous infusion of new money in a growing economy. “Increasingly Indebted To Banks”^[Increasing Indebtedness to Banks [http://insightmaker.com/insight/9731](http://insightmaker.com/insight/9731)] investigates the reasons behind this and suggest a possible solution. This model was developed by Dr. Jin Lee.
+
+![Figure 1. US Debt to GDP](03-im-9731.png)
+
+# Model
+{"title": "Increasing Indebtedness to Banks", "description": "This model investigates why we are continually more indebted to banks and provides an option.", "load": "http://insightmaker.com/insight/9731"}
+# End Model
+
 ## Conclusion ##
 
 If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] it is essential we embrace learning and become far more adept at developing truly viable approaches for dealing with situations. Attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling which simply makes the situation worse or creates new problems that have to be dealt with. There are well defined proven approaches for developing each aspect of "Systemic Strategy: Enabling a Better Tomorrow"^[Systemic Strategy: Enabling a Better Tomorrow [http://insightmaker.com/insight/1366](http://insightmaker.com/insight/9077)] model presented at the beginning of this chapter. These can be explored in more detail in the videos associated with this model.
