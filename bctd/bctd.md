@@ -8,7 +8,14 @@ The problem with recurring models in the version published on 13.10.14 has been 
 
 ## Benefactor, Evangelist, Editor, Publisher Model Submission/Sponsorship ##
 
-Sponsors at the above levels have the option to develop, sponsor, or label parts of a model in the soon to be named Interactive Learning Environment (ILE). And I hope it's rather soon. Because this action is on a first come basis the following list is to allow you know what's already been spoken for. Please check this list before you ask for something.
+Sponsors at the above levels have four options for models in the soon to be named Interactive Learning Environment (ILE).
+
+* Submitting a model
+* Naming a model
+* Sponsoring a model - which means adding the sponsor's name and organization to the model somewhere indicating they are the sponsor for the model
+* Naming an element of a model -  one just has to figure out where there's an element that fits with some label they want to attach.
+
+Because this action is on a first come basis the following list is to allow you know what's already been spoken for. Please check this list before you ask for something.
 
 * Are There Limits - Tom Fiddaman (Developer)
 * Credit Never Happened - Werner Schoenfeldinger (Sponsor/42Virtual)
