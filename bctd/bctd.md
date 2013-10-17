@@ -1,6 +1,29 @@
-# There's a problem with Beta v5 - Don't use it yet! #
+# BCTD Beta v5 Is Fixed 13.10.16 #
 
 The Beta v5 of Beyond Connecting the Dots interactive is now available. As you access this version please remember that it's still a "beta"! The electronic copy of the book is available at the URL below and is password protected. Please read the following notes before accessing the online version of the book.
+
+The problem with recurring models in the version published on 13.10.14 has been fixed as of 13.10.16. Just be sure to clear cache and reload the URL to make sure you get the current version.
+
+13.10.16 Ed/Pub Mtg [Video](http://www.youtube.com/watch?v=W_54TV3ZuRg)
+
+## Benefactor, Evangelist, Editor, Publisher Model Submission/Sponsorship ##
+
+Sponsors at the above levels have the option to develop, sponsor, or label parts of a model in the soon to be named Interactive Learning Environment (ILE). And I hope it's rather soon. Because this action is on a first come basis the following list is to allow you know what's already been spoken for. Please check this list before you ask for something.
+
+* Are There Limits - Tom Fiddaman (Developer)
+* Credit Never Happened - Werner Schoenfeldinger (Sponsor/42Virtual)
+* Degree 1: Naive Model - Matt Sadinsky (Developer)
+* Degree 2: Loans Cost - Matt Sadinsky (Developer)
+* Degree 3: Savings Over Time - Matt Sadinsky (Developer)
+* Increasingly Indebted to Banks - Jin Lee (Developer)
+* Joe P. Manager's Challenge - David Ford (Developer)
+* New Learning Inhibited - Julian Todd (Sponsor)
+* Restaurant Covers - Lie Inman (Developer)
+* Sustainable Capitalism - Ken Shepard (Org Sponsor)
+* Swamping Insight - Geoff McDonnell (Developer) [Adaptive Care Systems](http://www.synergia.co.nz/what-we-do/modelling-and-simulation/anylogic-health)
+* The Rain Barrel - Richard Turnock (Developer)
+
+If you don't find something that fits your fancy there will probably be a dozen additional models with the release of Beta v6 next week.
 
 ## Beta v5 Updates ##
 

@@ -196,7 +196,7 @@ New Learning tend to reduce Outdated Thinking, Communicating & Learning though o
 
 ## Increasing Indebtedness to Banks ##
 
-The issue of increasing private and government debt to banks is a major concern after the financial crisis of 2008 as depicted in Figure 1. In order to understand why our society and government is increasingly indebted to banks we need to understand how our current money system works and why we need a continuous infusion of new money in a growing economy. “Increasingly Indebted To Banks”^[Increasing Indebtedness to Banks [http://insightmaker.com/insight/9731](http://insightmaker.com/insight/9731)] investigates the reasons behind this and suggest a possible solution. This model was developed by Dr. Jin Lee.
+The issue of increasing private and government debt to banks is a major concern after the financial crisis of 2008 as depicted in Figure 1. In order to understand why our society and government is increasingly indebted to banks we need to understand how our current money system works and why we need a continuous infusion of new money in a growing economy. “Increasingly Indebted To Banks”^[Increasing Indebtedness to Banks [http://insightmaker.com/insight/9731](http://insightmaker.com/insight/9731)] investigates the reasons behind this and suggest a possible solution. This model was developed by Dr. Jin Lee, Consultant and Trainer, Malaysia and New York.
 
 ![Figure 1. US Debt to GDP](03-im-9731.png)
 

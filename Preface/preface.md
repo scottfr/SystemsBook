@@ -1,4 +1,4 @@
-## Introduction ##
+## Preface ##
 
 We set out to develop an interactive ebook on modeling and simulation introducing Insight Maker. As it turned out, after a few months we had actually developed an interactive book on modeling and simulation introducing Insight Maker. What we realized, upon arriving at the goal, was that the world didn't need another book on modeling and simulation and it surely didn't need an Insight Maker users guide. And, glitzy technology couldn't turn what we had developed into what it needed to be. Though a glitzy technology oriented book on modeling and simulation that read like an Insight Maker users guide was just what we had created.
 
@@ -7,6 +7,8 @@ Fortunately for us a couple of our insightful and courageous sponsors were willi
 With this awakening the label for this creation began to look something like "Systems Insights for Y/Our Future: An Interactive Learning Environment." Aren't you pleased we decided to name it something else? The August 30, 2013 beta release of Chapter 1 and Chapter 2 served as a good model for the direction of the first few chapters. And with this emphasis on interactive there was a question as to the sensibility of trying to create a physical copy of the ILE. There are valuable aspects of interaction that would be completely lost in a physical copy of the ILE. You can let us know your whether our thoughts were appropriate after you experience this interactive learning environment.
 
 An additional realization is that the ILE is just that, an interactive learning environment. It is not a development environment. While one can construct models and simulations in the environment any serious development should be done in Insight Maker at InsightMaker.com. There are critical functions that can be performed on a workstation for which there are no equivalent on a tablet or cell phone, e.g., mouseover, shift+click, ctrl+click, which are critical operations for some  aspects of development. As you experience the restructured first few chapters you'll get a sense of this if you're on a tablet or cell phone, and the alternatives will be described initially where appropriate.
+
+## Introduction ##
 
 People tend to read books in different ways. With that in mind we've designed this ILE so all the essential concepts are presented in the first chapter. We recommend that you read Chapter 1 and interact with the models presented. Chapter 2 and 3 provide examples which reinforce these concepts and are recommended. The remainder of the chapters contain related modeling and simulation concepts that may be read in any desired order.\
 
