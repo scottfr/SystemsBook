@@ -1,4 +1,4 @@
-# Developing Understanding though Models
+# Developing Understanding through Models
 
 This chapter will present a number of models to demonstrate the development process, various aspects of the model development guidelines and acquaint you with a few additional relevant aspects of simulation models in Insight Maker.
 
@@ -177,7 +177,7 @@ A times even with some of the simplest models it's difficult to intuit what the 
 The "Infinite Drinkers"^[Infinite Drinkers [http://insightmaker.com/insight/850](http://insightmaker.com/insight/850)] is a modeling attempt at humor. Hope you enjoy it.
 
 # Model
-{"title": "Infinite Drinkers", "description": "How many beers does it take to server an infinite number of drinkers?", "load": "http://insightmaker.com/insight/850"}
+{"title": "Infinite Drinkers", "description": "How many beers does it take to serve an infinite number of drinkers?", "load": "http://insightmaker.com/insight/850"}
 # End Model
 
 You can build models to help understand almost any set of interactions and at times they can be really simple.
