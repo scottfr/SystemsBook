@@ -12,7 +12,9 @@ All stories are actually models expressed in words rather than diagrams. All of 
 
 Just as all stories are models, you should attempt to ensure that all models you develop actually tell a story. Telling stories makes it easier to communicate the insights surfaced in the model to others and stories are much easier to remember than bits and pieces of data.
 
-## Can Red Get to Grandma's House {#RedModel}
+## Walking to Grandma's {#RedModel}
+
+When you develop a model remember that it's a learning process so don't expect that you'll get everything to turn out the way it should the first time around. Remember to think of it as an iterative learning process where every time something doesn't go the way you expect it's not an error, it's an opportunity for learning.
 
 "Walking to Grandma's"^[Walking to Grandma's [http://insightmaker.com/insight/6778](http://insightmaker.com/insight/6778)] is a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did? Also this model will introduce the idea of Units which are used to help ensure the soundness of your model. Insight Maker checks Units to ensure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.
 
@@ -29,12 +31,12 @@ Insight Maker doesn't complain because you're still comparing distance to distan
 ~ End Exercise
 
 ~ Exercise
-Seldom is there ever just one right way to build a model. You build the model to help you understand something and you might do that in different ways. Even for a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 4.5 and reducing it by walking. Go to Insight Maker and try to build one or two alternatives to this model.
+Seldom is there ever just one way to build a model. You build the model to help you understand something and you might do that in different ways. Even a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 4.5 and reducing it by walking. Go to Insight Maker and try to build one or two alternatives to this model.
 ~ Answer
 One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as Red walks toward it. This way the model is tracking the distance traveled rather than the distance left to travel.
 ~ End Exercise
 
-Hopefully the Going to Grandma's model has given you a sense of an approach for developing models along with some useful tips and an introduction to using units and why they can be so useful to you. Oh, and don't forget about putting notes in your models. Wiring diagrams without knowing what the pieces mean are generally not very useful.
+Hopefully the Going to Grandma's has reinforced the build a little, test a little approach for developing models. Hopefully the introduction to using units has provided a sense of why they can be so useful. Oh, and don't forget about putting notes in your models. Wiring diagrams without knowing what the pieces mean are generally not very useful.
 
 ## Work Completion ##
 
