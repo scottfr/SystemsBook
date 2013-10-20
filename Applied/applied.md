@@ -184,6 +184,14 @@ Control systems act to make their own input match internal standards or referenc
 {"title": "Double Loop Control Theory", "description": "There is a an equivalence between control theory and double loop learning.", "load": "http://insightmaker.com/insight/9007"}
 # End Model
 
+## The Rain Barrel ##
+
+A times even with some of the simplest models it's difficult to intuit what the behavior is likely to be. This should be rather evident from "The Rain Barrel"^[The Rain Barrel [http://insightmaker.com/insight/6770](http://insightmaker.com/insight/6770)] model developed by Richard Turnock.
+
+# Model
+{"title": "The Rain Barrel", "description": "Even simplicity can be deceptive.", "load": "http://insightmaker.com/insight/6770"}
+# End Model
+
 ## New Learning Inhibited ##
 
 New Learning tend to reduce Outdated Thinking, Communicating & Learning though our Outdated Thinking, Communicating & Learning inhibits new learning. The question is then how do we break this cycle. Adopted from "An Introduction to Systems Thinking with STELLA" by Barry Richmond.
