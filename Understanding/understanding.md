@@ -186,7 +186,7 @@ There are a set of frequently recurring structures that have a very distinct str
 {"title": "Frequently Recurring Structures", "description": "There is a typical unfolding relationship between the common recurring structures.", "load": "http://insightmaker.com/insight/538"}
 # End Model
 
-Hopefully the relationships between these frequently recurring structures has provided a lot of food for thought in terms of how connected things really are, and how there are very typical paths of evolution.
+Hopefully the relationships between these frequently recurring structures has provided a lot of food for thought in terms of how connected things really are, and how there are very typical paths of evolution. There is another Interactive Learning Environment under development dedicated to understanding and working with these frequently recurring structures.
 
 In the next chapter we'll delve a bit deeper into some more involved models in a number of different disciplines.
 

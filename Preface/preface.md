@@ -75,3 +75,10 @@ There are a couple of the implications of this being an interactive learning env
 - **Insight Maker Model Link**. For each model there is an footnote which will provide access to a link to the actual source of the model in [InsightMaker.com](http://insightmaker.com/). There you may clone the model creating a copy that you own. You can then interact with your copy of the model with all the features of Insight Maker.
 
 You can read and interact with this content without being connected to the Internet though there are some of the models which reference images on the Internet. If you're not connected to the Internet these will display as missing images with labels below them. You will also not be able to follow any of the embedded links unless you are connected to the Internet.
+
+### Additional Resources ###
+
+- [Insight Maker](http://insightmaker.com/). The free web based modeling and simulation environment used to create all the models contained herein.
+- [The MARS Project](http://www.linkedin.com/groups/MARS-Project-5180568). A discussion group on LinkedIn dedicated to the development of understanding though the collaborative development of models.
+- [Systems Thinking World](http://www.linkedin.com/groups/Systems-Thinking-World-2639211). A more general Systems Thinking discussion group on LinkedIn.
+- [SystemsWiki.org](http://www.systemswiki.org/). A Wiki dedicated to Systems Thinking, Modeling and Simulation.
