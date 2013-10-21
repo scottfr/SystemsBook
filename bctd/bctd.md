@@ -1,36 +1,68 @@
-# Beyond Connecting the Dots #
+# BCTD Beta v5 Is Fixed 13.10.16 #
 
-The beta v4 of Beyond Connecting the Dots interactive is now available. As you access this version please remember that it's still a "beta"! The overview video  at the following URL will help you understand what to expect once you're in the bets. I strongly recommend you take a few minutes to watch it. It's not very long.
+The Beta v5 of Beyond Connecting the Dots interactive is now available. As you access this version please remember that it's still a "beta"! The electronic copy of the book is available at the URL below and is password protected. Please read the following notes before accessing the online version of the book.
 
-* [http://www.youtube.com/watch?v=8Jjeyfds9mY](http://www.youtube.com/watch?v=8Jjeyfds9mY)
+The problem with recurring models in the version published on 13.10.14 has been fixed as of 13.10.16. Just be sure to clear cache and reload the URL to make sure you get the current version.
 
-The electronic copy of the book is available at the URL below and is password protected. Please read the following notes before accessing the online version of the book. Note the online version will be updated every couple weeks also.
+13.10.16 Ed/Pub Mtg [Video](http://www.youtube.com/watch?v=W_54TV3ZuRg)
+
+## Benefactor, Evangelist, Editor, Publisher Model Submission/Sponsorship ##
+
+Sponsors at the above levels have four options for models in the soon to be named Interactive Learning Environment (ILE).
+
+* Submitting a model
+* Naming a model
+* Sponsoring a model - which means adding the sponsor's name and organization to the model somewhere indicating they are the sponsor for the model
+* Naming an element of a model -  one just has to figure out where there's an element that fits with some label they want to attach.
+
+Because this action is on a first come basis the following list is to allow you know what's already been spoken for. Please check this list before you ask for something.
+
+* Are There Limits - Tom Fiddaman (Developer)
+* Credit Never Happened - Werner Schoenfeldinger (Sponsor/42Virtual)
+* Degree 1: Naive Model - Matt Sadinsky (Developer)
+* Degree 2: Loans Cost - Matt Sadinsky (Developer)
+* Degree 3: Savings Over Time - Matt Sadinsky (Developer)
+* Increasingly Indebted to Banks - Jin Lee (Developer)
+* Joe P. Manager's Challenge - David Ford (Developer)
+* New Learning Inhibited - Julian Todd (Sponsor)
+* Restaurant Covers - Lie Inman (Developer)
+* Sustainable Capitalism - Ken Shepard (Org Sponsor)
+* Swamping Insight - Geoff McDonnell (Developer) [Adaptive Care Systems](http://www.synergia.co.nz/what-we-do/modelling-and-simulation/anylogic-health)
+* The Rain Barrel - Richard Turnock (Developer)
+
+If you don't find something that fits your fancy there will probably be a dozen additional models with the release of Beta v6 next week.
+
+## Beta v5 Updates ##
+
+* Model access display has been revised. In most instances there is context text before and after the model access.
+* Chapters 4 though 11 have been professionally edited and should be quite solid.
+* Chapters 1 though 3 have not been edited and we know they're still very rough.
+* Models at the end of Chapter 3 are still very much work in progress.
 
 ## Interactive User Interface ##
 
-* Tap or click the page to switch pages (tap on the right to move forward, tap on the left to move back) 
-* Click the book title to open the table of contents 
-* Click the Chapter/Section title to open up a slider to flip through the book 
-* Click the aA button to change the font size 
-* Tap on links or models to jump between the book sections or run a model 
+* Tap or click the page on the right to move forward, on the left to move back.
+* Click the book title in the upper left corner to display the table of contents. 
+* Click the Chapter/Section title in the lower left corner to open a slider to move through the content. 
+* Click the aA button in the upper right to change the font size. 
+* To access a model click the title of the model NOT the center. Clicking the center will result in a page forward or page back depending on where you click.
+* If you want to work with a model or restart a script you first have to close the graph display by clicking the Red-X Stop sign in the upper right corner to close the graph. Note that for some models there may be more than one graph.
 * When looking at exercise answers, click the number of the exercise to jump back to the original exercise in the book 
-* To access a model click the title of the model NOT the center. Clicking the center will result in a page forward or page back depending on where you click. 
-* If you want to work with a model or restart a script you first have to close the graph display by clicking the Red-X Stop sign in the upper right corner to close the graph. Note that for some models there is more than one graph. 
 
 ## Beta Issues ##
 
-* This is running on a server. This makes moving between chapters sometimes slow. When running as an app on a reader, this content will be pre-downloaded to the tablet and navigation will be faster. 
+* The beta running on a server makes moving between chapters sometimes slow. When running as an app on a reader, this content will be pre-downloaded to the device and navigation will be faster. 
 * Sometimes the page rendering gets misaligned. 
 * It has only been tested on Chrome and Firefox. 
-* Cover-page and art to be added 
+* Cover-page and art yet to be added 
 * Book content is still under development and being edited 
-* Some of the model/graph displays are out of sequence so the graph gets displayed before the model. Just click the Red-X Stop sign in the upper right corner to close the graph.
+* Some of the figure information and figure are out of order because of the auto placement.
 
-## BCTD Is An Interactive Learning Environment ##
+## Interactive Learning Environment ##
 
-BCTD is developed as an interactive learning environment. While in this environment you get to interact with models and at times even build small models. If you really want to build model then go to [Insight Maker](http://insightmaker.com/), acquire a username and password, **It's FREE**, and do development in Insight Maker. There is and extensive set of document within Insight Maker and there are numerous videos on just about every feature and function at [Modeling & Simulation with Insight Maker](http://webbrain.com/u/14xv).
+BCTD is developed as an interactive learning environment. While in this environment you get to interact with models and at times even build small models. If you really want to build models then go to [Insight Maker](http://insightmaker.com/), acquire a username and password, **It's FREE**, and do development in Insight Maker. There is and extensive set of document within Insight Maker and there are numerous videos on just about every feature and function at [Modeling & Simulation with Insight Maker](http://webbrain.com/u/14xv).
 
-## Beta v4 13.09.16 Access ##
+## Beta v5 13.10.14 Access ##
 
 Note that Scott has indicated he can't create a new betaX URL for each revised Beta. This means that when the new one is posted it will be at the same URL as the old one. Please check the first page to ensure it has the above date. If it doesn't then reload the URL in your browser.
 
@@ -38,7 +70,7 @@ Note that Scott has indicated he can't create a new betaX URL for each revised B
 * username: betabook 
 * password: feedback
 
-You can send feedback to Gene at systemswiki@gmail.com or comment in the [Beta v4 Available](http://linkd.in/14WyUzp) thread in the STW Sponsors group on LinkedIn if you're a member.
+You can send feedback to Gene at systemswiki@gmail.com or comment in the [Beta v5 Available](http://linkd.in/1bSQCqw) thread in the STW Sponsors group on LinkedIn if you're a member.
 
 be well, 
 Gene
@@ -49,6 +81,7 @@ None of the information below this point should be of any value to you. It is ma
 
 Each new Beta version of the app overwrites the older one so the history is not available.
 
+- Beta v5 available 13.10.14
 - Beta v4 available 13.09.16
 - Beta v3 available 13.08.30
 
