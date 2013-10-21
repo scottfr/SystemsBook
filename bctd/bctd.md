@@ -25,7 +25,7 @@ Because this action is on a first come basis the following list is to allow you 
 * Increasingly Indebted to Banks - Jin Lee (Developer)
 * Joe P. Manager's Challenge - David Ford (Developer)
 * New Learning Inhibited - Julian Todd (Sponsor)
-* Restaurant Covers - Lie Inman (Developer)
+* Restaurant Covers - Lise Inman (Developer)
 * Sustainable Capitalism - Ken Shepard (Org Sponsor)
 * Swamping Insight - Geoff McDonnell (Developer) [Adaptive Care Systems](http://www.synergia.co.nz/what-we-do/modelling-and-simulation/anylogic-health)
 * The Rain Barrel - Richard Turnock (Developer)

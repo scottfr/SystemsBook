@@ -4,7 +4,7 @@ We are sincerely grateful to our project sponsors without whom this project woul
 
 ** Publisher Level **
 
-Lorry Antonucci, Hugh J Campbell Hr, Jamie Chapman, Stephen Hobbs, Lise Inman, Justin Lyon, Mike Parker, David Patterson, Pedro Almaguer, Anand Rao, Matt Sadinsky, Ken Shepard, Janet Singer, Raji Sirajuddin, Ben Taylor, Raid M Zaini
+![](180.png)Pedro Almaguer, ![](181.png)Lorry Antonucci, ![](182.png)Hugh J Campbell Hr, ![](183.png)Jamie Chapman, ![](184.png)Stephen Hobbs, ![](185.png)Lise Inman, ![](186.png)Justin Lyon, ![](187.png)Mike Parker, ![](188.png)David Patterson, ![](189.png)Anand Rao, ![](190.png)Matt Sadinsky, ![](191.png)Ken Shepard, ![](192.png)Janet Singer, ![](193.png)Raji Sirajuddin, ![](194.png)Ben Taylor, ![](195.png)Raid M Zaini
 
 Editor Level
 
