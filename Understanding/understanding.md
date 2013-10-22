@@ -128,7 +128,7 @@ We hope this model gave you a more comfortable feeling that it is possible to mo
 
 ## Climate Stabilization Task ##
 
-The "Climate Stabilization Task"^[Climate Stabilization Task [http://insightmaker.com/insight/9283](http://insightmaker.com/insight/9283)] model starts in 1900. In the year 2000 you get the chance to set a new emission target and nominal time to reach it. Your aim is to have atmospheric CO2 stabilise at about 400 ppmv in 2100.{cite: Sterman, John D. (2008)  Risk Communication on Climate:  Mental Models and Mass Balance.  Science 322 (24 October): 532-533}
+The "Climate Stabilization Task"^[Climate Stabilization Task [http://insightmaker.com/insight/9283](http://insightmaker.com/insight/9283)] model starts in 1900. In the year 2000 you get the chance to set a new emission target and nominal time to reach it. Your aim is to have atmospheric CO2 stabilize at about 400 ppmv in 2100 [@Sterman:2008bq].
 
 # Model
 {"title": "Climate Stabilization Task", "description": "Can you get the CO2 levels to stabilize?", "load": "http://insightmaker.com/insight/9283"}
