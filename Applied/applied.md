@@ -1,16 +1,16 @@
 # Applied Understanding
 
-This chapter will present a number of models on different subjects offered by the sponsors of Beyond Connecting the Dots
+This chapter will present a number of models on different subjects offered primarily by the sponsors of Beyond Connecting the Dots.
 
 ## Systemic Strategy ##
 
-As we think about the problems we face today it becomes readily evident that the majority of these problems are the direct result of yesterday’s solutions. If we desire to enable a better tomorrow, the foundation of that tomorrow must be the development of a viable approach for dealing with situations. We need an approach which actually addresses the situation while minimizing the likelihood of making the situation worse or creating new problems that we will have to address in the future. The foundation of this approach, as with all real progress, is learning. This paper presents a model for the requisite learning.
+As we think about the problems we face today it becomes readily evident that the majority of these problems are the direct result of yesterday’s solutions. If we desire to enable a better tomorrow, the foundation of that tomorrow must be the development of a viable approach for dealing with situations. We need an approach which actually addresses the situation while minimizing the likelihood of making the situation worse or creating new problems that we will have to address in the future. The foundation of this approach, as with all real progress, is learning. The next two models present a basis for the requisite learning.
 
 ### Background ###
 
-Over the years numerous new approaches to problem solving have been developed and promoted. Some of these were turned into fads and readily adopted by many. The fads were not well founded and in time proved not to deliver the expected results. When the expected results were not delivered the fads were discarded in favor of the next fad. As Michael McGill points out [@McGill:1991vv], the real difficulty lies in a flawed mental model under which both the promoters and the adopters operate. That flawed mental model being their belief that there should exist a quick fix.
+Over the years numerous new approaches to problem solving have been developed and promoted. Some of these were turned into fads and readily adopted by many. The fads were not well founded and in time proved not to deliver the expected results. When the expected results were not delivered the fads were discarded in favor of the next fad. As Michael McGill [1991] {cite: McGill, M. 1991. American Business and the Quick Fix. Henry Holt & Co. http://www.amazon.com/American-Business-Quick-Michael-McGill/dp/0805015477/}  points out, the real difficulty lies in a flawed mental model under which both the promoters and the adopters operate. That flawed mental model being their belief that there should exist a quick fix.
 
-In contrast, well grounded and proven approaches to problem solving have not been widely adopted. Those with flawed mental models consider the proven approaches to be too complicated or time consuming. The quest for the ever elusive quick fix condemns us to repeatedly solving the new problems created by the quick fix. This is the type of result expected from operating with flawed mental models [@Senge:1994uw]. We must realize the quick fix is a mirage and invest the time to learn the proven methods and create sound solutions.
+In contrast, well grounded and proven approaches to problem solving have not been widely adopted. Those with flawed mental models consider the proven approaches to be too complicated or time consuming. The quest for the ever elusive quick fix condemns us to endlessly solving the new problems created by the quick fix. This is the type of result expected from operating with flawed mental models [Senge, 2006] {cite: Senge, P. 1994. The Fifth Discipline: The Art & Practice of the Learning Organization. Crown Business. http://www.amazon.com/Fifth-Discipline-Practice-Organization-ebook/dp/B000SEIFKK/} We must realize the quick fix is a mirage and invest the time to learn proven methods and create sound solutions.
 
 ### Creating the Future ###
 
@@ -30,7 +30,7 @@ Given the realization that there is an underlying set of interactions as depicte
 {"title": "Systemic Strategy", "description": "Relevant pieces of the puzzle of real progress.", "load": "http://insightmaker.com/insight/1366"}
 # End Model
 
-"Systemic Strategy" represents an iterative unfolding of understanding intended to provide the basis for developing a strategy which, when implemented, is highly likely to address the situation of interest as intended, while minimizing the likelihood of unintended consequences or creating new problems.
+"Systemic Strategy" represents an iterative unfolding of understanding intended to provide the basis for developing a strategy which, when implemented, is highly likely to address the situation of interest as intended, while minimizing the likelihood of unintended consequences or creating new problems. There is another Interactive Learning Environment in the works based on this model and will be titled, "Enabling a Better Tomorrow."
 
 ## Victims of the System or Systems of the Victim ##
 
@@ -52,7 +52,9 @@ Often we are victims of our own beliefs and pursue approaches to deal with situa
 {"title": "Managing Time in Time Management", "description": "Should you be surprised if pursuing the wrong course of action doesn't produce the desired result?", "load": "http://insightmaker.com/insight/913"}
 # End Model
 
-This model hopefully provides an additional sense of the importance of soft variables in some models.
+This model hopefully provides an additional sense of the importance of soft variables in some models. Quite often soft variable are the real key to understanding what's really happening in the web of extended interactions.
+
+This model, like so many others, serves to point out how true Pogo really was. "We have met the enemy and he is us!"
 
 ## Are There Limits ##
 
@@ -66,37 +68,63 @@ While the model provides food for thought the answer to the question remains to 
 
 ## Productivity Challenge ##
 
-"Joe P. Management Challenge"^[Joe P. Management Challenge [http://insightmaker.com/insight/9576](http://insightmaker.com/insight/9576)]
+Given that you are responsible for a project that's behind schedule what alternatives might you consider for getting it back on track? The "Joe P. Management Challenge"^[Joe P. Management Challenge [http://insightmaker.com/insight/9576](http://insightmaker.com/insight/9576)] model investigates several possible alternatives.
 
 # Model
 {"title": "Joe P. Management Challenge", "description": "What are the most obvious options when a project is behind schedule? Do they work?", "load": "http://insightmaker.com/insight/9576"}
 # End Model
 
-"Credit Never Happened: Relations"^[Credit Never Happened: Relations [http://insightmaker.com/insight/752](http://insightmaker.com/insight/752)]
+The previous model was an initial set of thoughts about the possible options for getting the project back on track. The "Credit Never Happened: Relations"^[Credit Never Happened: Relations [http://insightmaker.com/insight/752](http://insightmaker.com/insight/752)] model will dig deeper into what are considered relevant relationships.
 
 # Model
 {"title": "Credit Never Happened: Relations", "description": "There are more relevant relations needed to really understand the situation.", "load": "http://insightmaker.com/insight/752"}
 # End Model
 
-"Credit Never Happened: Simulation"^[Credit Never Happened: Simulation [http://insightmaker.com/insight/1899](http://insightmaker.com/insight/1899)]
+While the "Credit Never Happened: Relations" model may have provided additional perspectives on the relations that might be considered there is a limited understanding that once can derive from the picture. The "Credit Never Happened: Simulation"^[Credit Never Happened: Simulation [http://insightmaker.com/insight/9781](http://insightmaker.com/insight/9781)] is intended to investigate the dynamic implications of the relations considered relevant for this situation.
 
 # Model
-{"title": "Credit Never Happened: Simulation", "description": "This third model in the series provides a simulation to get a dynamic sense of the situation.", "load": "http://insightmaker.com/insight/1899"}
+{"title": "Credit Never Happened: Simulation", "description": "This third model in the series provides a simulation to get a dynamic sense of the situation.", "load": "http://insightmaker.com/insight/9781"}
 # End Model
+
+The reality that we hope was surfaced in this model is that you can't get something for nothing. Everything has a cost associated with it. If you want things to get better you have to invest. Investing wisely is even better.
 
 ## Restaurant Covers ##
 
-The following "Restaurant Covers"^[Restaurant Covers [http://insightmaker.com/insight/8743](http://insightmaker.com/insight/8743)] model was developed by Lise Inman and Keith Margerison. The intent is to better understand what happens as customers arrive and are serviced at a restaurant based on the arrival interval and the service time.
+Have you ever considered the dynamics associated with arriving at a restaurant, being seated, served, and the seating being used by another party. The "Restaurant Covers"^[Restaurant Covers [http://insightmaker.com/insight/9784](http://insightmaker.com/insight/9784)] model was developed by Lise Inman and Keith Margerison is intended to provide an introduction to those dynamics.
 
 # Model
-{"title": "Restaurant Covers", "description": "Servicing Tables", "load": "http://insightmaker.com/insight/8743"}
+{"title": "Restaurant Covers", "description": "Servicing Tables", "load": "http://insightmaker.com/insight/9784"}
 # End Model
 
 ~ Exercise
-
-A couple of interesting enhancement to this model would be to 1) employ a Converter to specify different Arrival Rates during different times; 2) to vectorize the model so it could work with a varying number of tables to serve customers.
-
+A couple of interesting enhancement to this model would be to 1) Employ a Converter to specify different Arrival Rates during different time intervals that the restaurant is serving; 2) Vectorize the model so it could work with a varying number of tables to serve customers based on a slider setting.
 ~ End Exercise
+
+## Control Theory ##
+
+Control systems act to make their own input match internal standards or reference signals. Competent control systems create illusions of stimulus response causality. Stimulus-response theory can approximate the relationship between disturbance and action, but it can't predict the consequences of behavior. These consequences are maintained despite disturbances.
+
+The "Control Theory: A Model of Organisms"^[Control Theory: A Model of Organisms [http://insightmaker.com/insight/9786](http://insightmaker.com/insight/9786)] presents an initial view of the interrelations responsible for the behavior of an organism in response to an input stimulus.
+
+# Model
+{"title": "Control Theory: A Model of Organisms", "description": "The environment and the active system are both engaged in the output.", "load": "http://insightmaker.com/insight/9786"}
+# End Model
+
+The "Double Loop Control Theory"^[Double Loop Control Theory [http://insightmaker.com/insight/9787](http://insightmaker.com/insight/9787)] model is an elaboration of the previous model to provide further insights into the relevant relations responsible for the behavior of organisms in response to stimulus.
+
+# Model
+{"title": "Double Loop Control Theory", "description": "There is a an equivalence between control theory and double loop learning.", "load": "http://insightmaker.com/insight/9787"}
+# End Model
+
+## Increasing Indebtedness to Banks ##
+
+The issue of increasing private and government debt to banks is a major concern after the financial crisis of 2008 as depicted in Figure 1. In order to understand why our society and government is increasingly indebted to banks we need to understand how our current money system works and why we need a continuous infusion of new money in a growing economy. “Increasingly Indebted To Banks”^[Increasing Indebtedness to Banks [http://insightmaker.com/insight/9788](http://insightmaker.com/insight/9788)] investigates the reasons behind this and suggest a possible solution. This model was developed by Dr. Jin Lee, Consultant and Trainer, Malaysia and New York.
+
+![Figure 1. US Debt to GDP](03-im-9731.png)
+
+# Model
+{"title": "Increasing Indebtedness to Banks", "description": "This model investigates why we are continually more indebted to banks and provides an option.", "load": "http://insightmaker.com/insight/9788"}
+# End Model
 
 ## To Degree or Not ##
 
@@ -168,20 +196,12 @@ This common archetype of systems that include relapse or recidivism allows explo
 {"title": "Swamping Insights", "description": "Enhancing one part of a process may ensure the whole process gets worse.", "load": "http://insightmaker.com/insight/1769"}
 # End Model
 
-## Control Theory ##
+## The Rain Barrel ##
 
-Control systems act to make their own input match internal standards or reference signals. Competent control systems create illusions of stimulus response causality. Stimulus-response theory can approximate the relationship between disturbance and action, but it can't predict the consequences of behavior. These consequences are maintained despite disturbances.
-
-"Control Theory: A Model of Organisms"^[Control Theory: A Model of Organisms [http://insightmaker.com/insight/8908](http://insightmaker.com/insight/8908)].
+A times even with some of the simplest models it's difficult to intuit what the behavior is likely to be. This should be rather evident from "The Rain Barrel"^[The Rain Barrel [http://insightmaker.com/insight/6770](http://insightmaker.com/insight/6770)] model developed by Richard Turnock.
 
 # Model
-{"title": "Control Theory: A Model of Organisms", "description": "The environment and the active system are both engaged in the output.", "load": "http://insightmaker.com/insight/8908"}
-# End Model
-
-"Double Loop Control Theory"^[Double Loop Control Theory [http://insightmaker.com/insight/9007](http://insightmaker.com/insight/9007)].
-
-# Model
-{"title": "Double Loop Control Theory", "description": "There is a an equivalence between control theory and double loop learning.", "load": "http://insightmaker.com/insight/9007"}
+{"title": "The Rain Barrel", "description": "Even simplicity can be deceptive.", "load": "http://insightmaker.com/insight/6770"}
 # End Model
 
 ## New Learning Inhibited ##

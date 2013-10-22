@@ -1,242 +1,208 @@
-# Web of Wonder
-~~~
-“Would you tell me, please, which way I ought to go from here?”
-“That depends a good deal on where you want to get to,” said the Cat.
-“I don’t much care where–” said Alice.
-“Then it doesn’t matter which way you go,” said the Cat.
-“–so long as I get SOMEWHERE,” Alice added as an explanation.
-“Oh, you’re sure to do that,” said the Cat, “if you only walk long enough.”
+# Developing Understanding through Models
 
-Lewis Carroll - Alice in Wonderland
-~~~
-The world we live in is much like a giant spider web where everything is connected to everything else. When something changes in one part of the web it ripples though the whole web. We tend to live in the moment not realizing how our actions ripple over time thorough distant parts of the web. When we don't understand the web things around us tend to seem extremely complicated, confusing and overwhelming. We feel caught in the web. What we need is a web of understanding for this web of extended interactions.
+This chapter will present a number of models to demonstrate the development process, various aspects of the model development guidelines and acquaint you with a few additional relevant aspects of simulation models in Insight Maker.
 
-It has been said that you can learn about riding a bicycle from reading a book, though to learn to ride a bicycle you actually have to spend time on a bicycle. The interactive learning environments (ILEs) you're about to experience are intended to develop a web of understanding for the web of extended interactions around you. You are encouraged to engage with the ILEs as the understanding you develop will aid you in figuring out where you want to get to and develop skills which will improve your likelihood of getting there. These ILEs are very much like reading a book about riding a bike as you're actually on the bike learning to ride it.
+## The Boy Who Cried Wolf ##
 
-## Experiencing the Web ##
-
-Please click on "Bird Feeder Dilemma"^[Bird Feeder Dilemma Model [http://insightmaker.com/insight/8872](http://insightmaker.com/insight/8872)] title and step through the following ILE for an initial sense of how a simple action can impact many things in the web of relations. It is best to click on the title for if you click anywhere else on the ILE it will open and also do a page forward or back depending on where you click. If this happens then when you exit the ILE you may not be where you think you should be.
+All stories are actually models expressed in words rather than diagrams. All of the interactions in a story can be expressed in the form of a model which allows one to get an overview of the main interactions in a single picture. "The Boy Who Cried Wolf"^[The Boy Who Cried Wolf [http://insightmaker.com/insight/7103](http://insightmaker.com/insight/7103)] will unfold a model as a story and show the difference between a Rich Picture and a Causal Loop Diagram for the same story.
 
 # Model
-{"title": "Bird Feeder Dilemma", "description": "All you wanted was a more pleasant morning at breakfast.", "load": "http://insightmaker.com/insight/8872"}
+{"title": "The Boy Who Cried Wolf", "description": "Telling a story as you unfold a model.", "load": "http://insightmaker.com/insight/7103"}
 # End Model
 
-Hopefully this gives you a sense of difficulty one can get into when simply thinking about a single action taken to achieve a goal without considering the effects of that action. This web provides a limited view as it's only a picture of relations, and probably not all of them. The picture doesn't give you any real sense of the quantity of anything over time.
+Just as all stories are models, you should attempt to ensure that all models you develop actually tell a story. Telling stories makes it easier to communicate the insights surfaced in the model to others and stories are much easier to remember than bits and pieces of data.
 
-The "Moose and Wolves"^[Moose and Wolves Model [http://insightmaker.com/insight/8590](http://insightmaker.com/insight/8590)] ILE should provide a better sense of why it's important to have a sense of how the web of extended interactions develops over time if we are to really develop a web of understanding.
+## Walking to Grandma's {#RedModel}
+
+When you develop a model remember that it's a learning process so don't expect that you'll get everything to turn out the way it should the first time around. Remember to think of it as an iterative learning process where every time something doesn't go the way you expect it's not an error, it's an opportunity for learning.
+
+"Walking to Grandma's"^[Walking to Grandma's [http://insightmaker.com/insight/6778](http://insightmaker.com/insight/6778)] is a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did? Also this model will introduce the idea of Units which are used to help ensure the soundness of your model. Insight Maker checks Units to ensure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.
 
 # Model
-{"title": "Moose and Wolves", "description": "How do the populations of Moose and Wolves interact?", "load": "http://insightmaker.com/insight/8590"}
+{"title": "Walking to Grandma's", "description": "How long will it take us to get there?", "load": "http://insightmaker.com/insight/6778"}
 # End Model
 
-Was the interaction of the population of Moose and Wolves what you expected? Probably not. It's the nature of a web of interactions over time that we simply can't see by looking at a picture. The behavior over time is often critical for a sense of what's really happening in the web.
+~ Exercise
+In the [Stop at Grandmas] variable change {0 miles} to {0 kilometers}. Does the model still work? Why?
+~ Answer
+The simulation engine in Insight Maker is smart enough to convert between the myriad of similar dimensions, e.g., miles, kilometers, feet, etc. Though it's recommended that you make conversions explicit otherwise models become very difficult to understand.
 
-The following "Sustaining the Forest"^[Sustaining the Forest Model [http://insightmaker.com/insight/8889](http://insightmaker.com/insight/8889)] ILE is provided as another example of how unexpected the behavior of a web of extended interactions can be.
+Insight Maker doesn't complain because you're still comparing distance to distance and it doesn't matter that they're in different scales simply because zero = zero in any scale. It's really better to keep your units in the same scale.
+~ End Exercise
+
+~ Exercise
+Seldom is there ever just one way to build a model. You build the model to help you understand something and you might do that in different ways. Even a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 4.5 and reducing it by walking. Go to Insight Maker and try to build one or two alternatives to this model.
+~ Answer
+One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as Red walks toward it. This way the model is tracking the distance traveled rather than the distance left to travel.
+~ End Exercise
+
+Hopefully the Going to Grandma's has reinforced the build a little, test a little approach for developing models. Hopefully the introduction to using units has provided a sense of why they can be so useful. Oh, and don't forget about putting notes in your models. Wiring diagrams without knowing what the pieces mean are generally not very useful.
+
+## Work Completion ##
+
+The "Work Completion Model"^["Work Completion Model [http://insightmaker.com/insight/6171](http://insightmaker.com/insight/6171)] model presents a situation where a number of workers are working a project and you want to know how long it is going to take them to finish.
 
 # Model
-{"title": "Sustaining the Forest", "description": "Is the forest you care about sustainable under current practices?", "load": "http://insightmaker.com/insight/8889"}
+{"title": "Work Completion Model", "description": "In this model [Workers] is not a factor but a limit on the amount of [work] that can be performed in a time period.", "load": "http://insightmaker.com/insight/6171"}
 # End Model
 
-Did you find it interesting how unexpected the future can be? Did you sense there was a good reason for things unfolding in the manner they did? As you continue you will develop a skill for understanding interactions in the web.
+Note that in this model you might have considered the \p{Workers} as a \p{Stock} as they are actually a collection. The reason they're not considered as a \p{Stock} in this model is that the number remains constant in the context of this particular model. In a different model \p{Workers} might actually be a \p{Stock} with an inflow and and outflow.
 
-## Creating the Future ##
+~ Exercise
 
-Yesterday's actions are responsible for the the world we experience today. And today's actions are responsible for the world that we will experience tomorrow. The "Creating the Future"^[Creating the Future [http://insightmaker.com/insight/8892](http://insightmaker.com/insight/8892)] ILE is intended to provide a better sense of the common process associated with the unexpected unfolding of the future.
+Set up the above model to run with Time Step of 0.5. Compare the results of this run with the results of the previous run above. By making the time step smaller have we improved the accuracy of result? Why?
+
+~ End Exercise
+
+Again the appropriate Time Step is one that captures the activity occurring within the model. In this case the Workers are in integers and Project Work in days, both of which are in integers, and with the Time Units in days the appropriate Time Step is 1. If there were events which happened in the model on the order of hours then you would have to decide whether to alter the model to run in hours or reduce the Time Step to ensure it was small enough so no interactions in the model were missed.
+
+## Filling a Swimming Pool ##
+
+Let us now venture into the realm of "Filling a Swimming Pool"^[Filling a Swimming Pool [http://insightmaker.com/insight/4990](http://insightmaker.com/insight/4990)] for a sizable swimming pool with water using a garden hose.
 
 # Model
-{"title": "Creating the Future", "description": "There is a meaning to it all.", "load": "http://insightmaker.com/insight/8892"}
+{"title": "Filling a Swimming Pool", "description": "The following model investigates filling a swimming pool as a stock.", "load": "http://insightmaker.com/insight/4990"}
 # End Model
 
-If this ILE presents a sense of what is essential if you want to address a situation without making things worse the question is how do you get better at doing this. How do you improve the chances of creating the future you're trying to create? All too often the world around us seems so complicated and so apparently difficult to pursue our dreams that we almost want to give up. The answer to complicated is to find the essence within the complicated allowing us to develop a web of understand. The next few sections will specifically address how we get better at this.
+This most again attempts to demonstrate that building a model is an iterative process where you build a little and test. And when things don't go the way you expect them to go it's an opportunity for learning.
 
-## Patterns in the Web ##
+It's also important to note that it's best not to bury variables inside other variables. Making them explicit in the diagram was was done with \p{Hose Capacity} makes it easier for others to see what the relevant influences are.
 
-What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever really thought about how you learn about the world around you? There are some things you memorize early in life, like the times tables. While you memorize these is that really learning? Do you remember that if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that the learning happened?
+## Rabbit Population ##
 
-The "Follow the Clues"^[Follow the Clues [http://insightmaker.com/insight/8893](http://insightmaker.com/insight/8893)] ILE is intended to provide an insight as to how you actually learn. We will also present a introduction as to how you can improve your learning and actually test whether what you have learned is actually correct.
+Remember the previous comment about seldom developing a model in the form it needs to be on the first try? Investigation of a simple "Rabbit Population"^[Rabbit Population Growth [http://insightmaker.com/insight/5123](http://insightmaker.com/insight/5123)] model can be most informative.
 
 # Model
-{"title": "Follow the clues", "description": "Does the order of the clues really matter?", "load": "http://insightmaker.com/insight/8893"}
+{"title": "Rabbit Population", "description": "This model that reflects the the notion that more rabbits create even more rabbits.", "load": "http://insightmaker.com/insight/5123"}
 # End Model
 
-You have most likely come to understand that all refrigerators are not identical. Some have one door with a separate compartment inside. Some have two doors and a drawer. Some are much smaller than others. Some can fit under a counter and some even fit on top of a counter. Some may be so large you can walk into them.
+As demonstrated in the unfolding of this model you should approach the development of a model as a learning experience. When things go wrong it's an opportunity for learning. You learn from the model and the model learns from you, and once the two of you learn enough it's probably a meaningful model.
 
-Even when you see different looking refrigerators you quickly decide it's a refrigerator. How does that happen? Gregory Bateson, one of the great thinkers of our time, said, “It’s the pattern that connects.” If you reflect on this statement you should come to realize there are actually different ways to interpret what it means. In this particular case the pattern connects you to the following purpose.
+## Savings Account ##
 
-- The box keeps food from readily spoiling by keeping it cold
-- Part of the box is a freezer which keeps food from spoiling for even longer
-
-And with this realization you understand it to be a refrigerator. Though now that we've arrived at this understanding we still haven't addressed the question of how you know. You were probably not actually taught that it's the above purpose that represents the essence of a refrigerator. Most people were not, though they have essentially learned it over time.
-
-Patterns in the web are the way we look at, and understand the world around us. All we have are our patterns. They are the way we understand everything. This is so because we build our understanding based on what we already understand. The world around us simply has too much detail for us to pay attention to everything. A refrigerator has many pieces, though how many do you really pay attention to? Probably not many, unless you build or repair refrigerators. We choose what to pay attention to in the world around us filtering out much of the detail so we don't become overloaded. Sometimes we do this consciously and sometimes we do it subconsciously through experience. In the midst of what we choose to pay attention to there are patterns. Whether we realize it or not it is these patterns that we pay attention to and attempt to make sense of. We understand these patterns by linking them to and extending patterns we already understand, while we ignore much of the detail around us.
-
-----------
-
-#### Pattern ####
-
-A pattern is a simplified version of some aspect of the world around us to help us understand something. You may often hear people refer to these patterns as models.
-
-----------
-
-## Learning ##
-
-When we experience something that experience falls somewhere between complete novelty, meaning that we can't connect it with anything in our past experience, and complete confirmation, meaning that it represents something we already believe we completely understand. Experiences which lie somewhere between complete novelty and complete confirmation provide a basis for learning. They represent a basis for connecting to understood patterns, extending those patterns and our understanding, and what results is learning [@Jantsch:1980tr].
-
-Consider running into a refrigerator that looks like no refrigerator you've ever seen before. From an initial view you are unlikely to perceive it as a refrigerator? As you inspect it and find it serves the purpose you've come to understand for refrigerators, or if someone tells you it's a refrigerator, you then expand or extend your awareness of the range of patterns that constitute a refrigerator. And as Bateson said, "It's the pattern that connects."
-
-## A Basis for Flawed Learning ##
-
-While reading the previous paragraphs did it dawn on you that much of this pattern recognition/connection/extension learning doesn't happen consciously? We connect with patterns and extend our knowledge at times without even being consciously aware that it is happening. And when this happens subconsciously there isn't really any critical validation that happens along with the learning. Because this ongoing learning happens without critical validation there are things we learn and come to believe which are actually incorrect. We may have perceived patterns and extended our learning in a flawed manner. The really annoying thing is that we then act on these beliefs, and when we produce results that don't go the way we planned we wonder why. Or even worse, we don't actually learn from the unexpected results and correct the flawed models which served as the basis for our flawed actions.
-
-When we act on flawed beliefs attempting to solve problems we typically create more problems. It has been said repeatedly that the majority of today's problems are the direct result of yesterday's solutions. Shouldn't this provide a sense that we might really benefit from a better way to think about the world around us, develop better understanding, and develop solutions that don't come back to haunt us in the future?
-
-## Simulation ##
-
-While patterns can help us understand the world around us we live in a dynamic ever changing world, where the only real constant is change. Simulations allow us to bring the patterns we build to life and get a sense of the implications of the relations over time. It has been said that we as humans have a very limited capacity to understand the implication of two or more dynamic relations over time. To help us develop our understanding in this area we simulate the patterns we develop. We expect you experienced this with the previous "Moose and Wolves" and "Sustainable Forest" models.
-
-----------
-
-#### Simulation ####
-
-A simulation is the dynamics manipulation of a pattern over time that allows us to understand how the web of extended relations unfolds over time. A simulation essentially does a time compression, or expansion, to allow us to get a sense of the implications of the relations over time, an experience that would otherwise be very difficult to get a sense of.
-
-----------
-
-## New Patterns - A Better Way ##
-
-Ludwig von Bertalanffy first proposed, in 1937, that the same basic structures operated across all disciplines, and if one learned how these structures operated one could transfer much of their learning from one discipline to another [@Davidson:1983uw]. When moving from one discipline to another, one would simply have to learn the structures that were operating, and the labels on the elements of the structures. On first reading this may seem most profound, or maybe even preposterous. However, if you think about it, maybe there is some truth to it after all.
-
-We're not asking you to simply believe the previous statement though this continued learning experience is expected to shortly reinforce the sensibility of the statement from your own perspective. The next three ILEs are intended to present a set of common properties considered to provide the essence of understanding.
-
-It is expected that "Essence Property # 1^[Essence Property # 1 [http://insightmaker.com/insight/4957](http://insightmaker.com/insight/4957)]" should provide a very different view of the world around you.
+Building and working with a model for a bank "Savings Account"^[Savings Account [http://insightmaker.com/insight/5887](http://insightmaker.com/insight/5887)] can also be most informative also.
 
 # Model
-{"title": "Essence Property # 1", "description": "Finding the common among the different.", "load": "http://insightmaker.com/insight/4957"}
+{"title": "Savings Account", "description": "How does a savings account really work?", "load": "http://insightmaker.com/insight/5887"}
+# End Model
+
+All of the pieces of the model are relevant and have an impact on the behavior of the model. As indicated a model tells a story, a story for which only pieces of can be found in the model. The model itself is more than just the sum of its parts.
+
+## Why Aren't We All Rich ##
+
+If one can put money in an investment account and it grows over time, and it grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years though for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs? "Why Aren't We All Rich?"^[Why Aren't We All Rich? [http://insightmaker.com/insight/6827](http://insightmaker.com/insight/6827)] investigates some of the reasons behind this.
+
+# Model
+{"title": "Why Aren't We All Rich?", "description": "", "load": "http://insightmaker.com/insight/6827"}
 # End Model
 
 ~ Exercise
 
-How each of the accumulations in the simulation changes is a bit different, as are the time frames of concern. Time frame being the time it takes for some noticeable change in the accumulation.
-
-Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that increase, or decrease, over time. What are the quantities for those stocks, e.g., gallons, pounds, kilograms, etc? What are the flows that increase or decrease those stocks? What are the time frames over which you think about the increase, or decrease of the stock?
+There is a logic flaw in this model which you might try to repair. The Penalty is not actually taken from the Investment Account but from the Withdrawal itself so it reduces the amount you actually get from the Withdrawal. Be warned that is might be a tricky fix.
 
 ~ End Exercise
 
-The ILE "Essence Property # 1" presented the concept of a stock which changes based on flows in and flows out. The manner in which the stock changes is independent of the stock itself. The ILE "Essence Property # 2"^[Essence Property # 2 [http://insightmaker.com/insight/4548](http://insightmaker.com/insight/4548)] will present an additional dimension to the previous structure.
+We now have a model which provides some incentives to start and continue to deposit in an Investment Account, and some disincentives toward the withdrawal of funds, though have we really addressed the initial situation posed? Not really. As far as starting the Investment Account and regularly depositing money, there are incentives, and for many these incentives were enough to get them to invest. For many the incentive, for one reason or another, has not been sufficient. And, any more strict incentives would likely be looked on unfavorably. People do not like to be manipulated, even when it is for their own benefit. The penalty for withdrawal is a deterrent in some respects though as the Investment Account continues to grow its attractiveness in terms of what it can purchase continues to entice. The best answer for this situation is to legally tie up the withdrawal process so it's only an option in the case of dire emergencies. Though as much as people find being manipulated by others distasteful, being controlled by themselves is just as distasteful.
+
+Is the model done? As usual, the answer is; "It Depends!" If it has provided sufficient understanding to address the situation posed then it is sufficient. If not then it should be taken further, though once it is sufficient you should STOP!
+
+----------
+
+### Modeling Tips ###
+
+Before you run a model you should develop a sense of the result you expect from the model at the current point in its development. Once you run the model you should be certain that is it performing as expected. When the result is not what you expect then either the structure is wrong, your assumptions are wrong, or you simply have an opportunity to further develop your understanding.
+
+You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict though after you add several elements to a model and it doesn't work and you spend hours trying to figure out why you may have a better appreciation for this guideline.
+
+Making all the elements of a model visible makes it much easier for others to understand it. This is why Months per Year and Initial Deposit were created as explicit variables rather than embedding the values inside other elements.
+
+And what's definitely worth repeating is that providing comments for all the elements of a model will also make it much easier for others to understand. All one need do is mouse over an element and click on the "i" that appears to read the comment.
+
+----------
+
+## Romeo and Juliet ##
+
+As an example that one really can simulate anything this model shows the implications of the dynamic implications of the love between "Romeo and Juliet".^[Romeo and Juliet [http://insightmaker.com/insight/759](http://insightmaker.com/insight/759)]
 
 # Model
-{"title": "Essence Property # 2", "description": "A simple change in structure can have a great impact on the result.", "load": "http://insightmaker.com/insight/4548"}
+{"title": "Romeo and Juliet", "description": "The implications of the relations between two people can be vary drastically.", "load": "http://insightmaker.com/insight/759"}
+# End Model
+
+We hope this model gave you a more comfortable feeling that it is possible to model very intangible things. You will find intangibles to be some of the most influential aspects of some of the models you will build in the future.
+
+## Climate Stabilization Task ##
+
+The "Climate Stabilization Task"^[Climate Stabilization Task [http://insightmaker.com/insight/9283](http://insightmaker.com/insight/9283)] model starts in 1900. In the year 2000 you get the chance to set a new emission target and nominal time to reach it. Your aim is to have atmospheric CO2 stabilise at about 400 ppmv in 2100.{cite: Sterman, John D. (2008)  Risk Communication on Climate:  Mental Models and Mass Balance.  Science 322 (24 October): 532-533}
+
+# Model
+{"title": "Climate Stabilization Task", "description": "Can you get the CO2 levels to stabilize?", "load": "http://insightmaker.com/insight/9283"}
 # End Model
 
 ~ Exercise
-
-As in the previous exercise take a few minutes and identify a number of situations you are familiar with which demonstrate exponential growth. What are the quantities for the stocks and flows in those situations? What are the time frames for the exponential growth? Why doesn't the growth continue forever?
-
+Did you notice in working with the model that if you took too long to reach the new emissions level you selected there was no way you could ever reach the 400 ppm target? What is it about the interactions that might responsible for that?
+~ Answer
+The difficulty arises because it takes time for a stock to change a flow and reducing the flow still adds to the result, just a bit slower.
 ~ End Exercise
 
-Exponential growth results from reinforcing feedback from a stock to a flow. The "Essense Property # 3"^[Common Property # 2 [http://insightmaker.com/insight/6120](http://insightmaker.com/insight/6120)] ILE will introduce a different perspective of feedback.
+## Maintaining Personnel Resources ##
+
+The "Maintaining Personnel Resources"^[Maintaining Personnel Resources [http://insightmaker.com/insight/162](http://insightmaker.com/insight/162)] simulation provides insights into a situation where an established policy for hiring new employees won't suffice in the face of other changes.
 
 # Model
-{"title": "Essence Property # 3", "description": "There is more than one type of feedback.", "load": "http://insightmaker.com/insight/6120"}
+{"title": "Maintaining Personnel Resources", "description": "Why things aren't where you think they are.", "load": "http://insightmaker.com/insight/162"}
 # End Model
 
-~ Exercise
+Any time there are delays in the relationships, which actually occurs any time there is a stock involved, our intuition is easily deceived into assuming we know the implications of the interactions. The Maintaining Personnel Resources model should have put that assumption to rest. The model serves again to point out that there are things we simply can't get a sense of from a picture and only a simulation will inform us to the extent necessary to understand the situation.
 
-As in the previous exercise take a few minutes and identify a number of situations you are familiar with which demonstrate goal seeking behavior. What are the quantities for the stocks and flows in those situations? What defines the goal for these situations? What governs the time frame over which the goal is achieved?
+## The Fix Overshoots the Goal ##
 
-~ End Exercise
+Have you ever pursued a goal and later found that you actually overshot the goal and had to back up to get back to the goal? The "Balancing Loop with Delay"^[Balancing Loop with Delay [http://insightmaker.com/insight/133](http://insightmaker.com/insight/133)] structure is a variation of the standard Balancing Loop. The variation being that there are one or more delays in the structure which are responsible for producing, as will be demonstrated, a very different behavior pattern than the standard Balancing Loop.
 
-A goal seeking structure pursues the goal in a manner which depends on balancing feedback. Every goal seeking structure has at least one balancing feedback and every balancing structure has a goal it is tending toward.
-
-## Three Structures ##
-
-You have now experienced the three structures, or models, which will combine in various ways to create every model you ever develop in the future. These three structures are the building blocks out of which everything else is created. No matter how complex or complicated the model may seem, it is simply some number of these three structures interacting. These three structures are presented together in the "Similar Structures / Different Behavior"^[Similar Structures / Different Behavior [http://insightmaker.com/insight/5138](http://insightmaker.com/insight/5138)] ILE so you can experience them together for reinforcement.
+If you look at the Balancing Loop with Delay structure it looks identical to the standard balancing loop with the exception of the delay near the reduces link. The implication is that it takes some amount of time after the current state changes before it is actually realized and figures into the calculation of the gap which influences the subsequent action. Essentially what's happening is that action is being based on old data and therefore is probably not the appropriate action. The implications of this will become evident when we look at the simulation for this structure.
 
 # Model
-{"title": "Similar Structures / Different Behavior", "description": "The behavior of a model depends its structure and the formulas that define the nature of the relationships.", "load": "http://insightmaker.com/insight/5138"}
+{"title": "Balancing Loop with Delay", "description": "Delay in a structure can make it almost impossible to intuit the implications of the interactions.", "load": "http://insightmaker.com/insight/133"}
 # End Model
 
-Hopefully you have become comfortable with the three structures presented as you will experience them over and over. If you're not comfortable please interact with the ILE until you are.
+You might ask how could it be that it might take 3.5 days for someone to get a sense of what the results of the previous actions were, which would be a good question. It's probably difficult to find a situation where this is realistic in days though what's important to realize is this structure could operate in this manner if the time units were hours, minutes, seconds or microseconds.
 
-## Three Types of Models ##
+## The Rain Barrel ##
 
-In previous sections you interacted with two different kinds of models qualitative models, i.e., no numbers, "Follow the Clues" and "Bird Feeder Dilemma" and quantitative models, with numbers, all the simulation models you ran. In the "Three Types of Models"^[Three Types of Models [http://insightmaker.com/insight/8932](http://insightmaker.com/insight/8932)] ILE we'll present two types of qualitative models, Rich Pictures and Causal Loop Diagrams, and more detail about quantitative Stock & Flow Simulation Models.
+A times even with some of the simplest models it's difficult to intuit what the behavior is likely to be. This should be rather evident from "The Rain Barrel"^[The Rain Barrel [http://insightmaker.com/insight/6770](http://insightmaker.com/insight/6770)] model developed by Richard Turnock.
 
 # Model
-{"title": "Three Types of Models", "description": "Though there are different types of models each may contribute to understanding is a particular way.", "load": "http://insightmaker.com/insight/8932"}
+{"title": "The Rain Barrel", "description": "Even simplicity can be deceptive.", "load": "http://insightmaker.com/insight/6770"}
 # End Model
 
-Which type of model you develop depends on what you're trying to understand and how you intend to use the model after you develop it. At times you may even use multiple types of models. You may use a rich picture to get an initial sense of the interactions, then develop a simulation model and finally use a causal loop diagram to present the insights identified to others. It's of critical importance to consider the audience.
+## Infinite Drinkers ##
 
-## Construction Process ##
-
-The "Model Construction Process"^[Model Construction Process [http://insightmaker.com/insight/184](http://insightmaker.com/insight/184)] ILE is intended to present the essence of all model development.
+The "Infinite Drinkers"^[Infinite Drinkers [http://insightmaker.com/insight/850](http://insightmaker.com/insight/850)] is a modeling attempt at humor. Hope you enjoy it.
 
 # Model
-{"title": "Model Construction Process", "description": "Regardless of the specific purpose the overall intent is always the same.", "load": "http://insightmaker.com/insight/184"}
+{"title": "Infinite Drinkers", "description": "How many beers does it take to serve an infinite number of drinkers?", "load": "http://insightmaker.com/insight/850"}
 # End Model
 
-It is hoped that this model reinforces the idea that models can cut through all the confusion and present the essence of a set of interactions to provide a consistent understanding. Can you see this essence in the models that have been developed to this point?
+You can build models to help understand almost any set of interactions and at times they can be really simple.
 
-## The Essence of AND? ##
+## Systems Archetypes ##
 
-Developing models is actually the easy part. What you should strive for is to develop models that advance your understanding and allow you to surface insights to better address situations around you. Evolving a model to surface insights can be a relatively straightforward and simple process which we hope is conveyed by the following "The Essence of AND?"^[Systems Thinking: The Essence of AND? [http://insightmaker.com/insight/3365](http://insightmaker.com/insight/3365)] ILE.
+There are a set of frequently recurring structures that have a very distinct structure and characteristic pattern of behavior. Understanding the manner in which the relations within these structures unfold can be very helpful in determining how to deal with situation. The "Systems Archetypes"^[Systems Archetypes [http://insightmaker.com/insight/538](http://insightmaker.com/insight/538)] model provides an initial introduction to these structures.
 
 # Model
-{"title": "Systems Thinking: The Essence of AND?", "description": "Continuing to seek out the relevant influences lies in asking a single question, AND?", "load": "http://insightmaker.com/insight/3365"}
+{"title": "Systems Archetypes", "description": "There is a typical unfolding relationship between the common recurring structures.", "load": "http://insightmaker.com/insight/538"}
 # End Model
 
-The process presented can be used with Rich Pictures or Causal Loop Diagrams as well as Stock & Flow Simulations. When developing Stock & Flow Simulations you also have to be certain that the model runs and produces a meaningful result. When developing a simulation you should never be more than a couple clicks away from a working model. You'll better understand this advice after you make a substantial number of changes to a working model, it then doesn't run, and you spend hours trying to figure out how you broke it. Do yourself a favor, think about what the changed should produce, run after every change and verify the model produces what you expect. It only takes a minute. And when the simulation doesn't produce what you expect it's not a problem, it's an opportunity for learning.
+Hopefully the relationships between the Systems Archetype has provided a lot of food for thought in terms of how connected things really are, and how there are very typical paths of evolution.
 
-## Modeling Guidelines ##
-
-There are a number of guidelines or rules of thumb that you will find helpful when developing a model. These are presented in the following "Modeling Guidelines"^[Modeling Guidelines [http://insightmaker.com/insight/1784](http://insightmaker.com/insight/1784)] ILE. The idea is to ensure that the model serves the purpose you started building it for. Some of these guidelines are only relevant to Stock & Flow simulations. Which they are should be quite obvious.
-
-# Model
-{"title": "Modeling Guidelines", "description": "Essential thoughts to guide you to building better more meaningful models.", "load": "http://insightmaker.com/insight/1784"}
-# End Model
-
-Remember that model development and the understanding that comes with it is an iterative process. It's almost impossible to create all the pieces as they should be the first time around. Look at it as do a little, learn a little, and repeat.
+In the next chapter we'll delve a bit deeper into some more involved models in a number of different disciplines.
 
 ## Summary ##
 
-- Models are simplified versions of the world around us.
-- Simulations are dynamic models that help us understand changes over time.
-- We build models to help us understand and learn.
-- We build simple models and add to them as we learn with them.
-- Building models and learning is an iterative process.
-- We learn as we go and seldom do we get models right the first time.
-- Linear, Reinforcing and Balancing structures are the basic building blocks for all models.
-- These building blocks can aid in understanding aspects of our interactions with the world around us.
-- Stock & Flow, Rich Picture, and Causal Loop models are only three of a very large array of possible modeling forms that exist. Use them to the extent that they serve you and when they don't find a form that does.
-- Use a modeling form that adequately serves your quest for understanding.
-- The Model Thinking Course by Scott E. Page presents a very extensive exposure to many types of models useful for understanding different aspects of the world around us.
-
-### Rich Pictures ###
-
-- Often easier for others to relate to and understand because of the images in the model.
-- No rules for creating them though remember that you need to tell a story.
-- Because you need to tell a story make the model as understandable as possible.
-
-### Causal Loop Diagrams ###
-
-- Specific Guidelines for how to depict the relationships between the elements.
-- Color coding relations is an alternative to the + and - notation, though be consistent.
-- Employing explicit stock representations often reduces misinterpretations.
-- Hybrid Rich Pictures/Causal Loop Diagrams are often the very meaningful.
-
-### Stock & Flow Simulations ###
-
-- The most explicit model form with well defined rules for construction that must be followed.
-- The dynamic nature allows you to compress time and distance to see the implications of relations.
-
-### Construction Process
-
-- Use a process that suits you and the purpose you're trying to achieve.
-
-### Guidelines ###
-
-- The guidelines are intended to help you develop better models.
-- Use the guidelines as a checklist.
-
-Please continue to the next chapter where you will learn more about working though the development of models.
+- **Intent**. Be sure you have a good idea of what you want the model to help you understand. This may evolve as you develop the model.
+- **Time Frame**. Ensure you have a sense of the time frame over which you intend to simulation the model. As you build the mode you may find you need to adjust your initial thought on this.
+- **Stocks & Flows**. Identify the Stocks & Flows first as they are key elements of the model.
+- **Use Units**. Units help to ensure your model is sound and Insight Maker will test for consistency of units. If the units are consistent it doesn't guarantee the model is sound though it does add a level of confidence.
+- **Variables & Links**. Add Variables & Links to influence the flows.
+- **Test Often**. Each time you make a logical addition to the model think about how you expect the model to behave then run the model and see if there is agreement with your expectation. If it isn't then it's an opportunity to learn and improve the model. And if it does agree you should still consider the output. It may be that your expectation and the model are both wrong.
+- **Time Step**. Test the Time Step to ensure it's small enough to capture all relevant transitions in the model.
+- **Stop at the End**. When the model serves the purpose for which you are developing it, STOP! There is always more thing you can add to a model, resist the urge. You should only include what is relevant to satisfy the initial intent. That said, there are times when we learn things during the development of a model which warrant modifying the initial intent. Just be sure you know just how you're doing that.
