@@ -1,14 +1,14 @@
 ## Preface ##
 
-We set out to develop an interactive ebook on modeling and simulation introducing Insight Maker. As it turned out, after a few months what had actually been developed was an interactive book on modeling and simulation introducing Insight Maker. What we realized, upon arriving at the goal, was that the world didn't need another book on modeling and simulation and it surely didn't need an Insight Maker users guide. And, glitzy technology couldn't turn what we had developed into what it needed to be. Though a glitzy technology oriented book on modeling and simulation that read like an Insight Maker users guide was just what we had created.
+We set out to develop an interactive ebook on modeling and simulation introducing Insight Maker. As it turned out, after a few months, what had actually been developed was an interactive book on modeling and simulation introducing Insight Maker. What we realized, upon arriving at the goal, was that the world didn't need another book on modeling and simulation and it surely didn't need an Insight Maker users guide. And, glitzy technology couldn't turn what we had developed into what it needed to be. Though a glitzy technology oriented book on modeling and simulation that read like an Insight Maker users guide was just what we had created.
 
-Fortunately for us a couple of our insightful and courageous sponsors were willing to tell us in no uncertain terms that the emperor had no clothes, and they were willing to repeat this until we got the message. So the reconstruction, along with a couple of intense positioning discussions ensued. During that exchange our thoughts migrated from thinking of the creation as a book, to thinking of it as an app, and finally as an Interactive Learning Environment (ILE), though not an ILE about modeling and simulation or about Insight Maker. The realization that emerged was that the ILE needed to present an approach for the user to better understand and deal with the world around them in a manner significantly better than they would have been able too before interacting with this ILE.
+Fortunately for us a few of our insightful and courageous sponsors were willing to tell us in no uncertain terms that the emperor had no clothes, and they were willing to repeat this until we got the message. So the reconstruction, along with a couple of intense positioning discussions ensued. During that exchange our thoughts migrated from thinking of the creation as a book, to thinking of it as an app, and finally as an Interactive Learning Environment (ILE), though not an ILE about modeling and simulation or about Insight Maker. The realization that emerged was that the ILE needed to present an approach for the user to better understand and deal with the world around them in a manner significantly better than they would have been able too before interacting with this ILE.
 
 With this awakening the label for this creation began to look something like "Systems Insights for Y/Our Future: An Interactive Learning Environment." Aren't you pleased we decided to name it something else? The August 30, 2013 beta release of Chapter 1 and Chapter 2 served as a good model for the direction of the first few chapters. And with this emphasis on interaction there was a question as to the sensibility of trying to create a physical copy of the ILE. There are valuable aspects of interaction that would be completely lost in a physical copy of the ILE. You can let us know whether our thoughts were appropriate after you experience this interactive learning environment.
 
-An additional realization is that the ILE is just that, an interactive learning environment. It is not a development environment. While one can construct models and simulations in the environment any serious development should be done in Insight Maker at InsightMaker.com. Additionally, there are critical functions that can be performed on a workstation for which there are no equivalent on a tablet or cell phone, e.g., mouseover, shift+click, ctrl+click, which are critical operations for some  aspects of development. Alternatives for these are presented in the Introduction.
+An additional realization was that the ILE is just that, an interactive learning environment. It is not a development environment. While one can construct models and simulations in the environment any serious development should be done in Insight Maker at [InsightMaker.com](http://insightmaker.com/). Additionally, there are critical functions that can be performed on a workstation for which there are no equivalent on a tablet or cell phone, e.g., mouseover, shift+click, ctrl+click, which are critical operations for some  aspects of development. Alternatives for these are presented in the Introduction.
 
-We sincerely hope that you find this effort meaningful and provides a basis for developing a more useful understanding of the world around you.
+We sincerely hope that you find this effort meaningful and provides you a basis for developing a more useful understanding of the world around you.
 
 ~~~~~
 November 13, 2013
@@ -23,13 +23,13 @@ In the first three chapters you will be presented with concepts and access to mo
 
 ![Figure 1. Accessing Models](00-intro-01.png)
 
-Once you open the model in storytelling mode read the text at the bottom of the screen and step through the story by clicking the **Step Forward** button at the bottom right. Once you're finished with the story click the **Close** tab at the top of the model to return to where you were in the text.
+Once you open the model in storytelling mode read the text at the bottom of the screen and step through the story by clicking the **Step Forward** button at the bottom right. Once you're finished with the model click the **Close** tab at the top of the model to return to where you were in the text.
 
 Some of the models simply tell a story by unfolding a model in pictures as you step through it.
 
 ![Figure 2. Display of a Model](00-intro-02.png)
 
-Some models will actually run simulations as you step though the model. 
+Some models will actually run simulations at certain steps as you step though the model. 
 
 ![Figure 3. Model Simulation Run](00-intro-03.png)
 
@@ -41,13 +41,13 @@ In some models you will be presented with the option to change parameters and th
 
 In this mode you can alter parameters and run simulations as many times as you like. Once you've looked at the simulation output you'll have to click the **red x** in the upper right corner of the graph to close it and get back to the model.
 
-If you click on an element of the model the **Configuration Panel** on the right shows all the attributes for the element you've selected. If you click anywhere on the background this panel will return to the variables control panel depicted in Figure 4.
+If you click on an element of the model the **Configuration Panel** on the right shows all the attributes for the element you've selected. If you click anywhere on the model background this panel will return to the variables control panel depicted in Figure 4.
 
 Notice in the upper right of the **Configuration Panel** there is a double caret symbol. If you click this it will close the panel and the double caret will reverse direction and look like it does in Figure 2.
 
-There are only two fields you really need to be interested in here so don't be overwhelmed by all the items. The first is the **Note** field and the second one in the **Configuration** section will have different names depending on which type of model element you select, though it should be obvious which field contains the formula defining the way that element behaves based on the other elements that are connected to it. Some of this isn't expected to make sense until you get through part of Chapter 1 though it's appropriate to have a sense of what to expect.
+There are only two fields you really need to be interested in here so don't be overwhelmed by all the items. The first is the **Note** field and the second one in the **Configuration** section will have different names depending on which type of model element you select. It should be obvious which field contains the formula defining the way that element behaves based on the other elements that are connected to it. Some of this isn't expected to make sense until you get through part of Chapter 1 though it's appropriate to have a sense of what to expect.
 
-If you click in either the **Note** field or the **Equation Field** (which will have different names) a downward arrow will appear in the right of the field. If you click this downward arrow it will open a window that allows you to read the notes or inspect the equation.
+If you click in either the **Note** field or the **Equation Field** (which will have different names) a downward arrow will appear in the right of the field. If you click this downward arrow it will open a window that allows you to read the notes or inspect the equation associated with that element.
 
 ![Figure 5. Configuration Panel with Flow Rate Clicked](00-intro-05.png)
 
