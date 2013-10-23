@@ -46,7 +46,7 @@ Yes, we're being very redundant though the message we're trying to convey is ess
 
 ## Managing Time in Time Management ##
 
-Often we are victims of our own beliefs and pursue approaches to deal with situations which are doomed to fail. Doomed to fail because the basis of our approach is flawed to begin with. The following "Managing Time in Time Management"[Managing Time in Time Management [http://insightmaker.com/insight/913](http://insightmaker.com/insight/913)] model is intended to demonstrate a very prominent example of this.
+Often we are victims of our own beliefs and pursue approaches to deal with situations which are doomed to fail. Doomed to fail because the basis of our approach is flawed to begin with. The following "Managing Time in Time Management"^[Managing Time in Time Management [http://insightmaker.com/insight/913](http://insightmaker.com/insight/913)] model is intended to demonstrate a very prominent example of this.
 
 # Model
 {"title": "Managing Time in Time Management", "description": "Should you be surprised if pursuing the wrong course of action doesn't produce the desired result?", "load": "http://insightmaker.com/insight/913"}
@@ -199,6 +199,8 @@ This common archetype of systems that include relapse or recidivism allows explo
 ## The Rain Barrel ##
 
 A times even with some of the simplest models it's difficult to intuit what the behavior is likely to be. This should be rather evident from "The Rain Barrel"^[The Rain Barrel [http://insightmaker.com/insight/6770](http://insightmaker.com/insight/6770)] model developed by Richard Turnock.
+
+The purpose of this model is to present the implications of inflow and outflow on a stock that are not likely to be intuitive. This generic model is an important pre-requisite to learning about intravenous drugs in the body, radioactivity, self-esteem, water flowing from a bathtub, climate change and many other basic natural systems.
 
 # Model
 {"title": "The Rain Barrel", "description": "Even simplicity can be deceptive.", "load": "http://insightmaker.com/insight/6770"}
