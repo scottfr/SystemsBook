@@ -19,11 +19,16 @@ Gene & Scott
 
 People tend to read books in different ways. With that in mind we've designed this ILE so all the essential concepts are presented in the first chapter. We recommend that you read Chapter 1 and interact with all the models presented. Chapter 2 and 3 provide examples which reinforce the concepts of Chapter 1 and are recommended though you can probably interact with them in any order you desire. The remainder of the chapters contain related modeling and simulation concepts that may be read in any desired order.
 
-In the first three chapters you will be presented with concepts and access to model as in the following figure. Clicking on the title of the model will open the model in a storytelling mode.
+In the first three chapters you will be presented with concepts and access to models as depicted in the following figure. 
 
 ![Figure 1. Accessing Models](00-intro-01.png)
 
-Once you open the model in storytelling mode read the text at the bottom of the screen and step through the story by clicking the **Step Forward** button at the bottom right. Once you're finished with the model click the **Close** tab at the top of the model to return to where you were in the text.
+- **Navigation** - Clicking to the right of center on the display will advance to the next page. Clicking to the left of center on the display will advance to the previous page.
+- **Table of Content** - Clicking on the title in the upper left corner will display a Table of Contents that you can scroll through and click on a particular section to go directly to that section.
+- **Navigation Slider** - Clicking on the title in the lower left corner will display a slider you can use to navigate directly to other sections of the content.
+- **Page Numbers** - The concept of page numbers isn't relevant in this context because you can size the display window altering the size of the virtual page.
+- **Text Size** - Clicking the "AA" in the upper right corner of the page can be used to toggle between two text sizes.
+- **Model Access** - Clicking on the title of the model will open the model in a storytelling mode. Once you open the model read the text at the bottom of the screen and step through the story by clicking the **Step Forward** button at the bottom right. Once you're finished with the model click the **Close** tab at the top of the model to return to where you were in the text.
 
 Some of the models simply tell a story by unfolding a model in pictures as you step through it.
 
