@@ -6,7 +6,7 @@ Fortunately a few of our insightful and courageous sponsors were willing to tell
 
 With this awakening we discussed titles like "Systems Insights for Y/Our Future: An Interactive Learning Environment". Aren't you pleased we decided to name it something else? The August 30, 2013 beta release of Chapter 1 and Chapter 2 served as a good model for the direction of the first few chapters. And with this emphasis on interaction we began to question the sensibility of trying to create a physical copy of the ILE. There are valuable aspects of interaction that would be completely lost in a physical copy of the ILE. After you experience this interactive learning environment you can let us know whether our thoughts were appropriate.
 
-We also discovered that the ILE is just that, an interactive learning environment. It is not a development environment. While one can construct models and simulations in the environment, any serious development should be done in Insight Maker at [InsightMaker.com](http://insightmaker.com/). Additionally, certain functions, e.g., mouseover, shift+click, ctrl+click are critical operations for some aspects of development can be performed on a workstation but not on a tablet or cell phone. Alternatives for these are presented in the Introduction.
+We also discovered that the ILE is just that, an ***interactive learning environment***. It is not a development environment. While one can construct models and simulations in the environment, any serious development should be done in Insight Maker at [InsightMaker.com](http://insightmaker.com/). Additionally, certain functions, e.g., mouseover, shift+click, ctrl+click are critical operations for some aspects of development can be performed on a workstation but not on a tablet or cell phone. Alternatives for these are presented in the Introduction.
 
 We sincerely hope that you find this effort meaningful and that it provides you with a basis for developing a more useful understanding of the world around you.
 
@@ -30,17 +30,17 @@ The first three chapters present concepts and access to models as depicted in Fi
 - **Text Size** - Click the "AA" in the upper right corner of the page to toggle between two text sizes.
 - **Model Access** - Click on the title of the model to open the model in a storytelling mode. Once you open the model, read the text at the bottom of the screen and step through the story by clicking the **Step Forward** button at the bottom right. Once you're finished with the model click the **Close** tab at the top of the model to return to where you were in the text.
 
-Some of the models simply tell a story by unfolding a model in pictures as you step through the model.
+Some of the models simply tell a story as in Figure 2 by unfolding a model in pictures as you step through the model.
 
 ![Figure 2. Display of a Model](00-intro-02.png)
 
-Some models will actually run simulations at certain steps as you step though the model. 
+Some models will actually run simulations at certain steps as you step though the model as depicted in Figure 3. 
 
 ![Figure 3. Model Simulation Run](00-intro-03.png)
 
 The storytelling mode will close the graph and continue when you click on **Step Forward**.
 
-In some models you will be given the option to change parameters and then run one or more simulations on your own. This is designed to help you become more familiar with the implications of the relationships in the model.
+In some models you will be given the option to change parameters and then run one or more simulations on your own and will appear as in Figure 4. This is designed to help you become more familiar with the implications of the relationships in the model.
 
 ![Figure 4. Running Simulations](00-intro-04.png)
 
@@ -50,9 +50,9 @@ If you click on an element of the model the **Configuration Panel** on the right
 
 Notice there is a double caret symbol in the upper right of the **Configuration Panel**. Click this to close the panel. The double caret will reverse direction and look like it does in Figure 2.
 
-Don't be overwhelmed by all of the items; there are only two fields you need to be concerned with here. The first is the **Note** field. The second is the **Configuration** section, which will have different names depending on which type of model element you select. Based on the other connected elements, it should be obvious which field contains the formula that defines the way that element behaves. Don't be discouraged if you feel a little lost at this point. Some of this won't make sense until you get through part of Chapter 1. Our objecive is to give you a sense of what to expect. 
+Don't be overwhelmed by all of the items; there are only two fields you need to be concerned with here. The first is the **Note** field. The second is in the **Configuration** section and will have different names depending on which type of model element you select. Based on the other connected elements, it should be obvious which field contains the formula that defines the way that element behaves. Don't be discouraged if you feel a little lost at this point. Some of this won't make sense until you get through part of Chapter 1. Our objective is to give you a sense of what to expect. 
 
-If you click in either the **Note** field or the **Equation Field** (which will have different names) a downward arrow will appear in the right of the field. If you click this downward arrow a window will open so that you can read the notes or inspect the equation associated with that element.
+If you click in either the **Note** field or the **Equation Field** (which will have different names for different elements) a downward arrow will appear in the right of the field. If you click this downward arrow a window will open so that you can read the notes or inspect the equation associated with that element.
 
 ![Figure 5. Configuration Panel with Flow Rate Clicked](00-intro-05.png)
 
@@ -80,6 +80,8 @@ Implications of this being an interactive learning environment rather than a dev
 - **Insight Maker Model Link**. For each model there is a footnote that contains a link to the actual source of the model in [InsightMaker.com](http://insightmaker.com/). There you may clone the model, creating a copy that you own. You can then interact with your copy of the model with all the features of Insight Maker.
 
 You can read and interact with this content without being connected to the Internet, though some of the models reference images on the Internet. If you're not connected to the Internet these will display as missing images with labels below them. You will also not be able to follow any of the embedded links unless you are connected to the Internet.
+
+Now that you've made it though the introduction you are ready to begin and enjoy your interactive learning journey.
 
 ### Additional Resources ###
 
