@@ -9,22 +9,22 @@
 
 Lewis Carroll - Alice in Wonderland
 ~~~
-We live in a world much like a giant spider web, where everything is connected to everything else. When something changes in one part of the web it ripples though the entire web. We tend to live in the moment, not realizing how our actions ripple over time through distant parts of the web. When we don't understand the web, things around us tend to seem extremely complicated, confusing and overwhelming. We feel caught in the web. What we need is a web of understanding for this web of extended interactions.
+We live in a world much like a giant spider web, where everything is connected to everything else. When something changes in one part of the web it ripples though the entire web. We tend to live in the moment, not realizing how our actions ripple over time through distant parts of the web. When we don't understand the web, things around us seem extremely complicated, confusing, and overwhelming. We feel caught in the web. What we need is a web of understanding for this web of extended interactions.
 
-It has been said that you can learn about riding a bicycle from reading a book, though to learn to ride a bicycle you actually have to spend time on a bicycle. The interactive learning environments (ILE) you're about to experience are intended to develop a web of understanding for the web of extended interactions around you. You are encouraged to engage with these ILEs. The understanding you develop will aid you in figuring out where you want to get to and develop skills which will improve your likelihood of getting there. These ILEs are very much like reading a book about riding a bicycle as you're actually on the bicycle learning to ride it. Enjoy the experience and the learning.
+It has been said that you can learn about riding a bicycle from reading a book, though to learn to ride a bicycle you actually have to spend time on a bicycle. The interactive learning environments (ILE) you're about to experience are intended to develop a web of understanding for the web of extended interactions around you. You are encouraged to engage with these ILEs. The understanding you develop will help you determine where you want to get to and develop skills to improve your chances of getting there. These ILEs are very much like reading a book about riding a bicycle as you're actually on the bicycle learning to ride it. Enjoy the experience and the learning.
 
 ## Experiencing the Web ##
 
-Because everything is related to everything else in the web of extended interactions seldom is it possible for an action to have only one effect.
-Please click on "Bird Feeder Dilemma"^[Bird Feeder Dilemma Model [http://insightmaker.com/insight/8872](http://insightmaker.com/insight/8872)] title and step through the following ILE for an initial sense of how a simple action can impact many things creating a web of extended relations.
+Because everything is related to everything else in the web of extended interactions, seldom is it possible for an action to have only one effect.
+Please click on "Bird Feeder Dilemma"^[Bird Feeder Dilemma Model [http://insightmaker.com/insight/8872](http://insightmaker.com/insight/8872)] title and step through the following ILE. This will give you an initial sense of how a simple action can impact many things, creating a web of extended relations.
 
 # Model
 {"title": "Bird Feeder Dilemma", "description": "All you wanted was a more pleasant morning at breakfast.", "load": "http://insightmaker.com/insight/8872"}
 # End Model
 
-Hopefully this gives you a sense of the difficulty one can get into when simply thinking about a single action taken to achieve a goal without considering the effects of that action. This web of relations provides a limited view as it's only a picture of relations, and probably not all of the possible relations. The picture doesn't give you any real sense of the quantity of anything over time.
+Do you get a sense of the troubles you can get into when you think about a single action taken to achieve a goal without considering the effects of that action? This web of relations provides a limited view, as it's only a picture of relations, and probably not all of the possible relations. The picture doesn't give you any real sense of the quantity of anything over time.
 
-The "Moose and Wolves"^[Moose and Wolves Model [http://insightmaker.com/insight/8590](http://insightmaker.com/insight/8590)] ILE should provide a sense of why it's important to understand how the web of extended interactions develops over time if we are to really develop a web of understanding.
+The "Moose and Wolves"^[Moose and Wolves Model [http://insightmaker.com/insight/8590](http://insightmaker.com/insight/8590)] ILE should show you why it's important to understand how the web of extended interactions develops over time if we are to really develop a web of understanding.
 
 # Model
 {"title": "Moose and Wolves", "description": "How do the populations of Moose and Wolves interact?", "load": "http://insightmaker.com/insight/8590"}
@@ -32,7 +32,7 @@ The "Moose and Wolves"^[Moose and Wolves Model [http://insightmaker.com/insight/
 
 Was the interaction of the population of Moose and Wolves what you expected? Probably not. It's the nature of a web of interactions over time that we simply can't see by looking at a picture. The behavior over time is often critical for an understanding of what's really happening in the web.
 
-The following "Sustaining the Forest"^[Sustaining the Forest Model [http://insightmaker.com/insight/8889](http://insightmaker.com/insight/8889)] ILE is intended to provide another example of how unexpected the behavior of a web of extended interactions can be.
+The following "Sustaining the Forest"^[Sustaining the Forest Model [http://insightmaker.com/insight/8889](http://insightmaker.com/insight/8889)] ILE provides another example of how unexpected the behavior of a web of extended interactions can be.
 
 # Model
 {"title": "Sustaining the Forest", "description": "Is the forest you care about sustainable under current practices?", "load": "http://insightmaker.com/insight/8889"}
@@ -48,13 +48,13 @@ Yesterday's actions are responsible for the the world we experience today. And t
 {"title": "Creating the Future", "description": "There is meaning to it all.", "load": "http://insightmaker.com/insight/8892"}
 # End Model
 
-If this ILE presents a sense of what is essential if you want to address a situation without making things worse, the question is how do you get better at doing this. How do you improve your chances of creating the future you're trying to create? All too often the world around us seems so complicated and so apparently difficult to pursue our dreams that we almost want to give up. The answer to complicated is to find the essence within the complicated allowing us to develop a web of understand. The next few sections will specifically address how we get better at this.
+If this ILE presents the elements essential to addressing a situation without making things worse, how do you get better at doing this? How do you improve your chances of creating the future you're trying to create? All too often the world around us seems so complicated. Pursuit of our dreams can be so apparently difficult that we almost want to give up. The answer is to find the essence within the complicated, allowing us to develop a web of understanding. The next few sections will specifically address how we get better at this.
 
 ## Patterns in the Web ##
 
-What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever really thought about how you learn about the world around you? There are some things you memorize early in life, like the times tables. While you memorize these is that really learning? Do you remember that, if you put your hand on something very hot it will burn you, or is that something you learned? And if you learned that, how was it that the learning happened?
+What you learn, and your capacity to learn, serves as a basis for everything you do in life. Yet, have you ever really thought about how you learn about the world around you? There are some things you memorize early in life, like the times tables. Is memorizing really learning? You know if you put your hand on something very hot it will burn you. Do you remember that, or did you learn it? And if you learned it, how did the learning happened?
 
-The "Follow the Clues"^[Follow the Clues [http://insightmaker.com/insight/8893](http://insightmaker.com/insight/8893)] ILE is intended to provide an insight as to how you actually learn. Later we will also present an introduction as to how you can improve your learning and actually test whether what you have learned is really correct.
+The "Follow the Clues"^[Follow the Clues [http://insightmaker.com/insight/8893](http://insightmaker.com/insight/8893)] ILE is intended to provide an insight as to how you actually learn. Later we will also introduce concepts on improving your learning, and actually test whether what you have learned is really correct.
 
 # Model
 {"title": "Follow the clues", "description": "Does the order of the clues really matter?", "load": "http://insightmaker.com/insight/8893"}
@@ -62,14 +62,14 @@ The "Follow the Clues"^[Follow the Clues [http://insightmaker.com/insight/8893](
 
 You have most likely come to understand that all refrigerators are not identical. Some have one door with a separate compartment inside. Some have two doors and a drawer. Some are much smaller than others. Some can fit under a counter and some even fit on top of a counter. Some may be so large you can walk into them.
 
-Even when you see different looking refrigerators you quickly decide it's a refrigerator. How does that happen? Gregory Bateson, one of the great thinkers of our time, said, “It’s the pattern that connects.” If you reflect on this statement you should come to realize there are actually different ways to interpret what it means. In this particular case the pattern connects you to the following purpose of a refrigerator.
+Even when you see different looking refrigerators you quickly decide it's a refrigerator. How does that happen? Gregory Bateson, one of the great thinkers of our time, said, “It’s the pattern that connects.” If you reflect on this statement you should come to realize there are actually different ways to interpret what it means. In this particular case the pattern connects you to the following purposes of a refrigerator.
 
 - The box keeps food from readily spoiling by keeping it cold
-- Part of the box is a freezer which keeps food from spoiling for even longer
+- Part of the box is a freezer that keeps food from spoiling for even longer
 
 And with this realization you understand it to be a refrigerator. Though now that we've arrived at this understanding we still haven't addressed the question of how you know. You were probably not actually taught that it's the above purpose that represents the essence of a refrigerator. Most people were not, though they have essentially learned it over time.
 
-Patterns in the web are the way we look at, and understand the world around us. All we have are our patterns. They are the way we understand everything. This is so because we build our understanding based on what we already understand. The world around us simply has too much detail for us to pay attention to everything. A refrigerator has many pieces, though how many do you really pay attention to? Probably not many, unless you build or repair refrigerators. We choose what to pay attention to in the world around us, filtering out much of the detail so we don't become overloaded. Sometimes we do this consciously and sometimes we do it subconsciously through experience. In the midst of what we choose to pay attention to there are patterns. Whether we realize it or not it is these patterns that we pay attention to and attempt to make sense of. We understand these patterns by linking them to, and extending, patterns we already understand, while we ignore much of the detail around us.
+Patterns in the web are the way we look at and understand the world around us. All we have are our patterns. They are the way we understand everything. This is so because we build our understanding based on what we already understand. The world around us simply has too much detail for us to pay attention to everything. A refrigerator has many pieces, though how many do you really pay attention to? Probably not many, unless you build or repair refrigerators. We choose what to pay attention to in the world around us, filtering out much of the detail so we don't become overloaded. Sometimes we do this consciously and sometimes we do it subconsciously through experience. In the midst of what we choose to pay attention to there are patterns. Whether we realize it or not, it is these patterns that we pay attention to and attempt to make sense of. We understand these patterns by linking them to, and extending, patterns we already understand, while we ignore much of the detail around us.
 
 ----------
 
