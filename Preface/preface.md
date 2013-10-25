@@ -72,7 +72,15 @@ Look closely at Figure 8. Notice an **= equal sign** and an **i** visible on the
 
 You can open the **Configuration Panel**, or use mouseover, to look at any element parameter at any time during the storytelling of a model.
 
-There are numerous exercises presented. In some cases we provide answers for your review; in others we simply present questions related to concepts for reflection. Reflecting with others can be very beneficial.
+There are numerous exercises presented as depicted in Figure 9. In some cases answers are provided for your review; others simply present questions related to concepts for reflection. Reflecting with others can be very beneficial.
+
+![Figure 9. Exercises](00-intro-09.png)
+
+If there is an **Answer Available** link and you click on it you will be taken to the "Exercise Answers" section as depicted in Figure 10.
+
+![Figure 10. Exercise Answers](00-intro-10.png)
+
+Once you review the answer if you click on the **Exercise n-n** link it will take you back to the question location.
 
 Implications of this being an interactive learning environment rather than a development environment are:
 
@@ -81,7 +89,7 @@ Implications of this being an interactive learning environment rather than a dev
 
 You can read and interact with this content without being connected to the Internet, though some of the models reference images on the Internet. If you're not connected to the Internet these will display as missing images with labels below them. You will also not be able to follow any of the embedded links unless you are connected to the Internet.
 
-Now that you've made it though the introduction you are ready to begin and enjoy your interactive learning journey.
+Now that you've made it though the introduction you are ready to begin enjoying your interactive learning journey.
 
 ### Additional Resources ###
 
