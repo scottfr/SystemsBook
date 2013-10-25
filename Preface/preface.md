@@ -93,7 +93,6 @@ Now that you've made it though the introduction you are ready to begin enjoying 
 
 ### Additional Resources ###
 
-- [Insight Maker](http://insightmaker.com/). The free web based modeling and simulation environment used to create all the models contained herein.
-- [The MARS Project](http://www.linkedin.com/groups/MARS-Project-5180568). A discussion group on LinkedIn dedicated to the development of understanding though the collaborative development of models.
 - [Systems Thinking World](http://www.linkedin.com/groups/Systems-Thinking-World-2639211). A more general Systems Thinking discussion group on LinkedIn.
 - [SystemsWiki.org](http://www.systemswiki.org/). A Wiki dedicated to Systems Thinking, Modeling and Simulation.
+- [LinkedIn Systems Groups](http://webbrain.com/u/1521). Links to the numerous Systems Thinking related discussion groups within LinkedIn.
