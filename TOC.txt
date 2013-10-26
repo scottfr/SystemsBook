@@ -10,5 +10,5 @@ Mathematics of Modeling 2
 Optimization and Complexity
 Agents
 Going Global
-End Matter
 Acknowledge
+End Matter

@@ -385,7 +385,7 @@ We have just put together a powerful site very quickly. Our site lets us share a
 </html>
 ````
 
-A working version of this site may be viewed at <http://BeyondConnectingTheDots.com/book/embedded-model/>. There is a lot more we could do with the site. Spend some time now experimenting with it. Add some more descriptive text, maybe add some images, and try to use CSS to adjust the styling.
+A working version of this site may be viewed at <http://BeyondConnectingTheDots.com/book/embedded-model.html>. There is a lot more we could do with the site. Spend some time now experimenting with it. Add some more descriptive text, maybe add some images, and try to use CSS to adjust the styling.
 
 ~ Exercise
 
@@ -575,7 +575,7 @@ window.addEventListener("message", scenarioComplete, false);
 
 ![Figure 2. Completed control panel.](control_panel.png)
 
-The code for the completed webpage is provided below and a working version of the page may viewed at <http://BeyondConnectingTheDots.com/book/control-panel/>.
+The code for the completed webpage is provided below and a working version of the page may viewed at <http://BeyondConnectingTheDots.com/book/control-panel.html>.
 
 ````html
 <html>

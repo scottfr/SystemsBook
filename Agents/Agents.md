@@ -641,13 +641,13 @@ The inner part of the loop is run three times here. The first time the variable 
 
 Another variant of the *for* loop is the *for-in* loop. This uses a vector to assign the values of the iterations. The following code sums the numbers 1, 5, and 10 to get a value of 16.
 
-\e{
+\e{{
 sum <- 0
 For i In {1, 5, 10}
 	sum <- sum + i
 End Loop
 sum
-}
+}}
 
 *For-in* loops can be very useful to iterate through a vector of agents. Another useful loop is called the *while* loop. It does not repeat a predefined number of times; it repeats until a condition becomes true. Here is an example:
 
