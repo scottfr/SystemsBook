@@ -212,7 +212,7 @@ Remember, model development and associated understanding is an iterative process
 - We build simple models and add to them as we learn with them.
 - Building models and learning is an iterative process.
 - We learn as we go and seldom do we get models right the first time.
-- Feedback Independent, Reinforcing and Balancing structures are the basic building blocks for all models.
+- Feedback Independent Growth, Exponential Growth (Reinforcing Feedback) and Goal Seeking (Balancing Feedback) structures are the basic building blocks for all models.
 - These building blocks can aid in understanding aspects of our interactions with the world around us.
 - Stock & Flow, Rich Picture, and Causal Loop models are only three of a very large array of possible modeling forms that exist. Use them to the extent that they serve you, and when they don't, find a form that does.
 - Use a modeling form that adequately serves your quest for understanding.
