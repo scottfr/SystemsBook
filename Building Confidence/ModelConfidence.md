@@ -142,7 +142,7 @@ A simple way to handle these fixed variable values would be to replace the varia
 
 # Model
 	
-{"title": "Sensitivity Testing"}
+{"title": "Sensitivity Testing", "description": "This model helps you explore the usage of sensitivity testing in practice."}
 	
 Let's illustrate usage of sensitivity testing with our rabbit example. First we will construct a simple exponential growth model.
 

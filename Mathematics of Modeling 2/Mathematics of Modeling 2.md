@@ -660,4 +660,4 @@ The second equilibrium is when the population size is equal to the carrying capa
 
 ## Summary
 
-In this chapter we have introduced equilibrium and stability analyses. These are advanced, very powerful techniques that can be used to draw definitive conclusions about the behavior of a system. These conclusions can supplement your simulation work to generate a comprehensive analysis of a dynamic system.
+In this chapter we have introduced equilibrium and stability analyses. These are powerful techniques that can be used to draw definitive conclusions about the behavior of a system. These conclusions can supplement your simulation work to generate a comprehensive analysis of a dynamic system.

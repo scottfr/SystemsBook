@@ -32,9 +32,9 @@ From this perspective, System Dynamics models and differential equation modeling
 
 System Dynamics Primitive | Differential Equation Equivalent
 ---|---
-Stock | State Variable ($X$, $Y$, etc...)
-Flow | Derivative ($dX/dt$, $dY/dt$, etc...)
-Variable | Constants/Parameters ($\alpha$, $\beta$, etc...)
+Stocks | State Variables ($X$, $Y$, etc...)
+Flows | Derivatives ($dX/dt$, $dY/dt$, etc...)
+Variables | Constants/Parameters ($\alpha$, $\beta$, etc...)
 
 Since they do not differ significantly from a mathematical standpoint, what separates these two approaches to modeling? Where System Dynamics and differential equation modeling differ is in their focus and philosophy. The primary goal for differential equation modelers is analytic tractability (in other words, how easy is it to mathematically manipulate and understand the model’s equations?). This analytic tractability allows these modelers to derive definite results and conclusions from the model's equations. System Dynamics modelers generally are less concerned about analytic tractability and are more comfortable with simulating the model and drawing conclusions from observed trajectories and numerical results.
 
