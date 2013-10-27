@@ -4,23 +4,23 @@ This chapter presents a number of models, offered primarily by Beyond Connecting
 
 ## Systemic Strategy ##
 
-As we think about the problems we face today it becomes readily evident that the majority of these problems are the direct result of yesterday’s solutions. If we desire to enable a better tomorrow, the foundation of that tomorrow must be the development of a viable approach for dealing with situations. We need an approach which actually addresses the situation while minimizing the likelihood of making the situation worse or creating new problems that will have to address in the future. The foundation of this approach, as with all real progress, is learning. The next two models present a basis for the requisite learning.
+As we think about the problems we face today it becomes readily evident that the majority of these problems are the direct result of yesterday’s solutions. If we desire to enable a better tomorrow, the foundation of that tomorrow must be the development of a viable approach for dealing with situations. We need an approach which actually addresses the situation while minimizing the likelihood of making the situation worse or creating new problems that will have to be addressed in the future. The foundation of this approach, as with all real progress, is learning. The next two models present a basis for the requisite learning.
 
 ### Background ###
 
-Over the years numerous new approaches to problem solving have been developed and promoted. Some of these were turned into fads and readily adopted by many. The fads were not well founded and in time proved not to deliver the expected results. When the expected results were not delivered the fads were discarded in favor of the next fad. As Michael McGill points out [@McGill:1991vv], the real difficulty lies in a flawed mental model under which both the promoters and the adopters operate. That flawed mental model being their belief that there should exist a quick fix.
+Over the years numerous new approaches to problem solving have been developed and promoted. Some of these were turned into fads and readily adopted by many. The fads were not well founded and in time proved not to deliver the expected results. When the expected results were not delivered the fads were discarded in favor of the next fad. As Michael McGill points out [@McGill:1991vv], the real difficulty lies in a flawed mental model under which both the promoters and the adopters operate. That flawed mental model being their belief that there can be a quick fix.
 
-In contrast, well grounded and proven approaches to problem solving have not been widely adopted. Those with flawed mental models consider the proven approaches to be too complicated or time consuming. The quest for the ever elusive quick fix condemns us to endlessly solving the new problems created by the quick fix. This is the type of result expected from operating with flawed mental models [@Senge:1994uw]. We must realize the quick fix is a mirage and invest the time to learn proven methods and create sound solutions.
+In contrast, well grounded and proven approaches to problem solving have not been widely adopted. Those with flawed mental models consider the proven approaches to be too complicated or time consuming. The quest for the ever elusive quick fix condemns us to endlessly solving the new problems created by the prior quick fixes. This is the type of result expected from operating with flawed mental models [@Senge:1994uw]. We must realize the quick fix is a myth and invest the time to learn proven methods and create sound solutions.
 
 ### Creating the Future ###
 
-Whether we’re considering a problem, a situation, an objective, or a desire, the underlying essence of the manner in which we proceed to deal with the situation is as presented in the following "Creating the Future"^[Creating the Future [http://insightmaker.com/insight/8892](http://insightmaker.com/insight/8892)].
+Whether we’re considering a problem, a situation, an objective, or a desire, the underlying essence of the manner in which we proceed to deal with the situation is as presented in the following "Creating the Future"^[Creating the Future [http://insightmaker.com/insight/8892](http://insightmaker.com/insight/8892)] model.
 
 # Model
 {"title": "Creating the Future", "description": "The intent is to solve problems without creating new ones.", "load": "http://insightmaker.com/insight/8892"}
 # End Model
 
-Whether we realize it or not this model can be applied to just about everything that happens in our lives. Even when we don’t consciously think about it the interactions depicted are operating. The extent to which people consciously think about these relations varies. Some people think about the implication of their actions and stop there. And some people think about the implications of implications of implications. They do this because they understand that things are highly interconnected and the implications are generally obvious and often difficult to foresee.
+Whether we realize it or not this model can be applied to just about everything that happens in our lives. Even when we don’t consciously think about it the interactions depicted are operating. The extent to which people consciously think about these relations varies. Some people think about the implication of their actions and stop there. And some people think about the implications of implications of implications. They do this because they understand that things are highly interconnected and the implications are generally not obvious and often difficult to foresee.
 
 ### Systemic Strategy ###
 
@@ -30,16 +30,16 @@ Given the realization that there is an underlying set of interactions as depicte
 {"title": "Systemic Strategy", "description": "Relevant pieces of the puzzle for real progress.", "load": "http://insightmaker.com/insight/1366"}
 # End Model
 
-"Systemic Strategy" represents an iterative unfolding of understanding intended to provide the basis for developing a strategy which, when implemented, is highly likely to address the situation of interest as intended, while minimizing the likelihood of unintended consequences or creating new problems. There is another Interactive Learning Environment in the works based on this model and will be titled, "Enabling a Better Tomorrow."
+"Systemic Strategy" represents an iterative unfolding of understanding intended to provide the basis for developing a strategy which, when implemented, is highly likely to address the situation of interest as intended, while minimizing the likelihood of unintended consequences or creating new problems. There is another Interactive Learning Environment in the works based on this model titled, "Enabling a Better Tomorrow."
 
 ## Victims of the System or Systems of the Victim ##
 
 American business is in its seventh decade of management fads. In some organizations the fads have worked, in most they have not, and in some they have even made matters worse. Many reasons have been advanced for the failure of fads, none of them quite complete. The fault lies not with the fads, but with our attempt to use them to change things for which we have insufficient understanding. 
 
-Experience has taught us well to react to events and to respond to patterns of behavior. Yet, there is a deeper level of understanding possible. An understanding on the level of structure. There are underlying structures responsible for the patterns of behavior and the events. Our lack of awareness of these structures often makes us the victim of them, even though many of the structures are of our own creation. The structures are not hidden, they are simply not obvious. We have never developed a way to see and understand them. Once we become aware of structures, know how to look for them, and understand them, they become readily apparent all around us. A "Home Heating System"^[Home Heating System [http://insightmaker.com/insight/910](http://insightmaker.com/insight/910)] will be used to demonstrate how easy it is to be caught in our own short shortsightedness. 
+Experience has taught us well to react to events and to respond to patterns of behavior. Yet, there is a deeper level of understanding possible. An understanding on the level of structure. There are underlying structures responsible for the patterns of behavior and the events. Our lack of awareness of these structures often makes us the victim of them, even though many of the structures are of our own creation. The structures are not hidden, they are simply not obvious. We have never developed a way to see and understand the structures we operate within. Once we become aware of structures, know how to look for them, and understand them, they become readily apparent all around us. A "Home Heating System"^[Home Heating System [http://insightmaker.com/insight/910](http://insightmaker.com/insight/910)] will be used to demonstrate how easy it is to be caught in our own short shortsightedness. 
 
 # Model
-{"title": "Home Heating System", "description": "How can an understanding of a home heating system improve our ability to deal with dilemmas.", "load": "http://insightmaker.com/insight/910"}
+{"title": "Home Heating System", "description": "How an understanding of a home heating system improve our ability to deal with dilemmas.", "load": "http://insightmaker.com/insight/910"}
 # End Model
 
 Yes, we're being very redundant though the message we're trying to convey is essential. Models are a critical component of developing understanding and we have to keep asking AND? And what else is happening here that's relevant and essential to include for the understanding we're trying to achieve.
@@ -54,7 +54,7 @@ Often we are victims of our own beliefs and pursue approaches to deal with situa
 
 This model hopefully provides an additional sense of the importance of soft variables in some models. Quite often soft variable are the real key to understanding what's really happening in the web of extended interactions.
 
-This model, like so many others, serves to point out how true Pogo really was. "We have met the enemy and he is us!"
+This model, like so many others, also serves to point out how true Pogo really was. "We have met the enemy and he is us!"
 
 ## Are There Limits ##
 
@@ -83,17 +83,17 @@ The previous model was an initial set of thoughts about the possible options for
 While the "Credit Never Happened: Relations" model may have provided additional perspectives on the relations that might be considered there is a limited understanding that one can derive from the picture. The "Credit Never Happened: Simulation"^[Credit Never Happened: Simulation [http://insightmaker.com/insight/9781](http://insightmaker.com/insight/9781)] is intended to investigate the dynamic implications of the relations considered relevant for this situation.
 
 # Model
-{"title": "Credit Never Happened: Simulation", "description": "This third model in the series provides a simulation to get a dynamic sense of the situation.", "load": "http://insightmaker.com/insight/9781"}
+{"title": "Credit Never Happened: Simulation", "description": "A dynamic simulation typically provides insights that one simply can't derive from a picture.", "load": "http://insightmaker.com/insight/9781"}
 # End Model
 
 The reality that we hope was surfaced in this model is that you can't get something for nothing. Everything has a cost associated with it. If you want things to get better you have to invest. Investing wisely is even better.
 
 ## Restaurant Covers ##
 
-Have you ever considered the dynamics associated with arriving at a restaurant, being seated, served, and then the seating being used by another party once you leave? The "Restaurant Covers"^[Restaurant Covers [http://insightmaker.com/insight/9784](http://insightmaker.com/insight/9784)] model, developed by Lise Inman and Keith Margerison, is intended to provide an introduction to those dynamics.
+Have you ever considered the dynamics associated with arriving at a restaurant, being seated, served, and then the seating being used by another party once you leave? The "Restaurant Covers"^[Restaurant Covers [http://insightmaker.com/insight/10000](http://insightmaker.com/insight/10000)] model, developed by Lise Inman and Keith Margerison, is intended to provide an introduction to those dynamics.
 
 # Model
-{"title": "Restaurant Covers", "description": "Serving customers at a restaurant can have significant variation.", "load": "http://insightmaker.com/insight/9784"}
+{"title": "Restaurant Covers", "description": "Serving customers at a restaurant can have substantial variation.", "load": "http://insightmaker.com/insight/10000"}
 # End Model
 
 ## Control Theory ##
@@ -134,9 +134,7 @@ Structure influences behavior and an often used definition of insanity is to con
 
 ## Swamping Insights ##
 
-This common archetype of systems that include relapse or recidivism allows exploration of the unintended effects of increasing upstream capacity and swamping downstream capacity. The increase in the relapse rate eventually returns to swamp upstream capacity as well.
-
-"Swamping Insights"^[Swamping Insights [http://insightmaker.com/insight/1769](http://insightmaker.com/insight/1769)]
+"Swamping Insights"^[Swamping Insights [http://insightmaker.com/insight/1769](http://insightmaker.com/insight/1769)] represents a common archetype of systems that include relapse or recidivism and allows exploration of the unintended effects of increasing upstream capacity and swamping downstream capacity. The increase in the relapse rate eventually returns to swamp upstream capacity as well.
 
 # Model
 {"title": "Swamping Insights", "description": "Enhancing one part of a process may ensure the whole process gets worse.", "load": "http://insightmaker.com/insight/1769"}
@@ -156,7 +154,7 @@ In those days, the classical discussion on the merits and returns on going to co
 
 A world full of blue chip employers seeking high school and college grads for many entry level jobs with training just does not exist as it once did. Unemployment at all time highs also has great social costs in crime, foreclosures, poverty and health. 
 
-Many college grads today find themselves up to their ears in debt and living in the basement working minimum wage jobs in retail and fast food. Some economists believe that student loan debt and the [SALLYMAE bubble is the next shoe to drop](http://blogs.reuters.com/great-debate/2013/03/07/student-loan-bubble-babble/). College grad starting salaries are at at all time lows while student loans are at all time highs. Employees change jobs every 2-3 years (often a victim of economic downturns) and hold seven careers in a 30-40 year work life. As retirement becomes out of reach for many, older employees are working longer if they can for all sorts of reasons, competing for the same few spots keeping wages depressed and blocking ports of entry for others.
+Many college grads today find themselves up to their ears in debt and living in the basement working minimum wage jobs in retail and fast food. Some economists believe that student loan debt and the [SALLYMAE bubble is the next shoe to drop](http://blogs.reuters.com/great-debate/2013/03/07/student-loan-bubble-babble/). College grad starting salaries are at all time lows while student loans are at all time highs. Employees change jobs every 2-3 years (often a victim of economic downturns) and hold seven careers in a 30-40 year work life. As retirement becomes out of reach for many, older employees are working longer if they can for all sorts of reasons, competing for the same few spots keeping wages depressed and blocking ports of entry for others.
 
 Want to be a doctor today you still have to get good grades, complete a BS degree, go to medical school and work through a residency. Climbing the ladder still works in some careers. But if ever there was a place for Strategic Thinking it is in how one starts, manages, builds, grows or extends one's Career.  We want to tease these issues in a short but engaging and appropriate way.
 
@@ -172,10 +170,10 @@ Career education partnerships becomes one possible cure for the profoundly disco
 
 The following three models were developed by Matt Sadinsky, CEO at [Prequalified Ready Employees for Power International](http://www.prepintl.com/).
 
-The "Traditional Career Model"^[Traditional Career Model [http://insightmaker.com/insight/8727](http://insightmaker.com/insight/8727)],  the first insight in the series is a simple, more traditional naive model of how education works, with an increased lifetime earnings from going to college.
+The "Traditional Career Model"^[Traditional Career Model [http://insightmaker.com/insight/8727](http://insightmaker.com/insight/8727)], the first insight in the series, is a simple, more traditional naive model of how education works, with an increased lifetime earnings from going to college.
 
 # Model
-{"title": "Traditional Career Model", "description": "Comparing the potential for No High School Education, High School Education and College Education earnings/savings potential", "load": "http://insightmaker.com/insight/8727"}
+{"title": "Traditional Career Model", "description": "Comparing the potential for No High School Education, High School Education and College Education earnings/savings potential.", "load": "http://insightmaker.com/insight/8727"}
 # End Model
 
 The "Loan Cost Model"^[Loan Cost Model [http://insightmaker.com/insight/8727](http://insightmaker.com/insight/8729)], the second insight in the series takes into account the potential cost of student loans in the case that the student does not manage to pass college or does not succeed in their career. 
@@ -204,7 +202,7 @@ The purpose of this model is to present the implications of inflow and outflow o
 
 ## New Learning Inhibited ##
 
-New Learning tends to reduce Outdated Thinking, Communicating & Learning though our Outdated Thinking, Communicating & Learning inhibits new learning. The question is then how do we break this cycle. 
+New Learning tends to reduce Outdated Thinking, Communicating & Learning though our Outdated Thinking, Communicating & Learning tends to inhibit new learning. The question is then how do we break this cycle. 
 "New Learning Inhibited"^[New Learning Inhibited [http://insightmaker.com/insight/7018](http://insightmaker.com/insight/7018)] is adopted from "An Introduction to Systems Thinking with STELLA" by Barry Richmond.
  
 # Model
@@ -213,17 +211,25 @@ New Learning tends to reduce Outdated Thinking, Communicating & Learning though 
 
 ## Innovation Diffusion ##
 
+The "Innovation Diffusion"^[Innovation Diffusion [http://insightmaker.com/insight/9818](http://insightmaker.com/insight/9818)] model provides an initial basis for understanding the dynamics associated with the rate at which new ideas and technology become known or adopted though cultures.
+
 # Model
-{"title": "Innovation Diffusion", "description": "", "load": "http://insightmaker.com/insight/9818"}
+{"title": "Innovation Diffusion", "description": "The relationship between Potential Adopter and Adopters is quite well defined.", "load": "http://insightmaker.com/insight/9818"}
 # End Model
+
+What we hope you find so amazing about dynamic models is that they allow you to create an explicit representation of what you think and then provide you with the implications of what you think. This provide a marvelous basis for learning to evolve what you think.
 
 ## Hospital Fixes that Fail ##
 
+The "Hospital Fixes that Fail"^[Hospital Fixes that Fail [http://insightmaker.com/insight/9826](http://insightmaker.com/insight/9826) model presents another example that often our best short-sighted attempts to do what seems to make sense produces results that are actually counterproductive in terms of what we really wanted to accomplish.
+
 # Model
-{"title": "", "description": "", "load": "http://insightmaker.com/insight/9826"}
+{"title": "Hospital Fixes that Fail", "description": "At times our best efforts defeat our intent.", "load": "http://insightmaker.com/insight/9826"}
 # End Model
 
-## World 2 Model ##
+## World2 Model ##
+
+The "World2 Model"^[World2 Model [http://insightmaker.com/insight/9812(http://insightmaker.com/insight/9812)] presents interactions between population, industrial growth, food production, and limits in the ecosystems on Earth. The World2 model was adopted by Geoff McDonnell from Mark Heffernan's ithink version. The World3 Limits to Growth Model was developed based on the earlier, simpler, version developed by Jay Forrester in his 1971 book World Dynamics.
 
 # Model
 {"title": "World 2 Model", "description": "Investigate the dynamics between capital investment, population, pollution and natural resources on the Earth", "load": "http://insightmaker.com/insight/9812"}
@@ -231,4 +237,4 @@ New Learning tends to reduce Outdated Thinking, Communicating & Learning though 
 
 ## Conclusion ##
 
-If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] it is essential we embrace learning and become far more adept at developing truly viable approaches for dealing with situations. Attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling which simply makes the situation worse or creates new problems that have to be dealt with. There are well defined proven approaches for developing each aspect of "Systemic Strategy: Enabling a Better Tomorrow"^[Systemic Strategy: Enabling a Better Tomorrow [http://insightmaker.com/insight/1366](http://insightmaker.com/insight/9077)] model presented at the beginning of this chapter. These can be explored in more detail in the videos associated with this model.
+If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] it is essential we embrace learning and become far more adept at developing truly viable approaches for dealing with situations. Attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling which simply makes the situation worse or creates new problems that have to be dealt with. There are well defined proven approaches for developing each aspect of the "Enabling a Better Tomorrow"^[Enabling a Better Tomorrow [http://insightmaker.com/insight/9077](http://insightmaker.com/insight/9077)] model which will be presented in the soon to be released Interactive Learning Environment by that title.
