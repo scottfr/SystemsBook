@@ -118,52 +118,52 @@ It's definitely worth repeating that providing comments for all the elements of 
 
 ## Romeo and Juliet ##
 
-As an example that one really can simulate anything this model shows the implications of the dynamic relationship of the love between "Romeo and Juliet".^[Romeo and Juliet [http://insightmaker.com/insight/9775](http://insightmaker.com/insight/9775)]
+This example shows that you really can simulate anything through modeling. This model shows the implications of the dynamic relationship of the love between "Romeo and Juliet".^[Romeo and Juliet [http://insightmaker.com/insight/9775](http://insightmaker.com/insight/9775)]
 
 # Model
-{"title": "Romeo and Juliet", "description": "The implications of the relations between two people can be vary drastically.", "load": "http://insightmaker.com/insight/9775"}
+{"title": "Romeo and Juliet", "description": "The implications of the relations between two people can vary drastically.", "load": "http://insightmaker.com/insight/9775"}
 # End Model
 
 We hope this model gave you a more comfortable feeling that it is possible to model very intangible things. You will find intangibles to be some of the most influential aspects of some of the models you develop. Don't shy away from them.
 
 ## Climate Stabilization Task ##
 
-The "Climate Stabilization Task"^[Climate Stabilization Task [http://insightmaker.com/insight/9283](http://insightmaker.com/insight/9283)] model starts in 1900. In the year 2000 you get the chance to set a new emission target and nominal time to reach it. Your aim is to have atmospheric CO2 stabilize at about 400 ppmv in 2100 [@Sterman:2008bq].
+The "Climate Stabilization Task"^[Climate Stabilization Task [http://insightmaker.com/insight/9283](http://insightmaker.com/insight/9283)] model starts in 1900. In the year 2000 you get the chance to set a new emission target and a nominal time to reach it. Your aim is to have atmospheric CO2 stabilize at about 400 ppmv in 2100 [@Sterman:2008bq].
 
 # Model
 {"title": "Climate Stabilization Task", "description": "Can you get the CO2 levels to stabilize?", "load": "http://insightmaker.com/insight/9283"}
 # End Model
 
 ~ Exercise
-Did you notice in working with the model that if you took too long to reach the new emissions level you selected there was no way you could ever reach the 400 ppm target? What is it about the interactions that might responsible for that?
+In working with the model did you notice that if you took too long to reach the new emissions level you selected, there was no way you could ever reach the 400 ppm target? What is it about the interactions that might be responsible?
 ~ Answer
-The difficulty arises because it takes time for a flow to change a stock and for that flow to change a flow even longer. Its important to remember that reducing a flow still adds to the stock, just a bit slower.
+It takes time for a flow to change a stock and even longer for that flow to change a flow. It's important to remember that reducing a flow still adds to the stock, just a bit slower.
 ~ End Exercise
 
 ## Maintaining Personnel Resources ##
 
-It is often the case that when things are going just the way we want them to we tend to stop paying attention to them. Experience has been telling us for a long time this is not a good idea. Are we learning from the experience? The "Maintaining Personnel Resources"^[Maintaining Personnel Resources [http://insightmaker.com/insight/162](http://insightmaker.com/insight/162)] simulation provides insights into a situation where an established policy for hiring new employees won't suffice in the face of other changes.
+When things are going just the way we want them to we tend to stop paying attention to them. Experience has been telling us for a long time this is not a good idea. Are we learning from the experience? The "Maintaining Personnel Resources"^[Maintaining Personnel Resources [http://insightmaker.com/insight/162](http://insightmaker.com/insight/162)] simulation provides insights into a situation where an established policy for hiring new employees won't suffice in the face of other changes.
 
 # Model
 {"title": "Maintaining Personnel Resources", "description": "Why things aren't where you think they are.", "load": "http://insightmaker.com/insight/162"}
 # End Model
 
-Any time there are delays in the relationships, which actually occurs any time there is a stock involved, our intuition is easily deceived into assuming we know the implications of the interactions. The Maintaining Personnel Resources model should have put that assumption to rest. The model serves again to point out that there are things we simply can't get a sense of from a picture and only a simulation will inform us to the extent necessary to understand the situation.
+Any time there are delays in the relationships (which actually occurs any time there is a stock involved), we are easily deceived into believing that we know the implications of the interactions. The Maintaining Personnel Resources model should have put that assumption to rest. The model serves again to point out that there are things we simply can't get a sense of from a picture. Only a simulation will inform us to the extent necessary to understand the situation.
 
 ## The Fix Overshoots the Goal ##
 
-Have you ever pursued a goal and found that you actually overshot the goal and had to back up to get back to the goal? The "Balancing Loop with Delay"^[Balancing Loop with Delay [http://insightmaker.com/insight/133](http://insightmaker.com/insight/133)] model is a variation of the standard Balancing Loop. The variation being that there are one or more delays in the structure which are responsible for producing, as will be demonstrated, a very different behavior pattern than the standard Balancing Loop.
+In pursuing a goal have you ever overshot it and had to back up to get to the goal? The "Balancing Loop with Delay"^[Balancing Loop with Delay [http://insightmaker.com/insight/133](http://insightmaker.com/insight/133)] model is a variation of the standard Balancing Loop. The variation is there are one or more delays in the structure that produce (as will be demonstrated) a very different behavior pattern than the standard Balancing Loop.
 
 # Model
 {"title": "Balancing Loop with Delay", "description": "Delay in a structure can make it almost impossible to intuit the implications of the interactions.", "load": "http://insightmaker.com/insight/133"}
 # End Model
 
-You might ask how could it be that it might take 4 days for someone to get a sense of what the results of the previous actions were, and that would be a good question. It's probably difficult to find a situation where this is realistic in days though what's important to realize is this structure operates in this manner whether the time units are hours, minutes, seconds or microseconds.
+You might ask how it could take 4 days for someone to understand the results of the previous actions. That would be a good question. It's probably difficult to find a situation where this is realistic in days. What's important to realize is that this structure operates in this manner whether the time units are hours, minutes, seconds, or microseconds.
 
 ~ Exercise
-How should one deal with the delay in this structure so effort doesn't have to be expended to correct the situation after the goal is exceeded?
+How could you deal with the delay in this structure to avoid efforts to correct the situation after the goal is exceeded?
 ~ Answer
-There are actually two approaches, 1) Figure out how to shorten the delay; 2) Slow down the action and wait for the feedback before further action. There are times when these approaches may be applied and then there are times due to the nature of the situation when you simply need to act and then deal with the effects later.
+There are actually two approaches: 1) Figure out how to shorten the delay; or 2) Slow down the action and wait for the feedback before further action. There are times when these approaches may be applied. Due to the nature of the situation there are other times when you simply need to act and then deal with the effects later. 
 ~ End Exercise
 
 ## Infinite Drinkers ##
@@ -174,27 +174,27 @@ The "Infinite Drinkers"^[Infinite Drinkers [http://insightmaker.com/insight/9776
 {"title": "Infinite Drinkers", "description": "How many beers does it take to serve an infinite number of drinkers?", "load": "http://insightmaker.com/insight/9776"}
 # End Model
 
-You can build models to help understand almost any set of interactions and at times they can be really simple. Often the most amazing insights arise from what appears to be very simple models. The more complex the model the more likely insights are apt to get lost in the detail.
+You can build models to help understand almost any set of interactions. At times they can be really simple. Often the most amazing insights arise from what appear to be very simple models. The more complex the model, the more likely insights are to get lost in the detail.
 
 ## Frequently Recurring Structures ##
 
-There are a set of frequently recurring structures that have a very distinct structure and characteristic pattern of behavior. Understanding the manner in which the relations within these structures unfold can be very helpful in determining how to deal with situations. The "Frequently Recurring Structures"^[Frequently Recurring Structures [http://insightmaker.com/insight/538](http://insightmaker.com/insight/538)] model provides an initial introduction to these structures.
+There is a set of frequently recurring structures that have a very distinct structure and characteristic pattern of behavior. Understanding the manner in which the relations within these structures unfold can be very helpful in determining how to deal with situations. The "Frequently Recurring Structures"^[Frequently Recurring Structures [http://insightmaker.com/insight/538](http://insightmaker.com/insight/538)] model provides an initial introduction to these structures.
 
 # Model
 {"title": "Frequently Recurring Structures", "description": "There is a typical unfolding relationship between the common recurring structures.", "load": "http://insightmaker.com/insight/538"}
 # End Model
 
-Hopefully the relationships between these frequently recurring structures has provided a lot of food for thought in terms of how connected things really are, and how there are very typical paths of evolution. There is another Interactive Learning Environment under development dedicated to understanding and working with these frequently recurring structures.
+Hopefully the relationships between these frequently recurring structures has provided food for thought in terms of how connected things really are, and how there are very typical paths of evolution. There is another Interactive Learning Environment under development dedicated to understanding and working with these frequently recurring structures.
 
 In the next chapter we'll delve a bit deeper into some more involved models in a number of different disciplines.
 
 ## Summary ##
 
 - **Intent**. Be sure you have a good idea of what you want the model to help you understand. This idea may evolve as you develop the model.
-- **Time Frame**. Ensure you have a sense of the time frame over which you intend to simulate the model. As you build the mode you may find you need to adjust your initial thought on this.
-- **Stocks & Flows**. Identify the Stocks & Flows first as they are key elements of the model.
-- **Use Units**. Units help to ensure your model is sound and Insight Maker will test for consistency of units. If the units are consistent it doesn't guarantee the model is sound though it does add a level of confidence.
+- **Time Frame**. Ensure you have a sense of the time frame over which you intend the model to simulate. As you build the model you may find you need to adjust your initial thought on this.
+- **Stocks & Flows**. Identify the Stocks & Flows first, as they are key elements of the model.
+- **Use Units**. Units help to ensure your model is sound. Insight Maker will test for consistency of units. If the units are consistent the model is not guaranteed to be sound, though this adds a level of confidence.
 - **Variables & Links**. Add Variables & Links to influence the flows.
-- **Test Often**. Each time you make a logical addition to the model think about how you expect the model to behave, then run the model and see if there is agreement with your expectation. If there isn't then it's an opportunity to learn and improve the model. And if it does agree you should still consider the output. It may be that your expectation and the model are both wrong.
+- **Test Often**. Each time you make a logical addition to the model think about how you expect the model to behave. Run the model and see if there is agreement with your expectation. If there isn't then it's an opportunity to learn and improve the model. And if it does agree you should still consider the output. It may be that your expectation and the model are both wrong.
 - **Time Step**. Test the Time Step to ensure it's small enough to capture all relevant transitions in the model.
-- **Stop at the End**. When the model serves the purpose for which you are developing it, STOP! There is always one more thing you can add to a model, resist the urge. You should only include what is relevant to satisfy the initial intent. That said, there are times when we learn things during the development of a model which warrant modifying the initial intent. Just be sure you know the manner in which you're doing that.
+- **Stop at the End**. When the model serves the purpose for which you are developing it, STOP! There is always one more thing you can add to a model; resist the urge. You should only include what is relevant to satisfy the initial intent. That said, there are times when we learn things during the development of a model that warrant modifying the initial intent. Just be sure you know the manner in which you're doing that.
