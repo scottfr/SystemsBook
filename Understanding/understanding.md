@@ -1,58 +1,58 @@
 # Developing Understanding
 
-This chapter will present a number of models to demonstrate the development process, various aspects of the model development guidelines and acquaint you with a few additional relevant aspects of simulation models in Insight Maker.
+In this chapter we will present a number of models to demonstrate the development process, discuss various aspects of the model development guidelines, and acquaint you with additional relevant aspects of simulation models in Insight Maker.
 
 ## The Boy Who Cried Wolf ##
 
-All stories are actually models expressed in words rather than diagrams. All of the interactions in a story can be expressed in the form of a model which allows one to get an overview of the main interactions in a single picture. "The Boy Who Cried Wolf"^[The Boy Who Cried Wolf [http://insightmaker.com/insight/7103](http://insightmaker.com/insight/7103)] will unfold a model as a story and show the difference between a Rich Picture and a Causal Loop Diagram for the same story.
+All stories are actually models expressed in words rather than diagrams. All of the interactions in a story can be expressed in the form of a model, which provides an overview of the main interactions in a single picture. "The Boy Who Cried Wolf"^[The Boy Who Cried Wolf [http://insightmaker.com/insight/7103](http://insightmaker.com/insight/7103)] will unfold a model as a story and show the difference between a Rich Picture and a Causal Loop Diagram for the same story.
 
 # Model
 {"title": "The Boy Who Cried Wolf", "description": "Telling a story as you unfold a model.", "load": "http://insightmaker.com/insight/7103"}
 # End Model
 
-Just as all stories are models, you should attempt to ensure that all models you develop actually tell a story. Telling stories makes it easier to communicate the insights surfaced in the model to others and stories are much easier to remember than bits and pieces of data.
+Just as all stories are models, you should ensure that models you develop actually tell a story. Telling stories makes it easier to communicate to others the insights surfaced in the model, and stories are much easier to remember than bits and pieces of data.
 
 ## Walking to Grandma's {#RedModel}
 
-When you develop a model remember that it's a learning process so don't expect that you'll get everything to turn out the way it should the first time around. Remember to think of it as an iterative learning process where every time something doesn't go the way you expect it's not an error, it's an opportunity for learning.
+When you develop a model remember that it's a learning process, so don't expect everything to turn out the way it should the first time around. Remember to think of it as an iterative learning process. When something doesn't go the way you expected, don't think of it as error; it's an opportunity for learning. 
 
-"Walking to Grandma's"^[Walking to Grandma's [http://insightmaker.com/insight/6778](http://insightmaker.com/insight/6778)] is a simple example of a question that might be answered with a model. And yes, it is quite obvious you could just do the math, though would you get any better at building models if you did? Also this model will introduce the idea of Units which are used to help ensure the soundness of your model. Insight Maker checks Units to ensure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.
+"Walking to Grandma's"^[Walking to Grandma's [http://insightmaker.com/insight/6778](http://insightmaker.com/insight/6778)] is a simple example of a question that might be answered with a model. And yes, obviously you could just do the math, but would you get better at building models if you did? This model also introduces the idea of Units, which are used to help ensure the soundness of your model. Insight Maker checks Units to make sure you're not trying to perform invalid arithmetic, such as adding 3 apples and 4 bananas.
 
 # Model
 {"title": "Walking to Grandma's", "description": "How long will it take us to get there?", "load": "http://insightmaker.com/insight/6778"}
 # End Model
 
 ~ Exercise
-In the [**Stop at Grandmas**] variable change {0 miles} to {0 kilometers}. Does the model still work? Why?
+In the [**Stop at Grandmas**] variable change {0 miles} to {0 kilometers} does the model still work? Why?
 ~ Answer
-Insight Maker doesn't complain because the simulation engine in Insight Maker is smart enough to convert between the myriad of similar dimensions, e.g., miles, kilometers, feet, etc. Though it's recommended that you make conversions explicit otherwise models become very difficult to understand.
+Insight Maker doesn't complain because its simulation engine is smart enough to convert the myriad of similar dimensions, e.g., miles, kilometers, feet, etc. However, it's best to make conversions explicit, otherwise models become very difficult to understand.
 ~ End Exercise
 
-Seldom is there ever just one way to build a model. You build the model to help you understand something and you might do that in different ways. Even a model as simple as Going to Grandma's can be structured in several different ways other than starting with a stock of 4.5 and reducing it by walking.
+Seldom is there ever just one way to build a model. You build the model to help you understand something and you might do that in different ways. Even a model as simple as Going to Grandma's can be structured in several ways other than starting with a stock of 4.5 and reducing it by walking.
 
 ~ Exercise
 Go to Insight Maker and try to build one or two alternatives to this model.
 ~ Answer
-One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as Red walks toward it. This way the model is tracking the distance traveled rather than the distance left to travel.
+One alternative would be to start with Distance to Grandmas House = 0 and add to the stock as Red walks toward it. This way the model is tracking the distance traveled rather than the distance remaining.
 ~ End Exercise
 
-Hopefully the Going to Grandma's has reinforced the build a little, test a little approach for developing models. The introduction to using units should have provided a sense of why they can be so useful. Oh, and don't forget about putting notes in your models. Wiring diagrams without knowing what the pieces mean are generally not very useful.
+Hopefully Going to Grandma's has reinforced the 'build a little, test a little' approach for developing models. The introduction to using units should have provided a sense of why they can be so useful. Oh, and don't forget about putting notes in your models. Wiring diagrams without a description of the pieces are generally not very useful.
 
 ## Work Completion ##
 
-The "Work Completion Model"^["Work Completion Model [http://insightmaker.com/insight/6171](http://insightmaker.com/insight/6171)] model presents a situation where a number of workers are working a project and you want to know how long it is going to take them to finish.
+In the "Work Completion Model"^["Work Completion Model [http://insightmaker.com/insight/6171](http://insightmaker.com/insight/6171)] model a number of workers are working on a project. You want to know how long it will take them to finish. 
 
 # Model
-{"title": "Work Completion Model", "description": "In this model Workers is not a factor but a limit on the amount of work that can be performed in a time period.", "load": "http://insightmaker.com/insight/6171"}
+{"title": "Work Completion Model", "description": "In this model Workers is not a factor, but a limit on the amount of work that can be performed in a time period.", "load": "http://insightmaker.com/insight/6171"}
 # End Model
 
-Note that in this model you might have considered the Workers as a stock as they are actually a collection. The reason they're not considered as a stock is that the number remains constant in the context of this particular model. In a different model workers might actually be a stock with an inflow and and outflow.
+Note that in this model you might have considered the Workers as a stock, as they are actually a collection. They're not, because the number remains constant in the context of this particular model. In a different model Workers might actually be a stock with an inflow and an outflow.
 
 ~ Exercise
 Set up the above model to run with Time Step of 0.25. Compare the results of this run with the results of the previous run above. By making the time step smaller have we improved the accuracy of result? Why?
 ~ End Exercise
 
-The appropriate Time Step is one that captures the activity occurring within the model. In this case the Workers are in integers and Project Work in days, both of which are in integers, and with the Time Units in days the appropriate Time Step would seem to be 1. Though as it turns out the appropriate Time Step is 0.5. If there were events which happened in the model on the order of hours then you would have to decide whether to alter the model to run in hours or reduce the Time Step to ensure it was small enough so no interactions in the model were missed.
+The appropriate Time Step is one that captures the activity occurring within the model. In this model the Workers are in integers and Project Work is in days. Since these are both integers, and the Time Units are measured in days, it might seem the appropriate Time Step is 1. As it turns out, the appropriate Time Step is 0.5. If the model included events that took place on the order of hours, you would have to decide whether to alter the model to run in hours or reduce the Time Step. You would have to make one of these changes to ensure that no interactions in the model were missed.    
 
 ## Filling a Swimming Pool ##
 
@@ -62,44 +62,44 @@ Let us now venture into the realm of "Filling a Swimming Pool"^[Filling a Swimmi
 {"title": "Filling a Swimming Pool", "description": "The following model investigates filling a swimming pool as a stock.", "load": "http://insightmaker.com/insight/4990"}
 # End Model
 
-This model again attempts to demonstrate that building a model is an iterative process where you build a little and test. And when things don't go the way you expect them to go it's an opportunity for learning.
+This model again demonstrates that building a model is an iterative process where you build a little and test. And when things don't go the way you expect them to go it's an opportunity for learning.
 
-It's also important to note that it's best not to bury variables inside other variables. Making them explicit in the diagram, as was done with **Hose Capacity**, makes it easier for others to see what the relevant influences are.
+It's also important to note that it's best not to bury variables inside other variables. Making them explicit in the diagram, as was done with **Hose Capacity**, makes it easier for others to see the relevant influences.
 
 ## Rabbit Population ##
 
 Remember the previous comment about seldom developing a model in the form it needs to be on the first try? Investigation of a simple "Rabbit Population"^[Rabbit Population Growth [http://insightmaker.com/insight/5123](http://insightmaker.com/insight/5123)] model should be most informative.
 
 # Model
-{"title": "Rabbit Population", "description": "This model reflects the the notion that more rabbits create even more rabbits.", "load": "http://insightmaker.com/insight/5123"}
+{"title": "Rabbit Population", "description": "This model reflects the notion that more rabbits create even more rabbits.", "load": "http://insightmaker.com/insight/5123"}
 # End Model
 
-As demonstrated in the unfolding of this model you should approach the development of a model as a learning experience. When things go wrong it's an opportunity for learning. You learn from the model and the model learns from you. Once the two of you learn enough it's probably a meaningful model.
+As demonstrated in the unfolding of this model, you should approach the development of a model as a learning experience. When things go wrong it's an opportunity for learning. You learn from the model and the model learns from you. Once the two of you learn enough it's probably a meaningful model.
 
 ## Savings Account ##
 
-Why should you put money in a savings account? Why does the bank want you to put money in a savings account? Building and working with a model for a bank "Savings Account"^[Savings Account [http://insightmaker.com/insight/5887](http://insightmaker.com/insight/5887)] can also be most informative also. 
+Why should you put money in a savings account? Why does the bank want you to put money in a savings account? Building and working with a model for a bank "Savings Account"^[Savings Account [http://insightmaker.com/insight/5887](http://insightmaker.com/insight/5887)] can also be very informative. 
 
 # Model
 {"title": "Savings Account", "description": "How does a savings account really work?", "load": "http://insightmaker.com/insight/5887"}
 # End Model
 
-All of the pieces of the model are relevant and have an impact on the behavior of the model. As indicated a model tells a story, a story for which only pieces of can be found in the model. The model itself is more than just the sum of its parts.
+All of the pieces of the model are relevant and have an impact on the behavior of the model. As indicated, a model tells a story; a story for which only pieces of can be found in the model. The model itself is more than just the sum of its parts.
 
 ## Why Aren't We All Rich ##
 
-If one can put money in an investment account, it grows over time, and it grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years though for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs? "Why Aren't We All Rich?"^[Why Aren't We All Rich? [http://insightmaker.com/insight/6827](http://insightmaker.com/insight/6827)] investigates some of the reasons behind this.
+If one can put money in an investment account that grows over time, and grows even faster with regular deposits, why aren't more people rich and ready for retirement? I've started numerous retirement programs through the years, but for one reason or another they've all evaporated in time. What is the basis of this sad state of affairs? "Why Aren't We All Rich?"^[Why Aren't We All Rich? [http://insightmaker.com/insight/6827](http://insightmaker.com/insight/6827)] investigates some of the reasons behind this.
 
 # Model
-{"title": "Why Aren't We All Rich?", "description": "Soft influences are often note very obvious even though they can have a major influence.", "load": "http://insightmaker.com/insight/6827"}
+{"title": "Why Aren't We All Rich?", "description": "Soft influences are often not very obvious, even though they can have a major influence.", "load": "http://insightmaker.com/insight/6827"}
 # End Model
 
-We now have a model which provides some incentives to start and continue to deposit money in an Investment Account, and some disincentives toward the withdrawal of funds, though have we really addressed the initial situation posed? Not really. As far as starting the Investment Account and regularly depositing money, there are incentives, and for many these incentives are enough to get them to invest. For many the incentive, for one reason or another, is not sufficient. And, any more strict incentives would likely be looked on unfavorably. People do not like to be manipulated, even when it is for their own benefit. The penalty for withdrawal is a deterrent in some respects though as the Investment Account continues to grow its attractiveness in terms of what it can purchase continues to entice. The best answer for this situation is to legally tie up the withdrawal process so it's only an option in the case of dire emergencies. Though as much as people find being manipulated by others distasteful, being controlled by themselves is just as distasteful.
+We now have a model that provides some incentives to start and continue to deposit money in an Investment Account. We also have disincentives toward withdrawing funds. However, have we really addressed the initial situation posed? Not really. There are incentives for starting the Investment Account and regularly depositing money. For many these incentives are enough to get them to invest. For others, for one reason on another, the incentive is not sufficient. For those people, additional or more strict incentives would likely be looked on unfavorably. People do not like to be manipulated, even when it is for their own benefit. The penalty for withdrawal is a deterrent in some respects, though as the Investment Account continues to grow, its attractiveness in terms of what it can purchase continues to entice. The best answer for this situation is to legally tie up the withdrawal process so it's only an option in the case of dire emergencies. Though as much as people find being manipulated by others distasteful, being controlled by themselves is just as distasteful.
 
-Is the model done? As usual, the answer is; "It Depends!" If it has provided sufficient understanding to address the situation posed then it is sufficient. If not then it should be taken further, though once it is sufficient you should STOP!
+Is the model done? As usual, the answer is; "It Depends!" If it has provided sufficient understanding to address the situation posed, then it is sufficient. If not, then it should be taken further. NOTE: once it is sufficient you should STOP!
 
 ~ Exercise
-There is a logic flaw in this model which you might try to repair. The Penalty is not actually taken from the Investment Account but from the Withdrawal itself so it reduces the amount you actually get from the Withdrawal. Be warned that is might be a tricky fix.
+There is a logic flaw in this model which you might try to repair. The Penalty is not actually taken from the Investment Account, but from the Withdrawal itself, so it reduces the amount you actually get from the Withdrawal. Be warned that this might be a tricky fix.
 ~ End Exercise
 
 ----------
@@ -108,11 +108,11 @@ There is a logic flaw in this model which you might try to repair. The Penalty i
 
 Before you run a model you should develop a sense of the result you expect from the model at the current point in its development. Once you run the model you should be certain that is it performing as expected. When the result is not what you expect then either the structure is wrong or your assumptions are wrong. Each case represents an opportunity to further develop your understanding.
 
-You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict though after you add several elements to a model, simply to find it doesn't work, and you spend hours trying to figure out why, you may have a better appreciation for this guideline.
+You should never be more than a single concept change away from a running model that produces a result that you understand. You may think this a bit strict, but after you add several elements to a model simply to find it doesn't work, and you spend hours trying to figure out why, you may have a better appreciation for this guideline.
 
-Making all the elements of a model visible makes it much easier for others to understand it. This is why Months per Year and Initial Deposit were created as explicit variables rather than embedding the values inside other elements.
+Others will find it much easier to understand a model if you make all of its elements visible. This is why Months per Year and Initial Deposit were created as explicit variables rather than embedding the values inside other elements.
 
-And what's definitely worth repeating is that providing comments for all the elements of a model will also make it much easier for others to understand. All one need do is mouse over an element and click on the "i" that appears to read the comment.
+It's definitely worth repeating that providing comments for all the elements of a model will also make it much easier for others to understand. Comments in the model are easily read by doing a 'mouse over' an element, and clicking on the "i".
 
 ----------
 
