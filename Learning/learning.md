@@ -24,8 +24,6 @@ Please click on "Bird Feeder Dilemma"^[Bird Feeder Dilemma Model [http://insight
 
 Do you get a sense of the troubles you can get into when you think about a single action taken to achieve a goal without considering the effects of that action? This web of relations provides a limited view, as it's only a picture of relations, and probably not all of the possible relations. 
 
-## Moose and Wolves ##
-
 The picture doesn't give you any real sense of the quantity of anything over time and there are times when a picture simply can not provide the level of understanding about a situation needed. The "Moose and Wolves"^[Moose and Wolves Model [http://insightmaker.com/insight/8590](http://insightmaker.com/insight/8590)] ILE should provide a sense of why it's important to understand how the web of extended interactions develops over time if we are to really develop a web of understanding.
 
 # Model
@@ -33,8 +31,6 @@ The picture doesn't give you any real sense of the quantity of anything over tim
 # End Model
 
 Was the interaction of the population of Moose and Wolves what you expected? Probably not. It's the nature of a web of interactions over time that we simply can't see by looking at a picture. The behavior over time is often critical for an understanding of what's really happening in the web.
-
-## Sustaining the Forest ##
 
 Consider the following "Sustaining the Forest"^[Sustaining the Forest Model [http://insightmaker.com/insight/8889](http://insightmaker.com/insight/8889)] ILE intended to provide another example of how unexpected the behavior of a web of extended interactions can be.
 
