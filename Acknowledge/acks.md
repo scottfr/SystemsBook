@@ -4,9 +4,9 @@ We are sincerely grateful to our project sponsors without whom this project woul
 
 **Publisher Level**
 
-![](180.png)Pedro Almaguer, ![](181.png)Lorry Antonucci, ![](182.png)Hugh J Campbell Hr, ![](183.png)Jamie Chapman, ![](184.png)Stephen Hobbs, ![](185.png)Lise Inman, ![](186.png)Justin Lyon, ![](187.png)Mike Parker, ![](188.png)David Patterson, ![](189.png)Anand Rao, ![](190.png)Matt Sadinsky, ![](191.png)Ken Shepard, ![](192.png)Janet Singer, ![](193.png)Raji Sirajuddin, ![](194.png)Ben Taylor, ![](195.png)Raid M Zaini
+![Pedro Almaguer](180.png) ![Lorry Antonucci](181.png) ![Hugh J Campbell Jr](182.png) ![Jamie Chapman](183.png) ![Stephen Hobbs](184.png) ![Lise Inman](185.png) ![Justin Lyon](186.png) ![Mike Parker](187.png) ![David Patterson](188.png) ![Anand Rao](189.png) ![Matt Sadinsky](190.png) ![Ken Shepard](191.png) ![Janet Singer](192.png) ![Raji Sirajuddin](193.png) ![Ben Taylor](194.png) ![Raid M Zaini](195.png)
 
-Editor Level
+**Editor Level**
 
 Michael Bartikoski, Aliah Blackmore, Erika Ekedal, Paul Holmstrom, Ian Kendrick, Geoff McDonnell, Jim McGee, Bobby Moore, Rebecca Niles, Susan Pattee, James B Rieley, Lees Stuntz, Karen Corliss, Yutaka Takahashi, Julian Todd, Richard 
 Turnock
