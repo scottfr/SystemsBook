@@ -193,9 +193,9 @@ What are the implications for K-12 and college advising? Perhaps career choice d
 
 ## The Rain Barrel ##
 
-A times even with some of the simplest models it's difficult to intuit what the behavior is likely to be. This should be rather evident from "The Rain Barrel"^[The Rain Barrel [http://insightmaker.com/insight/10016](http://insightmaker.com/insight/10016)] model developed by Richard Turnock.
+Even with some of the simplest models, at times it's difficult to intuit the likely behavior. This should be rather evident from "The Rain Barrel"^[The Rain Barrel [http://insightmaker.com/insight/10016](http://insightmaker.com/insight/10016)] model developed by Richard Turnock.
 
-The purpose of this model is to present the implications of inflow and outflow on a stock that are not likely to be intuitive. This generic model is an important pre-requisite to learning about intravenous drugs in the body, radioactivity, self-esteem, water flowing from a bathtub, climate change and many other basic natural systems.
+This model presents the implications of inflow and outflow on a stock that are not likely to be intuitive. This generic model is an important pre-requisite to learning about intravenous drugs in the body, radioactivity, self-esteem, water flowing from a bathtub, climate change, and many other basic natural systems.
 
 # Model
 {"title": "The Rain Barrel", "description": "Even simplicity can be deceptive.", "load": "http://insightmaker.com/insight/10016"}
@@ -203,7 +203,7 @@ The purpose of this model is to present the implications of inflow and outflow o
 
 ## New Learning Inhibited ##
 
-New Learning tends to reduce Outdated Thinking, Communicating & Learning though our Outdated Thinking, Communicating & Learning tends to inhibit new learning. The question is then how do we break this cycle. 
+New Learning tends to reduce Outdated Thinking, Communicating & Learning though our Outdated Thinking, Communicating & Learning tends to inhibit new learning. How do we break this cycle?
 "New Learning Inhibited"^[New Learning Inhibited [http://insightmaker.com/insight/7018](http://insightmaker.com/insight/7018)] is adopted from "An Introduction to Systems Thinking with STELLA" by Barry Richmond.
  
 # Model
@@ -212,17 +212,17 @@ New Learning tends to reduce Outdated Thinking, Communicating & Learning though 
 
 ## Innovation Diffusion ##
 
-The "Innovation Diffusion"^[Innovation Diffusion [http://insightmaker.com/insight/9818](http://insightmaker.com/insight/9818)] model provides an initial basis for understanding the dynamics associated with the rate at which new ideas and technology become known or adopted though cultures.
+The "Innovation Diffusion"^[Innovation Diffusion [http://insightmaker.com/insight/9818](http://insightmaker.com/insight/9818)] model provides a basis for understanding the dynamics associated with the rate at which new ideas and technology become known or adopted though cultures.
 
 # Model
 {"title": "Innovation Diffusion", "description": "The relationship between Potential Adopter and Adopters is quite well defined.", "load": "http://insightmaker.com/insight/9818"}
 # End Model
 
-What we hope you find so amazing about dynamic models is that they allow you to create an explicit representation of what you think and then provide you with the implications of what you think. This provide a marvelous basis for learning to evolve what you think.
+What we hope you find so amazing about dynamic models is that they allow you to create an explicit representation of what you think, and then provide you with the implications of what you think. This provide a marvelous basis for learning to evolve your thinking.
 
 ## Hospital Fixes that Fail ##
 
-The "Hospital Fixes that Fail"^[Hospital Fixes that Fail [http://insightmaker.com/insight/9826](http://insightmaker.com/insight/9826) model presents another example that often our best short-sighted attempts to do what seems to make sense produces results that are actually counterproductive in terms of what we really wanted to accomplish.
+The "Hospital Fixes that Fail"^[Hospital Fixes that Fail [http://insightmaker.com/insight/9826](http://insightmaker.com/insight/9826) model presents another example of how our best (short-sighted) attempts to do something that seems logical can produce results that are counterproductive to what we wanted to accomplish. 
 
 # Model
 {"title": "Hospital Fixes that Fail", "description": "At times our best efforts defeat our intent.", "load": "http://insightmaker.com/insight/9826"}
@@ -230,12 +230,12 @@ The "Hospital Fixes that Fail"^[Hospital Fixes that Fail [http://insightmaker.co
 
 ## World2 Model ##
 
-The "World2 Model"^[World2 Model [http://insightmaker.com/insight/9812(http://insightmaker.com/insight/9812)] presents interactions between population, industrial growth, food production, and limits in the ecosystems on Earth. The World2 model was adopted by Geoff McDonnell from Mark Heffernan's ithink version. The World3 Limits to Growth Model was developed based on the earlier, simpler, version developed by Jay Forrester in his 1971 book World Dynamics.
+The "World2 Model"^[World2 Model [http://insightmaker.com/insight/9812(http://insightmaker.com/insight/9812)] presents interactions among population, industrial growth, food production, and limits in the Earths' ecosystems. The World2 model was adopted by Geoff McDonnell from Mark Heffernan's ithink version. The World3 Limits to Growth Model was developed based on the earlier, simpler version developed by Jay Forrester in his 1971 book World Dynamics.
 
 # Model
-{"title": "World 2 Model", "description": "Investigate the dynamics between capital investment, population, pollution and natural resources on the Earth", "load": "http://insightmaker.com/insight/9812"}
+{"title": "World 2 Model", "description": "Investigate the dynamics among capital investment, population, pollution, and natural resources on the Earth", "load": "http://insightmaker.com/insight/9812"}
 # End Model
 
 ## Conclusion ##
 
-If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] it is essential we embrace learning and become far more adept at developing truly viable approaches for dealing with situations. Attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling which simply makes the situation worse or creates new problems that have to be dealt with. There are well defined proven approaches for developing each aspect of the "Systemic Strategy"^[Systemic Strategy [http://insightmaker.com/insight/1366](http://insightmaker.com/insight/1366)] model, and these will be presented in the "Enabling a Better Tomorrow" Interactive Learning Environment soon to be released.
+If we are to evolve beyond the Pogo predicament, “We have met the enemy and he is us” [Kelly, 1970] we must embrace learning and become far more adept at developing truly viable approaches for dealing with situations. Attempting to deal with situations without the requisite level of understanding has repeatedly proven to be little more than meddling. This in turn simply makes the situation worse or creates new problems that have to be dealt with. There are well defined and proven approaches for developing each aspect of the "Systemic Strategy"^[Systemic Strategy [http://insightmaker.com/insight/1366](http://insightmaker.com/insight/1366)] model, and these will be presented in the "Enabling a Better Tomorrow" Interactive Learning Environment soon to be released.
