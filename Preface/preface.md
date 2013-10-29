@@ -8,9 +8,13 @@ Lees Stuntz, Executive Director of the [Creative Learning Exchange](http://www.c
 
 Systems thinking is powerful, and important for helping us tackle the biggest challenges in our modern world. But it's tricky! With *Beyond Connecting the Dots*, Gene and Scott have given us an engaging, fun-to-use and comprehensive tool to bring the idea to life for all kinds of folk. The more people understand about the systems we (and our leaders!) struggle to deal with, the more chance we have to make the world a better place. 
 
-Kim Warren: International [System Dynamics Society](http://www.systemdynamics.org/) President, 2013 and Originator of [Strategy Dynamics](http://strategydynamics.com/).
+Kim Warren, International [System Dynamics Society](http://www.systemdynamics.org/) President, 2013 and Originator of [Strategy Dynamics](http://strategydynamics.com/).
 
 ----------
+
+Our senior consultants are frequently challenged in communicating sophisticated systems concepts to time-and-attention constrained corporate general managers. The Global Organization Design Society recommends Gene Bellinger’s and Scott Fortmann-Roe's Beyond Connecting the Dots, and have decided to use Insight Maker with its powerful story telling ability to keynote and moderate our next world conference, [Designing the Data Driven Organization](http://globalro.org/index.php/event/nyc-2014-conference) in New York City, July, 2014.
+
+Ken Shepard, President, [The Global Organization Design Society](http://globalro.org/)
 
 ## Preface ##
 
