@@ -155,7 +155,7 @@ In those days, the classical discussion on the merits and ROI of going to colleg
 
 There is no longer a world full of blue chip employers looking for high school and college grads to fill entry level jobs, complete with corporate training plans. Unemployment at all time highs also has great social costs in crime, foreclosures, poverty, and health. 
 
-Many college grads today find themselves up to their ears in debt and living in the basement working minimum wage jobs in retail and fast food. Some economists believe that student loan debt and the [SALLYMAE bubble is the next shoe to drop](http://blogs.reuters.com/great-debate/2013/03/07/student-loan-bubble-babble/). College grad starting salaries are at all time lows, while student loans are at all time highs. Employees change jobs every 2-3 years (often a victim of economic downturns) and hold seven careers in a 30-40 year work life. As retirement becomes out of reach for many, older employees are working longer if they can for all sorts of reasons, competing for the same few spots, keeping wages depressed, and blocking ports of entry for others.
+Many college grads today find themselves up to their ears in debt and living in the basement working minimum wage jobs in retail and fast food. Some economists believe that student loan debt and the [SALLYMAE bubble](http://blogs.reuters.com/great-debate/2013/03/07/student-loan-bubble-babble/) are the next shoes to drop. College grad starting salaries are at all time lows, while student loans are at all time highs. Employees change jobs every 2-3 years (often a victim of economic downturns) and hold seven careers in a 30-40 year work life. As retirement becomes out of reach for many, older employees are working longer if they can for all sorts of reasons, competing for the same few spots, keeping wages depressed, and blocking ports of entry for others.
 
 Want to be a doctor today? You still have to get good grades, complete a BS degree, go to medical school, and work through a residency. Climbing the ladder still works in some careers. But if ever there was a place for Strategic Thinking it is in how one starts, manages, builds, grows, or extends one's career.  We want to tease these issues in a short but engaging and appropriate way.
 
@@ -203,8 +203,7 @@ This model presents the implications of inflow and outflow on a stock that are n
 
 ## New Learning Inhibited ##
 
-New Learning tends to reduce Outdated Thinking, Communicating & Learning though our Outdated Thinking, Communicating & Learning tends to inhibit new learning. How do we break this cycle?
-"New Learning Inhibited"^[New Learning Inhibited [http://insightmaker.com/insight/7018](http://insightmaker.com/insight/7018)] is adopted from "An Introduction to Systems Thinking with STELLA" by Barry Richmond.
+New Learning tends to reduce Outdated Thinking, Communicating & Learning though our Outdated Thinking, Communicating & Learning tends to inhibit new learning. How do we break this viscous cycle? "New Learning Inhibited"^[New Learning Inhibited [http://insightmaker.com/insight/7018](http://insightmaker.com/insight/7018)] is adopted from "An Introduction to Systems Thinking with STELLA" by Barry Richmond.
  
 # Model
 {"title": "New Learning Inhibited", "description": "Is it possible to break out of a vicious cycle?", "load": "http://insightmaker.com/insight/7018"}
