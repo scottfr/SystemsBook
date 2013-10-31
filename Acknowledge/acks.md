@@ -4,22 +4,22 @@ We are sincerely grateful to our project sponsors without whom this project woul
 
 **Publisher Level**
 
-<div class="publisher"><img src="180.png"><span class="name">Pedro Almaguer</span></div>
-<div class="publisher"><img src="181.png"><span class="name">Lorry Antonucci</span></div>
-<div class="publisher"><img src="182.png"><span class="name">Hugh J Campbell Jr</span></div>
-<div class="publisher"><img src="183.png"><span class="name">Jamie Chapmane</span></div>
-<div class="publisher"><img src="184.png"><span class="name">Stephen Hobbs</span></div>
-<div class="publisher"><img src="185.png"><span class="name">Lise Inman</span></div>
-<div class="publisher"><img src="186.png"><span class="name">Justin Lyon</span></div>
-<div class="publisher"><img src="187.png"><span class="name">Mike Parker</span></div>
-<div class="publisher"><img src="188.png"><span class="name">David Patterson</span></div>
-<div class="publisher"><img src="189.png"><span class="name">Anand Rao</span></div>
-<div class="publisher"><img src="190.png"><span class="name">Matt Sadinsky</span></div>
-<div class="publisher"><img src="191.png"><span class="name">Ken Shepard</span></div>
-<div class="publisher"><img src="192.png"><span class="name">Janet Singer</span></div>
-<div class="publisher"><img src="193.png"><span class="name">Raji Sirajuddin</span></div>
-<div class="publisher"><img src="194.png"><span class="name">Ben Taylor</span></div>
-<div class="publisher"><img src="195.png"><span class="name">Raid M Zaini</span></div>
+<div class="publisher"><img src="180.png" class="biopic"><span class="name">Pedro Almaguer</span></div>
+<div class="publisher"><img src="181.png" class="biopic"><span class="name">Lorry Antonucci</span></div>
+<div class="publisher"><img src="182.png" class="biopic"><span class="name">Hugh J Campbell Jr</span></div>
+<div class="publisher"><img src="183.png" class="biopic"><span class="name">Jamie Chapmane</span></div>
+<div class="publisher"><img src="184.png" class="biopic"><span class="name">Stephen Hobbs</span></div>
+<div class="publisher"><img src="185.png" class="biopic"><span class="name">Lise Inman</span></div>
+<div class="publisher"><img src="186.png" class="biopic"><span class="name">Justin Lyon</span></div>
+<div class="publisher"><img src="187.png" class="biopic"><span class="name">Mike Parker</span></div>
+<div class="publisher"><img src="188.png" class="biopic"><span class="name">David Patterson</span></div>
+<div class="publisher"><img src="189.png" class="biopic"><span class="name">Anand Rao</span></div>
+<div class="publisher"><img src="190.png" class="biopic"><span class="name">Matt Sadinsky</span></div>
+<div class="publisher"><img src="191.png" class="biopic"><span class="name">Ken Shepard</span></div>
+<div class="publisher"><img src="192.png" class="biopic"><span class="name">Janet Singer</span></div>
+<div class="publisher"><img src="193.png" class="biopic"><span class="name">Raji Sirajuddin</span></div>
+<div class="publisher"><img src="194.png" class="biopic"><span class="name">Ben Taylor</span></div>
+<div class="publisher"><img src="195.png" class="biopic"><span class="name">Raid M Zaini</span></div>
 
 **Editor Level**
 

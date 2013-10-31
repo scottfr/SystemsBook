@@ -1,21 +1,3 @@
-## Praise for Beyond Connecting the Dots ##
-
-*Beyond Connecting the Dots* is a cutting-edge product that utilizes the power of current technology to create an active learning environment for the critical thinking skills of system dynamics and systems thinking. The ability to play with models and even do some modeling yourself as you experience system dynamics concepts is fun, exciting and a powerful way to learn. This interactive environment taps into multiple learning modalities, making it an effective tool for a diverse cross-section of the population.
-
-Lees Stuntz, Executive Director of the [Creative Learning Exchange](http://www.clexchange.org), "Developing Systems Citizens through the use of System Dynamics and Systems Thinking in K-12 Education"
-
-----------
-
-Systems thinking is powerful, and important for helping us tackle the biggest challenges in our modern world. But it's tricky! With *Beyond Connecting the Dots*, Gene and Scott have given us an engaging, fun-to-use and comprehensive tool to bring the idea to life for all kinds of folk. The more people understand about the systems we (and our leaders!) struggle to deal with, the more chance we have to make the world a better place. 
-
-Kim Warren, International [System Dynamics Society](http://www.systemdynamics.org/) President, 2013 and Originator of [Strategy Dynamics](http://strategydynamics.com/)
-
-----------
-
-Our senior consultants are frequently challenged in communicating sophisticated systems concepts to time-and-attention constrained corporate general managers. The Global Organization Design Society recommends Gene Bellinger’s and Scott Fortmann-Roe's Beyond Connecting the Dots, and have decided to use Insight Maker with its powerful story telling ability to keynote and moderate our next world conference, [Designing the Data Driven Organization](http://globalro.org/index.php/event/nyc-2014-conference) in New York City, July, 2014.
-
-Ken Shepard, President, [The Global Organization Design Society](http://globalro.org/)
-
 ## Preface ##
 
 We set out to develop an interactive ebook on modeling and simulation introducing Insight Maker. As it turned out, after a few months what had actually been developed was an interactive ebook on modeling and simulation introducing Insight Maker. What we realized, upon arriving at the goal, was that the world didn't need another book on modeling and simulation and it surely didn't need an Insight Maker users guide. And, glitzy technology couldn't turn what we had developed into what it needed to be. Though a glitzy technology oriented ebook on modeling and simulation that read like an Insight Maker users guide was just what we had created.
