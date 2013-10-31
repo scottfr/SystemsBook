@@ -171,22 +171,22 @@ Career education partnerships becomes one possible cure for the profoundly disco
 
 The following three models were developed by Matt Sadinsky, CEO at [Prequalified Ready Employees for Power International](http://www.prepintl.com/).
 
-The first insight in the series, "Traditional Career Model"^[Traditional Career Model [http://insightmaker.com/insight/8727](http://insightmaker.com/insight/8727)], is a simple, more traditional naive model of how education works, with increased lifetime earnings from attending college.
+The first insight in the series, "Traditional Career Model"^[Traditional Career Model [http://insightmaker.com/insight/9799](http://insightmaker.com/insight/9799)], is a simple, more traditional naive model of how education works, with increased lifetime earnings from attending college.
 
 # Model
-{"title": "Traditional Career Model", "description": "Comparing the potential for No High School Education, High School Education, and College Education earnings/savings potential.", "load": "http://insightmaker.com/insight/8727"}
+{"title": "Traditional Career Model", "description": "Comparing the potential for No High School Education, High School Education, and College Education earnings/savings potential.", "load": "http://insightmaker.com/insight/9799"}
 # End Model
 
-The second insight in the series, "Loan Cost Model"^[Loan Cost Model [http://insightmaker.com/insight/8727](http://insightmaker.com/insight/8729)], takes into account the potential cost of student loans in the event that the student does not complete college or does not succeed in their career. 
+The second insight in the series, "Loan Cost Model"^[Loan Cost Model [http://insightmaker.com/insight/9801](http://insightmaker.com/insight/9801)], takes into account the potential cost of student loans in the event that the student does not complete college or does not succeed in their career. 
 
 # Model
-{"title": "Loans Cost", "description": "Comparing the cost of switching careers mid stream.", "load": "http://insightmaker.com/insight/8729"}
+{"title": "Loan Cost Model", "description": "Comparing the cost of switching careers mid stream.", "load": "http://insightmaker.com/insight/9801"}
 # End Model
 
-The third insight in the series, "Savings Over Time"^[Savings Over Time [http://insightmaker.com/insight/8727](http://insightmaker.com/insight/8735)], illustrates the difference in savings over time for a doctor or for a skilled worker who went to a trade school.
+The third insight in the series, "Savings Over Time"^[Savings Over Time [http://insightmaker.com/insight/9802](http://insightmaker.com/insight/9802)], illustrates the difference in savings over time for a doctor or for a skilled worker who went to a trade school.
 
 # Model
-{"title": "Savings Over Time", "description": "Comparing the savings potential for a doctor and a skilled worker.", "load": "http://insightmaker.com/insight/8735"}
+{"title": "Savings Over Time", "description": "Comparing the savings potential for a doctor and a skilled worker.", "load": "http://insightmaker.com/insight/9802"}
 # End Model
 
 What are the implications for K-12 and college advising? Perhaps career choice decisions are one of the most relevant areas of strategic thinking in which any parent and counselor could involve their children and students. See Mike Rowe's website [Proundly Disconnected](http://profoundlydisconnected.com/alternative-education/) for more information on the importance of reconnecting education to more effective career choices. Also watch [Bill Maher interview Mike Rowe](http://roadshow.slate.com/mike-rowe-on-bill-maher-time-to-close-the-skills-gap/).
@@ -221,7 +221,7 @@ What we hope you find so amazing about dynamic models is that they allow you to 
 
 ## Hospital Fixes that Fail ##
 
-The "Hospital Fixes that Fail"^[Hospital Fixes that Fail [http://insightmaker.com/insight/9826](http://insightmaker.com/insight/9826) model presents another example of how our best (short-sighted) attempts to do something that seems logical can produce results that are counterproductive to what we wanted to accomplish. 
+The "Hospital Fixes that Fail"^[Hospital Fixes that Fail [http://insightmaker.com/insight/9826](http://insightmaker.com/insight/9826)] model presents another example of how our best (short-sighted) attempts to do something that seems logical can produce results that are counterproductive to what we wanted to accomplish. 
 
 # Model
 {"title": "Hospital Fixes that Fail", "description": "At times our best efforts defeat our intent.", "load": "http://insightmaker.com/insight/9826"}

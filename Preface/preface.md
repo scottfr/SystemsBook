@@ -67,7 +67,15 @@ If you look closely at Figure 8 you'll notice an **= equal sign** and an **i** v
 
 You can open the **Configuration Panel**, or use mouseover, to look at any element, at any time during the storytelling of a model.
 
-There are numerous exercises presented. Some of these are presented with answers you can review and others are simply presented as questions related to concepts that it is considered appropriate to reflect on. Doing this reflection with others can be very beneficial.
+There are numerous exercises presented as in Figure 9. Some of these are presented with answers you can review and others are simply presented as questions related to concepts that it is considered appropriate to reflect on. Doing this reflection with others can be very beneficial.
+
+![Figure 9. Exercise](00-intro-09.png)
+
+If there is an answer then the inset will have an **Answer Available** link, which when clicked, will take you to the answers section as depicted in Figure 10.
+
+![Figure 10. Exercise Answer](00-intro-10.png)
+
+Once you have read the answer you can click the exercise number to return the to place in the text where the actual exercise is.
 
 There are a couple of the implications of this being an interactive learning environment rather than a development environment are:
 
