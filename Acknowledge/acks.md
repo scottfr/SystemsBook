@@ -4,7 +4,22 @@ We are sincerely grateful to our project sponsors without whom this project woul
 
 **Publisher Level**
 
-![Pedro Almaguer](180.png) ![Lorry Antonucci](181.png) ![Hugh J Campbell Jr](182.png) ![Jamie Chapman](183.png) ![Stephen Hobbs](184.png) ![Lise Inman](185.png) ![Justin Lyon](186.png) ![Mike Parker](187.png) ![David Patterson](188.png) ![Anand Rao](189.png) ![Matt Sadinsky](190.png) ![Ken Shepard](191.png) ![Janet Singer](192.png) ![Raji Sirajuddin](193.png) ![Ben Taylor](194.png) ![Raid M Zaini](195.png)
+<div class="publisher"><img src="180.png"><span class="name">Pedro Almaguer</span></div>
+<div class="publisher"><img src="181.png"><span class="name">Lorry Antonucci</span></div>
+<div class="publisher"><img src="182.png"><span class="name">Hugh J Campbell Jr</span></div>
+<div class="publisher"><img src="183.png"><span class="name">Jamie Chapmane</span></div>
+<div class="publisher"><img src="184.png"><span class="name">Stephen Hobbs</span></div>
+<div class="publisher"><img src="185.png"><span class="name">Lise Inman</span></div>
+<div class="publisher"><img src="186.png"><span class="name">Justin Lyon</span></div>
+<div class="publisher"><img src="187.png"><span class="name">Mike Parker</span></div>
+<div class="publisher"><img src="188.png"><span class="name">David Patterson</span></div>
+<div class="publisher"><img src="189.png"><span class="name">Anand Rao</span></div>
+<div class="publisher"><img src="190.png"><span class="name">Matt Sadinsky</span></div>
+<div class="publisher"><img src="191.png"><span class="name">Ken Shepard</span></div>
+<div class="publisher"><img src="192.png"><span class="name">Janet Singer</span></div>
+<div class="publisher"><img src="193.png"><span class="name">Raji Sirajuddin</span></div>
+<div class="publisher"><img src="194.png"><span class="name">Ben Taylor</span></div>
+<div class="publisher"><img src="195.png"><span class="name">Raid M Zaini</span></div>
 
 **Editor Level**
 
