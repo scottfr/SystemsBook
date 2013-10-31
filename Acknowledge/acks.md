@@ -49,3 +49,7 @@ Tore Aarsland, Robert Abbey, Edmilson Alves de Moraes, Ramon Arguello, Andre Bai
 **Contributor Level**
 
 KK Aw, Michele Battel-Fisher, Tom Bell, Hitesh Bhattari, Julia Brodsky, Chris Browne, Bruce Burk, Dibyendu De, Cynthia DuVal, David Hooper, Nishanth K Hydru,Igor Krejci, Sigrun Luras, Francisoc Mariategui, Kevin McGowan, John Morgan, Tim Newton, Edward B. Rockower, Ricardo Rodríguez-Ulloa, Michael Sales, Gerardo del cerro Santamaria, Dan Strongin, Tonnie van der Zouwen, George Woodman
+
+**Other Support**
+
+Ruth Ann Pinkman (copyediting), Jim Cameron (icon and cover design)
