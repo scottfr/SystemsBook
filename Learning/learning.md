@@ -16,7 +16,7 @@ It has been said that you can learn about riding a bicycle from reading a book, 
 ## Experiencing the Web ##
 
 Because everything is related to everything else in the web of extended interactions, seldom is it possible for an action to have only one effect.
-Please click on "Bird Feeder Dilemma"^[Bird Feeder Dilemma Model [http://insightmaker.com/insight/8872](http://insightmaker.com/insight/8872)] title and step through the following ILE. This will give you an initial sense of how a simple action can impact many things, creating a web of extended relations.
+Please click on the "Bird Feeder Dilemma"^[Bird Feeder Dilemma Model [http://insightmaker.com/insight/8872](http://insightmaker.com/insight/8872)] title and step through the ILE. This will give you an initial sense of how a simple action can impact many things, creating a web of extended interactions.
 
 # Model
 {"title": "Bird Feeder Dilemma", "description": "All you wanted was a more pleasant morning at breakfast.", "load": "http://insightmaker.com/insight/8872"}
