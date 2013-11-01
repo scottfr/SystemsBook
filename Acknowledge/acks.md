@@ -1,4 +1,4 @@
-## Acknowledgements ##
+# Acknowledgements #
 
 We are sincerely grateful to our project sponsors without whom this project would not have been possible. That they believed in the project and us as authors was a significant motivator throughout this project. And their feedback along the way was invaluable in enabling us to continue to evolve both the content and the technology.
 
