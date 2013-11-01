@@ -89,5 +89,6 @@ If you have questions about this work please direct them to Gene Bellinger at [s
 ### Additional Resources ###
 
 - [Insight Maker](http://insightmaker.com/). The free web based modeling and simulation environment used to create the models contained herein.
-- [Systems Thinking World](http://www.linkedin.com/groups/Systems-Thinking-World-2639211). A Systems Thinking discussion group on LinkedIn.
+- [The MARS Project](http://www.linkedin.com/groups/MARS-Project-5180568). A LinkedIn discussion group focused on the collaborative development of models and simulations.
+- [Systems Thinking World](http://www.linkedin.com/groups/Systems-Thinking-World-2639211). A more general Systems Thinking discussion group on LinkedIn.
 - [SystemsWiki.org](http://www.systemswiki.org/). A Wiki dedicated to Systems Thinking, Modeling and Simulation.
