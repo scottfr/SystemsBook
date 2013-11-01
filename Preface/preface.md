@@ -84,8 +84,10 @@ There are a couple of the implications of this being an interactive learning env
 
 You can read and interact with the content of this Interactive Learning Environment without being connected to the Internet though there are some of the models which reference images on the Internet. If you're not connected to the Internet these will display as missing images with labels below them. You will also not be able to follow any of the embedded links unless you are connected to the Internet.
 
+If you have questions about this work please direct them to Gene Bellinger at [systemswiki@gmail.com](mailto:systemswiki@gmail.com).
+
 ### Additional Resources ###
 
 - [Insight Maker](http://insightmaker.com/). The free web based modeling and simulation environment used to create the models contained herein.
-- [Systems Thinking World](http://www.linkedin.com/groups/Systems-Thinking-World-2639211). A more general Systems Thinking discussion group on LinkedIn.
+- [Systems Thinking World](http://www.linkedin.com/groups/Systems-Thinking-World-2639211). A Systems Thinking discussion group on LinkedIn.
 - [SystemsWiki.org](http://www.systemswiki.org/). A Wiki dedicated to Systems Thinking, Modeling and Simulation.
