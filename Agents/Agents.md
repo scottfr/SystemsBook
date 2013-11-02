@@ -537,6 +537,9 @@ DIAGRAM
 
 We will have this action triggered when the agent is healthy and there is at least one infected agent in the simulation.
 
+
+{"attribute":"Trigger","target":"Escape", "value":"Condition"}
+
 {"attribute":"Value","target":"Escape","value":"[Healthy] and [Population].FindState([Infected]).Count() > 0"}
 
 The action will cause healthy agents to move away from the nearest infected agent; in effect fleeing from sick individuals.
