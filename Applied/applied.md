@@ -229,7 +229,7 @@ The "Hospital Fixes that Fail"^[Hospital Fixes that Fail [http://insightmaker.co
 
 ## World2 Model ##
 
-The "World2 Model"^[World2 Model [http://insightmaker.com/insight/9812(http://insightmaker.com/insight/9812)] presents interactions among population, industrial growth, food production, and limits in the Earths' ecosystems. The World2 model was adopted by Geoff McDonnell from Mark Heffernan's ithink version. The World3 Limits to Growth Model was developed based on the earlier, simpler version developed by Jay Forrester in his 1971 book World Dynamics.
+The "World2 Model"^[World2 Model [http://insightmaker.com/insight/9812](http://insightmaker.com/insight/9812)] presents interactions among population, industrial growth, food production, and limits in the Earths' ecosystems. The World2 model was adopted by Geoff McDonnell from Mark Heffernan's ithink version. The World3 Limits to Growth Model was developed based on the earlier, simpler version developed by Jay Forrester in his 1971 book World Dynamics.
 
 # Model
 {"title": "World 2 Model", "description": "Investigate the dynamics among capital investment, population, pollution, and natural resources on the Earth", "load": "http://insightmaker.com/insight/9812"}
