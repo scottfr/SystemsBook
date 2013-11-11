@@ -118,7 +118,7 @@ We're not asking you to simply believe the previous statement. We expect this co
 Did you realize that while the structure demonstrates a property of growth, growth is not a property you can find in any of the individual components? This is what is called an emergent property. All models have one or more emergent properties. Have you ever heard the statement "The whole is greater than the sum of its parts"? This is an example of what that statement implies.
 
 ~ Exercise
-Each of the accumlations in the simulation changes in a different way. The timeframes of concern are also different (timeframe being the time it takes for a noticeable change in the accumlation).
+Each of the accumulations in the simulation changes in a different way. The timeframes of concern are also different (timeframe being the time it takes for a noticeable change in the accumulation).
 
 Take a few minutes and identify half a dozen situations you're familiar with where there are stocks that increase or decrease over time. What are the values for those stocks, e.g., gallons, pounds, kilograms, etc.? What are the flows that increase or decrease those stocks? What are the timeframes over which you think about the increase or decrease of the stock?
 ~ End Exercise
