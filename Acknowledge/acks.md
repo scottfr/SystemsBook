@@ -7,7 +7,7 @@ We are sincerely grateful to our project sponsors without whom this project woul
 <div class="publisher"><img src="180.png" class="biopic"><span class="name">Pedro Almaguer</span></div>
 <div class="publisher"><img src="181.png" class="biopic"><span class="name">Lorry Antonucci</span></div>
 <div class="publisher"><img src="182.png" class="biopic"><span class="name">Hugh J Campbell Jr</span></div>
-<div class="publisher"><img src="183.png" class="biopic"><span class="name">Jamie Chapmane</span></div>
+<div class="publisher"><img src="183.png" class="biopic"><span class="name">Jamie Chapman</span></div>
 <div class="publisher"><img src="184.png" class="biopic"><span class="name">Stephen Hobbs</span></div>
 <div class="publisher"><img src="185.png" class="biopic"><span class="name">Lise Inman</span></div>
 <div class="publisher"><img src="186.png" class="biopic"><span class="name">Justin Lyon</span></div>
