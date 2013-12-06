@@ -13,13 +13,23 @@ On one level, *Beyond Connecting the Dots* is a book about Systems Thinking and 
 We sincerely hope that you find this effort meaningful and that it provides a basis for developing a more useful understanding of the world around you.
 
 ~~~~~
-November 3, 2013
+December 7, 2013
 Gene & Scott
 ~~~~~
 
 ## Introduction ##
 
 People tend to read books in different ways. With that in mind we've designed this ILE so all the essential concepts are presented in the first chapter. We recommend that you read Chapter 1 and interact with all the models presented. Chapter 2 and 3 provide examples which reinforce the concepts of Chapter 1 and are recommended though you can probably interact with them in any order you desire. The remainder of the chapters contain related modeling and simulation concepts that may be read in any desired order.
+
+### Navigation ###
+
+Navigating within the content is rather easy though there are no page numbers as there is no physical version of the content to reference. The number of pages that exist depends on the size of the window you view the content though.
+
+- **Page Forward**. Click anywhere to the right of the center of the page.
+- **Page Back**. Click anywhere to the left of the center of the page.
+- **Table of Contents**. Click on the title in the upper left of the window and a Table of Contents will be displayed. You can scroll through the Table of Contents and clicking an entry will take you to that location.
+- **Location Bar**. If you click the section title in the lower left of the window a relative location slider will be displayed. You can click on the ball and move it to the right or left to change your location in the content.
+- **Text Size**. Clicking the AA in the upper right will toggle the size of the size of the text.
 
 In the first three chapters you will be presented with concepts and access to models as in the following figure. Clicking on the title of the model will open the model in a storytelling mode.
 
@@ -90,6 +100,7 @@ If you have questions about this work please direct them to Gene Bellinger at [s
 
 ### Additional Resources ###
 
+- [Beyond Connecting the Dots Q&A](http://www.systemswiki.org/index.php?title=Beyond_Connecting_the_Dots_Q%26A). A reference that continues to evolve as people raise questions while interacting with the content.
 - [Insight Maker](http://insightmaker.com/). The free web based modeling and simulation environment used to create the models contained herein.
 - [The MARS Project](http://www.linkedin.com/groups/MARS-Project-5180568). A LinkedIn discussion group focused on the collaborative development of models and simulations.
 - [Systems Thinking World](http://www.linkedin.com/groups/Systems-Thinking-World-2639211). A more general Systems Thinking discussion group on LinkedIn.
