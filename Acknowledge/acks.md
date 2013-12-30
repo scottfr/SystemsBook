@@ -15,9 +15,9 @@ We are sincerely grateful to our project sponsors without whom this project woul
 <div class="publisher"><img src="188.png" class="biopic"><span class="name">David Patterson</span></div>
 <div class="publisher"><img src="189.png" class="biopic"><span class="name">Anand Rao</span></div>
 <div class="publisher"><img src="190.png" class="biopic"><span class="name">Matt Sadinsky</span></div>
-<div class="publisher"><img src="191.png" class="biopic"><span class="name">Ken Shepard</span></div>
 <div class="publisher"><img src="192.png" class="biopic"><span class="name">Janet Singer</span></div>
 <div class="publisher"><img src="193.png" class="biopic"><span class="name">Raji Sirajuddin</span></div>
+<div class="publisher"><img src="191.png" class="biopic"><span class="name">Global Organization Design Society</span></div>
 <div class="publisher"><img src="194.png" class="biopic"><span class="name">Ben Taylor</span></div>
 <div class="publisher"><img src="195.png" class="biopic"><span class="name">Raid M Zaini</span></div>
 
@@ -32,7 +32,7 @@ Denis Conway Adams, Anthony Akins, David Allen, Enkhbat Dangaasuren,Helene Finid
 
 **Benefactor Level**
 
-Zareer Aga, Henk Akkermans, Duane Banks, Vincent Barabba, Roberto Berchi, John R. Broomfield, Stephen Chaffey, William Conklin, Jean-Daniel Cusin, Roger Duck, Sergio Echeverria, Lorraine Filipek, Lars Finskud, Diana Fisher, Andreas Gaarder, John Gancz, Santiago Garcia, H. Lucien Gauthier III, Alan Gaynor, Chuck Georgo, Michael Gidlewski, Leo Gilmore, Rob Hall, Susan L. Harris, David Hawk, Luc Hoebeke, Rick Hubbard, David Hurst, Garry Jenkin, Willard Jule, Tony Korycki, Roman Koziol, Ian Leaver, Jan Lelie, Tom Marzolf, John McCreery, Jakob Moeller-Jensen, Ash Moran, Steve Morlidge, Kent Myers, Cees Niesing, Stefan Norrvall, Brendan O'Sullivan, Clifford R. Perry, Deborah Polk, David Rees, Alexander Samarin, Lukas, Schmid, Barbara Schmidt-Abbey, Steven Schneider, David Seward, Zach Shoher, Fay Simcock, David Peter Stroh, Jurgen Strohhecker, Fabian Szulanski, Mukon Akong Tamon, Ivan Taylor, Luis Orlindo Tedeschi, Megan Turnock, Paulo Viella, Hunt Waddell, Stefan Michael Wasilewski, Edward Bing Wu, Rob Young
+Zareer Aga, Henk Akkermans, Duane Banks, Vincent Barabba, Roberto Berchi, John R. Broomfield, Stephen Chaffey, William Conklin, Jean-Daniel Cusin, Roger Duck, Sergio Echeverria, Lorraine Filipek, Lars Finskud, Diana Fisher, Andreas Gaarder, John Gancz, Santiago Garcia, H. Lucien Gauthier III, Alan Gaynor, Chuck Georgo, Michael Gidlewski, Leo Gilmore, Rob Hall, Susan L. Harris, David Hawk, Luc Hoebeke, Rick Hubbard, David Hurst, Garry Jenkin, Willard Jule, Tony Korycki, Roman Koziol, Ian Leaver, Jan Lelie, Tom Marzolf, John McCreery, Jakob Moeller-Jensen, Ash Moran, Steve Morlidge, Kent Myers, Cees Niesing, Stefan Norrvall, Brendan O'Sullivan, Clifford R. Perry, Deborah Polk, David Rees, Alexander Samarin, Lukas, Schmid, Barbara Schmidt-Abbey, Steven Schneider, David Seward, Zach Shoher, Fay Simcock, David Peter Stroh, Jurgen Strohhecker, Fabian Szulanski, Mukon Akong Tamon, Ivan Taylor, Luis Orlindo Tedeschi, Megan Turnock, Paulo Villela, Hunt Waddell, Stefan Michael Wasilewski, Edward Bing Wu, Rob Young
 
 **Engraved Level**
 
